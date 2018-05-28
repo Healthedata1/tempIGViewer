@@ -1,0 +1,189 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/HealthcareService/ffcardiology> a fhir:HealthcareService;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ffcardiology"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: Business ID = service001 (SECONDARY)</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers\">Founding Fathers Memorial Hospital</a></p><p><b>category</b>: Hospital <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/service-category code '35' = 'Hospital', given as 'Hospital'})</span></p><p><b>type</b>: Cardiology <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/service-type code '165' = 'Cardiology', given as 'Cardiology'})</span></p><p><b>specialty</b>: Cardiology <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '394579002' = 'Cardiology (qualifier value)', given as 'Cardiology'})</span></p><p><b>location</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/Location/location2\">Founding Fathers Memorial Hospital, Heart and Vascular Institute</a></p><p><b>name</b>: Founding Fathers Memorial Hospital Heart and Vascular Services</p><p><b>comment</b>: Cardiac surgery, heart failure, cardiac electrophysiology, vascular surgery, and cardiovascular research</p><p><b>telecom</b>: -unknown-</p><p><b>serviceProvisionCode</b>: Fees apply <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/service-provision-conditions code 'cost' = 'Fees apply', given as 'Fees apply'})</span></p><p><b>eligibility</b>: None <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>eligibilityNote</b>: No specific eligibility requirements</p><p><b>referralMethod</b>: phone <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/service-referral-method code 'phone' = 'Phone', given as 'phone'})</span>, Fax <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/service-referral-method code 'fax' = 'Fax', given as 'Fax'})</span></p><p><b>appointmentRequired</b>: true</p><h3>AvailableTimes</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td><td><b>AvailableStartTime</b></td><td><b>AvailableEndTime</b></td></tr><tr><td>*</td><td>MON</td><td>false</td><td/><td/></tr></table><p><b>availabilityExceptions</b>: No interventional cardiac procedures are scheduled on Wednesdays</p><p><b>endpoint</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/Endpoint/direct321\">Direct address for the Founding Fathers Heart and Vascular Institute</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "acceptingPatients" ];
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "network" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Network/patriotppo>;
+         fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ig/vhdir/Network/patriotppo" ];
+         fhir:Reference.display [ fhir:value "Patriot Preferred Provider Network" ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients" ]
+  ];
+  fhir:HealthcareService.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status" ];
+       fhir:Extension.valueCode [ fhir:value "active" ]
+     ];
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.text [ fhir:value "Business ID" ]
+     ];
+     fhir:Identifier.system [ fhir:value "www.foundingfathersmemorial.com" ];
+     fhir:Identifier.value [ fhir:value "service001" ];
+     fhir:Identifier.assigner [
+       fhir:link <http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers>;
+       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers" ];
+       fhir:Reference.display [ fhir:value "Founding Fathers Memorial Hospital" ]
+     ]
+  ];
+  fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
+  fhir:HealthcareService.providedBy [
+     fhir:link <http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers" ];
+     fhir:Reference.display [ fhir:value "Founding Fathers Memorial Hospital" ]
+  ];
+  fhir:HealthcareService.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/service-category" ];
+       fhir:Coding.code [ fhir:value "35" ];
+       fhir:Coding.display [ fhir:value "Hospital" ]
+     ]
+  ];
+  fhir:HealthcareService.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/service-type" ];
+       fhir:Coding.code [ fhir:value "165" ];
+       fhir:Coding.display [ fhir:value "Cardiology" ]
+     ]
+  ];
+  fhir:HealthcareService.specialty [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:394579002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "394579002" ];
+       fhir:Coding.display [ fhir:value "Cardiology" ]
+     ]
+  ];
+  fhir:HealthcareService.location [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/ig/vhdir/Location/location2>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ig/vhdir/Location/location2" ];
+     fhir:Reference.display [ fhir:value "Founding Fathers Memorial Hospital, Heart and Vascular Institute" ]
+  ];
+  fhir:HealthcareService.name [ fhir:value "Founding Fathers Memorial Hospital Heart and Vascular Services"];
+  fhir:HealthcareService.comment [ fhir:value "Cardiac surgery, heart failure, cardiac electrophysiology, vascular surgery, and cardiovascular research"];
+  fhir:HealthcareService.telecom [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Location/location2>;
+         fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ig/vhdir/Location/location2" ];
+         fhir:Reference.display [ fhir:value "Founding Fathers Memorial Hospital, Heart and Vascular Institute" ]
+       ]
+     ]
+  ];
+  fhir:HealthcareService.serviceProvisionCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/service-provision-conditions" ];
+       fhir:Coding.code [ fhir:value "cost" ];
+       fhir:Coding.display [ fhir:value "Fees apply" ]
+     ]
+  ];
+  fhir:HealthcareService.eligibility [
+     fhir:CodeableConcept.text [ fhir:value "None" ]
+  ];
+  fhir:HealthcareService.eligibilityNote [ fhir:value "No specific eligibility requirements"];
+  fhir:HealthcareService.referralMethod [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/service-referral-method" ];
+       fhir:Coding.code [ fhir:value "phone" ];
+       fhir:Coding.display [ fhir:value "phone" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/service-referral-method" ];
+       fhir:Coding.code [ fhir:value "fax" ];
+       fhir:Coding.display [ fhir:value "Fax" ]
+     ]
+  ];
+  fhir:HealthcareService.appointmentRequired [ fhir:value "true"^^xsd:boolean];
+  fhir:HealthcareService.availableTime [
+     fhir:index 0;
+     fhir:HealthcareService.availableTime.daysOfWeek [
+       fhir:value "mon";
+       fhir:index 0
+     ], [
+       fhir:value "tue";
+       fhir:index 1
+     ], [
+       fhir:value "wed";
+       fhir:index 2
+     ], [
+       fhir:value "thu";
+       fhir:index 3
+     ], [
+       fhir:value "fri";
+       fhir:index 4
+     ];
+     fhir:HealthcareService.availableTime.allDay [ fhir:value "false"^^xsd:boolean ];
+     fhir:HealthcareService.availableTime.availableStartTime [ fhir:value "08:00:00"^^xsd:time ];
+     fhir:HealthcareService.availableTime.availableEndTime [ fhir:value "18:00:00"^^xsd:time ]
+  ];
+  fhir:HealthcareService.availabilityExceptions [ fhir:value "No interventional cardiac procedures are scheduled on Wednesdays"];
+  fhir:HealthcareService.endpoint [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/ig/vhdir/Endpoint/direct321>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ig/vhdir/Endpoint/direct321" ];
+     fhir:Reference.display [ fhir:value "Direct address for the Founding Fathers Heart and Vascular Institute" ]
+  ] .
+
+<http://hl7.org/fhir/ig/vhdir/Network/patriotppo> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Location/location2> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Endpoint/direct321> a fhir:ig .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/HealthcareService/ffcardiology.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ig/vhdir/HealthcareService/ffcardiology.ttl> .
+
+# -------------------------------------------------------------------------------------
+

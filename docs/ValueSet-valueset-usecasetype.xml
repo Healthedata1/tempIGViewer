@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-usecasetype"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VhDir Use Case Type Value Set</h2><div><p>Codes for documenting business use case by a general grouping by business area.</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-codesystem-usecase.html"><code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-usecase</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-usecasetype"/>
+  <version value="0.2.0"/>
+  <name value="VhDir Use Case Type Value Set"/>
+  <title value="VhDir Use Case Type Value Set"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 - TBD"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Codes for documenting business use case by a general grouping by business area."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-usecase"/>
+    </include>
+  </compose>
+</ValueSet>

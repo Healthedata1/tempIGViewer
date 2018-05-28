@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-product-coveragearea",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-product-coveragearea\">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-product-coveragearea</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Product Coveragearea Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-product-coveragearea\">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-product-coveragearea</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Product Coveragearea Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>code</b>: product-coveragearea</p><p><b>base</b>: ProductPlan</p><p><b>type</b>: REFERENCE</p><p><b>expression</b>: ProductPlan.coverageArea</p></div>"
+  },
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-product-coveragearea",
+  "version": "0.0.0",
+  "name": "VHDir Product Coveragearea Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "****TODO****",
+  "code": "product-coveragearea",
+  "base": [
+    "ProductPlan"
+  ],
+  "type": "reference",
+  "expression": "ProductPlan.coverageArea"
+}

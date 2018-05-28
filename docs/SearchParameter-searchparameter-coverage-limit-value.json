@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-coverage-limit-value",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-limit-value\">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-limit-value</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Coverage Limit Value Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-limit-value\">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-limit-value</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Coverage Limit Value Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>code</b>: coverage-limit-value</p><p><b>base</b>: ProductPlan</p><p><b>type</b>: QUANTITY</p><p><b>expression</b>: ProductPlan.coverage.benefit.limits.limitValue</p></div>"
+  },
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-limit-value",
+  "version": "0.0.0",
+  "name": "VHDir Coverage Limit Value Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "****TODO****",
+  "code": "coverage-limit-value",
+  "base": [
+    "ProductPlan"
+  ],
+  "type": "quantity",
+  "expression": "ProductPlan.coverage.benefit.limits.limitValue"
+}

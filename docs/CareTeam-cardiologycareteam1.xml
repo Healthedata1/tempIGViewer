@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CareTeam xmlns="http://hl7.org/fhir">
+  <id value="cardiologycareteam1"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: Business ID = careteam0021 (SECONDARY)</p><p><b>status</b>: ACTIVE</p><p><b>category</b>: Condition <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/care-team-category code 'condition' = 'Condition', given as 'Condition'})</span></p><p><b>name</b>: Founding Fathers Heart and Vascular Institute Cardiology Care Team</p><p><b>period</b>: Jul 16, 2016 --&gt; (ongoing)</p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Role</b></td><td><b>Member</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>Cardiologist <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '17561000' = 'Cardiologist', given as 'Cardiologist'})</span></td><td><a href="http://hl7.org/fhir/ig/vhdir/PractitionerRole/practitionerrole1">George Washington, a cardiologist at the Founding Fathers Memorial Hospital Heart and Vascular Institute</a></td><td>Jul 16, 2016 --&gt; (ongoing)</td></tr></table><p><b>reasonCode</b>: Heart disease (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '56265001' = 'Disorder of heart', given as 'Heart disease (disorder)'})</span></p><p><b>managingOrganization</b>: <a href="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers">Founding Fathers Memorial Hospital</a></p><p><b>telecom</b>: heartteam@ffhospital.com(WORK)</p><p><b>note</b>: This care team was founded to optimize the management of complex cardiac cases</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias">
+    <valueString value="Founding Fathers Heart Team"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference">
+    <valueReference>
+      <reference value="http://hl7.org/fhir/ig/vhdir/Location/location2"/>
+      <display value="Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference">
+    <valueReference>
+      <reference value="http://hl7.org/fhir/ig/vhdir/HealthcareService/ffcardiology"/>
+      <display value="Founding Fathers Memorial Hospital Heart and Vascular Services"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference">
+    <valueReference>
+      <reference value="http://hl7.org/fhir/ig/vhdir/Endpoint/direct321"/>
+      <display value="Direct address for the Founding Fathers Heart and Vascular Institute"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status">
+      <valueCode value="active"/>
+    </extension>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/v2/0203"/>
+        <code value="PRN"/>
+        <display value="Provider number"/>
+      </coding>
+      <text value="Business ID"/>
+    </type>
+    <system value="www.foundingfathersmemorial.com"/>
+    <value value="careteam0021"/>
+    <period>
+      <start value="2016-07-16T09:00:00-05:00"/>
+    </period>
+    <assigner>
+      <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+      <display value="Founding Fathers Memorial Hospital"/>
+    </assigner>
+  </identifier>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/care-team-category"/>
+      <code value="condition"/>
+      <display value="Condition"/>
+      <userSelected value="true"/>
+    </coding>
+  </category>
+  <name value="Founding Fathers Heart and Vascular Institute Cardiology Care Team"/>
+  <period>
+    <start value="2016-07-16"/>
+  </period>
+  <participant>
+    <role>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="17561000"/>
+        <display value="Cardiologist"/>
+      </coding>
+    </role>
+    <member>
+      <reference value="http://hl7.org/fhir/ig/vhdir/PractitionerRole/practitionerrole1"/>
+      <display value="George Washington, a cardiologist at the Founding Fathers Memorial Hospital Heart and Vascular Institute"/>
+    </member>
+    <period>
+      <start value="2016-07-16"/>
+    </period>
+  </participant>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="56265001"/>
+      <display value="Heart disease (disorder)"/>
+    </coding>
+  </reasonCode>
+  <managingOrganization>
+    <reference value="http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers"/>
+    <display value="Founding Fathers Memorial Hospital"/>
+  </managingOrganization>
+  <telecom>
+    <system value="email"/>
+    <value value="heartteam@ffhospital.com"/>
+    <use value="work"/>
+  </telecom>
+  <note>
+    <authorString value="Founding Fathers Memorial Hospital"/>
+    <text value="This care team was founded to optimize the management of complex cardiac cases"/>
+  </note>
+</CareTeam>

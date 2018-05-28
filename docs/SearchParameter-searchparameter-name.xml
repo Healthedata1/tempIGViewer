@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="searchparameter-name"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <a href="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-name">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-name</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Name Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select care teams with the specified name</p><p><b>url</b>: <a href="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-name">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-name</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Name Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select care teams with the specified name</p><p><b>code</b>: name</p><p><b>base</b>: CareTeam</p><p><b>type</b>: STRING</p><p><b>expression</b>: CareTeam.name</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-name"/>
+  <version value="0.0.0"/>
+  <name value="VHDir Name Search Parameter"/>
+  <status value="draft"/>
+  <date value="2018-05-23"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Select care teams with the specified name"/>
+  <code value="name"/>
+  <base value="CareTeam"/>
+  <type value="string"/>
+  <expression value="CareTeam.name"/>
+</SearchParameter>

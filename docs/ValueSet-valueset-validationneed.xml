@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-validationneed"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VhDir Primary Source Validation Need</h2><div><p>Attested information may require validation once, on a periodic basis, or in the case of information that is only self attested no validation at all. This value set defines a set of codes that describe how often validation is needed, if at all.</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="CodeSystem-codesystem-validation.html"><code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-none">none</a></td><td>none</td><td>No validation needed/planned for this resource or element.</td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-initial">initial</a></td><td>Validation only needed once after initial attestation</td><td>Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'</td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-periodic">periodic</a></td><td>Validation is needed after initial attestation and on a periodic basis</td><td>Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed"/>
+  <version value="0.2.0"/>
+  <name value="VhDir Primary Source Validation Need"/>
+  <title value="VhDir Primary Source Validation Need"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 - TBD"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Attested information may require validation once, on a periodic basis, or in the case of information that is only self attested no validation at all. This value set defines a set of codes that describe how often validation is needed, if at all."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+      <concept>
+        <code value="none"/>
+      </concept>
+      <concept>
+        <code value="initial"/>
+      </concept>
+      <concept>
+        <code value="periodic"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,219 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "client",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>vhdir-client</h2><div><p>This profile defines the expected capabilities of the Validated Healthcare Directory Client conforming to the Validated Healthcare Directory IG.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b>Read</b></th><th><b>V-Read</b></th><th><b>Search</b></th><th><b>Update</b></th><th><b>Updates</b></th><th><b>Create</b></th><th><b>Delete</b></th><th><b>History</b></th></tr><tr><td>Location</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr><tr><td>Organization</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/ig/vhdir/CapabilityStatement/client",
+  "version": "0.2.0",
+  "name": "vhdir-client",
+  "title": "VhDir Validated Healthcare Directory Client",
+  "status": "active",
+  "date": "2017-08-04",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/SpecialCommittees/usrealm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "This profile defines the expected capabilities of the Validated Healthcare Directory Client conforming to the Validated Healthcare Directory IG.",
+  "kind": "requirements",
+  "fhirVersion": "3.0.1",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "client",
+      "resource": [
+        {
+          "type": "Location",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "search-type",
+              "documentation": "Allows discovery of existing US Core location resources using different search criteria."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "read",
+              "documentation": "Allows retrieval of a historical version of a US Core location instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance",
+              "documentation": "Allows review of changes to US Core Medication instance over time"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread",
+              "documentation": "Allows retrieval of a historical version of a US Core Medication instance"
+            }
+          ]
+        },
+        {
+          "type": "Organization",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "search-type",
+              "documentation": "Allows discovery of existing US Core organization resources using different search criteria"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "read",
+              "documentation": "Allows retrieval of a specific US Core organization by id"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance",
+              "documentation": "Allows review of changes to US Core organization instance over time"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread",
+              "documentation": "Allows retrieval of a historical version of a US Core organization instance"
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "search-type",
+              "documentation": "Allows discovery of existing US Core practitioner resources using different search criteria"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "read",
+              "documentation": "Allows retrieval of a specific US Core practitioner by id"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance",
+              "documentation": "Allows review of changes to US Core practitioner instance over time"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread",
+              "documentation": "Afllows retrieval of a historical version of a US Core practitioner instance"
+            }
+          ]
+        },
+        {
+          "type": "PractitionerRole",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "search-type",
+              "documentation": "Allows discovery of existing US Core practitioner resources using different search criteria"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "read",
+              "documentation": "Allows retrieval of a specific US Core practitioner by id"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance",
+              "documentation": "Allows review of changes to US Core practitioner instance over time"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread",
+              "documentation": "Afllows retrieval of a historical version of a US Core practitioner instance"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

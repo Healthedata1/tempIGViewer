@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-primarysourcefailureaction"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VhDir Primary Source Failure Action</h2><div><p>This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed.</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="CodeSystem-codesystem-validation.html"><code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-fatal">fatal</a></td><td>A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken.</td><td>to review</td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-warning">warning</a></td><td>A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization.</td><td>to review</td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-recordonly">recordonly</a></td><td>A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error.</td><td>to review</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcefailureaction"/>
+  <version value="0.2.0"/>
+  <name value="VhDir Primary Source Failure Action"/>
+  <title value="VhDir Primary Source Failure Action"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 - TBD"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+      <concept>
+        <code value="fatal"/>
+      </concept>
+      <concept>
+        <code value="warning"/>
+      </concept>
+      <concept>
+        <code value="recordonly"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

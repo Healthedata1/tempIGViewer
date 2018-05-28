@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcefailureaction> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "valueset-primarysourcefailureaction"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VhDir Primary Source Failure Action</h2><div><p>This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-codesystem-validation.html\"><code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-codesystem-validation.html#codesystem-validation-fatal\">fatal</a></td><td>A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken.</td><td>to review</td></tr><tr><td><a href=\"CodeSystem-codesystem-validation.html#codesystem-validation-warning\">warning</a></td><td>A failure that  may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization.</td><td>to review</td></tr><tr><td><a href=\"CodeSystem-codesystem-validation.html#codesystem-validation-recordonly\">recordonly</a></td><td>A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error.</td><td>to review</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcefailureaction"];
+  fhir:ValueSet.version [ fhir:value "0.2.0"];
+  fhir:ValueSet.name [ fhir:value "VhDir Primary Source Failure Action"];
+  fhir:ValueSet.title [ fhir:value "VhDir Primary Source Failure Action"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "HL7 - TBD"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/fhir" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This value set defines a set of codes that indicate the disposition of a primary source validation process that has failed."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "fatal" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "warning" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "recordonly" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcefailureaction.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ig/vhdir/ValueSet/valueset-primarysourcefailureaction.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "valueset-identifierstatus"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VhDir Identifier Status Value Set</h2><div><p>Codes for documenting the status of an identifier.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-codesystem-credentialstatus.html\"><code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-credentialstatus</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus"];
+  fhir:ValueSet.version [ fhir:value "0.2.0"];
+  fhir:ValueSet.name [ fhir:value "VhDir Identifier Status Value Set"];
+  fhir:ValueSet.title [ fhir:value "VhDir Identifier Status Value Set"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "HL7 - TBD"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/fhir" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codes for documenting the status of an identifier."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-credentialstatus" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ig/vhdir/ValueSet/valueset-identifierstatus.ttl> .
+
+# -------------------------------------------------------------------------------------
+

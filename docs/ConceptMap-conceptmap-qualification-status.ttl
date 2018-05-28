@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ConceptMap/conceptmap-qualification-status> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "conceptmap-qualification-status"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Qualification Status Value Set – Status Code Mapping (http://hl7.org/fhir/ig/vhdir/ConceptMap/conceptmap-qualification-status)</h2><p>Mapping from http://hl7.org/fhir/ig/vhdir/Valueset-valueset-qualificationstatus to <a href=\"http://build.fhir.org/valueset-resource-status.html\">http://hl7.org/fhir/ValueSet/resource-status</a></p><p>ACTIVE. Published on May 28, 2018 11:37:32 AM by VhDir. </p><div><p>Canonical Mapping for &quot;Codes for documenting the status of a qualification.&quot;</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Equivalence</b></td><td><b>Destination Code</b></td></tr><tr><td>active</td><td>equivalent</td><td>active</td></tr><tr><td>inactive</td><td>equivalent</td><td>inactive</td></tr><tr><td>issuedinerror</td><td>equivalent</td><td>error</td></tr><tr><td>revoked</td><td>equivalent</td><td>suspended</td></tr><tr><td>pending</td><td>equivalent</td><td>draft</td></tr></table></div>"
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/ConceptMap/conceptmap-qualification-status"];
+  fhir:ConceptMap.version [ fhir:value "0.2.0"];
+  fhir:ConceptMap.name [ fhir:value "Qualification Status Value Set – Status Code Mapping"];
+  fhir:ConceptMap.title [ fhir:value "VhDir Qualification Status Value Set – Status Code Mapping"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.date [ fhir:value "2018-05-28T11:37:32-07:00"^^xsd:dateTime];
+  fhir:ConceptMap.publisher [ fhir:value "VhDir"];
+  fhir:ConceptMap.description [ fhir:value "Canonical Mapping for \"Codes for documenting the status of a qualification.\""];
+  fhir:ConceptMap.sourceUri [ fhir:value "http://hl7.org/fhir/ig/vhdir/Valueset-valueset-qualificationstatus"];
+  fhir:ConceptMap.targetUri [ fhir:value "http://hl7.org/fhir/ValueSet/resource-status"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "hhttp://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-credentialstatus" ];
+     fhir:ConceptMap.group.target [ fhir:value "http://hl7.org/fhir/ValueSet/resource-status" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "active" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "active" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "active" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "active" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "inactive" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "inactive" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "inactive" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "inactive" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "issuedinerror" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "issuedinerror" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "error" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "error" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "revoked" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "revoked" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "suspended" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "suspended" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "pending" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "pending" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "draft" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "draft" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ConceptMap/conceptmap-qualification-status.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ig/vhdir/ConceptMap/conceptmap-qualification-status.ttl> .
+
+# -------------------------------------------------------------------------------------
+

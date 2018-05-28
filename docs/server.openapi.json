@@ -1,0 +1,423 @@
+﻿{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "VhDir Server",
+    "description": "This profile defines the expected capabilities of the US Core Server conforming to the US Core IG.",
+    "license": {
+      "name": "CC0-1.0"
+    },
+    "version": "0.2.0",
+    "contact": {}
+  },
+  "externalDocs": {
+    "url": "http://hl7.org/fhir/ig/vhdir/CapabilityStatement/server",
+    "description": "FHIR CapabilityStatement"
+  },
+  "paths": {
+    "/Location": {
+      "summary": "manage the collection of resources of type Location",
+      "description": "Access to services to manage the collection of all resources of type Location",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchLocation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Location/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Location",
+      "description": "Access to services to manage the state of a single resource of type Location",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readLocation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Location"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Location.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Location/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type Location",
+      "description": "Access to previous versions of a single resource of type Location",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadLocation",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Location"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Location.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Organization": {
+      "summary": "manage the collection of resources of type Organization",
+      "description": "Access to services to manage the collection of all resources of type Organization",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchOrganization",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Organization/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Organization",
+      "description": "Access to services to manage the state of a single resource of type Organization",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readOrganization",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Organization"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Organization.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Organization/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type Organization",
+      "description": "Access to previous versions of a single resource of type Organization",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadOrganization",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Organization"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Organization.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Practitioner": {
+      "summary": "manage the collection of resources of type Practitioner",
+      "description": "Access to services to manage the collection of all resources of type Practitioner",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchPractitioner",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Practitioner/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Practitioner",
+      "description": "Access to services to manage the state of a single resource of type Practitioner",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readPractitioner",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Practitioner"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Practitioner.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Practitioner/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type Practitioner",
+      "description": "Access to previous versions of a single resource of type Practitioner",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadPractitioner",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Practitioner"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Practitioner.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "searchparameter-network"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network\">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Network Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network\">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Network Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>code</b>: network</p><p><b>base</b>: PractitionerRole, ProductPlan</p><p><b>type</b>: REFERENCE</p><p><b>expression</b>: PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference')</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network"];
+  fhir:SearchParameter.version [ fhir:value "0.0.0"];
+  fhir:SearchParameter.name [ fhir:value "VHDir Network Search Parameter"];
+  fhir:SearchParameter.status [ fhir:value "draft"];
+  fhir:SearchParameter.date [ fhir:value "2018-05-23"^^xsd:date];
+  fhir:SearchParameter.publisher [ fhir:value "HL7 Patient Administration Committee"];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm/index.cfm" ]
+     ]
+  ];
+  fhir:SearchParameter.description [ fhir:value "****TODO****"];
+  fhir:SearchParameter.code [ fhir:value "network"];
+  fhir:SearchParameter.base [
+     fhir:value "PractitionerRole";
+     fhir:index 0
+  ], [
+     fhir:value "ProductPlan";
+     fhir:index 1
+  ];
+  fhir:SearchParameter.type [ fhir:value "reference"];
+  fhir:SearchParameter.expression [ fhir:value "PractitionerRole.extension('http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference')"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ig/vhdir/SearchParameter/searchparameter-network.ttl> .
+
+# -------------------------------------------------------------------------------------
+

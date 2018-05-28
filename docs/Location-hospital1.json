@@ -1,0 +1,171 @@
+{
+  "resourceType": "Location",
+  "id": "hospital1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: main campus (SECONDARY)</p><p><b>status</b>: ACTIVE</p><p><b>name</b>: Founding Fathers Memorial Hospital</p><p><b>description</b>: Main campus of Founding Fathers Memorial Hospital</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/RoleCode code 'HOSP' = 'Hospital', given as 'Hospital'})</span></p><p><b>telecom</b>: ph: 202-101-0123(WORK)</p><p><b>address</b>: 330 C Street SW, Washington, DC 20201, USA(WORK)</p><p><b>physicalType</b>: Site <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/location-physical-type code 'si' = 'Site', given as 'Site'})</span></p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>38.8859395</td><td>-77.016469</td></tr></table><p><b>managingOrganization</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers\">Founding Fathers Memorial Hospital</a></p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>MON</td><td>true</td></tr></table><p><b>availabilityExceptions</b>: visiting hours from 6:00 am - 10:00 pm</p><p><b>endpoint</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/Endpoint/e-12345\">Founding Fathers Memorial Hospital FHIR Server</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility",
+            "code": "handiaccess",
+            "display": "handicap accessible"
+          }
+        ],
+        "text": "Founding Fathers Memorial Hospital offers a variety of services and programs for persons with disabilities"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "developer",
+          "valueString": "Revolutionary Health"
+        },
+        {
+          "url": "product",
+          "valueString": "Revolutionary Professional EHR"
+        },
+        {
+          "url": "version",
+          "valueString": "10.4.3"
+        },
+        {
+          "url": "certificationEdition",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-ehrcharacteristics",
+            "code": "2014",
+            "display": "ONC 2014 Certification"
+          }
+        },
+        {
+          "url": "patientAccess",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-ehrcharacteristics",
+                "code": "portal",
+                "display": "patient portal"
+              }
+            ]
+          }
+        },
+        {
+          "url": "certificationID",
+          "valueString": "04282014-1111-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr"
+    }
+  ],
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ],
+      "use": "secondary",
+      "system": "www.foundingfathersmemorial.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers",
+        "display": "Founding Fathers Memorial Hospital"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "Founding Fathers Memorial Hospital",
+  "description": "Main campus of Founding Fathers Memorial Hospital",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/v3/RoleCode",
+          "code": "HOSP",
+          "display": "Hospital",
+          "userSelected": true
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "202-101-0123",
+      "use": "work",
+      "rank": 1
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "330 C Street SW, Washington, DC 20201, USA",
+    "line": [
+      "330 C Street SW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "postalCode": "20201",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/location-physical-type",
+        "code": "si",
+        "display": "Site",
+        "userSelected": true
+      }
+    ]
+  },
+  "position": {
+    "longitude": 38.8859395,
+    "latitude": -77.016469
+  },
+  "managingOrganization": {
+    "reference": "http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers",
+    "display": "Founding Fathers Memorial Hospital"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "endpoint": [
+    {
+      "reference": "http://hl7.org/fhir/ig/vhdir/Endpoint/e-12345",
+      "display": "Founding Fathers Memorial Hospital FHIR Server"
+    }
+  ]
+}

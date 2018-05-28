@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="womens-shelter"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2017-03-17T01:28:32.06+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/HealthcareService/hcs-ws"/>
+    <resource>
+      <HealthcareService>
+        <id value="hcs-ws"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>text</b>: </p><p><b>contained</b>: </p><p><b>active</b>: true</p><p><b>type</b>: Women's shelter <span style="background: LightGoldenRodYellow">(Details )</span></p><p><b>location</b>: <a href="#location_loc-ws">The W Womens Shelter. Generated Summary: ACTIVE; name: The W Womens Shelter; https://exmaple.org/The-W-shelter, ph: 555 administration</a></p><p><b>name</b>: Womens shelter</p><p><b>comment</b>: This is an example of a Women's shelter to demonstrate how to restrict multiple contents</p><p><b>telecom</b>: https://exmaple.org/The-W-shelter, ph: 555 wshelter</p></div>
+        </text>
+        <contained>
+          <Consent>
+            <id value="restrict"/>
+            <meta>
+              <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction"/>
+            </meta>
+            <status value="in-progress"/>
+            <category>
+              <text value="conditional release (per DUA)"/>
+            </category>
+            <dateTime value="2017-12-18"/>
+            <policy>
+              <uri value="http://example.org/federal/policy#womans-shelter"/>
+            </policy>
+            <provision>
+              <type value="permit"/>
+              <actor>
+                <role>
+                  <coding>
+                    <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+                    <code value="IRCP"/>
+                    <display value="information recipient"/>
+                  </coding>
+                </role>
+                <reference>
+                  <display value="Blue Team @ The W shelter (CareTeam)"/>
+                </reference>
+              </actor>
+              <action>
+                <text value="specific value"/>
+              </action>
+              <securityLabel>
+                <display value="womens-abuse-councellors"/>
+              </securityLabel>
+              <purpose>
+                <display value="Women&#39;s Shelter"/>
+              </purpose>
+            </provision>
+          </Consent>
+        </contained>
+        <active value="true"/>
+        <type>
+          <text value="Women&#39;s shelter"/>
+        </type>
+        <location>
+          <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction">
+            <valueReference>
+              <reference value="#restrict"/>
+            </valueReference>
+          </extension>
+          <reference value="Location/loc-ws"/>
+          <display value="The W Womens Shelter"/>
+        </location>
+        <name value="Womens shelter"/>
+        <comment value="This is an example of a Women&#39;s shelter to demonstrate how to restrict multiple contents"/>
+        <telecom>
+          <system value="url"/>
+          <value value="https://exmaple.org/The-W-shelter"/>
+        </telecom>
+        <telecom>
+          <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction">
+            <valueReference>
+              <reference value="#restrict"/>
+            </valueReference>
+          </extension>
+          <system value="phone"/>
+          <value value="555 wshelter"/>
+        </telecom>
+      </HealthcareService>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Location/loc-ws"/>
+    <resource>
+      <Location>
+        <id value="loc-ws"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>text</b>: </p><p><b>contained</b>: </p><p><b>status</b>: ACTIVE</p><p><b>name</b>: The W Womens Shelter</p><p><b>telecom</b>: https://exmaple.org/The-W-shelter, ph: 555 administration</p><p><b>address</b>: 3300 Washtenaw Avenue, Suite 227 Ann Arbor MI 48104 USA </p></div>
+        </text>
+        <contained>
+          <Consent>
+            <id value="restrict"/>
+            <meta>
+              <profile value="http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction"/>
+            </meta>
+            <status value="in-progress"/>
+            <category>
+              <text value="conditional release (per DUA)"/>
+            </category>
+            <dateTime value="2017-12-18"/>
+            <policy>
+              <uri value="http://example.org/federal/policy#womans-shelter"/>
+            </policy>
+            <provision>
+              <type value="permit"/>
+              <actor>
+                <role>
+                  <coding>
+                    <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+                    <code value="IRCP"/>
+                    <display value="information recipient"/>
+                  </coding>
+                </role>
+                <reference>
+                  <display value="Blue Team @ The W shelter (CareTeam)"/>
+                </reference>
+              </actor>
+              <action>
+                <text value="specific value"/>
+              </action>
+              <securityLabel>
+                <display value="womens-abuse-councellors"/>
+              </securityLabel>
+              <purpose>
+                <display value="Women&#39;s Shelter"/>
+              </purpose>
+            </provision>
+          </Consent>
+        </contained>
+        <status value="active"/>
+        <name value="The W Womens Shelter"/>
+        <telecom>
+          <system value="url"/>
+          <value value="https://exmaple.org/The-W-shelter"/>
+        </telecom>
+        <telecom>
+          <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction">
+            <valueReference>
+              <reference value="#restrict"/>
+            </valueReference>
+          </extension>
+          <system value="phone"/>
+          <value value="555 administration"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction">
+            <valueReference>
+              <reference value="#restrict"/>
+            </valueReference>
+          </extension>
+          <line value="3300 Washtenaw Avenue, Suite 227"/>
+          <city value="Ann Arbor"/>
+          <state value="MI"/>
+          <postalCode value="48104"/>
+          <country value="USA"/>
+        </address>
+      </Location>
+    </resource>
+  </entry>
+</Bundle>

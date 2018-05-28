@@ -1,0 +1,107 @@
+{
+  "resourceType": "VerificationResult",
+  "id": "ver1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>target</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1\">George Washington</a></p><p><b>targetLocation</b>: Practitioner.qualification[0]</p><p><b>need</b>: PERIODIC</p><p><b>status</b>: VALIDATED</p><p><b>statusDate</b>: Jan 23, 2018 10:45:00 AM</p><p><b>validationType</b>: PRIMARY</p><p><b>validationProcess</b>: primary source <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/validation-process code 'primary' = 'primary source', given as 'primary source'})</span></p><p><b>frequency</b>: Do Once per 1 years</p><p><b>lastPerformed</b>: Jan 23, 2018 10:45:00 AM</p><p><b>nextScheduled</b>: Jan 23, 2019</p><p><b>failureAction</b>: FATAL</p><h3>PrimarySources</h3><table class=\"grid\"><tr><td>-</td><td><b>Organization</b></td><td><b>Type</b></td><td><b>ValidationProcess</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td><td><b>CanPushUpdates</b></td><td><b>PushTypeAvailable</b></td></tr><tr><td>*</td><td><a href=\"http://hl7.org/fhir/ig/vhdir/Organization/dcbomed\">DC Board of Medicine</a></td><td>License Board <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/primary-source-type code 'lic-board' = 'License Board', given as 'License Board'})</span></td><td>via email <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/ig/vhdir/CodeSystem/validation-process code 'manual' = 'manual', given as 'Manual'})</span></td><td>SUCCESSFUL</td><td>Jan 23, 2018</td><td>YES</td><td>SOURCE</td></tr></table><h3>Attestations</h3><table class=\"grid\"><tr><td>-</td><td><b>Source</b></td><td><b>Method</b></td><td><b>Date</b></td><td><b>SourceIdentityCertificate</b></td></tr><tr><td>*</td><td><a href=\"http://hl7.org/fhir/ig/vhdir/Practitioner/prac1\">George Washington</a></td><td>Owner <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/ig/vhdir/CodeSystem/attestation-method code 'owner' = 'owner', given as 'Owner'})</span></td><td>Jan 9, 2018</td><td>TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==</td></tr></table><h3>Validators</h3><table class=\"grid\"><tr><td>-</td><td><b>Organization</b></td><td><b>IdentityCertificate</b></td></tr><tr><td>*</td><td><a href=\"http://hl7.org/fhir/ig/vhdir/Organization/dcbomed\">DC Board of Medicine</a></td><td>VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t</td></tr></table></div>"
+  },
+  "target": [
+    {
+      "reference": "http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1",
+      "display": "George Washington"
+    }
+  ],
+  "targetLocation": [
+    "Practitioner.qualification[0]"
+  ],
+  "need": "periodic",
+  "status": "validated",
+  "statusDate": "2018-01-23T10:45:00-05:00",
+  "validationType": "primary",
+  "validationProcess": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/validation-process",
+          "code": "primary",
+          "display": "primary source"
+        }
+      ]
+    }
+  ],
+  "frequency": {
+    "repeat": {
+      "frequency": 1,
+      "period": 1,
+      "periodUnit": "a"
+    }
+  },
+  "lastPerformed": "2018-01-23T10:45:00-05:00",
+  "nextScheduled": "2019-01-23",
+  "failureAction": "fatal",
+  "primarySource": [
+    {
+      "organization": {
+        "reference": "http://hl7.org/fhir/ig/vhdir/Organization/dcbomed",
+        "display": "DC Board of Medicine"
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/primary-source-type",
+              "code": "lic-board",
+              "display": "License Board",
+              "userSelected": true
+            }
+          ]
+        }
+      ],
+      "validationProcess": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ig/vhdir/CodeSystem/validation-process",
+              "code": "manual",
+              "display": "Manual"
+            }
+          ],
+          "text": "via email"
+        }
+      ],
+      "validationStatus": "successful",
+      "validationDate": "2018-01-23",
+      "canPushUpdates": "yes",
+      "pushTypeAvailable": [
+        "source"
+      ]
+    }
+  ],
+  "attestation": {
+    "source": {
+      "reference": "http://hl7.org/fhir/ig/vhdir/Practitioner/prac1",
+      "display": "George Washington"
+    },
+    "method": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/ig/vhdir/CodeSystem/attestation-method",
+          "code": "owner",
+          "display": "Owner",
+          "userSelected": true
+        }
+      ]
+    },
+    "date": "2018-01-09",
+    "sourceIdentityCertificate": "TXkgbmFtZSBpcyBHZW9yZ2UgV2FzaGluZ3Rvbi4gVGhpcyBpcyBteSBjZXJ0aWZpY2F0ZS4gDQoNCi0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tDQpNSUdlTUEwR0NTcUdTSWIzRFFFQkFRVUFBNEdNQURDQmlBS0JnRkZLcjVGazJla2dYSjdwUXpKVzBWdm9NZzQ4DQpldk1DTUFTbk95M09rS1VyZlIwSGZHTmRUS216L3VpcWVjOGR3U1E5NFpKR3Njd3FzczVScmtYNkEzUHZsZmM3DQpkdlJNQlBxYzdsKzRrOHN5b2t4bzh4SW8vN0hLOE1kWW45dlhId1k5VWxGZDduRjZsbWN0Nzd3THMxNWdrZjN1DQpHVXErZ1RDV3hnZlYzbm05QWdNQkFBRT0NCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ=="
+  },
+  "validator": [
+    {
+      "organization": {
+        "reference": "http://hl7.org/fhir/ig/vhdir/Organization/dcbomed",
+        "display": "DC Board of Medicine"
+      },
+      "identityCertificate": "VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBvZiB0aGUgREMgQm9hcmQgb2YgTWVkaWNpbmUNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2VPaTJyeW9Ed2dQamZMNGsySlhzZGdhYWkNCk9NYWkreXNrK2FEb2FOTTloVDJXMVhjOTlkM0NpRHFIWlV0bTJoR09uWHg4eVJPQVNhSVVsZ1FFL1FoMVN6SWMNCldNb1RLQnNWTlVrckdPdkVDQTZKRnFoVjdMM2hHNDViNDJTQVpkZTlDLzRTaklzSVpPT1JVa1dYRmhhaHFYMnENCk05WDFySG4vcnQ0eGlXa2tpd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t"
+    }
+  ]
+}

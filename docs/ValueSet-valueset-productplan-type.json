@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-productplan-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VhDir Product Plan Type</h2><div><p>This value set defines a set of codes that indicate the type of a product plan.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>medical</td><td/><td/></tr><tr><td>dental</td><td/><td/></tr><tr><td>menthlth</td><td/><td/></tr><tr><td>substanceabuse</td><td/><td/></tr><tr><td>vision</td><td/><td/></tr><tr><td>drug</td><td/><td/></tr><tr><td>stc</td><td/><td/></tr><tr><td>ltc</td><td/><td/></tr><tr><td>hospice</td><td/><td/></tr><tr><td>homehealth</td><td/><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-productplan-type",
+  "version": "0.2.0",
+  "name": "VhDir Product Plan Type",
+  "title": "VhDir Product Plan Type",
+  "status": "active",
+  "date": "2018-02-21",
+  "publisher": "HL7 - TBD",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set defines a set of codes that indicate the type of a product plan.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payorcharacteristics",
+        "concept": [
+          {
+            "code": "medical"
+          },
+          {
+            "code": "dental"
+          },
+          {
+            "code": "menthlth"
+          },
+          {
+            "code": "substanceabuse"
+          },
+          {
+            "code": "vision"
+          },
+          {
+            "code": "drug"
+          },
+          {
+            "code": "stc"
+          },
+          {
+            "code": "ltc"
+          },
+          {
+            "code": "hospice"
+          },
+          {
+            "code": "homehealth"
+          }
+        ]
+      }
+    ]
+  }
+}

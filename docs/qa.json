@@ -1,0 +1,10 @@
+﻿{
+  "url" : "http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig",
+  "name" : "Validated Healthcare Directory",
+  "date" : "Mon, 28 May, 2018 11:37:32 -0700",
+  "errs" : "178",
+  "warnings" : "20",
+  "hints" : "244",
+  "version" : "3.4.0",
+  "tool" : "3.4.0-13690"
+}

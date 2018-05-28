@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-primarysourcevalidationprocess"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VhDir Primary Source Validation Process</h2><div><p>Attested information may be validated by process that are manual or automated. For automated processes it may accomplished by the system of record reaching out through another system's API or information may be sent to the system of record. This value set defines a set of codes to describing the process, the how, a resource or data element is validated.</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="CodeSystem-codesystem-validation.html"><code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-manual">manual</a></td><td>Manual</td><td>The resource or element is validated manually.</td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-api">api</a></td><td>API</td><td>The resource or element is validated via an application programming interface (API).</td></tr><tr><td><a href="CodeSystem-codesystem-validation.html#codesystem-validation-push">push</a></td><td>Push</td><td>Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess"/>
+  <version value="0.2.0"/>
+  <name value="VhDir Primary Source Validation Process"/>
+  <title value="VhDir Primary Source Validation Process"/>
+  <status value="active"/>
+  <date value="2018-02-21"/>
+  <publisher value="HL7 - TBD"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Attested information may be validated by process that are manual or automated. For automated processes it may accomplished by the system of record reaching out through another system&#39;s API or information may be sent to the system of record. This value set defines a set of codes to describing the process, the how, a resource or data element is validated."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation"/>
+      <concept>
+        <code value="manual"/>
+      </concept>
+      <concept>
+        <code value="api"/>
+      </concept>
+      <concept>
+        <code value="push"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="searchparameter-general-costs-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <a href="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-type">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-type</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir General Costs Type Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>url</b>: <a href="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-type">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-type</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir General Costs Type Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>code</b>: general-costs-type</p><p><b>base</b>: ProductPlan</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: ProductPlan.plan.generalCosts.type</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-type"/>
+  <version value="0.0.0"/>
+  <name value="VHDir General Costs Type Search Parameter"/>
+  <status value="draft"/>
+  <date value="2018-05-23"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="****TODO****"/>
+  <code value="general-costs-type"/>
+  <base value="ProductPlan"/>
+  <type value="token"/>
+  <expression value="ProductPlan.plan.generalCosts.type"/>
+</SearchParameter>

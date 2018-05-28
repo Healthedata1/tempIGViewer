@@ -1,0 +1,2040 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ig"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Validated Healthcare Directory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig</pre></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
+  fhir:ImplementationGuide.name [ fhir:value "Validated Healthcare Directory"];
+  fhir:ImplementationGuide.status [ fhir:value "active"];
+  fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Administration Committee"];
+  fhir:ImplementationGuide.copyright [ fhir:value "Used by permission of HL7 Patient Administration Committee, all rights reserved Creative Commons License"];
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.4.0"];
+  fhir:ImplementationGuide.definition [
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-womens-shelter.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Bundle/womens-shelter>;
+         fhir:Reference.reference [ fhir:value "Bundle/womens-shelter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "VerificationResult-ver1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/VerificationResult/ver1>;
+         fhir:Reference.reference [ fhir:value "VerificationResult/ver1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-practitioner1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "PractitionerRole-practitionerrole1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/PractitionerRole/practitionerrole1>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/practitionerrole1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "OrganizationRole-orgrole1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/OrganizationRole/orgrole1>;
+         fhir:Reference.reference [ fhir:value "OrganizationRole/orgrole1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "OrganizationRole-orgrole2.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/OrganizationRole/orgrole2>;
+         fhir:Reference.reference [ fhir:value "OrganizationRole/orgrole2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-foundingfathers.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers>;
+         fhir:Reference.reference [ fhir:value "Organization/foundingfathers" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-patriotppo.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Organization/patriotppo>;
+         fhir:Reference.reference [ fhir:value "Organization/patriotppo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Location-loc-ws.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Location/loc-ws>;
+         fhir:Reference.reference [ fhir:value "Location/loc-ws" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Location-hospital1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Location/hospital1>;
+         fhir:Reference.reference [ fhir:value "Location/hospital1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "HealthcareService-hcs-ws.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/HealthcareService/hcs-ws>;
+         fhir:Reference.reference [ fhir:value "HealthcareService/hcs-ws" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "HealthcareService-ffcardiology.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/HealthcareService/ffcardiology>;
+         fhir:Reference.reference [ fhir:value "HealthcareService/ffcardiology" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Endpoint-direct321.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/Endpoint/direct321>;
+         fhir:Reference.reference [ fhir:value "Endpoint/direct321" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CareTeam-cardiologycareteam1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CareTeam/cardiologycareteam1>;
+         fhir:Reference.reference [ fhir:value "CareTeam/cardiologycareteam1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-validation.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-validation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-validation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-restriction.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-restriction" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-productplan.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productplan>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-productplan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-practitionerrole.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-practitionerrole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-practitioner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-organizationrole.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-organizationrole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-healthcareservice.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-healthcareservice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-vhdir-careteam.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vhdir-careteam" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-validationneed.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-validationneed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-usecasetype.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-usecasetype>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-usecasetype" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-qualificationstatus.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-qualificationstatus" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-productplan-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-productplan-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-productplan-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-primarysourcevalidationstatus.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-primarysourcevalidationstatus" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-primarysourcevalidationprocess.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-primarysourcevalidationprocess" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-primarysourcepushtype.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-primarysourcepushtype" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-primarysourcepush.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepush>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-primarysourcepush" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-primarysourcefailureaction.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcefailureaction>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-primarysourcefailureaction" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-plan-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-plan-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-plan-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-patientaccess.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-patientaccess>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-patientaccess" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-network-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-network-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-network-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-limit-unit.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-limit-unit>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-limit-unit" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-languageproficiency.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-languageproficiency>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-languageproficiency" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-identifierstatus.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-identifierstatus" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-identifier-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifier-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-identifier-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-externalvalidationtype.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-externalvalidationtype" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-digitalcertificateuse.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-digitalcertificateuse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-digitalcertificatetype.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetype>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-digitalcertificatetype" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-digitalcertificatetrustframework.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetrustframework>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-digitalcertificatetrustframework" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-digitalcertificatestandard.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatestandard>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-digitalcertificatestandard" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-coverage-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-coverage-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-certificationedition.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-certificationedition>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-certificationedition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-benefit-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-benefit-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-benefit-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-attestationmethod.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-attestationmethod>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-attestationmethod" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-aliastype.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-aliastype>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-aliastype" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-valueset-accessibility.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility>;
+         fhir:Reference.reference [ fhir:value "ValueSet/valueset-accessibility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-usage-restriction.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/usage-restriction" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-validator-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-validator-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-validator-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-usecase-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-usecase-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-usecase-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-usecase-standard.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-usecase-standard>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-usecase-standard" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-target-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-target-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-target-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-status-date.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-status-date>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-status-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-specific-costs-value.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-value>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-specific-costs-value" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-specific-costs-cost-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-cost-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-specific-costs-cost-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-specific-costs-category.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-category>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-specific-costs-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-specific-costs-benefit-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-benefit-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-specific-costs-benefit-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-specific-costs-applicability.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-applicability>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-specific-costs-applicability" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-specialty.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specialty>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-specialty" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-service.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-service>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-service" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-qualification-wherevalid-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-wherevalid-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-qualification-wherevalid-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-qualification-wherevalid-code.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-wherevalid-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-qualification-wherevalid-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-qualification-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-qualification-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-qualification-issuer.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-issuer>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-qualification-issuer" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-qualification-code.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-qualification-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-product-coveragearea.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-product-coveragearea>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-product-coveragearea" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-primarysource-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-primarysource-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-primarysource-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-primarysource-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-primarysource-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-primarysource-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-primarysource-date.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-primarysource-date>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-primarysource-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-plan-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-plan-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-plan-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-plan-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-plan-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-plan-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-plan-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-plan-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-plan-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-plan-coveragearea.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-plan-coveragearea>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-plan-coveragearea" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-note-author.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-note-author>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-note-author" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-newpatients.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-newpatients>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-newpatients" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-name.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-mime-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-mime-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-mime-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-member.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-member>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-member" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-general-costs-value.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-value>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-general-costs-value" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-general-costs-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-general-costs-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-general-costs-participants.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-participants>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-general-costs-participants" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-eligibility.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-eligibility>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-eligibility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-coveragearea.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coveragearea>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-coveragearea" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-coverage-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-coverage-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-coverage-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-coverage-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-coverage-limit-value.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-limit-value>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-coverage-limit-value" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-coverage-benefit-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-benefit-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-coverage-benefit-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-coverage-area.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-area>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-coverage-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-attestation-source.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-attestation-source>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-attestation-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-attestation-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-attestation-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-attestation-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-attestation-method.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-attestation-method>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-attestation-method" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-alias.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-alias>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-alias" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-searchparameter-accessibility.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-accessibility>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/searchparameter-accessibility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-qualification.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/qualification" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-productplan-reference.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/productplan-reference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/productplan-reference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-practitioner-qualification.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/practitioner-qualification" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-org-description.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-description>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/org-description" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-org-alias-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/org-alias-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-org-alias-period.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/org-alias-period" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-newpatients.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/newpatients" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-newpatientprofile.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/newpatientprofile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-network-reference.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/network-reference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 115;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-location-reference.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/location-reference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 116;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-identifier-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/identifier-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-healthcareservice-reference.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/healthcareservice-reference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-endpoint-usecase.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/endpoint-usecase" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-endpoint-reference.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/endpoint-reference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-endpoint-rank.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/endpoint-rank" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-ehr.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ehr" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-digitalcertificate.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/digitalcertificate" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-contactpoint-viaintermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/contactpoint-viaintermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-contactpoint-availabletime.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/contactpoint-availabletime" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ConceptMap-conceptmap-qualification-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/ConceptMap/conceptmap-qualification-status>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/conceptmap-qualification-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-communication-proficiency.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-proficiency" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-validation.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-validation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-usecase.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-usecase>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-usecase" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-primarysource.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-primarysource>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-primarysource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-payercharacteristics.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payercharacteristics>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-payercharacteristics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-organizationdemographics.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-organizationdemographics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-network-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-network-type>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-network-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-languageproficiency.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-languageproficiency>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-languageproficiency" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-ehrcharacteristics.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-ehrcharacteristics>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-ehrcharacteristics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-digitalcertificate.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-digitalcertificate" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-credentialstatus.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-credentialstatus>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-credentialstatus" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-codesystem-accessibility.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/codesystem-accessibility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-careteam-alias.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/careteam-alias" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-server.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CapabilityStatement/server>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-client.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/CapabilityStatement/client>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/client" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-boundary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/boundary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-accessibility.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/accessibility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.md" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Validated Healthcare Directory Homepage" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/ig/vhdir/Bundle/womens-shelter> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/VerificationResult/ver1> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Practitioner/practitioner1> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/PractitionerRole/practitionerrole1> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/OrganizationRole/orgrole1> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/OrganizationRole/orgrole2> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Organization/foundingfathers> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Organization/patriotppo> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Location/loc-ws> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Location/hospital1> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/HealthcareService/hcs-ws> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/HealthcareService/ffcardiology> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/Endpoint/direct321> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CareTeam/cardiologycareteam1> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-validation> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-restriction> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-productplan> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitionerrole> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-practitioner> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organizationrole> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-organization> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-network> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-location> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-healthcareservice> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-endpoint> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/vhdir-careteam> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-validationneed> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-usecasetype> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-qualificationstatus> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-productplan-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationstatus> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcevalidationprocess> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepushtype> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcepush> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-primarysourcefailureaction> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-plan-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-patientaccess> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-network-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-limit-unit> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-languageproficiency> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifierstatus> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-identifier-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-externalvalidationtype> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetype> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatetrustframework> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificatestandard> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-certificationedition> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-benefit-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-attestationmethod> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-aliastype> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-accessibility> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/usage-restriction> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-via-intermediary> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-validator-organization> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-usecase-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-usecase-standard> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-target-location> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-status> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-status-date> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-value> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-cost-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-category> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-benefit-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specific-costs-applicability> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-specialty> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-service> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-wherevalid-location> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-wherevalid-code> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-status> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-issuer> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-qualification-code> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-product-coveragearea> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-primarysource-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-primarysource-organization> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-primarysource-date> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-plan-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-plan-network> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-plan-identifier> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-plan-coveragearea> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-organization> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-note-author> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-newpatients> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-network> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-name> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-mime-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-member> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-location> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-identifier-assigner> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-value> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-general-costs-participants> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-endpoint> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-eligibility> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coveragearea> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-network> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-limit-value> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-benefit-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-area> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-attestation-source> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-attestation-organization> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-attestation-method> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-alias> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-accessibility> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/qualification> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/productplan-reference> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/practitioner-qualification> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-description> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/org-alias-period> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatients> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/newpatientprofile> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/network-reference> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/location-reference> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/identifier-status> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/healthcareservice-reference> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-usecase> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-reference> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/endpoint-rank> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/ehr> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/digitalcertificate> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-viaintermediary> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/contactpoint-availabletime> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/ConceptMap/conceptmap-qualification-status> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/communication-proficiency> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-validation> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-usecase> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-primarysource> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payercharacteristics> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-organizationdemographics> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-network-type> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-languageproficiency> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-ehrcharacteristics> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-credentialstatus> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-accessibility> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/careteam-alias> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CapabilityStatement/server> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/CapabilityStatement/client> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/boundary> a fhir:ig .
+
+<http://hl7.org/fhir/ig/vhdir/StructureDefinition/accessibility> a fhir:ig .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ig/vhdir/ImplementationGuide/ig.ttl> .
+
+# -------------------------------------------------------------------------------------
+

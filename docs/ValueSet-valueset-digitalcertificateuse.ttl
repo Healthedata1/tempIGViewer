@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "valueset-digitalcertificateuse"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VhDir Digital Certificate Use Value Set</h2><div><p>This value set defines the purpose of the key contained in a public key certificate.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-codesystem-digitalcertificate.html\"><code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-codesystem-digitalcertificate.html#codesystem-digitalcertificate-signing\">signing</a></td><td>Signing</td><td>A certificate issued for the purpose of digitally signing information to confirm the author and guarantee that the content has not been altered or corrupted since it was signed by use of a cryptographic hash.</td></tr><tr><td><a href=\"CodeSystem-codesystem-digitalcertificate.html#codesystem-digitalcertificate-encrypt\">encrypt</a></td><td>Encryption</td><td>A certificate containing a public key that can encrypt or decrypt electronic messages, files, documents, or data transmissions, or establish or exchange a session key for these same purposes.</td></tr><tr><td><a href=\"CodeSystem-codesystem-digitalcertificate.html#codesystem-digitalcertificate-auth\">auth</a></td><td>Authentication</td><td>A certificate which can be used to obtain assurance of the accuracy of the claimed identity of an entity.</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse"];
+  fhir:ValueSet.version [ fhir:value "0.2.0"];
+  fhir:ValueSet.name [ fhir:value "VhDir Digital Certificate Use Value Set"];
+  fhir:ValueSet.title [ fhir:value "VhDir Digital Certificate Use Value Set"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "HL7 - TBD"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/fhir" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This value set defines the purpose of the key contained in a public key certificate."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-digitalcertificate" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "signing" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "encrypt" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "auth" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-digitalcertificateuse.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ig/vhdir/ValueSet/valueset-digitalcertificateuse.ttl> .
+
+# -------------------------------------------------------------------------------------
+

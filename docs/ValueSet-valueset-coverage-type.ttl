@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "valueset-coverage-type"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VhDir Coverage Type</h2><div><p>This value set defines a set of codes that indicate the type of coverage of a plan.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-codesystem-payercharacteristics.html\"><code>http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payercharacteristics</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-medical\">medical</a></td><td>Medical</td><td>Type of insurance plan that covers medical services.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-dental\">dental</a></td><td>Dental</td><td>Type of insurance plan that covers dental services.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-mentHlth\">mentHlth</a></td><td>Mental Health</td><td>Mental health insurance coverage.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-substanceabuse\">substanceabuse</a></td><td>Substance Abuse</td><td>Type of insurance plan that covers substance abuse services.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-vision\">vision</a></td><td>Vision</td><td>Type of insurance plan that covers vision services.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-drug\">drug</a></td><td>Drug</td><td>Type of insurance plan that covers prescription drugs.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-stc\">stc</a></td><td>Short Term Care</td><td>Type of insurance plan that covers short term care.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-ltc\">ltc</a></td><td>Long Term Care</td><td>Type of insurance plan that covers long term care.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-hospice\">hospice</a></td><td>Hospice</td><td>Type of insurance plan that covers hospice services.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-homehealth\">homehealth</a></td><td>Home Health</td><td>Type of insurance plan that covers home health services.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-dmepos\">dmepos</a></td><td>DMEPOS</td><td>Durable Medical Equipment, Prosthetics/Orthotics and Supplies.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-imagingadv\">imagingadv</a></td><td>Advanced Imaging (CT/PET Scans, MRIs)</td><td>Advances imaging techniques services (CT/PET Scans, MRIs) coverage.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-prev\">prev</a></td><td>Preventive Care/Screening/Immunization</td><td>Preventive Care/Screening/Immunization.</td></tr><tr><td><a href=\"CodeSystem-codesystem-payercharacteristics.html#codesystem-payercharacteristics-rehab\">rehab</a></td><td>Rehabilitation</td><td>Rehabilitation.</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type"];
+  fhir:ValueSet.version [ fhir:value "0.2.0"];
+  fhir:ValueSet.name [ fhir:value "VhDir Coverage Type"];
+  fhir:ValueSet.title [ fhir:value "VhDir Coverage Type"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2018-02-21"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "HL7 - TBD"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/fhir" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This value set defines a set of codes that indicate the type of coverage of a plan."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ig/vhdir/CodeSystem/codesystem-payercharacteristics" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "medical" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dental" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mentHlth" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "substanceabuse" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "vision" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "drug" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stc" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ltc" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hospice" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "homehealth" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dmepos" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "imagingadv" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "prev" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "rehab" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ig/vhdir/ValueSet/valueset-coverage-type.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ig/vhdir/ValueSet/valueset-coverage-type.ttl> .
+
+# -------------------------------------------------------------------------------------
+

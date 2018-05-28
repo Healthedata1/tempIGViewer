@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Validated Healthcare Directory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig</pre></div>
+  </text>
+  <url value="http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig"/>
+  <version value="0.2.0"/>
+  <name value="Validated Healthcare Directory"/>
+  <status value="active"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <copyright value="Used by permission of HL7 Patient Administration Committee, all rights reserved Creative Commons License"/>
+  <fhirVersion value="3.4.0"/>
+  <definition>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-womens-shelter.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/womens-shelter"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="VerificationResult-ver1.html"/>
+      </extension>
+      <reference>
+        <reference value="VerificationResult/ver1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-practitioner1.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="PractitionerRole-practitionerrole1.html"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/practitionerrole1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OrganizationRole-orgrole1.html"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationRole/orgrole1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OrganizationRole-orgrole2.html"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationRole/orgrole2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-foundingfathers.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/foundingfathers"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-patriotppo.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/patriotppo"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Location-loc-ws.html"/>
+      </extension>
+      <reference>
+        <reference value="Location/loc-ws"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Location-hospital1.html"/>
+      </extension>
+      <reference>
+        <reference value="Location/hospital1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="HealthcareService-hcs-ws.html"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/hcs-ws"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="HealthcareService-ffcardiology.html"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/ffcardiology"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Endpoint-direct321.html"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/direct321"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CareTeam-cardiologycareteam1.html"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/cardiologycareteam1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-validation.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-validation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-restriction.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-restriction"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-productplan.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-productplan"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-practitionerrole.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-practitionerrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-practitioner.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-practitioner"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-organizationrole.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-organizationrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-organization"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-network.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-network"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-location.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-location"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-healthcareservice.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-healthcareservice"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-endpoint"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-vhdir-careteam.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vhdir-careteam"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-validationneed.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-validationneed"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-usecasetype.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-usecasetype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-qualificationstatus.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-qualificationstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-productplan-type.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-productplan-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-primarysourcevalidationstatus.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-primarysourcevalidationstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-primarysourcevalidationprocess.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-primarysourcevalidationprocess"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-primarysourcepushtype.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-primarysourcepushtype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-primarysourcepush.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-primarysourcepush"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-primarysourcefailureaction.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-primarysourcefailureaction"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-plan-type.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-plan-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-patientaccess.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-patientaccess"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-network-type.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-network-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-limit-unit.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-limit-unit"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-languageproficiency.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-languageproficiency"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-identifierstatus.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-identifierstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-identifier-type.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-identifier-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-externalvalidationtype.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-externalvalidationtype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-digitalcertificateuse.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-digitalcertificateuse"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-digitalcertificatetype.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-digitalcertificatetype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-digitalcertificatetrustframework.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-digitalcertificatetrustframework"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-digitalcertificatestandard.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-digitalcertificatestandard"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-coverage-type.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-coverage-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-certificationedition.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-certificationedition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-benefit-type.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-benefit-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-attestationmethod.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-attestationmethod"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-aliastype.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-aliastype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-valueset-accessibility.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-accessibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-usage-restriction.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/usage-restriction"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-via-intermediary"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-validator-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-validator-organization"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-usecase-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-usecase-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-usecase-standard.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-usecase-standard"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-target-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-target-location"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-status"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-status-date.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-status-date"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-specific-costs-value.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-specific-costs-value"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-specific-costs-cost-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-specific-costs-cost-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-specific-costs-category.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-specific-costs-category"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-specific-costs-benefit-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-specific-costs-benefit-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-specific-costs-applicability.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-specific-costs-applicability"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-specialty.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-specialty"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-service.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-service"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-qualification-wherevalid-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-qualification-wherevalid-location"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-qualification-wherevalid-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-qualification-wherevalid-code"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-qualification-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-qualification-status"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-qualification-issuer.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-qualification-issuer"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-qualification-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-qualification-code"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-product-coveragearea.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-product-coveragearea"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-primarysource-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-primarysource-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-primarysource-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-primarysource-organization"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-primarysource-date.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-primarysource-date"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-plan-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-plan-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-plan-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-plan-network"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-plan-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-plan-identifier"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-plan-coveragearea.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-plan-coveragearea"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-organization"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-note-author.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-note-author"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-newpatients.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-newpatients"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-network"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-name.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-name"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-mime-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-mime-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-member.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-member"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-location"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-identifier-assigner"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-general-costs-value.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-general-costs-value"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-general-costs-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-general-costs-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-general-costs-participants.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-general-costs-participants"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-endpoint"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-eligibility.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-eligibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-coveragearea.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-coveragearea"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-coverage-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-coverage-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-coverage-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-coverage-network"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-coverage-limit-value.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-coverage-limit-value"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-coverage-benefit-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-coverage-benefit-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-coverage-area.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-coverage-area"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-attestation-source.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-attestation-source"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-attestation-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-attestation-organization"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-attestation-method.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-attestation-method"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-alias.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-alias"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-accessibility.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-accessibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-qualification.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/qualification"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-productplan-reference.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/productplan-reference"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-practitioner-qualification.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-qualification"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-org-description.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/org-description"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-org-alias-type.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/org-alias-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-org-alias-period.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/org-alias-period"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-newpatients.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/newpatients"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-newpatientprofile.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/newpatientprofile"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-network-reference.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/network-reference"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-location-reference.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/location-reference"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-identifier-status.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/identifier-status"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-healthcareservice-reference.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/healthcareservice-reference"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-endpoint-usecase.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/endpoint-usecase"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-endpoint-reference.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/endpoint-reference"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-endpoint-rank.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/endpoint-rank"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ehr.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ehr"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-digitalcertificate.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/digitalcertificate"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-contactpoint-viaintermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contactpoint-viaintermediary"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-contactpoint-availabletime.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contactpoint-availabletime"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ConceptMap-conceptmap-qualification-status.html"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/conceptmap-qualification-status"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-communication-proficiency.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-proficiency"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-validation.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-validation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-usecase.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-usecase"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-primarysource.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-primarysource"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-payercharacteristics.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-payercharacteristics"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-organizationdemographics.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-organizationdemographics"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-network-type.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-network-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-languageproficiency.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-languageproficiency"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-ehrcharacteristics.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-ehrcharacteristics"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-digitalcertificate.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-digitalcertificate"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-credentialstatus.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-credentialstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-codesystem-accessibility.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codesystem-accessibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-careteam-alias.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careteam-alias"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-server.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/server"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-client.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/client"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-boundary.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/boundary"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-accessibility.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/accessibility"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.md"/>
+      <title value="Validated Healthcare Directory Homepage"/>
+      <generation value="markdown"/>
+    </page>
+  </definition>
+</ImplementationGuide>

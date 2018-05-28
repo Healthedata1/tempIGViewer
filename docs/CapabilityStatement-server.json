@@ -1,0 +1,257 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "server",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>vhdir-server</h2><div><p>This profile defines the expected capabilities of the US Core Server conforming to the US Core IG.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b>Read</b></th><th><b>V-Read</b></th><th><b>Search</b></th><th><b>Update</b></th><th><b>Updates</b></th><th><b>Create</b></th><th><b>Delete</b></th><th><b>History</b></th></tr><tr><td>Location</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr><tr><td>Organization</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/ig/vhdir/CapabilityStatement/server",
+  "version": "0.2.0",
+  "name": "vhdir-server",
+  "title": "VhDir Server",
+  "status": "active",
+  "date": "2017-03-20",
+  "publisher": "HL7 US Realm Steering Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/SpecialCommittees/usrealm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "This profile defines the expected capabilities of the US Core Server conforming to the US Core IG.",
+  "kind": "requirements",
+  "fhirVersion": "3.0.0",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Location",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type",
+              "documentation": "Allows discovery of existing US Core location resources using different search criteria."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read",
+              "documentation": "Allows retrieval of a historical version of a US Core location instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance",
+              "documentation": "Allows review of changes to US Core Medication instance over time"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread",
+              "documentation": "Allows retrieval of a historical version of a US Core Medication instance"
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/Location-Name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "address",
+              "definition": "http://hl7.org/fhir/SearchParameter/Location-Address",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "type": "Organization",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type",
+              "documentation": "Allows discovery of existing US Core organization resources using different search criteria"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read",
+              "documentation": "Allows retrieval of a specific US Core organization by id"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance",
+              "documentation": "Allows review of changes to US Core organization instance over time"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread",
+              "documentation": "Allows retrieval of a historical version of a US Core organization instance"
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-Identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-Name",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "address",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-Address",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type",
+              "documentation": "Allows discovery of existing US Core practitioner resources using different search criteria"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read",
+              "documentation": "Allows retrieval of a specific US Core practitioner by id"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance",
+              "documentation": "Allows review of changes to US Core practitioner instance over time"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread",
+              "documentation": "Allows retrieval of a historical version of a US Core practitioner instance"
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-Identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-Name",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

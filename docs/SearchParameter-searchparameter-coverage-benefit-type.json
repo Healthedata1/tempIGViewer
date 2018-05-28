@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "searchparameter-coverage-benefit-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-benefit-type\">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-benefit-type</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Coverage Benefit Type Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-benefit-type\">http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-benefit-type</a></p><p><b>version</b>: 0.0.0</p><p><b>name</b>: VHDir Coverage Benefit Type Search Parameter</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: ****TODO****</p><p><b>code</b>: coverage-benefit-type</p><p><b>base</b>: ProductPlan</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: ProductPlan.coverage.benefit.type</p></div>"
+  },
+  "url": "http://hl7.org/fhir/ig/vhdir/SearchParameter/searchparameter-coverage-benefit-type",
+  "version": "0.0.0",
+  "name": "VHDir Coverage Benefit Type Search Parameter",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "****TODO****",
+  "code": "coverage-benefit-type",
+  "base": [
+    "ProductPlan"
+  ],
+  "type": "token",
+  "expression": "ProductPlan.coverage.benefit.type"
+}
