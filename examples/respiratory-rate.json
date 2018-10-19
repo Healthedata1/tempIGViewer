@@ -1,0 +1,46 @@
+{
+   "status": "final", 
+   "category": [
+      {
+         "text": "Vital Signs", 
+         "coding": [
+            {
+               "code": "vital-signs", 
+               "system": "http://hl7.org/fhir/observation-category", 
+               "display": "Vital Signs"
+            }
+         ]
+      }
+   ], 
+   "code": {
+      "text": "respiratory_rate", 
+      "coding": [
+         {
+            "code": "9279-1", 
+            "system": "http://loinc.org", 
+            "display": "Respiratory rate"
+         }
+      ]
+   }, 
+   "resourceType": "Observation", 
+   "valueQuantity": {
+      "code": "/min", 
+      "unit": "breaths per minute", 
+      "value": 26.0, 
+      "system": "http://unitsofmeasure.org"
+   }, 
+   "meta": {
+      "profile": [
+         "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+      ]
+   }, 
+   "context": {
+      "display": "GP Visit"
+   }, 
+   "effectiveDateTime": "1999-07-02", 
+   "id": "respiratory-rate", 
+   "subject": {
+      "display": "Amy Shaw", 
+      "reference": "Patient/example"
+   }
+}

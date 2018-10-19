@@ -1,0 +1,82 @@
+{
+   "status": "final", 
+   "category": [
+      {
+         "text": "Vital Signs", 
+         "coding": [
+            {
+               "code": "vital-signs", 
+               "system": "http://hl7.org/fhir/observation-category", 
+               "display": "Vital Signs"
+            }
+         ]
+      }
+   ], 
+   "code": {
+      "text": "Blood pressure systolic and diastolic", 
+      "coding": [
+         {
+            "code": "85354-9", 
+            "system": "http://loinc.org", 
+            "display": "Blood pressure panel with all children optional"
+         }
+      ]
+   }, 
+   "resourceType": "Observation", 
+   "component": [
+      {
+         "valueQuantity": {
+            "code": "mm[Hg]", 
+            "unit": "mmHg", 
+            "value": 109, 
+            "system": "http://unitsofmeasure.org"
+         }, 
+         "code": {
+            "text": "Systolic blood pressure", 
+            "coding": [
+               {
+                  "code": "8480-6", 
+                  "system": "http://loinc.org", 
+                  "display": "Systolic blood pressure"
+               }
+            ]
+         }
+      }, 
+      {
+         "dataAbsentReason": {
+            "text": "Unknown", 
+            "coding": [
+               {
+                  "code": "unknown", 
+                  "system": "http://hl7.org/fhir/data-absent-reason", 
+                  "display": "Unknown"
+               }
+            ]
+         }, 
+         "code": {
+            "text": "Diastolic blood pressure", 
+            "coding": [
+               {
+                  "code": "8462-4", 
+                  "system": "http://loinc.org", 
+                  "display": "Diastolic blood pressure"
+               }
+            ]
+         }
+      }
+   ], 
+   "meta": {
+      "profile": [
+         "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+      ]
+   }, 
+   "context": {
+      "reference": "Encounter/1036"
+   }, 
+   "effectiveDateTime": "1999-07-02", 
+   "id": "bp-data-absent", 
+   "subject": {
+      "display": "Amy Shaw", 
+      "reference": "Patient/example"
+   }
+}
