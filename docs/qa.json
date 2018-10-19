@@ -1,10 +1,12 @@
 ﻿{
-  "url" : "http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig",
-  "name" : "Validated Healthcare Directory",
-  "date" : "Mon, 28 May, 2018 11:37:32 -0700",
-  "errs" : "178",
-  "warnings" : "20",
-  "hints" : "244",
-  "version" : "3.4.0",
-  "tool" : "3.4.0-13690"
+  "url": "http://hl7.org/fhir/us/core/ImplementationGuide/ig",
+  "name": "US Core",
+  "package-id": "hl7.fhir.us.core",
+  "ig-ver": "1.1.0",
+  "date": "Thu, 18 Oct, 2018 21:01:01 -0700",
+  "errs": 222,
+  "warnings": 182,
+  "hints": 0,
+  "version": "3.0.1",
+  "tool": "3.6.0 (2)"
 }

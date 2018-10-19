@@ -3,1307 +3,1661 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Validated Healthcare Directory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>US Core</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/core/ImplementationGuide/ig</pre></div>
   </text>
-  <url value="http://hl7.org/fhir/ig/vhdir/ImplementationGuide/ig"/>
-  <version value="0.2.0"/>
-  <name value="Validated Healthcare Directory"/>
-  <status value="active"/>
-  <publisher value="HL7 Patient Administration Committee"/>
-  <copyright value="Used by permission of HL7 Patient Administration Committee, all rights reserved Creative Commons License"/>
-  <fhirVersion value="3.4.0"/>
-  <definition>
+  <url value="http://hl7.org/fhir/us/core/ImplementationGuide/ig"/>
+  <version value="1.1.0"/>
+  <name value="US Core"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="HL7 US Realm Steering Committee"/>
+  <fhirVersion value="3.0.1"/>
+  <package id="p1">
+    <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-womens-shelter.html"/>
+        <valueUri value="Observation-weight.html"/>
       </extension>
-      <reference>
-        <reference value="Bundle/womens-shelter"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/weight"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="VerificationResult-ver1.html"/>
+        <valueUri value="Observation-vitals-panel.html"/>
       </extension>
-      <reference>
-        <reference value="VerificationResult/ver1"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/vitals-panel"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-practitioner1.html"/>
+        <valueUri value="Observation-usg.html"/>
       </extension>
-      <reference>
-        <reference value="Practitioner/practitioner1"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/usg"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="PractitionerRole-practitionerrole1.html"/>
+        <valueUri value="Bundle-uscore-ms3.html"/>
       </extension>
-      <reference>
-        <reference value="PractitionerRole/practitionerrole1"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/uscore-ms3"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="OrganizationRole-orgrole1.html"/>
+        <valueUri value="Encounter-example-1.html"/>
       </extension>
-      <reference>
-        <reference value="OrganizationRole/orgrole1"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Encounter/example-1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="OrganizationRole-orgrole2.html"/>
+        <valueUri value="MedicationStatement-uscore-ms2.html"/>
       </extension>
-      <reference>
-        <reference value="OrganizationRole/orgrole2"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/uscore-ms2"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-foundingfathers.html"/>
+        <valueUri value="MedicationStatement-uscore-ms1.html"/>
       </extension>
-      <reference>
-        <reference value="Organization/foundingfathers"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/uscore-ms1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-patriotppo.html"/>
+        <valueUri value="Bundle-uscore-mo3.html"/>
       </extension>
-      <reference>
-        <reference value="Organization/patriotppo"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/uscore-mo3"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Location-loc-ws.html"/>
+        <valueUri value="Bundle-66c8856b-ba11-4876-8aa8-467aad8c11a2.html"/>
       </extension>
-      <reference>
-        <reference value="Location/loc-ws"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/66c8856b-ba11-4876-8aa8-467aad8c11a2"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Location-hospital1.html"/>
+        <valueUri value="MedicationRequest-uscore-mo2.html"/>
       </extension>
-      <reference>
-        <reference value="Location/hospital1"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/uscore-mo2"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="HealthcareService-hcs-ws.html"/>
+        <valueUri value="MedicationRequest-uscore-mo1.html"/>
       </extension>
-      <reference>
-        <reference value="HealthcareService/hcs-ws"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/uscore-mo1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="HealthcareService-ffcardiology.html"/>
+        <valueUri value="Medication-uscore-med2.html"/>
       </extension>
-      <reference>
-        <reference value="HealthcareService/ffcardiology"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Medication/uscore-med2"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Endpoint-direct321.html"/>
+        <valueUri value="Medication-uscore-med1.html"/>
       </extension>
-      <reference>
-        <reference value="Endpoint/direct321"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Medication/uscore-med1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CareTeam-cardiologycareteam1.html"/>
+        <valueUri value="Observation-urobilinogen.html"/>
       </extension>
-      <reference>
-        <reference value="CareTeam/cardiologycareteam1"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urobilinogen"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-validation.html"/>
+        <valueUri value="Observation-urine-wbcs.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-validation"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-wbcs"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-restriction.html"/>
+        <valueUri value="Observation-urine-sediment.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-restriction"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-sediment"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-productplan.html"/>
+        <valueUri value="Observation-urine-rbcs.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-productplan"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-rbcs"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-practitionerrole.html"/>
+        <valueUri value="Observation-urine-protein.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-practitionerrole"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-protein"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-practitioner.html"/>
+        <valueUri value="Observation-urine-ph.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-practitioner"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-ph"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-organizationrole.html"/>
+        <valueUri value="Observation-urine-nitrite.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-organizationrole"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-nitrite"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-organization.html"/>
+        <valueUri value="Observation-urine-leukocyte-esterase.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-organization"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-leukocyte-esterase"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-network.html"/>
+        <valueUri value="Observation-urine-ketone.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-network"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-ketone"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-location.html"/>
+        <valueUri value="Observation-urine-hemoglobin.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-location"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-hemoglobin"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-healthcareservice.html"/>
+        <valueUri value="Observation-urine-glucose.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-healthcareservice"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-glucose"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-endpoint.html"/>
+        <valueUri value="Observation-urine-epi-cells.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-endpoint"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-epi-cells"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-vhdir-careteam.html"/>
+        <valueUri value="Observation-urine-color.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/vhdir-careteam"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-color"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-validationneed.html"/>
+        <valueUri value="Observation-urine-clarity.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-validationneed"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-clarity"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-usecasetype.html"/>
+        <valueUri value="Observation-urine-cells.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-usecasetype"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-cells"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-qualificationstatus.html"/>
+        <valueUri value="Observation-urine-bilirubin.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-qualificationstatus"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-bilirubin"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-productplan-type.html"/>
+        <valueUri value="Observation-urine-bacteria.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-productplan-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/urine-bacteria"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-primarysourcevalidationstatus.html"/>
+        <valueUri value="DiagnosticReport-urinalysis.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-primarysourcevalidationstatus"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DiagnosticReport/urinalysis"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-primarysourcevalidationprocess.html"/>
+        <valueUri value="Device-udi-1.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-primarysourcevalidationprocess"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Device/udi-1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-primarysourcepushtype.html"/>
+        <valueUri value="Observation-temperature.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-primarysourcepushtype"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/temperature"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-primarysourcepush.html"/>
+        <valueUri value="Observation-some-day-smoker.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-primarysourcepush"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/some-day-smoker"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-primarysourcefailureaction.html"/>
+        <valueUri value="Observation-serum-total-bilirubin.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-primarysourcefailureaction"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/serum-total-bilirubin"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-plan-type.html"/>
+        <valueUri value="Observation-serum-sodium.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-plan-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/serum-sodium"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-patientaccess.html"/>
+        <valueUri value="Observation-serum-potassium.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-patientaccess"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/serum-potassium"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-network-type.html"/>
+        <valueUri value="Observation-serum-creatinine.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-network-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/serum-creatinine"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-limit-unit.html"/>
+        <valueUri value="Observation-serum-co2.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-limit-unit"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/serum-co2"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-languageproficiency.html"/>
+        <valueUri value="Observation-serum-chloride.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-languageproficiency"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/serum-chloride"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-identifierstatus.html"/>
+        <valueUri value="Observation-serum-calcium.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-identifierstatus"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/serum-calcium"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-identifier-type.html"/>
+        <valueUri value="Observation-respiratory-rate.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-identifier-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/respiratory-rate"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-externalvalidationtype.html"/>
+        <valueUri value="Procedure-rehab.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-externalvalidationtype"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Procedure/rehab"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-digitalcertificateuse.html"/>
+        <valueUri value="Practitioner-practitioner-2.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-digitalcertificateuse"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Practitioner/practitioner-2"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-digitalcertificatetype.html"/>
+        <valueUri value="Practitioner-practitioner-1.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-digitalcertificatetype"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Practitioner/practitioner-1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-digitalcertificatetrustframework.html"/>
+        <valueUri value="Patient-example.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-digitalcertificatetrustframework"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Patient/example"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-digitalcertificatestandard.html"/>
+        <valueUri value="Observation-oxygen-saturation.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-digitalcertificatestandard"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/oxygen-saturation"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-coverage-type.html"/>
+        <valueUri value="Observation-neutrophils.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-coverage-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/neutrophils"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-certificationedition.html"/>
+        <valueUri value="DiagnosticReport-metabolic-panel.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-certificationedition"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DiagnosticReport/metabolic-panel"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-benefit-type.html"/>
+        <valueUri value="Observation-mchc.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-benefit-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/mchc"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-attestationmethod.html"/>
+        <valueUri value="Observation-length.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-attestationmethod"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/length"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-aliastype.html"/>
+        <valueUri value="Immunization-imm-1.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-aliastype"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Immunization/imm-1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-valueset-accessibility.html"/>
+        <valueUri value="Location-hl7east.html"/>
       </extension>
-      <reference>
-        <reference value="ValueSet/valueset-accessibility"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Location/hl7east"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-usage-restriction.html"/>
+        <valueUri value="Observation-hemoglobin.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/usage-restriction"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/hemoglobin"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-via-intermediary.html"/>
+        <valueUri value="Observation-height.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-via-intermediary"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/height"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-validator-organization.html"/>
+        <valueUri value="Observation-heart-rate.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-validator-organization"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/heart-rate"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-usecase-type.html"/>
+        <valueUri value="Observation-head-circumference.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-usecase-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/head-circumference"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-usecase-standard.html"/>
+        <valueUri value="Condition-hc1.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-usecase-standard"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Condition/hc1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-target-location.html"/>
+        <valueUri value="Goal-goal-1.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-target-location"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Goal/goal-1"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-status.html"/>
+        <valueUri value="Observation-erythrocytes.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-status"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/erythrocytes"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-status-date.html"/>
+        <valueUri value="DocumentReference-episode-summary.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-status-date"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DocumentReference/episode-summary"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-specific-costs-value.html"/>
+        <valueUri value="Encounter-1036.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-specific-costs-value"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Encounter/1036"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-specific-costs-cost-type.html"/>
+        <valueUri value="Condition-example.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-specific-costs-cost-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Condition/example"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-specific-costs-category.html"/>
+        <valueUri value="CarePlan-colonoscopy.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-specific-costs-category"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="CarePlan/colonoscopy"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-specific-costs-benefit-type.html"/>
+        <valueUri value="DiagnosticReport-cbc.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-specific-costs-benefit-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DiagnosticReport/cbc"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-specific-costs-applicability.html"/>
+        <valueUri value="CareTeam-example.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-specific-costs-applicability"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="CareTeam/example"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-specialty.html"/>
+        <valueUri value="Observation-bun.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-specialty"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/bun"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-service.html"/>
+        <valueUri value="Observation-bp-data-absent.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-service"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/bp-data-absent"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-qualification-wherevalid-location.html"/>
+        <valueUri value="Observation-bmi.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-qualification-wherevalid-location"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/bmi"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-qualification-wherevalid-code.html"/>
+        <valueUri value="Observation-blood-pressure.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-qualification-wherevalid-code"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/blood-pressure"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-qualification-status.html"/>
+        <valueUri value="Observation-blood-glucose.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-qualification-status"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/blood-glucose"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-qualification-issuer.html"/>
+        <valueUri value="AllergyIntolerance-example.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-qualification-issuer"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="AllergyIntolerance/example"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-qualification-code.html"/>
+        <valueUri value="Organization-acme-lab.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-qualification-code"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Organization/acme-lab"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-product-coveragearea.html"/>
+        <valueUri value="Organization-example-organization-2.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-product-coveragearea"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Organization/example-organization-2"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-primarysource-type.html"/>
+        <valueUri value="Organization-saint-luke-w-endpoint.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-primarysource-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Organization/saint-luke-w-endpoint"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-primarysource-organization.html"/>
+        <valueUri value="ValueSet-us-core-substance.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-primarysource-organization"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-substance"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-primarysource-date.html"/>
+        <valueUri value="ValueSet-us-core-substance-sct.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-primarysource-date"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-substance-sct"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-plan-type.html"/>
+        <valueUri value="ValueSet-us-core-substance-rxnorm.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-plan-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-substance-rxnorm"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-plan-network.html"/>
+        <valueUri value="ValueSet-us-core-substance-ndfrt.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-plan-network"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-substance-ndfrt"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-plan-identifier.html"/>
+        <valueUri value="ValueSet-us-core-provider-specialty.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-plan-identifier"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-provider-specialty"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-plan-coveragearea.html"/>
+        <valueUri value="ValueSet-us-core-provider-role.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-plan-coveragearea"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-provider-role"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-organization.html"/>
+        <valueUri value="ValueSet-us-core-procedure-icd10pcs.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-organization"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-procedure-icd10pcs"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-note-author.html"/>
+        <valueUri value="ValueSet-us-core-procedure-code.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-note-author"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-procedure-code"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-newpatients.html"/>
+        <valueUri value="ValueSet-us-core-problem.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-newpatients"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-problem"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-network.html"/>
+        <valueUri value="ValueSet-us-core-observation-value-codes.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-network"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-observation-value-codes"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-name.html"/>
+        <valueUri value="ValueSet-us-core-observation-ccdasmokingstatus.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-name"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-observation-ccdasmokingstatus"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-mime-type.html"/>
+        <valueUri value="ValueSet-us-core-ndc-vaccine-codes.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-mime-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-ndc-vaccine-codes"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-member.html"/>
+        <valueUri value="ValueSet-us-core-narrative-status.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-member"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-narrative-status"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-location.html"/>
+        <valueUri value="ValueSet-us-core-medication-codes.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-location"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-medication-codes"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-identifier-assigner.html"/>
+        <valueUri value="ValueSet-us-core-encounter-type.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-identifier-assigner"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-encounter-type"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-general-costs-value.html"/>
+        <valueUri value="ValueSet-us-core-cvx.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-general-costs-value"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-cvx"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-general-costs-type.html"/>
+        <valueUri value="ValueSet-us-core-condition-category.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-general-costs-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-condition-category"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-general-costs-participants.html"/>
+        <valueUri value="ValueSet-us-core-careteam-provider-roles.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-general-costs-participants"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-careteam-provider-roles"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-endpoint.html"/>
+        <valueUri value="ValueSet-us-core-birthsex.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-endpoint"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/us-core-birthsex"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-eligibility.html"/>
+        <valueUri value="ValueSet-simple-language.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-eligibility"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/simple-language"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-coveragearea.html"/>
+        <valueUri value="ValueSet-omb-race-category.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-coveragearea"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/omb-race-category"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-coverage-type.html"/>
+        <valueUri value="ValueSet-omb-ethnicity-category.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-coverage-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/omb-ethnicity-category"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-coverage-network.html"/>
+        <valueUri value="ValueSet-detailed-race.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-coverage-network"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/detailed-race"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-coverage-limit-value.html"/>
+        <valueUri value="ValueSet-detailed-ethnicity.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-coverage-limit-value"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/detailed-ethnicity"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-coverage-benefit-type.html"/>
+        <valueUri value="StructureDefinition-us-core-race.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-coverage-benefit-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-race"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-coverage-area.html"/>
+        <valueUri value="StructureDefinition-us-core-profile-link.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-coverage-area"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-profile-link"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-attestation-source.html"/>
+        <valueUri value="StructureDefinition-us-core-ethnicity.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-attestation-source"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-ethnicity"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-attestation-organization.html"/>
+        <valueUri value="StructureDefinition-us-core-direct.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-attestation-organization"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-direct"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-attestation-method.html"/>
+        <valueUri value="StructureDefinition-us-core-birthsex.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-attestation-method"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-birthsex"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-alias.html"/>
+        <valueUri value="SearchParameter-us-core-race.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-alias"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/us-core-race"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-searchparameter-accessibility.html"/>
+        <valueUri value="SearchParameter-us-core-ethnicity.html"/>
       </extension>
-      <reference>
-        <reference value="SearchParameter/searchparameter-accessibility"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/us-core-ethnicity"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-qualification.html"/>
+        <valueUri value="OperationDefinition-docref.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/qualification"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/docref"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-productplan-reference.html"/>
+        <valueUri value="ConceptMap-ndc-cvx.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/productplan-reference"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ConceptMap/ndc-cvx"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-practitioner-qualification.html"/>
+        <valueUri value="CodeSystem-condition-category.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/practitioner-qualification"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/condition-category"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-org-description.html"/>
+        <valueUri value="CodeSystem-cdcrec.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/org-description"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/cdcrec"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-org-alias-type.html"/>
+        <valueUri value="CodeSystem-careplan-category.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/org-alias-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-org-alias-period.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/org-alias-period"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-newpatients.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/newpatients"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-newpatientprofile.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/newpatientprofile"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-network-reference.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/network-reference"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-location-reference.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/location-reference"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-identifier-status.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/identifier-status"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-healthcareservice-reference.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/healthcareservice-reference"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-endpoint-usecase.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/endpoint-usecase"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-endpoint-reference.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/endpoint-reference"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-endpoint-rank.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/endpoint-rank"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-ehr.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ehr"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-digitalcertificate.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/digitalcertificate"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-contactpoint-viaintermediary.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/contactpoint-viaintermediary"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-contactpoint-availabletime.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/contactpoint-availabletime"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ConceptMap-conceptmap-qualification-status.html"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/conceptmap-qualification-status"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-communication-proficiency.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/communication-proficiency"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-validation.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-validation"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-usecase.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-usecase"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-primarysource.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-primarysource"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-payercharacteristics.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-payercharacteristics"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-organizationdemographics.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-organizationdemographics"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-network-type.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-network-type"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-languageproficiency.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-languageproficiency"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-ehrcharacteristics.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-ehrcharacteristics"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-digitalcertificate.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-digitalcertificate"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-credentialstatus.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-credentialstatus"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-codesystem-accessibility.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/codesystem-accessibility"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-careteam-alias.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/careteam-alias"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/careplan-category"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/server"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-client.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/client"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
+  </package>
+  <package id="allergyintolerance-us-core-profile-spreadsheet.xml">
+    <name value="US  Core AllergyIntolerance Profile"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-boundary.html"/>
+        <valueUri value="StructureDefinition-us-core-allergyintolerance.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/boundary"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <name value="US Core Allergies Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-allergyintolerance"/>
+      </sourceReference>
     </resource>
+  </package>
+  <package id="careplan-us-core-profile-spreadsheet.xml">
+    <name value="US Core CarePlan Profile"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-accessibility.html"/>
+        <valueUri value="StructureDefinition-us-core-careplan.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/accessibility"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <name value="US Core CarePlan Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-careplan"/>
+      </sourceReference>
     </resource>
+  </package>
+  <package id="careteam-us-core-profile-spreadsheet.xml">
+    <name value="US  Core CareTeam Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-careteam.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core CareTeam Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-careteam"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="condition-us-core-profile-spreadsheet.xml">
+    <name value="US  Core Condition (a.k.a Problem) Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-condition.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Condition Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-condition"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="device-us-core-profile-spreadsheet.xml">
+    <name value="US  Core Device Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-device.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Implanted Device Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-device"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="diagnosticreport-us-core-profile-spreadsheet.xml">
+    <name value="US  Core DiagnosticReport Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-diagnosticreport.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Diagnostic Report Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-diagnosticreport"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="documentreference-us-core-profile-spreadsheet.xml">
+    <name value="/Users/ehaas/Documents/FHIR/US-Core-R3/resources/documentreference-us-core-profile-spreadsheet"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-documentreference.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core DocumentReference Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-documentreference"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="encounter-us-core-profile-spreadsheet.xml">
+    <name value="/Users/ehaas/Documents/FHIR/US-Core-R3/resources/encounter-us-core-profile-spreadsheet"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-encounter.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Encounter Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-encounter"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="goal-us-core-profile-spreadsheet.xml">
+    <name value="US  Core Goal Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-goal.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Goal Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-goal"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="immunization-us-core-profile-spreadsheet.xml">
+    <name value="US  Core Immunization Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-immunization.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Immunization Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-immunization"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="location-us-core-profile-spreadsheet.xml">
+    <name value="US  Core Location Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-location.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Location Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-location"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="medication-us-core-profile-spreadsheet.xml">
+    <name value="US  Core Medication Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-medication.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Medication Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-medication"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="medicationrequest-us-core-profile-spreadsheet.xml">
+    <name value="US  Core MedicationRequest Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-medicationrequest.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Medication Request Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-medicationrequest"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="medicationstatement-us-core-profile-spreadsheet.xml">
+    <name value="US  Core MedicationStatement Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-medicationstatement.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Medication Statement Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-medicationstatement"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="observation-us-core-results-profile-spreadsheet.xml">
+    <name value="US  Core Results Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-observationresults.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Result Observation"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-observationresults"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="observation-us-core-smokingstatus-profile-spreadsheet.xml">
+    <name value="US  Core Smoking Status Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-smokingstatus.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Smoking Status Observation Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-smokingstatus"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="organization-us-core-profile-spreadsheet.xml">
+    <name value="US Core Organization Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-organization.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Organization Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-organization"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="patient-us-core-profile-spreadsheet.xml">
+    <name value="US Core Patient Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-patient.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Patient Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-patient"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="practitioner-us-core-profile-spreadsheet.xml">
+    <name value="US  Core Practitioner Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-practitioner.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Practitioner"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-practitioner"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="practitionerrole-us-core-profile-spreadsheet.xml">
+    <name value="/Users/ehaas/Documents/FHIR/US-Core-R3/resources/practitionerrole-us-core-profile-spreadsheet"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-practitionerrole.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core PractitionerRole Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-practitionerrole"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package id="procedure-us-core-profile-spreadsheet.xml">
+    <name value="US  Core Procedure Profile"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-procedure.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="US Core Procedure Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/us-core-procedure"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="US Core Homepage"/>
+    <kind value="page"/>
     <page>
-      <nameUrl value="index.md"/>
-      <title value="Validated Healthcare Directory Homepage"/>
-      <generation value="markdown"/>
+      <source value="guidance.html"/>
+      <title value="Guidance"/>
+      <kind value="page"/>
     </page>
-  </definition>
+    <page>
+      <source value="profiles.html"/>
+      <title value="Profiles"/>
+      <kind value="page"/>
+      <page>
+        <source value="StructureDefinition-us-core-allergyintolerance.html"/>
+        <title value="Structure Definition US Core Allergyintolerance"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-careplan.html"/>
+        <title value="Structure Definition US Core Careplan"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-careteam.html"/>
+        <title value="Structure Definition US Core Careteam"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-condition.html"/>
+        <title value="Structure Definition US Core Condition"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-device.html"/>
+        <title value="Structure Definition US Core Device"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-diagnosticreport.html"/>
+        <title value="Structure Definition US Core Diagnosticreport"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-documentreference.html"/>
+        <title value="Structure Definition US Core Documentreference"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-encounter.html"/>
+        <title value="Structure Definition US Core Encounter"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-goal.html"/>
+        <title value="Structure Definition US Core Goal"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-immunization.html"/>
+        <title value="Structure Definition US Core Immunization"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-location.html"/>
+        <title value="Structure Definition US Core Location"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-medication.html"/>
+        <title value="Structure Definition US Core Medication"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-medicationrequest.html"/>
+        <title value="Structure Definition US Core Medicationrequest"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-medicationstatement.html"/>
+        <title value="Structure Definition US Core Medicationstatement"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-observationresults.html"/>
+        <title value="Structure Definition US Core Observationresults"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-organization.html"/>
+        <title value="Structure Definition US Core Organization"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-patient.html"/>
+        <title value="Structure Definition US Core Patient"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-practitioner.html"/>
+        <title value="Structure Definition US Core Practitioner"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-practitionerrole.html"/>
+        <title value="Structure Definition US Core Practitionerrole"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-procedure.html"/>
+        <title value="Structure Definition US Core Procedure"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-smokingstatus.html"/>
+        <title value="Structure Definition US Core Smokingstatus"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="extensions.html"/>
+      <title value="Extensions"/>
+      <kind value="page"/>
+      <page>
+        <source value="StructureDefinition-us-core-birthsex.html"/>
+        <title value="Structure Definition US Core Birthsex"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-direct.html"/>
+        <title value="Structure Definition US Core Direct"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-race.html"/>
+        <title value="Structure Definition US Core Race"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-ethnicity.html"/>
+        <title value="Structure Definition US Core Ethnicity"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-us-core-profile-link.html"/>
+        <title value="Structure Definition US Core Profile Link"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="terminology.html"/>
+      <title value="Terminology"/>
+      <kind value="page"/>
+      <page>
+        <source value="CodeSystem-careplan-category.html"/>
+        <title value="Code System Careplan Category"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CodeSystem-cdcrec.html"/>
+        <title value="Code System CDC Race and Ethnicity"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CodeSystem-condition-category.html"/>
+        <title value="Code System Condition Category"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-detailed-ethnicity.html"/>
+        <title value="Value Set Detailed Ethnicity"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-detailed-race.html"/>
+        <title value="Value Set Detailed Race"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-omb-ethnicity-category.html"/>
+        <title value="Value Set OMB Ethnicity Category"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-omb-race-category.html"/>
+        <title value="Value Set OMB Race Category"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-simple-language.html"/>
+        <title value="Value Set Simple Language"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-birthsex.html"/>
+        <title value="Value Set US Core Birthsex"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-careteam-provider-roles.html"/>
+        <title value="Value Set US Core Careteam Provider Roles"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-condition-category.html"/>
+        <title value="Value Set US Core Condition Category"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-cvx.html"/>
+        <title value="Value Set US Core CVX"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-encounter-type.html"/>
+        <title value="Value Set US Core Encounter Type"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-medication-codes.html"/>
+        <title value="Value Set US Core Medication Codes"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-narrative-status.html"/>
+        <title value="Value Set US Core Narrative Status"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-ndc-vaccine-codes.html"/>
+        <title value="Value Set US Core Ndc Vaccine Codes"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-observation-ccdasmokingstatus.html"/>
+        <title value="Value Set US Core Observation CCCDA smokingstatus"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-observation-value-codes.html"/>
+        <title value="Value Set US Core Observation Value Codes"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-problem.html"/>
+        <title value="Value Set US Core Problem"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-procedure-code.html"/>
+        <title value="Value Set US Core Procedure Code"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-procedure-icd10pcs.html"/>
+        <title value="Value Set US Core Procedure ICD-10pcs"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-provider-role.html"/>
+        <title value="Value Set US Core Provider Role"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-provider-specialty.html"/>
+        <title value="Value Set US Core Provider Specialty"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-substance-ndfrt.html"/>
+        <title value="Value Set US Core Substance Ndfrt"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-substance-rxnorm.html"/>
+        <title value="Value Set US Core Substance Rxnorm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-substance-sct.html"/>
+        <title value="Value Set US Core Substance Sct"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-us-core-substance.html"/>
+        <title value="Value Set US Core Substance"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ConceptMap-ndc-cvx.html"/>
+        <title value="Concept Map Ndc cvx"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="searchparams.html"/>
+      <title value="Search Parameters and Operations"/>
+      <kind value="page"/>
+      <page>
+        <source value="SearchParameter-us-core-ethnicity.html"/>
+        <title value="Search Parameter US Core Ethnicity"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="SearchParameter-us-core-race.html"/>
+        <title value="Search Parameter US Core Race"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="OperationDefinition-docref.html"/>
+        <title value="US Core Fetch DocumentReference"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="capstmnts.html"/>
+      <title value="Capability Statements"/>
+      <kind value="page"/>
+      <page>
+        <source value="CapabilityStatement-client.html"/>
+        <title value="Capability Statement Client"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CapabilityStatement-server.html"/>
+        <title value="Capability Statement Server"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="security.html"/>
+      <title value="Security"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="downloads.html"/>
+      <title value="Downloads"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="all-examples.html"/>
+      <title value="All Examples"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="uscore-change-notes.html"/>
+      <title value="US Core Change Notes"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="uscoretoc.html"/>
+      <title value="US Core Table of Contents"/>
+      <kind value="resource"/>
+    </page>
+  </page>
 </ImplementationGuide>

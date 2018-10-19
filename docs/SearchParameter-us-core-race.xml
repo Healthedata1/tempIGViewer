@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="us-core-race"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: us-core-race</p><p><b>url</b>: <a href="http://hl7.org/fhir/us/core/SearchParameter/us-core-race">http://hl7.org/fhir/us/core/SearchParameter/us-core-race</a></p><p><b>name</b>: USCoreRace</p><p><b>status</b>: draft</p><p><b>date</b>: Dec 22, 2016</p><p><b>publisher</b>: US Realm Steering Committee</p><p><b>contact</b>: </p><p><b>code</b>: race</p><p><b>base</b>: Patient</p><p><b>type</b>: token</p><p><b>description</b>: Returns patients with a race extension matching the specified code.</p><p><b>expression</b>: Patient.extension.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race').extension.value.code</p><p><b>xpath</b>: f:Patient/f:extension[@url='http://hl7.org/fhir/us/core/StructureDefinition/us-core-race']/f:extension/f:valueCoding/f:code/@value</p><p><b>xpathUsage</b>: normal</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/core/SearchParameter/us-core-race"/>
+  <name value="USCoreRace"/>
+  <status value="draft"/>
+  <date value="2016-12-22"/>
+  <publisher value="US Realm Steering Committee"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://www.healthit.gov/"/>
+    </telecom>
+  </contact>
+  <code value="race"/>
+  <base value="Patient"/>
+  <type value="token"/>
+  <description value="Returns patients with a race extension matching the specified code."/>
+  <expression value="Patient.extension.where(url = &#39;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&#39;).extension.value.code"/>
+  <xpath value="f:Patient/f:extension[@url=&#39;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&#39;]/f:extension/f:valueCoding/f:code/@value"/>
+  <xpathUsage value="normal"/>
+</SearchParameter>

@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta charset="UTF-8"/>
+  <title>US Core</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="US Core Implemenation Guide" />
+<meta name="author" content="http://www.hl7.org"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+   <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+</head>
+<body>
+
+ <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/></a>
+<div>
+<a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+     <img alt="visit the hl7 website" width="42" height="50" src="assets/images/hl7-logo.png"/>
+    </a>
+   </div>
+   <div id="ig-status" style="font-size:24px;padding-top: 20px;">
+<b>US Core Implementation Guide</b>
+
+CI Build
+
+</div>
+ </div>
+<!--
+   <div id="hl7-nav"><a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm"><img height="50"  alt="US Core" src="assets/images/usbanner.png"/></a></div>
+  </div>
+-->
+  <div class="container">  <!-- container -->
+ </div></div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="guidance.html">General Guidance</a></li>
+              <li><a href="profiles.html">US Core Profiles</a></li>
+              <li><a href="extensions.html">Extensions</a></li>
+              <li><a href="terminology.html">Terminology</a></li>
+              <li><a href="searchparams.html">Operations and Search Parameters</a></li>
+              <li><a href="capstmnts.html">Capability Statements</a></li>
+              <li><a href="security.html">Security</a></li>
+              <li><a href="downloads.html">Downloads</a></li>
+            </ul>
+
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+
+
+
+
+  </div>  <!-- /container -->
+
+
+ </div>  <!-- /segment-breadcrumb -->
+
+
+
+ <div id="segment-content" class="segment">  <!-- segment-content -->
+ <div class="container">  <!-- container -->
+            <div class="row">
+             <div class="inner-wrapper">
+
+
+<div class="col-12">
+<!-- /segment-breadcrumb -->
+<nav class="breadcrumb">
+  
+    <a class="breadcrumb-item btn btn-link btn-sm" href="uscoretoc.html">TOC</a><li><a href='index.html'><b>US Core Homepage</b></a></li><li><b>US Core Table of Contents</b></li>
+</nav>
+
+<!--status-bar-->
+<!--status-bar-->
+
+<p id="publish-box">
+This is the   Continuous Integration Build  of the US Core Implementation Guide, based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="http://hl7.org/fhir/us/core/history.html">Directory of published versions</a>
+</p>
+
+<!-- section numbering page variable -->
+
+
+
+  <style type="text/css">
+  h2,h3,h4,h5,h6{--pagenumber: "12"}
+  </style>
+
+
+
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+
+<h2 id="us-core-table-of-contents">US Core Table of Contents</h2>
+
+<ul>
+  <li>
+    <p>1 - <a href="index.html">US Core Homepage</a></p>
+
+    <ul>
+      <li>1.1 - <a href="index.html#introduction">Introduction</a></li>
+      <li>1.2 - <a href="index.html#us-core-actors">US Core Actors</a></li>
+      <li>1.3 - <a href="index.html#us-core-profiles">US Core Profiles</a></li>
+      <li>1.4 - <a href="index.html#us-core-conformance-requirements">US Core Conformance Requirements</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>2 - <a href="guidance.html">Guidance</a></p>
+
+    <ul>
+      <li>2.1 - <a href="guidance.html#the-2015-edition-common-clinical-data-set">The 2015 Edition Common Clinical Data
+  Set</a></li>
+      <li>2.2 - <a href="guidance.html#must-support">Must Support</a></li>
+      <li>2.3 - <a href="guidance.html#referencing-us-core-profiles">Referencing US Core profiles</a></li>
+      <li>2.4 - <a href="guidance.html#using-codes-in-us-core-profiles">Using Codes in US Core profiles</a></li>
+      <li>2.5 - <a href="guidance.html#readfetch-resource-notation">Read(Fetch) resource notation:</a></li>
+      <li>2.6 - <a href="guidance.html#search-syntax">Search Syntax</a></li>
+      <li>2.7 - <a href="guidance.html#syntax-for-searches-limited-by-patient">Syntax for searches limited by
+  patient</a></li>
+      <li>2.8 - <a href="guidance.html#across-platform-searches">Across Platform Searches</a></li>
+      <li>2.9 - <a href="guidance.html#guidance-on-limiting-the-number-of-search-results">Guidance on limiting the number of search
+  results</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>3 - <a href="profiles.html">Profiles</a></p>
+
+    <ul>
+      <li>3.1 - <a href="StructureDefinition-us-core-allergyintolerance.html">Structure Definition US Core Allergyintolerance</a></li>
+      <li>3.2 - <a href="StructureDefinition-us-core-careplan.html">Structure Definition US Core Careplan</a></li>
+      <li>3.3 - <a href="StructureDefinition-us-core-careteam.html">Structure Definition US Core Careteam</a></li>
+      <li>3.4 - <a href="StructureDefinition-us-core-condition.html">Structure Definition US Core Condition</a></li>
+      <li>3.5 - <a href="StructureDefinition-us-core-device.html">Structure Definition US Core Device</a></li>
+      <li>3.6 - <a href="StructureDefinition-us-core-diagnosticreport.html">Structure Definition US Core Diagnosticreport</a></li>
+      <li>3.7 - <a href="StructureDefinition-us-core-documentreference.html">Structure Definition US Core Documentreference</a></li>
+      <li>3.8 - <a href="StructureDefinition-us-core-encounter.html">Structure Definition US Core Encounter</a></li>
+      <li>3.9 - <a href="StructureDefinition-us-core-goal.html">Structure Definition US Core Goal</a></li>
+      <li>3.10 - <a href="StructureDefinition-us-core-immunization.html">Structure Definition US Core Immunization</a></li>
+      <li>3.11 - <a href="StructureDefinition-us-core-location.html">Structure Definition US Core Location</a></li>
+      <li>3.12 - <a href="StructureDefinition-us-core-medication.html">Structure Definition US Core Medication</a></li>
+      <li>3.13 - <a href="StructureDefinition-us-core-medicationrequest.html">Structure Definition US Core Medicationrequest</a></li>
+      <li>3.14 - <a href="StructureDefinition-us-core-medicationstatement.html">Structure Definition US Core Medicationstatement</a></li>
+      <li>3.15 - <a href="StructureDefinition-us-core-observationresults.html">Structure Definition US Core Observationresults</a></li>
+      <li>3.16 - <a href="StructureDefinition-us-core-organization.html">Structure Definition US Core Organization</a></li>
+      <li>3.17 - <a href="StructureDefinition-us-core-patient.html">Structure Definition US Core Patient</a></li>
+      <li>3.18 - <a href="StructureDefinition-us-core-practitioner.html">Structure Definition US Core Practitioner</a></li>
+      <li>3.19 - <a href="StructureDefinition-us-core-practitionerrole.html">Structure Definition US Core Practitionerrole</a></li>
+      <li>3.20 - <a href="StructureDefinition-us-core-procedure.html">Structure Definition US Core Procedure</a></li>
+      <li>3.21 - <a href="StructureDefinition-us-core-smokingstatus.html">Structure Definition US Core Smokingstatus</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>4 - <a href="extensions.html">Extensions</a></p>
+
+    <ul>
+      <li>4.1 - <a href="StructureDefinition-us-core-birthsex.html">Structure Definition US Core Birthsex</a></li>
+      <li>4.2 - <a href="StructureDefinition-us-core-direct.html">Structure Definition US Core Direct</a></li>
+      <li>4.3 - <a href="StructureDefinition-us-core-race.html">Structure Definition US Core Race</a></li>
+      <li>4.4 - <a href="StructureDefinition-us-core-ethnicity.html">Structure Definition US Core Ethnicity</a></li>
+      <li>4.5 - <a href="StructureDefinition-us-core-profile-link.html">Structure Definition US Core Profile Link</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>5 - <a href="terminology.html">Terminology</a></p>
+
+    <ul>
+      <li>
+        <p>CodeSystems</p>
+
+        <ul>
+          <li>5.1 - <a href="CodeSystem-careplan-category.html">Code System Careplan Category</a></li>
+          <li>5.2 - <a href="CodeSystem-cdcrec.html">Code System CDC Race and Ethnicity</a></li>
+          <li>5.3 - <a href="CodeSystem-condition-category.html">Code System Condition Category</a></li>
+        </ul>
+      </li>
+      <li>
+        <p>ValueSets</p>
+
+        <ul>
+          <li>5.4 - <a href="ValueSet-detailed-ethnicity.html">Value Set Detailed Ethnicity</a></li>
+          <li>5.5 - <a href="ValueSet-detailed-race.html">Value Set Detailed Race</a></li>
+          <li>5.6 - <a href="ValueSet-omb-ethnicity-category.html">Value Set OMB Ethnicity Category</a></li>
+          <li>5.7 - <a href="ValueSet-omb-race-category.html">Value Set OMB Race Category</a></li>
+          <li>5.8 - <a href="ValueSet-simple-language.html">Value Set Simple Language</a></li>
+          <li>5.9 - <a href="ValueSet-us-core-birthsex.html">Value Set US Core Birthsex</a></li>
+          <li>5.10 - <a href="ValueSet-us-core-careteam-provider-roles.html">Value Set US Core Careteam Provider Roles</a></li>
+          <li>5.11 - <a href="ValueSet-us-core-condition-category.html">Value Set US Core Condition Category</a></li>
+          <li>5.12 - <a href="ValueSet-us-core-cvx.html">Value Set US Core CVX</a></li>
+          <li>5.13 - <a href="ValueSet-us-core-encounter-type.html">Value Set US Core Encounter Type</a></li>
+          <li>5.14 - <a href="ValueSet-us-core-medication-codes.html">Value Set US Core Medication Codes</a></li>
+          <li>5.15 - <a href="ValueSet-us-core-narrative-status.html">Value Set US Core Narrative Status</a></li>
+          <li>5.16 - <a href="ValueSet-us-core-ndc-vaccine-codes.html">Value Set US Core NDC Vaccine Codes</a></li>
+          <li>5.17 - <a href="ValueSet-us-core-observation-ccdasmokingstatus.html">Value Set US Core Observation CCCDA Smoking Status</a></li>
+          <li>5.18 - <a href="ValueSet-us-core-observation-value-codes.html">Value Set US Core Observation Value Codes</a></li>
+          <li>5.19 - <a href="ValueSet-us-core-problem.html">Value Set US Core Problem</a></li>
+          <li>5.20 - <a href="ValueSet-us-core-procedure-code.html">Value Set US Core Procedure Code</a></li>
+          <li>5.21 - <a href="ValueSet-us-core-procedure-icd10pcs.html">Value Set US Core Procedure ICD-10PCS</a></li>
+          <li>5.22 - <a href="ValueSet-us-core-provider-role.html">Value Set US Core Provider Role</a></li>
+          <li>5.23 - <a href="ValueSet-us-core-provider-specialty.html">Value Set US Core Provider Specialty</a></li>
+          <li>5.24 - <a href="ValueSet-us-core-substance-ndfrt.html">Value Set US Core Substance ND-FRT</a></li>
+          <li>5.25 - <a href="ValueSet-us-core-substance-rxnorm.html">Value Set US Core Substance RxNorm</a></li>
+          <li>5.26 - <a href="ValueSet-us-core-substance-sct.html">Value Set US Core Substance SCT</a></li>
+          <li>5.27 - <a href="ValueSet-us-core-substance.html">Value Set US Core Substance</a></li>
+        </ul>
+      </li>
+      <li>
+        <p>ConceptMaps</p>
+
+        <ul>
+          <li>5.28 - <a href="ConceptMap-ndc-cvx.html">Concept Map NDC CVX</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>6 - <a href="searchparams.html">Search Parameters and Operations</a></p>
+
+    <ul>
+      <li>
+        <p>SearchParameters</p>
+
+        <ul>
+          <li>6.1 - <a href="SearchParameter-us-core-ethnicity.html">Search Parameter US Core Ethnicity</a></li>
+          <li>6.2 - <a href="SearchParameter-us-core-race.html">Search Parameter US Core Race</a></li>
+        </ul>
+      </li>
+      <li>
+        <p>Operations</p>
+
+        <ul>
+          <li>6.3 - <a href="OperationDefinition-docref.html">US Core Fetch DocumentReference</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>7 - <a href="capstmnts.html">Capability Statements</a></p>
+
+    <ul>
+      <li>7.1 - <a href="CapabilityStatement-client.html">Capability Statement Client</a></li>
+      <li>7.2 - <a href="CapabilityStatement-server.html">Capability Statement Server</a></li>
+    </ul>
+  </li>
+  <li>8 - <a href="security.html">Security</a></li>
+  <li>9 - <a href="downloads.html">Downloads</a></li>
+  <li>10 - <a href="all-examples.html">All Examples</a></li>
+  <li>11 - <a href="uscore-change-notes.html">US Core Change Notes</a></li>
+</ul>
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+<p></p>
+ </div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+    
+</div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+<!-- back to top arrow -->
+
+
+<!-- end back to top arrow -->
+
+<div id="segment-footer" class="segment" igtool="footer"><!-- segment-footer -->
+  <div class="container">  <!-- container -->
+   <div class="inner-wrapper">
+    <p>
+      US Core: 1.1.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Thu, Oct 18, 2018 21:01-0700.
+      | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/core/history.html">History</a>
+      | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+        <span></span>
+        </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+ <!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./assets/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+<script src="./assets/js/anchor.min.js"> </script>
+<script src="./assets/js/fhir.js"> </script>
+
+
+
+
+
+
+<!-- Analytics Below
+================================================== -->
+
+<!-- add anchors before the closing body tag. -->
+<script> anchors.add()</script>
+
+
+
+</body>
+</html>
+
