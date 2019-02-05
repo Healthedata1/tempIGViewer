@@ -1,12 +1,12 @@
 ﻿{
-  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
-  "name": "Argonaut Clinical Notes",
-  "package-id": "healthedatainc.igtemplate",
-  "ig-ver": "0.0.0",
-  "date": "Mon, 12 Nov, 2018 21:15:55 -0800",
-  "errs": 14,
-  "warnings": 8,
+  "url": "http://hl7.org/fhir/us/meds/ImplementationGuide/ig",
+  "name": "US Meds",
+  "package-id": "hl7.fhir.us.meds",
+  "ig-ver": "1.1.0",
+  "date": "Mon, 04 Feb, 2019 17:32:36 -0800",
+  "errs": 0,
+  "warnings": 146,
   "hints": 0,
   "version": "3.0.1",
-  "tool": "3.6.0 (3)"
+  "tool": "4.0.0 (3)"
 }

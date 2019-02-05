@@ -3,14 +3,24 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>US Meds</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/meds/ImplementationGuide/ig</pre></div>"
   },
-  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
-  "version": "0.0.0",
-  "name": "Argonaut Clinical Notes",
-  "status": "draft",
+  "url": "http://hl7.org/fhir/us/meds/ImplementationGuide/ig",
+  "version": "1.1.0",
+  "name": "US Meds",
+  "status": "active",
   "experimental": true,
-  "publisher": "Argonaut Project",
+  "publisher": "HL7 Pharmacy Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/medication/index.cfm"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "3.0.1",
   "package": [
     {
@@ -21,108 +31,384 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Encounter-example-1.html"
+              "valueUri": "MedicationAdministration-medadmin-1.html"
             }
           ],
           "example": true,
           "sourceReference": {
-            "reference": "Encounter/example-1"
+            "reference": "MedicationAdministration/medadmin-1"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-documentreference-category.html"
+              "valueUri": "MedicationRequest-test2-3.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "ValueSet/documentreference-category"
+            "reference": "MedicationRequest/test2-3"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-diagnosticreport-category.html"
+              "valueUri": "MedicationRequest-test2-2.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "ValueSet/diagnosticreport-category"
+            "reference": "MedicationRequest/test2-2"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-argonaut-clinical-note-type.html"
+              "valueUri": "Bundle-get-encounter-meds.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "ValueSet/argonaut-clinical-note-type"
+            "reference": "Bundle/get-encounter-meds"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-argo-diagnosticreport.html"
+              "valueUri": "MedicationStatement-test2-1.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "StructureDefinition/argo-diagnosticreport"
+            "reference": "MedicationStatement/test2-1"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-argo-clinicalnotes.html"
+              "valueUri": "Bundle-get-active-orders.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "StructureDefinition/argo-clinicalnotes"
+            "reference": "Bundle/get-active-orders"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CodeSystem-documentreference-category.html"
+              "valueUri": "MedicationStatement-derivedfrom-mr-enca-5.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "CodeSystem/documentreference-category"
+            "reference": "MedicationStatement/derivedfrom-mr-enca-5"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-argonaut-clinical-notes-server.html"
+              "valueUri": "Bundle-get-all-meds.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "CapabilityStatement/argonaut-clinical-notes-server"
+            "reference": "Bundle/get-all-meds"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-argonaut-clinical-notes-client.html"
+              "valueUri": "MedicationStatement-derivedfrom-mr-enca-4.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/derivedfrom-mr-enca-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationStatement-derivedfrom-mr-enca-6.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/derivedfrom-mr-enca-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationDispense-meddispense-1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationDispense/meddispense-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationStatement-derivedfrom-mr-enca-3.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/derivedfrom-mr-enca-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationStatement-derivedfrom-mr-enca-2.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/derivedfrom-mr-enca-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationStatement-derivedfrom-mr-enca-1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/derivedfrom-mr-enca-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Bundle-get-active-meds.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Bundle/get-active-meds"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Patient-test2.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Patient/test2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationStatement-derivedfrom-mr-test2-2.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/derivedfrom-mr-test2-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationStatement-derivedfrom-mr-test2-3.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/derivedfrom-mr-test2-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationStatement-derivedfrom-mr-test2-1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/derivedfrom-mr-test2-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationRequest-enca-4.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationRequest/enca-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationStatement-test2-2.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationStatement/test2-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationRequest-enca-5.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationRequest/enca-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Encounter-A.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Encounter/A"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationRequest-test2-1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationRequest/test2-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationRequest-enca-6.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationRequest/enca-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationRequest-enca-2.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationRequest/enca-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationRequest-enca-3.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationRequest/enca-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationRequest-enca-1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationRequest/enca-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-medicationadministration.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "CapabilityStatement/argonaut-clinical-notes-client"
+            "reference": "StructureDefinition/medicationadministration"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-medicationdispense.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/medicationdispense"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-server.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/server"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-client.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/client"
           }
         }
       ]
@@ -136,7 +422,29 @@
       {
         "source": "guidance.html",
         "title": "General Guidance",
-        "kind": "page"
+        "kind": "page",
+        "page": [
+          {
+            "source": "get-all-active-med-order.html",
+            "title": "Get All Active Med Order",
+            "kind": "page"
+          },
+          {
+            "source": "get-all-active-meds.html",
+            "title": "Get All Active Meds",
+            "kind": "page"
+          },
+          {
+            "source": "get-all-enc-meds.html",
+            "title": "Get All Enc Meds",
+            "kind": "page"
+          },
+          {
+            "source": "get-all-meds.html",
+            "title": "Get All Meds",
+            "kind": "page"
+          }
+        ]
       },
       {
         "source": "profiles.html",
@@ -144,52 +452,34 @@
         "kind": "page",
         "page": [
           {
-            "source": "StructureDefinition-argo-diagnosticreport.html",
-            "title": "StructureDefinition Argo DiagnosticReport",
-            "kind": "resource"
+            "source": "StructureDefinition-medicationadministration.html",
+            "title": "StructureDefinition MedicationAdministration",
+            "kind": "resource",
+            "page": [
+              {
+                "source": "MedicationAdministration-medadmin-1.html",
+                "title": "Medicationadministration Medadmin 1",
+                "kind": "resource"
+              }
+            ]
           },
           {
-            "source": "StructureDefinition-argo-clinicalnotes.html",
-            "title": "StructureDefinition Argo Clinicalnotes",
-            "kind": "resource"
+            "source": "StructureDefinition-medicationdispense.html",
+            "title": "StructureDefinition MedicationDispense",
+            "kind": "resource",
+            "page": [
+              {
+                "source": "MedicationDispense-meddispense-1.html",
+                "title": "Medicationdispense Meddispense 1",
+                "kind": "resource"
+              }
+            ]
           }
         ]
       },
       {
-        "source": "operations.html",
-        "title": "Operations",
-        "kind": "page"
-      },
-      {
-        "source": "terminology.html",
-        "title": "Terminology",
-        "kind": "page",
-        "page": [
-          {
-            "source": "ValueSet-documentreference-category.html",
-            "title": "ValueSet DocumentReference Category",
-            "kind": "resource"
-          },
-          {
-            "source": "ValueSet-diagnosticreport-category.html",
-            "title": "ValueSet DiagnosticReport Category",
-            "kind": "resource"
-          },
-          {
-            "source": "ValueSet-argonaut-clinical-note-type.html",
-            "title": "ValueSet Argonaut Clinical Note Type",
-            "kind": "resource"
-          },
-          {
-            "source": "CodeSystem-documentreference-category.html",
-            "title": "CodeSystem DocumentReference Category",
-            "kind": "resource"
-          }
-        ]
-      },
-      {
-        "source": "searchparameters.html",
-        "title": "Search Parameters",
+        "source": "pdmp.html",
+        "title": "PDMP",
         "kind": "page"
       },
       {
@@ -198,21 +488,16 @@
         "kind": "page",
         "page": [
           {
-            "source": "CapabilityStatement-argonaut-clinical-notes-server.html",
-            "title": "CapabilityStatement Argonaut Clinical Notes Server",
+            "source": "CapabilityStatement-server.html",
+            "title": "CapabilityStatement Server",
             "kind": "resource"
           },
           {
-            "source": "CapabilityStatement-argonaut-clinical-notes-client.html",
-            "title": "CapabilityStatement Argonaut Clinical Notes Client",
+            "source": "CapabilityStatement-client.html",
+            "title": "CapabilityStatement Client",
             "kind": "resource"
           }
         ]
-      },
-      {
-        "source": "security.html",
-        "title": "Security",
-        "kind": "page"
       },
       {
         "source": "downloads.html",
@@ -222,7 +507,149 @@
       {
         "source": "all-examples.html",
         "title": "All Examples",
-        "kind": "page"
+        "kind": "page",
+        "page": [
+          {
+            "source": "Bundle-get-active-meds.html",
+            "title": "Bundle Get Active Meds",
+            "kind": "resource"
+          },
+          {
+            "source": "Bundle-get-active-orders.html",
+            "title": "Bundle Get Active Orders",
+            "kind": "resource"
+          },
+          {
+            "source": "Bundle-get-all-meds.html",
+            "title": "Bundle Get All Meds",
+            "kind": "resource"
+          },
+          {
+            "source": "Bundle-get-encounter-meds.html",
+            "title": "Bundle Get Encounter Meds",
+            "kind": "resource"
+          },
+          {
+            "source": "Encounter-A.html",
+            "title": "Encounter A",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationAdministration-medadmin-1.html",
+            "title": "Medicationadministration Medadmin 1",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationDispense-meddispense-1.html",
+            "title": "Medicationdispense Meddispense 1",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-enca-1.html",
+            "title": "Medicationrequest Enca 1",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-enca-2.html",
+            "title": "Medicationrequest Enca 2",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-enca-3.html",
+            "title": "Medicationrequest Enca 3",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-enca-4.html",
+            "title": "Medicationrequest Enca 4",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-enca-5.html",
+            "title": "Medicationrequest Enca 5",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-enca-6.html",
+            "title": "Medicationrequest Enca 6",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-test2-1.html",
+            "title": "Medicationrequest Test2 1",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-test2-2.html",
+            "title": "Medicationrequest Test2 2",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationRequest-test2-3.html",
+            "title": "Medicationrequest Test2 3",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-enca-1.html",
+            "title": "Medicationstatement Derivedfrom Mr Enca 1",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-enca-2.html",
+            "title": "Medicationstatement Derivedfrom Mr Enca 2",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-enca-3.html",
+            "title": "Medicationstatement Derivedfrom Mr Enca 3",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-enca-4.html",
+            "title": "Medicationstatement Derivedfrom Mr Enca 4",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-enca-5.html",
+            "title": "Medicationstatement Derivedfrom Mr Enca 5",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-enca-6.html",
+            "title": "Medicationstatement Derivedfrom Mr Enca 6",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-test2-1.html",
+            "title": "Medicationstatement Derivedfrom Mr Test2 1",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-test2-2.html",
+            "title": "Medicationstatement Derivedfrom Mr Test2 2",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-derivedfrom-mr-test2-3.html",
+            "title": "Medicationstatement Derivedfrom Mr Test2 3",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-test2-1.html",
+            "title": "Medicationstatement Test2 1",
+            "kind": "resource"
+          },
+          {
+            "source": "MedicationStatement-test2-2.html",
+            "title": "Medicationstatement Test2 2",
+            "kind": "resource"
+          },
+          {
+            "source": "Patient-test2.html",
+            "title": "Patient Test2",
+            "kind": "resource"
+          }
+        ]
       },
       {
         "source": "toc.html",
