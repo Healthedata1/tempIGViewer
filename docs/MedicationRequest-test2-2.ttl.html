@@ -394,6 +394,48 @@ Formats: <a href="MedicationRequest-test2-2.html">Narrative</a>, <a href="Medica
 
 
 
+<script src="assets/js/jquery.min.js"> </script>
+<script src="assets/js/clipboard.min.js"> </script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+  // Tooltip
+
+  $('#copy-button').tooltip({
+    trigger: 'click',
+    placement: 'bottom'
+  });
+
+  function setTooltip(message) {
+    $('#copy-button').tooltip('hide')
+      .attr('data-original-title', message)
+      .tooltip('show');
+  }
+
+  function hideTooltip() {
+    setTimeout(function() {
+      $('#copy-button').tooltip('hide');
+    }, 1000);
+  }
+
+  // Clipboard
+
+  var clipboard = new ClipboardJS('#copy-button');
+
+  clipboard.on('success', function(e) {
+    setTooltip('Copied!');
+    hideTooltip();
+  });
+
+  clipboard.on('error', function(e) {
+    setTooltip('Failed!');
+    hideTooltip();
+  });
+
+</script>
+
+
+
 
 </div>
 
@@ -416,7 +458,7 @@ Formats: <a href="MedicationRequest-test2-2.html">Narrative</a>, <a href="Medica
     <p>
       US Meds 
            Version: 1.1.0
-         &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Mon, Feb 4, 2019 17:32-0800.
+         &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Tue, Feb 5, 2019 16:21-0800.
       | <a style="color: #81BEF7" href="http://www.hl7.org/fhir/us/meds/history.cfml">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
@@ -437,12 +479,11 @@ Formats: <a href="MedicationRequest-test2-2.html">Narrative</a>, <a href="Medica
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./assets/js/jquery.min.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./assets/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
 <script src="./assets/js/anchor.min.js"> </script>
 <script src="./assets/js/fhir.js"> </script>
-<script src="./assets/js/clipboard.min.js"> </script>
 
 
 <script src="./assets/js/topofpage.js"> </script>
@@ -454,13 +495,10 @@ Formats: <a href="MedicationRequest-test2-2.html">Narrative</a>, <a href="Medica
 <!-- Analytics Below
 ================================================== -->
 
-<!-- add anchors before the closing body tag. and copyto clipboard button functionality-->
+<!-- add anchors before the closing body tag -->
 <script>
 anchors.add()
-new Clipboard('#copy-button');
 </script>
-
-
 
 </body>
 </html>

@@ -3,7 +3,7 @@
   "name": "US Meds",
   "package-id": "hl7.fhir.us.meds",
   "ig-ver": "1.1.0",
-  "date": "Mon, 04 Feb, 2019 17:32:36 -0800",
+  "date": "Tue, 05 Feb, 2019 16:21:56 -0800",
   "errs": 0,
   "warnings": 146,
   "hints": 0,
