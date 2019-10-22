@@ -7,7 +7,7 @@
   },
   "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/devicerequest-deqm",
   "version": "1.1.0",
-  "name": "profile-devicerequest-deqm",
+  "name": "DeqmDeviceRequestProfile",
   "status": "active",
   "experimental": false,
   "date": "2018-06-19T00:00:00-07:00",

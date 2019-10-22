@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.davinci-deqm"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DataExchangeForQualityMeasuresR4</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>
   </text>
   <url value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"/>
   <version value="1.1.0"/>
-  <name value="DataExchangeForQualityMeasuresR4"/>
-  <title value="Data Exchange For Quality Measures STU2 for FHIR R4"/>
+  <name value="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide"/>
+  <title value="Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2019-10-21T18:17:04-07:00"/>
+  <date value="2019-10-22T15:07:54-07:00"/>
   <publisher value="HL7 International - Clinical Quality Information Work Group"/>
   <contact>
     <telecom>
@@ -446,18 +446,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-deviceusestatement-deqm.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/deviceusestatement-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-practitioner-deqm.html"/>
       </extension>
       <reference>
@@ -515,30 +503,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="OperationDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="OperationDefinition-collect-data.html"/>
-      </extension>
-      <reference>
-        <reference value="OperationDefinition/collect-data"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="OperationDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="OperationDefinition-submit-data.html"/>
-      </extension>
-      <reference>
-        <reference value="OperationDefinition/submit-data"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -590,9 +554,49 @@
       <title value="Home"/>
       <generation value="markdown"/>
       <page>
-        <nameUrl value="guidance.html"/>
-        <title value="General Guidance"/>
+        <nameUrl value="framework.html"/>
+        <title value="Framework"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="guidance.html"/>
+          <title value="General Guidance"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="datax.html"/>
+          <title value="Data Exchange"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="indv-reporting.html"/>
+          <title value="Individual Reporting"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="summary-reporting.html"/>
+          <title value="Summary Reporting"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="Example Use Cases"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="mrp.html"/>
+          <title value="Medication Reconciliation Post-Discharge (MRP)"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="col.html"/>
+          <title value="Colorectal Cancer Screening (COL)"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="vte1.html"/>
+          <title value="Venous Thromboembolism Prophylaxis (VTE-1)"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
@@ -616,11 +620,6 @@
         <page>
           <nameUrl value="StructureDefinition-organization-deqm.html"/>
           <title value="StructureDefinition Organization Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-deviceusestatement-deqm.html"/>
-          <title value="StructureDefinition DeviceUseStatement Deqm"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -665,31 +664,6 @@
         </page>
       </page>
       <page>
-        <nameUrl value="operations.html"/>
-        <title value="Operations"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="OperationDefinition-collect-data.html"/>
-          <title value="OperationDefinition Collect Data"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="OperationDefinition-submit-data.html"/>
-          <title value="OperationDefinition Submit Data"/>
-          <generation value="generated"/>
-        </page>
-      </page>
-      <page>
-        <nameUrl value="terminology.html"/>
-        <title value="Terminology"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="searchparameters.html"/>
-        <title value="Search Parameters"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="capstatements.html"/>
         <title value="Capability Statements"/>
         <generation value="markdown"/>
@@ -725,11 +699,6 @@
         </page>
       </page>
       <page>
-        <nameUrl value="security.html"/>
-        <title value="Security"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
         <generation value="markdown"/>
@@ -737,6 +706,11 @@
       <page>
         <nameUrl value="all-examples.html"/>
         <title value="All Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="change-notes.html"/>
+        <title value="Change Notes"/>
         <generation value="markdown"/>
       </page>
       <page>

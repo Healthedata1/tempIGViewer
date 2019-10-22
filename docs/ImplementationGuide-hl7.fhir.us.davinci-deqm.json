@@ -3,14 +3,14 @@
   "id": "hl7.fhir.us.davinci-deqm",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DataExchangeForQualityMeasuresR4</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm",
   "version": "1.1.0",
-  "name": "DataExchangeForQualityMeasuresR4",
-  "title": "Data Exchange For Quality Measures STU2 for FHIR R4",
+  "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
+  "title": "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide",
   "status": "draft",
-  "date": "2019-10-21T18:17:04-07:00",
+  "date": "2019-10-22T15:07:54-07:00",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [
     {
@@ -598,22 +598,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-deviceusestatement-deqm.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/deviceusestatement-deqm"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-practitioner-deqm.html"
           }
         ],
@@ -690,38 +674,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OperationDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "OperationDefinition-collect-data.html"
-          }
-        ],
-        "reference": {
-          "reference": "OperationDefinition/collect-data"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OperationDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "OperationDefinition-submit-data.html"
-          }
-        ],
-        "reference": {
-          "reference": "OperationDefinition/submit-data"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CapabilityStatement"
           },
           {
@@ -789,9 +741,53 @@
       "generation": "markdown",
       "page": [
         {
-          "nameUrl": "guidance.html",
-          "title": "General Guidance",
-          "generation": "markdown"
+          "nameUrl": "framework.html",
+          "title": "Framework",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "guidance.html",
+              "title": "General Guidance",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "datax.html",
+              "title": "Data Exchange",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "indv-reporting.html",
+              "title": "Individual Reporting",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "summary-reporting.html",
+              "title": "Summary Reporting",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "usecases.html",
+          "title": "Example Use Cases",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "mrp.html",
+              "title": "Medication Reconciliation Post-Discharge (MRP)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "col.html",
+              "title": "Colorectal Cancer Screening (COL)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "vte1.html",
+              "title": "Venous Thromboembolism Prophylaxis (VTE-1)",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "profiles.html",
@@ -816,11 +812,6 @@
             {
               "nameUrl": "StructureDefinition-organization-deqm.html",
               "title": "StructureDefinition Organization Deqm",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-deviceusestatement-deqm.html",
-              "title": "StructureDefinition DeviceUseStatement Deqm",
               "generation": "generated"
             },
             {
@@ -866,33 +857,6 @@
           ]
         },
         {
-          "nameUrl": "operations.html",
-          "title": "Operations",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "OperationDefinition-collect-data.html",
-              "title": "OperationDefinition Collect Data",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "OperationDefinition-submit-data.html",
-              "title": "OperationDefinition Submit Data",
-              "generation": "generated"
-            }
-          ]
-        },
-        {
-          "nameUrl": "terminology.html",
-          "title": "Terminology",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "searchparameters.html",
-          "title": "Search Parameters",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "capstatements.html",
           "title": "Capability Statements",
           "generation": "markdown",
@@ -930,11 +894,6 @@
           ]
         },
         {
-          "nameUrl": "security.html",
-          "title": "Security",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "downloads.html",
           "title": "Downloads",
           "generation": "markdown"
@@ -942,6 +901,11 @@
         {
           "nameUrl": "all-examples.html",
           "title": "All Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "change-notes.html",
+          "title": "Change Notes",
           "generation": "markdown"
         },
         {

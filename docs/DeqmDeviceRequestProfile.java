@@ -2,6 +2,6 @@ package http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davi
 
 import org.hl7.fhir.r5.model.ProfilingWrapper;
 
-public class Profilemedicationadministrationdeqm {
+public class DeqmDeviceRequestProfile {
 
 }

@@ -10,7 +10,7 @@
   </text>
   <url value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier"/>
   <version value="1.1.0"/>
-  <name value="do_not_perform"/>
+  <name value="DEQMdoNotPerformExtension"/>
   <title value="DEQM Do Not Perform Extension"/>
   <status value="active"/>
   <experimental value="false"/>

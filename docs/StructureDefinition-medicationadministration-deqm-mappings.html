@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>DataExchangeForQualityMeasuresR4</title>
+  <title>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="DataExchangeForQualityMeasuresR4 Implemenation Guide" />
+<meta name="description" content="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide Implemenation Guide" />
 <meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -68,7 +68,7 @@
 
   <div id="project-status" class="project-status"> <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide Implementation Guide</b>
     
     
     CI Build
@@ -158,13 +158,14 @@
       <li>
         <a href="profiles.html">Profiles/Extensions</a>
       </li>
+<!--
       <li>
         <a href="operations.html">Operations</a>
       </li>
-      <!--
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
+
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
 -->
       <li>
         <a href="capstatements.html">CapabilityStatements</a>
@@ -224,7 +225,7 @@
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -245,7 +246,7 @@ This is the {% if {{site.build}} == "ci" %}
   <style type="text/css">
     /* Section numbering*/
     body{
-      counter-reset: pagenumber1 3  pagenumber2 9 section
+      counter-reset: pagenumber1 4  pagenumber2 8 section
         }
 
   h2{counter-reset: sub-section}
@@ -333,49 +334,49 @@ This is the {% if {{site.build}} == "ci" %}
 <h3>Mappings for the StructureDefinition-medicationadministration-deqm Profile.</h3>
 
 <a name="qdm"> </a><h3>Mappings for Quality Data Model (http://www.healthit.gov/quality-data-model)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-medicationadministration-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DEQMMedicationAdministrationProfile</b></td></tr>
  <tr><td>MedicationAdministration</td><td>Medication, Administered (generally, when MedicationAdministration.status=&quot;completed&quot;)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>negationRationale</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>relevantPeriod</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonNotGiven</td><td>negationRationale</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>reason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;route</td><td>route</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dose</td><td>dosage</td> </tr>
 </table>
-<a name="workflow"> </a><h3>Mappings for Workflow Mapping (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-medicationadministration-deqm</b></td></tr>
- <tr><td>MedicationAdministration</td><td>..Event</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>…identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;definition</td><td>…definition</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>…part of</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>…status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>…code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>…subject</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>…context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>…occurrence[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>…performer</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actor</td><td>….actor</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onBehalfOf</td><td>….onBehalfOf</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;notGiven</td><td>…notDone</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonNotGiven</td><td>…notDoneReason</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>…reasonGivenCodeableConcept</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>…reasonReference</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;prescription</td><td>…basedOn</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>…note</td> </tr>
+<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>DEQMMedicationAdministrationProfile</b></td></tr>
+ <tr><td>MedicationAdministration</td><td>Event</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiates</td><td>Event.instantiates</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>Event.partOf</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Event.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>Event.statusReason</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>Event.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Event.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>Event.context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>Event.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Event.performer</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function</td><td>Event.performer.function</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actor</td><td>Event.performer.actor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Event.reasonCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>Event.reasonReference</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>Event.basedOn</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Event.note</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-medicationadministration-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DEQMMedicationAdministrationProfile</b></td></tr>
  <tr><td>MedicationAdministration</td><td>Entity. Role, or Act</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;definition</td><td>.outboundRelationship[typeCode=DEFN].target[classCode=unspecified]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiates</td><td>.outboundRelationship[typeCode=DEFN].target[classCode=unspecified]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.outboundRelationship[typeCode=RSON]/target[classCode=OBS,moodCode=EVN, code=&quot;reason not given&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication usage&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>.participation[typeCode=CSM].role[classCode=ADMM]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=SBJ].role[classCode=PAT]</td> </tr>
@@ -386,13 +387,11 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function</td><td>participation[typeCode=PRF].functionCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actor</td><td>.role</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onBehalfOf</td><td>.role.scopingOrganization</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;notGiven</td><td>.actionNegationInd</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonNotGiven</td><td>.outboundRelationship[typeCode=RSON]/target[classCode=OBS,moodCode=EVN, code=&quot;reason not given&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>.reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>.outboundRelationship[typeCode=RSON]/target[classCode=OBS,moodCode=EVN, code=&quot;reason for use ASSERTION&quot;].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;prescription</td><td>InFullfillmentOf-&gt;SubstanceAdministration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>InFullfillmentOf-&gt;SubstanceAdministration</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>device-&gt;Access  OR device-&gt;AssignedDevice</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td>component-&gt;SubstanceAdministrationEvent</td> </tr>
@@ -407,32 +406,31 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rate[x]</td><td>.rateQuantity</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;eventHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
 </table>
-<a name="w5"> </a><h3>Mappings for W5 Mapping (<a href="http://hl7.org/fhir/w5.html">http://hl7.org/fhir/w5</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-medicationadministration-deqm</b></td></tr>
- <tr><td>MedicationAdministration</td><td>clinical.medication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>what</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>who.focus</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>when.done</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>who.actor</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>why</td> </tr>
+<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
+ <tr><td colspan="3"><b>DEQMMedicationAdministrationProfile</b></td></tr>
+ <tr><td>MedicationAdministration</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>FiveWs.context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>FiveWs.context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>FiveWs.done[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>FiveWs.actor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>FiveWs.why[x]</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-medicationadministration-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DEQMMedicationAdministrationProfile</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>RXA-20-Completion Status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>RXA-9-Administration Notes / RXA-18 Substance/Treatment Refusal Reason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>RXA-5-Administered Code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3-Patient ID List</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>PV1-19-Visit Number</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>RXA-3-Date/Time Start of Administration / RXA-4-Date/Time End of Administration</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>RXA-10-Administering Provider / PRT-5-Participation Person: PRT-4-Participation='AP' (RXA-10 is deprecated)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;notGiven</td><td>RXA-20-Completion Status='NA'</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonNotGiven</td><td>RXA-9-Administration Notes / RXA-18 Substance/Treatment Refusal Reason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>RXE-27 Give Indication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;prescription</td><td>ORC-2-Placer Order Number / ORC-3-Filler Order Number</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>ORC-2-Placer Order Number / ORC-3-Filler Order Number</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>PRT-10 Participation Device / RXR-3 Administrative Device</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site</td><td>RXR-2 Administration Site / RXR-6 Administration Site Modifier</td> </tr>
@@ -442,7 +440,7 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rate[x]</td><td>RXA-12-Administered Per (Time Unit)</td> </tr>
 </table>
 <a name="w3c.prov"> </a><h3>Mappings for W3C PROV (<a href="http://www.w3.org/ns/prov">http://www.w3.org/ns/prov</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-medicationadministration-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DEQMMedicationAdministrationProfile</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>no mapping</td> </tr>
 </table>
@@ -483,7 +481,7 @@ This is the {% if {{site.build}} == "ci" %}
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Oct 21, 2019 18:17-0700">2019-10-21</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Oct 22, 2019 15:07-0700">2019-10-22</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

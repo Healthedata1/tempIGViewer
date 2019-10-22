@@ -3,7 +3,7 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="observation01"/>
   <meta>
-    <profile value="http://ncqa.org/fhir/us/hedis/StructureDefinition/hedis-observation"/>
+    <profile value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: observation01</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Measure <span style="background: LightGoldenRodYellow">(Details : {http://acme.org/observation-category code 'measure' = 'measure', given as 'Measure'})</span></p><p><b>code</b>: Medication Reconciliation <span style="background: LightGoldenRodYellow">(Details : {http://www.ama-assn.org/go/cpt code '1111F' = '1111F', given as 'Medication Reconciliation'})</span></p><p><b>subject</b>: <a href="Patient-patient01.html">Generated Summary: id: patient01; Medical record number = 12345 (USUAL); active; Jairo Webster (OFFICIAL); gender: male; birthDate: Dec 16, 1946; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>effective</b>: Sep 29, 2018, 7:15:04 AM</p><p><b>issued</b>: Sep 29, 2018, 7:15:04 AM</p><p><b>performer</b>: <a href="Practitioner-practitioner01.html">Generated Summary: id: practitioner01; Provider number = 456789123 (OFFICIAL); active; Cody Hale ; gender: male</a></p><p><b>value</b>: true</p></div>

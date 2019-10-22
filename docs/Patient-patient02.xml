@@ -78,7 +78,7 @@
       <coding>
         <system value="urn:ietf:bcp:47"/>
         <code value="en-US"/>
-        <display value="US English"/>
+        <display value="English (Region=United States)"/>
       </coding>
     </language>
     <preferred value="true"/>

@@ -2,10 +2,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>DataExchangeForQualityMeasuresR4</title>
+  <title>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="DataExchangeForQualityMeasuresR4 Implemenation Guide"/>
+<meta name="description" content="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide Implemenation Guide"/>
 <meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link rel="stylesheet" href="fhir.css"/>
 
@@ -63,7 +63,7 @@
 
   <div id="project-status" class="project-status">   <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide Implementation Guide</b>
     
     
     CI Build
@@ -151,12 +151,13 @@
       <li>
         <a href="profiles.html">Profiles/Extensions</a>
       </li>
-      <li>
+  <!-- <li>
         <a href="operations.html">Operations</a>
       </li>
-        <!-- <li>
-  <a href="terminology.html">Terminology</a>
-</li> -->
+
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li> -->
       <li>
         <a href="capstatements.html">CapabilityStatements</a>
 
@@ -213,7 +214,7 @@
   <!-- ============Publish box=============== -->
 
 
-  <!-- ReleaseHeader --><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <!-- This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
    {% else %}
@@ -232,7 +233,7 @@
   <style type="text/css">
     /* Section numbering*/
     body{
-      counter-reset: pagenumber1 7  pagenumber2 3 section
+      counter-reset: pagenumber1 5  pagenumber2 3 section
         }
 
   h2{counter-reset: sub-section}
@@ -322,9 +323,9 @@
 Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-receiver-server.xml">XML</a>, <a download="null" href="CapabilityStatement-receiver-server.json">JSON</a>),<a href="receiver-server.openapi.json">OpenAPI-Swagger Definition file</a>
 </p>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Receiver Server CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.1.0</li><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-10-21</li><li>Published by: HL7 International - Clinical Decision Support Work Group</li></ul><p><p>This profile defines the expected capabilities of a Da Vinci DEQM Receiver Server when conforming to the Da Vinci DEQM Implementation Guide. Receivers include systems that are primary receivers of Measure data such as payers as well as public health and other healthcare-related agencies.  This CapabilityStatement resource includes the complete list of the <em>recommended</em>  Da Vinci DEQM profiles and RESTful operations that a Da Vinci DEQM Receiver Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements.</p></p><h3 id="igs" class="no_toc">SHALL Support the Following Implementation Guides:</h3><ul><li><a name="807c3e83-e60d-4265-94ff-5edaad673ade">​</a><a href="http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0">http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0</a></li></ul><ul><li><a href="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures">http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures</a></li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>Da Vinci DEQM Receiver Server <strong>SHALL</strong></p><ol><li>Support at least one transaction defined in the <em>Framework</em> Section of  this  Implementation Guide.</li><li>Declare a CapabilityStatement identifying the list of supported profiles and operations.</li><li>Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for <a href="http://hl7.org/fhir/STU3/http.html">FHIR RESTful API</a>.</li><li>Support both xml and json resource formats for all interactions.</li></ol><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="http://build.fhir.org/secpriv-module.html">Security and Privacy Considerations</a>.</p><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#measurereport">MeasureReport</a></td><td><a name="e9a2030d-61be-4846-80a8-e17d7e90c76d">​</a><a href="null">DEQM Summary MeasureReport Profile</a>, 
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Receiver Server CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.1.0</li><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-10-22</li><li>Published by: HL7 International - Clinical Decision Support Work Group</li></ul><p><p>This profile defines the expected capabilities of a Da Vinci DEQM Receiver Server when conforming to the Da Vinci DEQM Implementation Guide. Receivers include systems that are primary receivers of Measure data such as payers as well as public health and other healthcare-related agencies.  This CapabilityStatement resource includes the complete list of the <em>recommended</em>  Da Vinci DEQM profiles and RESTful operations that a Da Vinci DEQM Receiver Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements.</p></p><h3 id="igs" class="no_toc">SHALL Support the Following Implementation Guides:</h3><ul><li><a name="c5203332-922f-47f4-a934-0151726b9e3c">​</a><a href="http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0">http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0</a></li></ul><ul><li><a href="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures">http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures</a></li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>Da Vinci DEQM Receiver Server <strong>SHALL</strong></p><ol><li>Support at least one transaction defined in the <em>Framework</em> Section of  this  Implementation Guide.</li><li>Declare a CapabilityStatement identifying the list of supported profiles and operations.</li><li>Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for <a href="http://hl7.org/fhir/STU3/http.html">FHIR RESTful API</a>.</li><li>Support both xml and json resource formats for all interactions.</li></ol><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="http://build.fhir.org/secpriv-module.html">Security and Privacy Considerations</a>.</p><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#measurereport">MeasureReport</a></td><td><a href="StructureDefinition-summary-measurereport-deqm.html">DEQM Summary MeasureReport Profile</a>, 
 
-						<a href="null">DEQM Individual MeasureReport Profile</a></td><td>
+						<a href="StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a></td><td>
 							
 						</td><td>
 							
@@ -332,11 +333,11 @@ Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-r
               
             </td><td>
 							
-						</td></tr></tbody></table><br/><h4 id="measurereport" class="no_toc">MeasureReport</h4><p><a name="c8106095-c1f5-4338-a201-80301a243a26">​</a>Supported Profiles:
+						</td></tr></tbody></table><br/><h4 id="measurereport" class="no_toc">MeasureReport</h4><p>Supported Profiles:
 				
-											<a href="null">DEQM Summary MeasureReport Profile</a>, 
+											<a href="StructureDefinition-summary-measurereport-deqm.html">DEQM Summary MeasureReport Profile</a>, 
 				
-											<a href="null">DEQM Individual MeasureReport Profile</a>
+											<a href="StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a>
 				
 				</p><p>Resource Specific Documentation:</p><blockquote><p>The DaVinci DEQM Receiver Server <strong>SHALL</strong> be capable of supporting the DEQM Summary MeasureReport Profile and  DEQM Individual MeasureReport Profile and all the DEQM and QI Core Profiles they reference.</p></blockquote><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>create</code>.</li></ul><p>Fetch and Search Criteria:</p><ul>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><br/></div>
@@ -389,7 +390,7 @@ Formats: <a href="CapabilityStatement-receiver-server.html">Narrative</a>, <a hr
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     &copy; 2019  <!-- does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Oct 21, 2019 18:17-0700">2019-10-21</span>.
+     &copy; 2019  <!-- does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span data-toggle="tooltip" data-placement="top" href="#" title="Tue, Oct 22, 2019 15:07-0700">2019-10-22</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

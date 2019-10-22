@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>DataExchangeForQualityMeasuresR4</title>
+  <title>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="DataExchangeForQualityMeasuresR4 Implemenation Guide" />
+<meta name="description" content="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide Implemenation Guide" />
 <meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -68,7 +68,7 @@
 
   <div id="project-status" class="project-status"> <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide Implementation Guide</b>
     
     
     CI Build
@@ -158,13 +158,14 @@
       <li>
         <a href="profiles.html">Profiles/Extensions</a>
       </li>
+<!--
       <li>
         <a href="operations.html">Operations</a>
       </li>
-      <!--
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
+
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
 -->
       <li>
         <a href="capstatements.html">CapabilityStatements</a>
@@ -224,7 +225,7 @@
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -245,7 +246,7 @@ This is the {% if {{site.build}} == "ci" %}
   <style type="text/css">
     /* Section numbering*/
     body{
-      counter-reset: pagenumber1 3  pagenumber2 10 section
+      counter-reset: pagenumber1 4  pagenumber2 9 section
         }
 
   h2{counter-reset: sub-section}
@@ -333,7 +334,7 @@ This is the {% if {{site.build}} == "ci" %}
 <h3>Mappings for the StructureDefinition-devicerequest-deqm Profile.</h3>
 
 <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-devicerequest-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DeqmDeviceRequestProfile</b></td></tr>
  <tr><td>DeviceRequest</td><td>Request</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Request.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Request.instantiatesCanonical</td> </tr>
@@ -360,7 +361,7 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>Request.relevantHistory</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-devicerequest-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DeqmDeviceRequestProfile</b></td></tr>
  <tr><td>DeviceRequest</td><td>ORC</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ORC.2, ORC.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Varies by domain</td> </tr>
@@ -390,7 +391,7 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>N/A</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-devicerequest-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DeqmDeviceRequestProfile</b></td></tr>
  <tr><td>DeviceRequest</td><td>Entity. Role, or Act</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
@@ -426,7 +427,7 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-devicerequest-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DeqmDeviceRequestProfile</b></td></tr>
  <tr><td>DeviceRequest</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
@@ -447,7 +448,7 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>FiveWs.why[x]</td> </tr>
 </table>
 <a name="quick"> </a><h3>Mappings for Quality Improvement and Clinical Knowledge (QUICK) (http://siframework.org/cqf)</h3><table class="grid">
- <tr><td colspan="3"><b>profile-devicerequest-deqm</b></td></tr>
+ <tr><td colspan="3"><b>DeqmDeviceRequestProfile</b></td></tr>
  <tr><td>DeviceRequest</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ClinicalStatement.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Proposal.prnReason.reason</td> </tr>
@@ -500,7 +501,7 @@ This is the {% if {{site.build}} == "ci" %}
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Oct 21, 2019 18:17-0700">2019-10-21</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Oct 22, 2019 15:07-0700">2019-10-22</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

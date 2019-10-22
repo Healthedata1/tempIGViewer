@@ -9,7 +9,7 @@
   </text>
   <url value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/devicerequest-deqm"/>
   <version value="1.1.0"/>
-  <name value="profile-devicerequest-deqm"/>
+  <name value="DeqmDeviceRequestProfile"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2018-06-19T00:00:00-07:00"/>

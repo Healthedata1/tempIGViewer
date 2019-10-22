@@ -112,7 +112,7 @@
          fhir:index 0;
          fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ];
          fhir:Coding.code [ fhir:value "en-US" ];
-         fhir:Coding.display [ fhir:value "US English" ]
+         fhir:Coding.display [ fhir:value "English (Region=United States)" ]
        ]
      ];
      fhir:Patient.communication.preferred [ fhir:value "true"^^xsd:boolean ]

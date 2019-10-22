@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "hl7.fhir.us.davinci-deqm"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DataExchangeForQualityMeasuresR4</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"];
   fhir:ImplementationGuide.version [ fhir:value "1.1.0"];
-  fhir:ImplementationGuide.name [ fhir:value "DataExchangeForQualityMeasuresR4"];
-  fhir:ImplementationGuide.title [ fhir:value "Data Exchange For Quality Measures STU2 for FHIR R4"];
+  fhir:ImplementationGuide.name [ fhir:value "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-10-21T18:17:04-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-10-22T15:07:54-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 International - Clinical Quality Information Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -601,22 +601,6 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-deviceusestatement-deqm.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/deviceusestatement-deqm>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/deviceusestatement-deqm" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 35;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-practitioner-deqm.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -625,7 +609,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -641,7 +625,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 37;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -657,7 +641,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 38;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -673,7 +657,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -689,39 +673,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 40;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "OperationDefinition-collect-data.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/davinci-deqm/OperationDefinition/collect-data>;
-         fhir:Reference.reference [ fhir:value "OperationDefinition/collect-data" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 41;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "OperationDefinition-submit-data.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/davinci-deqm/OperationDefinition/submit-data>;
-         fhir:Reference.reference [ fhir:value "OperationDefinition/submit-data" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 42;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -737,7 +689,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -753,7 +705,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -769,7 +721,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -791,11 +743,53 @@
        fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
        fhir:ImplementationGuide.definition.page.page [
          fhir:index 0;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "General Guidance" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "framework.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Framework" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "General Guidance" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "datax.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Exchange" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "indv-reporting.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Individual Reporting" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "summary-reporting.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Summary Reporting" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
        ], [
          fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "usecases.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Example Use Cases" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mrp.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Reconciliation Post-Discharge (MRP)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "col.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Colorectal Cancer Screening (COL)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "vte1.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Venous Thromboembolism Prophylaxis (VTE-1)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
+       ], [
+         fhir:index 2;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles and Extensions" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
@@ -821,78 +815,47 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
            fhir:index 4;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-deviceusestatement-deqm.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition DeviceUseStatement Deqm" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ], [
-           fhir:index 5;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-practitioner-deqm.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Practitioner Deqm" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 6;
+           fhir:index 5;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-datax-measurereport-deqm.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Datax MeasureReport Deqm" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 7;
+           fhir:index 6;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-summary-measurereport-deqm.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Summary MeasureReport Deqm" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 8;
+           fhir:index 7;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-medicationadministration-deqm.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition MedicationAdministration Deqm" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 9;
+           fhir:index 8;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-devicerequest-deqm.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition DeviceRequest Deqm" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 10;
+           fhir:index 9;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-certificationIdentifier.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension certificationIdentifier" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 11;
+           fhir:index 10;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-reportingVendor.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension reportingVendor" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 12;
+           fhir:index 11;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-doNotPerform.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension doNotPerform" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ]
        ], [
-         fhir:index 2;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operations.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Operations" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "OperationDefinition-collect-data.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "OperationDefinition Collect Data" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ], [
-           fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "OperationDefinition-submit-data.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "OperationDefinition Submit Data" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ]
-       ], [
          fhir:index 3;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 4;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "searchparameters.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Search Parameters" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "capstatements.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Capability Statements" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
@@ -928,22 +891,22 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ]
        ], [
-         fhir:index 6;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Security" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 7;
+         fhir:index 4;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 8;
+         fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "all-examples.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "All Examples" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 9;
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "change-notes.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Change Notes" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
@@ -1019,8 +982,6 @@
 
 <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm> a fhir:us .
 
-<http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/deviceusestatement-deqm> a fhir:us .
-
 <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm> a fhir:us .
 
 <http://hl7.org/fhir/us/davinci-deqm/CapabilityStatement/receiver-server> a fhir:us .
@@ -1030,10 +991,6 @@
 <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm> a fhir:us .
 
 <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm> a fhir:us .
-
-<http://hl7.org/fhir/us/davinci-deqm/OperationDefinition/collect-data> a fhir:us .
-
-<http://hl7.org/fhir/us/davinci-deqm/OperationDefinition/submit-data> a fhir:us .
 
 <http://hl7.org/fhir/us/davinci-deqm/CapabilityStatement/reporter-client> a fhir:us .
 

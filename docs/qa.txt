@@ -1,269 +1,113 @@
-﻿DataExchangeForQualityMeasuresR4 : Validation Results
+﻿DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide : Validation Results
 =========================================
 
-err = 244, warn = 68, info = 2
+err = 78, warn = 0, info = 2
 IG Publisher Version: v0.9.87-SNAPSHOT
-Generated Mon Oct 21 18:18:17 PDT 2019. FHIR version 4.0.0 for hl7.fhir.us.davinci-deqm#1.1.0 (canonical = http://hl7.org/fhir/us/davinci-deqm)
+Generated Tue Oct 22 15:10:57 PDT 2019. FHIR version 4.0.0 for hl7.fhir.us.davinci-deqm#1.1.0 (canonical = http://hl7.org/fhir/us/davinci-deqm)
 
- Build Errors : 79 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage01 : 0 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage02 : 0 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage03 : 0 / 1
+ Build Errors : 6 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage01 : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage02 : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage03 : 1 / 0
  /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Encounter-encounter01 : 4 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location01 : 0 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location02 : 0 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location03 : 0 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Measure-measure-mrp : 0 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport01 : 6 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport02 : 6 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport01 : 11 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport02 : 11 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport01 : 16 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation01 : 1 / 2
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization01 : 2 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization02 : 2 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization03 : 2 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization04 : 2 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient01 : 6 / 2
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient02 : 6 / 2
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient03 : 6 / 2
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner01 : 0 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner02 : 0 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner03 : 0 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Task-task01 : 1 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-client : 5 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Measure-measure-mrp : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation01 : 1 / 1
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization01 : 2 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization02 : 2 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization03 : 2 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization04 : 2 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner01 : 2 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner02 : 2 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner03 : 2 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Task-task01 : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-client : 3 / 0
  /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-server : 3 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-client : 6 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-server : 4 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-receiver-server : 4 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-reporter-client : 4 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-client : 3 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-server : 3 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-receiver-server : 2 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-reporter-client : 2 / 0
  /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/ig : 0 / 0
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/operationdefinition-collect-data : 1 / 1
- /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/operationdefinition-submit-data : 0 / 1
- DEQM  Coverage Profile : 0 / 1
- DEQM Organization Profile : 0 / 1
- DEQM Practitioner Profile : 2 / 1
- profile-devicerequest-deqm : 0 / 1
- profile-deviceusestatement-deqm : 3 / 1
- profile-medicationadministration-deqm : 0 / 1
- profile-medicationrequest-deqm : 8 / 1
- profile_datax_measurereport_deqm : 0 / 1
- profile_indv_measurereport_deqm : 0 / 4
- profile_summary_measurereport_deqm : 0 / 1
+ DEQMCoverageProfile : 0 / 0
+ DEQMDataExchangeMeasureReportProfile : 0 / 0
+ DEQMIndividualMeasureReportProfile : 0 / 0
+ DEQMMedicationAdministrationProfile : 0 / 0
+ DEQMMedicationRequestProfile : 0 / 0
+ DEQMOrganizationProfile : 0 / 0
+ DEQMPractitionerProfile : 0 / 0
+ DEQMSummaryMeasureReportProfile : 0 / 0
+ DeqmDeviceRequestProfile : 0 / 0
 </table>
 == n/a ==
-ERROR: Practitioner.qualification.code: The reference http://hl7.org/fhir/ValueSet/v2-2.7-0360 could not be resolved
-ERROR: ??: The reference http://hl7.org/fhir/StructureDefinition/event-notDone could not be resolved
-ERROR: Organization.address.state: The reference http://hl7.org/fhir/ValueSet/usps-state could not be resolved
-ERROR: Coverage.relationship: The reference http://hl7.org/fhir/ValueSet/policyholder-relationship could not be resolved
-ERROR: http://hl7.org/fhir/R4/: The reference ProcedureRequest could not be resolved
-ERROR: http://hl7.org/fhir/R4/: The reference ReferralRequest could not be resolved
-ERROR: MedicationRequest.status: The reference http://hl7.org/fhir/ValueSet/medication-request-status could not be resolved
-ERROR: MedicationRequest.intent: The reference http://hl7.org/fhir/ValueSet/medication-request-intent could not be resolved
-ERROR: MedicationRequest.category: The reference http://hl7.org/fhir/ValueSet/medication-request-category could not be resolved
-ERROR: MedicationRequest.priority: The reference http://hl7.org/fhir/ValueSet/medication-request-priority could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 342, column 1015: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-client.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 342, column 2584: The link 'null' for "CQFM Measure" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-client.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 351, column 77: The link 'null' for "DEQM Data Exchange MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-client.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 361, column 13: The link 'null' for "CQFM Measure" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 365, column 27: The link 'null' for "$collect-data" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-client.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 372, column 13: The link 'null' for "DEQM Data Exchange MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 342, column 1014: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-server.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 342, column 2991: The link 'null' for "CQFM Measure" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-server.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 354, column 13: The link 'null' for "CQFM Measure" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 358, column 26: The link 'null' for "$submit-data" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 360, column 26: The link 'null' for "$data-requirements" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 342, column 971: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 352, column 65: The link 'null' for "CQFM Measure" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 362, column 77: The link 'null' for "DEQM Summary MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 364, column 8: The link 'null' for "DEQM Data Exchange MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 366, column 8: The link 'null' for "DEQM Individual MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 381, column 13: The link 'null' for "CQFM Measure" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 385, column 26: The link 'null' for "$submit-data" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 387, column 26: The link 'null' for "$data-requirements" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 394, column 13: The link 'null' for "DEQM Summary MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 396, column 13: The link 'null' for "DEQM Data Exchange MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 398, column 13: The link 'null' for "DEQM Individual MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 342, column 968: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-server.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 342, column 2945: The link 'null' for "CQFM Measure" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-server.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 353, column 13: The link 'null' for "CQFM Measure" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 357, column 26: The link 'null' for "$collect-data" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-receiver-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 342, column 1028: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-receiver-server.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 342, column 3017: The link 'null' for "DEQM Summary MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-receiver-server.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 344, column 8: The link 'null' for "DEQM Individual MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-receiver-server.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 354, column 13: The link 'null' for "DEQM Summary MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-receiver-server.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 356, column 13: The link 'null' for "DEQM Individual MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-reporter-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 342, column 1015: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-reporter-client.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 342, column 2596: The link 'null' for "DEQM Summary MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-reporter-client.html#/html/head/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 344, column 8: The link 'null' for "DEQM Individual MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-reporter-client.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 354, column 13: The link 'null' for "DEQM Summary MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-reporter-client.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 356, column 13: The link 'null' for "DEQM Individual MeasureReport Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-coverage-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 460, column 207: The link 'policyholder-relationship.html' for "policyholder-relationship" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-coverage-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 499, column 1603: The link 'policyholder-relationship.html' for "policyholder-relationship" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-coverage-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 609, column 1603: The link 'policyholder-relationship.html' for "policyholder-relationship" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 440, column 218: The link 'medication-request-status.html' for "medication-request-status" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 450, column 148: The link 'medication-request-intent.html' for "medication-request-intent" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 461, column 220: The link 'medication-request-category.html' for "medication-request-category" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 467, column 194: The link 'medication-request-priority.html' for "medication-request-priority" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 479, column 1662: The link 'ProcedureRequest.html' for "ProcedureRequest" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 479, column 1717: The link 'ReferralRequest.html' for "ReferralRequest" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 481, column 2072: The link 'medication-request-status.html' for "medication-request-status" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 482, column 1865: The link 'medication-request-intent.html' for "medication-request-intent" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 483, column 1647: The link 'medication-request-category.html' for "medication-request-category" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 484, column 1771: The link 'medication-request-priority.html' for "medication-request-priority" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 664, column 1662: The link 'ProcedureRequest.html' for "ProcedureRequest" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 664, column 1717: The link 'ReferralRequest.html' for "ReferralRequest" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 666, column 2072: The link 'medication-request-status.html' for "medication-request-status" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 667, column 1865: The link 'medication-request-intent.html' for "medication-request-intent" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 668, column 1647: The link 'medication-request-category.html' for "medication-request-category" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 669, column 1771: The link 'medication-request-priority.html' for "medication-request-priority" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-organization-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 799, column 153: The link 'usps-state.html' for "usps-state" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-organization-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 570, column 2060: The link 'usps-state.html' for "usps-state" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-organization-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 738, column 2060: The link 'usps-state.html' for "usps-state" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-practitioner-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 754, column 115: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-practitioner-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 479, column 1728: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-practitioner-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 539, column 1687: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-practitioner-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 605, column 1728: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-practitioner-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 667, column 1687: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/indv-reporting.html#/html/head/body/div/div/div/div/div/div/p/a at Line 288, column 9: The link 'clinicalreasoning-quality-reporting.html' for "Quality Reporting" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/indv-reporting.html#/html/head/body/div/div/div/div/div/div/p/a at Line 291, column 6: The link '/clinicalreasoning-quality-reporting.html#reporting-individual-data' for "Reporting Individual Data" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/profiles.html#/html/head/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 383, column 12: The link 'StructureDefinition-extension-dataCollectionType.html' for "Data Collection Type" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/profiles.html#/html/head/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 399, column 12: The link 'StructureDefinition-extension-reportingOrganizationGroup.html' for "Reporting Group" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/toc.html#/html/head/body/div/div/div/div/div/div/p/a at Line 342, column 11: The link 'searchparameters.html' for "Search Parameters" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/toc.html#/html/head/body/div/div/div/div/div/div/p/a at Line 358, column 11: The link 'security.html' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 343, column 1015: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-consumer-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 343, column 1014: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 343, column 971: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-producer-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 343, column 968: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-receiver-server.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 343, column 1028: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-reporter-client.html#/html/head/body/div/div/div/div/div/div/div/ul/li/a at Line 343, column 1015: The link 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' for "http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0" cannot be resolved
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage01.json ==
-WARNING: Coverage/coverage01: Coverage.relationship: ValueSet http://hl7.org/fhir/ValueSet/policyholder-relationship not found by validator
+ERROR: Coverage/coverage01: Coverage: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm, Element 'Coverage.status': minimum required = 1, but only found 0
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage02.json ==
-WARNING: Coverage/coverage02: Coverage.relationship: ValueSet http://hl7.org/fhir/ValueSet/policyholder-relationship not found by validator
+ERROR: Coverage/coverage02: Coverage: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm, Element 'Coverage.status': minimum required = 1, but only found 0
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage03.json ==
-WARNING: Coverage/coverage03: Coverage.relationship: ValueSet http://hl7.org/fhir/ValueSet/policyholder-relationship not found by validator
+ERROR: Coverage/coverage03: Coverage: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm, Element 'Coverage.status': minimum required = 1, but only found 0
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Encounter-encounter01.json ==
 ERROR: Encounter/Encounter01: Encounter.class: Unknown Code System http://hl7.org/fhir/v3/ActCode
 ERROR: Encounter/Encounter01: Encounter.class.system: URL value 'http://hl7.org/fhir/v3/ActCode' does not resolve
 ERROR: Encounter/Encounter01: Encounter.hospitalization.dischargeDisposition.coding[0]: Unknown Code System http://hl7.org/fhir/discharge-disposition
 ERROR: Encounter/Encounter01: Encounter.hospitalization.dischargeDisposition.coding[0].system: URL value 'http://hl7.org/fhir/discharge-disposition' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location01.json ==
-WARNING: Location/location01: Location.address.state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location02.json ==
-WARNING: Location/location02: Location.address.state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location03.json ==
-WARNING: Location/location03: Location.address.state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Measure-measure-mrp.json ==
-WARNING: Measure/measure-mrp: Measure: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport01.json ==
-ERROR: /MeasureReport/measure: This property must be an simple value, not a com.google.gson.JsonObject
-ERROR: /MeasureReport: Unrecognised property '@subjectResults'
-ERROR: /MeasureReport: Unrecognised property '@evaluatedResources'
-ERROR: MeasureReport/datax-measurereport01: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm, Element 'MeasureReport.measure': minimum required = 1, but only found 0
-ERROR: MeasureReport/datax-measurereport01: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm, Element 'MeasureReport.subject': minimum required = 1, but only found 0
-ERROR: MeasureReport/datax-measurereport01: MeasureReport.type.extension[0]: The extension http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-dataCollectionType is unknown, and not allowed here
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport02.json ==
-ERROR: /MeasureReport/measure: This property must be an simple value, not a com.google.gson.JsonObject
-ERROR: /MeasureReport: Unrecognised property '@subjectResults'
-ERROR: /MeasureReport: Unrecognised property '@evaluatedResources'
-ERROR: MeasureReport/datax-measurereport02: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm, Element 'MeasureReport.measure': minimum required = 1, but only found 0
-ERROR: MeasureReport/datax-measurereport02: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm, Element 'MeasureReport.subject': minimum required = 1, but only found 0
-ERROR: MeasureReport/datax-measurereport02: MeasureReport.type.extension[0]: The extension http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-dataCollectionType is unknown, and not allowed here
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport01.json ==
-ERROR: /MeasureReport/measure: This property must be an simple value, not a com.google.gson.JsonObject
-ERROR: /MeasureReport/group/population: Unrecognised property '@identifier'
-ERROR: /MeasureReport/group/measureScore: This property must be an Object, not a com.google.gson.JsonPrimitive
-ERROR: /MeasureReport/group: Unrecognised property '@identifier'
-ERROR: /MeasureReport: Unrecognised property '@subjectResults'
-ERROR: /MeasureReport: Unrecognised property '@evaluatedResources'
-ERROR: MeasureReport/indv-measurereport01: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm, Element 'MeasureReport.measure': minimum required = 1, but only found 0
-ERROR: MeasureReport/indv-measurereport01: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm, Element 'MeasureReport.subject': minimum required = 1, but only found 0
-ERROR: MeasureReport/indv-measurereport01: MeasureReport.group[0]: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm, Element 'MeasureReport.group[0].measureScore': minimum required = 1, but only found 0
-ERROR: MeasureReport/indv-measurereport01: MeasureReport.group[0].population[0].code.coding[0]: Unknown Code System http://hl7.org/fhir/measure-population
-ERROR: MeasureReport/indv-measurereport01: MeasureReport.group[0].population[0].code.coding[0].system: URL value 'http://hl7.org/fhir/measure-population' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport02.json ==
-ERROR: /MeasureReport/measure: This property must be an simple value, not a com.google.gson.JsonObject
-ERROR: /MeasureReport/group/population: Unrecognised property '@identifier'
-ERROR: /MeasureReport/group/measureScore: This property must be an Object, not a com.google.gson.JsonPrimitive
-ERROR: /MeasureReport/group: Unrecognised property '@identifier'
-ERROR: /MeasureReport: Unrecognised property '@subjectResults'
-ERROR: /MeasureReport: Unrecognised property '@evaluatedResources'
-ERROR: MeasureReport/indv-measurereport02: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm, Element 'MeasureReport.measure': minimum required = 1, but only found 0
-ERROR: MeasureReport/indv-measurereport02: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm, Element 'MeasureReport.subject': minimum required = 1, but only found 0
-ERROR: MeasureReport/indv-measurereport02: MeasureReport.group[0]: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm, Element 'MeasureReport.group[0].measureScore': minimum required = 1, but only found 0
-ERROR: MeasureReport/indv-measurereport02: MeasureReport.group[0].population[0].code.coding[0]: Unknown Code System http://hl7.org/fhir/measure-population
-ERROR: MeasureReport/indv-measurereport02: MeasureReport.group[0].population[0].code.coding[0].system: URL value 'http://hl7.org/fhir/measure-population' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport01.json ==
-ERROR: /MeasureReport/measure: This property must be an simple value, not a com.google.gson.JsonObject
-ERROR: /MeasureReport/group/population: Unrecognised property '@identifier'
-ERROR: /MeasureReport/group/measureScore: This property must be an Object, not a com.google.gson.JsonPrimitive
-ERROR: /MeasureReport/group/stratifier/stratum/value: This property must be an Object, not a com.google.gson.JsonPrimitive
-ERROR: /MeasureReport/group/stratifier/stratum/population: Unrecognised property '@identifier'
-ERROR: /MeasureReport/group/stratifier/stratum/measureScore: This property must be an Object, not a com.google.gson.JsonPrimitive
-ERROR: /MeasureReport/group/stratifier: Unrecognised property '@identifier'
-ERROR: /MeasureReport/group: Unrecognised property '@identifier'
-ERROR: MeasureReport/summ-measurereport01: MeasureReport: Stratifiers SHALL be either a single criteria or a set of criteria components [group.stratifier.stratum.all(value.exists() xor component.exists())]
-ERROR: MeasureReport/summ-measurereport01: MeasureReport: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm, Element 'MeasureReport.measure': minimum required = 1, but only found 0
-ERROR: MeasureReport/summ-measurereport01: MeasureReport.group[0]: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm, Element 'MeasureReport.group[0].measureScore': minimum required = 1, but only found 0
-ERROR: MeasureReport/summ-measurereport01: MeasureReport.group[0].population[0].code.coding[0]: Unknown Code System http://hl7.org/fhir/measure-population
-ERROR: MeasureReport/summ-measurereport01: MeasureReport.group[0].population[0].code.coding[0].system: URL value 'http://hl7.org/fhir/measure-population' does not resolve
-ERROR: MeasureReport/summ-measurereport01: MeasureReport.group[0].stratifier[0]: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm, Element 'MeasureReport.group[0].stratifier[0].code': minimum required = 1, but only found 0
-ERROR: MeasureReport/summ-measurereport01: MeasureReport.group[0].stratifier[0].stratum[0].population[0].code.coding[0]: Unknown Code System http://hl7.org/fhir/measure-population
-ERROR: MeasureReport/summ-measurereport01: MeasureReport.group[0].stratifier[0].stratum[0].population[0].code.coding[0].system: URL value 'http://hl7.org/fhir/measure-population' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation01.json ==
 ERROR: /Observation: Unrecognised property '@context'
-WARNING: Observation/observation01: Observation.meta.profile[0]: StructureDefinition reference "http://ncqa.org/fhir/us/hedis/StructureDefinition/hedis-observation" could not be resolved
 INFORMATION: Observation/observation01: Observation.category[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://acme.org/observation-category#measure)
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization01.json ==
 ERROR: Organization/organization01: Organization.type[0].coding[0]: Unknown Code System http://hl7.org/fhir/organization-type
 ERROR: Organization/organization01: Organization.type[0].coding[0].system: URL value 'http://hl7.org/fhir/organization-type' does not resolve
-WARNING: Organization/organization01: Organization.address[0].state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization02.json ==
 ERROR: Organization/organization02: Organization.type[0].coding[0]: Unknown Code System http://hl7.org/fhir/organization-type
 ERROR: Organization/organization02: Organization.type[0].coding[0].system: URL value 'http://hl7.org/fhir/organization-type' does not resolve
-WARNING: Organization/organization02: Organization.address[0].state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization03.json ==
 ERROR: Organization/organization03: Organization.type[0].coding[0]: Unknown Code System http://hl7.org/fhir/organization-type
 ERROR: Organization/organization03: Organization.type[0].coding[0].system: URL value 'http://hl7.org/fhir/organization-type' does not resolve
-WARNING: Organization/organization03: Organization.address[0].state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization04.json ==
 ERROR: Organization/organization04: Organization.type[0].coding[0]: Unknown Code System http://hl7.org/fhir/organization-type
 ERROR: Organization/organization04: Organization.type[0].coding[0].system: URL value 'http://hl7.org/fhir/organization-type' does not resolve
-WARNING: Organization/organization04: Organization.address[0].state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient01.json ==
-ERROR: Patient/patient01: Patient.extension[0]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient01: Patient.extension[1]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient01: Patient.extension[2]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient01: Patient.extension[0]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-ERROR: Patient/patient01: Patient.extension[1]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-ERROR: Patient/patient01: Patient.extension[2]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-WARNING: Patient/patient01: Patient.address[0].state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
-WARNING: Patient/patient01: Patient.communication[0].language: The display "US English" is not a valid display for the code {urn:ietf:bcp:47}en-US - should be one of ["English (Region=United States)","English (Region=United States)","English (Region=United States)","English (Region=United States)","English (Region=United States)"]
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient02.json ==
-ERROR: Patient/patient02: Patient.extension[0]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient02: Patient.extension[1]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient02: Patient.extension[2]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient02: Patient.extension[0]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-ERROR: Patient/patient02: Patient.extension[1]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-ERROR: Patient/patient02: Patient.extension[2]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-WARNING: Patient/patient02: Patient.address[0].state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
-WARNING: Patient/patient02: Patient.communication[0].language: The display "US English" is not a valid display for the code {urn:ietf:bcp:47}en-US - should be one of ["English (Region=United States)","English (Region=United States)","English (Region=United States)","English (Region=United States)","English (Region=United States)"]
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient03.json ==
-ERROR: Patient/patient03: Patient.extension[0]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient03: Patient.extension[1]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient03: Patient.extension[2]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/birthPlace]
-ERROR: Patient/patient03: Patient.extension[0]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-ERROR: Patient/patient03: Patient.extension[1]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-ERROR: Patient/patient03: Patient.extension[2]: Unable to resolve profile CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]
-WARNING: Patient/patient03: Patient.address[0].state: ValueSet http://hl7.org/fhir/ValueSet/usps-state not found by validator
-WARNING: Patient/patient03: Patient.communication[0].language: The display "US English" is not a valid display for the code {urn:ietf:bcp:47}en-US - should be one of ["English (Region=United States)","English (Region=United States)","English (Region=United States)","English (Region=United States)","English (Region=United States)"]
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner01.json ==
+ERROR: Practitioner/practitioner01: Practitioner.identifier[0]: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm, Element matches more than one slice - npislice, npi
+ERROR: Practitioner/practitioner01: Practitioner: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm, Element 'Practitioner.identifier[npi]': minimum required = 1, but only found 0
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner02.json ==
+ERROR: Practitioner/practitioner02: Practitioner.identifier[0]: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm, Element matches more than one slice - npislice, npi
+ERROR: Practitioner/practitioner02: Practitioner: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm, Element 'Practitioner.identifier[npi]': minimum required = 1, but only found 0
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner03.json ==
+ERROR: Practitioner/practitioner03: Practitioner.identifier[0]: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm, Element matches more than one slice - npislice, npi
+ERROR: Practitioner/practitioner03: Practitioner: Profile http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm, Element 'Practitioner.identifier[npi]': minimum required = 1, but only found 0
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Task-task01.json ==
 ERROR: /Task: Unrecognised property '@context'
-WARNING: Task/Task01: Task.meta.profile[0]: StructureDefinition reference "http://ncqa.org/fhir/us/hedis/StructureDefinition/hedis-task" could not be resolved
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-client.json ==
 ERROR: CapabilityStatement/consumer-client: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' does not resolve
 ERROR: CapabilityStatement/consumer-client: CapabilityStatement.implementationGuide[2]: URL value 'http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures' does not resolve
 ERROR: CapabilityStatement/consumer-client: CapabilityStatement.rest[0].resource[0].supportedProfile[0]: URL value 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/measure-cqfm' does not resolve
-ERROR: CapabilityStatement/consumer-client: CapabilityStatement.rest[0].resource[0].operation[0].definition: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/OperationDefinition/collect-data' does not resolve
-ERROR: CapabilityStatement/consumer-client: CapabilityStatement.rest[0].resource[1].supportedProfile[0]: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/datax-measurereport-deqm' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-server.json ==
 ERROR: CapabilityStatement/consumer-server: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' does not resolve
 ERROR: CapabilityStatement/consumer-server: CapabilityStatement.implementationGuide[2]: URL value 'http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures' does not resolve
@@ -272,63 +116,23 @@ ERROR: CapabilityStatement/consumer-server: CapabilityStatement.rest[0].resource
 ERROR: CapabilityStatement/producer-client: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' does not resolve
 ERROR: CapabilityStatement/producer-client: CapabilityStatement.implementationGuide[2]: URL value 'http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures' does not resolve
 ERROR: CapabilityStatement/producer-client: CapabilityStatement.rest[0].resource[1].supportedProfile[0]: URL value 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/measure-cqfm' does not resolve
-ERROR: CapabilityStatement/producer-client: CapabilityStatement.rest[0].resource[2].supportedProfile[0]: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/summary-measurereport-deqm' does not resolve
-ERROR: CapabilityStatement/producer-client: CapabilityStatement.rest[0].resource[2].supportedProfile[1]: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/datax-measurereport-deqm' does not resolve
-ERROR: CapabilityStatement/producer-client: CapabilityStatement.rest[0].resource[2].supportedProfile[2]: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/indv-measurereport-deqm' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-server.json ==
 ERROR: CapabilityStatement/producer-server: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' does not resolve
 ERROR: CapabilityStatement/producer-server: CapabilityStatement.implementationGuide[2]: URL value 'http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures' does not resolve
 ERROR: CapabilityStatement/producer-server: CapabilityStatement.rest[0].resource[0].supportedProfile[0]: URL value 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/measure-cqfm' does not resolve
-ERROR: CapabilityStatement/producer-server: CapabilityStatement.rest[0].resource[0].operation[0].definition: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/OperationDefinition/collect-data' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-receiver-server.json ==
 ERROR: CapabilityStatement/receiver-server: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' does not resolve
 ERROR: CapabilityStatement/receiver-server: CapabilityStatement.implementationGuide[2]: URL value 'http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures' does not resolve
-ERROR: CapabilityStatement/receiver-server: CapabilityStatement.rest[0].resource[0].supportedProfile[0]: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/summary-measurereport-deqm' does not resolve
-ERROR: CapabilityStatement/receiver-server: CapabilityStatement.rest[0].resource[0].supportedProfile[1]: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/indv-measurereport-deqm' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-reporter-client.json ==
 ERROR: CapabilityStatement/reporter-client: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0' does not resolve
 ERROR: CapabilityStatement/reporter-client: CapabilityStatement.implementationGuide[2]: URL value 'http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures' does not resolve
-ERROR: CapabilityStatement/reporter-client: CapabilityStatement.rest[0].resource[0].supportedProfile[0]: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/summary-measurereport-deqm' does not resolve
-ERROR: CapabilityStatement/reporter-client: CapabilityStatement.rest[0].resource[0].supportedProfile[1]: URL value 'http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/indv-measurereport-deqm' does not resolve
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/ig.xml ==
-== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/operationdefinition-collect-data.xml ==
-ERROR: /f:OperationDefinition: Undefined element 'idempotent'
-WARNING: OperationDefinition/collect-data: OperationDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/operationdefinition-submit-data.xml ==
-WARNING: OperationDefinition/submit-data: OperationDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-coverage-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/coverage-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-organization-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/organization-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-practitioner-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/practitioner-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: StructureDefinition/practitioner-deqm: StructureDefinition.differential.element[5].binding.valueSet: URL value 'http://hl7.org/fhir/ValueSet/v2-2.7-0360' does not resolve
-ERROR: practitioner-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/practitioner-classification' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm snapshot Practitioner.extension (classification)
-== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-devicerequest-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/devicerequest-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-deviceusestatement-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/deviceusestatement-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: StructureDefinition/deviceusestatement-deqm: StructureDefinition.differential.element[1].type[0].profile[0]: URL value 'http://hl7.org/fhir/StructureDefinition/event-notDone' does not resolve
-ERROR: deviceusestatement-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/event-notDone' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/deviceusestatement-deqm differential DeviceUseStatement.extension (notDone)
-ERROR: deviceusestatement-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/event-notDone' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/deviceusestatement-deqm snapshot DeviceUseStatement.extension (notDone)
-== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-medicationadministration-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/medicationadministration-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-medicationrequest-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/medicationrequest-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: medicationrequest-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/pharmacy-core-doseType' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm snapshot MedicationRequest.dosageInstruction.extension (doseType)
-ERROR: medicationrequest-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/pharmacy-core-infuseOver' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm snapshot MedicationRequest.dosageInstruction.extension (infuseOver)
-ERROR: medicationrequest-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/pharmacy-core-rateIncrement' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm snapshot MedicationRequest.dosageInstruction.extension (rateIncrement)
-ERROR: medicationrequest-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/pharmacy-core-rateIncrementInterval' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm snapshot MedicationRequest.dosageInstruction.extension (rateIncrementInterval)
-ERROR: medicationrequest-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/pharmacy-core-rateGoal' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm snapshot MedicationRequest.dosageInstruction.extension (rateGoal)
-ERROR: medicationrequest-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/pharmacy-core-minDosePerPeriod' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm snapshot MedicationRequest.dosageInstruction.extension (minDosePerPeriod)
-ERROR: medicationrequest-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/pharmacy-core-maxDeliveryRate' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm snapshot MedicationRequest.dosageInstruction.extension (maxDeliveryRate)
-ERROR: medicationrequest-deqm: Unable to find Extension 'http://hl7.org/fhir/StructureDefinition/pharmacy-core-maxDeliveryVolume' referenced at http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm snapshot MedicationRequest.dosageInstruction.extension (maxDeliveryVolume)
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-datax-measurereport-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/datax-measurereport-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-indv-measurereport-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/extension-doNotPerform: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/extension-reportingVendor: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/extension-certificationIdentifier: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/indv-measurereport-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-medicationadministration-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-medicationrequest-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-organization-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-practitioner-deqm-spreadsheet.xml ==
 == /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-summary-measurereport-deqm-spreadsheet.xml ==
-WARNING: StructureDefinition/summary-measurereport-deqm: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-devicerequest-deqm-spreadsheet.xml ==

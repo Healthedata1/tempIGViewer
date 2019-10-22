@@ -7,7 +7,7 @@
   },
   "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
   "version": "1.1.0",
-  "name": "do_not_perform",
+  "name": "DEQMdoNotPerformExtension",
   "title": "DEQM Do Not Perform Extension",
   "status": "active",
   "experimental": false,
