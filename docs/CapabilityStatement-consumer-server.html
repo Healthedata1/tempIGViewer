@@ -63,7 +63,7 @@
 
   <div id="project-status" class="project-status">   <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures R4 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide</b>
     
     
     CI Build
@@ -213,7 +213,7 @@
   <!-- ============Publish box=============== -->
 
 
-  <!-- ReleaseHeader --><p id="publish-box">Data Exchange For Quality Measures R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <!-- This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
    {% else %}
@@ -322,7 +322,7 @@
 Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-consumer-server.xml">XML</a>, <a download="null" href="CapabilityStatement-consumer-server.json">JSON</a>),<a href="consumer-server.openapi.json">OpenAPI-Swagger Definition file</a>
 </p>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Consumer Server CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.1.0</li><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-10-21</li><li>Published by: HL7 International - Clinical Decision Support Work Group</li></ul><p><p>This profile defines the expected capabilities of a Da Vinci DEQM Consumer Server when conforming to the Da Vinci DEQM Implementation Guide.  Consumers include systems that are primary consumers of patient healthcare information and systems that consume data from Producers.  This CapabilityStatement resource includes the complete list of the <em>recommended</em>  Da Vinci DEQM profiles and RESTful operations that a Da Vinci DEQM Consumer Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements.</p></p><h3 id="igs" class="no_toc">SHALL Support the Following Implementation Guides:</h3><ul><li><a name="689733f9-414f-442d-8370-f59b903b3574">​</a><a href="http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0">http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0</a></li></ul><ul><li><a href="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures">http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures</a></li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>Da Vinci DEQM Consumer Server <strong>SHALL</strong></p><ol><li>Support at least one transaction defined in the <em>Framework</em> Section of  this  Implementation Guide.</li><li>Declare a CapabilityStatement identifying the list of supported profiles and operations.</li><li>Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for <a href="http://hl7.org/fhir/STU3/http.html">FHIR RESTful API</a>.</li><li>Support both xml and json resource formats for all interactions.</li></ol><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="http://build.fhir.org/secpriv-module.html">Security and Privacy Considerations</a>.</p><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#measure">Measure</a></td><td><a name="e320f7ab-ff01-475d-b5dc-238f6e942c4b">​</a><a href="null">CQFM Measure</a></td><td>
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Consumer Server CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.1.0</li><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-10-21</li><li>Published by: HL7 International - Clinical Decision Support Work Group</li></ul><p><p>This profile defines the expected capabilities of a Da Vinci DEQM Consumer Server when conforming to the Da Vinci DEQM Implementation Guide.  Consumers include systems that are primary consumers of patient healthcare information and systems that consume data from Producers.  This CapabilityStatement resource includes the complete list of the <em>recommended</em>  Da Vinci DEQM profiles and RESTful operations that a Da Vinci DEQM Consumer Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements.</p></p><h3 id="igs" class="no_toc">SHALL Support the Following Implementation Guides:</h3><ul><li><a name="3288c0ec-647d-4963-9e4b-25f80350cc65">​</a><a href="http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0">http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0</a></li></ul><ul><li><a href="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures">http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures</a></li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>Da Vinci DEQM Consumer Server <strong>SHALL</strong></p><ol><li>Support at least one transaction defined in the <em>Framework</em> Section of  this  Implementation Guide.</li><li>Declare a CapabilityStatement identifying the list of supported profiles and operations.</li><li>Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for <a href="http://hl7.org/fhir/STU3/http.html">FHIR RESTful API</a>.</li><li>Support both xml and json resource formats for all interactions.</li></ol><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="http://build.fhir.org/secpriv-module.html">Security and Privacy Considerations</a>.</p><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#measure">Measure</a></td><td><a name="62ca26b0-a43c-4a96-be2b-16b45fa30bfe">​</a><a href="null">CQFM Measure</a></td><td>
 							
 						</td><td>
 							
@@ -332,12 +332,12 @@ Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-c
 							
 							$submit-data, 
 							$data-requirements
-						</td></tr></tbody></table><br/><h4 id="measure" class="no_toc">Measure</h4><p><a name="6c912404-b5e4-4cac-b2d2-0418c0060726">​</a>Supported Profiles:
+						</td></tr></tbody></table><br/><h4 id="measure" class="no_toc">Measure</h4><p><a name="de6ef10d-1bdc-4ef9-a510-3a7c6c54b3cd">​</a>Supported Profiles:
 				
 											<a href="null">CQFM Measure</a>
 				
 				</p><p>Profile Interaction Summary:</p><ul><li><strong>SHOULD</strong> support 
-																							<code>read</code>.</li></ul><p>Operation  Summary:</p><ul><li><a name="4e1757f2-8400-4244-bec9-7f19a54f6e77">​</a><strong>SHALL</strong> support the 
+																							<code>read</code>.</li></ul><p>Operation  Summary:</p><ul><li><a name="e1a92784-56b5-45bf-bd21-360179d0cd05">​</a><strong>SHALL</strong> support the 
 																								<a href="null">$submit-data</a> operation
 																								, 
 																								<a href="null">$data-requirements</a> operation
@@ -395,7 +395,7 @@ Formats: <a href="CapabilityStatement-consumer-server.html">Narrative</a>, <a hr
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     &copy; 2019  <!-- does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Oct 21, 2019 17:55-0700">2019-10-21</span>.
+     &copy; 2019  <!-- does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Oct 21, 2019 18:17-0700">2019-10-21</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

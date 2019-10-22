@@ -3,9 +3,9 @@
 
 err = 244, warn = 68, info = 2
 IG Publisher Version: v0.9.87-SNAPSHOT
-Generated Mon Oct 21 17:57:26 PDT 2019. FHIR version 4.0.0 for hl7.fhir.us.davinci-deqm#1.1.0 (canonical = http://hl7.org/fhir/us/davinci-deqm)
+Generated Mon Oct 21 18:18:17 PDT 2019. FHIR version 4.0.0 for hl7.fhir.us.davinci-deqm#1.1.0 (canonical = http://hl7.org/fhir/us/davinci-deqm)
 
- Build Errors : 82 / 0
+ Build Errors : 79 / 0
  /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage01 : 0 / 1
  /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage02 : 0 / 1
  /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage03 : 0 / 1
@@ -101,8 +101,6 @@ ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/CapabilityStatement-repor
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-coverage-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 460, column 207: The link 'policyholder-relationship.html' for "policyholder-relationship" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-coverage-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 499, column 1603: The link 'policyholder-relationship.html' for "policyholder-relationship" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-coverage-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 609, column 1603: The link 'policyholder-relationship.html' for "policyholder-relationship" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-datax-measurereport-deqm.html#/html/head/body/div/div/div/div/div/div/p/a at Line 361, column 231: The link 'StructureDefinition-extension-dataCollectionType.html' for "DEQM Data Collection Type Extension" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-datax-measurereport-deqm.html#/html/head/body/div/div/div/div/div/div/ol/li/a at Line 369, column 10: The link 'StructureDefinition-extension-dataCollectionType.html' for "DEQM Data Collection Type Extension" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 440, column 218: The link 'medication-request-status.html' for "medication-request-status" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 450, column 148: The link 'medication-request-intent.html' for "medication-request-intent" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-medicationrequest-deqm-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 461, column 220: The link 'medication-request-category.html' for "medication-request-category" cannot be resolved
@@ -127,7 +125,6 @@ ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-pract
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-practitioner-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 539, column 1687: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-practitioner-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 605, column 1728: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-practitioner-deqm.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 667, column 1687: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/StructureDefinition-summary-measurereport-deqm.html#/html/head/body/div/div/div/div/div/div/ol/li/a at Line 384, column 54: The link 'StructureDefinition-extension-reportingOrganizationGroup.html' for "Reporting Group" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/indv-reporting.html#/html/head/body/div/div/div/div/div/div/p/a at Line 288, column 9: The link 'clinicalreasoning-quality-reporting.html' for "Quality Reporting" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/indv-reporting.html#/html/head/body/div/div/div/div/div/div/p/a at Line 291, column 6: The link '/clinicalreasoning-quality-reporting.html#reporting-individual-data' for "Reporting Individual Data" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/profiles.html#/html/head/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 383, column 12: The link 'StructureDefinition-extension-dataCollectionType.html' for "Data Collection Type" cannot be resolved

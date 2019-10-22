@@ -63,7 +63,7 @@
 
   <div id="project-status" class="project-status">   <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures R4 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide</b>
     
     
     CI Build
@@ -213,7 +213,7 @@
   <!-- ============Publish box=============== -->
 
 
-  <!-- ReleaseHeader --><p id="publish-box">Data Exchange For Quality Measures R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <!-- This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
    {% else %}
@@ -322,7 +322,7 @@
 Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-producer-client.xml">XML</a>, <a download="null" href="CapabilityStatement-producer-client.json">JSON</a>),<a href="producer-client.openapi.json">OpenAPI-Swagger Definition file</a>
 </p>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Producer Client CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.1.0</li><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-10-21</li><li>Published by: HL7 International - Clinical Decision Support Work Group</li></ul><p><p>This profile defines the expected capabilities of a Da Vinci DEQM Producer Client when conforming to the Da Vinci DEQM Implementation Guide. Producers include systems that are primary producers of patient healthcare information.  This CapabilityStatement resource includes the complete list of the <em>recommended</em>  Da Vinci DEQM profiles and RESTful operations that are  Da Vinci DEQM Producer Client could support. Clients have the option of choosing from this list based on their local use cases and other contextual requirements.</p></p><h3 id="igs" class="no_toc">SHALL Support the Following Implementation Guides:</h3><ul><li><a name="85c85715-70ad-44fa-a261-542802910df8">​</a><a href="http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0">http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0</a></li></ul><ul><li><a href="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures">http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures</a></li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>Da Vinci DEQM Producer Client <strong>SHALL</strong></p><ol><li>Support at least one transaction defined in the <em>Framework</em> Section of  this  Implementation Guide.</li></ol><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="http://build.fhir.org/secpriv-module.html">Security and Privacy Considerations</a>.</p><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#library">Library</a></td><td>
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Producer Client CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.1.0</li><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-10-21</li><li>Published by: HL7 International - Clinical Decision Support Work Group</li></ul><p><p>This profile defines the expected capabilities of a Da Vinci DEQM Producer Client when conforming to the Da Vinci DEQM Implementation Guide. Producers include systems that are primary producers of patient healthcare information.  This CapabilityStatement resource includes the complete list of the <em>recommended</em>  Da Vinci DEQM profiles and RESTful operations that are  Da Vinci DEQM Producer Client could support. Clients have the option of choosing from this list based on their local use cases and other contextual requirements.</p></p><h3 id="igs" class="no_toc">SHALL Support the Following Implementation Guides:</h3><ul><li><a name="fb5755be-ea34-437b-955f-88ee7343039e">​</a><a href="http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0">http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.2.0</a></li></ul><ul><li><a href="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures">http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures</a></li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>Da Vinci DEQM Producer Client <strong>SHALL</strong></p><ol><li>Support at least one transaction defined in the <em>Framework</em> Section of  this  Implementation Guide.</li></ol><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="http://build.fhir.org/secpriv-module.html">Security and Privacy Considerations</a>.</p><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#library">Library</a></td><td>
 
 						</td><td>
 							
@@ -332,7 +332,7 @@ Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-p
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#measure">Measure</a></td><td><a name="464908b6-7271-47a8-b088-0e472763354c">​</a><a href="null">CQFM Measure</a></td><td>
+						</td></tr><tr><td><a href="#measure">Measure</a></td><td><a name="f76c4c4b-3ea6-481e-a573-5a33ff819e31">​</a><a href="null">CQFM Measure</a></td><td>
 							
 						</td><td>
 							
@@ -342,7 +342,7 @@ Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-p
 							
 							$submit-data, 
 							$data-requirements
-						</td></tr><tr><td><a href="#measurereport">MeasureReport</a></td><td><a name="53b0f899-5d30-468e-878f-2e65d17fdd63">​</a><a href="null">DEQM Summary MeasureReport Profile</a>, 
+						</td></tr><tr><td><a href="#measurereport">MeasureReport</a></td><td><a name="83cb7ae1-c906-4f50-a28b-8d47da82f1a2">​</a><a href="null">DEQM Summary MeasureReport Profile</a>, 
 
 						<a href="null">DEQM Data Exchange MeasureReport Profile</a>, 
 
@@ -359,12 +359,12 @@ Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-p
 					A Client <strong>SHOULD</strong> be capable of fetching a Library resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Library/[id]</code>
-				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="measure" class="no_toc">Measure</h4><p><a name="fa43a023-152c-4fb5-a868-81dd36d06237">​</a>Supported Profiles:
+				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="measure" class="no_toc">Measure</h4><p><a name="99571a62-0c52-4b88-96a1-1ee969c3cbfa">​</a>Supported Profiles:
 				
 											<a href="null">CQFM Measure</a>
 				
 				</p><p>Profile Interaction Summary:</p><ul><li><strong>SHOULD</strong> support 
-																							<code>read</code>.</li></ul><p>Operation  Summary:</p><ul><li><a name="9142281c-f38e-489a-81f2-7f7dac9f27e4">​</a><strong>SHALL</strong> support the 
+																							<code>read</code>.</li></ul><p>Operation  Summary:</p><ul><li><a name="ee5ca8a5-c13f-4a2e-b9d3-f108ce5dda8d">​</a><strong>SHALL</strong> support the 
 																								<a href="null">$submit-data</a> operation
 																								, 
 																								<a href="null">$data-requirements</a> operation
@@ -372,7 +372,7 @@ Downloads:  CapabilityStatement: (<a download="null" href="CapabilityStatement-p
 					A Client <strong>SHOULD</strong> be capable of fetching a Measure resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Measure/[id]</code>
-				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="measurereport" class="no_toc">MeasureReport</h4><p><a name="05c566b2-3d98-4f80-92d6-ff3bcf01cd22">​</a>Supported Profiles:
+				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="measurereport" class="no_toc">MeasureReport</h4><p><a name="4d910250-f68f-4a14-8c97-aec92f80edb4">​</a>Supported Profiles:
 				
 											<a href="null">DEQM Summary MeasureReport Profile</a>, 
 				
@@ -431,7 +431,7 @@ Formats: <a href="CapabilityStatement-producer-client.html">Narrative</a>, <a hr
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     &copy; 2019  <!-- does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Oct 21, 2019 17:55-0700">2019-10-21</span>.
+     &copy; 2019  <!-- does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Oct 21, 2019 18:17-0700">2019-10-21</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

@@ -68,7 +68,7 @@
 
   <div id="project-status" class="project-status"> <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures R4 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide</b>
     
     
     CI Build
@@ -224,7 +224,7 @@
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -381,7 +381,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://www.hl7.org/Special/committees/cqi/index.cfm&quot; ]     ]
   ];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;[MeasureReport] is used as an organizer for both data exchange for measure and for measure reporting.  Three profiles on the MeasureReport resource are defined in this guide to delineate these different uses.\nWhen a data producer needs to send data to a data consumer, they use the **DEQM Data-Exchange MeasureReport Profile** defined here.  Notice that the type element in this profile is set to “data-collection” using the [DEQM Data Collection Type Extension].  Along with the MeasureReport profile, the data producer sends the Organization, Patient and any relevant resources for the measure they have produced data on.  When a data producer sends a MeasureReport and the associated data, they may not have all the data that is required to calculate the measure report.  Additional data may need to be collected later or there may additional data used in the measure that the aggregator owns such as a continuous coverage period requirement.&quot;];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;[MeasureReport] is used as an organizer for both data exchange for measure and for measure reporting.  Three profiles on the MeasureReport resource are defined in this guide to delineate these different uses.\nWhen a data producer needs to send data to a data consumer, they use the **DEQM Data-Exchange MeasureReport Profile** defined here.  The `type` element in this profile is set to “data-collection”.  Along with the MeasureReport profile, the data producer sends the Organization, Patient and any relevant resources for the measure they have produced data on.  When a data producer sends a MeasureReport and the associated data, they may not have all the data that is required to calculate the measure report.  Additional data may need to be collected later or there may additional data used in the measure that the aggregator owns such as a continuous coverage period requirement.&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">fhir:StructureDefinition.jurisdiction</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
@@ -2081,7 +2081,7 @@ Formats: <a href="StructureDefinition-datax-measurereport-deqm.html">Narrative</
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Oct 21, 2019 17:55-0700">2019-10-21</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Oct 21, 2019 18:17-0700">2019-10-21</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

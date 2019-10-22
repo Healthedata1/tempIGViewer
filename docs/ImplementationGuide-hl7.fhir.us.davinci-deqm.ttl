@@ -15,9 +15,9 @@
   fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"];
   fhir:ImplementationGuide.version [ fhir:value "1.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "DataExchangeForQualityMeasuresR4"];
-  fhir:ImplementationGuide.title [ fhir:value "Data Exchange For Quality Measures R4"];
+  fhir:ImplementationGuide.title [ fhir:value "Data Exchange For Quality Measures STU2 for FHIR R4"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-10-21T17:55:56-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-10-21T18:17:04-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 International - Clinical Quality Information Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

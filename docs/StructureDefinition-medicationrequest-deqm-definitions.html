@@ -63,7 +63,7 @@
 
   <div id="project-status" class="project-status">   <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures R4 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide</b>
     
     
     CI Build
@@ -213,7 +213,7 @@
   <!-- ============Publish box=============== -->
 
 
-  <!-- ReleaseHeader --><p id="publish-box">Data Exchange For Quality Measures R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <!-- This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
    {% else %}
@@ -420,7 +420,7 @@
   <tr><td>Definition</td><td><p>A code specifying the current state of the order.  Generally this will be active or completed state.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="d1f86b97-81cc-4a7d-bafd-d8f977085b95">​</a>A code specifying the state of the prescribing event. Describes the lifecycle of the prescription.<br/>The codes SHALL be taken from <a href="medication-request-status.html">medication-request-status</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="69b3dc9a-7717-4611-a600-71f4a297ae33">​</a>A code specifying the state of the prescribing event. Describes the lifecycle of the prescription.<br/>The codes SHALL be taken from <a href="medication-request-status.html">medication-request-status</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
@@ -430,7 +430,7 @@
   <tr><td>Definition</td><td><p>Whether the request is a proposal, plan, or an original order.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="b06f0fdf-20ae-43ed-9d49-a324586a5c72">​</a>The kind of medication order<br/>The codes SHALL be taken from <a href="medication-request-intent.html">medication-request-intent</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="12231654-e34c-4bb8-8efc-e3c30f41b3a5">​</a>The kind of medication order<br/>The codes SHALL be taken from <a href="medication-request-intent.html">medication-request-intent</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>It is expected that the type of requester will be restricted for different stages of a MedicationRequest.  For example, Proposals can be created by a patient, relatedPerson, Practitioner or Device.  Plans can be created by Practitioners, Patients, RelatedPersons and Devices.  Original orders can be created by a Practitioner only.</p>
@@ -441,13 +441,13 @@
   <tr><td>Definition</td><td><p>Indicates the type of medication order and where the medication is expected to be consumed or administered.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="d53b4a7e-bcf1-4885-8b67-252c43e9d373">​</a>A coded concept identifying where the medication ordered is expected to be consumed or administered<br/>The codes SHOULD be taken from <a href="medication-request-category.html">medication-request-category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="141cc02b-0b97-4f32-b104-a196aba63adb">​</a>A coded concept identifying where the medication ordered is expected to be consumed or administered<br/>The codes SHOULD be taken from <a href="medication-request-category.html">medication-request-category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="MedicationRequest.priority"> </a><span style="color: grey">18.</span> <b>MedicationRequest.priority</b><a href="#MedicationRequest.priority" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>Indicates how quickly the Medication Request should be addressed with respect to other requests.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="2546f991-71e7-49ff-ad22-1fc6ce27ae64">​</a>Identifies the level of importance to be assigned to actioning the request<br/>The codes SHALL be taken from <a href="medication-request-priority.html">medication-request-priority</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="a95c8b6d-1b6b-483b-98f2-ecb75bdf33b1">​</a>Identifies the level of importance to be assigned to actioning the request<br/>The codes SHALL be taken from <a href="medication-request-priority.html">medication-request-priority</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="MedicationRequest.medication[x]"> </a><a name="MedicationRequest.medicationCodeableConcept"> </a><span style="color: grey">19.</span> <b>MedicationRequest.medication[x]</b><a href="#MedicationRequest.medication[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.</p>
@@ -1124,7 +1124,7 @@
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     &copy; 2019  <!-- does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Oct 21, 2019 17:55-0700">2019-10-21</span>.
+     &copy; 2019  <!-- does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Oct 21, 2019 18:17-0700">2019-10-21</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>
