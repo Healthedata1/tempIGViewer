@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>US Meds</title>
+  <title>DataExchangeForQualityMeasuresR4</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="US Meds Implemenation Guide" />
-<meta name="author" content="HL7 Pharmacy Work Group"/>
+<meta name="description" content="DataExchangeForQualityMeasuresR4 Implemenation Guide" />
+<meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -52,33 +52,28 @@
 
  <!-- org logo -->
              <!--
-<a id="your-logo" no-external="true" href="http://www.hl7.org">
+<a no-external="true" href="http://www.hl7.org">
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
-your logo here
 
-[![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive # org_logo}
-
-can only resize using html  or css ;-(
-
+================THIS IS FOR THE PROJECT LOGO AND URL ===============
 -->
 
-
-<a no-external="true" href="http://www.openmhealth.org/">
+<a no-external="true" href="http://www.hl7.org">
 <img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.png"/>
 </a>
 
   <!-- end org logo -->
 
-
-      <div id="project-status" class="project-status"> <!-- ig title text -->
-        <b>US Meds Implementation Guide</b>
-        
-        (Release 1.1.0 )
-        
-    </div><!-- end ig title text -->
+  <div id="project-status" class="project-status"> <!-- ig title text -->
+    
+    <b>Data Exchange For Quality Measures R4 Implementation Guide</b>
+    
+    
+    CI Build
+    
+</div><!-- end ig title text -->
 
   </div><!-- end container -->
   <div class="container">
@@ -105,79 +100,93 @@ can only resize using html  or css ;-(
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="guidance.html">General Guidance</a>
-  </li>
-  <li>
-    <a href="profiles.html">Profiles</a>
-  </li>
-  <li>
-    <a href="pdmp.html">PDMP</a>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Framework<b class="caret">
+      </b> <!-- Da Vinci Individual Measures Use Cases -->
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="datax.html">Data Exchange</a>
+      </li>
+      <li>
+        <a href="indv-reporting.html">Individual Reporting</a>
+      </li>
+      <li>
+        <a href="summary-reporting.html">Summary Reporting</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
-    </b>
-  </a>
-  <ul class="dropdown-menu">
-    <li>
-      <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
-    </li>
-    <li>
-      <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
-    </li>
-  </ul>
-</li>
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Example Use Cases<b class="caret">
+      </b> <!-- Da Vinci Individual Measures Use Cases -->
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mrp.html">Medication Reconciliation (MRP)</a>
+      </li>
+      <li>
+        <a href="col.html">Colorectal Cancer Screening (COL)</a>
+      </li>
+      <li>
+        <a href="vte1.html">Venous Thromboembolism Prophylaxis (VTE-1)</a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+
+      <!--
 <li>
-  <a href="downloads.html">Downloads</a>
+  <a href="operations.html">Operations</a>
 </li>
+-->
+
+      <li>
+        <a href="profiles.html">Profiles/Extensions</a>
+      </li>
+      <li>
+        <a href="operations.html">Operations</a>
+      </li>
+      <!--
 <li>
-  <a href="http://hl7.org/fhir/us/meds/history.html">History</a>
+  <a href="terminology.html">Terminology</a>
 </li>
+-->
+      <li>
+        <a href="capstatements.html">CapabilityStatements</a>
+
+      </li>
+    </ul>
+  </li>
+  <!--
+<li>
+  <a href="security.html">Security</a>
+</li>
+-->
+  <li>
+    <a href="all-examples.html">Examples</a>
+  </li>
+
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
 </ul>
 
 
-             <!--        <ul class="nav navbar-nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="guidance.html">General Guidance</a>
-          </li>
-          <li>
-            <a href="profiles.html">Profiles and Logical Models</a>
-          </li>
-          <li>
-            <a href="structuremaps.html">Mappings</a>
-          </li>
-          <li>
-            <a href="extensions.html">Extensions</a>
-          </li>
-          <li>
-            <a href="terminology.html">Terminology</a>
-          </li>
-          <li>
-            <a href="searchparams.html">Search Parameters</a>
-          </li>
-          <li>
-            <a href="capstatements.html">Capability Statements</a>
-          </li>
-          <li>
-            <a href="security.html">Security</a>
-          </li>
-          <li>
-            <a href="examples.html">Examples</a>
-          </li>
-          <li>
-            <a href="downloads.html">Downloads</a>
-          </li>
-        </ul> -->
       </div>
       <!-- /.nav-collapse -->
     </div>
@@ -210,9 +219,48 @@ can only resize using html  or css ;-(
 
 
 
+
   <style type="text/css">
-  h2,h3,h4,h5,h6{--pagenumber: "2"}
-  </style>
+    /* Section numbering*/
+    body{
+      counter-reset: pagenumber1 2 section
+        }
+
+  h2{counter-reset: sub-section}
+  h3{counter-reset: composite}
+  h4{counter-reset: detail}
+  h5{counter-reset: more-detail}
+
+  h2:not([nocount^="true"]):before{
+    counter-increment: section;
+    content:  counter(pagenumber1) "." counter(section) " ";
+    color: silver;
+  }
+  h3:not([nocount^="true"]):before{
+    counter-increment: sub-section;
+    content: counter(pagenumber1) "." counter(section) "." counter(sub-section) " ";
+    color: silver;
+
+  }
+  h4:not([nocount^="true"]):before{
+    content: counter(pagenumber1) "." counter(section) "." counter(sub-section) "." counter(composite) " ";
+    color: silver;
+    counter-increment: composite;
+    counter-reset: detail 1;
+  }
+  h5:not([nocount^="true"]):before{
+
+    content: counter(pagenumber1) "." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+    color: silver;
+    counter-increment: detail;
+    counter-reset: more-detail 1;
+  }
+  h6:not([nocount^="true"]):before{
+    content: counter(pagenumber1) "." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";
+    color: silver;
+    counter-increment: more-detail;
+  }
+</style>
 
 
 
@@ -226,240 +274,116 @@ can only resize using html  or css ;-(
 
 <!-- ============StatusBox=============== -->
 
-<!--status-bar-->
-<p id="publish-box">
-This is the 
-     STU2 (release 1.1.0)
-  
-  
-  of the US Meds Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="http://www.hl7.org/fhir/us/meds/history.cfml">Directory of published versions</a>
-</p>
+
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!-- 
+This is the {% if {{site.build}} == "ci" %}
+    Continuous Integration Build
+   {% else %}
+    (release {{site.data.fhir.ig.version}})
+  {% endif %}
+  {% if {{site.build}} == "ballot" %} {{site.ballot}} Ballot {% endif %}
+  of the {{site.data.fhir.igName}} Implementation Guide,  based on <a href="{{ site.data.fhir.path }}index.html">FHIR Version {{ site.data.fhir.version }}</a>.  See the <a href="{{ site.historypath }}">Directory of published versions.</a>
+ -->
 
 
 <!-- ============CONTENT CONTENT=============== -->
 
 
-<h2>Definitions, Interpretations and Requirements common to all US-Meds actors</h2>
+<h2>General Guidance and Definitions</h2>
 
 <!-- page source: guidance.md  -->
 
 
 
+
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+
 <ul id="markdown-toc">
-  <li><a href="#background-on-the-fhir-medications-resources" id="markdown-toc-background-on-the-fhir-medications-resources">Background on the FHIR Medications resources</a></li>
-  <li><a href="#uc-1" id="markdown-toc-uc-1">Use Case 1 - Patient and Provider access to a patients’ medications</a>    <ul>
-      <li><a href="#fetching-all-medications-active-medications-and-all-medications-for-an-encounter" id="markdown-toc-fetching-all-medications-active-medications-and-all-medications-for-an-encounter">Fetching All Medications, Active Medications, and All Medications for an Encounter</a>        <ul>
-          <li><a href="#quick-start" id="markdown-toc-quick-start">Quick Start</a></li>
-        </ul>
-      </li>
-      <li><a href="#fetching-active-medications-orders" id="markdown-toc-fetching-active-medications-orders">Fetching Active Medications Orders</a>        <ul>
-          <li><a href="#quick-start-1" id="markdown-toc-quick-start-1">Quick Start</a></li>
-        </ul>
-      </li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#preconditions-and-assumptions" id="markdown-toc-preconditions-and-assumptions">Preconditions and Assumptions</a></li>
+  <li><a href="#deqm-measurereport-profiles" id="markdown-toc-deqm-measurereport-profiles">DEQM MeasureReport Profiles</a>    <ul>
+      <li><a href="#data-exchange" id="markdown-toc-data-exchange">Data Exchange</a></li>
+      <li><a href="#measure-reporting" id="markdown-toc-measure-reporting">Measure Reporting</a></li>
     </ul>
   </li>
-  <li><a href="#uc-2" id="markdown-toc-uc-2">Use Case 2 - Medication list update</a></li>
-  <li><a href="#uc-3" id="markdown-toc-uc-3">Use Case 3 - Create new outpatient Prescription</a></li>
-  <li><a href="#uc-4" id="markdown-toc-uc-4">Use Case 4 - Dispense medication from Pharmacy</a></li>
+  <li><a href="#other-profiles-used-in-the-evaluation-of-a-measure" id="markdown-toc-other-profiles-used-in-the-evaluation-of-a-measure">Other Profiles Used in the Evaluation of a Measure</a></li>
+  <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a></li>
 </ul>
 
-<!-- end TOC -->
+<h2 id="introduction">Introduction</h2>
 
-<p>This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases  The conformance verbs used are defined in <a href="http://hl7.org/fhir/STU3/conformance-rules.html#conflang">FHIR Conformance Rules</a>.  The <a href="http://hl7.org/fhir/us/coreguidance.html">general guidance</a> used in the US-Core IG apply to this guide as well.</p>
+<p>Clinical Quality Measures are a common tool used throughout healthcare to help evaluate and understand the impact and quality of the care being provided to an individual or population.</p>
 
-<!-- source pages/\_include/.md  file -->
+<p>The Data Exchange for Quality Measure (DEQM) Implementation Guide defines the interactions for two purposes in the Quality Measure Ecosystem.  The first interaction is when a Producer, such as a practitioner, or owner of data needs to exchange that data with a Consumer of that data, such as a payer, a registry or public health.  We call this the <a href="datax.html">Data Exchange</a> scenario. Examples of this interaction might be when a provider has patient information from a recent visit that he needs to share with a payer under a value based contract.</p>
 
-<h3 id="background-on-the-fhir-medications-resources">Background on the FHIR Medications resources</h3>
+<p>The second scenario defined in this guide is when a Reporter needs to exchange a measure report with a Receiver.  This guide addresses the Individual Measure Reporting and the Summary Reporting.  As an example, Individual Measure Reports may be used by hospitals acting as the Reporter to report a specific measure to a payer acting as a Receiver.  Similarly, Summary Measure Reports may be used to report yearly eCQM results on a specific measure.</p>
 
-<h4 class="no_toc" id="pharmacy-fhir-resources">Pharmacy FHIR Resources</h4>
+<p class="stu-note">Patient List Reporting is a third reporting type which is similar to a QRDA Category 2 report. This Type is out of scope for this version of the Implementation Guide.  In a future version this guide, Patient List Reporting will be addressed.</p>
 
-<p>The 5 FHIR pharmacy resources concerned with the ordering, dispensing, administration and recording of medications are:</p>
+<h2 id="preconditions-and-assumptions">Preconditions and Assumptions</h2>
 
 <ul>
-  <li><a href="http://hl7.org/fhir/STU3/medication.html">Medication</a>:  Represents the medication itself</li>
-  <li><a href="http://hl7.org/fhir/STU3/medicationrequest.html">MedicationRequest</a>: Represents an authorization to dispense and administer a medication (aka prescription or order).</li>
-  <li><a href="http://hl7.org/fhir/STU3/medicationdispense.html">MedicationDispense</a>: Represents a response to a prescription - provision of a supply of a medication.</li>
-  <li><a href="http://hl7.org/fhir/STU3/medicationadministration.html">MedicationAdministration</a>: Represents the consumption or administration of a medication.</li>
-  <li><a href="http://hl7.org/fhir/STU3/medicationstatement.html">MedicationStatement</a>: Represents the record for past present and future medications use.</li>
-</ul>
+  <li>
+    <p>Although the exact mechanisms for securing these exchanges are not specified as part of this implementation guide, systems should use standard authentication and authorization approaches.  The <a href="http://www.hl7.org/fhir/smart-app-launch/history.cfml">SMART App Launch</a> and <a href="http://www.hl7.org/fhir/uv/bulkdata/history.cfml">SMART backend services</a> authentication/authorization approach are recommended models.</p>
+  </li>
+  <li>
+    <p>The Measure resource is used to provide both human- and
+machine-readable definitions of a quality measure</p>
+  </li>
+  <li>
+    <p>The MeasureReport provides an association to a specific quality
+measure and links the submitted data together to simplify processing
+for the receiver.</p>
+  </li>
+  <li>
+    <p>The required data is represented in the referenced resources defined
+by the MeasureReport.</p>
 
-<p>Details about each resource can be found in the FHIR specification.  A general discussion regarding the interaction between these resources is described in the FHIR <a href="http://hl7.org/fhir/STU3/medications-module.html">Medications Module</a> and the <a href="http://hl7.org/fhir/STU3/resourceguide.html">Guide to Resources</a> Sections.</p>
-
-<h4 class="no_toc" id="relationships-between-the-pharmacy-fhir-resources">Relationships Between the Pharmacy FHIR Resources</h4>
-
-<p>This IG focuses on access and updates to a patient’s medications and the interaction between the medication order/prescription (<em>MedicationRequest</em>) and the medication record (<em>MedicationStatement</em>).  It is therefore important to understand the relationships between these resources.  Figure 1 illustrates the workflow relationship between the medication order and the fulfillment as represented by the FHIR medication resources.  Note that in the outpatient setting the patient does the administration.</p>
-
-<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
-
-<!-- file:///assets/images/usmed-fig1.png -->
-
-<div>
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: FHIR Medication Order and Fulfillment.</strong></figcaption>
-  <img src="assets/images/usmed-fig1.png" class="figure-img img-responsive img-rounded center-block" alt="usmed-fig1.png" />
-</figure>
-
-<p></p>
-</div>
-
-<p><strong>MedicationStatement Provenance</strong></p>
-
-<p>Several sources may be used to create a MedicationStatement as is shown in Figure 2 below. The information may come from a patient, a related person (such as a family member), a provider, or a system’s medication orders.  A patient or related person may directly report the information or provide some type of record including other FHIR resources.  The information from an ordering system may also be used to create a MedicationStatement resource. Any combination of these sources may be used. For example, oftentimes the patient is the <em>only</em> source of information when the patient reports an OTC medication.  Alternatively, when the patient reports actual medication usage for a known prescription, then the MedicationStatement is a combination of the order and patient stated compliance or usage.  If the patient or provider provided no information, the entire MedicationStatement is derived from the order.</p>
-
-<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
-
-<!-- file:///assets/images/usmed-fig2.png -->
-
-<div>
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: MedicationStatement Information Sources.</strong></figcaption>
-  <img src="assets/images/usmed-fig2.png" class="figure-img img-responsive img-rounded center-block" alt="usmed-fig2.png" />
-</figure>
-
-<p></p>
-</div>
-
-<p><strong>Various Ways to Represent the Medication</strong></p>
-
-<p>The pharmacy FHIR resources can represent a medication using either a code or a reference to a Medication resource. Typically, a code will be used to represent either a branded (for example, Crestor 10mg tablet) or a generic (for example, Rosuvastatin 10mg tablet) medication.  When using a code, the code  <strong>SHALL</strong> be <a href="http://hl7.org/fhir/STU3/extensibility.html">extensibly</a> bound to <a href="http://hl7.org/fhir/STU3/rxnorm.html">RxNorm</a> - i.e. unless the concept is not covered by RxNorm, the RxNorm code <strong>SHALL</strong> be used.  More information about using codes can be found in US Core <a href="http://hl7.org/fhir/us/coreguidance.html">General Guidance Section</a> and the <a href="http://hl7.org/fhir/STU3/terminologies-systems.html">FHIR Specification</a>.  A medication resource is typically used when information that is not included as part of the RxNorm code is required.  For example, the Medication resource is the only way to correctly represent compounded or extemporaneously prepared medication.  When referencing the Medication resource, the resource may be a <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> or an external resource. These options are shown in figure 3 below.  The server application <strong>MAY</strong> choose any combination of these methods, but if an external reference to Medication is used, the server <strong>SHALL</strong> support the include parameter for searching this element. The client application <strong>MUST</strong> support all methods. The US Core IG provides <a href="http://hl7.org/fhir/us/coreStructureDefinition-us-core-medicationstatement.html#examples">examples</a> that show these different methods. Additional guidance is provided below and in the <a href="CapabilityStatement-server.html">CapabilityStatement</a> section.</p>
-
-<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
-
-<!-- file:///assets/images/usmed-fig3.png -->
-
-<div>
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: How A Medication is Represented in Pharmacy Resources.</strong></figcaption>
-  <img src="assets/images/usmed-fig3.png" class="figure-img img-responsive img-rounded center-block" alt="usmed-fig3.png" />
-</figure>
-
-<p></p>
-</div>
-
-<h3 id="uc-1">Use Case 1 - Patient and Provider access to a patients’ medications</h3>
-
-<p>The guidance below addresses how a patient or a provider can access a patients’ active, historical and future (planned) medications list.  This use case adopts the use cases defined as part of the Argonaut Project and US Core, specifically within the scope of accessing medication information as prescribed in Meaningful Use 2015 §?170.302(d) - <em>Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.</em></p>
-
-<h4 id="fetching-all-medications-active-medications-and-all-medications-for-an-encounter">Fetching All Medications, Active Medications, and All Medications for an Encounter</h4>
-
-<p><strong>Definitions</strong></p>
-
-<ul>
-  <li>“All medications” is defined in this IG to include all historical (prescribed and consumed), active (prescribed and consumed), future (i.e. intended) and medications that are entered in error and whose status is unknown.</li>
-  <li>“Active medications” is defined in this IG to include all prescribed and/or being consumed medications. Active medications do not include past, future, unknown status, and entered in error medications.</li>
-</ul>
-
-<p><strong>Requirements</strong></p>
-
-<ol>
-  <li>A MedicationStatement resource query <strong>SHALL</strong> be all that is required to access “all medications” and “all <em>active</em> medications” for a patient:</li>
-  <li>The MedicationStatement <strong>SHALL</strong> include all medications directly derived from the system’s orders. For medications directly derived from the system’s orders:
     <ul>
-      <li>The <code class="highlighter-rouge">MedicationStatement.derivedFrom</code> element <strong>SHALL</strong> reference the systems MedicationRequest resource for that order.
-        <ul>
-          <li>For more information about the dosage etc., the client <strong>MAY</strong> need to query the MedicationRequest resource directly using the <code class="highlighter-rouge">derivedFrom</code> reference.</li>
-        </ul>
-      </li>
-      <li>Only MedicationRequest resources with an <code class="highlighter-rouge">intent</code> of ‘order’ and any status in <code class="highlighter-rouge">status</code> will be accessible through MedicationStatement (i.e., MedicationStatement will not be derived from an order-instance, draft or proposed order).</li>
-      <li>Additional information <strong>MAY</strong> be added (e.g., whether the medication was taken). When this is the case, the <code class="highlighter-rouge">MedicationStatement.informationSource</code>	<strong>SHALL</strong> reference the individual providing the additional information.</li>
-      <li>The <code class="highlighter-rouge">MedicationStatement.effectiveDate</code> or <code class="highlighter-rouge">effectivePeriod</code> <strong>SHOULD</strong> be derived from an actual date if available. For example, if the medication was administered during a patient visit. If the actual administration date(s) are unknown the orders authoring date <strong>MAY</strong> be used as an approximate date. However, in this case, the <code class="highlighter-rouge">.taken</code> element <strong>SHOULD</strong> be <code class="highlighter-rouge">unk</code> (Unknown).</li>
+      <li>Multiple MeasureReport may reference the same instance of a resource.</li>
     </ul>
   </li>
-  <li>The ‘context’ element <strong>SHOULD</strong> be supported to enable querying for medications administered during an encounter. Searching by context (i.e., for a given inpatient encounter) will return all medications ordered during that encounter, which can include both medications administered in hospital as well as prescribed or discharge medications, which are intended to be taken at home.</li>
-  <li>The <code class="highlighter-rouge">category</code> and <code class="highlighter-rouge">context</code>  elements <strong>MAY</strong> be used together to get the intersection of medications for a given encounter (i.e., the context) that were administered during as an inpatient (i.e., the category).</li>
-</ol>
-
-<p><strong>Deduplication of Data</strong></p>
-
-<p>Medications may be duplicated in a medication list when multiple sources of data are used to generate the list.  To provide a list of a patients’ medications, it may be necessary to “de-duplicate” the medications on the list. The deduplication activity <strong>MAY</strong> be provided by the server but <strong>SHOULD</strong> be provided by the client.</p>
-
-<p><strong>“Not Taken” Medications</strong></p>
-
-<p>For specific guidance on how to determine if the patient has taken the medication, see the <a href="http://hl7.org/fhir/STU3/medicationstatement.html#11.4.3.3">MedicationStatement Resource Notes</a> section in the FHIR Specification. To illustrate this scenario, the examples listed below contain an instance in which the patient has not taken a medication.</p>
-
-<h5 id="quick-start">Quick Start</h5>
-
-<p>Below is an overview of the required search and read operations for this use case. See the <a href="CapabilityStatement-server.html">Conformance requirements</a> for a complete list of supported RESTful operations and search parameters for this IG.</p>
-
-<ol>
   <li>
-    <p>Get “all medications” for a patient by querying MedicationStatement using the <code class="highlighter-rouge">patient</code> search parameter.  This query is identical to that defined in the <a href="http://hl7.org/fhir/us/coreStructureDefinition-us-core-medicationstatement.html#search">US Core Implementation Guide</a>. See that IG for further details.</p>
-
-    <p>Example: <a href="get-all-meds.html">Get All Medications</a></p>
+    <p>Consumers and Producers <em>should</em> both use a common clinical
+quality language (CQL) that would allow the same measures to be
+applied in healthcare and at the aggregator. This would also enable
+the application of the same measures across populations that span
+multiple Consumers (such as payers).</p>
   </li>
-  <li>
-    <p>Get “all <em>active</em> medications” for a patient by querying MedicationStatement using the <code class="highlighter-rouge">patient</code> and <code class="highlighter-rouge">status</code>=’active’ search parameters. This search returns a Bundle of all active MedicationStatements and if the _include parameter is used, Medication resources for the specified patient.</p>
-
-    <p><code class="highlighter-rouge">GET /MedicationStatement?patient=[id]&amp;status=active{&amp;_include=MedicationStatement:medication}</code></p>
-
-    <p><em>Support:</em> Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the _include parameter.  Optional for server to support the _include parameter.</p>
-
-    <p>Example: <a href="get-all-active-meds.html">Get All <em>Active</em> Medications</a></p>
-  </li>
-  <li>
-    <p>Get “all medications” for an encounter by querying MedicationStatement using the patient and encounter search parameters. This search returns a Bundle of MedicationStatements for an encounter and if the _include parameter is used, Medication resources for the specified patient.</p>
-
-    <p><code class="highlighter-rouge">GET /MedicationStatement?patient=[id]&amp;context=[id]{&amp;_include=MedicationStatement:medication}</code></p>
-
-    <p>Support: Mandatory for server and client to support search by patient and encounter parameter. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.</p>
-
-    <p>Example: <a href="get-all-enc-meds.html">Get All Medications for an Encounter</a></p>
-  </li>
-</ol>
-
-<h4 id="fetching-active-medications-orders">Fetching Active Medications Orders</h4>
-
-<p><strong>Definitions</strong></p>
-
-<ul>
-  <li>“Active medication orders” include only the currently prescribed medications.  They Do not include order statuses of past, on-hold, stopped, cancelled, future (draft), entered in error or unknown.</li>
 </ul>
 
-<p><strong>Requirements</strong></p>
+<h2 id="deqm-measurereport-profiles">DEQM MeasureReport Profiles</h2>
 
-<ol>
-  <li>A MedicationRequest resource query <strong>SHALL</strong> be all that is required to access the “all active medication orders”.</li>
-</ol>
+<p>The MeasureReport resource is used as an organizer for both the data exchange scenario and for measure reporting scenario. To meet the different needs in these scenarios, DEQM has created 3 MeasureReport profiles.  Technically the type of profiles can be determined by inspecting the <code class="highlighter-rouge">meta.profile</code> element if present or the <code class="highlighter-rouge">type</code> element.</p>
 
-<h5 id="quick-start-1">Quick Start</h5>
+<h3 id="data-exchange">Data Exchange</h3>
 
-<p>Below is an overview of the required search and read operations for this use case. See the <a href="CapabilityStatement-server.html">Conformance requirements</a> for a complete list of supported RESTful operations and search parameters for this IG.</p>
+<p>The [DEQM Data-Exchange MeasureReport Profile] is used to get the data from the producer to a consumer of the data.  The consumer might be a system that calculates the measure report but they could also be an aggregator who sends that data on to another system to do measure calculation and reporting.
+Along with Data-Exchange MeasureReport Profile, the data producer sends the Organization, Patient and any relevant resources for the measure they have produced data on. When a data producer, such as a practitioner,  sends a MeasureReport bundle, they may not have all the data that is required to calculate the measure report. One example might be because the measure requires outcome data from at a later point in time during the measurement period. Another example where the data producer may not have all the data would be continuous coverage period as the producer of the data may know the patient was covered on the day the patient was seen.  The Consumer (in this case the payer as aggregator) is the owner of all coverage information.  Therefore, only the consumer could determine if the continuous coverage period requirement is met.</p>
 
-<ol>
-  <li>
-    <p>Using the <code class="highlighter-rouge">patient</code> and <code class="highlighter-rouge">status</code>=’active’ search parameters. This search returns a Bundle of all a patient’s active MedicationRequests and, if the _include parameter is used by the server, Medication resources.</p>
+<h3 id="measure-reporting">Measure Reporting</h3>
 
-    <p><code class="highlighter-rouge">GET /MedicationRequest?patient=[id]&amp;status=active{&amp;_include=MedicationRequest:medication}</code></p>
+<p>Measure Reporting is done by a Reporter who has all of the data that is required to generate a report(s). Two profiles for measure reporting have been defined in this guide.</p>
 
-    <p><em>Support:</em> Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the _include parameter.  Optional for server to support the _include parameter.</p>
+<p>The <a href="StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a> is used when a measure is reported for a specific patient. It contains all of the data that is relevant to generate the report including the measure outcome and is similar to a QRDA Category 1 report.  The MeasureReport(s) are packaged in a FHIR Bundle with Organization, Patient and any other resources that were used to calculate this measure.</p>
 
-    <p>Example: <a href="get-all-active-med-order.html">Get All <em>Active</em> Medication Orders</a></p>
-  </li>
-</ol>
+<p>The <a href="StructureDefinition-summary-measurereport-deqm.html">DEQM Summary MeasureReport Profile</a> is used when a measure is reported   for a group of patients at the conclusion of a measure reporting period. It  includes the measure outcome data and is similar to a QRDA Category 3 report.  Unlike the <a href="StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a>, the report is typically transacted as a single MeasureReport report.  Although several Summary reports may be transacted together as Bundle.</p>
 
-<h3 id="uc-2">Use Case 2 - Medication list update</h3>
+<h2 id="other-profiles-used-in-the-evaluation-of-a-measure">Other Profiles Used in the Evaluation of a Measure</h2>
 
-<p>This use case adopts the use cases for the Argonaut Project and US Core specifically within the scope of recording and changing medications as prescribed in Meaningful Use 2015 §?170.302(d) - <em>Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.</em>  The updates include both the creation of new MedicationStatement resources and changes to existing MedicationStatement resources.  These interactions require “write access” to the EHR systems.   Refer to the US Core Implementation Guide’s page for a discussion of the security and authorization requirements.</p>
+<p>Depending on the specific Measure and Interaction, various DEQM, QI Core, and CQFM Profiles are used in the evaluation of a measure and referenced by a MeasureReport.  Refer to the <a href="http://build.fhir.org/ig/HL7/fhir-qi-core/index.html">QI Core</a> implementation guide for examples of how to represent data involved in calculation of quality measures.</p>
 
-<p>This Use Case will be the focus of future versions of this IG.</p>
-
-<h3 id="uc-3">Use Case 3 - Create new outpatient Prescription</h3>
-
-<p>This use case involves the provider creating a new outpatient prescription using the MedicationRequest resource.  Subsequent workflow steps depend on specific pattern agreed upon by business partners. See a list of possible scenarios in the <a href="http://hl7.org/fhir/STU3/workflow-communications.html">FHIR workflow sections</a> in the FHIR specification.</p>
-
-<p>At the time of this publication, the US implementers have not used the MedicationRequest resource sufficiently to provide meaningful feedback on best practices and guidance.  This Use Case will be the focus of future versions of this IG.</p>
-
-<h3 id="uc-4">Use Case 4 - Dispense medication from Pharmacy</h3>
-
-<p>Background: Community pharmacies in the US are mandated to use <a href="https://www.ncpdp.org/">NCPDP</a> Script standard to send dispensed medications for adjudication and hospital pharmacies are typically using HL7 V2 RXD messaging.  Possible scenarios where this resource could be used for interchange of dispensing data include:</p>
+<h2 id="must-support">Must Support</h2>
 
 <ul>
-  <li>Dispense Histories</li>
-  <li>Real-time Confirmation of Prescription Drug Benefits</li>
-  <li>Prescription Drug Monitoring Programs (PDMPs)</li>
+  <li>This guide adopts the <a href="http://build.fhir.org/ig/HL7/fhir-qi-core/index.html#mustsupport" title="QI Core definition of *Must Support*">QI Core <em>Must Support</em></a> definition with the following additional expectation:</li>
 </ul>
 
-<p>At the time of this publication, the US implementers have not used the MedicationDispense resource sufficiently to provide meaningful feedback on best practices and guidance.  This Use Case will be the focus of future versions of this IG.</p>
+<p>The receiver of data may not be able to complete processing and may report an error if a Must Support element is unavailable.</p>
+
+<p><br /></p>
+
 
 
   <!-- ==============END CONTENT END CONTENT=================== -->
@@ -492,12 +416,12 @@ This is the
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      US Meds 
-           Version: 1.1.0
-         &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Tue, Feb 5, 2019 16:21-0800.
-      | <a style="color: #81BEF7" href="http://www.hl7.org/fhir/us/meds/history.cfml">History</a>
-      | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
-        <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Oct 21, 2019 17:55-0700">2019-10-21</span>.
+      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
+      | <a style="color: #81BEF7" href="qa.html">QA Report</a>
+      | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>
+      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+      | <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
         </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
@@ -527,6 +451,45 @@ This is the
 
 
 
+<script src="assets/js/clipboard.min.js"> </script>
+
+<script>
+  // Tooltip
+
+  $('#copy-button').tooltip({
+    trigger: 'click',
+    placement: 'bottom'
+  });
+
+  function setTooltip(message) {
+    $('#copy-button').tooltip('hide')
+      .attr('data-original-title', message)
+      .tooltip('show');
+  }
+
+  function hideTooltip() {
+    setTimeout(function() {
+      $('#copy-button').tooltip('hide');
+    }, 1000);
+  }
+
+  // Clipboard
+
+  var clipboard = new ClipboardJS('#copy-button');
+
+  clipboard.on('success', function(e) {
+    setTooltip('Copied!');
+    hideTooltip();
+  });
+
+  clipboard.on('error', function(e) {
+    setTooltip('Failed!');
+    hideTooltip();
+  });
+
+</script>
+
+
 
 <!-- Analytics Below
 ================================================== -->
@@ -534,6 +497,10 @@ This is the
 <!-- add anchors before the closing body tag -->
 <script>
 anchors.add()
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
 </script>
 
 </body>

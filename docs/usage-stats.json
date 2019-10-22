@@ -1,0 +1,159 @@
+{
+  "package": "hl7.fhir.us.davinci-deqm",
+  "version": "1.1.0",
+  "fhirVersion": "4.0.0",
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Do Not Perform Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-doNotPerform",
+      "title": "DEQM Do Not Perform Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Do Not Perform Extension",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "Coverage": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      }
+    ],
+    "MeasureReport": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      }
+    ],
+    "DeviceRequest": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/devicerequest-deqm",
+        "title": "profile-devicerequest-deqm"
+      }
+    ],
+    "DeviceUseStatement": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/deviceusestatement-deqm",
+        "title": "profile-deviceusestatement-deqm"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "profile-medicationadministration-deqm"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "profile-medicationrequest-deqm"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQM Organization Profile"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm",
+        "title": "DEQM Practitioner Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.interaction",
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.operation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/event-notDone": [
+      "DeviceUseStatement"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/pharmacy-core-doseType": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/pharmacy-core-infuseOver": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/pharmacy-core-maxDeliveryRate": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/pharmacy-core-maxDeliveryVolume": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/pharmacy-core-minDosePerPeriod": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/pharmacy-core-rateGoal": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/pharmacy-core-rateIncrement": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/pharmacy-core-rateIncrementInterval": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/practitioner-classification": [
+      "Practitioner"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier": [
+      "MeasureReport"
+    ],
+    "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-dataCollectionType": [
+      "MeasureReport.type"
+    ],
+    "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-doNotPerform": [
+      "DeviceRequest",
+      "MedicationRequest"
+    ],
+    "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor": [
+      "MeasureReport"
+    ]
+  }
+}

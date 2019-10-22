@@ -1,12 +1,12 @@
-﻿{
-  "url": "http://hl7.org/fhir/us/meds/ImplementationGuide/ig",
-  "name": "US Meds",
-  "package-id": "hl7.fhir.us.meds",
+{
+  "url": "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm-1.1.0",
+  "name": "DataExchangeForQualityMeasuresR4",
+  "package-id": "hl7.fhir.us.davinci-deqm",
   "ig-ver": "1.1.0",
-  "date": "Tue, 05 Feb, 2019 16:21:56 -0800",
-  "errs": 0,
-  "warnings": 146,
-  "hints": 0,
-  "version": "3.0.1",
-  "tool": "4.0.0 (3)"
+  "date": "Mon, 21 Oct, 2019 17:55:56 -0700",
+  "errs": 244,
+  "warnings": 68,
+  "hints": 2,
+  "version": "4.0.0",
+  "tool": "4.1.0 (3)"
 }

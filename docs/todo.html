@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>US Meds</title>
+  <title>DataExchangeForQualityMeasuresR4</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="US Meds Implemenation Guide" />
-<meta name="author" content="HL7 Pharmacy Work Group"/>
+<meta name="description" content="DataExchangeForQualityMeasuresR4 Implemenation Guide" />
+<meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -52,33 +52,28 @@
 
  <!-- org logo -->
              <!--
-<a id="your-logo" no-external="true" href="http://www.hl7.org">
+<a no-external="true" href="http://www.hl7.org">
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
-your logo here
 
-[![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive # org_logo}
-
-can only resize using html  or css ;-(
-
+================THIS IS FOR THE PROJECT LOGO AND URL ===============
 -->
 
-
-<a no-external="true" href="http://www.openmhealth.org/">
+<a no-external="true" href="http://www.hl7.org">
 <img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.png"/>
 </a>
 
   <!-- end org logo -->
 
-
-      <div id="project-status" class="project-status"> <!-- ig title text -->
-        <b>US Meds Implementation Guide</b>
-        
-        (Release 1.1.0 )
-        
-    </div><!-- end ig title text -->
+  <div id="project-status" class="project-status"> <!-- ig title text -->
+    
+    <b>Data Exchange For Quality Measures R4 Implementation Guide</b>
+    
+    
+    CI Build
+    
+</div><!-- end ig title text -->
 
   </div><!-- end container -->
   <div class="container">
@@ -105,79 +100,93 @@ can only resize using html  or css ;-(
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="guidance.html">General Guidance</a>
-  </li>
-  <li>
-    <a href="profiles.html">Profiles</a>
-  </li>
-  <li>
-    <a href="pdmp.html">PDMP</a>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Framework<b class="caret">
+      </b> <!-- Da Vinci Individual Measures Use Cases -->
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="datax.html">Data Exchange</a>
+      </li>
+      <li>
+        <a href="indv-reporting.html">Individual Reporting</a>
+      </li>
+      <li>
+        <a href="summary-reporting.html">Summary Reporting</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
-    </b>
-  </a>
-  <ul class="dropdown-menu">
-    <li>
-      <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
-    </li>
-    <li>
-      <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
-    </li>
-  </ul>
-</li>
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Example Use Cases<b class="caret">
+      </b> <!-- Da Vinci Individual Measures Use Cases -->
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mrp.html">Medication Reconciliation (MRP)</a>
+      </li>
+      <li>
+        <a href="col.html">Colorectal Cancer Screening (COL)</a>
+      </li>
+      <li>
+        <a href="vte1.html">Venous Thromboembolism Prophylaxis (VTE-1)</a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+
+      <!--
 <li>
-  <a href="downloads.html">Downloads</a>
+  <a href="operations.html">Operations</a>
 </li>
+-->
+
+      <li>
+        <a href="profiles.html">Profiles/Extensions</a>
+      </li>
+      <li>
+        <a href="operations.html">Operations</a>
+      </li>
+      <!--
 <li>
-  <a href="http://hl7.org/fhir/us/meds/history.html">History</a>
+  <a href="terminology.html">Terminology</a>
 </li>
+-->
+      <li>
+        <a href="capstatements.html">CapabilityStatements</a>
+
+      </li>
+    </ul>
+  </li>
+  <!--
+<li>
+  <a href="security.html">Security</a>
+</li>
+-->
+  <li>
+    <a href="all-examples.html">Examples</a>
+  </li>
+
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
 </ul>
 
 
-             <!--        <ul class="nav navbar-nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="guidance.html">General Guidance</a>
-          </li>
-          <li>
-            <a href="profiles.html">Profiles and Logical Models</a>
-          </li>
-          <li>
-            <a href="structuremaps.html">Mappings</a>
-          </li>
-          <li>
-            <a href="extensions.html">Extensions</a>
-          </li>
-          <li>
-            <a href="terminology.html">Terminology</a>
-          </li>
-          <li>
-            <a href="searchparams.html">Search Parameters</a>
-          </li>
-          <li>
-            <a href="capstatements.html">Capability Statements</a>
-          </li>
-          <li>
-            <a href="security.html">Security</a>
-          </li>
-          <li>
-            <a href="examples.html">Examples</a>
-          </li>
-          <li>
-            <a href="downloads.html">Downloads</a>
-          </li>
-        </ul> -->
       </div>
       <!-- /.nav-collapse -->
     </div>
@@ -212,6 +221,7 @@ can only resize using html  or css ;-(
 
 
 
+
 <!-- ============BreadCrumb=============== -->
 
 <nav class="breadcrumb">
@@ -222,14 +232,17 @@ can only resize using html  or css ;-(
 
 <!-- ============StatusBox=============== -->
 
-<!--status-bar-->
-<p id="publish-box">
-This is the 
-     STU2 (release 1.1.0)
-  
-  
-  of the US Meds Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="http://www.hl7.org/fhir/us/meds/history.cfml">Directory of published versions</a>
-</p>
+
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!-- 
+This is the {% if {{site.build}} == "ci" %}
+    Continuous Integration Build
+   {% else %}
+    (release {{site.data.fhir.ig.version}})
+  {% endif %}
+  {% if {{site.build}} == "ballot" %} {{site.ballot}} Ballot {% endif %}
+  of the {{site.data.fhir.igName}} Implementation Guide,  based on <a href="{{ site.data.fhir.path }}index.html">FHIR Version {{ site.data.fhir.version }}</a>.  See the <a href="{{ site.historypath }}">Directory of published versions.</a>
+ -->
 
 
 <!-- ============CONTENT CONTENT=============== -->
@@ -273,12 +286,12 @@ This is the
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      US Meds 
-           Version: 1.1.0
-         &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Tue, Feb 5, 2019 16:21-0800.
-      | <a style="color: #81BEF7" href="http://www.hl7.org/fhir/us/meds/history.cfml">History</a>
-      | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
-        <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Oct 21, 2019 17:55-0700">2019-10-21</span>.
+      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
+      | <a style="color: #81BEF7" href="qa.html">QA Report</a>
+      | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>
+      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+      | <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
         </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
@@ -306,6 +319,45 @@ This is the
 
 
 
+<script src="assets/js/clipboard.min.js"> </script>
+
+<script>
+  // Tooltip
+
+  $('#copy-button').tooltip({
+    trigger: 'click',
+    placement: 'bottom'
+  });
+
+  function setTooltip(message) {
+    $('#copy-button').tooltip('hide')
+      .attr('data-original-title', message)
+      .tooltip('show');
+  }
+
+  function hideTooltip() {
+    setTimeout(function() {
+      $('#copy-button').tooltip('hide');
+    }, 1000);
+  }
+
+  // Clipboard
+
+  var clipboard = new ClipboardJS('#copy-button');
+
+  clipboard.on('success', function(e) {
+    setTooltip('Copied!');
+    hideTooltip();
+  });
+
+  clipboard.on('error', function(e) {
+    setTooltip('Failed!');
+    hideTooltip();
+  });
+
+</script>
+
+
 
 <!-- Analytics Below
 ================================================== -->
@@ -313,6 +365,10 @@ This is the
 <!-- add anchors before the closing body tag -->
 <script>
 anchors.add()
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
 </script>
 
 </body>
