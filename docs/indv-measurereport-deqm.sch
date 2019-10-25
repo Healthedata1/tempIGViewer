@@ -91,6 +91,18 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:MeasureReport/f:group/f:measureScore</sch:title>
+    <sch:rule context="f:MeasureReport/f:group/f:measureScore">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:comparator) &lt;= 1">comparator: maximum cardinality of 'comparator' is 1</sch:assert>
+      <sch:assert test="count(f:unit) &lt;= 1">unit: maximum cardinality of 'unit' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>MeasureReport.group.stratifier</sch:title>
     <sch:rule context="f:MeasureReport/f:group/f:stratifier">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

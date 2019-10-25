@@ -4,6 +4,17 @@
   "fhirVersion": "4.0.0",
   "extensions": [
     {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Do Not Perform Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
       "title": "DEQM Do Not Perform Extension",
       "types": [
@@ -91,6 +102,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -105,6 +119,10 @@
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
+    ],
+    "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType": [
+      "MeasureReport.group.measureScore",
+      "MeasureReport.group.stratifier.stratum.measureScore"
     ],
     "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier": [
       "MeasureReport"

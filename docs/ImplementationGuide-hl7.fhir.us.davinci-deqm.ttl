@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-10-22T15:07:54-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-10-24T17:57:41-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 International - Clinical Quality Information Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -47,6 +47,10 @@
      fhir:ImplementationGuide.definition.grouping [
        fhir:index 0;
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "base" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "profile-indv-measurereport-deqm-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "DEQMIndividualMeasureReportProfile" ]
      ];
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0;
@@ -736,6 +740,23 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/devicerequest-deqm" ]
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-extension-alternateScoreType.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-alternateScoreType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DEQMdoNotPerformExtension" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profile-indv-measurereport-deqm-spreadsheet.xml" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
@@ -999,6 +1020,8 @@
 <http://hl7.org/fhir/us/davinci-deqm/CapabilityStatement/consumer-client> a fhir:us .
 
 <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/devicerequest-deqm> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

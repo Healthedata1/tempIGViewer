@@ -330,7 +330,7 @@ This is the {% if {{site.build}} == "ci" %}
   <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.name">fhir:ImplementationGuide.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide&quot;];
   <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.title">fhir:ImplementationGuide.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide&quot;];
   <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.status">fhir:ImplementationGuide.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.date">fhir:ImplementationGuide.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2019-10-22T15:07:54-07:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.date">fhir:ImplementationGuide.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2019-10-24T17:57:41-07:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.publisher">fhir:ImplementationGuide.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;HL7 International - Clinical Quality Information Work Group&quot;];
   <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.contact">fhir:ImplementationGuide.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -357,7 +357,10 @@ This is the {% if {{site.build}} == "ci" %}
   <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition">fhir:ImplementationGuide.definition</a> [
      <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.grouping">fhir:ImplementationGuide.definition.grouping</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.grouping.name">fhir:ImplementationGuide.definition.grouping.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;base&quot; ]     ];
+       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.grouping.name">fhir:ImplementationGuide.definition.grouping.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;base&quot; ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.grouping.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;profile-indv-measurereport-deqm-spreadsheet.xml&quot; ];
+       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.grouping.name">fhir:ImplementationGuide.definition.grouping.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DEQMIndividualMeasureReportProfile&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource">fhir:ImplementationGuide.definition.resource</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
@@ -831,7 +834,19 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueUri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;StructureDefinition-devicerequest-deqm.html&quot; ]       ];
        <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/devicerequest-deqm&quot; ]       ];
-       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ];
+       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 43;
+       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;StructureDefinition:extension&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot; ];
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueUri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;StructureDefinition-extension-alternateScoreType.html&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
+         <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/extension-alternateScoreType&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">fhir:ImplementationGuide.definition.resource.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DEQMdoNotPerformExtension&quot; ];
+       <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.groupingId">fhir:ImplementationGuide.definition.resource.groupingId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;profile-indv-measurereport-deqm-spreadsheet.xml&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.page">fhir:ImplementationGuide.definition.page</a> [
        <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:value</a> &quot;index.html&quot; ];
        <a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Home&quot; ];
@@ -1031,7 +1046,7 @@ Formats: <a href="ImplementationGuide-hl7.fhir.us.davinci-deqm.html">Narrative</
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Oct 22, 2019 15:07-0700">2019-10-22</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Oct 24, 2019 17:57-0700">2019-10-24</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

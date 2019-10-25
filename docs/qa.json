@@ -3,7 +3,7 @@
   "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
   "package-id": "hl7.fhir.us.davinci-deqm",
   "ig-ver": "1.1.0",
-  "date": "Tue, 22 Oct, 2019 15:07:54 -0700",
+  "date": "Thu, 24 Oct, 2019 17:57:41 -0700",
   "errs": 78,
   "warnings": 0,
   "hints": 2,

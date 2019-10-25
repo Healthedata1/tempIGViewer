@@ -10,7 +10,7 @@
   "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
   "title": "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide",
   "status": "draft",
-  "date": "2019-10-22T15:07:54-07:00",
+  "date": "2019-10-24T17:57:41-07:00",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [
     {
@@ -43,6 +43,10 @@
     "grouping": [
       {
         "name": "base"
+      },
+      {
+        "id": "profile-indv-measurereport-deqm-spreadsheet.xml",
+        "name": "DEQMIndividualMeasureReportProfile"
       }
     ],
     "resource": [
@@ -733,6 +737,23 @@
           "reference": "StructureDefinition/devicerequest-deqm"
         },
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-alternateScoreType.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-alternateScoreType"
+        },
+        "name": "DEQMdoNotPerformExtension",
+        "groupingId": "profile-indv-measurereport-deqm-spreadsheet.xml"
       }
     ],
     "page": {
