@@ -8,6 +8,7 @@
   "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
   "version": "1.1.0",
   "name": "DEQMMedicationAdministrationProfile",
+  "title": "DEQM MedicationAdministration Profile",
   "status": "active",
   "experimental": false,
   "date": "2018-06-19T00:00:00-07:00",
@@ -34,7 +35,7 @@
       ]
     }
   ],
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "mapping": [
     {
       "identity": "qdm",

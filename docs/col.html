@@ -269,7 +269,7 @@
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='usecases.html'><b>Example Use Cases</b></a></li><li><b>Colorectal Cancer Screening (COL)</b></li>
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='usecases.html'><b>Example Use Cases</b></a></li><li><b>Colorectal Cancer Screening (COL)</b></li>
 </nav>
 
 
@@ -399,8 +399,8 @@ This is the {% if {{site.build}} == "ci" %}
     </tr>
     <tr>
       <td>Practitioner</td>
-      <td>DEQM Practitioner Profile</td>
-      <td><a href="StructureDefinition-practitioner-deqm.html">DEQM Practitioner</a></td>
+      <td>QI Core Practitioner Profile</td>
+      <td><a href="http://build.fhir.org/ig/HL7/fhir-qi-core/StructureDefinition-qicore-practitioner.html">QI Core Practitioner</a></td>
     </tr>
     <tr>
       <td>Procedure</td>
@@ -944,7 +944,7 @@ This is the {% if {{site.build}} == "ci" %}
         "id": "practitioner-col",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
+            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
           ]
         },
         "identifier": [
@@ -1253,7 +1253,7 @@ Content-Type: application/fhir+json;charset=UTF-8
         "id": "practitioner-col",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
+            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
           ]
         },
         "identifier": [
@@ -1643,7 +1643,7 @@ Payer/Aggregator subscribes to the Provider for notification when Colorectal Can
         "resourceType": "Practitioner",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
+            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
           ]
         },
         "identifier": [
@@ -1904,7 +1904,7 @@ Payer/Aggregator subscribes to the Provider for notification when Colorectal Can
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Oct 24, 2019 17:57-0700">2019-10-24</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Nov 18, 2019 15:50-0800">2019-11-18</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

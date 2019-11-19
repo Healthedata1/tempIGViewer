@@ -11,6 +11,7 @@
   <url value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm"/>
   <version value="1.1.0"/>
   <name value="DEQMMedicationAdministrationProfile"/>
+  <title value="DEQM MedicationAdministration Profile"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2018-06-19T00:00:00-07:00"/>
@@ -29,7 +30,7 @@
       <display value="United States of America"/>
     </coding>
   </jurisdiction>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="qdm"/>
     <uri value="http://www.healthit.gov/quality-data-model"/>

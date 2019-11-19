@@ -10,7 +10,7 @@
   "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
   "title": "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide",
   "status": "draft",
-  "date": "2019-10-24T17:57:41-07:00",
+  "date": "2019-11-18T15:41:45-08:00",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [
     {
@@ -37,16 +37,32 @@
   "packageId": "hl7.fhir.us.davinci-deqm",
   "license": "CC0-1.0",
   "fhirVersion": [
-    "4.0.0"
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "cqfm",
+      "uri": "http://hl7.org/fhir/us/cqfmeasures",
+      "packageId": "hl7.fhir.us.cqfmeasures",
+      "version": "current"
+    },
+    {
+      "id": "uscore",
+      "uri": "http://hl7.org/fhir/us/core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.0"
+    },
+    {
+      "id": "qicore",
+      "uri": "http://hl7.org/fhir/us/qicore",
+      "packageId": "hl7.fhir.us.qicore",
+      "version": "3.3.0"
+    }
   ],
   "definition": {
     "grouping": [
       {
         "name": "base"
-      },
-      {
-        "id": "profile-indv-measurereport-deqm-spreadsheet.xml",
-        "name": "DEQMIndividualMeasureReportProfile"
       }
     ],
     "resource": [
@@ -198,22 +214,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Practitioner-practitioner02.html"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/practitioner02"
-        },
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           },
           {
@@ -271,22 +271,6 @@
         ],
         "reference": {
           "reference": "Measure/measure-mrp"
-        },
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Practitioner-practitioner03.html"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/practitioner03"
         },
         "exampleBoolean": true
       },
@@ -458,6 +442,38 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-alternateScoreType.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-alternateScoreType"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-reporterGroup.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-reporterGroup"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-extension-certificationIdentifier.html"
           }
         ],
@@ -479,22 +495,6 @@
         ],
         "reference": {
           "reference": "StructureDefinition/extension-reportingVendor"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-doNotPerform.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-doNotPerform"
         },
         "exampleBoolean": false
       },
@@ -591,22 +591,6 @@
         ],
         "reference": {
           "reference": "StructureDefinition/organization-deqm"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-practitioner-deqm.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/practitioner-deqm"
         },
         "exampleBoolean": false
       },
@@ -721,39 +705,6 @@
           "reference": "CapabilityStatement/consumer-client"
         },
         "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-devicerequest-deqm.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/devicerequest-deqm"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-alternateScoreType.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-alternateScoreType"
-        },
-        "name": "DEQMdoNotPerformExtension",
-        "groupingId": "profile-indv-measurereport-deqm-spreadsheet.xml"
       }
     ],
     "page": {
@@ -836,11 +787,6 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-practitioner-deqm.html",
-              "title": "StructureDefinition Practitioner Deqm",
-              "generation": "generated"
-            },
-            {
               "nameUrl": "StructureDefinition-datax-measurereport-deqm.html",
               "title": "StructureDefinition Datax MeasureReport Deqm",
               "generation": "generated"
@@ -856,8 +802,13 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-devicerequest-deqm.html",
-              "title": "StructureDefinition DeviceRequest Deqm",
+              "nameUrl": "StructureDefinition-extension-alternateScoreType.html",
+              "title": "StructureDefinition Extension alternateScoreType",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-reporterGroup.html",
+              "title": "StructureDefinition Extension reporterGroup",
               "generation": "generated"
             },
             {
@@ -868,11 +819,6 @@
             {
               "nameUrl": "StructureDefinition-extension-reportingVendor.html",
               "title": "StructureDefinition Extension reportingVendor",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-doNotPerform.html",
-              "title": "StructureDefinition Extension doNotPerform",
               "generation": "generated"
             }
           ]
@@ -915,13 +861,13 @@
           ]
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
+          "nameUrl": "all-examples.html",
+          "title": "All Examples",
           "generation": "markdown"
         },
         {
-          "nameUrl": "all-examples.html",
-          "title": "All Examples",
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
           "generation": "markdown"
         },
         {

@@ -9,12 +9,10 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "practitioner01"];
   fhir:Resource.meta [
-     fhir:Meta.versionId [ fhir:value "4" ];
-     fhir:Meta.lastUpdated [ fhir:value "2019-03-06T19:03:03.000+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm";
+       fhir:value "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm>
+       fhir:link <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner>
      ]
   ];
   fhir:DomainResource.text [

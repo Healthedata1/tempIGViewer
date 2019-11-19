@@ -10,7 +10,7 @@
   <name value="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide"/>
   <title value="Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2019-10-24T17:57:41-07:00"/>
+  <date value="2019-11-18T15:41:45-08:00"/>
   <publisher value="HL7 International - Clinical Quality Information Work Group"/>
   <contact>
     <telecom>
@@ -28,13 +28,25 @@
   <copyright value="Used by permission of HL7 International - Clinical Quality Information Work Group, all rights reserved Creative Commons License"/>
   <packageId value="hl7.fhir.us.davinci-deqm"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="cqfm">
+    <uri value="http://hl7.org/fhir/us/cqfmeasures"/>
+    <packageId value="hl7.fhir.us.cqfmeasures"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.0"/>
+  </dependsOn>
+  <dependsOn id="qicore">
+    <uri value="http://hl7.org/fhir/us/qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="3.3.0"/>
+  </dependsOn>
   <definition>
     <grouping>
       <name value="base"/>
-    </grouping>
-    <grouping id="profile-indv-measurereport-deqm-spreadsheet.xml">
-      <name value="DEQMIndividualMeasureReportProfile"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -146,18 +158,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-practitioner02.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/practitioner02"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -201,18 +201,6 @@
       </extension>
       <reference>
         <reference value="Measure/measure-mrp"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-practitioner03.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/practitioner03"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -341,6 +329,30 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-alternateScoreType.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-alternateScoreType"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-reporterGroup.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-reporterGroup"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-certificationIdentifier.html"/>
       </extension>
       <reference>
@@ -357,18 +369,6 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/extension-reportingVendor"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-doNotPerform.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/extension-doNotPerform"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -441,18 +441,6 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/organization-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-practitioner-deqm.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/practitioner-deqm"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -540,31 +528,6 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-devicerequest-deqm.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/devicerequest-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-alternateScoreType.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/extension-alternateScoreType"/>
-      </reference>
-      <name value="DEQMdoNotPerformExtension"/>
-      <groupingId value="profile-indv-measurereport-deqm-spreadsheet.xml"/>
-    </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="Home"/>
@@ -639,11 +602,6 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-practitioner-deqm.html"/>
-          <title value="StructureDefinition Practitioner Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
           <nameUrl value="StructureDefinition-datax-measurereport-deqm.html"/>
           <title value="StructureDefinition Datax MeasureReport Deqm"/>
           <generation value="generated"/>
@@ -659,8 +617,13 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-devicerequest-deqm.html"/>
-          <title value="StructureDefinition DeviceRequest Deqm"/>
+          <nameUrl value="StructureDefinition-extension-alternateScoreType.html"/>
+          <title value="StructureDefinition Extension alternateScoreType"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-reporterGroup.html"/>
+          <title value="StructureDefinition Extension reporterGroup"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -671,11 +634,6 @@
         <page>
           <nameUrl value="StructureDefinition-extension-reportingVendor.html"/>
           <title value="StructureDefinition Extension reportingVendor"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-doNotPerform.html"/>
-          <title value="StructureDefinition Extension doNotPerform"/>
           <generation value="generated"/>
         </page>
       </page>
@@ -715,13 +673,13 @@
         </page>
       </page>
       <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="all-examples.html"/>
-        <title value="All Examples"/>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>

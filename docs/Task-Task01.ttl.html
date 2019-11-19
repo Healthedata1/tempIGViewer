@@ -218,7 +218,7 @@
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> 
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> 
 </nav>
 
 
@@ -320,7 +320,7 @@ This is the {% if {{site.build}} == "ci" %}
 
  a fhir:Task;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/task.html#Task.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;Task01&quot;];
+  <a href="http://hl7.org/fhir/R4/task.html#Task.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Task01&quot;];
   <a href="http://hl7.org/fhir/R4/task.html#Task.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-task&quot;;
@@ -329,7 +329,7 @@ This is the {% if {{site.build}} == "ci" %}
   ];
   <a href="http://hl7.org/fhir/R4/task.html#Task.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: Task01&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 19009&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Medication Reconciliation &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://www.ama-assn.org/go/cpt code '1111F' = '1111F', given as 'Medication Reconciliation'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;Patient-patient01.html\&quot;&gt;Generated Summary: id: patient01; Medical record number = 12345 (USUAL); active; Jairo Webster (OFFICIAL); gender: male; birthDate: Dec 16, 1946; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;Married&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;executionPeriod&lt;/b&gt;: Jun 11, 2017, 12:00:00 AM --&amp;gt; Jun 11, 2017, 12:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: Sep 25, 2018, 7:24:23 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: &lt;a href=\&quot;Practitioner-practitioner01.html\&quot;&gt;Generated Summary: id: practitioner01; Provider number = 456789123 (OFFICIAL); active; Cody Hale ; gender: male&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: Task01&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 19009&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Medication Reconciliation &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://www.ama-assn.org/go/cpt code '1111F' = '1111F', given as 'Medication Reconciliation'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;Patient-patient01.html\&quot;&gt;Generated Summary: id: patient01; Medical record number = 12345 (USUAL); active; Jairo Webster (OFFICIAL); gender: male; birthDate: 1946-12-16; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;Married&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-Encounter01.html\&quot;&gt;Generated Summary: id: Encounter01; status: finished; &lt;span title=\&quot;{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\&quot;&gt;inpatient encounter&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 56876005}\&quot;&gt;Drug rehabilitation and detoxification&lt;/span&gt;; period: May 29, 2018, 8:00:00 AM --&amp;gt; May 29, 2018, 8:00:00 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;executionPeriod&lt;/b&gt;: Jun 11, 2017, 12:00:00 AM --&amp;gt; Jun 11, 2017, 12:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: Sep 25, 2018, 7:24:23 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: &lt;a href=\&quot;Practitioner-practitioner01.html\&quot;&gt;Generated Summary: id: practitioner01; Provider number = 456789123 (OFFICIAL); active; Cody Hale ; gender: male&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/task.html#Task.identifier">fhir:Task.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -348,6 +348,9 @@ This is the {% if {{site.build}} == "ci" %}
   ];
   <a href="http://hl7.org/fhir/R4/task.html#Task.for">fhir:Task.for</a> [
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/patient01&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/task.html#Task.encounter">fhir:Task.encounter</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Encounter/Encounter01&quot; ]
   ];
   <a href="http://hl7.org/fhir/R4/task.html#Task.executionPeriod">fhir:Task.executionPeriod</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2017-06-11&quot;^^xsd:date ];
@@ -414,7 +417,7 @@ Formats: <a href="Task-Task01.html">Narrative</a>, <a href="Task-Task01.xml.html
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Oct 24, 2019 17:57-0700">2019-10-24</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Nov 18, 2019 15:50-0800">2019-11-18</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

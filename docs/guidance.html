@@ -269,7 +269,7 @@
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='framework.html'><b>Framework</b></a></li><li><b>General Guidance</b></li>
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='framework.html'><b>Framework</b></a></li><li><b>General Guidance</b></li>
 </nav>
 
 
@@ -309,6 +309,7 @@ This is the {% if {{site.build}} == "ci" %}
     </ul>
   </li>
   <li><a href="#other-profiles-used-in-the-evaluation-of-a-measure" id="markdown-toc-other-profiles-used-in-the-evaluation-of-a-measure">Other Profiles Used in the Evaluation of a Measure</a></li>
+  <li><a href="#negation-patterns-for-quality-measures" id="markdown-toc-negation-patterns-for-quality-measures">Negation Patterns for Quality Measures</a></li>
   <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a></li>
 </ul>
 
@@ -375,6 +376,10 @@ Along with Data-Exchange MeasureReport Profile, the data producer sends the Orga
 
 <p>Depending on the specific Measure and Interaction, various DEQM, QI Core, and CQFM Profiles are used in the evaluation of a measure and referenced by a MeasureReport.  Refer to the <a href="http://build.fhir.org/ig/HL7/fhir-qi-core/index.html">QI Core</a> implementation guide for examples of how to represent data involved in calculation of quality measures.</p>
 
+<h2 id="negation-patterns-for-quality-measures">Negation Patterns for Quality Measures</h2>
+
+<p>​Refer to the Quality Measure Implementation Guide for guidance on <a href="https://build.fhir.org/ig/HL7/cqf-measures/using-cql.html">negation patterns in quality measurements</a>. Note that implementations processing negated data may not be returned with a single code, but rather a value set identifier represented by the <a href="http://hl7.org/fhir/R4/extension-valueset-reference.html">Valueset Reference extension</a> which are part of the QI Core profiles, and should consider data with the appropriate value set identifier as satisfying the criteria for value set membership.</p>
+
 <h2 id="must-support">Must Support</h2>
 
 <ul>
@@ -417,7 +422,7 @@ Along with Data-Exchange MeasureReport Profile, the data producer sends the Orga
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Oct 24, 2019 17:57-0700">2019-10-24</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Nov 18, 2019 15:50-0800">2019-11-18</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

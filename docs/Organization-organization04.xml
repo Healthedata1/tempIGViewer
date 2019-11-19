@@ -8,7 +8,7 @@
     <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization04</p><p><b>meta</b>: </p><p><b>identifier</b>: Tax ID number = 456789123 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Insurance Company <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/organization-type code 'ins' = 'ins', given as 'Insurance Company'})</span></p><p><b>name</b>: DVPayer04</p><p><b>telecom</b>: ph: (+1) 616-555-1212</p><p><b>address</b>: 160 Glen Eagles Road Grand Rapids MI 49503 USA </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization04</p><p><b>meta</b>: </p><p><b>identifier</b>: Tax ID number = 456789123 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Insurance Company <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'ins' = 'Insurance Company', given as 'Insurance Company'})</span></p><p><b>name</b>: DVPayer04</p><p><b>telecom</b>: ph: (+1) 616-555-1212</p><p><b>address</b>: 160 Glen Eagles Road Grand Rapids MI 49503 USA </p></div>
   </text>
   <identifier>
     <use value="official"/>
@@ -28,7 +28,7 @@
   <active value="true"/>
   <type>
     <coding>
-      <system value="http://hl7.org/fhir/organization-type"/>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
       <code value="ins"/>
       <display value="Insurance Company"/>
     </coding>

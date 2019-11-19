@@ -15,6 +15,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm"];
   fhir:StructureDefinition.version [ fhir:value "1.1.0"];
   fhir:StructureDefinition.name [ fhir:value "DEQMCoverageProfile"];
+  fhir:StructureDefinition.title [ fhir:value "DEQM  Coverage Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.experimental [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.date [ fhir:value "2018-06-19T00:00:00-07:00"^^xsd:dateTime];
@@ -37,7 +38,7 @@
        fhir:Coding.display [ fhir:value "United States of America" ]
      ]
   ];
-  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
      fhir:StructureDefinition.mapping.identity [ fhir:value "qdm" ];
