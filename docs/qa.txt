@@ -1,0 +1,91 @@
+﻿DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide : Validation Results
+=========================================
+
+err = 12, warn = 0, info = 2
+IG Publisher Version: v0.9.98-SNAPSHOT Out of date - current version is v0.9.99-SNAPSHOT
+Generated Mon Nov 18 21:06:20 PST 2019. FHIR version 4.0.1 for hl7.fhir.us.davinci-deqm#1.1.0 (canonical = http://hl7.org/fhir/us/davinci-deqm)
+
+ Build Errors : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Encounter-encounter01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Measure-measure-mrp : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation01 : 0 / 1
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization04 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Task-task01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-client : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-server : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-client : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-server : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-receiver-server : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-reporter-client : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/ig : 0 / 0
+ DEQMCoverageProfile : 0 / 0
+ DEQMDataExchangeMeasureReportProfile : 0 / 0
+ DEQMIndividualMeasureReportProfile : 0 / 0
+ DEQMMedicationAdministrationProfile : 0 / 0
+ DEQMMedicationRequestProfile : 0 / 0
+ DEQMOrganizationProfile : 0 / 0
+ DEQMSummaryMeasureReportProfile : 0 / 0
+</table>
+== n/a ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Encounter-encounter01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Measure-measure-mrp.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation01.json ==
+INFORMATION: Observation/observation01: Observation.category[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://acme.org/observation-category#measure)
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization04.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Task-task01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-client.json ==
+ERROR: CapabilityStatement/consumer-client: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.3.0' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-server.json ==
+ERROR: CapabilityStatement/consumer-server: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.3.0' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-client.json ==
+ERROR: CapabilityStatement/producer-client: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.3.0' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-server.json ==
+ERROR: CapabilityStatement/producer-server: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.3.0' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-receiver-server.json ==
+ERROR: CapabilityStatement/receiver-server: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.3.0' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-reporter-client.json ==
+ERROR: CapabilityStatement/reporter-client: CapabilityStatement.implementationGuide[1]: URL value 'http://hl7.org/fhir/us/qicore/ImplementationGuide/us-qicore-3.3.0' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/ig.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-coverage-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-datax-measurereport-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-indv-measurereport-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-medicationadministration-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-medicationrequest-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-organization-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-summary-measurereport-deqm-spreadsheet.xml ==
