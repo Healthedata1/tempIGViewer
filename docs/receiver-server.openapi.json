@@ -1,15 +1,14 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Receiver Server CapabilityStatement",
+    "title": "DaVinci DEQM Receiver Server CapabilityStatement",
     "description": "This profile defines the expected capabilities of a Da Vinci DEQM Receiver Server when conforming to the Da Vinci DEQM Implementation Guide. Receivers include systems that are primary receivers of Measure data such as payers as well as public health and other healthcare-related agencies.  This CapabilityStatement resource includes the complete list of the *recommended*  Da Vinci DEQM profiles and RESTful operations that a Da Vinci DEQM Receiver Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements.",
     "license": {
-      "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"
     },
-    "version": "1.1.0",
+    "version": "1.0.0",
     "contact": {
-      "name": "HL7 International - Clinical Decision Support Work Group"
+      "name": "The DaVinci Project"
     }
   },
   "externalDocs": {
@@ -29,12 +28,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
                 }
               }
             }
@@ -44,12 +43,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/CapabilityStatement"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/CapabilityStatement.xsd"
+                  "$ref": "https://build.fhir.org/CapabilityStatement.xsd"
                 }
               }
             }
@@ -83,12 +82,12 @@
           "content": {
             "application/fhir+json": {
               "schema": {
-                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/MeasureReport"
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MeasureReport"
               }
             },
             "application/fhir+xml": {
               "schema": {
-                "$ref": "https://hl7.org/fhir/R4/MeasureReport.xsd"
+                "$ref": "https://build.fhir.org/MeasureReport.xsd"
               }
             }
           }
@@ -99,12 +98,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
                 }
               }
             }
@@ -122,12 +121,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/MeasureReport"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MeasureReport"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/MeasureReport.xsd"
+                  "$ref": "https://build.fhir.org/MeasureReport.xsd"
                 }
               }
             }
@@ -145,203 +144,6 @@
           },
           {
             "$ref": "#/components/parameters/elements"
-          }
-        ]
-      }
-    },
-    "/_history": {
-      "summary": "Read a past version of resource instance of all types",
-      "description": "Access a previous versions of all types",
-      "get": {
-        "summary": "Read the past states of all resources",
-        "operationId": "histAll",
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resources being returned",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/summary"
-          },
-          {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
-          },
-          {
-            "$ref": "#/components/parameters/elements"
-          },
-          {
-            "$ref": "#/components/parameters/count"
-          },
-          {
-            "name": "_since",
-            "in": "query",
-            "description": "Only include resource versions that were created at or after the given instant in time",
-            "schema": {
-              "type": "string",
-              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
-            }
-          },
-          {
-            "name": "_at",
-            "in": "query",
-            "description": "Only include resource versions that were current at some point during the time period specified in the date time value (see Search notes on date searching)",
-            "schema": {
-              "type": "string",
-              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
-            }
-          },
-          {
-            "name": "_list",
-            "in": "query",
-            "description": "Only include resource versions that are referenced in the specified list (current list references are allowed)",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/": {
-      "summary": "System level operations",
-      "description": "System level operations",
-      "get": {
-        "summary": "Search all resources of all types based on a set of criteria",
-        "operationId": "searchAll",
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
-          },
-          {
-            "$ref": "#/components/parameters/summary"
-          },
-          {
-            "$ref": "#/components/parameters/elements"
-          }
-        ]
-      },
-      "post": {
-        "summary": "Batch or Transaction",
-        "operationId": "transaction",
-        "requestBody": {
-          "description": "The batch or transaction",
-          "required": true,
-          "content": {
-            "application/fhir+json": {
-              "schema": {
-                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
-              }
-            },
-            "application/fhir+xml": {
-              "schema": {
-                "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
-              }
-            }
-          }
-        },
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "Batch or Transaction response",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
           }
         ]
       }

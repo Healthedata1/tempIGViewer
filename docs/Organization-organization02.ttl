@@ -13,13 +13,12 @@
      fhir:Meta.lastUpdated [ fhir:value "2019-03-06T19:03:03.000+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
        fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm";
-       fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm>
+       fhir:index 0
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization02</p><p><b>meta</b>: </p><p><b>identifier</b>: Tax ID number = 234567891 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: DaVinciHospital02</p><p><b>telecom</b>: ph: (+1) 551-555-1212</p><p><b>address</b>: 3 Sherwood St. Englewood NJ 07631 USA </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization02</p><p><b>meta</b>: </p><p><b>identifier</b>: Tax ID number = 234567891 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: DaVinciHospital02</p><p><b>telecom</b>: ph: (+1) 551-555-1212</p><p><b>address</b>: 3 Sherwood St. Englewood NJ 07631 USA </p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -27,7 +26,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v2/0203" ];
          fhir:Coding.code [ fhir:value "TAX" ];
          fhir:Coding.display [ fhir:value "Tax ID number" ]
        ]
@@ -43,7 +42,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/organization-type" ];
        fhir:Coding.code [ fhir:value "prov" ];
        fhir:Coding.display [ fhir:value "Healthcare Provider" ]
      ]

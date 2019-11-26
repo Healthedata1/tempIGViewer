@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</title>
+  <title>Data Exchange For Quality Measures STU1 for FHIR STU3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide Implemenation Guide" />
+<meta name="description" content="Data Exchange For Quality Measures STU1 for FHIR STU3 Implemenation Guide" />
 <meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -68,10 +68,10 @@
 
   <div id="project-status" class="project-status"> <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU1 for FHIR STU3 Implementation Guide</b>
     
     
-    CI Build
+    (Release 1.0.0)
     
 </div><!-- end ig title text -->
 
@@ -100,7 +100,7 @@
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <ul class="nav navbar-nav">
@@ -158,14 +158,13 @@
       <li>
         <a href="profiles.html">Profiles/Extensions</a>
       </li>
-<!--
       <li>
         <a href="operations.html">Operations</a>
       </li>
-
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
+      <!--
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
 -->
       <li>
         <a href="capstatements.html">CapabilityStatements</a>
@@ -225,7 +224,7 @@
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU1 for FHIR STU3 - Local Development build (v1.0.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -312,52 +311,52 @@ This is the {% if {{site.build}} == "ci" %}
 
 <pre class="xml">
 
-&lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">Organization</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;organization03&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;3&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2019-02-21T01:47:53.000+00:00&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm&quot;/&gt;
+&lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization">Organization</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;organization03&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;3&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">value</a>=&quot;2019-02-21T01:47:53.000+00:00&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm&quot;/&gt;
   &lt;/meta&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: organization03&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Provider number = 345678912 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Healthcare Provider &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: DaVinciHospital03&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: (+1) 201-555-1212&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 94 Olive Ave. Union City NJ 07087 USA &lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: organization03&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Provider number = 345678912 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Healthcare Provider &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: DaVinciHospital03&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: (+1) 201-555-1212&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 94 Olive Ave. Union City NJ 07087 USA &lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PRN&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Provider number&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/v2/0203&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;PRN&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Provider number&quot;/&gt;
       &lt;/coding&gt;
     &lt;/type&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/sid/us-npi&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;345678912&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;www.cms.gov&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/sid/us-npi&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;345678912&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;www.cms.gov&quot;/&gt;
     &lt;/assigner&gt;
   &lt;/identifier&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.type">type</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/organization-type&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;prov&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Healthcare Provider&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.active">active</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/organization-type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;prov&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Healthcare Provider&quot;/&gt;
     &lt;/coding&gt;
   &lt;/type&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DaVinciHospital03&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.telecom">telecom</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(+1) 201-555-1212&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;DaVinciHospital03&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.telecom">telecom</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;(+1) 201-555-1212&quot;/&gt;
   &lt;/telecom&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;94 Olive Ave.&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Union City&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NJ&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;07087&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;USA&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/organization.html#Organization.address">address</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.line">line</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;94 Olive Ave.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.city">city</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Union City&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;NJ&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.postalCode">postalCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;07087&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;USA&quot;/&gt;
   &lt;/address&gt;
 &lt;/Organization&gt;</pre>
 
@@ -409,11 +408,11 @@ Formats: <a href="Organization-organization03.html">Narrative</a>, <a href="Orga
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Nov 18, 2019 21:04-0800">2019-11-18</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR 3.0.2</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Nov 26, 2019 14:31-0800">2019-11-26</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>
-      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
         </p>
    </div>  <!-- /inner-wrapper -->

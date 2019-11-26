@@ -3,7 +3,9 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="practitioner01"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"/>
+    <versionId value="4"/>
+    <lastUpdated value="2019-03-06T19:03:03.000+00:00"/>
+    <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitioner01</p><p><b>meta</b>: </p><p><b>identifier</b>: Provider number = 456789123 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Cody Hale </p><p><b>gender</b>: male</p></div>
@@ -12,7 +14,7 @@
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <system value="http://hl7.org/fhir/v2/0203"/>
         <code value="PRN"/>
         <display value="Provider number"/>
       </coding>

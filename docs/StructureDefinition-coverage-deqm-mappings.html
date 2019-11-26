@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</title>
+  <title>Data Exchange For Quality Measures STU1 for FHIR STU3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide Implemenation Guide" />
+<meta name="description" content="Data Exchange For Quality Measures STU1 for FHIR STU3 Implemenation Guide" />
 <meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -68,10 +68,10 @@
 
   <div id="project-status" class="project-status"> <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU1 for FHIR STU3 Implementation Guide</b>
     
     
-    CI Build
+    (Release 1.0.0)
     
 </div><!-- end ig title text -->
 
@@ -100,7 +100,7 @@
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <ul class="nav navbar-nav">
@@ -158,14 +158,13 @@
       <li>
         <a href="profiles.html">Profiles/Extensions</a>
       </li>
-<!--
       <li>
         <a href="operations.html">Operations</a>
       </li>
-
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
+      <!--
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
 -->
       <li>
         <a href="capstatements.html">CapabilityStatements</a>
@@ -225,7 +224,7 @@
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU1 for FHIR STU3 - Local Development build (v1.0.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -334,78 +333,71 @@ This is the {% if {{site.build}} == "ci" %}
 <h3>Mappings for the StructureDefinition-coverage-deqm Profile.</h3>
 
 <a name="qdm"> </a><h3>Mappings for Quality Data Model (http://www.healthit.gov/quality-data-model)</h3><table class="grid">
- <tr><td colspan="3"><b>DEQMCoverageProfile</b></td></tr>
+ <tr><td colspan="3"><b>DEQM  Coverage Profile</b></td></tr>
  <tr><td>Coverage</td><td>Participation</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>participationPeriod</td> </tr>
 </table>
-<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>DEQMCoverageProfile</b></td></tr>
+<a name="workflow"> </a><h3>Mappings for Workflow Mapping (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>DEQM  Coverage Profile</b></td></tr>
  <tr><td>Coverage</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Event.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;beneficiary</td><td>Event.subject</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>Event.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>Event.occurrence</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>DEQMCoverageProfile</b></td></tr>
+ <tr><td colspan="3"><b>DEQM  Coverage Profile</b></td></tr>
  <tr><td>Coverage</td><td>Entity. Role, or Act</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Act.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>Act.effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;class</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;grouping</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;costToBeneficiary</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exception</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contract</td><td>n/a</td> </tr>
 </table>
-<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>DEQMCoverageProfile</b></td></tr>
- <tr><td>Coverage</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.class</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;policyHolder</td><td>FiveWs.subject[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subscriber</td><td>FiveWs.subject[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subscriberId</td><td>FiveWs.subject[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;beneficiary</td><td>FiveWs.subject[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>FiveWs.done[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;payor</td><td>FiveWs.author</td> </tr>
+<a name="w5"> </a><h3>Mappings for W5 Mapping (<a href="http://hl7.org/fhir/w5.html">http://hl7.org/fhir/w5</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>DEQM  Coverage Profile</b></td></tr>
+ <tr><td>Coverage</td><td>financial.support</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>class</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;policyHolder</td><td>who.focus</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subscriber</td><td>who.focus</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subscriberId</td><td>who.focus</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;beneficiary</td><td>who.focus</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>when.done</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;payor</td><td>who.author</td> </tr>
 </table>
 <a name="cdanetv4"> </a><h3>Mappings for Canadian Dental Association eclaims standard (<a href="http://www.cda-adc.ca/en/services/cdanet/">http://www.cda-adc.ca/en/services/cdanet/</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>DEQMCoverageProfile</b></td></tr>
+ <tr><td colspan="3"><b>DEQM  Coverage Profile</b></td></tr>
  <tr><td>Coverage</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>C02</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;policyHolder</td><td>D01 through D09</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subscriber</td><td>D01 through D09</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subscriberId</td><td>D01 through D09</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;beneficiary</td><td>D01 through D09</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dependent</td><td>C17</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;relationship</td><td>C03</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;payor</td><td>A05</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;class</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>C11 (Division,Section)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>C11 (Division,Section)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;grouping</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;group</td><td>C11 (Division,Section)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;groupDisplay</td><td>C11 (Division,Section)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;plan</td><td>C01</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;planDisplay</td><td>C01</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class</td><td>C01</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classDisplay</td><td>C01</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subClass</td><td>C01</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subClassDisplay</td><td>C01</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dependent</td><td>C17</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;sequence</td><td>D11</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;network</td><td>D10</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;costToBeneficiary</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>C11 (Division,Section)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contract</td><td>D01 through D09</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>DEQMCoverageProfile</b></td></tr>
+ <tr><td colspan="3"><b>DEQM  Coverage Profile</b></td></tr>
  <tr><td>Coverage</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>IN1-2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>IN1-15</td> </tr>
@@ -413,19 +405,28 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;subscriber</td><td>IN1-16, 18,  19-name of insured, address, date of birth</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subscriberId</td><td>IN1-16, 18,  19-name of insured, address, date of birth</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;beneficiary</td><td>IN1-16, 18,  19-name of insured, address, date of birth</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dependent</td><td>- No exact HL7 v2 equivalent concept seems to exist;</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>IN1-12 / IN1-13</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;payor</td><td>IN1-3</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;class</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>IN1-8</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>IN1-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;grouping</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;group</td><td>IN1-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;groupDisplay</td><td>IN1-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subGroup</td><td>IN1-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subGroupDisplay</td><td>IN1-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;plan</td><td>IN1-35</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;planDisplay</td><td>IN1-35</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subPlan</td><td>IN1-10</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subPlanDisplay</td><td>IN1-10</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class</td><td>IN1-35</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classDisplay</td><td>IN1-35</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subClass</td><td>IN1-35</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subClassDisplay</td><td>IN1-35</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dependent</td><td>- No exact HL7 v2 equivalent concept seems to exist;</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;sequence</td><td>No HL7 v2 equivalent concept seems to exist</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;order</td><td>- No exact HL7 v2 equivalent concept seems to exist;</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;costToBeneficiary</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>IN1-8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contract</td><td>IN1-16, 18,  19</td> </tr>
 </table>
 <a name="cpha3pharm"> </a><h3>Mappings for Canadian Pharmacy Associaiton eclaims standard (<a href="http://www.pharmacists.ca/">http://www.pharmacists.ca/</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>DEQMCoverageProfile</b></td></tr>
+ <tr><td colspan="3"><b>DEQM  Coverage Profile</b></td></tr>
  <tr><td>Coverage</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>C.32, C.33, C.39</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;policyHolder</td><td>C.35</td> </tr>
@@ -433,11 +434,9 @@ This is the {% if {{site.build}} == "ci" %}
  <tr><td>&nbsp;&nbsp;&nbsp;subscriberId</td><td>C.35</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;beneficiary</td><td>C.35</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;payor</td><td>C.30</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;class</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>C.31</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>C.31</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;costToBeneficiary</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>C.31</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;grouping</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;group</td><td>C.31</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;groupDisplay</td><td>C.31</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contract</td><td>C.35</td> </tr>
 </table>
 
@@ -477,11 +476,11 @@ This is the {% if {{site.build}} == "ci" %}
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Nov 18, 2019 21:04-0800">2019-11-18</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR 3.0.2</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Nov 26, 2019 14:31-0800">2019-11-26</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>
-      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
         </p>
    </div>  <!-- /inner-wrapper -->

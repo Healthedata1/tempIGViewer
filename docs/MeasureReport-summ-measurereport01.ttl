@@ -11,22 +11,21 @@
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm";
-       fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm>
+       fhir:index 0
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: summ-measurereport01</p><p><b>meta</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: summary</p><p><b>measure</b>: <a href=\"http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp\">http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp</a></p><p><b>date</b>: Sep 5, 2018, 9:59:52 AM</p><p><b>reporter</b>: <a href=\"Organization-organization01.html\">Generated Summary: id: organization01; Tax ID number = 123456789 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: DaVinciHospital01; ph: (+1) 401-555-1212</a></p><p><b>period</b>: Aug 1, 2018, 12:00:00 AM --&gt; Sep 1, 2018, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: 112 <span style=\"background: LightGoldenRodYellow\">(Details : {http://example.org code '112' = '112', given as '112'})</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://example.org code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p><blockquote><p><b>stratifier</b></p><p><b>code</b>: 4456 <span style=\"background: LightGoldenRodYellow\">(Details : {http://example.org code '4456' = '4456', given as '4456'})</span></p><blockquote><p><b>stratum</b></p><p><b>value</b>: Male <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/administrative-gender code 'male' = 'Male', given as 'Male'})</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://example.org code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></td><td>50</td></tr></table><p><b>measureScore</b>: 100</p></blockquote></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: summ-measurereport01</p><p><b>meta</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: summary</p><p><b>measure</b>: <a href=\"Measure-measure-mrp.html\">Generated Summary: id: measure-mrp; url: http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp; version: 1.0.0; status: active; date: Nov 26, 2019, 2:31:03 PM; <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></a></p><p><b>date</b>: Sep 5, 2018, 9:59:52 AM</p><p><b>reportingOrganization</b>: <a href=\"Organization-organization01.html\">Generated Summary: id: organization01; Tax ID number = 123456789 (OFFICIAL); active; <span title=\"Codes: {http://hl7.org/fhir/organization-type prov}\">Healthcare Provider</span>; name: DaVinciHospital01; ph: (+1) 401-555-1212</a></p><p><b>period</b>: Aug 1, 2018, 12:00:00 AM --&gt; Sep 1, 2018, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>identifier</b>: 112</p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>11234</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p><blockquote><p><b>stratifier</b></p><p><b>identifier</b>: 4456</p><blockquote><p><b>stratum</b></p><p><b>value</b>: male</p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>8901</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>50</td></tr></table><p><b>measureScore</b>: 100</p></blockquote></blockquote></blockquote></div>"
   ];
   fhir:MeasureReport.status [ fhir:value "complete"];
   fhir:MeasureReport.type [ fhir:value "summary"];
   fhir:MeasureReport.measure [
-     fhir:value "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp";
-     fhir:link <http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp>
+     fhir:link <http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp>;
+     fhir:Reference.reference [ fhir:value "Measure/measure-mrp" ]
   ];
   fhir:MeasureReport.date [ fhir:value "2018-09-05T16:59:52.404Z"^^xsd:dateTime];
-  fhir:MeasureReport.reporter [
+  fhir:MeasureReport.reportingOrganization [
      fhir:link <http://hl7.org/fhir/us/davinci-deqm/Organization/organization01>;
      fhir:Reference.reference [ fhir:value "Organization/organization01" ]
   ];
@@ -36,68 +35,58 @@
   ];
   fhir:MeasureReport.group [
      fhir:index 0;
-     fhir:MeasureReport.group.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://example.org" ];
-         fhir:Coding.code [ fhir:value "112" ];
-         fhir:Coding.display [ fhir:value "112" ]
-       ]
+     fhir:MeasureReport.group.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.acme.org/groups" ];
+       fhir:Identifier.value [ fhir:value "112" ]
      ];
      fhir:MeasureReport.group.population [
        fhir:index 0;
+       fhir:MeasureReport.group.population.identifier [
+         fhir:Identifier.system [ fhir:value "http://www.acme.org/populations" ];
+         fhir:Identifier.value [ fhir:value "11234" ]
+       ];
        fhir:MeasureReport.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://example.org" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/measure-population" ];
            fhir:Coding.code [ fhir:value "initial-population" ];
            fhir:Coding.display [ fhir:value "Initial Population" ]
          ]
        ];
        fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
      ];
-     fhir:MeasureReport.group.measureScore [
-       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
-     ];
+     fhir:MeasureReport.group.measureScore [ fhir:value "100"^^xsd:decimal ];
      fhir:MeasureReport.group.stratifier [
        fhir:index 0;
-       fhir:MeasureReport.group.stratifier.code [
-         fhir:index 0;
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://example.org" ];
-           fhir:Coding.code [ fhir:value "4456" ];
-           fhir:Coding.display [ fhir:value "4456" ]
-         ]
+       fhir:MeasureReport.group.stratifier.identifier [
+         fhir:Identifier.system [ fhir:value "http://www.acme.org/stratifiers" ];
+         fhir:Identifier.value [ fhir:value "4456" ]
        ];
        fhir:MeasureReport.group.stratifier.stratum [
          fhir:index 0;
-         fhir:MeasureReport.group.stratifier.stratum.value [
-           fhir:CodeableConcept.coding [
-             fhir:index 0;
-             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ];
-             fhir:Coding.code [ fhir:value "male" ];
-             fhir:Coding.display [ fhir:value "Male" ]
-           ]
-         ];
+         fhir:MeasureReport.group.stratifier.stratum.value [ fhir:value "male" ];
          fhir:MeasureReport.group.stratifier.stratum.population [
            fhir:index 0;
+           fhir:MeasureReport.group.stratifier.stratum.population.identifier [
+             fhir:Identifier.system [ fhir:value "http://www.acme.org/stratifier-populations" ];
+             fhir:Identifier.value [ fhir:value "8901" ]
+           ];
            fhir:MeasureReport.group.stratifier.stratum.population.code [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "http://example.org" ];
+               fhir:Coding.system [ fhir:value "http://hl7.org/fhir/measure-population" ];
                fhir:Coding.code [ fhir:value "initial-population" ];
                fhir:Coding.display [ fhir:value "Initial Population" ]
              ]
            ];
            fhir:MeasureReport.group.stratifier.stratum.population.count [ fhir:value "50"^^xsd:integer ]
          ];
-         fhir:MeasureReport.group.stratifier.stratum.measureScore [
-           fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
-         ]
+         fhir:MeasureReport.group.stratifier.stratum.measureScore [ fhir:value "100"^^xsd:decimal ]
        ]
      ]
   ] .
+
+<http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp> a fhir:us .
 
 <http://hl7.org/fhir/us/davinci-deqm/Organization/organization01> a fhir:us .
 

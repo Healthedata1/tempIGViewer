@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MeasureReport xmlns="http://hl7.org/fhir">
+  <id value="summ-measurereport02"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: summ-measurereport02</p><p><b>meta</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: summary</p><p><b>measure</b>: <a href="http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR|1.0.0">http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR|1.0.0</a></p><p><b>date</b>: Sep 5, 2019, 9:59:52 AM</p><p><b>reportingOrganization</b>: <a href="Organization-organization01.html">Generated Summary: id: organization01; Tax ID number = 123456789 (OFFICIAL); active; <span title="Codes: {http://hl7.org/fhir/organization-type prov}">Healthcare Provider</span>; name: DaVinciHospital01; ph: (+1) 401-555-1212</a></p><p><b>period</b>: Aug 1, 2019, 12:00:00 AM --&gt; Sep 1, 2019, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>identifier</b>: group-1</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 100</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 60</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 100</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 10</p></blockquote><p><b>measureScore</b>: 66</p><blockquote><p><b>stratifier</b></p><p><b>identifier</b>: sde-ethnicity</p><blockquote><p><b>stratum</b></p><p><b>value</b>: Hispanic or Latino</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 10</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 10</p></blockquote><p><b>measureScore</b>: 50</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: Non Hispanic or Latino</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 70</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 50</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 70</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote><p><b>measureScore</b>: 71</p></blockquote></blockquote><blockquote><p><b>stratifier</b></p><p><b>identifier</b>: sde-payer</p><blockquote><p><b>stratum</b></p><p><b>value</b>: King HMO</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 10</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 10</p></blockquote><p><b>measureScore</b>: 50</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: Green Circle</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 10</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote><p><b>measureScore</b>: 33</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: GoodHealth of California</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote><p><b>measureScore</b>: 100</p></blockquote></blockquote><blockquote><p><b>stratifier</b></p><p><b>identifier</b>: sde-race</p><blockquote><p><b>stratum</b></p><p><b>value</b>: black</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 10</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 10</p></blockquote><p><b>measureScore</b>: 50</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: white</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 10</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 30</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote><p><b>measureScore</b>: 33</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: asian</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote><p><b>measureScore</b>: 100</p></blockquote></blockquote><blockquote><p><b>stratifier</b></p><p><b>identifier</b>: sde-sex</p><blockquote><p><b>stratum</b></p><p><b>value</b>: male</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 20</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 5</p></blockquote><p><b>measureScore</b>: 57</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: female</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 60</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 40</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 60</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 4</p></blockquote><p><b>measureScore</b>: 72</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: other</p><blockquote><p><b>population</b></p><p><b>identifier</b>: initial-population-identifier</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'initial-population', given as 'Initial Population'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: numerator-identifier</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'numerator', given as 'Numerator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-identifier</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'denominator', given as 'Denominator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>identifier</b>: denominator-exclusions-identifier</p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'denominator-exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote><p><b>measureScore</b>: 0</p></blockquote></blockquote></blockquote></div>
+  </text>
+  <status value="complete"/>
+  <type value="summary"/>
+  <measure>
+    <reference value="http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR|1.0.0"/>
+  </measure>
+  <date value="2019-09-05T16:59:52.404Z"/>
+  <reportingOrganization>
+    <reference value="Organization/organization01"/>
+  </reportingOrganization>
+  <period>
+    <start value="2019-08-01"/>
+    <end value="2019-09-01"/>
+  </period>
+  <group>
+    <identifier>
+      <value value="group-1"/>
+    </identifier>
+    <population>
+      <identifier>
+        <value value="initial-population-identifier"/>
+      </identifier>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <count value="100"/>
+    </population>
+    <population>
+      <identifier>
+        <value value="numerator-identifier"/>
+      </identifier>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="numerator"/>
+          <display value="Numerator"/>
+        </coding>
+      </code>
+      <count value="60"/>
+    </population>
+    <population>
+      <identifier>
+        <value value="denominator-identifier"/>
+      </identifier>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="denominator"/>
+          <display value="Denominator"/>
+        </coding>
+      </code>
+      <count value="100"/>
+    </population>
+    <population>
+      <identifier>
+        <value value="denominator-exclusions-identifier"/>
+      </identifier>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="denominator-exclusion"/>
+          <display value="Denominator Exclusion"/>
+        </coding>
+      </code>
+      <count value="10"/>
+    </population>
+    <measureScore value="66"/>
+  <!--   ===============First  Stratifier ================== -->
+    <stratifier>
+      <identifier>
+        <value value="sde-ethnicity"/>
+      </identifier>
+    <!--   ===============First  Stratum ================== -->
+      <stratum>
+        <value value="Hispanic or Latino"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="10"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="10"/>
+        </population>
+        <measureScore value="50"/>
+      </stratum>
+    <!--   ===============Second  Stratum ================== -->
+      <stratum>
+        <value value="Non Hispanic or Latino"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="70"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="50"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="70"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <measureScore value="71"/>
+      </stratum>
+    </stratifier>
+  <!--   ===============Second  Stratifier ================== -->
+    <stratifier>
+      <identifier>
+        <value value="sde-payer"/>
+      </identifier>
+    <!--   ===============First  Stratum ================== -->
+      <stratum>
+        <value value="King HMO"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="10"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="10"/>
+        </population>
+        <measureScore value="50"/>
+      </stratum>
+    <!--   ===============Second  Stratum ================== -->
+      <stratum>
+        <value value="Green Circle"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="10"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <measureScore value="33"/>
+      </stratum>
+    <!--   ===============Third  Stratum ================== -->
+      <stratum>
+        <value value="GoodHealth of California"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <measureScore value="100"/>
+      </stratum>
+    </stratifier>
+  <!--   ===============Third  Stratifier ================== -->
+    <stratifier>
+      <identifier>
+        <value value="sde-race"/>
+      </identifier>
+    <!--   ===============First  Stratum ================== -->
+      <stratum>
+        <value value="black"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="10"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="10"/>
+        </population>
+        <measureScore value="50"/>
+      </stratum>
+    <!--   ===============Second  Stratum ================== -->
+      <stratum>
+        <value value="white"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="10"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="30"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <measureScore value="33"/>
+      </stratum>
+    <!--   ===============Third  Stratum ================== -->
+      <stratum>
+        <value value="asian"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <measureScore value="100"/>
+      </stratum>
+    </stratifier>
+  <!--   ===============Foiurth  Stratifier ================== -->
+    <stratifier>
+      <identifier>
+        <value value="sde-sex"/>
+      </identifier>
+    <!--   ===============First  Stratum ================== -->
+      <stratum>
+        <value value="male"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="20"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="5"/>
+        </population>
+        <measureScore value="57"/>
+      </stratum>
+    <!--   ===============Second  Stratum ================== -->
+      <stratum>
+        <value value="female"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="60"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="40"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="60"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="4"/>
+        </population>
+        <measureScore value="72"/>
+      </stratum>
+    <!--   ===============Third  Stratum ================== -->
+      <stratum>
+        <value value="other"/>
+        <population>
+          <identifier>
+            <value value="initial-population-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="initial-population"/>
+              <display value="Initial Population"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="numerator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="numerator"/>
+              <display value="Numerator"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator"/>
+              <display value="Denominator"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <population>
+          <identifier>
+            <value value="denominator-exclusions-identifier"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="denominator-exclusion"/>
+              <display value="Denominator Exclusion"/>
+            </coding>
+          </code>
+          <count value="0"/>
+        </population>
+        <measureScore value="0"/>
+      </stratum>
+    </stratifier>
+  </group>
+</MeasureReport>

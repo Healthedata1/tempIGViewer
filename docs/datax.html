@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</title>
+  <title>Data Exchange For Quality Measures STU1 for FHIR STU3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide Implemenation Guide" />
+<meta name="description" content="Data Exchange For Quality Measures STU1 for FHIR STU3 Implemenation Guide" />
 <meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -68,10 +68,10 @@
 
   <div id="project-status" class="project-status"> <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU1 for FHIR STU3 Implementation Guide</b>
     
     
-    CI Build
+    (Release 1.0.0)
     
 </div><!-- end ig title text -->
 
@@ -100,7 +100,7 @@
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <ul class="nav navbar-nav">
@@ -158,14 +158,13 @@
       <li>
         <a href="profiles.html">Profiles/Extensions</a>
       </li>
-<!--
       <li>
         <a href="operations.html">Operations</a>
       </li>
-
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
+      <!--
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
 -->
       <li>
         <a href="capstatements.html">CapabilityStatements</a>
@@ -276,7 +275,7 @@
 <!-- ============StatusBox=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU1 for FHIR STU3 - Local Development build (v1.0.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -353,12 +352,12 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Library</td>
       <td>CQFM Library Profile</td>
-      <td><a href="http://build.fhir.org/ig/HL7/cqf-measures/StructureDefinition-library-cqfm.html">CQFM Library</a></td>
+      <td><a href="file://C:\Users\lynn\Documents\GitHub\hl7.fhir.us.cqfmeasures#1.0.0\output/StructureDefinition-library-cqfm.html">CQFM Library</a></td>
     </tr>
     <tr>
       <td>Measure</td>
       <td>CQFM Measure Profile</td>
-      <td><a href="http://build.fhir.org/ig/HL7/cqf-measures/StructureDefinition-measure-cqfm.html">CQFM Measure</a></td>
+      <td><a href="file://C:\Users\lynn\Documents\GitHub\hl7.fhir.us.cqfmeasures#1.0.0\output/StructureDefinition-measure-cqfm.html">CQFM Measure</a></td>
     </tr>
     <tr>
       <td>MeasureReport</td>
@@ -373,7 +372,7 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Patient</td>
       <td>QI Core Patient Profile</td>
-      <td><a href="http://build.fhir.org/ig/HL7/fhir-qi-core/StructureDefinition-qicore-patient.html">QI Core Patient</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-patient.html">QI Core Patient</a></td>
     </tr>
   </tbody>
 </table>
@@ -442,7 +441,7 @@ This is the {% if {{site.build}} == "ci" %}
 <p>In addition to the resources listed above, the following artifacts are used in this transaction:</p>
 
 <ol>
-  <li>Data Requirements: <a href="http://hl7.org/fhir/R4/measure-operation-data-requirements.html" title="The data-requirements operation aggregates and returns the parameters and data requirements for the measure and all its dependencies as a single module definition">$data-requirements</a> operation</li>
+  <li>Data Requirements: <a href="http://hl7.org/fhir/STU3/measure-operations.html#data-requirements" title="The data-requirements operation aggregates and returns the parameters and data requirements for the measure and all its dependencies as a single module definition">$data-requirements</a> operation</li>
 </ol>
 
 <h5 class="no_toc" id="usage">Usage</h5>
@@ -560,7 +559,7 @@ This is the {% if {{site.build}} == "ci" %}
       {
          "type":"Practitioner",
          "profile":[
-            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
+            "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
          ]
       }
    ]
@@ -592,7 +591,7 @@ This is the {% if {{site.build}} == "ci" %}
 <p>In addition to the resources listed above, the following artifacts are used in this transaction:</p>
 
 <ol>
-  <li>Submit Data operation: <a href="http://hl7.org/fhir/R4/measure-operation-submit-data.html" title="The effect of invoking this operation is to gather the data required to perform an evaluation of the measure.">$submit-data</a></li>
+  <li>Submit Data operation: <a href="OperationDefinition-submit-data.html" title="The effect of invoking this operation is to gather the data required to perform an evaluation of the measure.">$submit-data</a></li>
   <li>Various DEQM and QI Core Profiles depending on the specific Measure</li>
 </ol>
 
@@ -721,7 +720,7 @@ As with the Submit Data case above, discovery of what CQM data (i.e. resources) 
 <p>In addition to the resources listed above, the following artifacts are used in this transaction:</p>
 
 <ol>
-  <li>Collect Data operation:<a href="http://hl7.org/fhir/R4/measure-operation-collect-data.html" title="The effect of invoking this operation is to gather the data required to perform an evaluation of the measure.">$collect-data</a></li>
+  <li>Collect Data operation:<a href="OperationDefinition-collect-data.html" title="The effect of invoking this operation is to gather the data required to perform an evaluation of the measure.">$collect-data</a></li>
   <li>Various DEQM and QI Core Profiles depending on the specific Measure</li>
 </ol>
 
@@ -841,12 +840,12 @@ As with the Submit Data case above, discovery of what CQM data (i.e. resources) 
 
 <h3 id="submit-data-and-collect-data-for-multiple-patients">Submit Data and Collect Data for Multiple Patients</h3>
 
-<p>The <a href="http://hl7.org/fhir/R4/http.html#transaction">transaction</a> bundle processing as defined by FHIR specification is used for transacting multiple Submit Data and Collect Data operations for multiple patients in a single interaction.</p>
+<p>The <a href="http://hl7.org/fhir/STU3/http.html#transaction">transaction</a> bundle processing as defined by FHIR specification is used for transacting multiple Submit Data and Collect Data operations for multiple patients in a single interaction.</p>
 
 <ul>
   <li>The fullUrl refers to the <code class="highlighter-rouge">#submit-data</code> or <code class="highlighter-rouge">#collect-data</code> operation endpoint.</li>
   <li>The request method id <code class="highlighter-rouge">POST</code></li>
-  <li>Follows the <a href="http://hl7.org/fhir/R4/references.html#contained">following rules</a> for referencing referencing across the bundle entries if the resources are nested inside parameters and/or contained within a parameter:
+  <li>Follows the <a href="http://hl7.org/fhir/STU3/references.html#contained">following rules</a> for referencing referencing across the bundle entries if the resources are nested inside parameters and/or contained within a parameter:
     <ul>
       <li>“When resolving references, references are resolved by looking through the ‘container’ resource - the one that contains the other resources. Since there are no nested contained resources, there is only one container resource.”</li>
       <li>“References to contained resources are never resolved outside the container resource. Specifically, resolution stops at the elements Bundle.entry.resource and Parameters.parameter.resource, but not at DomainResource.contained.”</li>
@@ -1011,11 +1010,11 @@ Upon notification, the Consumer uses the *Collect Data* operation to request the
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Nov 18, 2019 21:04-0800">2019-11-18</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR 3.0.2</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Nov 26, 2019 14:31-0800">2019-11-26</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>
-      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
         </p>
    </div>  <!-- /inner-wrapper -->

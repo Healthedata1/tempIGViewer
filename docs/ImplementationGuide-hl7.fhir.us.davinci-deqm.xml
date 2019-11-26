@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.davinci-deqm"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Data Exchange For Quality Measures STU1 for FHIR STU3</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>
   </text>
   <url value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"/>
-  <version value="1.1.0"/>
-  <name value="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide"/>
-  <title value="Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide"/>
+  <version value="1.0.0"/>
+  <name value="Data Exchange For Quality Measures STU1 for FHIR STU3"/>
   <status value="draft"/>
-  <date value="2019-11-18T21:04:00-08:00"/>
+  <experimental value="true"/>
+  <date value="2019-11-26T14:31:03-08:00"/>
   <publisher value="HL7 International - Clinical Quality Information Work Group"/>
   <contact>
     <telecom>
@@ -25,29 +25,21 @@
       <display value="United States of America"/>
     </coding>
   </jurisdiction>
-  <copyright value="Used by permission of HL7 International - Clinical Quality Information Work Group, all rights reserved Creative Commons License"/>
-  <packageId value="hl7.fhir.us.davinci-deqm"/>
-  <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.1"/>
-  <dependsOn id="cqfm">
-    <uri value="http://hl7.org/fhir/us/cqfmeasures"/>
-    <packageId value="hl7.fhir.us.cqfmeasures"/>
-    <version value="current"/>
-  </dependsOn>
-  <dependsOn id="uscore">
-    <uri value="http://hl7.org/fhir/us/core"/>
-    <packageId value="hl7.fhir.us.core"/>
-    <version value="3.1.0"/>
-  </dependsOn>
-  <dependsOn id="qicore">
+  <fhirVersion value="3.0.2"/>
+  <dependency>
+    <type value="reference"/>
     <uri value="http://hl7.org/fhir/us/qicore"/>
-    <packageId value="hl7.fhir.us.qicore"/>
-    <version value="3.3.0"/>
-  </dependsOn>
-  <definition>
-    <grouping>
-      <name value="base"/>
-    </grouping>
+  </dependency>
+  <dependency>
+    <type value="reference"/>
+    <uri value="http://hl7.org/fhir/us/core"/>
+  </dependency>
+  <dependency>
+    <type value="reference"/>
+    <uri value="http://hl7.org/fhir/us/cqfmeasures"/>
+  </dependency>
+  <package id="p1">
+    <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
@@ -55,10 +47,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Organization-organization02.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Organization/organization02"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -67,10 +59,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-patient02.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Patient/patient02"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -79,10 +71,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Location-location03.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Location/location03"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -91,10 +83,22 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="MeasureReport-summ-measurereport01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="MeasureReport/summ-measurereport01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-summ-measurereport02.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MeasureReport/summ-measurereport02"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -103,10 +107,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="MeasureReport-datax-measurereport02.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="MeasureReport/datax-measurereport02"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -115,10 +119,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Location-location02.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Location/location02"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -127,10 +131,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-patient03.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Patient/patient03"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -139,10 +143,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Coverage-coverage01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Coverage/coverage01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -151,10 +155,22 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Organization-organization03.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Organization/organization03"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-practitioner02.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Practitioner/practitioner02"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -163,10 +179,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Organization-organization04.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Organization/organization04"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -175,10 +191,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Observation-observation01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Observation/observation01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -187,10 +203,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="MeasureReport-indv-measurereport01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="MeasureReport/indv-measurereport01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -199,10 +215,22 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Measure-measure-mrp.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Measure/measure-mrp"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-practitioner03.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Practitioner/practitioner03"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -211,10 +239,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="MeasureReport-indv-measurereport02.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="MeasureReport/indv-measurereport02"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -223,10 +251,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Encounter-Encounter01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Encounter/Encounter01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -235,10 +263,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Practitioner-practitioner01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Practitioner/practitioner01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -247,10 +275,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Coverage-coverage02.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Coverage/coverage02"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -259,10 +287,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Location-location01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Location/location01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -271,10 +299,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="MeasureReport-datax-measurereport01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="MeasureReport/datax-measurereport01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -283,10 +311,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Task-Task01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Task/Task01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -295,10 +323,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Organization-organization01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Organization/organization01"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -307,10 +335,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Coverage-coverage03.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Coverage/coverage03"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -319,34 +347,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-patient01.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Patient/patient01"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-alternateScoreType.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/extension-alternateScoreType"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-reporterGroup.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/extension-reporterGroup"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -355,10 +359,34 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-certificationIdentifier.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/extension-certificationIdentifier"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-alternateScoreType.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-alternateScoreType"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-reportingOrganizationGroup.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-reportingOrganizationGroup"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -367,10 +395,46 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-reportingVendor.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/extension-reportingVendor"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-dataCollectionType.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-dataCollectionType"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-doNotPerform.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-doNotPerform"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-referenceAny.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-referenceAny"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -379,10 +443,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-producer-server.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/producer-server"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -391,10 +455,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-medicationrequest-deqm.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/medicationrequest-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -403,10 +467,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-indv-measurereport-deqm.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/indv-measurereport-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -415,10 +479,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-coverage-deqm.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/coverage-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -427,10 +491,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-consumer-server.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/consumer-server"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -439,10 +503,34 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-organization-deqm.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/organization-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-deviceusestatement-deqm.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/deviceusestatement-deqm"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-practitioner-deqm.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/practitioner-deqm"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -451,10 +539,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-receiver-server.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/receiver-server"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -463,10 +551,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-datax-measurereport-deqm.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/datax-measurereport-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -475,10 +563,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-summary-measurereport-deqm.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/summary-measurereport-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -487,10 +575,34 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-medicationadministration-deqm.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/medicationadministration-deqm"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-collect-data.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/collect-data"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-submit-data.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/submit-data"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -499,10 +611,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-reporter-client.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/reporter-client"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -511,10 +623,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-producer-client.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/producer-client"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -523,175 +635,232 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-consumer-client.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/consumer-client"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-devicerequest-deqm.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/devicerequest-deqm"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="Home"/>
+    <kind value="page"/>
     <page>
-      <nameUrl value="index.html"/>
-      <title value="Home"/>
-      <generation value="markdown"/>
+      <source value="framework.html"/>
+      <title value="Framework"/>
+      <kind value="page"/>
       <page>
-        <nameUrl value="framework.html"/>
-        <title value="Framework"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="guidance.html"/>
-          <title value="General Guidance"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="datax.html"/>
-          <title value="Data Exchange"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="indv-reporting.html"/>
-          <title value="Individual Reporting"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="summary-reporting.html"/>
-          <title value="Summary Reporting"/>
-          <generation value="markdown"/>
-        </page>
+        <source value="guidance.html"/>
+        <title value="General Guidance"/>
+        <kind value="page"/>
       </page>
       <page>
-        <nameUrl value="usecases.html"/>
-        <title value="Example Use Cases"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="mrp.html"/>
-          <title value="Medication Reconciliation Post-Discharge (MRP)"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="col.html"/>
-          <title value="Colorectal Cancer Screening (COL)"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="vte1.html"/>
-          <title value="Venous Thromboembolism Prophylaxis (VTE-1)"/>
-          <generation value="markdown"/>
-        </page>
+        <source value="datax.html"/>
+        <title value="Data Exchange"/>
+        <kind value="page"/>
       </page>
       <page>
-        <nameUrl value="profiles.html"/>
-        <title value="Profiles and Extensions"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="StructureDefinition-medicationrequest-deqm.html"/>
-          <title value="StructureDefinition MedicationRequest Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-indv-measurereport-deqm.html"/>
-          <title value="StructureDefinition Indv MeasureReport Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-coverage-deqm.html"/>
-          <title value="StructureDefinition Coverage Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-organization-deqm.html"/>
-          <title value="StructureDefinition Organization Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-datax-measurereport-deqm.html"/>
-          <title value="StructureDefinition Datax MeasureReport Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-summary-measurereport-deqm.html"/>
-          <title value="StructureDefinition Summary MeasureReport Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-medicationadministration-deqm.html"/>
-          <title value="StructureDefinition MedicationAdministration Deqm"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-alternateScoreType.html"/>
-          <title value="StructureDefinition Extension alternateScoreType"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-reporterGroup.html"/>
-          <title value="StructureDefinition Extension reporterGroup"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-certificationIdentifier.html"/>
-          <title value="StructureDefinition Extension certificationIdentifier"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-reportingVendor.html"/>
-          <title value="StructureDefinition Extension reportingVendor"/>
-          <generation value="generated"/>
-        </page>
+        <source value="indv-reporting.html"/>
+        <title value="Individual Reporting"/>
+        <kind value="page"/>
       </page>
       <page>
-        <nameUrl value="capstatements.html"/>
-        <title value="Capability Statements"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="CapabilityStatement-producer-server.html"/>
-          <title value="CapabilityStatement Producer Server"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="CapabilityStatement-consumer-server.html"/>
-          <title value="CapabilityStatement Consumer Server"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="CapabilityStatement-receiver-server.html"/>
-          <title value="CapabilityStatement Receiver Server"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="CapabilityStatement-reporter-client.html"/>
-          <title value="CapabilityStatement Reporter Client"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="CapabilityStatement-producer-client.html"/>
-          <title value="CapabilityStatement Producer Client"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="CapabilityStatement-consumer-client.html"/>
-          <title value="CapabilityStatement Consumer Client"/>
-          <generation value="generated"/>
-        </page>
-      </page>
-      <page>
-        <nameUrl value="all-examples.html"/>
-        <title value="All Examples"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="change-notes.html"/>
-        <title value="Change Notes"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="toc.html"/>
-        <title value="Table of Contents"/>
-        <generation value="html"/>
+        <source value="summary-reporting.html"/>
+        <title value="Summary Reporting"/>
+        <kind value="page"/>
       </page>
     </page>
-  </definition>
+    <page>
+      <source value="usecases.html"/>
+      <title value="Example Use Cases"/>
+      <kind value="page"/>
+      <page>
+        <source value="mrp.html"/>
+        <title value="Medication Reconciliation Post-Discharge (MRP)"/>
+        <kind value="page"/>
+      </page>
+      <page>
+        <source value="col.html"/>
+        <title value="Colorectal Cancer Screening (COL)"/>
+        <kind value="page"/>
+      </page>
+      <page>
+        <source value="vte1.html"/>
+        <title value="Venous Thromboembolism Prophylaxis (VTE-1)"/>
+        <kind value="page"/>
+      </page>
+    </page>
+    <page>
+      <source value="profiles.html"/>
+      <title value="Profiles and Extensions"/>
+      <kind value="page"/>
+      <page>
+        <source value="StructureDefinition-medicationrequest-deqm.html"/>
+        <title value="StructureDefinition MedicationRequest Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-indv-measurereport-deqm.html"/>
+        <title value="StructureDefinition Indv MeasureReport Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-coverage-deqm.html"/>
+        <title value="StructureDefinition Coverage Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-organization-deqm.html"/>
+        <title value="StructureDefinition Organization Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-deviceusestatement-deqm.html"/>
+        <title value="StructureDefinition DeviceUseStatement Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-practitioner-deqm.html"/>
+        <title value="StructureDefinition Practitioner Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-datax-measurereport-deqm.html"/>
+        <title value="StructureDefinition Datax MeasureReport Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-summary-measurereport-deqm.html"/>
+        <title value="StructureDefinition Summary MeasureReport Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-medicationadministration-deqm.html"/>
+        <title value="StructureDefinition MedicationAdministration Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-devicerequest-deqm.html"/>
+        <title value="StructureDefinition DeviceRequest Deqm"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-extension-certificationIdentifier.html"/>
+        <title value="StructureDefinition Extension certificationIdentifier"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-extension-reportingVendor.html"/>
+        <title value="StructureDefinition Extension reportingVendor"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-extension-dataCollectionType.html"/>
+        <title value="StructureDefinition Extension dataCollectionType"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-extension-doNotPerform.html"/>
+        <title value="StructureDefinition Extension doNotPerform"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-extension-referenceAny.html"/>
+        <title value="StructureDefinition Extension referenceAny"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-extension-alternateScoreType.html"/>
+        <title value="StructureDefinition Extension alternateScoreType"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="operations.html"/>
+      <title value="Operations"/>
+      <kind value="page"/>
+      <page>
+        <source value="OperationDefinition-collect-data.html"/>
+        <title value="OperationDefinition Collect Data"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="OperationDefinition-submit-data.html"/>
+        <title value="OperationDefinition Submit Data"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="terminology.html"/>
+      <title value="Terminology"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="capstatements.html"/>
+      <title value="Capability Statements"/>
+      <kind value="page"/>
+      <page>
+        <source value="CapabilityStatement-producer-server.html"/>
+        <title value="CapabilityStatement Producer Server"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CapabilityStatement-consumer-server.html"/>
+        <title value="CapabilityStatement Consumer Server"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CapabilityStatement-receiver-server.html"/>
+        <title value="CapabilityStatement Receiver Server"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CapabilityStatement-reporter-client.html"/>
+        <title value="CapabilityStatement Reporter Client"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CapabilityStatement-producer-client.html"/>
+        <title value="CapabilityStatement Producer Client"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CapabilityStatement-consumer-client.html"/>
+        <title value="CapabilityStatement Consumer Client"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="downloads.html"/>
+      <title value="Downloads"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="all-examples.html"/>
+      <title value="All Examples"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="toc.html"/>
+      <title value="Table of Contents"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="change-notes.html"/>
+      <title value="Change Notes"/>
+      <kind value="page"/>
+    </page>
+  </page>
 </ImplementationGuide>

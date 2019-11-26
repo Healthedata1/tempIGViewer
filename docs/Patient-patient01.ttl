@@ -13,8 +13,7 @@
      fhir:Meta.lastUpdated [ fhir:value "2019-02-11T14:19:25.000+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
        fhir:value "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient";
-       fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient>
+       fhir:index 0
      ]
   ];
   fhir:DomainResource.text [
@@ -64,7 +63,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v2/0203" ];
          fhir:Coding.code [ fhir:value "MR" ];
          fhir:Coding.display [ fhir:value "Medical record number" ]
        ]
@@ -100,7 +99,7 @@
   fhir:Patient.maritalStatus [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/MaritalStatus" ];
        fhir:Coding.code [ fhir:value "M" ];
        fhir:Coding.display [ fhir:value "Married" ]
      ]

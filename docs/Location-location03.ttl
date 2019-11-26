@@ -11,8 +11,7 @@
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location";
-       fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location>
+       fhir:index 0
      ]
   ];
   fhir:DomainResource.text [
