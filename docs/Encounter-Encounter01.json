@@ -8,11 +8,11 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Encounter01</p><p><b>meta</b>: </p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Drug rehabilitation and detoxification <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '56876005' = 'Drug rehabilitation and detoxification', given as 'Drug rehabilitation and detoxification'})</span></p><p><b>subject</b>: <a href=\"Patient-patient01.html\">Natalie Huff Walter. Generated Summary: id: patient01; Medical record number = 12345 (USUAL); active; Jairo Webster (OFFICIAL); gender: male; birthDate: 1946-12-16; <span title=\"Codes: {http://hl7.org/fhir/v3/MaritalStatus M}\">Married</span></a></p><p><b>period</b>: May 29, 2018, 8:00:00 AM --&gt; May 29, 2018, 8:00:00 AM</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>Home <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/discharge-disposition code 'home' = 'Home', given as 'Home'})</span></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Encounter01</p><p><b>meta</b>: </p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Drug rehabilitation and detoxification <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '56876005' = 'Drug rehabilitation and detoxification', given as 'Drug rehabilitation and detoxification'})</span></p><p><b>subject</b>: <a href=\"Patient-patient01.html\">Natalie Huff Walter. Generated Summary: id: patient01; Medical record number = 12345 (USUAL); active; Jairo Webster (OFFICIAL); gender: male; birthDate: 1946-12-16; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>period</b>: May 29, 2018, 8:00:00 AM --&gt; May 29, 2018, 8:00:00 AM</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>Home <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/discharge-disposition code 'home' = 'Home', given as 'Home'})</span></td></tr></table></div>"
   },
   "status": "finished",
   "class": {
-    "system": "http://hl7.org/fhir/v3/ActCode",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "code": "IMP",
     "display": "inpatient encounter"
   },
@@ -39,7 +39,7 @@
     "dischargeDisposition": {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/discharge-disposition",
+          "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
           "code": "home",
           "display": "Home"
         }

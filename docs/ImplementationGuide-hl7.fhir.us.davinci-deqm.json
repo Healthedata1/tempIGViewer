@@ -3,14 +3,14 @@
   "id": "hl7.fhir.us.davinci-deqm",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Data Exchange For Quality Measures STU1 for FHIR STU3</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm</pre></div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm",
-  "version": "1.0.0",
-  "name": "Data Exchange For Quality Measures STU1 for FHIR STU3",
+  "version": "1.1.0",
+  "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
+  "title": "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide",
   "status": "draft",
-  "experimental": true,
-  "date": "2019-11-26T14:31:03-08:00",
+  "date": "2019-12-02T15:07:34-08:00",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [
     {
@@ -33,1065 +33,854 @@
       ]
     }
   ],
-  "fhirVersion": "3.0.2",
-  "dependency": [
+  "copyright": "Used by permission of HL7 International - Clinical Quality Information Work Group, all rights reserved Creative Commons License",
+  "packageId": "hl7.fhir.us.davinci-deqm",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
     {
-      "type": "reference",
-      "uri": "http://hl7.org/fhir/us/qicore"
+      "id": "cqfm",
+      "uri": "http://hl7.org/fhir/us/cqfmeasures",
+      "packageId": "hl7.fhir.us.cqfmeasures",
+      "version": "1.0.0"
     },
     {
-      "type": "reference",
-      "uri": "http://hl7.org/fhir/us/core"
+      "id": "uscore",
+      "uri": "http://hl7.org/fhir/us/core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.0"
     },
     {
-      "type": "reference",
-      "uri": "http://hl7.org/fhir/us/cqfmeasures"
+      "id": "qicore",
+      "uri": "http://hl7.org/fhir/us/qicore",
+      "packageId": "hl7.fhir.us.qicore",
+      "version": "3.3.0"
     }
   ],
-  "package": [
-    {
-      "id": "p1",
-      "name": "base",
-      "resource": [
+  "definition": {
+    "grouping": [
+      {
+        "name": "base"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-organization02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/organization02"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-patient02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient02"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-location03.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/location03"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-summ-measurereport01.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/summ-measurereport01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-datax-measurereport02.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/datax-measurereport02"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-location02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/location02"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-patient03.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient03"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-coverage01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/coverage01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-organization03.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/organization03"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-organization04.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/organization04"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-observation01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-indv-measurereport01.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/indv-measurereport01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-measure-mrp.html"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/measure-mrp"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-indv-measurereport02.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/indv-measurereport02"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-Encounter01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/Encounter01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-practitioner01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/practitioner01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-coverage02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/coverage02"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-location01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/location01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-datax-measurereport01.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/datax-measurereport01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Task"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Task-Task01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Task/Task01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-organization01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/organization01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-coverage03.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/coverage03"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-patient01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-alternateScoreType.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-alternateScoreType"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-reporterGroup.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-reporterGroup"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-certificationIdentifier.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-certificationIdentifier"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-reportingVendor.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-reportingVendor"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-producer-server.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/producer-server"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-medicationrequest-deqm.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/medicationrequest-deqm"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-indv-measurereport-deqm.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/indv-measurereport-deqm"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-coverage-deqm.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/coverage-deqm"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-consumer-server.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/consumer-server"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-organization-deqm.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/organization-deqm"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-receiver-server.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/receiver-server"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-datax-measurereport-deqm.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/datax-measurereport-deqm"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-summary-measurereport-deqm.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/summary-measurereport-deqm"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-medicationadministration-deqm.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/medicationadministration-deqm"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-reporter-client.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/reporter-client"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-producer-client.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/producer-client"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-consumer-client.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/consumer-client"
+        },
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "index.html",
+      "title": "Home",
+      "generation": "markdown",
+      "page": [
         {
-          "extension": [
+          "nameUrl": "framework.html",
+          "title": "Framework",
+          "generation": "markdown",
+          "page": [
             {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Organization"
+              "nameUrl": "guidance.html",
+              "title": "General Guidance",
+              "generation": "markdown"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Organization-organization02.html"
+              "nameUrl": "datax.html",
+              "title": "Data Exchange",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "indv-reporting.html",
+              "title": "Individual Reporting",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "summary-reporting.html",
+              "title": "Summary Reporting",
+              "generation": "markdown"
             }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Organization/organization02"
-          }
+          ]
         },
         {
-          "extension": [
+          "nameUrl": "usecases.html",
+          "title": "Example Use Cases",
+          "generation": "markdown",
+          "page": [
             {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Patient"
+              "nameUrl": "mrp.html",
+              "title": "Medication Reconciliation Post-Discharge (MRP)",
+              "generation": "markdown"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Patient-patient02.html"
+              "nameUrl": "col.html",
+              "title": "Colorectal Cancer Screening (COL)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "vte1.html",
+              "title": "Venous Thromboembolism Prophylaxis (VTE-1)",
+              "generation": "markdown"
             }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Patient/patient02"
-          }
+          ]
         },
         {
-          "extension": [
+          "nameUrl": "profiles.html",
+          "title": "Profiles and Extensions",
+          "generation": "markdown",
+          "page": [
             {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Location"
+              "nameUrl": "StructureDefinition-medicationrequest-deqm.html",
+              "title": "StructureDefinition MedicationRequest Deqm",
+              "generation": "generated"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Location-location03.html"
+              "nameUrl": "StructureDefinition-indv-measurereport-deqm.html",
+              "title": "StructureDefinition Indv MeasureReport Deqm",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-coverage-deqm.html",
+              "title": "StructureDefinition Coverage Deqm",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-organization-deqm.html",
+              "title": "StructureDefinition Organization Deqm",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-datax-measurereport-deqm.html",
+              "title": "StructureDefinition Datax MeasureReport Deqm",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-summary-measurereport-deqm.html",
+              "title": "StructureDefinition Summary MeasureReport Deqm",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-medicationadministration-deqm.html",
+              "title": "StructureDefinition MedicationAdministration Deqm",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-alternateScoreType.html",
+              "title": "StructureDefinition Extension alternateScoreType",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-reporterGroup.html",
+              "title": "StructureDefinition Extension reporterGroup",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-certificationIdentifier.html",
+              "title": "StructureDefinition Extension certificationIdentifier",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-reportingVendor.html",
+              "title": "StructureDefinition Extension reportingVendor",
+              "generation": "generated"
             }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Location/location03"
-          }
+          ]
         },
         {
-          "extension": [
+          "nameUrl": "capstatements.html",
+          "title": "Capability Statements",
+          "generation": "markdown",
+          "page": [
             {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "MeasureReport"
+              "nameUrl": "CapabilityStatement-producer-server.html",
+              "title": "CapabilityStatement Producer Server",
+              "generation": "generated"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "MeasureReport-summ-measurereport01.html"
+              "nameUrl": "CapabilityStatement-consumer-server.html",
+              "title": "CapabilityStatement Consumer Server",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "CapabilityStatement-receiver-server.html",
+              "title": "CapabilityStatement Receiver Server",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "CapabilityStatement-reporter-client.html",
+              "title": "CapabilityStatement Reporter Client",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "CapabilityStatement-producer-client.html",
+              "title": "CapabilityStatement Producer Client",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "CapabilityStatement-consumer-client.html",
+              "title": "CapabilityStatement Consumer Client",
+              "generation": "generated"
             }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "MeasureReport/summ-measurereport01"
-          }
+          ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "MeasureReport"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "MeasureReport-summ-measurereport02.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "MeasureReport/summ-measurereport02"
-          }
+          "nameUrl": "all-examples.html",
+          "title": "All Examples",
+          "generation": "markdown"
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "MeasureReport"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "MeasureReport-datax-measurereport02.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "MeasureReport/datax-measurereport02"
-          }
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Location"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Location-location02.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Location/location02"
-          }
+          "nameUrl": "change-notes.html",
+          "title": "Change Notes",
+          "generation": "markdown"
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Patient"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Patient-patient03.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Patient/patient03"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Coverage"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Coverage-coverage01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Coverage/coverage01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Organization"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Organization-organization03.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Organization/organization03"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Practitioner"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Practitioner-practitioner02.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Practitioner/practitioner02"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Organization"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Organization-organization04.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Organization/organization04"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Observation"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Observation-observation01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Observation/observation01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "MeasureReport"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "MeasureReport-indv-measurereport01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "MeasureReport/indv-measurereport01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Measure"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Measure-measure-mrp.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Measure/measure-mrp"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Practitioner"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Practitioner-practitioner03.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Practitioner/practitioner03"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "MeasureReport"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "MeasureReport-indv-measurereport02.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "MeasureReport/indv-measurereport02"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Encounter"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Encounter-Encounter01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Encounter/Encounter01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Practitioner"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Practitioner-practitioner01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Practitioner/practitioner01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Coverage"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Coverage-coverage02.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Coverage/coverage02"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Location"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Location-location01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Location/location01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "MeasureReport"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "MeasureReport-datax-measurereport01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "MeasureReport/datax-measurereport01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Task"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Task-Task01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Task/Task01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Organization"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Organization-organization01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Organization/organization01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Coverage"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Coverage-coverage03.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Coverage/coverage03"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Patient"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Patient-patient01.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Patient/patient01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:extension"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-certificationIdentifier.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-certificationIdentifier"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:extension"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-alternateScoreType.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-alternateScoreType"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:extension"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-reportingOrganizationGroup.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-reportingOrganizationGroup"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:extension"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-reportingVendor.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-reportingVendor"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:extension"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-dataCollectionType.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-dataCollectionType"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:extension"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-doNotPerform.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-doNotPerform"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:extension"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-referenceAny.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-referenceAny"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "CapabilityStatement"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-producer-server.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/producer-server"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-medicationrequest-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/medicationrequest-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-indv-measurereport-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/indv-measurereport-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-coverage-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/coverage-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "CapabilityStatement"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-consumer-server.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/consumer-server"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-organization-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/organization-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-deviceusestatement-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/deviceusestatement-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-practitioner-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/practitioner-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "CapabilityStatement"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-receiver-server.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/receiver-server"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-datax-measurereport-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/datax-measurereport-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-summary-measurereport-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/summary-measurereport-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-medicationadministration-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/medicationadministration-deqm"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "OperationDefinition"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "OperationDefinition-collect-data.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "OperationDefinition/collect-data"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "OperationDefinition"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "OperationDefinition-submit-data.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "OperationDefinition/submit-data"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "CapabilityStatement"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-reporter-client.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/reporter-client"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "CapabilityStatement"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-producer-client.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/producer-client"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "CapabilityStatement"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-consumer-client.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/consumer-client"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-devicerequest-deqm.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/devicerequest-deqm"
-          }
+          "nameUrl": "toc.html",
+          "title": "Table of Contents",
+          "generation": "html"
         }
       ]
     }
-  ],
-  "page": {
-    "source": "index.html",
-    "title": "Home",
-    "kind": "page",
-    "page": [
-      {
-        "source": "framework.html",
-        "title": "Framework",
-        "kind": "page",
-        "page": [
-          {
-            "source": "guidance.html",
-            "title": "General Guidance",
-            "kind": "page"
-          },
-          {
-            "source": "datax.html",
-            "title": "Data Exchange",
-            "kind": "page"
-          },
-          {
-            "source": "indv-reporting.html",
-            "title": "Individual Reporting",
-            "kind": "page"
-          },
-          {
-            "source": "summary-reporting.html",
-            "title": "Summary Reporting",
-            "kind": "page"
-          }
-        ]
-      },
-      {
-        "source": "usecases.html",
-        "title": "Example Use Cases",
-        "kind": "page",
-        "page": [
-          {
-            "source": "mrp.html",
-            "title": "Medication Reconciliation Post-Discharge (MRP)",
-            "kind": "page"
-          },
-          {
-            "source": "col.html",
-            "title": "Colorectal Cancer Screening (COL)",
-            "kind": "page"
-          },
-          {
-            "source": "vte1.html",
-            "title": "Venous Thromboembolism Prophylaxis (VTE-1)",
-            "kind": "page"
-          }
-        ]
-      },
-      {
-        "source": "profiles.html",
-        "title": "Profiles and Extensions",
-        "kind": "page",
-        "page": [
-          {
-            "source": "StructureDefinition-medicationrequest-deqm.html",
-            "title": "StructureDefinition MedicationRequest Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-indv-measurereport-deqm.html",
-            "title": "StructureDefinition Indv MeasureReport Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-coverage-deqm.html",
-            "title": "StructureDefinition Coverage Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-organization-deqm.html",
-            "title": "StructureDefinition Organization Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-deviceusestatement-deqm.html",
-            "title": "StructureDefinition DeviceUseStatement Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-practitioner-deqm.html",
-            "title": "StructureDefinition Practitioner Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-datax-measurereport-deqm.html",
-            "title": "StructureDefinition Datax MeasureReport Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-summary-measurereport-deqm.html",
-            "title": "StructureDefinition Summary MeasureReport Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-medicationadministration-deqm.html",
-            "title": "StructureDefinition MedicationAdministration Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-devicerequest-deqm.html",
-            "title": "StructureDefinition DeviceRequest Deqm",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-extension-certificationIdentifier.html",
-            "title": "StructureDefinition Extension certificationIdentifier",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-extension-reportingVendor.html",
-            "title": "StructureDefinition Extension reportingVendor",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-extension-dataCollectionType.html",
-            "title": "StructureDefinition Extension dataCollectionType",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-extension-doNotPerform.html",
-            "title": "StructureDefinition Extension doNotPerform",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-extension-referenceAny.html",
-            "title": "StructureDefinition Extension referenceAny",
-            "kind": "resource"
-          },
-          {
-            "source": "StructureDefinition-extension-alternateScoreType.html",
-            "title": "StructureDefinition Extension alternateScoreType",
-            "kind": "resource"
-          }
-        ]
-      },
-      {
-        "source": "operations.html",
-        "title": "Operations",
-        "kind": "page",
-        "page": [
-          {
-            "source": "OperationDefinition-collect-data.html",
-            "title": "OperationDefinition Collect Data",
-            "kind": "resource"
-          },
-          {
-            "source": "OperationDefinition-submit-data.html",
-            "title": "OperationDefinition Submit Data",
-            "kind": "resource"
-          }
-        ]
-      },
-      {
-        "source": "terminology.html",
-        "title": "Terminology",
-        "kind": "page"
-      },
-      {
-        "source": "capstatements.html",
-        "title": "Capability Statements",
-        "kind": "page",
-        "page": [
-          {
-            "source": "CapabilityStatement-producer-server.html",
-            "title": "CapabilityStatement Producer Server",
-            "kind": "resource"
-          },
-          {
-            "source": "CapabilityStatement-consumer-server.html",
-            "title": "CapabilityStatement Consumer Server",
-            "kind": "resource"
-          },
-          {
-            "source": "CapabilityStatement-receiver-server.html",
-            "title": "CapabilityStatement Receiver Server",
-            "kind": "resource"
-          },
-          {
-            "source": "CapabilityStatement-reporter-client.html",
-            "title": "CapabilityStatement Reporter Client",
-            "kind": "resource"
-          },
-          {
-            "source": "CapabilityStatement-producer-client.html",
-            "title": "CapabilityStatement Producer Client",
-            "kind": "resource"
-          },
-          {
-            "source": "CapabilityStatement-consumer-client.html",
-            "title": "CapabilityStatement Consumer Client",
-            "kind": "resource"
-          }
-        ]
-      },
-      {
-        "source": "downloads.html",
-        "title": "Downloads",
-        "kind": "page"
-      },
-      {
-        "source": "all-examples.html",
-        "title": "All Examples",
-        "kind": "page"
-      },
-      {
-        "source": "toc.html",
-        "title": "Table of Contents",
-        "kind": "resource"
-      },
-      {
-        "source": "change-notes.html",
-        "title": "Change Notes",
-        "kind": "page"
-      }
-    ]
   }
 }

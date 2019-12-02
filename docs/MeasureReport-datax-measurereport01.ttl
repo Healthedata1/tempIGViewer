@@ -13,31 +13,26 @@
      fhir:Meta.lastUpdated [ fhir:value "2018-09-05T16:59:53.000+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
        fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm";
-       fhir:index 0
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: datax-measurereport01</p><p><b>meta</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: </p><p><b>measure</b>: <a href=\"Measure-measure-mrp.html\">Generated Summary: id: measure-mrp; url: http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp; status: active; date: Oct 3, 2019, 2:53:57 AM; <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></a></p><p><b>patient</b>: <a href=\"Patient-patient01.html\">Generated Summary: id: patient01; Medical record number = 12345 (USUAL); active; Jairo Webster (OFFICIAL); gender: male; birthDate: Dec 16, 1946; <span title=\"Codes: {http://hl7.org/fhir/v3/MaritalStatus M}\">Married</span></a></p><p><b>date</b>: Sep 5, 2018, 4:59:52 PM</p><p><b>reportingOrganization</b>: <a href=\"Organization-organization01.html\">Generated Summary: id: organization01; Tax ID number = 123456789 (OFFICIAL); active; <span title=\"Codes: {http://hl7.org/fhir/organization-type prov}\">Healthcare Provider</span>; name: DaVinciHospital01; ph: (+1) 401-555-1212</a></p><p><b>period</b>: Aug 1, 2018, 12:00:00 AM --&gt; Sep 1, 2018, 12:00:00 AM</p><p><b>evaluatedResources</b>: <a href=\"Task-Task01.html\">Generated Summary: id: Task01; identifier: 19009 status: completed code: Medication Reconciliation (Details : {http://www.ama-assn.org/go/cpt code '1111F' = '1111F', given as 'Medication Reconciliation'})</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: datax-measurereport01</p><p><b>meta</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: </p><p><b>measure</b>: <a href=\"Measure-measure-mrp.html\">Generated Summary: id: measure-mrp; url: http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp; status: active; date: Oct 3, 2019, 2:53:57 AM; <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></a></p><p><b>patient</b>: <a href=\"Patient-patient01.html\">Generated Summary: id: patient01; Medical record number = 12345 (USUAL); active; Jairo Webster (OFFICIAL); gender: male; birthDate: Dec 16, 1946; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>date</b>: Sep 5, 2018, 4:59:52 PM</p><p><b>reportingOrganization</b>: <a href=\"Organization-organization01.html\">Generated Summary: id: organization01; Tax ID number = 123456789 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: DaVinciHospital01; ph: (+1) 401-555-1212</a></p><p><b>period</b>: Aug 1, 2018, 12:00:00 AM --&gt; Sep 1, 2018, 12:00:00 AM</p><p><b>evaluatedResource</b>: <a href=\"Task-Task01.html\">Generated Summary: id: Task01; identifier: 19009 status: completed code: Medication Reconciliation (Details : {http://www.ama-assn.org/go/cpt code '1111F' = '1111F', given as 'Medication Reconciliation'})</a></p></div>"
   ];
   fhir:MeasureReport.status [ fhir:value "complete"];
-  fhir:MeasureReport.type [
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-dataCollectionType" ];
-       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-     ]
-  ];
+  fhir:MeasureReport.type [ fhir:value "data-collection"];
   fhir:MeasureReport.measure [
-     fhir:link <http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp>;
-     fhir:Reference.reference [ fhir:value "Measure/measure-mrp" ]
+     fhir:value "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp";
+     fhir:link <http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp>
   ];
-  fhir:MeasureReport.patient [
+  fhir:MeasureReport.subject [
      fhir:link <http://hl7.org/fhir/us/davinci-deqm/Patient/patient01>;
      fhir:Reference.reference [ fhir:value "Patient/patient01" ]
   ];
   fhir:MeasureReport.date [ fhir:value "2018-09-05T16:59:52.404Z"^^xsd:dateTime];
-  fhir:MeasureReport.reportingOrganization [
+  fhir:MeasureReport.reporter [
      fhir:link <http://hl7.org/fhir/us/davinci-deqm/Organization/organization01>;
      fhir:Reference.reference [ fhir:value "Organization/organization01" ]
   ];
@@ -45,18 +40,11 @@
      fhir:Period.start [ fhir:value "2018-08-01"^^xsd:date ];
      fhir:Period.end [ fhir:value "2018-09-01"^^xsd:date ]
   ];
-  fhir:MeasureReport.evaluatedResources [
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-referenceAny" ];
-       fhir:Extension.valueReference [
-         fhir:link <http://hl7.org/fhir/us/davinci-deqm/Task/Task01>;
-         fhir:Reference.reference [ fhir:value "Task/Task01" ]
-       ]
-     ]
+  fhir:MeasureReport.evaluatedResource [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/davinci-deqm/Task/Task01>;
+     fhir:Reference.reference [ fhir:value "Task/Task01" ]
   ] .
-
-<http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp> a fhir:us .
 
 <http://hl7.org/fhir/us/davinci-deqm/Patient/patient01> a fhir:us .
 

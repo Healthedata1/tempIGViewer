@@ -1,14 +1,15 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "DaVinci DEQM Reporter Client CapabilityStatement",
+    "title": "Reporter Client CapabilityStatement",
     "description": "This profile defines the expected capabilities of a Da Vinci DEQM Reporter Client when conforming to the Da Vinci DEQM Implementation Guide.  Reporters include systems that are primary reporters of patient healthcare information and systems that consume data from Producers.   This CapabilityStatement resource includes the complete list of the *recommended*  Da Vinci DEQM profiles and RESTful operations that a Da Vinci DEQM Reporter Client could support. Clients have the option of choosing from this list based on their local use cases and other contextual requirements.",
     "license": {
+      "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"
     },
-    "version": "1.0.0",
+    "version": "1.1.0",
     "contact": {
-      "name": "The DaVinci Project"
+      "name": "HL7 International - Clinical Decision Support Work Group"
     }
   },
   "externalDocs": {

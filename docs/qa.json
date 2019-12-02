@@ -1,12 +1,12 @@
 {
-  "url": "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm-1.0.0",
-  "name": "Data Exchange For Quality Measures STU1 for FHIR STU3",
+  "url": "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm-1.1.0",
+  "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
   "package-id": "hl7.fhir.us.davinci-deqm",
-  "ig-ver": "1.0.0",
-  "date": "Tue, 26 Nov, 2019 14:31:03 -0800",
-  "errs": 2,
-  "warnings": 8,
+  "ig-ver": "1.1.0",
+  "date": "Mon, 02 Dec, 2019 15:07:34 -0800",
+  "errs": 0,
+  "warnings": 0,
   "hints": 2,
-  "version": "3.0.2",
+  "version": "4.0.1",
   "tool": "4.1.0 (3)"
 }

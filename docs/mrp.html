@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>Data Exchange For Quality Measures STU1 for FHIR STU3</title>
+  <title>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Data Exchange For Quality Measures STU1 for FHIR STU3 Implemenation Guide" />
+<meta name="description" content="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide Implemenation Guide" />
 <meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -68,10 +68,10 @@
 
   <div id="project-status" class="project-status"> <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures STU1 for FHIR STU3 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide Implementation Guide</b>
     
     
-    (Release 1.0.0)
+    CI Build
     
 </div><!-- end ig title text -->
 
@@ -100,7 +100,7 @@
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <ul class="nav navbar-nav">
@@ -158,13 +158,14 @@
       <li>
         <a href="profiles.html">Profiles/Extensions</a>
       </li>
+<!--
       <li>
         <a href="operations.html">Operations</a>
       </li>
-      <!--
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
+
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
 -->
       <li>
         <a href="capstatements.html">CapabilityStatements</a>
@@ -275,7 +276,7 @@
 <!-- ============StatusBox=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU1 for FHIR STU3 - Local Development build (v1.0.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -320,7 +321,7 @@ This is the {% if {{site.build}} == "ci" %}
 
 <p>In the case of medication reconciliation after discharge from the hospital, the patient’s discharge medication(s) is compared with the medication(s) the patient was taking prior to hospitalization. This can avoid medication errors such as omissions, duplications, dosing errors or drug interactions, and should be done at every transition of care in which new medications are ordered or existing orders are rewritten.  This attestation message is intended to be performed by the next provider where the patient returns for follow-up and can then be used by the payer to show compliance for the HEDIS measure Medication Reconciliation Post-Discharge. (Any necessary documentation will also be put in the record)</p>
 
-<p>In the past, attestation to the reconciliation had been done by posting a CPT Category II code on a claim typically for a small monetary amount that was then denied by the payer and had to be written off by the provider.  This is a cumbersome process and most providers are no longer doing this.</p>
+<p>In the past, attestation to the reconciliation had been done by posting a CPT2 code on a claim typically for a small monetary amount that was then denied by the payer and had to be written off by the provider.  This is a cumbersome process and most providers are no longer doing this.</p>
 
 <p>Proof of 30 day medication reconciliations is increasingly required for value based care incentives.  Providers and care coordinators face the challenge of collecting accurate and complete patient medication records across care settings. Today’s manual and ad hoc processes are costly and will not scale.  Payers and providers need common standards to share the data required to complete medication reconciliation at all transitions of care, for care management plans, and during medication changes.  Vendors are actively leveraging FHIR resources to improve partner’s access to patient medication history by unlocking existing silos of this critical data from vendor systems, healthcare operations systems and provider EHRs.</p>
 
@@ -342,17 +343,17 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Coverage</td>
       <td>QI Core Coverage Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-coverage.html">QI Core Coverage</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-coverage.html">QI Core Coverage</a></td>
     </tr>
     <tr>
       <td>Encounter</td>
       <td>QI Core Encounter Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-encounter.html">QI Core Encounter</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-encounter.html">QI Core Encounter</a></td>
     </tr>
     <tr>
       <td>Location</td>
       <td>QI Core Location Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-location.html">QI Core Location</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-location.html">QI Core Location</a></td>
     </tr>
     <tr>
       <td>Library</td>
@@ -382,7 +383,7 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Observation</td>
       <td>QI Core Observation Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-observation.html">QI Core Observation</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-observation.html">QI Core Observation</a></td>
     </tr>
     <tr>
       <td>Organization</td>
@@ -392,17 +393,17 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Patient</td>
       <td>QI Core Patient Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-patient.html">QI Core Patient</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-patient.html">QI Core Patient</a></td>
     </tr>
     <tr>
       <td>Practitioner</td>
-      <td>DEQM Practitioner Profile<sup id="fnref:9:1"><a href="#fn:9" class="footnote">1</a></sup></td>
-      <td><a href="StructureDefinition-practitioner-deqm.html">DEQM Practitioner</a></td>
+      <td>QI Core Practitioner Profile<sup id="fnref:9:1"><a href="#fn:9" class="footnote">1</a></sup></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-practitioner.html">QI Core Practitioner</a></td>
     </tr>
     <tr>
       <td>Task</td>
       <td>QI Core Task Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-task.html">QI Core Task</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-task.html">QI Core Task</a></td>
     </tr>
   </tbody>
 </table>
@@ -572,7 +573,7 @@ This is the {% if {{site.build}} == "ci" %}
       {
          "type":"Practitioner",
          "profile":[
-            "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
+            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
          ]
       }
    ]
@@ -657,17 +658,9 @@ This is the {% if {{site.build}} == "ci" %}
           "start": "2018-08-01",
           "end": "2018-09-01"
         },
-        "evaluatedResources": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-referenceAny",
-              "valueReference": {
-                "reference": "Task/Task01"
-              }
-            }
-          ]
-        }
-      },
+        "evaluatedResource": [{
+          "reference": "Task/Task01"
+      }],
     {
       "name": "resource",
       "resource": {
@@ -774,7 +767,7 @@ This is the {% if {{site.build}} == "ci" %}
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "MR",
                   "display": "Medical record number"
                 }
@@ -812,7 +805,7 @@ This is the {% if {{site.build}} == "ci" %}
         "maritalStatus": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/v3/MaritalStatus",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
               "code": "M",
               "display": "Married"
             }
@@ -870,7 +863,7 @@ This is the {% if {{site.build}} == "ci" %}
           "versionId": "4",
           "lastUpdated": "2018-12-12T17:05:43.000+00:00",
           "profile": [
-            "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
+            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
           ]
         },
         "identifier": [
@@ -879,7 +872,7 @@ This is the {% if {{site.build}} == "ci" %}
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "PRN",
                   "display": "Provider number"
                 }
@@ -922,7 +915,7 @@ This is the {% if {{site.build}} == "ci" %}
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "TAX",
                   "display": "Tax ID number"
                 }
@@ -1072,7 +1065,7 @@ This is the {% if {{site.build}} == "ci" %}
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "TAX",
                   "display": "Tax ID number"
                 }
@@ -1392,7 +1385,7 @@ Content-Type: application/fhir+json;charset=UTF-8
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "MR",
                   "display": "Medical record number"
                 }
@@ -1430,7 +1423,7 @@ Content-Type: application/fhir+json;charset=UTF-8
         "maritalStatus": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/v3/MaritalStatus",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
               "code": "M",
               "display": "Married"
             }
@@ -1488,7 +1481,7 @@ Content-Type: application/fhir+json;charset=UTF-8
           "versionId": "4",
           "lastUpdated": "2018-12-12T17:05:43.000+00:00",
           "profile": [
-            "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
+            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
           ]
         },
         "identifier": [
@@ -1497,7 +1490,7 @@ Content-Type: application/fhir+json;charset=UTF-8
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "PRN",
                   "display": "Provider number"
                 }
@@ -1540,7 +1533,7 @@ Content-Type: application/fhir+json;charset=UTF-8
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "TAX",
                   "display": "Tax ID number"
                 }
@@ -1690,7 +1683,7 @@ Content-Type: application/fhir+json;charset=UTF-8
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "TAX",
                   "display": "Tax ID number"
                 }
@@ -2113,7 +2106,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                         {
                            "code": "TAX",
                            "display": "Tax ID number",
-                           "system": "http://hl7.org/fhir/v2/0203"
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
                         }
                      ]
                   },
@@ -2180,7 +2173,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                         {
                            "code": "TAX",
                            "display": "Tax ID number",
-                           "system": "http://hl7.org/fhir/v2/0203"
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
                         }
                      ]
                   },
@@ -2302,7 +2295,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                         {
                            "code": "MR",
                            "display": "Medical record number",
-                           "system": "http://hl7.org/fhir/v2/0203"
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
                         }
                      ]
                   },
@@ -2318,7 +2311,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                   {
                      "code": "M",
                      "display": "Married",
-                     "system": "http://hl7.org/fhir/v3/MaritalStatus"
+                     "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
                   }
                ]
             },
@@ -2345,7 +2338,7 @@ Content-Type: application/fhir+json;charset=UTF-8
             "meta": {
                "lastUpdated": "2019-03-06T19:03:03.000+00:00",
                "profile": [
-                  "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
+                  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
                ],
                "versionId": "4"
             },
@@ -2359,7 +2352,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                         {
                            "code": "PRN",
                            "display": "Provider number",
-                           "system": "http://hl7.org/fhir/v2/0203"
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
                         }
                      ]
                   },
@@ -2612,16 +2605,9 @@ Content-Type: application/fhir+json;charset=UTF-8
                }
             ],
             "date": "2018-09-05T16:59:52.404Z",
-            "evaluatedResources": {
-               "extension": [
-                  {
-                     "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-referenceAny",
-                     "valueReference": {
-                        "reference": "Observation/observation01"
-                     }
-                  }
-               ]
-            },
+            "evaluatedResources": [{
+               "reference": "Observation/observation01"
+            }],
             "group": [
                {
                   "identifier": {
@@ -2758,7 +2744,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                         {
                            "code": "TAX",
                            "display": "Tax ID number",
-                           "system": "http://hl7.org/fhir/v2/0203"
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
                         }
                      ]
                   },
@@ -2825,7 +2811,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                         {
                            "code": "TAX",
                            "display": "Tax ID number",
-                           "system": "http://hl7.org/fhir/v2/0203"
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
                         }
                      ]
                   },
@@ -2947,7 +2933,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                         {
                            "code": "MR",
                            "display": "Medical record number",
-                           "system": "http://hl7.org/fhir/v2/0203"
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
                         }
                      ]
                   },
@@ -2963,7 +2949,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                   {
                      "code": "M",
                      "display": "Married",
-                     "system": "http://hl7.org/fhir/v3/MaritalStatus"
+                     "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
                   }
                ]
             },
@@ -2990,7 +2976,7 @@ Content-Type: application/fhir+json;charset=UTF-8
             "meta": {
                "lastUpdated": "2019-03-06T19:03:03.000+00:00",
                "profile": [
-                  "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm"
+                  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
                ],
                "versionId": "4"
             },
@@ -3004,7 +2990,7 @@ Content-Type: application/fhir+json;charset=UTF-8
                         {
                            "code": "PRN",
                            "display": "Provider number",
-                           "system": "http://hl7.org/fhir/v2/0203"
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
                         }
                      ]
                   },
@@ -3070,7 +3056,7 @@ Content-Type: application/fhir+json;charset=UTF-8
 
 <p><strong>Scenario:</strong></p>
 
-<p>Payer X who is acting in the role of a Reporter submits a MRP Summary Report for MRP for period P to Receiver Z.  The body of the request is MeasureReport resource containing the required  summary data for MRP attestation for the period. (Note that this a simplified example and just populates the count for initial population. However, counts for all populations specified in an eCQM <em>should</em> be reported in a summary report)  An HTTP Status success code is returned on successful submission.</p>
+<p>Payer X who is acting in the role of a Reporter submits a MRP Summary Report for MRP for period P to Receiver Z.  The body of the request is MeasureReport resource containing the required  summary data for MRP attestation for the period.  An HTTP Status success code is returned on successful submission.</p>
 
 <p><strong>POST Summary Report</strong></p>
 
@@ -3210,11 +3196,11 @@ Content-Type: application/fhir+json;charset=UTF-8
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR 3.0.2</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Nov 26, 2019 14:31-0800">2019-11-26</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Dec 2, 2019 15:07-0800">2019-12-02</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>
-      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
         </p>
    </div>  <!-- /inner-wrapper -->

@@ -9,11 +9,10 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "practitioner01"];
   fhir:Resource.meta [
-     fhir:Meta.versionId [ fhir:value "4" ];
-     fhir:Meta.lastUpdated [ fhir:value "2019-03-06T19:03:03.000+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/practitioner-deqm";
-       fhir:index 0
+       fhir:value "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner>
      ]
   ];
   fhir:DomainResource.text [
@@ -26,7 +25,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v2/0203" ];
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
          fhir:Coding.code [ fhir:value "PRN" ];
          fhir:Coding.display [ fhir:value "Provider number" ]
        ]

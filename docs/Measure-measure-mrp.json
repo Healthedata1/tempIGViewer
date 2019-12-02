@@ -7,12 +7,13 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: measure-mrp</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp\">http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp</a></p><p><b>version</b>: 1.0.0</p><p><b>status</b>: active</p><p><b>date</b>: Nov 26, 2019, 2:31:03 PM</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: measure-mrp</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp\">http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp</a></p><p><b>version</b>: 1.1.0</p><p><b>name</b>: DEQMMeasureMRPExample</p><p><b>status</b>: active</p><p><b>date</b>: Dec 2, 2019, 3:07:34 PM</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p></div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "name": "DEQMMeasureMRPExample",
   "status": "active",
-  "date": "2019-11-26T14:31:03-08:00",
+  "date": "2019-12-02T15:07:34-08:00",
   "jurisdiction": [
     {
       "coding": [

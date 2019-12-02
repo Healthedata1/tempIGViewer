@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>Data Exchange For Quality Measures STU1 for FHIR STU3</title>
+  <title>DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Data Exchange For Quality Measures STU1 for FHIR STU3 Implemenation Guide" />
+<meta name="description" content="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide Implemenation Guide" />
 <meta name="author" content="HL7 International - Clinical Quality Information Work Group"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -68,10 +68,10 @@
 
   <div id="project-status" class="project-status"> <!-- ig title text -->
     
-    <b>Data Exchange For Quality Measures STU1 for FHIR STU3 Implementation Guide</b>
+    <b>Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide Implementation Guide</b>
     
     
-    (Release 1.0.0)
+    CI Build
     
 </div><!-- end ig title text -->
 
@@ -100,7 +100,7 @@
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <ul class="nav navbar-nav">
@@ -158,13 +158,14 @@
       <li>
         <a href="profiles.html">Profiles/Extensions</a>
       </li>
+<!--
       <li>
         <a href="operations.html">Operations</a>
       </li>
-      <!--
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
+
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
 -->
       <li>
         <a href="capstatements.html">CapabilityStatements</a>
@@ -275,7 +276,7 @@
 <!-- ============StatusBox=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU1 for FHIR STU3 - Local Development build (v1.0.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -300,7 +301,7 @@ This is the {% if {{site.build}} == "ci" %}
 
 <p>The VTE-1 measure assesses the number of patients who received venous thromboembolism (VTE) prophylaxis or have documentation why no venous thromboembolism prophylaxis was given the day of or the day after hospital admission or surgery end date for surgeries that start the day of or the day after hospital admission. Note that the Individual Measure Reporting Interaction is the only interaction used for this measure.</p>
 
-<p>The example presented is based on the QDM version of <a href="https://ecqi.healthit.gov/ecqm/measures/cms108v7">CMS 108v7</a>, which has been represented using profiles derived from <a href="http://hl7.org/fhir/us/qicore/STU32/index.html">QI Core</a>.  Additional information regarding the measure specification can be found in the <a href="file://C:\Users\lynn\Documents\GitHub\hl7.fhir.us.cqfmeasures#1.0.0\output/index.html">Quality Measure Implementation Guide</a></p>
+<p>The example presented is based on the QDM version of <a href="https://ecqi.healthit.gov/ecqm/measures/cms108v7">CMS 108v7</a>, which has been represented using profiles derived from <a href="http://hl7.org/fhir/us/qicore/2019Sep/index.html">QI Core</a>.  Additional information regarding the measure specification can be found in the <a href="file://C:\Users\lynn\Documents\GitHub\hl7.fhir.us.cqfmeasures#1.0.0\output/index.html">Quality Measure Implementation Guide</a></p>
 
 <h2 id="fhir-resource-overview">FHIR Resource Overview</h2>
 
@@ -318,27 +319,27 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Condition</td>
       <td>QI Core Condition Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-condition.html">QI Core Condition</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-condition.html">QI Core Condition</a></td>
     </tr>
     <tr>
       <td>Coverage</td>
       <td>QI Core Coverage Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-coverage.html">QI Core Coverage</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-coverage.html">QI Core Coverage</a></td>
     </tr>
     <tr>
       <td>DeviceRequest</td>
-      <td>DEQM DeviceRequest Profile</td>
-      <td><a href="StructureDefinition-devicerequest-deqm.html">DEQM DeviceRequest</a></td>
+      <td>QI Core DeviceRequest Profile</td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-devicerequest.html">QI Core DeviceRequest</a></td>
     </tr>
     <tr>
       <td>DeviceUseStatement</td>
-      <td>DEQM DeviceUseStatement Profile</td>
-      <td><a href="StructureDefinition-deviceusestatement-deqm.html">DEQM DeviceUseStatement</a></td>
+      <td>QI Core DeviceUseStatement Profile</td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-deviceusestatement.html">QI Core DeviceUseStatement</a></td>
     </tr>
     <tr>
       <td>Encounter</td>
       <td>QI Core Encounter Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-encounter.html">QI Core Encounter</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-encounter.html">QI Core Encounter</a></td>
     </tr>
     <tr>
       <td>Library</td>
@@ -348,7 +349,7 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Location</td>
       <td>QI Core Location Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-location.html">QI Core Location</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-location.html">QI Core Location</a></td>
     </tr>
     <tr>
       <td>Measure</td>
@@ -378,7 +379,7 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Observation</td>
       <td>QI Core Observation Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-observation.html">QI Core Observation</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-observation.html">QI Core Observation</a></td>
     </tr>
     <tr>
       <td>Organization</td>
@@ -388,22 +389,22 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Patient</td>
       <td>QI Core Patient Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-patient.html">QI Core Patient</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-patient.html">QI Core Patient</a></td>
     </tr>
     <tr>
       <td>Practitioner</td>
-      <td>DEQM Practitioner Profile</td>
-      <td><a href="StructureDefinition-practitioner-deqm.html">DEQM Practitioner</a></td>
+      <td>QI Core Practitioner Profile</td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-practitioner.html">QI Core Practitioner</a></td>
     </tr>
     <tr>
       <td>Procedure</td>
       <td>QI Core Procedure Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-procedure.html">QI Core Procedure</a></td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-procedure.html">QI Core Procedure</a></td>
     </tr>
     <tr>
-      <td>ProcedureRequest</td>
-      <td>QI Core ProcedureRequest Profile</td>
-      <td><a href="http://hl7.org/fhir/us/qicore/STU32/StructureDefinition-qicore-procedurerequest.html">QI Core ProcedureRequest</a></td>
+      <td>ServiceRequest</td>
+      <td>QI Core ServiceRequest Profile</td>
+      <td><a href="http://hl7.org/fhir/us/qicore/2019Sep/StructureDefinition-qicore-servicerequest.html">QI Core ServiceRequest</a></td>
     </tr>
   </tbody>
 </table>
@@ -521,9 +522,9 @@ This is the {% if {{site.build}} == "ci" %}
 <p></p>
 </div>
 
-<h3 class="no_toc" id="option-6-measure-report-using-procedureprocedurerequest-and-encounter">Option 6: Measure Report Using Procedure/ProcedureRequest and Encounter</h3>
+<h3 class="no_toc" id="option-6-measure-report-using-procedureservicerequest-and-encounter">Option 6: Measure Report Using Procedure/ServiceRequest and Encounter</h3>
 
-<p>When a patient has an inpatient encounter, during which they are provided Comfort Measures within 1 day of being admitted or 1 day of a surgical procedure for which they were admitted, these Comfort Measures are <em>excluded</em> from the denominator of the measure. for the measure. The surgical procedure is defined by the presence of a code from the “general or neuraxial anesthesia” value set present in the measure. The Comfort measures are represented by either a Procedure or a ProcedureRequest with a code from the “Comfort Measures” value set present in the measure.  The following resource graph diagram shows what would be included with a DEQM Individual MeasureReport when the patient has had intervention comfort measures.</p>
+<p>When a patient has an inpatient encounter, during which they are provided Comfort Measures within 1 day of being admitted or 1 day of a surgical procedure for which they were admitted, these Comfort Measures are <em>excluded</em> from the denominator of the measure. for the measure. The surgical procedure is defined by the presence of a code from the “general or neuraxial anesthesia” value set present in the measure. The Comfort measures are represented by either a Procedure or a ServiceRequest with a code from the “Comfort Measures” value set present in the measure.  The following resource graph diagram shows what would be included with a DEQM Individual MeasureReport when the patient has had intervention comfort measures.</p>
 
 <!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
 
@@ -531,7 +532,7 @@ This is the {% if {{site.build}} == "ci" %}
 
 <div>
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3-19 MeasureReport Using Procedure/ProcedureRequest and Encounter</strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 3-19 MeasureReport Using Procedure/ServiceRequest and Encounter</strong></figcaption>
   <img src="assets/images/DEQM Resource Diagram - VTE6.jpg" class="figure-img img-responsive img-rounded center-block" alt="DEQM Resource Diagram - VTE6.jpg" />
 </figure>
 
@@ -686,7 +687,7 @@ This is the {% if {{site.build}} == "ci" %}
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "TAX",
                   "display": "Tax ID number"
                 }
@@ -790,7 +791,7 @@ This is the {% if {{site.build}} == "ci" %}
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
                   "code": "MR",
                   "display": "Medical record number"
                 }
@@ -828,7 +829,7 @@ This is the {% if {{site.build}} == "ci" %}
         "maritalStatus": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/v3/MaritalStatus",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
               "code": "M",
               "display": "Married"
             }
@@ -1046,11 +1047,11 @@ Note to Balloters: We are actively seeking input on whether a technical workflow
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR 3.0.2</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Nov 26, 2019 14:31-0800">2019-11-26</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Dec 2, 2019 15:07-0800">2019-12-02</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>
-      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+      | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
         </p>
    </div>  <!-- /inner-wrapper -->
