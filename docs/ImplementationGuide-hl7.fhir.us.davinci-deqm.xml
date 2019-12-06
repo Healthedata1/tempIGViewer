@@ -10,7 +10,7 @@
   <name value="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide"/>
   <title value="Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2019-12-05T16:20:55-08:00"/>
+  <date value="2019-12-06T01:42:14-08:00"/>
   <publisher value="HL7 International - Clinical Quality Information Work Group"/>
   <contact>
     <telecom>
@@ -74,18 +74,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-multiple-indv-mrp-report.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/multiple-indv-mrp-report"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -122,6 +110,42 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Parameters-mrp-submit-task.html"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/mrp-submit-task"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-multiple-indv-mrp-obs-report.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/multiple-indv-mrp-obs-report"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-datax-measurereport03.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/datax-measurereport03"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -141,6 +165,18 @@
       </extension>
       <reference>
         <reference value="Bundle/single-indv-vte-report"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Parameters-col-submit-obs.html"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/col-submit-obs"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -230,6 +266,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Parameters-mrp-submit-obs.html"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/mrp-submit-obs"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -266,6 +314,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-multiple-indv-mrp-task-report.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/multiple-indv-mrp-task-report"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -273,6 +333,30 @@
       </extension>
       <reference>
         <reference value="Encounter/Encounter01"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-observation03.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation03"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-single-indv-mrp-task-report.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/single-indv-mrp-task-report"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -314,6 +398,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-single-indv-mrp-obs-report.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/single-indv-mrp-obs-report"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MeasureReport"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -345,18 +441,6 @@
       </extension>
       <reference>
         <reference value="Task/Task01"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-single-indv-mrp-report.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/single-indv-mrp-report"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>

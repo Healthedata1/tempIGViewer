@@ -234,7 +234,7 @@
 <!-- ============StatusBox=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -552,7 +552,7 @@ This is the {% if {{site.build}} == "ci" %}
 
 <p><strong>Scenario:</strong></p>
 
-<p>Payer X who is acting in the role of a Reporter submits a VTE Individual Report for Patient P to Receiver Z.  The body of the request is a transaction bundle including the Individual MeasureReport and all the related resources containing the relevant data used to compute the CQM criteria.  An HTTP Status success code is returned on successful submission.</p>
+<p>Payer X who is acting in the role of a Reporter submits a VTE Individual Report for Patient P to Receiver Z.  The body of the request is a transaction bundle including the Individual MeasureReport and all the related resources containing the relevant data used to compute the CQM criteria. An HTTP Status success code and a <code class="highlighter-rouge">transaction-response</code> Bundle is returned on successful submission.</p>
 
 <p><strong>POST Summary Report</strong></p>
 
@@ -989,6 +989,69 @@ This is the {% if {{site.build}} == "ci" %}
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 200 OK
 [other headers]
+
+{
+"resourceType": "Bundle",
+"id": "e9c72d75-2410-45f3-b1cf-eb73d04d3300",
+"type": "transaction-response",
+"link": [
+{
+"relation": "self",
+"url": "http://hapi.fhir.org/baseR4"
+}
+],
+"entry": [
+{
+"response": {
+"status": "201 Created",
+"location": "MeasureReport/223260/_history/1",
+"etag": "1",
+"lastModified": "2019-12-06T09:11:27.308+00:00"
+}
+},
+{
+"response": {
+"status": "201 Created",
+"location": "Organization/223261/_history/1",
+"etag": "1",
+"lastModified": "2019-12-06T09:11:27.308+00:00"
+}
+},
+{
+"response": {
+"status": "201 Created",
+"location": "Patient/223262/_history/1",
+"etag": "1",
+"lastModified": "2019-12-06T09:11:27.308+00:00"
+}
+},
+{
+"response": {
+"status": "201 Created",
+"location": "Encounter/223263/_history/1",
+"etag": "1",
+"lastModified": "2019-12-06T09:11:27.308+00:00"
+}
+},
+{
+"response": {
+"status": "201 Created",
+"location": "Location/223264/_history/1",
+"etag": "1",
+"lastModified": "2019-12-06T09:11:27.308+00:00"
+}
+},
+{
+"response": {
+"status": "201 Created",
+"location": "MedicationAdministration/223265/_history/1",
+"etag": "1",
+"lastModified": "2019-12-06T09:11:27.308+00:00"
+}
+}
+]
+}
+
 </code></pre></div></div>
 
   </div>
@@ -1045,7 +1108,7 @@ Note to Balloters: We are actively seeking input on whether a technical workflow
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Dec 5, 2019 16:41-0800">2019-12-05</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Dec 6, 2019 01:52-0800">2019-12-06</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

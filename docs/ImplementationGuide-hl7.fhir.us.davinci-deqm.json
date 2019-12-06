@@ -10,7 +10,7 @@
   "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
   "title": "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide",
   "status": "draft",
-  "date": "2019-12-05T16:20:55-08:00",
+  "date": "2019-12-06T01:42:14-08:00",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [
     {
@@ -102,22 +102,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-multiple-indv-mrp-report.html"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/multiple-indv-mrp-report"
-        },
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           },
           {
@@ -166,6 +150,54 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Parameters"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Parameters-mrp-submit-task.html"
+          }
+        ],
+        "reference": {
+          "reference": "Parameters/mrp-submit-task"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-multiple-indv-mrp-obs-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/multiple-indv-mrp-obs-report"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-datax-measurereport03.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/datax-measurereport03"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           },
           {
@@ -191,6 +223,22 @@
         ],
         "reference": {
           "reference": "Bundle/single-indv-vte-report"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Parameters"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Parameters-col-submit-obs.html"
+          }
+        ],
+        "reference": {
+          "reference": "Parameters/col-submit-obs"
         },
         "exampleBoolean": true
       },
@@ -310,6 +358,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Parameters"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Parameters-mrp-submit-obs.html"
+          }
+        ],
+        "reference": {
+          "reference": "Parameters/mrp-submit-obs"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           },
           {
@@ -358,6 +422,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-multiple-indv-mrp-task-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/multiple-indv-mrp-task-report"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Encounter"
           },
           {
@@ -367,6 +447,38 @@
         ],
         "reference": {
           "reference": "Encounter/Encounter01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-observation03.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation03"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-single-indv-mrp-task-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/single-indv-mrp-task-report"
         },
         "exampleBoolean": true
       },
@@ -422,6 +534,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-single-indv-mrp-obs-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/single-indv-mrp-obs-report"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MeasureReport"
           },
           {
@@ -463,22 +591,6 @@
         ],
         "reference": {
           "reference": "Task/Task01"
-        },
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-single-indv-mrp-report.html"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/single-indv-mrp-report"
         },
         "exampleBoolean": true
       },
