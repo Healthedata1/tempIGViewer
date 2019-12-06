@@ -15,6 +15,564 @@
       ]
     },
     {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "Period",
+        "Range",
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier",
       "title": "DEQM Reporting Vendor Extension",
       "types": [
@@ -23,6 +581,440 @@
     },
     {
       "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
+      "title": "DEQM Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor",
       "title": "DEQM Reporting Vendor Extension",
       "types": [
         "Reference"
@@ -41,9 +1033,257 @@
       {
         "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
         "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/coverage-deqm",
+        "title": "DEQM  Coverage Profile"
       }
     ],
     "MeasureReport": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+        "title": "DEQM Summary MeasureReport Profile"
+      },
       {
         "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
         "title": "DEQM Summary MeasureReport Profile"
@@ -53,15 +1293,387 @@
       {
         "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
         "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationadministration-deqm",
+        "title": "DEQM MedicationAdministration Profile"
       }
     ],
     "MedicationRequest": [
       {
         "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
         "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/medicationrequest-deqm",
+        "title": "DEQM MedicationRequest Profile"
       }
     ],
     "Organization": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
+        "title": "DEQMOrganizationProfile"
+      },
       {
         "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm",
         "title": "DEQMOrganizationProfile"
@@ -93,6 +1705,15 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/geolocation": [
+      "Bundle.entry.resource.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName": [
+      "Bundle.entry.resource"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -103,12 +1724,18 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Bundle.entry.resource",
       "Patient"
     ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct": [
+      "Bundle.entry.resource.telecom"
+    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType": [
@@ -116,12 +1743,14 @@
       "MeasureReport.group.stratifier.stratum.measureScore"
     ],
     "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-certificationIdentifier": [
+      "Bundle.entry.resource",
       "MeasureReport"
     ],
     "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup": [
       "MeasureReport.reporter"
     ],
     "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor": [
+      "Bundle.entry.resource",
       "MeasureReport"
     ]
   }

@@ -24,8 +24,8 @@
   fhir:MeasureReport.status [ fhir:value "complete"];
   fhir:MeasureReport.type [ fhir:value "data-collection"];
   fhir:MeasureReport.measure [
-     fhir:value "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp";
-     fhir:link <http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp>
+     fhir:value "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example";
+     fhir:link <http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example>
   ];
   fhir:MeasureReport.subject [
      fhir:link <http://hl7.org/fhir/us/davinci-deqm/Patient/patient01>;

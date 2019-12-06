@@ -221,55 +221,13 @@
 
 
 
-  <style type="text/css">
-    /* Section numbering*/
-    body{
-      counter-reset: pagenumber1 3  pagenumber2 3 section
-        }
-
-  h2{counter-reset: sub-section}
-  h3{counter-reset: composite}
-  h4{counter-reset: detail}
-  h5{counter-reset: more-detail}
-
-  h2:not([nocount^="true"]):before{
-    counter-increment: section;
-    content:  counter(pagenumber1) "." counter(pagenumber2)"." counter(section) " ";
-    color: silver;
-  }
-  h3:not([nocount^="true"]):before{
-    counter-increment: sub-section;
-    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) " ";
-    color: silver;
-
-  }
-  h4:not([nocount^="true"]):before{
-    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) " ";
-    color: silver;
-    counter-increment: composite;
-    counter-reset: detail 1;
-  }
-  h5:not([nocount^="true"]):before{
-
-    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
-    color: silver;
-    counter-increment: detail;
-    counter-reset: more-detail 1;
-  }
-  h6:not([nocount^="true"]):before{
-    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";
-    color: silver;
-    counter-increment: more-detail;
-  }
-</style>
-
 
 
 <!-- ============BreadCrumb=============== -->
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='usecases.html'><b>Example Use Cases</b></a></li><li><b>Venous Thromboembolism Prophylaxis (VTE-1)</b></li>
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> 
 </nav>
 
 
@@ -301,7 +259,7 @@ This is the {% if {{site.build}} == "ci" %}
 
 <p>The VTE-1 measure assesses the number of patients who received venous thromboembolism (VTE) prophylaxis or have documentation why no venous thromboembolism prophylaxis was given the day of or the day after hospital admission or surgery end date for surgeries that start the day of or the day after hospital admission. Note that the Individual Measure Reporting Interaction is the only interaction used for this measure.</p>
 
-<p>The example presented is based on the QDM version of <a href="https://ecqi.healthit.gov/ecqm/measures/cms108v7">CMS 108v7</a>, which has been represented using profiles derived from <a href="http://hl7.org/fhir/us/qicore/2019Sep/index.html">QI Core</a>.  Additional information regarding the measure specification can be found in the <a href="file://C:\Users\lynn\Documents\GitHub\hl7.fhir.us.cqfmeasures#1.0.0\output/index.html">Quality Measure Implementation Guide</a></p>
+<p>The example presented is based on the QDM version of <a href="https://ecqi.healthit.gov/ecqm/measures/cms108v7">CMS 108v7</a>, which has been represented using profiles derived from <a href="http://hl7.org/fhir/us/qicore/2019Sep/index.html">QI Core</a>.  Additional information regarding the measure specification can be found in the <a href="http://hl7.org/fhir/us/cqfmeasures/STU1/index.html">Quality Measure Implementation Guide</a></p>
 
 <h2 id="fhir-resource-overview">FHIR Resource Overview</h2>
 
@@ -344,7 +302,7 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Library</td>
       <td>CQFM Library Profile</td>
-      <td><a href="file://C:\Users\lynn\Documents\GitHub\hl7.fhir.us.cqfmeasures#1.0.0\output/StructureDefinition-library-cqfm.html">CQFM Library</a></td>
+      <td><a href="http://hl7.org/fhir/us/cqfmeasures/STU1/StructureDefinition-library-cqfm.html">CQFM Library</a></td>
     </tr>
     <tr>
       <td>Location</td>
@@ -354,7 +312,7 @@ This is the {% if {{site.build}} == "ci" %}
     <tr>
       <td>Measure</td>
       <td>CQFM Measure Profile</td>
-      <td><a href="file://C:\Users\lynn\Documents\GitHub\hl7.fhir.us.cqfmeasures#1.0.0\output/StructureDefinition-measure-cqfm.html">CQFM Measure</a></td>
+      <td><a href="http://hl7.org/fhir/us/cqfmeasures/STU1/StructureDefinition-measure-cqfm.html">CQFM Measure</a></td>
     </tr>
     <tr>
       <td>MeasureReport</td>
@@ -604,27 +562,35 @@ This is the {% if {{site.build}} == "ci" %}
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "resourceType": "Bundle",
+  "id": "single-indv-vte-report",
   "type": "transaction",
   "entry": [
     {
       "fullUrl": "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc4",
       "resource": {
         "resourceType": "MeasureReport",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: complete&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: individual&lt;/p&gt;&lt;p&gt;&lt;b&gt;measure&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/us/cqfmeasures/Measure/measure-vte-1-FHIR\"&gt;http://hl7.org/fhir/us/cqfmeasures/Measure/measure-vte-1-FHIR&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6\"&gt;urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Mar 14, 2019, 12:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reporter&lt;/b&gt;: &lt;a href=\"urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc5\"&gt;urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc5&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Dec 31, 2018, 12:00:00 AM --&amp;gt; Jan 1, 2019, 12:00:00 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;group&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Initial Population &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://fhir/example.org code 'initial-population' = 'initial-population', given as 'Initial Population'})&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Numerator &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://fhir/example.org code 'numerator' = 'numerator', given as 'Numerator'})&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Denominator &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://fhir/example.org code 'denominator' = 'denominator', given as 'Denominator'})&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;measureScore&lt;/b&gt;: 100&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
         "status": "complete",
         "type": "individual",
-        "measure": {
-          "reference": "Measure/measure-vte"
-        },
-        "patient": {
+        "measure": "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-vte-1-FHIR",
+        "subject": {
           "reference": "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6"
         },
         "date": "2019-03-14",
-        "reportingOrganization": {
+        "reporter": {
           "reference": "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc5"
         },
         "period": {
-          "end": "2018-01-01",
-          "start": "2018-12-31"
+          "start": "2018-12-31",
+          "end": "2019-01-01"
         },
         "group": [
           {
@@ -633,7 +599,7 @@ This is the {% if {{site.build}} == "ci" %}
                 "code": {
                   "coding": [
                     {
-                      "system": "http://hl7.org/fhir/measure-population",
+                      "system": "http://fhir/example.org",
                       "code": "initial-population",
                       "display": "Initial Population"
                     }
@@ -644,7 +610,7 @@ This is the {% if {{site.build}} == "ci" %}
                 "code": {
                   "coding": [
                     {
-                      "system": "http://hl7.org/fhir/measure-population",
+                      "system": "http://fhir/example.org",
                       "code": "numerator",
                       "display": "Numerator"
                     }
@@ -655,16 +621,18 @@ This is the {% if {{site.build}} == "ci" %}
                 "code": {
                   "coding": [
                     {
-                      "system": "http://hl7.org/fhir/measure-population",
+                      "system": "http://fhir/example.org",
                       "code": "denominator",
                       "display": "Denominator"
                     }
                   ]
                 }
-              } 
+              }
             ],
-            "measureScore": 100
-          } 
+            "measureScore": {
+              "value": 100
+            }
+          }
         ]
       },
       "request": {
@@ -680,6 +648,10 @@ This is the {% if {{site.build}} == "ci" %}
           "profile": [
             "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm"
           ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Tax ID number = 123456789 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Healthcare Provider &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: DaVinciHospital01&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: (+1) 401-555-1212&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 73 Lakewood Street Warwick RI 02886 USA &lt;/p&gt;&lt;/div&gt;"
         },
         "identifier": [
           {
@@ -705,7 +677,7 @@ This is the {% if {{site.build}} == "ci" %}
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/organization-type",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
                 "code": "prov",
                 "display": "Healthcare Provider"
               }
@@ -745,13 +717,16 @@ This is the {% if {{site.build}} == "ci" %}
             "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
           ]
         },
+        "text": {
+          "status": "generated",
+          "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Medical record number = 67890 (USUAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Thelma Webster (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1948-04-28&lt;/p&gt;&lt;p&gt;&lt;b&gt;deceased&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 7496 Beaver Ridge Ave Thornton NJ 07003 USA (HOME)&lt;/p&gt;&lt;p&gt;&lt;b&gt;maritalStatus&lt;/b&gt;: Married &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code 'M' = 'Married', given as 'Married'})&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Communications&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Preferred&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;English (Region=United States) &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {urn:ietf:bcp:47 code 'en-US' = 'English (Region=United States)', given as 'English (Region=United States)'})&lt;/span&gt;&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
         "extension": [
           {
             "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
             "valueCode": "F"
           },
           {
-            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
             "extension": [
               {
                 "url": "ombCategory",
@@ -765,10 +740,10 @@ This is the {% if {{site.build}} == "ci" %}
                 "url": "text",
                 "valueString": "White"
               }
-            ]
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
           },
           {
-            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
             "extension": [
               {
                 "url": "ombCategory",
@@ -782,7 +757,8 @@ This is the {% if {{site.build}} == "ci" %}
                 "url": "text",
                 "valueString": "Not Hispanic or Latino"
               }
-            ]
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
           }
         ],
         "identifier": [
@@ -842,7 +818,7 @@ This is the {% if {{site.build}} == "ci" %}
                 {
                   "system": "urn:ietf:bcp:47",
                   "code": "en-US",
-                  "display": "US English"
+                  "display": "English (Region=United States)"
                 }
               ]
             },
@@ -864,11 +840,15 @@ This is the {% if {{site.build}} == "ci" %}
             "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
           ]
         },
+        "text": {
+          "status": "generated",
+          "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Hospital admission &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {SNOMED CT code '32485007' = 'Hospital admission', given as 'Hospital admission'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6\"&gt;urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Jul 18, 2018, 11:10:27 PM --&amp;gt; Jul 18, 2018, 11:10:27 PM&lt;/p&gt;&lt;h3&gt;Locations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc8\"&gt;Mother Charity Hospital&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
         "status": "finished",
         "class": {
-          "system": "http://hl7.org/fhir/encounter-class",
-          "code": "inpatient",
-          "display": "inpatient"
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "IMP",
+          "display": "inpatient encounter"
         },
         "type": [
           {
@@ -885,8 +865,8 @@ This is the {% if {{site.build}} == "ci" %}
           "reference": "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6"
         },
         "period": {
-          "start": "2018-07-19T11:00",
-          "end": "2018-07-19T:14:30"
+          "start": "2018-07-19T06:10:27Z",
+          "end": "2018-07-19T06:10:27Z"
         },
         "location": [
           {
@@ -895,7 +875,7 @@ This is the {% if {{site.build}} == "ci" %}
               "display": "Mother Charity Hospital"
             }
           }
-        ],
+        ]
       },
       "request": {
         "method": "POST",
@@ -906,6 +886,10 @@ This is the {% if {{site.build}} == "ci" %}
       "fullUrl": "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc8",
       "resource": {
         "resourceType": "Location",
+        "text": {
+          "status": "generated",
+          "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 1.2.3.4.181 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Mother Charity Hospital&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: (313) 555-5671(WORK)&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 869 W Oak Street Royal Oak MI 48073 (WORK)&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: Building &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://terminology.hl7.org/CodeSystem/location-physical-type code 'bu' = 'Building', given as 'Building'})&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
         "identifier": [
           {
             "use": "official",
@@ -937,7 +921,7 @@ This is the {% if {{site.build}} == "ci" %}
         "physicalType": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/location-physical-type",
+              "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
               "code": "bu",
               "display": "Building"
             }
@@ -953,13 +937,17 @@ This is the {% if {{site.build}} == "ci" %}
       "fullUrl": "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc9",
       "resource": {
         "resourceType": "MedicationAdministration",
+        "text": {
+          "status": "generated",
+          "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: heparin sodium, porcine 5000 UNT per 0.5 ML Injection &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {RxNorm code '1658634' = 'eparin sodium, porcine 5000 UNT in 0.5 ML Injection', given as 'heparin sodium, porcine 5000 UNT per 0.5 ML Injection'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6\"&gt;urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Dec 4, 2019, 10:10:27 PM --&amp;gt; Dec 4, 2019, 10:10:27 PM&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Route&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Subcutaneous route &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1 cc&lt;span style=\"background: LightGoldenRodYellow\"&gt; (Details: UCUM code mL = 'mL')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
         "status": "completed",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
               "code": "1658634",
-              "display": "0.5 ML heparin sodium, porcine 10000 UNT/ML Injection"
+              "display": "heparin sodium, porcine 5000 UNT per 0.5 ML Injection"
             }
           ]
         },
@@ -967,8 +955,8 @@ This is the {% if {{site.build}} == "ci" %}
           "reference": "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6"
         },
         "effectivePeriod": {
-          "start": "2018-07-19T12:00",
-          "end": "2018-07-19T12:00"
+          "start": "2019-12-05T06:10:27Z",
+          "end": "2019-12-05T06:10:27Z"
         },
         "dosage": {
           "route": {
@@ -979,8 +967,18 @@ This is the {% if {{site.build}} == "ci" %}
                 "display": "Subcutaneous route"
               }
             ]
+          },
+          "dose": {
+            "value": 1,
+            "unit": "cc",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL"
           }
         }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
       }
     }
   ]
@@ -1047,7 +1045,7 @@ Note to Balloters: We are actively seeking input on whether a technical workflow
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Dec 2, 2019 15:07-0800">2019-12-02</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Dec 5, 2019 16:41-0800">2019-12-05</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

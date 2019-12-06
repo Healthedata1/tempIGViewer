@@ -10,7 +10,7 @@
   <name value="DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide"/>
   <title value="Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2019-12-02T15:07:34-08:00"/>
+  <date value="2019-12-05T16:20:55-08:00"/>
   <publisher value="HL7 International - Clinical Quality Information Work Group"/>
   <contact>
     <telecom>
@@ -74,6 +74,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-multiple-indv-mrp-report.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/multiple-indv-mrp-report"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -122,6 +134,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-single-indv-vte-report.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/single-indv-vte-report"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -158,6 +182,42 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Library-library-mrp-example.html"/>
+      </extension>
+      <reference>
+        <reference value="Library/library-mrp-example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-measure-mrp-example.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/measure-mrp-example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Library-exm130-fhir-r4.html"/>
+      </extension>
+      <reference>
+        <reference value="Library/exm130-fhir-r4"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -189,18 +249,6 @@
       </extension>
       <reference>
         <reference value="MeasureReport/indv-measurereport01"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Measure"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Measure-measure-mrp.html"/>
-      </extension>
-      <reference>
-        <reference value="Measure/measure-mrp"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -269,6 +317,18 @@
         <valueString value="MeasureReport"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-summ-measurereport02.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/summ-measurereport02"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="MeasureReport-datax-measurereport01.html"/>
       </extension>
       <reference>
@@ -285,6 +345,18 @@
       </extension>
       <reference>
         <reference value="Task/Task01"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-single-indv-mrp-report.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/single-indv-mrp-report"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -533,49 +605,9 @@
       <title value="Home"/>
       <generation value="markdown"/>
       <page>
-        <nameUrl value="framework.html"/>
-        <title value="Framework"/>
+        <nameUrl value="guidance.html"/>
+        <title value="General Guidance"/>
         <generation value="markdown"/>
-        <page>
-          <nameUrl value="guidance.html"/>
-          <title value="General Guidance"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="datax.html"/>
-          <title value="Data Exchange"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="indv-reporting.html"/>
-          <title value="Individual Reporting"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="summary-reporting.html"/>
-          <title value="Summary Reporting"/>
-          <generation value="markdown"/>
-        </page>
-      </page>
-      <page>
-        <nameUrl value="usecases.html"/>
-        <title value="Example Use Cases"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="mrp.html"/>
-          <title value="Medication Reconciliation Post-Discharge (MRP)"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="col.html"/>
-          <title value="Colorectal Cancer Screening (COL)"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="vte1.html"/>
-          <title value="Venous Thromboembolism Prophylaxis (VTE-1)"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
@@ -638,6 +670,26 @@
         </page>
       </page>
       <page>
+        <nameUrl value="bundles.html"/>
+        <title value="Bundle Definitions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="operations.html"/>
+        <title value="Operations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Search Parameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="capstatements.html"/>
         <title value="Capability Statements"/>
         <generation value="markdown"/>
@@ -673,6 +725,11 @@
         </page>
       </page>
       <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="all-examples.html"/>
         <title value="All Examples"/>
         <generation value="markdown"/>
@@ -680,11 +737,6 @@
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="change-notes.html"/>
-        <title value="Change Notes"/>
         <generation value="markdown"/>
       </page>
       <page>

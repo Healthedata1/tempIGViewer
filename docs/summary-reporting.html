@@ -221,55 +221,13 @@
 
 
 
-  <style type="text/css">
-    /* Section numbering*/
-    body{
-      counter-reset: pagenumber1 2  pagenumber2 4 section
-        }
-
-  h2{counter-reset: sub-section}
-  h3{counter-reset: composite}
-  h4{counter-reset: detail}
-  h5{counter-reset: more-detail}
-
-  h2:not([nocount^="true"]):before{
-    counter-increment: section;
-    content:  counter(pagenumber1) "." counter(pagenumber2)"." counter(section) " ";
-    color: silver;
-  }
-  h3:not([nocount^="true"]):before{
-    counter-increment: sub-section;
-    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) " ";
-    color: silver;
-
-  }
-  h4:not([nocount^="true"]):before{
-    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) " ";
-    color: silver;
-    counter-increment: composite;
-    counter-reset: detail 1;
-  }
-  h5:not([nocount^="true"]):before{
-
-    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
-    color: silver;
-    counter-increment: detail;
-    counter-reset: more-detail 1;
-  }
-  h6:not([nocount^="true"]):before{
-    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";
-    color: silver;
-    counter-increment: more-detail;
-  }
-</style>
-
 
 
 <!-- ============BreadCrumb=============== -->
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='framework.html'><b>Framework</b></a></li><li><b>Summary Reporting</b></li>
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> 
 </nav>
 
 
@@ -336,7 +294,7 @@ Profile</a>. Transactions between Reporters (for example, organizations that del
     <tr>
       <td>Measure</td>
       <td>CQFM Measure Profile</td>
-      <td><a href="file://C:\Users\lynn\Documents\GitHub\hl7.fhir.us.cqfmeasures#1.0.0\output/StructureDefinition-measure-cqfm.html">CQFM Measure</a></td>
+      <td><a href="http://hl7.org/fhir/us/cqfmeasures/STU1/StructureDefinition-measure-cqfm.html">CQFM Measure</a></td>
     </tr>
     <tr>
       <td>Summary MeasureReport</td>
@@ -402,38 +360,41 @@ Profile</a>. Transactions between Reporters (for example, organizations that del
   "id": "summ-measurereport01",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/ig/davinci/StructureDefinition/summary-measurereport-deqm"
+      "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm"
     ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: summ-measurereport01&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: complete&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: summary&lt;/p&gt;&lt;p&gt;&lt;b&gt;measure&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example\"&gt;http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Sep 5, 2018, 9:59:52 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reporter&lt;/b&gt;: &lt;a href=\"Organization-organization01.html\"&gt;Generated Summary: id: organization01; Tax ID number = 123456789 (OFFICIAL); active; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\"&gt;Healthcare Provider&lt;/span&gt;; name: DaVinciHospital01; ph: (+1) 401-555-1212&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Aug 1, 2018, 12:00:00 AM --&amp;gt; Sep 1, 2018, 12:00:00 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;group&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 112 &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://example.org code '112' = '112', given as '112'})&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Populations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Count&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Initial Population &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://example.org code 'initial-population' = 'initial-population', given as 'Initial Population'})&lt;/span&gt;&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;measureScore&lt;/b&gt;: 100&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stratifier&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 4456 &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://example.org code '4456' = '4456', given as '4456'})&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stratum&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Male &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/administrative-gender code 'male' = 'Male', given as 'Male'})&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Populations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Count&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Initial Population &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://example.org code 'initial-population' = 'initial-population', given as 'Initial Population'})&lt;/span&gt;&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;measureScore&lt;/b&gt;: 100&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;"
   },
   "status": "complete",
   "type": "summary",
-  "measure": {
-    "reference": "Measure/measure-mrp"
-  },
+  "measure": "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example",
   "date": "2018-09-05T16:59:52.404Z",
+  "reporter": {
+    "reference": "Organization/organization01"
+  },
   "period": {
     "start": "2018-08-01",
     "end": "2018-09-01"
   },
-  "reportingOrganization": {
-    "reference": "Organization/organization01"
-  },
   "group": [
     {
-      "identifier": {
-        "system": "http://www.acme.org/groups",
-        "value": "112"
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org",
+            "code": "112",
+            "display": "112"
+          }
+        ]
       },
       "population": [
         {
-          "identifier": {
-            "system": "http://www.acme.org/populations",
-            "value": "11234"
-          },
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/measure-population",
+                "system": "http://example.org",
                 "code": "initial-population",
                 "display": "Initial Population"
               }
@@ -442,26 +403,39 @@ Profile</a>. Transactions between Reporters (for example, organizations that del
           "count": 100
         }
       ],
-      "measureScore": 100,
+      "measureScore": {
+        "value": 100
+      },
       "stratifier": [
         {
-          "identifier": {
-            "system": "http://www.acme.org/stratifiers",
-            "value": "4456"
-          },
+          "code": [
+            {
+              "coding": [
+                {
+                  "system": "http://example.org",
+                  "code": "4456",
+                  "display": "4456"
+                }
+              ]
+            }
+          ],
           "stratum": [
             {
-              "value": "male",
+              "value": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/administrative-gender",
+                    "code": "male",
+                    "display": "Male"
+                  }
+                ]
+              },
               "population": [
                 {
-                  "identifier": {
-                    "system": "http://www.acme.org/stratifier-populations",
-                    "value": "8901"
-                  },
                   "code": {
                     "coding": [
                       {
-                        "system": "http://hl7.org/fhir/measure-population",
+                        "system": "http://example.org",
                         "code": "initial-population",
                         "display": "Initial Population"
                       }
@@ -470,7 +444,9 @@ Profile</a>. Transactions between Reporters (for example, organizations that del
                   "count": 50
                 }
               ],
-              "measureScore": 100
+              "measureScore": {
+                "value": 100
+              }
             }
           ]
         }
@@ -488,6 +464,8 @@ Profile</a>. Transactions between Reporters (for example, organizations that del
 
   </div>
 </div>
+
+<p>For for an example of a Summary MeasureReport with counts for all populations specified in an eCQM see the <a href="col.html#summary-measurereport">COL Summary MeasureReport</a>.</p>
 
 <p><br /></p>
 
@@ -523,7 +501,7 @@ Profile</a>. Transactions between Reporters (for example, organizations that del
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Dec 2, 2019 15:07-0800">2019-12-02</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Dec 5, 2019 16:41-0800">2019-12-05</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

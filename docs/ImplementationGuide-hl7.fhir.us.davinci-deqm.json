@@ -10,7 +10,7 @@
   "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
   "title": "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide",
   "status": "draft",
-  "date": "2019-12-02T15:07:34-08:00",
+  "date": "2019-12-05T16:20:55-08:00",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [
     {
@@ -102,6 +102,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-multiple-indv-mrp-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/multiple-indv-mrp-report"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           },
           {
@@ -166,6 +182,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-single-indv-vte-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/single-indv-vte-report"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           },
           {
@@ -214,6 +246,54 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Library-library-mrp-example.html"
+          }
+        ],
+        "reference": {
+          "reference": "Library/library-mrp-example"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-measure-mrp-example.html"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/measure-mrp-example"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Library-exm130-fhir-r4.html"
+          }
+        ],
+        "reference": {
+          "reference": "Library/exm130-fhir-r4"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           },
           {
@@ -255,22 +335,6 @@
         ],
         "reference": {
           "reference": "MeasureReport/indv-measurereport01"
-        },
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Measure"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Measure-measure-mrp.html"
-          }
-        ],
-        "reference": {
-          "reference": "Measure/measure-mrp"
         },
         "exampleBoolean": true
       },
@@ -362,6 +426,22 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-summ-measurereport02.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/summ-measurereport02"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "MeasureReport-datax-measurereport01.html"
           }
         ],
@@ -383,6 +463,22 @@
         ],
         "reference": {
           "reference": "Task/Task01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-single-indv-mrp-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/single-indv-mrp-report"
         },
         "exampleBoolean": true
       },
@@ -713,53 +809,9 @@
       "generation": "markdown",
       "page": [
         {
-          "nameUrl": "framework.html",
-          "title": "Framework",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "guidance.html",
-              "title": "General Guidance",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "datax.html",
-              "title": "Data Exchange",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "indv-reporting.html",
-              "title": "Individual Reporting",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "summary-reporting.html",
-              "title": "Summary Reporting",
-              "generation": "markdown"
-            }
-          ]
-        },
-        {
-          "nameUrl": "usecases.html",
-          "title": "Example Use Cases",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "mrp.html",
-              "title": "Medication Reconciliation Post-Discharge (MRP)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "col.html",
-              "title": "Colorectal Cancer Screening (COL)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "vte1.html",
-              "title": "Venous Thromboembolism Prophylaxis (VTE-1)",
-              "generation": "markdown"
-            }
-          ]
+          "nameUrl": "guidance.html",
+          "title": "General Guidance",
+          "generation": "markdown"
         },
         {
           "nameUrl": "profiles.html",
@@ -824,6 +876,26 @@
           ]
         },
         {
+          "nameUrl": "bundles.html",
+          "title": "Bundle Definitions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operations.html",
+          "title": "Operations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchparameters.html",
+          "title": "Search Parameters",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "capstatements.html",
           "title": "Capability Statements",
           "generation": "markdown",
@@ -861,6 +933,11 @@
           ]
         },
         {
+          "nameUrl": "security.html",
+          "title": "Security",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "all-examples.html",
           "title": "All Examples",
           "generation": "markdown"
@@ -868,11 +945,6 @@
         {
           "nameUrl": "downloads.html",
           "title": "Downloads",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "change-notes.html",
-          "title": "Change Notes",
           "generation": "markdown"
         },
         {

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Measure xmlns="http://hl7.org/fhir">
+  <id value="measure-mrp-example"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2018-09-21T13:20:51.000-07:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: measure-mrp-example</p><p><b>meta</b>: </p><p><b>url</b>: <a href="http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example">http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example</a></p><p><b>version</b>: 1.1.0</p><p><b>name</b>: DEQMMeasureMRPExample</p><p><b>status</b>: active</p><p><b>date</b>: Dec 5, 2019, 1:22:46 PM</p><p><b>description</b>: Example Measure resource to demonstrate the framework for MRP</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>library</b>: <a href="http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example">http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example</a></p><blockquote><p><b>group</b></p><p><b>description</b>: Example group to demonstrate the framework for MRP</p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td/></tr></table><h3>Stratifiers</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>SDE Sex <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'sde-sex' = 'sde-sex', given as 'SDE Sex'})</span></td></tr></table></blockquote></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example"/>
+  <version value="1.1.0"/>
+  <name value="DEQMMeasureMRPExample"/>
+  <status value="active"/>
+  <date value="2019-12-05T13:22:46-08:00"/>
+  <description value="Example Measure resource to demonstrate the framework for MRP"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <library value="http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example"/>
+  <group>
+    <description value="Example group to demonstrate the framework for MRP"/>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+        </coding>
+      </code>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="InitialPopulation1"/>
+      </criteria>
+    </population>
+    <stratifier>
+      <code>
+        <coding>
+          <system value="http://fhir/example.org"/>
+          <code value="sde-sex"/>
+          <display value="SDE Sex"/>
+        </coding>
+      </code>
+    </stratifier>
+  </group>
+</Measure>

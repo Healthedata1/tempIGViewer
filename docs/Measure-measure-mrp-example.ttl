@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example> a fhir:Measure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "measure-mrp-example"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-09-21T13:20:51.000-07:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: measure-mrp-example</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example\">http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example</a></p><p><b>version</b>: 1.1.0</p><p><b>name</b>: DEQMMeasureMRPExample</p><p><b>status</b>: active</p><p><b>date</b>: Dec 5, 2019, 1:22:46 PM</p><p><b>description</b>: Example Measure resource to demonstrate the framework for MRP</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>library</b>: <a href=\"http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example\">http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example</a></p><blockquote><p><b>group</b></p><p><b>description</b>: Example group to demonstrate the framework for MRP</p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td/></tr></table><h3>Stratifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>SDE Sex <span style=\"background: LightGoldenRodYellow\">(Details : {http://fhir/example.org code 'sde-sex' = 'sde-sex', given as 'SDE Sex'})</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:Measure.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example"];
+  fhir:Measure.version [ fhir:value "1.1.0"];
+  fhir:Measure.name [ fhir:value "DEQMMeasureMRPExample"];
+  fhir:Measure.status [ fhir:value "active"];
+  fhir:Measure.date [ fhir:value "2019-12-05T13:22:46-08:00"^^xsd:dateTime];
+  fhir:Measure.description [ fhir:value "Example Measure resource to demonstrate the framework for MRP"];
+  fhir:Measure.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ];
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ];
+  fhir:Measure.library [
+     fhir:value "http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example";
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example>
+  ];
+  fhir:Measure.group [
+     fhir:index 0;
+     fhir:Measure.group.description [ fhir:value "Example group to demonstrate the framework for MRP" ];
+     fhir:Measure.group.population [
+       fhir:index 0;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/cql" ];
+         fhir:Expression.expression [ fhir:value "InitialPopulation1" ]
+       ]
+     ];
+     fhir:Measure.group.stratifier [
+       fhir:index 0;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://fhir/example.org" ];
+           fhir:Coding.code [ fhir:value "sde-sex" ];
+           fhir:Coding.display [ fhir:value "SDE Sex" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/davinci-deqm/Measure/measure-mrp-example.ttl> .
+
+# -------------------------------------------------------------------------------------
+

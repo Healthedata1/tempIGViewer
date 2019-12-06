@@ -12,7 +12,7 @@
   </text>
   <status value="complete"/>
   <type value="data-collection"/>
-  <measure value="http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp"/>
+  <measure value="http://hl7.org/fhir/us/davinci-deqm/Measure/measure-mrp-example"/>
   <subject>
     <reference value="Patient/patient01"/>
   </subject>
