@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="single-indv-col-obs-report"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57904"/>
+    <resource>
+      <MeasureReport>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>meta</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR">http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR</a></p><p><b>subject</b>: <a href="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57906">urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57906</a></p><p><b>date</b>: Mar 14, 2019, 12:00:00 AM</p><p><b>reporter</b>: <a href="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57905">urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57905</a></p><p><b>period</b>: Dec 31, 2018, 12:00:00 AM --&gt; Jan 1, 2019, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: group-1 <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'group-1' = 'group-1', given as 'group-1'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote><p><b>measureScore</b>: 1</p><blockquote><p><b>stratifier</b></p><p><b>code</b>: SDE Ethnicity <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'sde-ethnicity' = 'sde-ethnicity', given as 'SDE Ethnicity'})</span></p><blockquote><p><b>stratum</b></p><p><b>value</b>: Hispanic or Latino <span style="background: LightGoldenRodYellow">(Details : {urn:oid:2.16.840.1.113883.6.238 code '2135-2' = 'Hispanic or Latino', given as 'Hispanic or Latino'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: Not Hispanic or Latino <span style="background: LightGoldenRodYellow">(Details : {urn:oid:2.16.840.1.113883.6.238 code '2186-5' = 'Not Hispanic or Latino', given as 'Not Hispanic or Latino'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: SDE Payer <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'sde-payer' = 'sde-payer', given as 'SDE Payer'})</span></p><blockquote><p><b>stratum</b></p><p><b>value</b>: King HMO <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'Payer123' = 'Payer123', given as 'King HMO'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: Green Circle <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'Payer456' = 'Payer456', given as 'Green Circle'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: GoodHealth of California <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'Payer789' = 'Payer789', given as 'GoodHealth of California'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: SDE Race <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'sde-race' = 'sde-race', given as 'SDE Race'})</span></p><blockquote><p><b>stratum</b></p><p><b>value</b>: Black or African American <span style="background: LightGoldenRodYellow">(Details : {urn:oid:2.16.840.1.113883.6.238 code '2054-5' = 'Black or African American', given as 'Black or African American'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: White <span style="background: LightGoldenRodYellow">(Details : {urn:oid:2.16.840.1.113883.6.238 code '2106-3' = 'White', given as 'White'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: Asian <span style="background: LightGoldenRodYellow">(Details : {urn:oid:2.16.840.1.113883.6.238 code '2028-9' = 'Asian', given as 'Asian'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: SDE Sex <span style="background: LightGoldenRodYellow">(Details : {http://fhir/example.org code 'sde-sex' = 'sde-sex', given as 'SDE Sex'})</span></p><blockquote><p><b>stratum</b></p><p><b>value</b>: Male <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/administrative-gender code 'male' = 'Male', given as 'Male'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: Female <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/administrative-gender code 'female' = 'Female', given as 'Female'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: Other <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/administrative-gender code 'other' = 'Other', given as 'Other'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator Exclusion <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion', given as 'Denominator Exclusion'})</span></p><p><b>count</b>: 0</p></blockquote></blockquote></blockquote></blockquote></div>
+        </text>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR"/>
+        <subject>
+          <reference value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57906"/>
+        </subject>
+        <date value="2019-03-14"/>
+        <reporter>
+          <reference value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57905"/>
+        </reporter>
+        <period>
+          <start value="2018-12-31"/>
+          <end value="2019-01-01"/>
+        </period>
+        <group>
+          <code>
+            <coding>
+              <system value="http://fhir/example.org"/>
+              <code value="group-1"/>
+              <display value="group-1"/>
+            </coding>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+                <display value="Initial Population"/>
+              </coding>
+            </code>
+            <count value="1"/>
+          </population>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+                <display value="Numerator"/>
+              </coding>
+            </code>
+            <count value="1"/>
+          </population>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+                <display value="Denominator"/>
+              </coding>
+            </code>
+            <count value="1"/>
+          </population>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator-exclusion"/>
+                <display value="Denominator Exclusion"/>
+              </coding>
+            </code>
+            <count value="0"/>
+          </population>
+          <measureScore>
+            <value value="1"/>
+          </measureScore>
+          <stratifier>
+            <code>
+              <coding>
+                <system value="http://fhir/example.org"/>
+                <code value="sde-ethnicity"/>
+                <display value="SDE Ethnicity"/>
+              </coding>
+            </code>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                  <code value="2135-2"/>
+                  <display value="Hispanic or Latino"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                  <code value="2186-5"/>
+                  <display value="Not Hispanic or Latino"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+          </stratifier>
+          <stratifier>
+            <code>
+              <coding>
+                <system value="http://fhir/example.org"/>
+                <code value="sde-payer"/>
+                <display value="SDE Payer"/>
+              </coding>
+            </code>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="http://fhir/example.org"/>
+                  <code value="Payer123"/>
+                  <display value="King HMO"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="http://fhir/example.org"/>
+                  <code value="Payer456"/>
+                  <display value="Green Circle"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="http://fhir/example.org"/>
+                  <code value="Payer789"/>
+                  <display value="GoodHealth of California"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+          </stratifier>
+          <stratifier>
+            <code>
+              <coding>
+                <system value="http://fhir/example.org"/>
+                <code value="sde-race"/>
+                <display value="SDE Race"/>
+              </coding>
+            </code>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                  <code value="2054-5"/>
+                  <display value="Black or African American"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                  <code value="2106-3"/>
+                  <display value="White"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                  <code value="2028-9"/>
+                  <display value="Asian"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+          </stratifier>
+          <stratifier>
+            <code>
+              <coding>
+                <system value="http://fhir/example.org"/>
+                <code value="sde-sex"/>
+                <display value="SDE Sex"/>
+              </coding>
+            </code>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="http://hl7.org/fhir/administrative-gender"/>
+                  <code value="male"/>
+                  <display value="Male"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="1"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="http://hl7.org/fhir/administrative-gender"/>
+                  <code value="female"/>
+                  <display value="Female"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+            <stratum>
+              <value>
+                <coding>
+                  <system value="http://hl7.org/fhir/administrative-gender"/>
+                  <code value="other"/>
+                  <display value="Other"/>
+                </coding>
+              </value>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="initial-population"/>
+                    <display value="Initial Population"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="numerator"/>
+                    <display value="Numerator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator"/>
+                    <display value="Denominator"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+              <population>
+                <code>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                    <code value="denominator-exclusion"/>
+                    <display value="Denominator Exclusion"/>
+                  </coding>
+                </code>
+                <count value="0"/>
+              </population>
+            </stratum>
+          </stratifier>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57905"/>
+    <resource>
+      <Organization>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/organization-deqm"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>meta</b>: </p><p><b>identifier</b>: Tax ID number = 123456789 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: DaVinciHospital01</p><p><b>telecom</b>: ph: (+1) 401-555-1212</p><p><b>address</b>: 73 Lakewood Street Warwick RI 02886 USA </p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="TAX"/>
+              <display value="Tax ID number"/>
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.4.2"/>
+          <value value="123456789"/>
+          <assigner>
+            <display value="www.irs.gov"/>
+          </assigner>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="prov"/>
+            <display value="Healthcare Provider"/>
+          </coding>
+        </type>
+        <name value="DaVinciHospital01"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="(+1) 401-555-1212"/>
+        </telecom>
+        <address>
+          <line value="73 Lakewood Street"/>
+          <city value="Warwick"/>
+          <state value="RI"/>
+          <postalCode value="02886"/>
+          <country value="USA"/>
+        </address>
+      </Organization>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Organization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57906"/>
+    <resource>
+      <Patient>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>meta</b>: </p><p><b>identifier</b>: Medical record number = 67890 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Thelma Webster (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1948-04-28</p><p><b>deceased</b>: false</p><p><b>address</b>: 7496 Beaver Ridge Ave Thornton NJ 07003 USA (HOME)</p><p><b>maritalStatus</b>: Married <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code 'M' = 'Married', given as 'Married'})</span></p><h3>Communications</h3><table class="grid"><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td>English (Region=United States) <span style="background: LightGoldenRodYellow">(Details : {urn:ietf:bcp:47 code 'en-US' = 'English (Region=United States)', given as 'English (Region=United States)'})</span></td><td>true</td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+          <valueCode value="F"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2106-3"/>
+              <display value="White"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="White"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2186-5"/>
+              <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Not Hispanic or Latino"/>
+          </extension>
+        </extension>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+          </type>
+          <system value="http://hospital.davinci.org"/>
+          <value value="67890"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <family value="Webster"/>
+          <given value="Thelma"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1948-04-28"/>
+        <deceasedBoolean value="false"/>
+        <address>
+          <use value="home"/>
+          <line value="7496 Beaver Ridge Ave"/>
+          <city value="Thornton"/>
+          <state value="NJ"/>
+          <postalCode value="07003"/>
+          <country value="USA"/>
+        </address>
+        <maritalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="M"/>
+            <display value="Married"/>
+          </coding>
+        </maritalStatus>
+        <communication>
+          <language>
+            <coding>
+              <system value="urn:ietf:bcp:47"/>
+              <code value="en-US"/>
+              <display value="English (Region=United States)"/>
+            </coding>
+          </language>
+          <preferred value="true"/>
+        </communication>
+      </Patient>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Patient"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57907"/>
+    <resource>
+      <Practitioner>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>meta</b>: </p><p><b>identifier</b>: Provider number = 123456789 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Nia Akers </p><p><b>gender</b>: female</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
+            </coding>
+          </type>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="123456789"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Akers"/>
+          <given value="Nia"/>
+          <suffix value="MD"/>
+        </name>
+        <gender value="female"/>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Practitioner"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57908"/>
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'Laboratory'})</span></p><p><b>code</b>: Noninvasive colorectal cancer DNA and occult blood screening [Interpretation] in Stool Narrative <span style="background: LightGoldenRodYellow">(Details : {LOINC code '77353-1' = 'Noninvasive colorectal cancer DNA and occult blood screening [Interpretation] in Stool Narrative', given as 'Noninvasive colorectal cancer DNA and occult blood screening [Interpretation] in Stool Narrative'})</span></p><p><b>subject</b>: <a href="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57906">urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57906</a></p><p><b>effective</b>: Jun 22, 2018, 12:00:00 AM</p><p><b>performer</b>: <a href="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57907">urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57907</a></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="77353-1"/>
+            <display value="Noninvasive colorectal cancer DNA and occult blood screening [Interpretation] in Stool Narrative"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57906"/>
+        </subject>
+        <effectiveDateTime value="2018-06-22"/>
+        <performer>
+          <reference value="urn:uuid:47709cc7-b3ec-4abc-9d26-3df3d3d57907"/>
+        </performer>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+</Bundle>

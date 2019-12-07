@@ -1,0 +1,154 @@
+﻿DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide : Validation Results
+=========================================
+
+err = 26, warn = 0, info = 44
+IG Publisher Version: v1.0.14-SNAPSHOT Out of date - current version is v1.0.15-SNAPSHOT
+Generated Fri Dec 06 17:51:25 PST 2019. FHIR version 4.0.1 for hl7.fhir.us.davinci-deqm#1.1.0 (canonical = http://hl7.org/fhir/us/davinci-deqm)
+
+ Build Errors : 5 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-multiple-indv-mrp-obs-report : 0 / 9
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-multiple-indv-mrp-task-report : 0 / 6
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-single-indv-col-measurereport : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-single-indv-mrp-obs-report : 0 / 3
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-single-indv-mrp-task-report : 0 / 2
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-single-indv-vte-measurereport : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Encounter-encounter01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Library-exm130-fhir-r4 : 7 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Library-library-mrp-example : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Measure-measure-mrp-example : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport03 : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport03 : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport02 : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation01 : 0 / 1
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization04 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Parameter-col-submit-obs : 1 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Parameter-mrp-submit-obs : 0 / 1
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Parameter-mrp-submit-task : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient02 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient03 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Task-task01 : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-client : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-server : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-client : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-server : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-receiver-server : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-reporter-client : 0 / 0
+ /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/ig : 0 / 0
+ DEQMCoverageProfile : 0 / 0
+ DEQMDataExchangeMeasureReportProfile : 0 / 0
+ DEQMIndividualMeasureReportProfile : 0 / 0
+ DEQMMedicationAdministrationProfile : 0 / 0
+ DEQMMedicationRequestProfile : 0 / 0
+ DEQMOrganizationProfile : 0 / 0
+ DEQMSummaryMeasureReportProfile : 0 / 0
+</table>
+== n/a ==
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/Bundle-single-indv-vte-report.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 301, column 312: The link 'urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6' for "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/Bundle-single-indv-vte-report.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 301, column 486: The link 'urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc5' for "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc5" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/Bundle-single-indv-vte-report.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 301, column 3403: The link 'urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6' for "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/Bundle-single-indv-vte-report.html#/html/head/body/div/div/div/div/div/div/div/table/tr/td/a at Line 301, column 3691: The link 'urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc8' for "Mother Charity Hospital" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/Davinci-DEQM/output/Bundle-single-indv-vte-report.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 301, column 4703: The link 'urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6' for "urn:uuid:b5cf5a8c-63f0-437f-84fd-dc8a3cf43cc6" cannot be resolved
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-multiple-indv-mrp-obs-report.json ==
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[4].resource.category[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://hl7/example.org#measure)
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[7].resource.category[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://hl7/example.org#measure)
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[10].resource.category[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://hl7/example.org#measure)
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[11].resource.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[11].resource.address[0].extension[0]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[16].resource.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[16].resource.address[0].extension[0]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[19].resource.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-obs-report: Bundle.entry[19].resource.address[0].extension[0]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-multiple-indv-mrp-task-report.json ==
+INFORMATION: Bundle/multiple-indv-mrp-task-report: Bundle.entry[11].resource.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-task-report: Bundle.entry[11].resource.address[0].extension[0]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-task-report: Bundle.entry[16].resource.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-task-report: Bundle.entry[16].resource.address[0].extension[0]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-task-report: Bundle.entry[19].resource.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/multiple-indv-mrp-task-report: Bundle.entry[19].resource.address[0].extension[0]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-single-indv-col-measurereport.json ==
+ERROR: Bundle/single-indv-col-obs-report: Bundle.entry[0].resource.measure: URL value 'http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-single-indv-mrp-obs-report.json ==
+INFORMATION: Bundle/single-indv-mrp-obs-report: Bundle.entry[4].resource.category[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://hl7/example.org#measure)
+INFORMATION: Bundle/single-indv-mrp-obs-report: Bundle.entry[5].resource.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/single-indv-mrp-obs-report: Bundle.entry[5].resource.address[0].extension[0]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-single-indv-mrp-task-report.json ==
+INFORMATION: Bundle/single-indv-mrp-task-report: Bundle.entry[5].resource.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+INFORMATION: Bundle/single-indv-mrp-task-report: Bundle.entry[5].resource.address[0].extension[0]: This element does not match any known slice for the profile http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-single-indv-vte-measurereport.json ==
+ERROR: Bundle/single-indv-vte-report: Bundle.entry[0].resource.measure: URL value 'http://hl7.org/fhir/us/cqfmeasures/Measure/measure-vte-1-FHIR' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Coverage-coverage03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Encounter-encounter01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Library-exm130-fhir-r4.xml ==
+ERROR: Library/exm130-fhir-r4: Library.description: As specified by profile http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/library-cqfm, Element 'description' is out of order
+ERROR: Library/exm130-fhir-r4: Library.approvalDate: As specified by profile http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/library-cqfm, Element 'approvalDate' is out of order
+ERROR: Library/exm130-fhir-r4: Library.relatedArtifact[0].resource: URL value 'http://hl7.org/fhir/us/cqfmeasures/Library/adultoutpatientencounters-fhir' does not resolve
+ERROR: Library/exm130-fhir-r4: Library.relatedArtifact[1].resource: URL value 'http://hl7.org/fhir/us/cqfmeasures/Library/matglobalcommonfunctions-fhir' does not resolve
+ERROR: Library/exm130-fhir-r4: Library.relatedArtifact[2].resource: URL value 'http://hl7.org/fhir/us/cqfmeasures/Library/hospice-fhir' does not resolve
+ERROR: Library/exm130-fhir-r4: Library.relatedArtifact[3].resource: URL value 'http://hl7.org/fhir/us/cqfmeasures/Library/fhirhelpers' does not resolve
+ERROR: Library/exm130-fhir-r4: Library.relatedArtifact[4].resource: URL value 'http://hl7.org/fhir/us/cqfmeasures/Library/supplementaldataelements-fhir' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Library-library-mrp-example.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Location-location03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Measure-measure-mrp-example.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-datax-measurereport03.json ==
+ERROR: MeasureReport/datax-measurereport03: MeasureReport.measure: URL value 'http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-indv-measurereport03.json ==
+ERROR: MeasureReport/indv-measurereport03: MeasureReport.measure: URL value 'http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/MeasureReport-summ-measurereport02.json ==
+ERROR: MeasureReport/summ-measurereport02: MeasureReport.measure: URL value 'http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation01.json ==
+INFORMATION: Observation/observation01: Observation.category[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://acme.org/observation-category#measure)
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Observation-observation03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Organization-organization04.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Parameter-col-submit-obs.json ==
+ERROR: Parameters/col-submit-collect-obs: Parameters.parameter[0].resource.measure: URL value 'http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR' does not resolve
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Parameter-mrp-submit-obs.json ==
+INFORMATION: Parameters/mrp-submit-obs: Parameters.parameter[2].resource.category[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://acme.org/observation-category#measure)
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Parameter-mrp-submit-task.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient02.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Patient-patient03.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Practitioner-practitioner01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Task-task01.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-client.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-consumer-server.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-client.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-producer-server.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-receiver-server.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/capabilitystatement-reporter-client.json ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/ig.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-coverage-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-datax-measurereport-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-indv-measurereport-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-medicationadministration-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-medicationrequest-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-organization-deqm-spreadsheet.xml ==
+== /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/resources/profile-summary-measurereport-deqm-spreadsheet.xml ==

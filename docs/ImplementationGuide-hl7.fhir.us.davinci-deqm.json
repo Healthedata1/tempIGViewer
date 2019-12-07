@@ -10,7 +10,7 @@
   "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4ImplementationGuide",
   "title": "Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide",
   "status": "draft",
-  "date": "2019-12-06T01:42:14-08:00",
+  "date": "2019-12-06T17:47:45-08:00",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [
     {
@@ -234,11 +234,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Parameters-col-submit-obs.html"
+            "valueUri": "Parameters-col-submit-collect-obs.html"
           }
         ],
         "reference": {
-          "reference": "Parameters/col-submit-obs"
+          "reference": "Parameters/col-submit-collect-obs"
         },
         "exampleBoolean": true
       },
@@ -486,6 +486,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-single-indv-col-obs-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/single-indv-col-obs-report"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Practitioner"
           },
           {
@@ -495,6 +511,22 @@
         ],
         "reference": {
           "reference": "Practitioner/practitioner01"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-indv-measurereport03.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/indv-measurereport03"
         },
         "exampleBoolean": true
       },
@@ -921,9 +953,53 @@
       "generation": "markdown",
       "page": [
         {
-          "nameUrl": "guidance.html",
-          "title": "General Guidance",
-          "generation": "markdown"
+          "nameUrl": "framework.html",
+          "title": "Framework",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "guidance.html",
+              "title": "General Guidance",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "datax.html",
+              "title": "Data Exchange",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "indv-reporting.html",
+              "title": "Individual Reporting",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "summary-reporting.html",
+              "title": "Summary Reporting",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "usecases.html",
+          "title": "Example Use Cases",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "mrp.html",
+              "title": "Medication Reconciliation Post-Discharge (MRP)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "col.html",
+              "title": "Colorectal Cancer Screening (COL)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "vte1.html",
+              "title": "Venous Thromboembolism Prophylaxis (VTE-1)",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "profiles.html",
@@ -988,26 +1064,6 @@
           ]
         },
         {
-          "nameUrl": "bundles.html",
-          "title": "Bundle Definitions",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "operations.html",
-          "title": "Operations",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "terminology.html",
-          "title": "Terminology",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "searchparameters.html",
-          "title": "Search Parameters",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "capstatements.html",
           "title": "Capability Statements",
           "generation": "markdown",
@@ -1045,11 +1101,6 @@
           ]
         },
         {
-          "nameUrl": "security.html",
-          "title": "Security",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "all-examples.html",
           "title": "All Examples",
           "generation": "markdown"
@@ -1063,6 +1114,11 @@
           "nameUrl": "toc.html",
           "title": "Table of Contents",
           "generation": "html"
+        },
+        {
+          "nameUrl": "change-notes.html",
+          "title": "Change Notes",
+          "generation": "markdown"
         }
       ]
     }

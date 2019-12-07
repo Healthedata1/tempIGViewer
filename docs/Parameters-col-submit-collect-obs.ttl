@@ -6,9 +6,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/davinci-deqm/Parameters/col-submit-obs> a fhir:Parameters;
+<http://hl7.org/fhir/us/davinci-deqm/Parameters/col-submit-collect-obs> a fhir:Parameters;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "col-submit-obs"];
+  fhir:Resource.id [ fhir:value "col-submit-collect-obs"];
   fhir:Parameters.parameter [
      fhir:index 0;
      fhir:Parameters.parameter.name [ fhir:value "measure-report" ];
@@ -324,9 +324,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/davinci-deqm/Parameters/col-submit-obs.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/davinci-deqm/Parameters/col-submit-collect-obs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/davinci-deqm/Parameters/col-submit-obs.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/davinci-deqm/Parameters/col-submit-collect-obs.ttl> .
 
 # -------------------------------------------------------------------------------------
 

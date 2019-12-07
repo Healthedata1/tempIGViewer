@@ -221,20 +221,62 @@
 
 
 
+  <style type="text/css">
+    /* Section numbering*/
+    body{
+      counter-reset: pagenumber1 2  pagenumber2 2 section
+        }
+
+  h2{counter-reset: sub-section}
+  h3{counter-reset: composite}
+  h4{counter-reset: detail}
+  h5{counter-reset: more-detail}
+
+  h2:not([nocount^="true"]):before{
+    counter-increment: section;
+    content:  counter(pagenumber1) "." counter(pagenumber2)"." counter(section) " ";
+    color: silver;
+  }
+  h3:not([nocount^="true"]):before{
+    counter-increment: sub-section;
+    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) " ";
+    color: silver;
+
+  }
+  h4:not([nocount^="true"]):before{
+    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) " ";
+    color: silver;
+    counter-increment: composite;
+    counter-reset: detail 1;
+  }
+  h5:not([nocount^="true"]):before{
+
+    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+    color: silver;
+    counter-increment: detail;
+    counter-reset: more-detail 1;
+  }
+  h6:not([nocount^="true"]):before{
+    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";
+    color: silver;
+    counter-increment: more-detail;
+  }
+</style>
+
 
 
 <!-- ============BreadCrumb=============== -->
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> 
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">Table of Contents</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='framework.html'><b>Framework</b></a></li><li><b>Data Exchange</b></li>
 </nav>
 
 
 <!-- ============StatusBox=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -465,7 +507,7 @@ This is the {% if {{site.build}} == "ci" %}
   "id": "library-mrp-example",
   "text": {
     "status": "generated",
-    "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: library-mrp-example&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example\"&gt;http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: DEQMLibraryMRPExample&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: DEQM Library MRP Example&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: module-definition &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {[not stated] code 'module-definition' = 'module-definition)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Dec 6, 2019, 1:52:14 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Example Library resource to demonstrate the framework for MRP&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United States of America &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;dataRequirement&lt;/b&gt;: , , , , , , &lt;/p&gt;&lt;/div&gt;"
+    "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: library-mrp-example&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example\"&gt;http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: DEQMLibraryMRPExample&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: DEQM Library MRP Example&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: module-definition &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {[not stated] code 'module-definition' = 'module-definition)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Dec 6, 2019, 5:50:56 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Example Library resource to demonstrate the framework for MRP&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United States of America &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;dataRequirement&lt;/b&gt;: , , , , , , &lt;/p&gt;&lt;/div&gt;"
   },
   "url": "http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example",
   "version": "1.1.0",
@@ -479,7 +521,7 @@ This is the {% if {{site.build}} == "ci" %}
       }
     ]
   },
-  "date": "2019-12-06T01:52:14-08:00",
+  "date": "2019-12-06T17:50:56-08:00",
   "description": "Example Library resource to demonstrate the framework for MRP",
   "jurisdiction": [
     {
@@ -725,7 +767,7 @@ As with the Submit Data case above, discovery of what CQM data (i.e. resources) 
 
 <p><strong>Request using GET Syntax</strong></p>
 
-<p><code class="highlighter-rouge">GET [base]/MeasureReport/measure-mrp/$collect-data?patient=Patient/patient-z&amp;provider=Practitioner/provider-x&amp;periodStart=2018-06-19</code></p>
+<p><code class="highlighter-rouge">GET [base]/MeasureReport/measure-mrp/$collect-data?subject=Patient/patient-z&amp;provider=Practitioner/provider-x&amp;periodStart=2018-06-19</code></p>
 
 <p><strong>Request using POST Syntax</strong></p>
 
@@ -737,7 +779,7 @@ As with the Submit Data case above, discovery of what CQM data (i.e. resources) 
    "resourceType":"Parameters",
    "parameter":[
       {
-         "name":"patient",
+         "name":"subject",
          "valueUri":"Patient/patient-z"
       },
       {
@@ -985,7 +1027,7 @@ Upon notification, the Consumer uses the *Collect Data* operation to request the
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Dec 6, 2019 01:52-0800">2019-12-06</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Dec 6, 2019 17:50-0800">2019-12-06</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

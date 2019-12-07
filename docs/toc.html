@@ -224,7 +224,7 @@
   <style type="text/css">
     /* Section numbering*/
     body{
-      counter-reset: pagenumber1 12 section
+      counter-reset: pagenumber1 8 section
         }
 
   h2{counter-reset: sub-section}
@@ -276,7 +276,7 @@
 <!-- ============StatusBox=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -302,61 +302,69 @@ This is the {% if {{site.build}} == "ci" %}
 
 <p>  1 - <a href="index.html">Home</a></p>
 
-<p>  2 - <a href="guidance.html">General Guidance</a></p>
+<p>  2 - <a href="framework.html">Framework</a></p>
 
-<p>  3 - <a href="profiles.html">Profiles and Extensions</a></p>
+<p>    2.1 - <a href="guidance.html">General Guidance</a></p>
 
-<p>    3.1 - <a href="StructureDefinition-medicationrequest-deqm.html">StructureDefinition MedicationRequest Deqm</a></p>
+<p>    2.2 - <a href="datax.html">Data Exchange</a></p>
 
-<p>    3.2 - <a href="StructureDefinition-indv-measurereport-deqm.html">StructureDefinition Indv MeasureReport Deqm</a></p>
+<p>    2.3 - <a href="indv-reporting.html">Individual Reporting</a></p>
 
-<p>    3.3 - <a href="StructureDefinition-coverage-deqm.html">StructureDefinition Coverage Deqm</a></p>
+<p>    2.4 - <a href="summary-reporting.html">Summary Reporting</a></p>
 
-<p>    3.4 - <a href="StructureDefinition-organization-deqm.html">StructureDefinition Organization Deqm</a></p>
+<p>  3 - <a href="usecases.html">Example Use Cases</a></p>
 
-<p>    3.5 - <a href="StructureDefinition-datax-measurereport-deqm.html">StructureDefinition Datax MeasureReport Deqm</a></p>
+<p>    3.1 - <a href="mrp.html">Medication Reconciliation Post-Discharge (MRP)</a></p>
 
-<p>    3.6 - <a href="StructureDefinition-summary-measurereport-deqm.html">StructureDefinition Summary MeasureReport Deqm</a></p>
+<p>    3.2 - <a href="col.html">Colorectal Cancer Screening (COL)</a></p>
 
-<p>    3.7 - <a href="StructureDefinition-medicationadministration-deqm.html">StructureDefinition MedicationAdministration Deqm</a></p>
+<p>    3.3 - <a href="vte1.html">Venous Thromboembolism Prophylaxis (VTE-1)</a></p>
 
-<p>    3.8 - <a href="StructureDefinition-extension-alternateScoreType.html">StructureDefinition Extension alternateScoreType</a></p>
+<p>  4 - <a href="profiles.html">Profiles and Extensions</a></p>
 
-<p>    3.9 - <a href="StructureDefinition-extension-reporterGroup.html">StructureDefinition Extension reporterGroup</a></p>
+<p>    4.1 - <a href="StructureDefinition-medicationrequest-deqm.html">StructureDefinition MedicationRequest Deqm</a></p>
 
-<p>    3.1 - <a href="StructureDefinition-extension-certificationIdentifier.html">StructureDefinition Extension certificationIdentifier</a></p>
+<p>    4.2 - <a href="StructureDefinition-indv-measurereport-deqm.html">StructureDefinition Indv MeasureReport Deqm</a></p>
 
-<p>    3.11 - <a href="StructureDefinition-extension-reportingVendor.html">StructureDefinition Extension reportingVendor</a></p>
+<p>    4.3 - <a href="StructureDefinition-coverage-deqm.html">StructureDefinition Coverage Deqm</a></p>
 
-<p>  4 - <a href="bundles.html">Bundle Definitions</a></p>
+<p>    4.4 - <a href="StructureDefinition-organization-deqm.html">StructureDefinition Organization Deqm</a></p>
 
-<p>  5 - <a href="operations.html">Operations</a></p>
+<p>    4.5 - <a href="StructureDefinition-datax-measurereport-deqm.html">StructureDefinition Datax MeasureReport Deqm</a></p>
 
-<p>  6 - <a href="terminology.html">Terminology</a></p>
+<p>    4.6 - <a href="StructureDefinition-summary-measurereport-deqm.html">StructureDefinition Summary MeasureReport Deqm</a></p>
 
-<p>  7 - <a href="searchparameters.html">Search Parameters</a></p>
+<p>    4.7 - <a href="StructureDefinition-medicationadministration-deqm.html">StructureDefinition MedicationAdministration Deqm</a></p>
 
-<p>  8 - <a href="capstatements.html">Capability Statements</a></p>
+<p>    4.8 - <a href="StructureDefinition-extension-alternateScoreType.html">StructureDefinition Extension alternateScoreType</a></p>
 
-<p>    8.1 - <a href="CapabilityStatement-producer-server.html">CapabilityStatement Producer Server</a></p>
+<p>    4.9 - <a href="StructureDefinition-extension-reporterGroup.html">StructureDefinition Extension reporterGroup</a></p>
 
-<p>    8.2 - <a href="CapabilityStatement-consumer-server.html">CapabilityStatement Consumer Server</a></p>
+<p>    4.1 - <a href="StructureDefinition-extension-certificationIdentifier.html">StructureDefinition Extension certificationIdentifier</a></p>
 
-<p>    8.3 - <a href="CapabilityStatement-receiver-server.html">CapabilityStatement Receiver Server</a></p>
+<p>    4.11 - <a href="StructureDefinition-extension-reportingVendor.html">StructureDefinition Extension reportingVendor</a></p>
 
-<p>    8.4 - <a href="CapabilityStatement-reporter-client.html">CapabilityStatement Reporter Client</a></p>
+<p>  5 - <a href="capstatements.html">Capability Statements</a></p>
 
-<p>    8.5 - <a href="CapabilityStatement-producer-client.html">CapabilityStatement Producer Client</a></p>
+<p>    5.1 - <a href="CapabilityStatement-producer-server.html">CapabilityStatement Producer Server</a></p>
 
-<p>    8.6 - <a href="CapabilityStatement-consumer-client.html">CapabilityStatement Consumer Client</a></p>
+<p>    5.2 - <a href="CapabilityStatement-consumer-server.html">CapabilityStatement Consumer Server</a></p>
 
-<p>  9 - <a href="security.html">Security</a></p>
+<p>    5.3 - <a href="CapabilityStatement-receiver-server.html">CapabilityStatement Receiver Server</a></p>
 
-<p>  10 - <a href="all-examples.html">All Examples</a></p>
+<p>    5.4 - <a href="CapabilityStatement-reporter-client.html">CapabilityStatement Reporter Client</a></p>
 
-<p>  11 - <a href="downloads.html">Downloads</a></p>
+<p>    5.5 - <a href="CapabilityStatement-producer-client.html">CapabilityStatement Producer Client</a></p>
 
-<p>  12 - <a href="toc.html">Table of Contents</a></p>
+<p>    5.6 - <a href="CapabilityStatement-consumer-client.html">CapabilityStatement Consumer Client</a></p>
+
+<p>  6 - <a href="all-examples.html">All Examples</a></p>
+
+<p>  7 - <a href="downloads.html">Downloads</a></p>
+
+<p>  8 - <a href="toc.html">Table of Contents</a></p>
+
+<p>  9 - <a href="change-notes.html">Change Notes</a></p>
 
 <!-- ================================================ -->
 
@@ -389,7 +397,7 @@ This is the {% if {{site.build}} == "ci" %}
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Dec 6, 2019 01:52-0800">2019-12-06</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Dec 6, 2019 17:50-0800">2019-12-06</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

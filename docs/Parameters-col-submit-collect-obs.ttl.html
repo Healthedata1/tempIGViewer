@@ -225,7 +225,7 @@
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 Implementation Guide - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -252,38 +252,38 @@ This is the {% if {{site.build}} == "ci" %}
     <!--  - choose what you want  comment out or Change what you don't-->
 <ul class="nav nav-tabs">
 
-	<li><a href="Parameters-col-submit-obs.html">Narrative Content</a></li>
+	<li><a href="Parameters-col-submit-collect-obs.html">Narrative Content</a></li>
 
 <!--
 { % if Parameters == "StructureDefinition"  % }
 	{ % if turtle == "definitions"  % }
 		<li class="active"><a href="#">Detailed Descriptions</a></li>
 	{ % else % }
-		<li><a href="Parameters-col-submit-obs-definitions.html">Detailed Descriptions</a></li>
+		<li><a href="Parameters-col-submit-collect-obs-definitions.html">Detailed Descriptions</a></li>
 	{ % endif % }
 	{ % if turtle == "mappings" % }
 		<li class="active"><a href="#">Mappings</a></li>
 	{ % else % }
-		<li><a href="Parameters-col-submit-obs-mappings.html">Mappings</a></li>
+		<li><a href="Parameters-col-submit-collect-obs-mappings.html">Mappings</a></li>
 	{ % endif % }
 { % endif % }
 -->
 
-<li><a href="Parameters-col-submit-obs.xml.html">XML</a></li>
+<li><a href="Parameters-col-submit-collect-obs.xml.html">XML</a></li>
 
 
-	<li><a href="Parameters-col-submit-obs.json.html">JSON</a></li>
+	<li><a href="Parameters-col-submit-collect-obs.json.html">JSON</a></li>
 
 <!--
 { % if turtle == "turtle" % }
 	<li class="active"><a href="#">Turtle</a></li>
 { % else % }
-	<li><a href="Parameters-col-submit-obs.ttl.html">Turtle</a></li>
+	<li><a href="Parameters-col-submit-collect-obs.ttl.html">Turtle</a></li>
 { % endif % }
 -->
 </ul>
 
-    <h2>Turtle Format: Parameters-col-submit-obs</h2>
+    <h2>Turtle Format: Parameters-col-submit-collect-obs</h2>
   
 
 <!--
@@ -296,7 +296,7 @@ This is the {% if {{site.build}} == "ci" %}
  <!--
   { % elsif page.template == 'example' % }
      { % include nav-tabs.html type=page.type id=page.id active="example" % }
-     <h2>Examples: Parameters-col-submit-obs</h2>
+     <h2>Examples: Parameters-col-submit-collect-obs</h2>
  -->
   
 
@@ -307,7 +307,7 @@ This is the {% if {{site.build}} == "ci" %}
 
   <!-- ============ default xml or json content for structuredefinition CONTENT CONTENT=============== -->
   <p>
-  Download Raw <a href="Parameters-col-submit-obs.ttl" download>ttl</a>
+  Download Raw <a href="Parameters-col-submit-collect-obs.ttl" download>ttl</a>
   </p>
 
 <pre class="rdf">
@@ -321,7 +321,7 @@ This is the {% if {{site.build}} == "ci" %}
 
  a fhir:Parameters;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/parameters.html#Parameters.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;col-submit-obs&quot;];
+  <a href="http://hl7.org/fhir/R4/parameters.html#Parameters.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;col-submit-collect-obs&quot;];
   <a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter">fhir:Parameters.parameter</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">fhir:Parameters.parameter.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;measure-report&quot; ];
@@ -571,7 +571,7 @@ This is the {% if {{site.build}} == "ci" %}
 
 <!-- simple format links
 <p>
-Formats: <a href="Parameters-col-submit-obs.html">Narrative</a>, <a href="Parameters-col-submit-obs.xml.html">XML</a>, <a href="Parameters-col-submit-obs.json.html">JSON</a>, <a href="Parameters-col-submit-obs.ttl.html">Turtle</a>
+Formats: <a href="Parameters-col-submit-collect-obs.html">Narrative</a>, <a href="Parameters-col-submit-collect-obs.xml.html">XML</a>, <a href="Parameters-col-submit-collect-obs.json.html">JSON</a>, <a href="Parameters-col-submit-collect-obs.ttl.html">Turtle</a>
 </p>
 -->
 
@@ -613,7 +613,7 @@ Formats: <a href="Parameters-col-submit-obs.html">Narrative</a>, <a href="Parame
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Dec 6, 2019 01:52-0800">2019-12-06</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Dec 6, 2019 17:50-0800">2019-12-06</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

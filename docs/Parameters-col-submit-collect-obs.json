@@ -1,6 +1,6 @@
 {
   "resourceType": "Parameters",
-  "id": "col-submit-obs",
+  "id": "col-submit-collect-obs",
   "parameter": [
     {
       "name": "measure-report",

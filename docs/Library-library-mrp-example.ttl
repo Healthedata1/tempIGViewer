@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "library-mrp-example"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: library-mrp-example</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example\">http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example</a></p><p><b>version</b>: 1.1.0</p><p><b>name</b>: DEQMLibraryMRPExample</p><p><b>title</b>: DEQM Library MRP Example</p><p><b>status</b>: active</p><p><b>type</b>: module-definition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'module-definition' = 'module-definition)</span></p><p><b>date</b>: Dec 6, 2019, 1:52:14 AM</p><p><b>description</b>: Example Library resource to demonstrate the framework for MRP</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>dataRequirement</b>: , , , , , , </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: library-mrp-example</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example\">http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example</a></p><p><b>version</b>: 1.1.0</p><p><b>name</b>: DEQMLibraryMRPExample</p><p><b>title</b>: DEQM Library MRP Example</p><p><b>status</b>: active</p><p><b>type</b>: module-definition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'module-definition' = 'module-definition)</span></p><p><b>date</b>: Dec 6, 2019, 5:50:56 PM</p><p><b>description</b>: Example Library resource to demonstrate the framework for MRP</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>dataRequirement</b>: , , , , , , </p></div>"
   ];
   fhir:Library.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example"];
   fhir:Library.version [ fhir:value "1.1.0"];
@@ -23,7 +23,7 @@
        fhir:Coding.code [ fhir:value "module-definition" ]
      ]
   ];
-  fhir:Library.date [ fhir:value "2019-12-06T01:52:14-08:00"^^xsd:dateTime];
+  fhir:Library.date [ fhir:value "2019-12-06T17:50:56-08:00"^^xsd:dateTime];
   fhir:Library.description [ fhir:value "Example Library resource to demonstrate the framework for MRP"];
   fhir:Library.jurisdiction [
      fhir:index 0;

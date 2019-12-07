@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Parameters xmlns="http://hl7.org/fhir">
-  <id value="col-submit-obs"/>
+  <id value="col-submit-collect-obs"/>
   <parameter>
     <name value="measure-report"/>
     <resource>
