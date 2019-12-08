@@ -507,7 +507,7 @@ This is the {% if {{site.build}} == "ci" %}
   "id": "library-mrp-example",
   "text": {
     "status": "generated",
-    "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: library-mrp-example&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example\"&gt;http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: DEQMLibraryMRPExample&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: DEQM Library MRP Example&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: module-definition &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {[not stated] code 'module-definition' = 'module-definition)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Dec 6, 2019, 5:50:56 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Example Library resource to demonstrate the framework for MRP&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United States of America &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;dataRequirement&lt;/b&gt;: , , , , , , &lt;/p&gt;&lt;/div&gt;"
+    "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: library-mrp-example&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example\"&gt;http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: DEQMLibraryMRPExample&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: DEQM Library MRP Example&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: module-definition &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {[not stated] code 'module-definition' = 'module-definition)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Dec 8, 2019, 12:03:38 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Example Library resource to demonstrate the framework for MRP&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United States of America &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;dataRequirement&lt;/b&gt;: , , , , , , &lt;/p&gt;&lt;/div&gt;"
   },
   "url": "http://hl7.org/fhir/us/davinci-deqm/Library/library-mrp-example",
   "version": "1.1.0",
@@ -521,7 +521,7 @@ This is the {% if {{site.build}} == "ci" %}
       }
     ]
   },
-  "date": "2019-12-06T17:50:56-08:00",
+  "date": "2019-12-08T12:03:38-08:00",
   "description": "Example Library resource to demonstrate the framework for MRP",
   "jurisdiction": [
     {
@@ -857,23 +857,23 @@ As with the Submit Data case above, discovery of what CQM data (i.e. resources) 
 
 <h3 id="submit-data-and-collect-data-for-multiple-patients">Submit Data and Collect Data for Multiple Patients</h3>
 
-<p>The <a href="http://hl7.org/fhir/R4/http.html#transaction">transaction</a> bundle processing as defined by FHIR specification is used for transacting multiple Submit Data and Collect Data operations for multiple patients in a single interaction.</p>
+<h4 class="no_toc" id="submit-data-operation-request-for-multiple-patients">Submit Data Operation Request for Multiple Patients</h4>
+
+<p>The <a href="http://hl7.org/fhir/R4/http.html#transaction">transaction</a> bundle processing as defined by FHIR specification is used for transacting the body of Submit Data operation request for <em>multiple</em> patients in a single interaction.</p>
 
 <ul>
-  <li>The fullUrl refers to the <code class="highlighter-rouge">#submit-data</code> or <code class="highlighter-rouge">#collect-data</code> operation endpoint.</li>
-  <li>The request method is <code class="highlighter-rouge">POST</code></li>
-  <li>Follows the <a href="http://hl7.org/fhir/R4/references.html#contained">following rules</a> for referencing across the bundle entries if the resources are nested inside parameters and/or contained within a parameter:
+  <li>The transaction bundle contains an entry for each patient as illustrated in the examples below:
     <ul>
-      <li>“When resolving references, references are resolved by looking through the ‘container’ resource - the one that contains the other resources. Since there are no nested contained resources, there is only one container resource.”</li>
-      <li>“References to contained resources are never resolved outside the container resource. Specifically, resolution stops at the elements Bundle.entry.resource and Parameters.parameter.resource, but not at DomainResource.contained.”</li>
+      <li>The fullUrl is a UUID (<code class="highlighter-rouge">urn:uuid:...</code>).</li>
+      <li>The resource is a Parameters resource as defined in the operation.</li>
+      <li>The request method is <code class="highlighter-rouge">POST</code></li>
+      <li>The request url is the operation endpoint <code class="highlighter-rouge">Measure/$submit-data</code> or <code class="highlighter-rouge">Measure/[measure-id]/$submit-data</code>.</li>
     </ul>
   </li>
+  <li>When resolving references, references are never resolved outside the Parameters resource.  Specifically, resolution stops at the elements Parameters.parameter.resource.”</li>
+  <li>The matching <a href="http://hl7.org/fhir/R4//http.html#transaction-response">transaction response</a> is returned by the operation endpoint server.</li>
 </ul>
 
-<p><strong>The transaction bundle contains an entry for each patient and as illustrated in the following examples:</strong></p>
-
-<p>Submit Data Transaction Bundle</p>
-
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST|[base]
 
 {
@@ -881,7 +881,7 @@ As with the Submit Data case above, discovery of what CQM data (i.e. resources) 
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": [base]/Measure/[measure-id]/$submit-data
+      "fullUrl": "urn:uuid:79378cb8-8f58-48e8-a5e8-60ac2755b674",
       "resource": {
         "resourceType": "Parameters",
         "parameter": [
@@ -889,109 +889,24 @@ As with the Submit Data case above, discovery of what CQM data (i.e. resources) 
             "name": "measurereport",
             "resource": {
               "resourceType": "MeasureReport",
-              "contained": [  ( or simply listing the other named parameters)
-              ...
-          ]
-        },
-        "request": {
-          "method": "POST"
-            }
-            ....
-</code></pre></div></div>
-
-<p>Submit Data Transaction Bundle</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST|[base]
-
-{
-  "resourceType": "Bundle",
-  "type": "transaction",
-  "entry": [
-    {
-      "fullUrl": [base]/Measure/[measure-id]/$collect-data
-      "resource": {
-        "resourceType": "Parameters",
-        "parameter": [
-          {
-            "name": "measurereport",
+              ...,
+            "name": "resource",
             "resource": {
-              "resourceType": "MeasureReport",
-              "contained": [  ( or simply listing the other named parameters)
-              ...
+              "resourceType": "Patient",
+              ...,
+            [other "resource" parameters]
           ]
         },
         "request": {
-          "method": "POST"
+          "method": "POST",
+          "url": "Measure/[measure-id]/$submit-data"
             }
             ....
 </code></pre></div></div>
 
-<!-- ************************************************************
-KEEP and edit to align with the Updated Argonaut Subscription Model
- ******************************************************************
-### Subscriptions
-{: #pub-sub}
+<h4 class="no_toc" id="collect-data-operation-response-for-multiple-patients">Collect Data Operation Response for Multiple Patients</h4>
 
-FHIR Subscriptions allow for a Producer to notify the Consumer whenever new CQM data is available.  Effectively, the Consumer subscribes to the Producer's system using the Measure as the criteria. It is a short-hand for subscribing to all the data-of-interest (as defined by the data requirements) for the CQM, but using the Measure as the subscription point allows the implementation to determine the most efficient approach to notification. For example, notifications can be batched on a periodic basis, or they can be performed along transactional boundaries within the implementing system.
-
-The Consumer uses the *Collect Data* operation described above to request the relevant data after it is notified.
-
-{% include img.html  img="subscribe-data-steps.jpg"  caption ="Figure 2-7 Subscription Steps"%}
-
-#### Subscribe for Measure Data
-{:.no_toc}
-
-The Consumer must first subscribe to the Producer for a notification for a particular measure.  The Consumer may subsequently unsubscribe to a measure subscription.
-
-{% include img-narrow.html img="subscribe-data.jpg" caption="Figure 2-8 Subscription Service" %}
-
-##### APIs
-{:.no_toc}
-
-The following artifacts are used in the subscription transaction:
-
-1. DEQM Subscription Profile [DEQM Subscription] or [DEQM Subscription (R4)]
-1. [DEQM Measure Subscription Extension]
-
-##### Usage
-{:.no_toc}
-
-To subscribe for measure notifications, The Consumer SHALL use the standard FHIR [Subscription] API as follows:
-
-`POST [base]/Subscription`
-
-To unsubscribe:
-
-`Delete [base]/Subscription/[id]`
-
-{% include examplebutton.html example="subscribe-measure-example" b_title = "Click Here To See Example Subscription Transaction" %}
-
-#### Get Data Requirements
-{:.no_toc}
-
-The DEQM Subscription Profile allows the subscriber to send a *CQFM Measure instance id*.  By invoking the $data-requirements operation (see above) on a subscriber’s Measure instance endpoint, the server can discover what data is needed to calculate by a subscriber for particular measure.  This information is necessary to correctly trigger a notification when the requisite data is available.
-
-#### Measure Notifications
-{:.no_toc}
-
-The Producer notifies the Consumer when measure data is available. Exactly, how this notification is triggered is out of scope for this guide.  Note that  several architectures to implement the subscription notifications such as "point to point" notification or using a “feed handler” as an intermediary system are available.
-
-{% include img-narrow.html img="measure-notifications.jpg" caption="Figure 2-9 Measure Notifications" %}
-
-##### Usage
-{:.no_toc}
-
- The standard FHIR Subscription API describes the REST Hook channel as follows:
-
-`POST [app notification endpoint]`
-
-{% include examplebutton.html example="measure-notification-example" b_title = "Click Here To See Example Subscription Notification" %}
-
-##### Collect Data Operation
-{:.no_toc}
-
-Upon notification, the Consumer uses the *Collect Data* operation to request the CQM data from the notifying Producer.  This operation is discussed in the section above.
--->
+<p>Because operations are typically executed synchronously, a collect data request to a server returns a Parameter resource for a <em>single</em> patient as defined by the <code class="highlighter-rouge">$collect-data</code> operation.  Execution of this operation and returning multiple patients in a single <em>asynchronous</em> transaction is outside the scope of this guide.</p>
 
 <p><br /></p>
 
@@ -1027,7 +942,7 @@ Upon notification, the Consumer uses the *Collect Data* operation to request the
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Dec 6, 2019 17:50-0800">2019-12-06</span>.
+     © 2019<!--  does not exist yet --> <a href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>. hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a><br/>created <span href="#" data-toggle="tooltip" data-placement="top" title="Sun, Dec 8, 2019 12:03-0800">2019-12-08</span>.
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/davinci-deqm/history.cfml">Version History</a>

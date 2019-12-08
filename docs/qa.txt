@@ -2,8 +2,8 @@
 =========================================
 
 err = 26, warn = 0, info = 44
-IG Publisher Version: v1.0.14-SNAPSHOT Out of date - current version is v1.0.15-SNAPSHOT
-Generated Fri Dec 06 17:51:25 PST 2019. FHIR version 4.0.1 for hl7.fhir.us.davinci-deqm#1.1.0 (canonical = http://hl7.org/fhir/us/davinci-deqm)
+IG Publisher Version: v1.0.14-SNAPSHOT Out of date - current version is ??
+Generated Sun Dec 08 12:04:46 PST 2019. FHIR version 4.0.1 for hl7.fhir.us.davinci-deqm#1.1.0 (canonical = http://hl7.org/fhir/us/davinci-deqm)
 
  Build Errors : 5 / 0
  /Users/ehaas/Documents/FHIR/Davinci-DEQM/source/examples/Bundle-multiple-indv-mrp-obs-report : 0 / 9
