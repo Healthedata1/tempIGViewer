@@ -1,13 +1,13 @@
 ﻿IGTest4 : Validation Results
 =========================================
 
-err = 106, warn = 84, info = 2
+err = 108, warn = 82, info = 2
 IG Publisher Version: v1.0.77-SNAPSHOT
-Generated Fri Apr 03 12:02:30 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4# (canonical = http://www.fhir.org/guides/test4)
+Generated Fri Apr 03 12:20:18 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4# (canonical = http://www.fhir.org/guides/test4)
 
  Build Errors : 471 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/basic-diet : 1 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measure-cdc-covid : 0 / 21
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measure-cdc-covid : 1 / 20
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example : 3 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example2 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/pages/_data/ig : 43 / 2
@@ -498,7 +498,7 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/todo.html#/html/head/body/d
 ERROR: Basic/diet: Basic: temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
 == /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Measure-cdc-covid.json ==
 WARNING: Measure/cdc-covid: Measure.subject.ofType(CodeableConcept): No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/subject-type (http://hl7.org/fhir/ValueSet/subject-type)
-WARNING: Measure/cdc-covid: Measure.useContext[0].value.ofType(CodeableConcept).coding[0]: The display "COVID-19" is not a valid display for the code {http://snomed.info/sct}840535000 - should be one of ["Antibody to 2019 novel coronavirus","Antibody to 2019-nCoV","Antibody to severe acute respiratory syndrome coronavirus 2 (substance)","Antibody to severe acute respiratory syndrome coronavirus 2","Antibody to SARS-CoV-2"]
+ERROR: Measure/cdc-covid: Measure.useContext[0].value.ofType(CodeableConcept).coding[0]: unable to find code 8840539006 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for "http://snomed.info/sct#8840539006"
 WARNING: Measure/cdc-covid: Measure.group[0].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
 WARNING: Measure/cdc-covid: Measure.group[0].stratifier[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
 WARNING: Measure/cdc-covid: Measure.group[0].stratifier[1].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator

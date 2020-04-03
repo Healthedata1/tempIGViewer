@@ -33,9 +33,9 @@
      fhir:UsageContext.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         a sct:840535000;
+         a sct:8840539006;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "840535000" ];
+         fhir:Coding.code [ fhir:value "8840539006" ];
          fhir:Coding.display [ fhir:value "COVID-19" ]
        ]
      ]

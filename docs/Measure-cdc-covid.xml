@@ -24,7 +24,7 @@
     <valueCodeableConcept>
       <coding>
         <system value="http://snomed.info/sct"/>
-        <code value="840535000"/>
+        <code value="8840539006"/>
         <display value="COVID-19"/>
       </coding>
     </valueCodeableConcept>
