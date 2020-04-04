@@ -38,7 +38,7 @@
   <!-- ?xml version="1.0" encoding="UTF-8"? -->
 <div id="segment-header" class="segment">
     <!-- segment-header -->
-  <div class="container"><a name="75f094bc-d90e-4690-a86e-ae020440e266">​</a>  <!-- container -->
+  <div class="container"><a name="9b78a84b-ffc1-4fc1-8dbd-32167962d9eb">​</a>  <!-- container -->
 
   <!-- hl7 logo -->
     <a no-external="true" href="http://hl7.org/fhir">
@@ -224,7 +224,7 @@
     <div class="container">    <!-- container -->
       <div class="row">    <!-- row -->
        <div class="inner-wrapper">   <!-- inner-wrapper -->
-         <div class="col-12"><a name="06e3de01-fb73-4150-b40f-5c19fea46b4d">​</a>    <!-- col -->
+         <div class="col-12"><a name="f9a82378-5cc5-4af4-ba37-0fa3423f2dd2">​</a>    <!-- col -->
               <!-- content of page -->
 
 
@@ -460,6 +460,15 @@ page.previous = <br/>
       /Blah2.java
       <br/>
 
+      /Bundle-cdc-c19-groups-20200404070053493066.json
+      <br/>
+
+      /Bundle-cdc-c19-groups-20200404070053493066.ttl
+      <br/>
+
+      /Bundle-cdc-c19-groups-20200404070053493066.xml
+      <br/>
+
       /CapabilityStatement-client.json
       <br/>
 
@@ -509,6 +518,15 @@ page.previous = <br/>
       <br/>
 
       /Measure-cdc-covid.xml
+      <br/>
+
+      /MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.json
+      <br/>
+
+      /MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.ttl
+      <br/>
+
+      /MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.xml
       <br/>
 
       /OperationDefinition-opdef-test.json
@@ -1791,6 +1809,18 @@ Basic-diet.ttl.html,Basic-diet.ttl.html
 Basic-diet.xml.html,Basic-diet.xml.html
 <br/>
 
+Bundle-cdc-c19-groups-20200404070053493066.html,Bundle-cdc-c19-groups-20200404070053493066.html
+<br/>
+
+Bundle-cdc-c19-groups-20200404070053493066.json.html,Bundle-cdc-c19-groups-20200404070053493066.json.html
+<br/>
+
+Bundle-cdc-c19-groups-20200404070053493066.ttl.html,Bundle-cdc-c19-groups-20200404070053493066.ttl.html
+<br/>
+
+Bundle-cdc-c19-groups-20200404070053493066.xml.html,Bundle-cdc-c19-groups-20200404070053493066.xml.html
+<br/>
+
 CapabilityStatement-client.html,CapabilityStatement-client.html
 <br/>
 
@@ -1849,6 +1879,18 @@ Measure-cdc-covid.ttl.html,Measure-cdc-covid.ttl.html
 <br/>
 
 Measure-cdc-covid.xml.html,Measure-cdc-covid.xml.html
+<br/>
+
+MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html,MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html
+<br/>
+
+MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.json.html,MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.json.html
+<br/>
+
+MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.ttl.html,MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.ttl.html
+<br/>
+
+MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.xml.html,MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.xml.html
 <br/>
 
 OperationDefinition-opdef-test.html,OperationDefinition-opdef-test.html
@@ -2067,11 +2109,35 @@ todo.md,pages/todo.md
 {% for p in html_pages %}
 {% assign html_frag = p.name | split: '.' | size %}
 {% if p.name contains "ValueSet" and html_frag == 2 %}
-  <li><a name="23ebe6b6-d891-4ee3-8685-fb54dd646ea1">​</a><a href="{{p.name}}">{{p.name |  remove: ".html" | replace: '-', ' ' }}</a></li>
+  <li><a name="2ea6163f-7886-42e5-a880-503969e5c1e7">​</a><a href="{{p.name}}">{{p.name |  remove: ".html" | replace: '-', ' ' }}</a></li>
 {% endif %}
 {% endfor %}
 
 </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3345,7 +3411,7 @@ site.historypath = #
 
 
 
-33,
+35,
 
 
 <em>title</em> = Basic Diet 
@@ -3375,7 +3441,37 @@ site.historypath = #
 
 
 
-34,
+36,
+
+
+<em>title</em> = Bundle Cdc C19 Groups 20200404070053493066 
+<em>path</em> = Bundle-cdc-c19-groups-20200404070053493066.html,
+<em>url</em> = /Bundle-cdc-c19-groups-20200404070053493066.html,
+<em>link</em> = <a href="null">Bundle Cdc C19 Groups 20200404070053493066 </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+37,
 
 
 <em>title</em> = Capabilitystatement Client 
@@ -3405,7 +3501,7 @@ site.historypath = #
 
 
 
-35,
+38,
 
 
 <em>title</em> = Capabilitystatement Server 
@@ -3435,7 +3531,7 @@ site.historypath = #
 
 
 
-36,
+39,
 
 
 <em>title</em> = Codesystem Blah Codes 
@@ -3465,7 +3561,7 @@ site.historypath = #
 
 
 
-37,
+40,
 
 
 <em>title</em> = Implementationguide Healthedatainc.ig Template4 
@@ -3495,7 +3591,7 @@ site.historypath = #
 
 
 
-38,
+41,
 
 
 <em>title</em> = Measure Cdc Covid 
@@ -3525,7 +3621,37 @@ site.historypath = #
 
 
 
-39,
+42,
+
+
+<em>title</em> = Measurereport Ca620d2a 7639 11ea Be32 A4d18ccf5172 
+<em>path</em> = MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html,
+<em>url</em> = /MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html,
+<em>link</em> = <a href="null">Measurereport Ca620d2a 7639 11ea Be32 A4d18ccf5172 </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+43,
 
 
 <em>title</em> = Operationdefinition Opdef Test 
@@ -3555,7 +3681,7 @@ site.historypath = #
 
 
 
-40,
+44,
 
 
 <em>title</em> = Patient Example 
@@ -3585,7 +3711,7 @@ site.historypath = #
 
 
 
-41,
+45,
 
 
 <em>title</em> = Patient Example2 
@@ -3619,7 +3745,7 @@ site.historypath = #
 
 
 
-42,
+46,
 
 
 <em>title</em> = Structuredefinition Extension Blah 
@@ -3653,7 +3779,7 @@ site.historypath = #
 
 
 
-43,
+47,
 
 
 <em>title</em> = Structuredefinition Extension Blah2 
@@ -3687,7 +3813,7 @@ site.historypath = #
 
 
 
-44,
+48,
 
 
 <em>title</em> = Structuredefinition Extension Complex 
@@ -3721,7 +3847,7 @@ site.historypath = #
 
 
 
-45,
+49,
 
 
 <em>title</em> = Structuredefinition Ifr 
@@ -3755,7 +3881,7 @@ site.historypath = #
 
 
 
-46,
+50,
 
 
 <em>title</em> = Structuredefinition Template Basic 
@@ -3789,7 +3915,7 @@ site.historypath = #
 
 
 
-47,
+51,
 
 
 <em>title</em> = Structuredefinition Template Profile On Profile 
@@ -3819,7 +3945,7 @@ site.historypath = #
 
 
 
-48,
+52,
 
 
 <em>title</em> = Valueset Bar Codes 
@@ -3849,7 +3975,7 @@ site.historypath = #
 
 
 
-49,
+53,
 
 
 <em>title</em> = Valueset Blah Codes 
@@ -3879,7 +4005,7 @@ site.historypath = #
 
 
 
-50,
+54,
 
 
 <em>title</em> = Valueset Foo Codes 
@@ -3909,7 +4035,7 @@ site.historypath = #
 
 
 
-51,
+55,
 
 
 <em>title</em> = All Examples 
@@ -3927,7 +4053,7 @@ site.historypath = #
 
 
 
-52,
+56,
 
 
 <em>title</em> = Capstatements 
@@ -3945,7 +4071,7 @@ site.historypath = #
 
 
 
-53,
+57,
 
 
 <em>title</em> = Downloads 
@@ -3963,7 +4089,7 @@ site.historypath = #
 
 
 
-54,
+58,
 
 
 <em>title</em> = Guidance 
@@ -3981,7 +4107,7 @@ site.historypath = #
 
 
 
-55,
+59,
 
 
 <em>title</em> = Html_pages 
@@ -3999,7 +4125,7 @@ site.historypath = #
 
 
 
-56,
+60,
 
 
 <em>title</em> = Index 
@@ -4017,7 +4143,7 @@ site.historypath = #
 
 
 
-57,
+61,
 
 
 <em>title</em> = More Guidance 
@@ -4035,7 +4161,7 @@ site.historypath = #
 
 
 
-58,
+62,
 
 
 <em>title</em> = Operations 
@@ -4053,7 +4179,7 @@ site.historypath = #
 
 
 
-59,
+63,
 
 
 <em>title</em> = Profiles 
@@ -4071,7 +4197,7 @@ site.historypath = #
 
 
 
-60,
+64,
 
 
 <em>title</em> = Searchparameters 
@@ -4089,7 +4215,7 @@ site.historypath = #
 
 
 
-61,
+65,
 
 
 <em>title</em> = Security 
@@ -4107,7 +4233,7 @@ site.historypath = #
 
 
 
-62,
+66,
 
 
 <em>title</em> = Terminology 
@@ -4125,7 +4251,7 @@ site.historypath = #
 
 
 
-63,
+67,
 
 
 <em>title</em> = Toc 
@@ -4143,7 +4269,7 @@ site.historypath = #
 
 
 
-64,
+68,
 
 
 <em>title</em> = Todo 
@@ -4161,7 +4287,7 @@ site.historypath = #
 
 
 
-65,
+69,
 
 
 <em>title</em> = Todo 
@@ -4191,6 +4317,42 @@ site.historypath = #
 &lt;page&gt;&lt;source
 value="Basic-diet.html"/&gt;&lt;title
 value="Basic Diet "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="example"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="Bundle-cdc-c19-groups-20200404070053493066.html"/&gt;&lt;title
+value="Bundle Cdc C19 Groups 20200404070053493066 "/&gt;&lt;kind
 
 
 
@@ -4371,6 +4533,42 @@ value="resource"/&gt;&lt;/page&gt;
 &lt;page&gt;&lt;source
 value="Measure-cdc-covid.html"/&gt;&lt;title
 value="Measure Cdc Covid "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="example"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html"/&gt;&lt;title
+value="Measurereport Ca620d2a 7639 11ea Be32 A4d18ccf5172 "/&gt;&lt;kind
 
 
 
@@ -5261,6 +5459,40 @@ value="markdown"/&gt;&lt;/page&gt;
 
 
 &lt;page&gt;&lt;nameUrl
+value="Bundle-cdc-c19-groups-20200404070053493066.html"/&gt;&lt;title
+value="Bundle Cdc C19 Groups 20200404070053493066 "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
 value="CapabilityStatement-client.html"/&gt;&lt;title
 value="Capabilitystatement Client "/&gt;&lt;generation
 
@@ -5399,6 +5631,40 @@ value="markdown"/&gt;&lt;/page&gt;
 &lt;page&gt;&lt;nameUrl
 value="Measure-cdc-covid.html"/&gt;&lt;title
 value="Measure Cdc Covid "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html"/&gt;&lt;title
+value="Measurereport Ca620d2a 7639 11ea Be32 A4d18ccf5172 "/&gt;&lt;generation
 
 
 
@@ -6234,7 +6500,7 @@ e.g.:
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Fri, Apr 3, 2020 12:19-0700">2020-04-03</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Sat, Apr 4, 2020 00:07-0700">2020-04-04</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
