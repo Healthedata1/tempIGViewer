@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Measure xmlns="http://hl7.org/fhir">
+  <id value="sanerFEMA"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: sanerFEMA</p><p><b>url</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/sanerFEMA">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/sanerFEMA</a></p><p><b>version</b>: 20200403.04</p><p><b>name</b>: sanerFEMA</p><p><b>title</b>: FEMA Measurement Group</p><p><b>status</b>: draft</p><p><b>subject</b>: Location <span style="background: LightGoldenRodYellow">(Details : {Location code 'Location' = 'Location)</span></p><p><b>date</b>: Apr 2, 2020, 5:00:00 PM</p><p><b>publisher</b>: SANER-IG</p><p><b>description</b>: FEMA Measurement Group</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>relatedArtifact</b>: </p><p><b>scoring</b>: Cohort <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-scoring code 'cohort' = 'Cohort', given as 'Cohort'})</span></p><p><b>type</b>: Structure <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/ValueSet/measure-type code 'structure' = 'structure', given as 'Structure'})</span></p><blockquote><p><b>group</b></p><p><b>code</b>: Midnight to midnight cutoff, tests ordered on previous date queried. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'newDiagnosticTests' = 'newDiagnosticTests)</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: All tests ordered to date. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'cumulativeDiagnosticTests' = 'cumulativeDiagnosticTests)</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Midnight to midnight cutoff, test results released on previous date queried. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'newTestsResulted' = 'newTestsResulted)</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: All specimens rejected for testing to date. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'cumulativeSpecimensRejected' = 'cumulativeSpecimensRejected)</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: All tests with results released to date. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'cumulativeTestsPerformed' = 'cumulativeTestsPerformed)</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Midnight to midnight cutoff, positive test results released on the previous date queried. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'newPositiveC19Tests' = 'newPositiveC19Tests)</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: All positivetest results released to date. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'cumulativePositiveC19Tests' = 'cumulativePositiveC19Tests)</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: # of new positive test results / # of total new tests released for previous date queried. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'percentPositiveAmongNewlyResultedTests' = 'percentPositiveAmongNewlyResultedTests)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: # of total positive results to released date / # of total test results released to date. <span style="background: LightGoldenRodYellow">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'cumulativePercentPositiveAmongResultedTests' = 'cumulativePercentPositiveAmongResultedTests)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})</span></p><p><b>criteria</b>: </p></blockquote></blockquote></div>
+  </text>
+  <url value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/sanerFEMA"/>
+  <version value="20200403.04"/>
+  <name value="sanerFEMA"/>
+  <title value="FEMA Measurement Group"/>
+  <status value="draft"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="Location"/>
+      <code value="Location"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2020-04-03T00:00:00Z"/>
+  <publisher value="SANER-IG"/>
+  <description value="FEMA Measurement Group"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="focus"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="840539006"/>
+        <display value="COVID-19"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <relatedArtifact>
+    <type value="documentation"/>
+    <label value="FEMA Template for Daily Hospital COVID-19 Reporting"/>
+    <display value="FEMA Template for Daily Hospital COVID-19 Reporting"/>
+    <url value="https://github.com/AudaciousInquiry/saner-ig/blob/master/resources/Template%20for%20Daily%20Hospital%20COVID-19%20Reporting.xlsx"/>
+  </relatedArtifact>
+  <scoring>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+      <code value="cohort"/>
+      <display value="Cohort"/>
+    </coding>
+  </scoring>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/measure-type"/>
+      <code value="structure"/>
+      <display value="Structure"/>
+    </coding>
+  </type>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="newDiagnosticTests"/>
+      </coding>
+      <text value="Midnight to midnight cutoff, tests ordered on previous date queried."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: newDiagnosticTests"/>
+        <language value="text/plain"/>
+        <expression value="Midnight to midnight cutoff, tests ordered on previous date queried."/>
+      </criteria>
+    </population>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="cumulativeDiagnosticTests"/>
+      </coding>
+      <text value="All tests ordered to date."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: cumulativeDiagnosticTests"/>
+        <language value="text/plain"/>
+        <expression value="All tests ordered to date."/>
+      </criteria>
+    </population>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="newTestsResulted"/>
+      </coding>
+      <text value="Midnight to midnight cutoff, test results released on previous date queried."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: newTestsResulted"/>
+        <language value="text/plain"/>
+        <expression value="Midnight to midnight cutoff, test results released on previous date queried."/>
+      </criteria>
+    </population>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="cumulativeSpecimensRejected"/>
+      </coding>
+      <text value="All specimens rejected for testing to date."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: cumulativeSpecimensRejected"/>
+        <language value="text/plain"/>
+        <expression value="All specimens rejected for testing to date."/>
+      </criteria>
+    </population>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="cumulativeTestsPerformed"/>
+      </coding>
+      <text value="All tests with results released to date."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: cumulativeTestsPerformed"/>
+        <language value="text/plain"/>
+        <expression value="All tests with results released to date."/>
+      </criteria>
+    </population>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="newPositiveC19Tests"/>
+      </coding>
+      <text value="Midnight to midnight cutoff, positive test results released on the previous date queried."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: newPositiveC19Tests"/>
+        <language value="text/plain"/>
+        <expression value="Midnight to midnight cutoff, positive test results released on the previous date queried."/>
+      </criteria>
+    </population>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="cumulativePositiveC19Tests"/>
+      </coding>
+      <text value="All positivetest results released to date."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: cumulativePositiveC19Tests"/>
+        <language value="text/plain"/>
+        <expression value="All positivetest results released to date."/>
+      </criteria>
+    </population>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="percentPositiveAmongNewlyResultedTests"/>
+      </coding>
+      <text value="# of new positive test results / # of total new tests released for previous date queried."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="numerator"/>
+          <display value="Numerator"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: percentPositiveAmongNewlyResultedTests"/>
+        <language value="text/plain"/>
+        <expression value="# of new positive test results"/>
+      </criteria>
+    </population>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="denominator"/>
+          <display value="Denominator"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: percentPositiveAmongNewlyResultedTests"/>
+        <language value="text/plain"/>
+        <expression value="# of total new tests released for previous date queried."/>
+      </criteria>
+    </population>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig"/>
+        <code value="cumulativePercentPositiveAmongResultedTests"/>
+      </coding>
+      <text value="# of total positive results to released date / # of total test results released to date."/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="numerator"/>
+          <display value="Numerator"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: cumulativePercentPositiveAmongResultedTests"/>
+        <language value="text/plain"/>
+        <expression value="# of total positive results to released date"/>
+      </criteria>
+    </population>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="denominator"/>
+          <display value="Denominator"/>
+        </coding>
+      </code>
+      <criteria>
+        <description value="FEMA defined field: cumulativePercentPositiveAmongResultedTests"/>
+        <language value="text/plain"/>
+        <expression value="# of total test results released to date."/>
+      </criteria>
+    </population>
+  </group>
+</Measure>

@@ -155,16 +155,48 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-sanerFEMA.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-sanerFEMA.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/sanerFEMA"/>
+      </reference>
+      <name value="FEMA Measurement Group"/>
+      <description value="FEMA Measurement Group"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MeasureReport"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html"/>
+        <valueUri value="MeasureReport-c19-groups-measurereport-max.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html"/>
+        <valueUri value="MeasureReport-c19-groups-measurereport-max.html"/>
       </extension>
       <reference>
-        <reference value="MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172"/>
+        <reference value="MeasureReport/c19-groups-measurereport-max"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-c19-groups-measurereport-min.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-c19-groups-measurereport-min.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/c19-groups-measurereport-min"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -173,13 +205,28 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-cdc-c19-groups-20200404070053493066.html"/>
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-max.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-cdc-c19-groups-20200404070053493066.html"/>
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-max.html"/>
       </extension>
       <reference>
-        <reference value="Bundle/cdc-c19-groups-20200404070053493066"/>
+        <reference value="Bundle/cdc-c19-groups-measurereports-max"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-min.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-min.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cdc-c19-groups-measurereports-min"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
