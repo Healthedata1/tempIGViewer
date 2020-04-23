@@ -3,32 +3,55 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="cdc-c19-groups-measurereports-max"/>
   <type value="transaction"/>
-  <timestamp value="2020-04-06T01:57:05.487485Z"/>
+  <timestamp value="2020-04-12T04:28:36.103826Z"/>
   <entry>
-    <fullUrl value="urn:uuid:eaa550f8-77a9-11ea-9979-a4d18ccf5172"/>
+    <fullUrl value="urn:uuid:1501bec4-7c76-11ea-bcad-a4d18ccf5172"/>
     <resource>
       <MeasureReport>
-        <id value="eaa550f8-77a9-11ea-9979-a4d18ccf5172"/>
+        <id value="1501bec4-7c76-11ea-bcad-a4d18ccf5172"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eaa550f8-77a9-11ea-9979-a4d18ccf5172</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 6:57:05 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Mar 30, 2020, 12:00:00 AM --&gt; Mar 30, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>3</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>70</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>10</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>3</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1501bec4-7c76-11ea-bcad-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:28:36 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Mar 30, 2020, 12:00:00 AM --&gt; Mar 30, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>3</td></tr></table><p><b>measureScore</b>: 3</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table><p><b>measureScore</b>: 125</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>70</td></tr></table><p><b>measureScore</b>: 70</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>10</td></tr></table><p><b>measureScore</b>: 10</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>3</td></tr></table><p><b>measureScore</b>: 3</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: surgicalMasks <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table><p><b>measureScore</b>: </p></blockquote><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
         </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
         <status value="complete"/>
         <type value="individual"/>
         <measure value="http://cdcmeasures.example.org/cdc-covid"/>
         <subject>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </subject>
-        <date value="2020-04-06T01:57:05.487485Z"/>
+        <date value="2020-04-12T04:28:36.103826Z"/>
         <reporter>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </reporter>
         <period>
           <start value="2020-03-30"/>
@@ -47,6 +70,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -61,6 +87,9 @@
             </code>
             <count value="3"/>
           </population>
+          <measureScore>
+            <value value="3"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -75,6 +104,9 @@
             </code>
             <count value="125"/>
           </population>
+          <measureScore>
+            <value value="125"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -89,6 +121,9 @@
             </code>
             <count value="100"/>
           </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -103,6 +138,9 @@
             </code>
             <count value="70"/>
           </population>
+          <measureScore>
+            <value value="70"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -117,6 +155,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -131,6 +172,9 @@
             </code>
             <count value="10"/>
           </population>
+          <measureScore>
+            <value value="10"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -145,6 +189,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -159,6 +206,9 @@
             </code>
             <count value="3"/>
           </population>
+          <measureScore>
+            <value value="3"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -173,6 +223,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -187,6 +240,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -201,6 +257,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -215,6 +274,29 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+          <measureScore>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType">
+              <valueCodeableConcept>
+                <text value="4-14 days"/>
+              </valueCodeableConcept>
+            </extension>
+          </measureScore>
         </group>
       </MeasureReport>
     </resource>
@@ -224,30 +306,53 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:eae7fc78-77a9-11ea-9979-a4d18ccf5172"/>
+    <fullUrl value="urn:uuid:1534e97a-7c76-11ea-bcad-a4d18ccf5172"/>
     <resource>
       <MeasureReport>
-        <id value="eae7fc78-77a9-11ea-9979-a4d18ccf5172"/>
+        <id value="1534e97a-7c76-11ea-bcad-a4d18ccf5172"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eae7fc78-77a9-11ea-9979-a4d18ccf5172</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 6:57:05 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Mar 31, 2020, 12:00:00 AM --&gt; Mar 31, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>3</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>72</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>11</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>21</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>3</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1534e97a-7c76-11ea-bcad-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:28:36 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Mar 31, 2020, 12:00:00 AM --&gt; Mar 31, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>3</td></tr></table><p><b>measureScore</b>: 3</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table><p><b>measureScore</b>: 125</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>72</td></tr></table><p><b>measureScore</b>: 72</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>11</td></tr></table><p><b>measureScore</b>: 11</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>21</td></tr></table><p><b>measureScore</b>: 21</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>3</td></tr></table><p><b>measureScore</b>: 3</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: surgicalMasks <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table><p><b>measureScore</b>: </p></blockquote><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
         </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
         <status value="complete"/>
         <type value="individual"/>
         <measure value="http://cdcmeasures.example.org/cdc-covid"/>
         <subject>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </subject>
-        <date value="2020-04-06T01:57:05.487485Z"/>
+        <date value="2020-04-12T04:28:36.103826Z"/>
         <reporter>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </reporter>
         <period>
           <start value="2020-03-31"/>
@@ -266,6 +371,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -280,6 +388,9 @@
             </code>
             <count value="3"/>
           </population>
+          <measureScore>
+            <value value="3"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -294,6 +405,9 @@
             </code>
             <count value="125"/>
           </population>
+          <measureScore>
+            <value value="125"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -308,6 +422,9 @@
             </code>
             <count value="100"/>
           </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -322,6 +439,9 @@
             </code>
             <count value="72"/>
           </population>
+          <measureScore>
+            <value value="72"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -336,6 +456,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -350,6 +473,9 @@
             </code>
             <count value="11"/>
           </population>
+          <measureScore>
+            <value value="11"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -364,6 +490,9 @@
             </code>
             <count value="21"/>
           </population>
+          <measureScore>
+            <value value="21"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -378,6 +507,9 @@
             </code>
             <count value="3"/>
           </population>
+          <measureScore>
+            <value value="3"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -392,6 +524,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -406,6 +541,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -420,6 +558,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -434,6 +575,29 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+          <measureScore>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType">
+              <valueCodeableConcept>
+                <text value="4-14 days"/>
+              </valueCodeableConcept>
+            </extension>
+          </measureScore>
         </group>
       </MeasureReport>
     </resource>
@@ -443,30 +607,53 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:eb1a55ce-77a9-11ea-9979-a4d18ccf5172"/>
+    <fullUrl value="urn:uuid:15693bc6-7c76-11ea-bcad-a4d18ccf5172"/>
     <resource>
       <MeasureReport>
-        <id value="eb1a55ce-77a9-11ea-9979-a4d18ccf5172"/>
+        <id value="15693bc6-7c76-11ea-bcad-a4d18ccf5172"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eb1a55ce-77a9-11ea-9979-a4d18ccf5172</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 6:57:05 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 1, 2020, 12:00:00 AM --&gt; Apr 1, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>5</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>74</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>12</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>22</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>5</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 15693bc6-7c76-11ea-bcad-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:28:36 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Apr 1, 2020, 12:00:00 AM --&gt; Apr 1, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>5</td></tr></table><p><b>measureScore</b>: 5</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table><p><b>measureScore</b>: 125</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>74</td></tr></table><p><b>measureScore</b>: 74</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>12</td></tr></table><p><b>measureScore</b>: 12</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>22</td></tr></table><p><b>measureScore</b>: 22</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>5</td></tr></table><p><b>measureScore</b>: 5</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: surgicalMasks <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table><p><b>measureScore</b>: </p></blockquote><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
         </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
         <status value="complete"/>
         <type value="individual"/>
         <measure value="http://cdcmeasures.example.org/cdc-covid"/>
         <subject>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </subject>
-        <date value="2020-04-06T01:57:05.487485Z"/>
+        <date value="2020-04-12T04:28:36.103826Z"/>
         <reporter>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </reporter>
         <period>
           <start value="2020-04-01"/>
@@ -485,6 +672,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -499,6 +689,9 @@
             </code>
             <count value="5"/>
           </population>
+          <measureScore>
+            <value value="5"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -513,6 +706,9 @@
             </code>
             <count value="125"/>
           </population>
+          <measureScore>
+            <value value="125"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -527,6 +723,9 @@
             </code>
             <count value="100"/>
           </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -541,6 +740,9 @@
             </code>
             <count value="74"/>
           </population>
+          <measureScore>
+            <value value="74"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -555,6 +757,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -569,6 +774,9 @@
             </code>
             <count value="12"/>
           </population>
+          <measureScore>
+            <value value="12"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -583,6 +791,9 @@
             </code>
             <count value="22"/>
           </population>
+          <measureScore>
+            <value value="22"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -597,6 +808,9 @@
             </code>
             <count value="5"/>
           </population>
+          <measureScore>
+            <value value="5"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -611,6 +825,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -625,6 +842,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -639,6 +859,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -653,6 +876,29 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+          <measureScore>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType">
+              <valueCodeableConcept>
+                <text value="4-14 days"/>
+              </valueCodeableConcept>
+            </extension>
+          </measureScore>
         </group>
       </MeasureReport>
     </resource>
@@ -662,30 +908,53 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:eb48aa6e-77a9-11ea-9979-a4d18ccf5172"/>
+    <fullUrl value="urn:uuid:1598ebdc-7c76-11ea-bcad-a4d18ccf5172"/>
     <resource>
       <MeasureReport>
-        <id value="eb48aa6e-77a9-11ea-9979-a4d18ccf5172"/>
+        <id value="1598ebdc-7c76-11ea-bcad-a4d18ccf5172"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eb48aa6e-77a9-11ea-9979-a4d18ccf5172</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 6:57:05 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 2, 2020, 12:00:00 AM --&gt; Apr 2, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>5</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>76</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>13</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>23</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>5</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1598ebdc-7c76-11ea-bcad-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:28:36 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Apr 2, 2020, 12:00:00 AM --&gt; Apr 2, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>5</td></tr></table><p><b>measureScore</b>: 5</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table><p><b>measureScore</b>: 125</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>76</td></tr></table><p><b>measureScore</b>: 76</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>13</td></tr></table><p><b>measureScore</b>: 13</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>23</td></tr></table><p><b>measureScore</b>: 23</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>5</td></tr></table><p><b>measureScore</b>: 5</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: surgicalMasks <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table><p><b>measureScore</b>: </p></blockquote><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
         </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
         <status value="complete"/>
         <type value="individual"/>
         <measure value="http://cdcmeasures.example.org/cdc-covid"/>
         <subject>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </subject>
-        <date value="2020-04-06T01:57:05.487485Z"/>
+        <date value="2020-04-12T04:28:36.103826Z"/>
         <reporter>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </reporter>
         <period>
           <start value="2020-04-02"/>
@@ -704,6 +973,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -718,6 +990,9 @@
             </code>
             <count value="5"/>
           </population>
+          <measureScore>
+            <value value="5"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -732,6 +1007,9 @@
             </code>
             <count value="125"/>
           </population>
+          <measureScore>
+            <value value="125"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -746,6 +1024,9 @@
             </code>
             <count value="100"/>
           </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -760,6 +1041,9 @@
             </code>
             <count value="76"/>
           </population>
+          <measureScore>
+            <value value="76"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -774,6 +1058,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -788,6 +1075,9 @@
             </code>
             <count value="13"/>
           </population>
+          <measureScore>
+            <value value="13"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -802,6 +1092,9 @@
             </code>
             <count value="23"/>
           </population>
+          <measureScore>
+            <value value="23"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -816,6 +1109,9 @@
             </code>
             <count value="5"/>
           </population>
+          <measureScore>
+            <value value="5"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -830,6 +1126,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -844,6 +1143,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -858,6 +1160,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -872,6 +1177,29 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+          <measureScore>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType">
+              <valueCodeableConcept>
+                <text value="1-3 days"/>
+              </valueCodeableConcept>
+            </extension>
+          </measureScore>
         </group>
       </MeasureReport>
     </resource>
@@ -881,30 +1209,53 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:eb742a2c-77a9-11ea-9979-a4d18ccf5172"/>
+    <fullUrl value="urn:uuid:15c9cf18-7c76-11ea-bcad-a4d18ccf5172"/>
     <resource>
       <MeasureReport>
-        <id value="eb742a2c-77a9-11ea-9979-a4d18ccf5172"/>
+        <id value="15c9cf18-7c76-11ea-bcad-a4d18ccf5172"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eb742a2c-77a9-11ea-9979-a4d18ccf5172</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 6:57:05 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 3, 2020, 12:00:00 AM --&gt; Apr 3, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>7</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>78</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>14</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>24</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>7</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1</td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 15c9cf18-7c76-11ea-bcad-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:28:36 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Apr 3, 2020, 12:00:00 AM --&gt; Apr 3, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>7</td></tr></table><p><b>measureScore</b>: 7</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table><p><b>measureScore</b>: 125</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>78</td></tr></table><p><b>measureScore</b>: 78</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>14</td></tr></table><p><b>measureScore</b>: 14</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>24</td></tr></table><p><b>measureScore</b>: 24</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>7</td></tr></table><p><b>measureScore</b>: 7</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1</td></tr></table><p><b>measureScore</b>: 1</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: surgicalMasks <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table><p><b>measureScore</b>: </p></blockquote><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
         </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
         <status value="complete"/>
         <type value="individual"/>
         <measure value="http://cdcmeasures.example.org/cdc-covid"/>
         <subject>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </subject>
-        <date value="2020-04-06T01:57:05.487485Z"/>
+        <date value="2020-04-12T04:28:36.103826Z"/>
         <reporter>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </reporter>
         <period>
           <start value="2020-04-03"/>
@@ -923,6 +1274,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -937,6 +1291,9 @@
             </code>
             <count value="7"/>
           </population>
+          <measureScore>
+            <value value="7"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -951,6 +1308,9 @@
             </code>
             <count value="125"/>
           </population>
+          <measureScore>
+            <value value="125"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -965,6 +1325,9 @@
             </code>
             <count value="100"/>
           </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -979,6 +1342,9 @@
             </code>
             <count value="78"/>
           </population>
+          <measureScore>
+            <value value="78"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -993,6 +1359,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1007,6 +1376,9 @@
             </code>
             <count value="14"/>
           </population>
+          <measureScore>
+            <value value="14"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1021,6 +1393,9 @@
             </code>
             <count value="24"/>
           </population>
+          <measureScore>
+            <value value="24"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1035,6 +1410,9 @@
             </code>
             <count value="7"/>
           </population>
+          <measureScore>
+            <value value="7"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1049,6 +1427,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1063,6 +1444,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1077,6 +1461,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1091,6 +1478,29 @@
             </code>
             <count value="1"/>
           </population>
+          <measureScore>
+            <value value="1"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+          <measureScore>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType">
+              <valueCodeableConcept>
+                <text value="1-3 days"/>
+              </valueCodeableConcept>
+            </extension>
+          </measureScore>
         </group>
       </MeasureReport>
     </resource>
@@ -1100,30 +1510,53 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:eb9c8260-77a9-11ea-9979-a4d18ccf5172"/>
+    <fullUrl value="urn:uuid:15fa70f0-7c76-11ea-bcad-a4d18ccf5172"/>
     <resource>
       <MeasureReport>
-        <id value="eb9c8260-77a9-11ea-9979-a4d18ccf5172"/>
+        <id value="15fa70f0-7c76-11ea-bcad-a4d18ccf5172"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eb9c8260-77a9-11ea-9979-a4d18ccf5172</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 6:57:05 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>7</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>80</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>15</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>25</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>7</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 15fa70f0-7c76-11ea-bcad-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:28:36 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>7</td></tr></table><p><b>measureScore</b>: 7</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table><p><b>measureScore</b>: 125</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>80</td></tr></table><p><b>measureScore</b>: 80</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>15</td></tr></table><p><b>measureScore</b>: 15</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>25</td></tr></table><p><b>measureScore</b>: 25</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>7</td></tr></table><p><b>measureScore</b>: 7</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: surgicalMasks <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table><p><b>measureScore</b>: </p></blockquote><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
         </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
         <status value="complete"/>
         <type value="individual"/>
         <measure value="http://cdcmeasures.example.org/cdc-covid"/>
         <subject>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </subject>
-        <date value="2020-04-06T01:57:05.487485Z"/>
+        <date value="2020-04-12T04:28:36.103826Z"/>
         <reporter>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </reporter>
         <period>
           <start value="2020-04-04"/>
@@ -1142,6 +1575,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1156,6 +1592,9 @@
             </code>
             <count value="7"/>
           </population>
+          <measureScore>
+            <value value="7"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1170,6 +1609,9 @@
             </code>
             <count value="125"/>
           </population>
+          <measureScore>
+            <value value="125"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1184,6 +1626,9 @@
             </code>
             <count value="100"/>
           </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1198,6 +1643,9 @@
             </code>
             <count value="80"/>
           </population>
+          <measureScore>
+            <value value="80"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1212,6 +1660,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1226,6 +1677,9 @@
             </code>
             <count value="15"/>
           </population>
+          <measureScore>
+            <value value="15"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1240,6 +1694,9 @@
             </code>
             <count value="25"/>
           </population>
+          <measureScore>
+            <value value="25"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1254,6 +1711,9 @@
             </code>
             <count value="7"/>
           </population>
+          <measureScore>
+            <value value="7"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1268,6 +1728,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1282,6 +1745,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1296,6 +1762,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1310,6 +1779,29 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+          <measureScore>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType">
+              <valueCodeableConcept>
+                <text value="1-3 days"/>
+              </valueCodeableConcept>
+            </extension>
+          </measureScore>
         </group>
       </MeasureReport>
     </resource>
@@ -1319,30 +1811,53 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:ebc5157c-77a9-11ea-9979-a4d18ccf5172"/>
+    <fullUrl value="urn:uuid:162f8010-7c76-11ea-bcad-a4d18ccf5172"/>
     <resource>
       <MeasureReport>
-        <id value="ebc5157c-77a9-11ea-9979-a4d18ccf5172"/>
+        <id value="162f8010-7c76-11ea-bcad-a4d18ccf5172"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ebc5157c-77a9-11ea-9979-a4d18ccf5172</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 6:57:05 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 5, 2020, 12:00:00 AM --&gt; Apr 5, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>9</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>82</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>16</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>26</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>9</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 162f8010-7c76-11ea-bcad-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:28:36 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Apr 5, 2020, 12:00:00 AM --&gt; Apr 5, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>9</td></tr></table><p><b>measureScore</b>: 9</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table><p><b>measureScore</b>: 125</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>82</td></tr></table><p><b>measureScore</b>: 82</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>16</td></tr></table><p><b>measureScore</b>: 16</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>26</td></tr></table><p><b>measureScore</b>: 26</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>9</td></tr></table><p><b>measureScore</b>: 9</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: surgicalMasks <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table><p><b>measureScore</b>: </p></blockquote><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
         </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
         <status value="complete"/>
         <type value="individual"/>
         <measure value="http://cdcmeasures.example.org/cdc-covid"/>
         <subject>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </subject>
-        <date value="2020-04-06T01:57:05.487485Z"/>
+        <date value="2020-04-12T04:28:36.103826Z"/>
         <reporter>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </reporter>
         <period>
           <start value="2020-04-05"/>
@@ -1361,6 +1876,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1375,6 +1893,9 @@
             </code>
             <count value="9"/>
           </population>
+          <measureScore>
+            <value value="9"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1389,6 +1910,9 @@
             </code>
             <count value="125"/>
           </population>
+          <measureScore>
+            <value value="125"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1403,6 +1927,9 @@
             </code>
             <count value="100"/>
           </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1417,6 +1944,9 @@
             </code>
             <count value="82"/>
           </population>
+          <measureScore>
+            <value value="82"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1431,6 +1961,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1445,6 +1978,9 @@
             </code>
             <count value="16"/>
           </population>
+          <measureScore>
+            <value value="16"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1459,6 +1995,9 @@
             </code>
             <count value="26"/>
           </population>
+          <measureScore>
+            <value value="26"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1473,6 +2012,9 @@
             </code>
             <count value="9"/>
           </population>
+          <measureScore>
+            <value value="9"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1487,6 +2029,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1501,6 +2046,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1515,6 +2063,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1529,6 +2080,29 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+          <measureScore>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType">
+              <valueCodeableConcept>
+                <text value="1-3 days"/>
+              </valueCodeableConcept>
+            </extension>
+          </measureScore>
         </group>
       </MeasureReport>
     </resource>
@@ -1538,30 +2112,53 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:ebf1f88a-77a9-11ea-9979-a4d18ccf5172"/>
+    <fullUrl value="urn:uuid:16624c70-7c76-11ea-bcad-a4d18ccf5172"/>
     <resource>
       <MeasureReport>
-        <id value="ebf1f88a-77a9-11ea-9979-a4d18ccf5172"/>
+        <id value="16624c70-7c76-11ea-bcad-a4d18ccf5172"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ebf1f88a-77a9-11ea-9979-a4d18ccf5172</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 6:57:05 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 6, 2020, 12:00:00 AM --&gt; Apr 6, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>9</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>84</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>17</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>27</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>9</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1</td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 16624c70-7c76-11ea-bcad-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://cdcmeasures.example.org/cdc-covid">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:28:36 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Apr 6, 2020, 12:00:00 AM --&gt; Apr 6, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>9</td></tr></table><p><b>measureScore</b>: 9</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>125</td></tr></table><p><b>measureScore</b>: 125</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>84</td></tr></table><p><b>measureScore</b>: 84</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>20</td></tr></table><p><b>measureScore</b>: 20</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>17</td></tr></table><p><b>measureScore</b>: 17</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>27</td></tr></table><p><b>measureScore</b>: 27</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>9</td></tr></table><p><b>measureScore</b>: 9</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>0</td></tr></table><p><b>measureScore</b>: 0</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1</td></tr></table><p><b>measureScore</b>: 1</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: surgicalMasks <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table><p><b>measureScore</b>: </p></blockquote><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
         </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
         <status value="complete"/>
         <type value="individual"/>
         <measure value="http://cdcmeasures.example.org/cdc-covid"/>
         <subject>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </subject>
-        <date value="2020-04-06T01:57:05.487485Z"/>
+        <date value="2020-04-12T04:28:36.103826Z"/>
         <reporter>
-          <identifier>
-            <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <value value="2.16.840.1.113883.6.277.123"/>
-          </identifier>
-          <display value="Acme General Hospital"/>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
         </reporter>
         <period>
           <start value="2020-04-06"/>
@@ -1580,6 +2177,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1594,6 +2194,9 @@
             </code>
             <count value="9"/>
           </population>
+          <measureScore>
+            <value value="9"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1608,6 +2211,9 @@
             </code>
             <count value="125"/>
           </population>
+          <measureScore>
+            <value value="125"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1622,6 +2228,9 @@
             </code>
             <count value="100"/>
           </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1636,6 +2245,9 @@
             </code>
             <count value="84"/>
           </population>
+          <measureScore>
+            <value value="84"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1650,6 +2262,9 @@
             </code>
             <count value="20"/>
           </population>
+          <measureScore>
+            <value value="20"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1664,6 +2279,9 @@
             </code>
             <count value="17"/>
           </population>
+          <measureScore>
+            <value value="17"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1678,6 +2296,9 @@
             </code>
             <count value="27"/>
           </population>
+          <measureScore>
+            <value value="27"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1692,6 +2313,9 @@
             </code>
             <count value="9"/>
           </population>
+          <measureScore>
+            <value value="9"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1706,6 +2330,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1720,6 +2347,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1734,6 +2364,9 @@
             </code>
             <count value="0"/>
           </population>
+          <measureScore>
+            <value value="0"/>
+          </measureScore>
         </group>
         <group>
           <code>
@@ -1748,6 +2381,29 @@
             </code>
             <count value="1"/>
           </population>
+          <measureScore>
+            <value value="1"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+          <measureScore>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType">
+              <valueCodeableConcept>
+                <text value="1-3 days"/>
+              </valueCodeableConcept>
+            </extension>
+          </measureScore>
         </group>
       </MeasureReport>
     </resource>

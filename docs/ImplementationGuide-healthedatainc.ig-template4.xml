@@ -47,7 +47,7 @@
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-qa"/>
+        <valueString value="pat9h-qa"/>
       </extension>
       <extension url="value">
         <valueString value="generated_output/qa"/>
@@ -453,6 +453,32 @@
       <name value="Template Profile on Profile"/>
       <description value="Template-Profile-on-Profile"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-devdef.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/devdef"/>
+      </reference>
+      <name value="DeviceDefinition Reference Extension"/>
+      <description value="A reference to the [DeviceDefinition](http://build.fhir.org/devicedefinition.html) resource."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-test.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/test"/>
+      </reference>
+      <name value="Test Supply Request"/>
+      <description value="A profile to test implementation of R5 elements."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

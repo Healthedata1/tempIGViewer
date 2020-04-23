@@ -75,7 +75,7 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-qa" ]
+         fhir:Extension.valueString [ fhir:value "pat9h-qa" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
@@ -622,6 +622,40 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-devdef.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.fhir.org/guides/test4/StructureDefinition/devdef>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/devdef" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DeviceDefinition Reference Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A reference to the [DeviceDefinition](http://build.fhir.org/devicedefinition.html) resource." ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-test.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.fhir.org/guides/test4/StructureDefinition/test>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/test" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Test Supply Request" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile to test implementation of R5 elements." ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ], [
          fhir:index 1;
@@ -640,7 +674,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A bunch of example codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -662,7 +696,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is a simple example Template" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -683,7 +717,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A bunch of example codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

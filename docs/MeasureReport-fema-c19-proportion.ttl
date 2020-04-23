@@ -10,17 +10,28 @@
   fhir:Resource.id [ fhir:value "fema-c19-proportion"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: fema-c19-proportion</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 8</p></blockquote><p><b>measureScore</b>: 0.1 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 800</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 800</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 80</p></blockquote><p><b>measureScore</b>: 0.1 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: fema-c19-proportion</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 10:04:34 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 8</p></blockquote><p><b>measureScore</b>: 0.1 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 800</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 800</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 80</p></blockquote><p><b>measureScore</b>: 0.1 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p></blockquote></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:Location;
      fhir:index 0;
      fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
      fhir:Location.address [
        fhir:Address.type [ fhir:value "physical" ];
-       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
        fhir:Address.district [ fhir:value "Marin" ];
-       fhir:Address.state [ fhir:value "CA" ]
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
      ];
      fhir:Location.physicalType [
        fhir:CodeableConcept.coding [
@@ -40,15 +51,12 @@
   ];
   fhir:MeasureReport.subject [
      fhir:Reference.reference [ fhir:value "#loc" ];
-     fhir:Reference.display [ fhir:value "Marin, CA" ]
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
   ];
-  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:54:17.258551Z"^^xsd:dateTime];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T05:04:34.367019Z"^^xsd:dateTime];
   fhir:MeasureReport.reporter [
-     fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
-       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
-     ];
-     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
   ];
   fhir:MeasureReport.period [
      fhir:Period.start [ fhir:value "2020-04-04"^^xsd:date ];

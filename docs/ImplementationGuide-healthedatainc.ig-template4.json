@@ -66,7 +66,7 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "path-qa"
+            "valueString": "pat9h-qa"
           },
           {
             "url": "value",
@@ -615,6 +615,40 @@
         "name": "Template Profile on Profile",
         "description": "Template-Profile-on-Profile",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-devdef.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/devdef"
+        },
+        "name": "DeviceDefinition Reference Extension",
+        "description": "A reference to the [DeviceDefinition](http://build.fhir.org/devicedefinition.html) resource."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-test.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/test"
+        },
+        "name": "Test Supply Request",
+        "description": "A profile to test implementation of R5 elements."
       },
       {
         "extension": [
