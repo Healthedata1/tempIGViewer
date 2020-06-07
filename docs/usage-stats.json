@@ -4,28 +4,14 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://example.org/fhir/fish/StructureDefinition/devdef",
-      "title": "DeviceDefinition Reference Extension",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://www.fhir.org/guides/test4/StructureDefinition/extension-blah",
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
       "title": "Simple Extension",
       "types": [
         "code"
       ]
     },
     {
-      "url": "http://www.fhir.org/guides/test4/StructureDefinition/extension-blah2",
-      "title": "Simple Extension",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "http://www.fhir.org/guides/test4/StructureDefinition/extension-complex",
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
       "title": "Complex Extension",
       "types": [
         "base64Binary",
@@ -184,29 +170,20 @@
     }
   ],
   "profiles": {
-    "SupplyRequest": [
-      {
-        "url": "http://example.org/fhir/fish/StructureDefinition/test",
-        "title": "Test Supply Request"
-      }
-    ],
     "Basic": [
       {
-        "url": "http://www.fhir.org/guides/test4/StructureDefinition/template-basic",
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
         "title": "Health eData Template Profile"
       }
     ],
     "Patient": [
       {
-        "url": "http://www.fhir.org/guides/test4/StructureDefinition/template-profile-on-profile",
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
         "title": "Template Profile on Profile"
       }
     ]
   },
   "usage": {
-    "http://example.org/fhir/fish/StructureDefinition/devdef": [
-      "SupplyRequest.item[x]"
-    ],
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
       "CapabilityStatement.rest.resource.interaction"
     ],
@@ -231,12 +208,6 @@
     "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
       "Patient.contact.name.family"
     ],
-    "http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet": [
-      "ImplementationGuide"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/implementationguide-page": [
-      "ImplementationGuide.definition.resource"
-    ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
       "Patient.birthDate"
     ],
@@ -248,6 +219,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
@@ -261,14 +235,10 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType": [
-      "Bundle.entry.resource.group.measureScore",
-      "MeasureReport.group.measureScore"
-    ],
-    "http://www.fhir.org/guides/test4/StructureDefinition/extension-blah": [
+    "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah": [
       "Basic"
     ],
-    "http://www.fhir.org/guides/test4/StructureDefinition/extension-complex": [
+    "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex": [
       "Basic"
     ]
   }

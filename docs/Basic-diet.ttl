@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/test4/Basic/diet> a fhir:Basic;
+<http://www.fhir.org/guides/test3/Basic/diet> a fhir:Basic;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "diet"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://www.fhir.org/guides/test4/StructureDefinition/template-basic";
+       fhir:value "http://www.fhir.org/guides/test3/StructureDefinition/template-basic";
        fhir:index 0;
-       fhir:link <http://www.fhir.org/guides/test4/StructureDefinition/template-basic>
+       fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-basic>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: diet</p><p><b>meta</b>: </p><p><b>identifier</b>: 746</p><p><b>code</b>: Diet <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/basic-resource-type code 'diet' = 'Diet)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: id: example; Medical Record Number = 1032702 (USUAL); active; Amy V. Shaw ; ph: 555-555-5555(HOME), amy.shaw@example.com; gender: female; birthDate: 2007-02-20</a></p><p><b>created</b>: 2019-05-14</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: diet</p><p><b>meta</b>: </p><p><b>identifier</b>: 746</p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/basic-resource-type diet}\">Diet</span></p><p><b>subject</b>: <a href=\"Patient-example1.html\">Generated Summary: id: example1; Medical Record Number = 1032702 (USUAL); active; Amy V. Shaw ; ph: 555-555-5555(HOME), amy.shaw@example.com; gender: female; birthDate: 2007-02-20</a></p><p><b>created</b>: 2019-05-14</p></div>"
   ];
   fhir:Basic.identifier [
      fhir:index 0;
@@ -32,14 +32,14 @@
      ]
   ];
   fhir:Basic.subject [
-     fhir:link <http://www.fhir.org/guides/test4/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <http://www.fhir.org/guides/test3/Patient/example1>;
+     fhir:Reference.reference [ fhir:value "Patient/example1" ]
   ];
   fhir:Basic.created [ fhir:value "2019-05-14"^^xsd:date] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/test4/Basic/diet.ttl> a owl:Ontology;
+<http://www.fhir.org/guides/test3/Basic/diet.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

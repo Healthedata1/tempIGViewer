@@ -7,12 +7,13 @@
       "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"
     },
+    "version": "0.0.0",
     "contact": {
       "name": "Health eData Inc"
     }
   },
   "externalDocs": {
-    "url": "http://www.fhir.org/guides/test4/CapabilityStatement/client",
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/client",
     "description": "FHIR CapabilityStatement"
   },
   "components": {
