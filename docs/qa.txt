@@ -3,7 +3,7 @@
 
 err = 11, warn = 14, info = 3
 IG Publisher Version: v1.0.99-SNAPSHOT Out of date - current version is v1.0.100-SNAPSHOT
-Generated Sun Jun 07 17:56:31 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+Generated Sun Jun 07 18:03:26 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
  Build Errors : 7 / 6
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet : 1 / 0
@@ -36,7 +36,7 @@ WARNING: Unable to find description for the resource StructureDefinition/ifr.  D
 ERROR: Unable to find name for the resource CodeSystem/blah-codes.  Names are mandatory to allow proper population of the artifact list.
 ERROR: Unable to find name for the resource ValueSet/blah-codes.  Names are mandatory to allow proper population of the artifact list.
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/output/Patient-example2.html#/html/body/div/div/div/div/div/div/p/a at Line 205, column 1094: The link 'Organization/1' for "Organization/1" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 193, column 7496: The link 'OperationDefinition-opdef-test.html' for "4.1 OperationDefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 190, column 7496: The link 'OperationDefinition-opdef-test.html' for "4.1 OperationDefinition Opdef Test" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet.xml ==
 ERROR: Basic/diet: Basic: temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1.xml ==
