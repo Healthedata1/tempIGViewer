@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/test3/ImplementationGuide/hl7.fhir.us.healthedatainc.ig-template4-0.0.0> a fhir:ImplementationGuide;
+<http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "hl7.fhir.us.healthedatainc.ig-template4-0.0.0"];
+  fhir:Resource.id [ fhir:value "healthedatainc.ig-template4"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest4</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/hl7.fhir.us.healthedatainc.ig-template4-0.0.0</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest4</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://www.fhir.org/guides/test3/ImplementationGuide/hl7.fhir.us.healthedatainc.ig-template4-0.0.0"];
+  fhir:ImplementationGuide.url [ fhir:value "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4"];
   fhir:ImplementationGuide.version [ fhir:value "0.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "IGTest4"];
   fhir:ImplementationGuide.title [ fhir:value "IG Test4"];
@@ -45,8 +45,8 @@
      fhir:index 0;
      fhir:Element.id [ fhir:value "uscore" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/us/core";
-       fhir:link <http://hl7.org/fhir/us/core>
+       fhir:value "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core";
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
@@ -54,8 +54,8 @@
      fhir:index 1;
      fhir:Element.id [ fhir:value "qicore" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/us/qicore";
-       fhir:link <http://hl7.org/fhir/us/qicore>
+       fhir:value "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore";
+       fhir:link <http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.qicore" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
@@ -154,7 +154,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "output" ]
+         fhir:Extension.valueString [ fhir:value "docs" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -274,7 +274,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -298,7 +298,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -310,7 +310,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -322,7 +322,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "flase" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -342,27 +342,15 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-qa" ]
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
        fhir:index 24;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-temp" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "temp/pages" ]
-       ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -371,6 +359,18 @@
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
          fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://www.fhir.org/guides/test3/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -451,11 +451,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Basic-diet.html" ]
+         fhir:Extension.valueUri [ fhir:value "Basic-diet-example1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/Basic/diet>;
-         fhir:Reference.reference [ fhir:value "Basic/diet" ]
+         fhir:link <http://www.fhir.org/guides/test3/Basic/diet-example1>;
+         fhir:Reference.reference [ fhir:value "Basic/diet-example1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Basic Example" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "an example of a of Basic Profile." ];
@@ -547,6 +547,7 @@
          fhir:link <http://www.fhir.org/guides/test3/OperationDefinition/example>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/example" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Populate Questionnaire" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Limited implementation of the Populate Questionnaire implementation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -564,6 +565,8 @@
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/ifr>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ifr" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifer Free Reference Data Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifer Free Reference Data Type" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -616,6 +619,7 @@
          fhir:link <http://www.fhir.org/guides/test3/CodeSystem/blah-codes>;
          fhir:Reference.reference [ fhir:value "CodeSystem/blah-codes" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BlahCodes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A bunch of example codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -705,6 +709,7 @@
          fhir:link <http://www.fhir.org/guides/test3/ValueSet/blah-codes>;
          fhir:Reference.reference [ fhir:value "ValueSet/blah-codes" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BlahCodes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A bunch of example codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
@@ -869,18 +874,14 @@
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/pagecontent" ]
      ], [
        fhir:index 11;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
-     ], [
-       fhir:index 12;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/pagecontent/images" ]
-     ], [
-       fhir:index 13;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ], [
-       fhir:index 14;
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
      ]
@@ -888,7 +889,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/test3/ImplementationGuide/hl7.fhir.us.healthedatainc.ig-template4-0.0.0.ttl> a owl:Ontology;
+<http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

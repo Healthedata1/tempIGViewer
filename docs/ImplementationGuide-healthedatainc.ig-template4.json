@@ -1,11 +1,11 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.us.healthedatainc.ig-template4-0.0.0",
+  "id": "healthedatainc.ig-template4",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest4</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/hl7.fhir.us.healthedatainc.ig-template4-0.0.0</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest4</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/hl7.fhir.us.healthedatainc.ig-template4-0.0.0",
+  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4",
   "version": "0.0.0",
   "name": "IGTest4",
   "title": "IG Test4",
@@ -39,13 +39,13 @@
   "dependsOn": [
     {
       "id": "uscore",
-      "uri": "http://hl7.org/fhir/us/core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
       "version": "3.1.0"
     },
     {
       "id": "qicore",
-      "uri": "http://hl7.org/fhir/us/qicore",
+      "uri": "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore",
       "packageId": "hl7.fhir.us.qicore",
       "version": "current"
     }
@@ -151,7 +151,7 @@
           },
           {
             "url": "value",
-            "valueString": "output"
+            "valueString": "docs"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -281,7 +281,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -307,7 +307,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -320,7 +320,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -333,7 +333,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "flase"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -355,24 +355,11 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "path-qa"
+            "valueString": "path-liquid"
           },
           {
             "url": "value",
-            "valueString": "temp/qa"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-temp"
-          },
-          {
-            "url": "value",
-            "valueString": "temp/pages"
+            "valueString": "template/liquid"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -386,6 +373,19 @@
           {
             "url": "value",
             "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "http://www.fhir.org/guides/test3/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -474,11 +474,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Basic-diet.html"
+            "valueUri": "Basic-diet-example1.html"
           }
         ],
         "reference": {
-          "reference": "Basic/diet"
+          "reference": "Basic/diet-example1"
         },
         "name": "Basic Example",
         "description": "an example of a of Basic Profile.",
@@ -570,6 +570,7 @@
         "reference": {
           "reference": "OperationDefinition/example"
         },
+        "name": "Populate Questionnaire",
         "description": "Limited implementation of the Populate Questionnaire implementation",
         "exampleBoolean": false
       },
@@ -587,6 +588,8 @@
         "reference": {
           "reference": "StructureDefinition/ifr"
         },
+        "name": "Identifer Free Reference Data Type",
+        "description": "Identifer Free Reference Data Type",
         "exampleBoolean": false
       },
       {
@@ -639,6 +642,7 @@
         "reference": {
           "reference": "CodeSystem/blah-codes"
         },
+        "name": "BlahCodes",
         "description": "A bunch of example codes",
         "exampleBoolean": false
       },
@@ -728,6 +732,7 @@
         "reference": {
           "reference": "ValueSet/blah-codes"
         },
+        "name": "BlahCodes",
         "description": "A bunch of example codes",
         "exampleBoolean": false
       }
@@ -898,16 +903,12 @@
         "value": "input/pagecontent"
       },
       {
-        "code": "path-pages",
-        "value": "template/config"
-      },
-      {
-        "code": "path-pages",
-        "value": "input/pagecontent/images"
-      },
-      {
         "code": "path-tx-cache",
         "value": "input-cache/txcache"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/config"
       },
       {
         "code": "path-pages",
