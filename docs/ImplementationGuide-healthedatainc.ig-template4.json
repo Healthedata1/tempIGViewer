@@ -2,15 +2,25 @@
   "resourceType": "ImplementationGuide",
   "id": "healthedatainc.ig-template4",
   "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest4</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4</pre></div>"
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest4</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet",
+      "valueUri": "patient-on-usprofile-spreadsheet.xml"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet",
+      "valueUri": "template-profile-spreadsheet.xml"
+    }
+  ],
+  "url": "http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4",
   "version": "0.0.0",
   "name": "IGTest4",
   "title": "IG Test4",
   "status": "draft",
-  "date": "2020-05-06T16:36:05-07:00",
+  "date": "2020-01-23T16:30:49-08:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -56,76 +66,11 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "foo"
+            "valueString": "pat9h-qa"
           },
           {
             "url": "value",
-            "valueString": "bar"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "logging"
-          },
-          {
-            "url": "value",
-            "valueString": "init"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "logging"
-          },
-          {
-            "url": "value",
-            "valueString": "progress"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "generate"
-          },
-          {
-            "url": "value",
-            "valueString": "example-narratives"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-qa"
-          },
-          {
-            "url": "value",
-            "valueString": "qa"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-liquid"
-          },
-          {
-            "url": "value",
-            "valueString": "input/liquid"
+            "valueString": "generated_output/qa"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -138,7 +83,7 @@
           },
           {
             "url": "value",
-            "valueString": "temp"
+            "valueString": "generated_output/temp"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -160,232 +105,11 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "active-tables"
-          },
-          {
-            "url": "value",
-            "valueString": "false"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-contact"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-jurisdiction"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-publisher"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-version"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "show-inherited-invariants"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "usage-stats-opt-out"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "copyrightyear"
-          },
-          {
-            "url": "value",
-            "valueString": "2020+"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "releaselabel"
-          },
-          {
-            "url": "value",
-            "valueString": "CI Build"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "excludexml"
-          },
-          {
-            "url": "value",
-            "valueString": "false"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "escludejsn"
-          },
-          {
-            "url": "value",
-            "valueString": "false"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "excludettl"
-          },
-          {
-            "url": "value",
-            "valueString": "false"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "excludemap"
-          },
-          {
-            "url": "value",
-            "valueString": "false"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "excludeexample"
-          },
-          {
-            "url": "value",
-            "valueString": "flase"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "autoload-resources"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-liquid"
-          },
-          {
-            "url": "value",
-            "valueString": "template/liquid"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-suppressed-warnings"
-          },
-          {
-            "url": "value",
-            "valueString": "input/ignoreWarnings.txt"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "path-history"
           },
           {
             "url": "value",
-            "valueString": "http://www.fhir.org/guides/test3/history.html"
+            "valueString": "http://www.fhir.org/guides/test4/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -394,63 +118,11 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "template-html"
+            "valueString": "foo"
           },
           {
             "url": "value",
-            "valueString": "template-page.html"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "template-md"
-          },
-          {
-            "url": "value",
-            "valueString": "template-page-md.html"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-context"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-copyright"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-license"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
+            "valueString": "bar"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -474,14 +146,16 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Basic-diet-example1.html"
+            "valueUri": "Basic-diet.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Basic-diet.html"
           }
         ],
         "reference": {
-          "reference": "Basic/diet-example1"
+          "reference": "Basic/diet"
         },
-        "name": "Basic Example",
-        "description": "an example of a of Basic Profile.",
         "exampleBoolean": true
       },
       {
@@ -492,14 +166,16 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-example1.html"
+            "valueUri": "Patient-example.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-example.html"
           }
         ],
         "reference": {
-          "reference": "Patient/example1"
+          "reference": "Patient/example"
         },
-        "name": "Patient Example",
-        "description": "an example of a of Patient Profile.",
         "exampleBoolean": true
       },
       {
@@ -511,13 +187,241 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Patient-example2.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-example2.html"
           }
         ],
         "reference": {
           "reference": "Patient/example2"
         },
-        "name": "Another Patient Example",
-        "description": "Another example of a of Patient Profile.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-cdc-covid.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-cdc-covid.html"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/cdc-covid"
+        },
+        "name": "COVID-19 Patient Impact & Hospital Capacity",
+        "description": "CDC, NHSN COVID-19 Patient Impact & Hospital Capacity Hospital Bed/ICU/Ventilator Capacity. The Centers for Disease Control and Prevention’s (CDC’s) National Healthcare Safety Network (NHSN) is supporting the nation’s COVID-19 response by introducing a new COVID-19 Patient Impact and Hospital Capacity Module within NHSN’s Patient Safety Component. https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-fema-cohort.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-fema-cohort.html"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/fema-cohort"
+        },
+        "name": "FEMA Measurement Group Cohorts",
+        "description": "COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Cohort (IPP only) counts for: - New Diagnostic Tests Ordered/Received - Cumulative Diagnostic Tests Ordered/Reciever - Cumulative Specimens Rejected.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-fema-proportion.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-fema-proportion.html"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/fema-proportion"
+        },
+        "name": "FEMA Measurement Group Proportions",
+        "description": "COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Proportion (IPP,Denominator,Numerator only) counts for:\n- Percent Positive among Newly Resulted Tests\n  - New Tests Resulted\n  - New Positive COVID-19 Tests\n- Cumulative Percent Positive among Resulted Tests\n  - Cumulative Tests Performed\n  - Cumulative Positive COVID-19 Tests",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-c19-groups-measurereport-max.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-c19-groups-measurereport-max.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/c19-groups-measurereport-max"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-fema-c19-cohort.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-fema-c19-cohort.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/fema-c19-cohort"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-fema-c19-proportion.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-fema-c19-proportion.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/fema-c19-proportion"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-c19-groups-measurereport-min.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-c19-groups-measurereport-min.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/c19-groups-measurereport-min"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-cdc-c19-groups-measurereports-max.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-cdc-c19-groups-measurereports-max.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/cdc-c19-groups-measurereports-max"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-fema-c19-proportion.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-fema-c19-proportion.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/fema-c19-proportion"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-fema-c19-cohort.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-fema-c19-cohort.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/fema-c19-cohort"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-cdc-c19-groups-measurereports-min.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-cdc-c19-groups-measurereports-min.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/cdc-c19-groups-measurereports-min"
+        },
         "exampleBoolean": true
       },
       {
@@ -525,6 +429,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-complex.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -547,6 +455,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-extension-blah.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah.html"
           }
         ],
         "reference": {
@@ -564,13 +476,16 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "OperationDefinition-example.html"
+            "valueUri": "OperationDefinition-opdef-test.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "OperationDefinition-opdef-test.html"
           }
         ],
         "reference": {
-          "reference": "OperationDefinition/example"
+          "reference": "OperationDefinition/opdef-test"
         },
-        "name": "Populate Questionnaire",
         "description": "Limited implementation of the Populate Questionnaire implementation",
         "exampleBoolean": false
       },
@@ -583,13 +498,15 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-ifr.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-ifr.html"
           }
         ],
         "reference": {
           "reference": "StructureDefinition/ifr"
         },
-        "name": "Identifer Free Reference Data Type",
-        "description": "Identifer Free Reference Data Type",
         "exampleBoolean": false
       },
       {
@@ -597,6 +514,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-bar-codes.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -619,13 +540,16 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CapabilityStatement-server.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-server.html"
           }
         ],
         "reference": {
           "reference": "CapabilityStatement/server"
         },
-        "name": "Server",
-        "description": "This resource defines the expected capabilities",
+        "description": "This resource defines the expected capabilities ",
         "exampleBoolean": false
       },
       {
@@ -637,12 +561,15 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-blah-codes.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-blah-codes.html"
           }
         ],
         "reference": {
           "reference": "CodeSystem/blah-codes"
         },
-        "name": "BlahCodes",
         "description": "A bunch of example codes",
         "exampleBoolean": false
       },
@@ -655,13 +582,16 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CapabilityStatement-client.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-client.html"
           }
         ],
         "reference": {
           "reference": "CapabilityStatement/client"
         },
-        "name": "Client",
-        "description": "This resource defines the expected capabilities",
+        "description": "This resource defines the expected capabilities ",
         "exampleBoolean": false
       },
       {
@@ -669,6 +599,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-profile-on-profile.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -686,7 +620,45 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-devdef.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/devdef"
+        },
+        "name": "DeviceDefinition Reference Extension",
+        "description": "A reference to the [DeviceDefinition](http://build.fhir.org/devicedefinition.html) resource."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-test.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/test"
+        },
+        "name": "Test Supply Request",
+        "description": "A profile to test implementation of R5 elements."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-foo-codes.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -709,6 +681,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-template-basic.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-basic.html"
           }
         ],
         "reference": {
@@ -727,14 +703,39 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-blah-codes.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-blah-codes.html"
           }
         ],
         "reference": {
           "reference": "ValueSet/blah-codes"
         },
-        "name": "BlahCodes",
         "description": "A bunch of example codes",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah2.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah2.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-blah2"
+        },
+        "name": "blah2",
+        "description": "an example of a simple extension.",
+        "groupingId": "template-profile-spreadsheet.xml"
       }
     ],
     "page": {
@@ -746,6 +747,11 @@
           "nameUrl": "guidance.html",
           "title": "General Guidance",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "more-guidance.html",
+          "title": "More General Guidance",
+          "generation": "html"
         },
         {
           "nameUrl": "profiles.html",
@@ -843,7 +849,7 @@
         {
           "nameUrl": "security.html",
           "title": "Security",
-          "generation": "html"
+          "generation": "markdown"
         },
         {
           "nameUrl": "downloads.html",
@@ -854,65 +860,34 @@
           "nameUrl": "all-examples.html",
           "title": "All Examples",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "toc.html",
+          "title": "Table of Contents",
+          "generation": "html"
         }
       ]
     },
     "parameter": [
       {
         "code": "path-resource",
-        "value": "input/capabilities"
+        "value": "source/examples"
       },
       {
         "code": "path-resource",
-        "value": "input/examples"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/extensions"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/models"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/operations"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/profiles"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/resources"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/vocabulary"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/maps"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/testing"
+        "value": "source/resources"
       },
       {
         "code": "path-pages",
-        "value": "input/pagecontent"
+        "value": "source/pages"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/content/pages"
       },
       {
         "code": "path-tx-cache",
-        "value": "input-cache/txcache"
-      },
-      {
-        "code": "path-pages",
-        "value": "template/config"
-      },
-      {
-        "code": "path-pages",
-        "value": "input/images"
+        "value": "generated_output/txCache"
       }
     ]
   }
