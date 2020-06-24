@@ -1,12 +1,12 @@
 {
-  "url": "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm-1.1.0",
-  "name": "DataExchangeForQualityMeasuresSTU2forFHIRR4",
-  "package-id": "hl7.fhir.us.davinci-deqm",
-  "ig-ver": "1.1.0",
-  "date": "Tue, 23 Jun, 2020 20:24:39 -0700",
-  "errs": 108,
-  "warnings": 32,
-  "hints": 198,
+  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4",
+  "name": "IGTest4",
+  "package-id": "healthedatainc.ig-template4",
+  "ig-ver": "0.0.0",
+  "date": "Tue, 23 Jun, 2020 20:49:42 -0700",
+  "errs": 3,
+  "warnings": 10,
+  "hints": 7,
   "version": "4.0.1",
   "tool": "4.4.0 (3)"
 }

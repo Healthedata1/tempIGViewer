@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.DAVINCI-DEQM\Downloads - FHIR v4.0.1</title>
+    <title>HEALTHEDATAINC.IG-TEMPLATE4\Downloads - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,15 +37,15 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"8"}
-    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Data Exchange For Quality Measures STU2 for FHIR R4</span><br/>1.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -69,87 +69,55 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Framework<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="guidance.html">General Guidance</a>
-      </li>
-      <li>
-        <a href="datax.html">Data Exchange</a>
-      </li>
-      <li>
-        <a href="indv-reporting.html">Individual Reporting</a>
-      </li>
-      <li>
-        <a href="summary-reporting.html">Summary Reporting</a>
-      </li>
-    </ul>
+  <li>
+    <a href="guidance.html">General Guidance</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Example Use Cases<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="mrp.html">Medication Reconciliation (MRP)</a>
-      </li>
-      <li>
-        <a href="col.html">Colorectal Cancer Screening (COL)</a>
-      </li>
-      <li>
-        <a href="vte1.html">Venous Thromboembolism Prophylaxis (VTE-1)</a>
-      </li>
-    </ul>
-  </li>
-
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
 
-      <!--
-<li>
-  <a href="operations.html">Operations</a>
-</li>
--->
+    <li>
+      <a href="profiles.html">Profiles and Logical Models</a>
+    </li>
 
-      <li>
-        <a href="profiles.html">Profiles/Extensions</a>
-      </li>
-<!--
-      <li>
-        <a href="operations.html">Operations</a>
-      </li>
--->
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
-      <li>
-        <a href="capstatements.html">CapabilityStatements</a>
+    <!-- <li>
+    <a href="extensions.html">Extensions</a>
+  </li>-->
 
-      </li>
-    </ul>
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
   </li>
-  <!--
+
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+
+  <!--   <li>
+  <a href="structuremaps.html">Mappings</a>
+</li>-->
+
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+
+<li>
+<a href="capstatements.html">CapabilityStatements</a>
+
+</li>
+
+</ul>
+</li>
 <li>
   <a href="security.html">Security</a>
 </li>
--->
-  <li>
-    <a href="all-examples.html">Examples</a>
-  </li>
-
-  <li>
-    <a href="downloads.html">Downloads</a>
-  </li>
-
-  <li>
-    <a href="change-notes.html">Change Notes</a>
-  </li>
+<li>
+  <a href="all-examples.html">Examples</a>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
 </ul>
 
             </div>  <!-- /.nav-collapse -->
@@ -179,7 +147,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Downloads</h2>
   
   
@@ -196,7 +164,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="package-file">Package File</h3>
 
-<p>The following package file includes an NPM package file used by many of the FHIR tools.  It contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of this version of the Implementation Guides. This file should be the first choice whenever generating any implementation artifacts since it contains all of the rules about what makes the profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on validating <a href="http://hl7.org/fhir/R4/validation.html">FHIR profiles and resources</a>:</p>
+<p>The following package file includes an NPM package file used by many of the FHIR tools.  It contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this version of the Implementation Guides. This file should be the first choice whenever generating any implementation artifacts since it contains all of the rules about what makes the profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on validating <a href="http://hl7.org/fhir/R4/validation.html">FHIR profiles and resources</a>:</p>
 
 <ul>
   <li><a href="package.tgz">Package</a></li>
@@ -211,46 +179,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>
-    <p><a href="StructureDefinition-coverage-deqm.sch">Structuredefinition Coverage Deqm </a></p>
+    <p><a href="StructureDefinition-extension-blah.sch">Structuredefinition Extension Blah </a></p>
   </li>
   <li>
-    <p><a href="StructureDefinition-datax-measurereport-deqm.sch">Structuredefinition Datax Measurereport Deqm </a></p>
+    <p><a href="StructureDefinition-extension-complex.sch">Structuredefinition Extension Complex </a></p>
   </li>
   <li>
-    <p><a href="StructureDefinition-extension-alternateScoreType.sch">Structuredefinition Extension Alternatescoretype </a></p>
+    <p><a href="StructureDefinition-ifr.sch">Structuredefinition Ifr </a></p>
   </li>
   <li>
-    <p><a href="StructureDefinition-extension-certificationIdentifier.sch">Structuredefinition Extension Certificationidentifier </a></p>
+    <p><a href="StructureDefinition-template-basic.sch">Structuredefinition Template Basic </a></p>
   </li>
   <li>
-    <p><a href="StructureDefinition-extension-measureScoring.sch">Structuredefinition Extension Measurescoring </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-extension-reporterGroup.sch">Structuredefinition Extension Reportergroup </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-extension-reportingVendor.sch">Structuredefinition Extension Reportingvendor </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-extension-submitDataUpdateType.sch">Structuredefinition Extension Submitdataupdatetype </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-indv-measurereport-deqm.sch">Structuredefinition Indv Measurereport Deqm </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-medicationadministration-deqm.sch">Structuredefinition Medicationadministration Deqm </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-medicationrequest-deqm.sch">Structuredefinition Medicationrequest Deqm </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-organization-deqm.sch">Structuredefinition Organization Deqm </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-practitioner-deqm.sch">Structuredefinition Practitioner Deqm </a></p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-summary-measurereport-deqm.sch">Structuredefinition Summary Measurereport Deqm </a></p>
+    <p><a href="StructureDefinition-template-profile-on-profile.sch">Structuredefinition Template Profile On Profile </a></p>
   </li>
 </ul>
 
@@ -258,7 +199,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="examples">Examples</h3>
 
-<p>all the examples that are used in this Implementation Guide available for download:</p>
+<p><a href="all-examples.html">All the examples</a> that are used in this Implementation Guide available for download:</p>
 
 <ul>
   <li><a href="examples.xml.zip">XML</a></li>
@@ -272,6 +213,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li><a href="full-ig.zip">Downloadable Copy</a></li>
 </ul>
+
+<p>add link list to bottom of each page….
+<!-- >{% include link-list.md %} --></p>
 
 
 </div>
@@ -294,7 +238,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>.  Package hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:24-0700">2020-06-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:49-0700">2020-06-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

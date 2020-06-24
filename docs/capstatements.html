@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.DAVINCI-DEQM\Capability Statements - FHIR v4.0.1</title>
+    <title>HEALTHEDATAINC.IG-TEMPLATE4\Capability Statements - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,15 +37,15 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Data Exchange For Quality Measures STU2 for FHIR R4</span><br/>1.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -69,87 +69,55 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Framework<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="guidance.html">General Guidance</a>
-      </li>
-      <li>
-        <a href="datax.html">Data Exchange</a>
-      </li>
-      <li>
-        <a href="indv-reporting.html">Individual Reporting</a>
-      </li>
-      <li>
-        <a href="summary-reporting.html">Summary Reporting</a>
-      </li>
-    </ul>
+  <li>
+    <a href="guidance.html">General Guidance</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Example Use Cases<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="mrp.html">Medication Reconciliation (MRP)</a>
-      </li>
-      <li>
-        <a href="col.html">Colorectal Cancer Screening (COL)</a>
-      </li>
-      <li>
-        <a href="vte1.html">Venous Thromboembolism Prophylaxis (VTE-1)</a>
-      </li>
-    </ul>
-  </li>
-
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
 
-      <!--
-<li>
-  <a href="operations.html">Operations</a>
-</li>
--->
+    <li>
+      <a href="profiles.html">Profiles and Logical Models</a>
+    </li>
 
-      <li>
-        <a href="profiles.html">Profiles/Extensions</a>
-      </li>
-<!--
-      <li>
-        <a href="operations.html">Operations</a>
-      </li>
--->
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
-      <li>
-        <a href="capstatements.html">CapabilityStatements</a>
+    <!-- <li>
+    <a href="extensions.html">Extensions</a>
+  </li>-->
 
-      </li>
-    </ul>
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
   </li>
-  <!--
+
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+
+  <!--   <li>
+  <a href="structuremaps.html">Mappings</a>
+</li>-->
+
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+
+<li>
+<a href="capstatements.html">CapabilityStatements</a>
+
+</li>
+
+</ul>
+</li>
 <li>
   <a href="security.html">Security</a>
 </li>
--->
-  <li>
-    <a href="all-examples.html">Examples</a>
-  </li>
-
-  <li>
-    <a href="downloads.html">Downloads</a>
-  </li>
-
-  <li>
-    <a href="change-notes.html">Change Notes</a>
-  </li>
+<li>
+  <a href="all-examples.html">Examples</a>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
 </ul>
 
             </div>  <!-- /.nav-collapse -->
@@ -179,7 +147,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Capability Statements</h2>
   
   
@@ -187,47 +155,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 
 </div>
-
-<li><a href="CapabilityStatement-consumer-client.html">Consumer Client CapabilityStatement</a></li>
-<li><a href="CapabilityStatement-producer-client.html">Producer Client CapabilityStatement</a></li>
-<li><a href="CapabilityStatement-reporter-client.html">Reporter Client CapabilityStatement</a></li>
-<li><a href="CapabilityStatement-receiver-server.html">Receiver Server CapabilityStatement</a></li>
-<li><a href="CapabilityStatement-consumer-server.html">Consumer Server CapabilityStatement</a></li>
-<li><a href="CapabilityStatement-producer-server.html">Producer Server CapabilityStatement</a></li>
+<li><a href="CapabilityStatement-client.html">Client</a> This resource defines the expected capabilities </li>
+<li><a href="CapabilityStatement-server.html">Server</a> This resource defines the expected capabilities </li>
 
 <p><br /></p>
-
-<!--
-```
-Steps for adding this narrative to CapStatements  - if you don't want to generate it
-
-1) Create narrative in markdown
-2) View Page source in Browser and copy the html content and save as .xhtml file
-
-3) Edit xhtml content  ( I use xml spy since can view in browser mode )
-
-1) Change title
-
-2)  Edit  or remove TOC  ( contains both client and server links)
-
-3) Remove any relative links to build (e.g., xml / json views)  since these will break if not viewed inside of IG
-
-4) Remove or replace any unsupported xhtml characters:  You can catch these using the w3 validator or by trying to view in browser
-   e.g., replace ";&nbsp" with "&#160;"
-
-4) Insert in CapabilityStatement.text.div as xhtml
-    Make CapabilityStatement.text.status = "additional"
-
-e.g.
- <text>
-    <status value="additional"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-...(inserted xhtml here)...
-   </div>
-
-save CapabilityStatement file
-
--->
 
 
 </div>
@@ -250,7 +181,7 @@ save CapabilityStatement file
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>.  Package hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:24-0700">2020-06-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:49-0700">2020-06-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

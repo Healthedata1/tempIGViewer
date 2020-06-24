@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.DAVINCI-DEQM\General Guidance - FHIR v4.0.1</title>
+    <title>HEALTHEDATAINC.IG-TEMPLATE4\General Guidance - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,15 +37,15 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"2.1"}
-    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Data Exchange For Quality Measures STU2 for FHIR R4</span><br/>1.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -69,87 +69,55 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Framework<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="guidance.html">General Guidance</a>
-      </li>
-      <li>
-        <a href="datax.html">Data Exchange</a>
-      </li>
-      <li>
-        <a href="indv-reporting.html">Individual Reporting</a>
-      </li>
-      <li>
-        <a href="summary-reporting.html">Summary Reporting</a>
-      </li>
-    </ul>
+  <li>
+    <a href="guidance.html">General Guidance</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Example Use Cases<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="mrp.html">Medication Reconciliation (MRP)</a>
-      </li>
-      <li>
-        <a href="col.html">Colorectal Cancer Screening (COL)</a>
-      </li>
-      <li>
-        <a href="vte1.html">Venous Thromboembolism Prophylaxis (VTE-1)</a>
-      </li>
-    </ul>
-  </li>
-
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
 
-      <!--
-<li>
-  <a href="operations.html">Operations</a>
-</li>
--->
+    <li>
+      <a href="profiles.html">Profiles and Logical Models</a>
+    </li>
 
-      <li>
-        <a href="profiles.html">Profiles/Extensions</a>
-      </li>
-<!--
-      <li>
-        <a href="operations.html">Operations</a>
-      </li>
--->
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
-      <li>
-        <a href="capstatements.html">CapabilityStatements</a>
+    <!-- <li>
+    <a href="extensions.html">Extensions</a>
+  </li>-->
 
-      </li>
-    </ul>
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
   </li>
-  <!--
+
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+
+  <!--   <li>
+  <a href="structuremaps.html">Mappings</a>
+</li>-->
+
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+
+<li>
+<a href="capstatements.html">CapabilityStatements</a>
+
+</li>
+
+</ul>
+</li>
 <li>
   <a href="security.html">Security</a>
 </li>
--->
-  <li>
-    <a href="all-examples.html">Examples</a>
-  </li>
-
-  <li>
-    <a href="downloads.html">Downloads</a>
-  </li>
-
-  <li>
-    <a href="change-notes.html">Change Notes</a>
-  </li>
+<li>
+  <a href="all-examples.html">Examples</a>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
 </ul>
 
             </div>  <!-- /.nav-collapse -->
@@ -162,7 +130,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='framework.html'><b>Framework</b></a></li><li><b>General Guidance</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>General Guidance</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -179,7 +147,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>General Guidance</h2>
   
   
@@ -187,131 +155,75 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#preconditions-and-assumptions" id="markdown-toc-preconditions-and-assumptions">Preconditions and Assumptions</a></li>
-  <li><a href="#deqm-measurereport-profiles" id="markdown-toc-deqm-measurereport-profiles">DEQM MeasureReport Profiles</a></li>
-  <li><a href="#default-profiles-used-in-the-evaluation-of-a-measure" id="markdown-toc-default-profiles-used-in-the-evaluation-of-a-measure">Default Profiles Used in the Evaluation of a Measure</a></li>
-  <li><a href="#negation-patterns-for-quality-measures" id="markdown-toc-negation-patterns-for-quality-measures">Negation Patterns for Quality Measures</a></li>
-  <li><a href="#using-contained-resources-in-the-response-transaction" id="markdown-toc-using-contained-resources-in-the-response-transaction">Using Contained Resources in the Response Transaction</a></li>
-  <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a></li>
+  <li><a href="#more-stuff" id="markdown-toc-more-stuff">More Stuff</a></li>
 </ul>
 
 </div>
+<h3 class="self-link" id="introduction">Introduction</h3>
 
-<h3 id="introduction">Introduction</h3>
+<p>This is based on index.html</p>
 
-<p>Clinical Quality Measures are a common tool used throughout healthcare to help evaluate and understand the impact and quality of the care being provided to an individual or population.</p>
+<p>
+  <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#example" aria-expanded="false" aria-controls="collapseExample">
+    Example Button bar
+  </button>
+</p>
 
-<p>The Data Exchange for Quality Measure (DEQM) Implementation Guide defines the interactions for two purposes in the Quality Measure Ecosystem.  The first interaction is when a Producer, such as a practitioner, or owner of data needs to exchange that data with a Consumer of that data, such as a payer, a registry or public health.  We call this the <a href="datax.html">Data Exchange</a> scenario. Examples of this interaction might be when a provider has patient information from a recent visit that he needs to share with a payer under a value based contract.</p>
-
-<p>The second scenario defined in this guide is when a Reporter needs to exchange a measure report with a Receiver.  This guide addresses the Individual Measure Reporting and the Summary Reporting.  As an example, Individual Measure Reports may be used by hospitals acting as the Reporter to report a specific measure to a payer acting as a Receiver.  Similarly, Summary Measure Reports may be used to report yearly eCQM results on a specific measure.</p>
-
-<p class="stu-note">Patient List Reporting is a third reporting type which is similar to a QRDA Category 2 report. This Type is out of scope for this version of the Implementation Guide.  In a future version this guide, Patient List Reporting will be addressed.</p>
-
-<h3 id="preconditions-and-assumptions">Preconditions and Assumptions</h3>
-
-<ul>
-  <li>
-    <p>Although the exact mechanisms for securing these exchanges are not specified as part of this implementation guide:</p>
-
-    <ul>
-      <li>
-        <p>Exchanges are limited to mutually agreed upon (i.e., between the Producer and Consumer) patients list or population.</p>
-      </li>
-      <li>
-        <p>Systems should use standard authentication and authorization approaches.  The <a href="http://www.hl7.org/fhir/smart-app-launch/history.cfml">SMART App Launch</a> and <a href="http://www.hl7.org/fhir/uv/bulkdata/history.cfml">SMART backend services</a> authentication/authorization approach are recommended models.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>The Measure resource is used to provide both human- and
-machine-readable definitions of a quality measure</p>
-  </li>
-  <li>
-    <p>The MeasureReport provides an association to a specific quality
-measure and links the submitted data together to simplify processing
-for the receiver.</p>
-  </li>
-  <li>
-    <p>It is the responsibility of the Producer to ensure that measure data is present in a structured, retrievable form.</p>
-  </li>
-  <li>
-    <p>The required data is represented in the referenced resources defined
-by the MeasureReport.</p>
-
-    <ul>
-      <li>Multiple MeasureReport may reference the same instance of a resource.</li>
-    </ul>
-  </li>
-  <li>
-    <p>Both Consumers and Producers <em>should</em> use a common clinical
-quality language (CQL) that would allow the same measures to be
-applied in healthcare and at the aggregator. This would also enable
-the application of the same measures across populations that span
-multiple Consumers (such as payers). Using common measures across payers reduces development burden for FHIR implementers.</p>
-  </li>
-</ul>
-
-<h3 id="deqm-measurereport-profiles">DEQM MeasureReport Profiles</h3>
-
-<p>The MeasureReport resource is used as an organizer for both the data exchange scenario and for measure reporting scenario. To meet the different needs in these scenarios, DEQM has created 3 MeasureReport profiles.  Technically the type of profiles can be determined by inspecting the <code class="highlighter-rouge">meta.profile</code> element if present or the <code class="highlighter-rouge">type</code> element.</p>
-
-<h4 id="data-exchange">Data Exchange</h4>
-
-<p>The <a href="StructureDefinition-datax-measurereport-deqm.html">DEQM Data Exchange MeasureReport Profile</a> is used to get the data from the producer to a consumer of the data.  The consumer might be a system that calculates the measure report but they could also be an aggregator who sends that data on to another system to do measure calculation and reporting.
-Along with Data-Exchange MeasureReport Profile, the data producer sends the Organization, Patient and any relevant resources for the measure they have produced data on. When a data producer, such as a practitioner,  sends a MeasureReport bundle, they may not have all the data that is required to calculate the measure report. One example might be because the measure requires outcome data from at a later point in time during the measurement period. Another example where the data producer may not have all the data would be continuous coverage period as the producer of the data may not know the patient was covered on the day the patient was seen.  The Consumer (in this case the payer as aggregator) is the owner of all coverage information.  Therefore, only the consumer could determine if the continuous coverage period requirement is met.</p>
-
-<h4 id="measure-reporting">Measure Reporting</h4>
-
-<p>Measure Reporting is done by a Reporter who has all of the data that is required to generate a report(s). Two profiles for measure reporting have been defined in this guide.</p>
-
-<p>The <a href="StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a> is used when a measure is reported for a specific patient. It contains all of the data that is relevant to generate the report including the measure outcome and is similar to a QRDA Category 1 report.  The MeasureReport(s) are packaged in a FHIR Bundle with Organization, Patient and any other resources that were used to calculate this measure.</p>
-
-<p>The <a href="StructureDefinition-summary-measurereport-deqm.html">DEQM Summary MeasureReport Profile</a> is used when a measure is reported   for a group of patients at the conclusion of a measure measurement period. It  includes the measure outcome data and is similar to a QRDA Category 3 report.  Unlike the <a href="StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a>, the report is typically transacted as a single MeasureReport report.  Although several Summary reports may be transacted together as Bundle.</p>
-
-<h3 id="default-profiles-used-in-the-evaluation-of-a-measure">Default Profiles Used in the Evaluation of a Measure</h3>
-
-<p>Depending on the specific Measure and Interaction, <em><a href="http://hl7.org/fhir/R4/implementationguide.html#default">Default Profiles</a></em> from DEQM, QI Core, and CQFM are used in the evaluation of a measure and referenced by a MeasureReport. These profiles apply to <em>any resource</em> that does not otherwise have an explicit profile assigned by the  implementation guide.  Note that several DEQM <a href="profiles.html#profiles" title="Profiles and Extensions Page">Profiles</a> are  derived from QI Core profiles and are used as the default instead of the corresponding QI Core profile.  Refer to the <a href="http://hl7.org/fhir/us/qicore/index.html">QI Core</a> implementation guide for examples of how to represent data involved in calculation of quality measures.</p>
-
-<h3 id="negation-patterns-for-quality-measures">Negation Patterns for Quality Measures</h3>
-
-<p>​Refer to the Quality Measure Implementation Guide for guidance on <a href="http://hl7.org/fhir/us/cqfmeasures/using-cql.html">negation patterns in quality measurements</a>. Note that implementations processing negated data may not be returned with a single code, but rather a value set identifier represented by the <a href="http://hl7.org/fhir/R4/extension-valueset-reference.html">Valueset Reference extension</a> which are part of the QI Core profiles, and should consider data with the appropriate value set identifier as satisfying the criteria for value set membership.</p>
-
-<p>The negation patterns described here are about approaches for identifying when events are not present or when events are documented as not occurring for a reason. These patterns may appear throughout a measure in any of the various population criteria, depending on measure intent. For example, the absence of a particular medication may be grounds for membership in the initial population, denominator, numerator, or an exclusion or exception criteria, depending on how the measure is constructed.</p>
-
-<h3 id="using-contained-resources-in-the-response-transaction">Using Contained Resources in the Response Transaction</h3>
-
-<p>[Contained] resources <strong>SHOULD NOT</strong> be used when responding to the submit-data or collect-data operation or to the Individual reporting transactions.  The submit-data and collect-data operation response payload are Parameters resources containing resource parameters. The response to the individual reporting transactions are Bundles. The only time contained resource can be used is when the source data exists only within the context of the transaction. For example, if the only information about the patient’s coverage is the payor name, the Coverage resource could be contained by the Patient resource:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-  "resourceType": "Patient",
-  "id": "patient01",
-  "contained": [
-    {
-      "resourceType": "Coverage",
-      "status": "active",
-      "beneficiary": {
-        "reference": "#"
-      },
-      "payor": [
-        {
-          "reference": "Organization/organization04"
-        }
-      ]
-    }
-  ]
-  ...&lt;rest of patient resource&gt;
-}
+<div class="collapse" id="example">
+  <div class="card card-body">
+      
+<h2 id="foo">foo</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
+example for button bar
 </code></pre></div></div>
 
-<h3 id="must-support">Must Support</h3>
-
-<ul>
-  <li>This guide adopts the <a href="http://hl7.org/fhir/us/qicore/index.html#mustsupport" title="QI Core definition of *Must Support*">QI Core <em>Must Support</em></a> definition with the following additional expectation:</li>
-</ul>
-
-<p>The receiver of data may not be able to complete processing and may report an error if a Must Support element is unavailable.</p>
-
+  </div>
+</div>
 <p><br /></p>
+
+<p>blah blah blah</p>
+
+<h3 id="more-stuff">More Stuff</h3>
+
+<p>inline json example exploiting Rouge to highlight inline comment (errors in json):</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+</span><span class="nl">"foo"</span><span class="p">:</span><span class="w">  </span><span class="s2">"bar"</span><span class="w">  </span><span class="err">\\adding</span><span class="w"> </span><span class="err">comment</span><span class="w"> </span><span class="err">here</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">shown</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">error</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">jekyll</span><span class="p">,</span><span class="w">
+</span><span class="nl">"foo2"</span><span class="p">:</span><span class="w">  </span><span class="s2">"bar2"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="and-more-stuff">And More Stuff</h4>
 
 
 </div>
@@ -334,7 +246,7 @@ Along with Data-Exchange MeasureReport Profile, the data producer sends the Orga
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>.  Package hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:24-0700">2020-06-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:49-0700">2020-06-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

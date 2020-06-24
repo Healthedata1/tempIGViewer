@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "fhirVersion": "[4.0.1, 4.0.1]",
-  "date": "20200623202355",
-  "name": "hl7.fhir.us.davinci-deqm"
+  "version": "0.0.0",
+  "fhirVersion": "[4.0.1]",
+  "date": "20200623204859",
+  "name": "healthedatainc.ig-template4"
 }

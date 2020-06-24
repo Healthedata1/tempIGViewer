@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.DAVINCI-DEQM\Terminology - FHIR v4.0.1</title>
+    <title>HEALTHEDATAINC.IG-TEMPLATE4\Terminology - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,7 +45,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Data Exchange For Quality Measures STU2 for FHIR R4</span><br/>1.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -69,87 +69,55 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Framework<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="guidance.html">General Guidance</a>
-      </li>
-      <li>
-        <a href="datax.html">Data Exchange</a>
-      </li>
-      <li>
-        <a href="indv-reporting.html">Individual Reporting</a>
-      </li>
-      <li>
-        <a href="summary-reporting.html">Summary Reporting</a>
-      </li>
-    </ul>
+  <li>
+    <a href="guidance.html">General Guidance</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Example Use Cases<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="mrp.html">Medication Reconciliation (MRP)</a>
-      </li>
-      <li>
-        <a href="col.html">Colorectal Cancer Screening (COL)</a>
-      </li>
-      <li>
-        <a href="vte1.html">Venous Thromboembolism Prophylaxis (VTE-1)</a>
-      </li>
-    </ul>
-  </li>
-
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
 
-      <!--
-<li>
-  <a href="operations.html">Operations</a>
-</li>
--->
+    <li>
+      <a href="profiles.html">Profiles and Logical Models</a>
+    </li>
 
-      <li>
-        <a href="profiles.html">Profiles/Extensions</a>
-      </li>
-<!--
-      <li>
-        <a href="operations.html">Operations</a>
-      </li>
--->
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
-      <li>
-        <a href="capstatements.html">CapabilityStatements</a>
+    <!-- <li>
+    <a href="extensions.html">Extensions</a>
+  </li>-->
 
-      </li>
-    </ul>
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
   </li>
-  <!--
+
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+
+  <!--   <li>
+  <a href="structuremaps.html">Mappings</a>
+</li>-->
+
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+
+<li>
+<a href="capstatements.html">CapabilityStatements</a>
+
+</li>
+
+</ul>
+</li>
 <li>
   <a href="security.html">Security</a>
 </li>
--->
-  <li>
-    <a href="all-examples.html">Examples</a>
-  </li>
-
-  <li>
-    <a href="downloads.html">Downloads</a>
-  </li>
-
-  <li>
-    <a href="change-notes.html">Change Notes</a>
-  </li>
+<li>
+  <a href="all-examples.html">Examples</a>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
 </ul>
 
             </div>  <!-- /.nav-collapse -->
@@ -179,36 +147,77 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Terminology</h2>
   
   
   
 <div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#value-sets" id="markdown-toc-value-sets">Value Sets</a></li>
+  <li><a href="#code-systems" id="markdown-toc-code-systems">Code Systems</a></li>
+</ul>
 
 </div>
 
-<p>Refer to the specific FHIR resources and profiles for each measure’s requirements for guidance in appropriate use of value sets, terminologies and code systems.</p>
+<h3 id="value-sets">Value Sets</h3>
 
-<h3 class="no_toc" id="value-sets">Value Sets</h3>
+<h4 id="method-1-is-to-render-a-unsorted-list-of-valuesets-using-the-ig-publisher-generated-simple-list-include-file">Method 1 is to render a <em>unsorted</em> list of valuesets using the IG Publisher generated simple list include file.</h4>
 
-<li><a href="ValueSet-update-type.html">DEQM Update Type Value Set</a></li>
+<p>This liquid ‘include’ tag</p>
 
-<h3 class="no_toc" id="code-systems">Code Systems<sup id="fnref:5"><a href="#fn:5" class="footnote">1</a></sup></h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include list-simple-valuesets.xhtml %}
+</code></pre></div></div>
 
-<li><a href="CodeSystem-update-type.html">DEQM Update Type Code System</a></li>
+<p>results in:</p>
 
-<hr />
+<li><a href="ValueSet-blah-codes.html">BlahCodes</a></li>
+<li><a href="ValueSet-foo-codes.html">Foo Value Set</a></li>
+<li><a href="ValueSet-bar-codes.html">Bar Value Set</a></li>
 
-<p><br /></p>
+<h4 id="method-2-is-to-render-a-sorted-list-using-a-custom-liquid-script">Method 2 is to render a sorted list using a custom liquid script:</h4>
 
-<div class="footnotes">
-  <ol>
-    <li id="fn:5">
-      <p>May includes DEQM defined code systems and externally defined code systems <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>This liquid syntax:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign html_pages = site.html_pages | sort: 'name' %}
+{% for p in html_pages %}
+  {% assign html_frag = p.name | split: '.' | size %}
+  {% if p.name contains "ValueSet" and html_frag == 2 %}
+      &lt;li&gt;&lt;a href="{{p.name}}"&gt;{{p.name |  remove: ".html" | replace: '-', ' ' }}&lt;/a&gt;&lt;/li&gt;
+  {% endif %}
+{% endfor %}
+</code></pre></div></div>
+
+<p>results in:</p>
+
+<li><a href="ValueSet-bar-codes.html">ValueSet bar codes</a></li>
+
+<li><a href="ValueSet-blah-codes.html">ValueSet blah codes</a></li>
+
+<li><a href="ValueSet-foo-codes.html">ValueSet foo codes</a></li>
+
+<h4 id="method-3-is-to-render-a-custom-list-by-manually-creating-the-list-using-markdown">Method 3 is to render a custom list by manually creating the list using Markdown:</h4>
+
+<p>This markdown:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [Foo Value Set](ValueSet-foo-codes.html)
+- [Bar Value Set](ValueSet-bar-codes.html)
+- [Blah Value Set](ValueSet-blah-codes.html)
+</code></pre></div></div>
+
+<p>results in:</p>
+
+<ul>
+  <li><a href="#">Foo Value Set</a></li>
+  <li><a href="#">Bar Value Set</a></li>
+  <li><a href="#">Blah Value Set</a></li>
+</ul>
+
+<h3 id="code-systems">Code Systems</h3>
+
+<p><strong>Code systems published in this IG</strong> - Includes US Core defined code systems and externally defined code systems</p>
+<li><a href="CodeSystem-blah-codes.html">BlahCodes</a></li>
+
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -230,7 +239,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>.  Package hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:24-0700">2020-06-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:49-0700">2020-06-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

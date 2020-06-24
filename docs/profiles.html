@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.DAVINCI-DEQM\Profiles and Extensions - FHIR v4.0.1</title>
+    <title>HEALTHEDATAINC.IG-TEMPLATE4\Profiles and Extensions - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,15 +37,15 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Data Exchange For Quality Measures STU2 for FHIR R4</span><br/>1.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -69,87 +69,55 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Framework<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="guidance.html">General Guidance</a>
-      </li>
-      <li>
-        <a href="datax.html">Data Exchange</a>
-      </li>
-      <li>
-        <a href="indv-reporting.html">Individual Reporting</a>
-      </li>
-      <li>
-        <a href="summary-reporting.html">Summary Reporting</a>
-      </li>
-    </ul>
+  <li>
+    <a href="guidance.html">General Guidance</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Example Use Cases<b class="caret">
-      </b> <!-- Da Vinci Individual Measures Use Cases -->
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="mrp.html">Medication Reconciliation (MRP)</a>
-      </li>
-      <li>
-        <a href="col.html">Colorectal Cancer Screening (COL)</a>
-      </li>
-      <li>
-        <a href="vte1.html">Venous Thromboembolism Prophylaxis (VTE-1)</a>
-      </li>
-    </ul>
-  </li>
-
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
 
-      <!--
-<li>
-  <a href="operations.html">Operations</a>
-</li>
--->
+    <li>
+      <a href="profiles.html">Profiles and Logical Models</a>
+    </li>
 
-      <li>
-        <a href="profiles.html">Profiles/Extensions</a>
-      </li>
-<!--
-      <li>
-        <a href="operations.html">Operations</a>
-      </li>
--->
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
-      <li>
-        <a href="capstatements.html">CapabilityStatements</a>
+    <!-- <li>
+    <a href="extensions.html">Extensions</a>
+  </li>-->
 
-      </li>
-    </ul>
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
   </li>
-  <!--
+
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+
+  <!--   <li>
+  <a href="structuremaps.html">Mappings</a>
+</li>-->
+
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+
+<li>
+<a href="capstatements.html">CapabilityStatements</a>
+
+</li>
+
+</ul>
+</li>
 <li>
   <a href="security.html">Security</a>
 </li>
--->
-  <li>
-    <a href="all-examples.html">Examples</a>
-  </li>
-
-  <li>
-    <a href="downloads.html">Downloads</a>
-  </li>
-
-  <li>
-    <a href="change-notes.html">Change Notes</a>
-  </li>
+<li>
+  <a href="all-examples.html">Examples</a>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
 </ul>
 
             </div>  <!-- /.nav-collapse -->
@@ -179,106 +147,43 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Data Exchange For Quality Measures STU2 for FHIR R4 - Local Development build (v1.1.0). See the <a href="http://hl7.org/fhir/us/davinci-deqm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Profiles and Extensions</h2>
   
   
   
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+  <li><a href="#resource-profiles" id="markdown-toc-resource-profiles">Resource Profiles</a></li>
+  <li><a href="#datatype-profiles" id="markdown-toc-datatype-profiles">Datatype Profiles</a></li>
   <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
 </ul>
 
 </div>
 
-<p>Payers and providers need common data specification, measure specification, report initiation, and transport to share the data required to reflect accurate quality measures. Existing QI-Core and CQFM profiles are used as well as DEQM profiles derived from QI-Core and CQFM profiles and defined in this guide. All of these profiles provide a common foundation for building, sharing, and evaluating knowledge artifacts across quality improvement efforts in the US Realm.  For elements added in FHIR R4, extensions have been created for the STU3 version.</p>
+<h3 id="resource-profiles">Resource Profiles</h3>
 
-<h3 id="profiles">Profiles</h3>
+<p>The following Profiles for FHIR <em>resources</em> have been defined for this implementation guide.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Resource Type</th>
-      <th>Profile Name</th>
-      <th>Link to Profile</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Coverage</td>
-      <td>DEQM Coverage Profile</td>
-      <td><a href="StructureDefinition-coverage-deqm.html">DEQM Coverage</a></td>
-    </tr>
-    <tr>
-      <td>Data Exchange MeasureReport</td>
-      <td>DEQM Data Exchange MeasureReport Profile</td>
-      <td><a href="StructureDefinition-datax-measurereport-deqm.html">DEQM Data Exchange MeasureReport Profile</a></td>
-    </tr>
-    <tr>
-      <td>Individual MeasureReport</td>
-      <td>DEQM Individual MeasureReport Profile</td>
-      <td><a href="StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a></td>
-    </tr>
-    <tr>
-      <td>Summary MeasureReport</td>
-      <td>DEQM Summary MeasureReport Profile</td>
-      <td><a href="StructureDefinition-summary-measurereport-deqm.html">DEQM Summary MeasureReport Profile</a></td>
-    </tr>
-    <tr>
-      <td>MedicationAdministration</td>
-      <td>DEQM MedicationAdministration Profile</td>
-      <td><a href="StructureDefinition-medicationadministration-deqm.html">DEQM MedicationAdministration</a></td>
-    </tr>
-    <tr>
-      <td>MedicationRequest</td>
-      <td>DEQM MedicationRequest Profile</td>
-      <td><a href="StructureDefinition-medicationrequest-deqm.html">DEQM MedicationRequest</a></td>
-    </tr>
-    <tr>
-      <td>Organization</td>
-      <td>DEQM Organization Profile</td>
-      <td><a href="StructureDefinition-organization-deqm.html">DEQM Organization</a></td>
-    </tr>
-    <tr>
-      <td>Practitioner</td>
-      <td>DEQM Practitioner Profile</td>
-      <td><a href="StructureDefinition-practitioner-deqm.html">DEQM Practitioner</a></td>
-    </tr>
-  </tbody>
-</table>
+<li><a href="StructureDefinition-template-basic.html">Health eData Template Profile</a> This is a simple example Template</li>
+<li><a href="StructureDefinition-template-profile-on-profile.html">Template Profile on Profile</a> Template-Profile-on-Profile</li>
 
 <p><br /></p>
 
+<h3 id="datatype-profiles">Datatype Profiles</h3>
+
+<p>The following Profiles for FHIR <em>datatypes</em> have been defined for this implementation guide.</p>
+
+<ul>
+  <li><a href="StructureDefinition-ifr.html">Identifer Free Reference Data Type</a><br /></li>
+</ul>
+
 <h3 id="extensions">Extensions</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Link to Profile</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="StructureDefinition-extension-measureScoring.html">DEQM Measure Scoring Extension</a></td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-extension-alternateScoreType.html">DEQM Alternate Score Type Extension</a></td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-extension-reporterGroup.html">DEQM Reporter Group Extension Extension</a></td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-extension-reportingVendor.html">DEQM Reporting Vendor Extension</a></td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-extension-certificationIdentifier.html">DEQM Certification Identifier Extension</a></td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-extension-submitDataUpdateType.html">DEQM Submit Data Update Type Extension</a></td>
-    </tr>
-  </tbody>
-</table>
+<p>These extensions have been defined for this implementation guide.</p>
+
+<li><a href="StructureDefinition-extension-complex.html">Complex Extension</a> an example of a complex extension.</li>
+<li><a href="StructureDefinition-extension-blah.html">Simple Extension</a> an example of a simple extension.</li>
 
 <p><br /></p>
 
@@ -303,7 +208,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/cqi/index.cfm">HL7 International - Clinical Quality Information Work Group</a>.  Package hl7.fhir.us.davinci-deqm#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:24-0700">2020-06-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 20:49-0700">2020-06-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
