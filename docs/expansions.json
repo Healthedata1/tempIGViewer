@@ -1,174 +1,60 @@
 {
   "resourceType" : "Bundle",
-  "id" : "7c268245-9e9d-424a-8825-b2664f2ca85f",
+  "id" : "f3f84cb5-996d-437c-8e90-18a8df1ba8f3",
   "meta" : {
-    "lastUpdated" : "2020-04-23T15:36:38.660-07:00"
+    "lastUpdated" : "2020-06-23T20:24:39.753-07:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://www.fhir.org/guides/test4/ValueSet/bar-codes",
+    "fullUrl" : "http://hl7.org/fhir/us/davinci-deqm/ValueSet/update-type",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "bar-codes",
+      "id" : "update-type",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0<p>All codes from system <a href=\"CodeSystem/blah-codes.html\"><code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar\"> </a><a href=\"CodeSystem/blah-codes.html#blah-codes-bar\">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-update-type.html\">DEQM Update Type Code System v1.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-update-type.html\"><code>http://hl7.org/fhir/us/davinci-deqm/CodeSystem/update-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-davinci-deqm-CodeSystem-update-type-incremental\"> </a><a href=\"CodeSystem-update-type.html#update-type-incremental\">incremental</a></td><td>Incremental</td><td>In contrast to the Snapshot Update, the FHIR Parameters resource used in a Submit Data or the Collect Data scenario contains only the new and updated DEQM and QI Core Profiles since the last transaction. If the Consumer supports incremental updates, the contents of the updated payload updates the previous payload data.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-davinci-deqm-CodeSystem-update-type-snapshot\"> </a><a href=\"CodeSystem-update-type.html#update-type-snapshot\">snapshot</a></td><td>Snapshot</td><td>In contrast to the Incremental Update, the FHIR Parameters resource used in a Submit Data or the Collect Data scenario contains all the DEQM and QI Core Profiles for each transaction.  If the Consumer supports snapshot updates, the contents of the updated payload entirely replaces the previous payload</td></tr></table></div>"
       },
-      "url" : "http://www.fhir.org/guides/test4/ValueSet/bar-codes",
-      "version" : "0.0.0",
-      "name" : "BarCodes",
-      "title" : "Bar Value Set",
-      "status" : "draft",
-      "date" : "2019-03-13T08:16:34-07:00",
+      "url" : "http://hl7.org/fhir/us/davinci-deqm/ValueSet/update-type",
+      "version" : "1.1.0",
+      "name" : "DEQMUpdateTypeValueSet",
+      "title" : "DEQM Update Type Value Set",
+      "status" : "active",
+      "date" : "2020-06-23T20:24:39-07:00",
+      "publisher" : "HL7 International - Clinical Quality Information Work Group",
       "contact" : [{
         "telecom" : [{
-          "system" : "url"
-        },
-        {
-          "system" : "email"
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/cqi/index.cfm"
         }]
       }],
-      "description" : "A bunch of example codes",
+      "description" : "Concepts for how a DEQM Consumer supports data exchange updates. The choices are snapshot or incremental updates",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
-          "code" : "US",
-          "display" : "United States of America"
+          "code" : "US"
         }]
       }],
-      "immutable" : true,
-      "copyright" : "markdown link: [American Medical Association](https://www.ama-assn.org/)\n\n  use &#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n  ## header2\n  ### header3\n  ### header4 \n *emphasis* \n **bold** \n unordered markdown list:\n - list 1\n - list 2\n\n  ordered markdown list:\n 1. list1\n 1. list2",
       "expansion" : {
-        "identifier" : "urn:uuid:1e2eb2ca-e00f-4fec-ac0b-685f78b3a921",
-        "timestamp" : "2020-04-23T15:37:12-07:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:9d359511-5425-4433-931f-8b82ad4d3d4e",
+        "timestamp" : "2020-06-23T20:25:08-07:00",
+        "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"
+          "valueUri" : "http://hl7.org/fhir/us/davinci-deqm/CodeSystem/update-type|1.1.0"
         }],
         "contains" : [{
-          "system" : "http://www.fhir.org/guides/test4/CodeSystem/blah-codes",
-          "code" : "bar",
-          "display" : "Bar"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://www.fhir.org/guides/test4/ValueSet/foo-codes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "foo-codes",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0<p>All codes from system <a href=\"CodeSystem/blah-codes.html\"><code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo\"> </a><a href=\"CodeSystem/blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr></table></div>"
-      },
-      "url" : "http://www.fhir.org/guides/test4/ValueSet/foo-codes",
-      "version" : "0.0.0",
-      "name" : "FooCodes",
-      "title" : "Foo Value Set",
-      "status" : "draft",
-      "date" : "2019-03-13T08:16:34-07:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url"
+          "system" : "http://hl7.org/fhir/us/davinci-deqm/CodeSystem/update-type",
+          "code" : "incremental",
+          "display" : "Incremental"
         },
         {
-          "system" : "email"
-        }]
-      }],
-      "description" : "A bunch of example codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US",
-          "display" : "United States of America"
-        }]
-      }],
-      "immutable" : true,
-      "copyright" : "markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2",
-      "expansion" : {
-        "identifier" : "urn:uuid:d854657f-9f66-4a2d-9db3-387d8dc30685",
-        "timestamp" : "2020-04-23T15:37:17-07:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://www.fhir.org/guides/test4/CodeSystem/blah-codes",
-          "code" : "foo",
-          "display" : "Foo"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://www.fhir.org/guides/test4/ValueSet/blah-codes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "blah-codes",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0<p>All codes from system <a href=\"CodeSystem/blah-codes.html\"><code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah\"> </a><a href=\"CodeSystem/blah-codes.html#blah-codes-blah\">blah</a></td><td>Blah</td><td>example code 1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo\"> </a><a href=\"CodeSystem/blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar\"> </a><a href=\"CodeSystem/blah-codes.html#blah-codes-bar\">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
-      },
-      "url" : "http://www.fhir.org/guides/test4/ValueSet/blah-codes",
-      "version" : "0.0.0",
-      "name" : "BlahCodes",
-      "status" : "draft",
-      "date" : "2018-03-13T08:16:34-07:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url"
-        },
-        {
-          "system" : "email"
-        }]
-      }],
-      "description" : "A bunch of example codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US",
-          "display" : "United States of America"
-        }]
-      }],
-      "immutable" : true,
-      "copyright" : "markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2",
-      "expansion" : {
-        "identifier" : "urn:uuid:73c74769-6398-4d39-be8d-9d645aac97f7",
-        "timestamp" : "2020-04-23T15:37:17-07:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://www.fhir.org/guides/test4/CodeSystem/blah-codes",
-          "code" : "blah",
-          "display" : "Blah"
-        },
-        {
-          "system" : "http://www.fhir.org/guides/test4/CodeSystem/blah-codes",
-          "code" : "foo",
-          "display" : "Foo"
-        },
-        {
-          "system" : "http://www.fhir.org/guides/test4/CodeSystem/blah-codes",
-          "code" : "bar",
-          "display" : "Bar"
+          "system" : "http://hl7.org/fhir/us/davinci-deqm/CodeSystem/update-type",
+          "code" : "snapshot",
+          "display" : "Snapshot"
         }]
       }
     }
