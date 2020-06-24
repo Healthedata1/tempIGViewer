@@ -1,0 +1,12 @@
+{
+  "url": "http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4",
+  "name": "IGTest4",
+  "package-id": "healthedatainc.ig-template4",
+  "ig-ver": "0.0.0",
+  "date": "Thu, 23 Apr, 2020 15:36:38 -0700",
+  "errs": 1442,
+  "warnings": 92,
+  "hints": 12,
+  "version": "4.0.1",
+  "tool": "4.2.0 (3)"
+}
