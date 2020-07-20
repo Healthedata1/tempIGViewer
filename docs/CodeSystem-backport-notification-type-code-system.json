@@ -1,0 +1,70 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "backport-notification-type-code-system",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">handshake<a name=\"backport-notification-type-code-system-handshake\"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\">heartbeat<a name=\"backport-notification-type-code-system-heartbeat\"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\">event-notification<a name=\"backport-notification-type-code-system-event-notification\"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\">query-status<a name=\"backport-notification-type-code-system-query-status\"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+  "version": "0.1.0",
+  "name": "BackportNotificationTypeCodeSystem",
+  "title": "R5 Subscription Notification Type Code System",
+  "status": "active",
+  "date": "2020-07-20T15:56:07-07:00",
+  "publisher": "The Argonaut Project",
+  "contact": [
+    {
+      "name": "The Argonaut Project",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://argonautwiki.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "Gino Canessa",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:gino.canessa@microsoft.com"
+        }
+      ]
+    }
+  ],
+  "description": "Codes to represent types of notification bundles.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "handshake",
+      "display": "Handshake",
+      "definition": "The notification is being sent as part of the setup or verification of a communications channel."
+    },
+    {
+      "code": "heartbeat",
+      "display": "Heartbeat",
+      "definition": "The notification is being sent because there has not been a notification generated over an extended period of time."
+    },
+    {
+      "code": "event-notification",
+      "display": "Event Notification",
+      "definition": "The notification is being sent due to an event for the subscriber."
+    },
+    {
+      "code": "query-status",
+      "display": "Query Status",
+      "definition": "The notification is being sent due to a client request or query for Subscription status."
+    }
+  ]
+}

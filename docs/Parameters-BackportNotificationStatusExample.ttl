@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/subscriptions-backport/Parameters/BackportNotificationStatusExample> a fhir:Parameters;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BackportNotificationStatusExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status>
+     ]
+  ];
+  fhir:Parameters.parameter [
+     fhir:index 0;
+     fhir:Parameters.parameter.name [ fhir:value "subscription-url" ];
+     fhir:Parameters.parameter.valueUri [ fhir:value "https://example.org/fhir/r4/Subscription/admission" ]
+  ], [
+     fhir:index 1;
+     fhir:Parameters.parameter.name [ fhir:value "status" ];
+     fhir:Parameters.parameter.valueCode [ fhir:value "active" ]
+  ], [
+     fhir:index 2;
+     fhir:Parameters.parameter.name [ fhir:value "type" ];
+     fhir:Parameters.parameter.valueCode [ fhir:value "event-notification" ]
+  ], [
+     fhir:index 3;
+     fhir:Parameters.parameter.name [ fhir:value "subscription-event-count" ];
+     fhir:Parameters.parameter.valueUnsignedInt [ fhir:value "310"^^xsd:nonNegativeInteger ]
+  ], [
+     fhir:index 4;
+     fhir:Parameters.parameter.name [ fhir:value "bundle-event-count" ];
+     fhir:Parameters.parameter.valueUnsignedInt [ fhir:value "1"^^xsd:nonNegativeInteger ]
+  ], [
+     fhir:index 5;
+     fhir:Parameters.parameter.name [ fhir:value "subscription-topic-url" ];
+     fhir:Parameters.parameter.valueUri [ fhir:value "http://hl7.org/SubscriptionTopic/admission" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/subscriptions-backport/Parameters/BackportNotificationStatusExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/subscriptions-backport/Parameters/BackportNotificationStatusExample.ttl> .
+
+# -------------------------------------------------------------------------------------
+

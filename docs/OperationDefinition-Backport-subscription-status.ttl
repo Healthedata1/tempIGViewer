@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/subscriptions-backport/OperationDefinition/Backport-subscription-status> a fhir:OperationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Backport-subscription-status"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Backported R5 Subscription Status</h2><p>OPERATION: Backported R5 Subscription Status</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/OperationDefinition/Backport-subscription-status</pre><div><p>This operation is used to return the current status information about one or more R5-Style Subscriptions in R4.</p>\n</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/datatypes.html#id\">id</a></td><td/><td><div><p>At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absense of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/bundle.html\">Bundle</a></td><td/><td><div><p>The bundle type is &quot;searchset&quot;. The operation returns a bundle containing one or more Parameters resources, compliant with &quot;backport-subscription-status&quot;, one per Subscription being queried.</p>\n</div></td></tr></table><div/></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ];
+     fhir:Extension.valueInteger [ fhir:value "0"^^xsd:integer ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
+     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+  ];
+  fhir:OperationDefinition.url [ fhir:value "http://hl7.org/fhir/OperationDefinition/Backport-subscription-status"];
+  fhir:OperationDefinition.version [ fhir:value "0.1.0"];
+  fhir:OperationDefinition.name [ fhir:value "R5SubscriptionStatus"];
+  fhir:OperationDefinition.status [ fhir:value "draft"];
+  fhir:OperationDefinition.kind [ fhir:value "operation"];
+  fhir:OperationDefinition.date [ fhir:value "2020-06-01T17:23:37+00:00"^^xsd:dateTime];
+  fhir:OperationDefinition.publisher [ fhir:value "The Argonaut Project"];
+  fhir:OperationDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "The Argonaut Project" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://argonautwiki.hl7.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Gino Canessa" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:gino.canessa@microsoft.com" ]
+     ]
+  ];
+  fhir:OperationDefinition.description [ fhir:value "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4."];
+  fhir:OperationDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:OperationDefinition.code [ fhir:value "status"];
+  fhir:OperationDefinition.resource [
+     fhir:value "Subscription";
+     fhir:index 0
+  ];
+  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean];
+  fhir:OperationDefinition.type [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.instance [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.parameter [
+     fhir:index 0;
+     fhir:OperationDefinition.parameter.name [ fhir:value "ids" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "*" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absense of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "id" ]
+  ], [
+     fhir:index 1;
+     fhir:OperationDefinition.parameter.name [ fhir:value "return" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The bundle type is \"searchset\". The operation returns a bundle containing one or more Parameters resources, compliant with \"backport-subscription-status\", one per Subscription being queried." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Bundle" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/subscriptions-backport/OperationDefinition/Backport-subscription-status.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/subscriptions-backport/OperationDefinition/Backport-subscription-status.ttl> .
+
+# -------------------------------------------------------------------------------------
+

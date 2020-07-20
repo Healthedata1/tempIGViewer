@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.subscriptions-backport"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SubscriptionsR5Backport</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/subscriptions-backport/ImplementationGuide/hl7.fhir.us.subscriptions-backport</pre><div><p>The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way.</p>
+</div></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/subscriptions-backport/ImplementationGuide/hl7.fhir.us.subscriptions-backport"/>
+  <version value="0.1.0"/>
+  <name value="SubscriptionsR5Backport"/>
+  <title value="Subscriptions R5 Backport"/>
+  <status value="active"/>
+  <date value="2020-07-20T15:56:07-07:00"/>
+  <publisher value="The Argonaut Project"/>
+  <contact>
+    <name value="The Argonaut Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://argonautwiki.hl7.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gino Canessa"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:gino.canessa@microsoft.com"/>
+    </telecom>
+  </contact>
+  <description value="The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.us.subscriptions-backport"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2020+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="CI Build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/subscriptions-backport/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-backport-subscription.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/backport-subscription"/>
+      </reference>
+      <name value="Backported R5 Subscription"/>
+      <description value="Profile on the R4 Subscription resource to enable R5-style topic-based subscriptions in FHIR R4."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-backport-subscription-notification.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/backport-subscription-notification"/>
+      </reference>
+      <name value="Backported R5 Subscription Notification Bundle"/>
+      <description value="Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-backport-subscription-status.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/backport-subscription-status"/>
+      </reference>
+      <name value="Backported R5 Subscription Notification Status"/>
+      <description value="Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-backport-subscription-topic-canonical-urls.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/backport-subscription-topic-canonical-urls"/>
+      </reference>
+      <name value="Backported R5 SubscriptionTopic Canonical URL Parameters"/>
+      <description value="Profile on the R4 Parameters resource to enable R5-style topic-based subscriptions in FHIR R4."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-backport-heartbeat-period.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/backport-heartbeat-period"/>
+      </reference>
+      <name value="Backport R5 Subscription Heartbeat Period"/>
+      <description value="Interval in seconds to send &#39;heartbeat&#39; notifications."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-backport-payload-content.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/backport-payload-content"/>
+      </reference>
+      <name value="Backport R5 Subscription Payload Content Information"/>
+      <description value="How much of the resource content to deliver in the notification payload. The choices are an empty payload, only the resource id, or the full resource content."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-backport-timeout.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/backport-timeout"/>
+      </reference>
+      <name value="Backport R5 Subscription Timeout"/>
+      <description value="Timeout in seconds to attempt notification delivery."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-backport-topic-canonical.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/backport-topic-canonical"/>
+      </reference>
+      <name value="Backport R5 Subscription Topic Canonical"/>
+      <description value="Canonical reference to the subscription topic being subscribed to."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-backport-content-value-set.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/backport-content-value-set"/>
+      </reference>
+      <name value="Backported R5 Subscription Content Value Set"/>
+      <description value="Codes to represent how much resource content to send in the notification payload."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-backport-notification-type-value-set.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/backport-notification-type-value-set"/>
+      </reference>
+      <name value="R5 Subscription Notification Type Value Set"/>
+      <description value="Codes to represent types of notification bundles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-backport-content-code-system.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/backport-content-code-system"/>
+      </reference>
+      <name value="Backported R5 Subscription Content Code System"/>
+      <description value="Codes to represent how much resource content to send in the notification payload."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-backport-notification-type-code-system.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/backport-notification-type-code-system"/>
+      </reference>
+      <name value="R5 Subscription Notification Type Code System"/>
+      <description value="Codes to represent types of notification bundles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/3945182f-d315-4dbf-9259-09d863c7e7da"/>
+      </reference>
+      <name value="Backported Notification: Id Only"/>
+      <description value="Example of a backported notification with &#39;id-only&#39; content."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-9601c07a-e34f-4945-93ca-6efb5394c995.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/9601c07a-e34f-4945-93ca-6efb5394c995"/>
+      </reference>
+      <name value="Backported Notification: Empty"/>
+      <description value="Example of a backported notification with &#39;empty&#39; content."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Parameters-BackportNotificationStatusExample.html"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/BackportNotificationStatusExample"/>
+      </reference>
+      <name value="BackportNotificationStatusExample"/>
+      <description value="Example Backported R5 Notification Status."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Subscription"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Subscription-admission.html"/>
+      </extension>
+      <reference>
+        <reference value="Subscription/admission"/>
+      </reference>
+      <name value="Backported Subscription: Admission"/>
+      <description value="Example of a backported R5 admissions subscription in R4."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-Backport-subscription-status.html"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/Backport-subscription-status"/>
+      </reference>
+      <name value="R5SubscriptionStatus"/>
+      <description value="This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-Backport-subscriptiontopic-list.html"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/Backport-subscriptiontopic-list"/>
+      </reference>
+      <name value="R5SubscriptionTopicList"/>
+      <description value="This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="actors_and_transactions.html"/>
+        <title value="Actors and Transactions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="conformance.html"/>
+        <title value="Conformance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="errors.html"/>
+        <title value="Errors"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="overview.html"/>
+        <title value="Overview"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

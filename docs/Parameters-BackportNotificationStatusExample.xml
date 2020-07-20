@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="BackportNotificationStatusExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
+  </meta>
+  <parameter>
+    <name value="subscription-url"/>
+    <valueUri value="https://example.org/fhir/r4/Subscription/admission"/>
+  </parameter>
+  <parameter>
+    <name value="status"/>
+    <valueCode value="active"/>
+  </parameter>
+  <parameter>
+    <name value="type"/>
+    <valueCode value="event-notification"/>
+  </parameter>
+  <parameter>
+    <name value="subscription-event-count"/>
+    <valueUnsignedInt value="310"/>
+  </parameter>
+  <parameter>
+    <name value="bundle-event-count"/>
+    <valueUnsignedInt value="1"/>
+  </parameter>
+  <parameter>
+    <name value="subscription-topic-url"/>
+    <valueUri value="http://hl7.org/SubscriptionTopic/admission"/>
+  </parameter>
+</Parameters>
