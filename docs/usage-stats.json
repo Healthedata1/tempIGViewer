@@ -1,192 +1,65 @@
 {
-  "package": "healthedatainc.ig-template4",
-  "version": "0.0.0",
+  "package": "hl7.fhir.us.subscriptions-backport",
+  "version": "0.1.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
   "extensions": [
     {
-      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
-      "title": "Simple Extension",
+      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
+      "title": "Backport R5 Subscription Heartbeat Period",
       "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content",
+      "title": "Backport R5 Subscription Payload Content Information",
+      "types": [
+        "code",
         "code"
       ]
     },
     {
-      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
-      "title": "Complex Extension",
+      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout",
+      "title": "Backport R5 Subscription Timeout",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical",
+      "title": "Backport R5 Subscription Topic Canonical",
+      "types": [
         "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "code",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
+        "uri"
       ]
     }
   ],
   "profiles": {
-    "Basic": [
+    "Subscription": [
       {
-        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
-        "title": "Health eData Template Profile"
+        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription",
+        "title": "Backported R5 Subscription"
       }
     ],
-    "Patient": [
+    "Bundle": [
       {
-        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
-        "title": "Template Profile on Profile"
+        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification",
+        "title": "Backported R5 Subscription Notification Bundle"
+      }
+    ],
+    "Parameters": [
+      {
+        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status",
+        "title": "Backported R5 Subscription Notification Status"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls",
+        "title": "Backported R5 SubscriptionTopic Canonical URL Parameters"
       }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
-      "CapabilityStatement.rest.resource.interaction"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -202,23 +75,18 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
-      "Patient.contact.name.family"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
-      "Patient.birthDate"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
-      "StructureDefinition.snapshot.element"
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.snapshot.element.type"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "OperationDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "OperationDefinition",
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
@@ -226,20 +94,17 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
-      "Patient"
+    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period": [
+      "Subscription.channel"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
-      "Patient"
+    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content": [
+      "Subscription.channel.payload"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
-      "Patient"
+    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout": [
+      "Subscription.channel"
     ],
-    "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah": [
-      "Basic"
-    ],
-    "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex": [
-      "Basic"
+    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical": [
+      "Subscription"
     ]
   }
 }

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="75349dd9-340b-49e4-8f16-7ae15b9934af"/>
+  <id value="95d0bb73-785c-40ff-bd06-a0ef42d9977f"/>
   <meta>
-    <lastUpdated value="2020-06-23T20:49:42.812-07:00"/>
+    <lastUpdated value="2020-07-20T15:56:07.098-07:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+    <fullUrl value="http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set"/>
     <resource>
       <ValueSet>
-        <id value="blah-codes"/>
+        <id value="backport-notification-type-value-set"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-blah-codes.html">BlahCodes v0.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-backport-notification-type-code-system.html">R5 Subscription Notification Type Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              <a href="CodeSystem-backport-notification-type-code-system.html">
+                <code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system</code>
               </a>
             </p>
             <table class="codes">
@@ -37,62 +37,190 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-blah">blah</a>
+                  <a name="http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-handshake"> </a>
+                  <a href="CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-handshake">handshake</a>
                 </td>
-                <td>Blah</td>
-                <td>example code 1</td>
+                <td>Handshake</td>
+                <td>The notification is being sent as part of the setup or verification of a communications channel.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
+                  <a name="http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-heartbeat"> </a>
+                  <a href="CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-heartbeat">heartbeat</a>
                 </td>
-                <td>Foo</td>
-                <td>example code 2</td>
+                <td>Heartbeat</td>
+                <td>The notification is being sent because there has not been a notification generated over an extended period of time.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
+                  <a name="http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-event-notification"> </a>
+                  <a href="CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-event-notification">event-notification</a>
                 </td>
-                <td>Bar</td>
-                <td>example code 3</td>
+                <td>Event Notification</td>
+                <td>The notification is being sent due to an event for the subscriber.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-query-status"> </a>
+                  <a href="CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-query-status">query-status</a>
+                </td>
+                <td>Query Status</td>
+                <td>The notification is being sent due to a client request or query for Subscription status.</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
-        <version value="0.0.0"/>
-        <name value="BlahCodes"/>
-        <status value="draft"/>
-        <date value="2018-03-13T08:16:34-07:00"/>
-        <publisher value="Health eData Inc"/>
+        <url value="http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set"/>
+        <version value="0.1.0"/>
+        <name value="BackportNotificationTypeValueSet"/>
+        <title value="R5 Subscription Notification Type Value Set"/>
+        <status value="active"/>
+        <date value="2020-07-20T15:56:07-07:00"/>
+        <publisher value="The Argonaut Project"/>
         <contact>
-          <telecom>
-            <system value="email"/>
-            <value value="mailto:ehaas@healthedatainc.com"/>
-          </telecom>
-        </contact>
-        <contact>
+          <name value="The Argonaut Project"/>
           <telecom>
             <system value="url"/>
-            <value value="http://foobar.com"/>
+            <value value="https://argonautwiki.hl7.org"/>
           </telecom>
         </contact>
-        <description value="A bunch of example codes"/>
+        <contact>
+          <name value="Gino Canessa"/>
+          <telecom>
+            <system value="email"/>
+            <value value="mailto:gino.canessa@microsoft.com"/>
+          </telecom>
+        </contact>
+        <description value="Codes to represent types of notification bundles."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
-            <display value="United States of America"/>
           </coding>
         </jurisdiction>
-        <immutable value="true"/>
-        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
         <expansion>
-          <identifier value="urn:uuid:5a8c9dd3-770a-4a32-8179-232feeb5ce90"/>
-          <timestamp value="2020-06-23T20:49:48-07:00"/>
+          <identifier value="urn:uuid:1b641d1e-bd7a-4344-ba8d-c0b67c06c4c6"/>
+          <timestamp value="2020-07-20T15:56:47-07:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>
+            <code value="handshake"/>
+            <display value="Handshake"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>
+            <code value="heartbeat"/>
+            <display value="Heartbeat"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>
+            <code value="event-notification"/>
+            <display value="Event Notification"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>
+            <code value="query-status"/>
+            <display value="Query Status"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set"/>
+    <resource>
+      <ValueSet>
+        <id value="backport-content-value-set"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-backport-content-code-system.html">Backported R5 Subscription Content Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-backport-content-code-system.html">
+                <code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-empty"> </a>
+                  <a href="CodeSystem-backport-content-code-system.html#backport-content-code-system-empty">empty</a>
+                </td>
+                <td>Empty</td>
+                <td>No resource content is transacted in the notification payload.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-id-only"> </a>
+                  <a href="CodeSystem-backport-content-code-system.html#backport-content-code-system-id-only">id-only</a>
+                </td>
+                <td>Id Only</td>
+                <td>Only the resource id is transacted in the notification payload.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-full-resource"> </a>
+                  <a href="CodeSystem-backport-content-code-system.html#backport-content-code-system-full-resource">full-resource</a>
+                </td>
+                <td>Full Resource</td>
+                <td>The entire resource is transacted in the notification payload.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set"/>
+        <version value="0.1.0"/>
+        <name value="BackportContentValueSet"/>
+        <title value="Backported R5 Subscription Content Value Set"/>
+        <status value="active"/>
+        <date value="2020-07-20T15:56:07-07:00"/>
+        <publisher value="The Argonaut Project"/>
+        <contact>
+          <name value="The Argonaut Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://argonautwiki.hl7.org"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Gino Canessa"/>
+          <telecom>
+            <system value="email"/>
+            <value value="mailto:gino.canessa@microsoft.com"/>
+          </telecom>
+        </contact>
+        <description value="Codes to represent how much resource content to send in the notification payload."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d9100512-a1c2-4f6c-af0d-7b89d6ada16c"/>
+          <timestamp value="2020-07-20T15:56:47-07:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -100,202 +228,22 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
+            <valueUri value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="blah"/>
-            <display value="Blah"/>
+            <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system"/>
+            <code value="empty"/>
+            <display value="Empty"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="foo"/>
-            <display value="Foo"/>
+            <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system"/>
+            <code value="id-only"/>
+            <display value="Id Only"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="bar"/>
-            <display value="Bar"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
-    <resource>
-      <ValueSet>
-        <id value="foo-codes"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-blah-codes.html">BlahCodes v0.0.0 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
-                </td>
-                <td>Foo</td>
-                <td>example code 2</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
-        <version value="0.0.0"/>
-        <name value="FooCodes"/>
-        <title value="Foo Value Set"/>
-        <status value="draft"/>
-        <date value="2019-03-13T08:16:34-07:00"/>
-        <publisher value="Health eData Inc"/>
-        <contact>
-          <telecom>
-            <system value="email"/>
-            <value value="mailto:ehaas@healthedatainc.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://foobar.com"/>
-          </telecom>
-        </contact>
-        <description value="A bunch of example codes"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-          </coding>
-        </jurisdiction>
-        <immutable value="true"/>
-        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
-        <expansion>
-          <identifier value="urn:uuid:ea18227e-95ff-48ee-aa0e-d884c66c3b34"/>
-          <timestamp value="2020-06-23T20:49:48-07:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
-          </parameter>
-          <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="foo"/>
-            <display value="Foo"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
-    <resource>
-      <ValueSet>
-        <id value="bar-codes"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-blah-codes.html">BlahCodes v0.0.0 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
-                </td>
-                <td>Bar</td>
-                <td>example code 3</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
-        <version value="0.0.0"/>
-        <name value="BarCodes"/>
-        <title value="Bar Value Set"/>
-        <status value="draft"/>
-        <date value="2019-03-13T08:16:34-07:00"/>
-        <publisher value="Health eData Inc"/>
-        <contact>
-          <telecom>
-            <system value="email"/>
-            <value value="mailto:ehaas@healthedatainc.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://foobar.com"/>
-          </telecom>
-        </contact>
-        <description value="A bunch of example codes"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-          </coding>
-        </jurisdiction>
-        <immutable value="true"/>
-        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
-        <expansion>
-          <identifier value="urn:uuid:53b1a5fe-1770-4bb6-8eca-c6072a408903"/>
-          <timestamp value="2020-06-23T20:50:00-07:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
-          </parameter>
-          <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="bar"/>
-            <display value="Bar"/>
+            <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system"/>
+            <code value="full-resource"/>
+            <display value="Full Resource"/>
           </contains>
         </expansion>
       </ValueSet>

@@ -1,65 +1,69 @@
-﻿IGTest4 : Validation Results
+﻿SubscriptionsR5Backport : Validation Results
 =========================================
 
-err = 3, warn = 10, info = 7
-IG Publisher Version: v1.0.100-SNAPSHOT
-Generated Tue Jun 23 20:50:28 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+err = 0, warn = 1, info = 1
+IG Publisher Version: v1.1.3 Out of date - current version is 1.1.3
+Generated Mon Jul 20 15:57:21 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
 
- Build Errors : 4 / 4
- /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1 : 1 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1 : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2 : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/ig : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes : 0 / 1
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-blah : 0 / 2
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-complex : 0 / 2
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-ifr : 0 / 2
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-basic : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-profile-on-profile : 0 / 2
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-bar-codes : 0 / 1
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-blah-codes : 0 / 1
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-foo-codes : 0 / 1
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-client : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-server : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example : 1 / 1
+ Build Errors : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/ImplementationGuide-hl7.fhir.us.subscriptions-backport : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/examples/Bundle-3945182f-d315-4dbf-9259-09d863c7e7da : 0 / 1
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/examples/Bundle-9601c07a-e34f-4945-93ca-6efb5394c995 : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/examples/Parameters-BackportNotificationStatusExample : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/examples/Subscription-admission : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/extensions/StructureDefinition-backport-heartbeat-period : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/extensions/StructureDefinition-backport-payload-content : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/extensions/StructureDefinition-backport-timeout : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/extensions/StructureDefinition-backport-topic-canonical : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/operations/OperationDefinition-Backport-subscription-status : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/operations/OperationDefinition-Backport-subscriptiontopic-list : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/profiles/StructureDefinition-backport-subscription : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/profiles/StructureDefinition-backport-subscription-notification : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/profiles/StructureDefinition-backport-subscription-status : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/profiles/StructureDefinition-backport-subscription-topic-canonical-urls : 0 / 1
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/vocabulary/CodeSystem-backport-content-code-system : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/vocabulary/CodeSystem-backport-notification-type-code-system : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/vocabulary/ValueSet-backport-content-value-set : 0 / 0
+ /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/vocabulary/ValueSet-backport-notification-type-value-set : 0 / 0
 </table>
 == n/a ==
-ERROR: ImplementationGuide.definition.parameter[38].value: Supressed messages file not found
-WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-INFORMATION: ImplementationGuide.dependency[1].url: The correct canonical URL for this dependency is http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 153, column 5381: The link 'StructureDefinition-complex.html' for "3.4 StructureDefinition Extension Complex" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 153, column 6137: The link 'StructureDefinition-blah.html' for "3.5 StructureDefinition Extension Blah" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 153, column 7478: The link 'OperationDefinition-opdef-test.html' for "4.1 OperationDefinition Opdef Test" cannot be resolved
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1.xml ==
-ERROR: Basic/diet-example1: Basic: temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1.xml ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2.xml ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/ig.json ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes.xml ==
-INFORMATION: CodeSystem/blah-codes: CodeSystem.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-blah.json ==
-WARNING: StructureDefinition/extension-blah: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah'): The Implementation Guide contains no examples for this extension
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-complex.json ==
-WARNING: StructureDefinition/extension-complex: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-complex'): The Implementation Guide contains no examples for this extension
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-ifr.xml ==
-WARNING: StructureDefinition/ifr: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/ifr'): The Implementation Guide contains no examples for this data type profile
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-basic.json ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-profile-on-profile.json ==
-WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile'): The Implementation Guide contains no examples for this profile
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-bar-codes.xml ==
-INFORMATION: ValueSet/bar-codes: ValueSet.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-blah-codes.xml ==
-INFORMATION: ValueSet/blah-codes: ValueSet.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-foo-codes.xml ==
-INFORMATION: ValueSet/foo-codes: ValueSet.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-client.xml ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-server.xml ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example.json ==
-INFORMATION: OperationDefinition/example: OperationDefinition.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
-ERROR: OperationDefinition/example: OperationDefinition.base: URL value "http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-populate" does not resolve
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/ImplementationGuide-hl7.fhir.us.subscriptions-backport.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.us.subscriptions-backport: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/examples/Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.json ==
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/examples/Bundle-9601c07a-e34f-4945-93ca-6efb5394c995.json ==
+INFORMATION: Bundle/9601c07a-e34f-4945-93ca-6efb5394c995: Bundle: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/examples/Parameters-BackportNotificationStatusExample.json ==
+INFORMATION: Parameters/BackportNotificationStatusExample: Parameters: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/examples/Subscription-admission.json ==
+INFORMATION: Subscription/admission: Subscription: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/extensions/StructureDefinition-backport-heartbeat-period.json ==
+INFORMATION: StructureDefinition/backport-heartbeat-period: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/extensions/StructureDefinition-backport-payload-content.json ==
+INFORMATION: StructureDefinition/backport-payload-content: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/extensions/StructureDefinition-backport-timeout.json ==
+INFORMATION: StructureDefinition/backport-timeout: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/extensions/StructureDefinition-backport-topic-canonical.json ==
+INFORMATION: StructureDefinition/backport-topic-canonical: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/operations/OperationDefinition-Backport-subscription-status.json ==
+INFORMATION: OperationDefinition/Backport-subscription-status: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/operations/OperationDefinition-Backport-subscriptiontopic-list.json ==
+INFORMATION: OperationDefinition/Backport-subscriptiontopic-list: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/profiles/StructureDefinition-backport-subscription.json ==
+INFORMATION: StructureDefinition/backport-subscription: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/profiles/StructureDefinition-backport-subscription-notification.json ==
+INFORMATION: StructureDefinition/backport-subscription-notification: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/profiles/StructureDefinition-backport-subscription-status.json ==
+INFORMATION: StructureDefinition/backport-subscription-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/profiles/StructureDefinition-backport-subscription-topic-canonical-urls.json ==
+INFORMATION: StructureDefinition/backport-subscription-topic-canonical-urls: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls'): The Implementation Guide contains no examples for this profile
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/vocabulary/CodeSystem-backport-content-code-system.json ==
+INFORMATION: CodeSystem/backport-content-code-system: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/vocabulary/CodeSystem-backport-notification-type-code-system.json ==
+INFORMATION: CodeSystem/backport-notification-type-code-system: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/vocabulary/ValueSet-backport-content-value-set.json ==
+INFORMATION: ValueSet/backport-content-value-set: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/ehaas/Documents/FHIR/subscription-backport-ig/input/vocabulary/ValueSet-backport-notification-type-value-set.json ==
+INFORMATION: ValueSet/backport-notification-type-value-set: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
