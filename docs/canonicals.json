@@ -1,107 +1,86 @@
 [
   {
-    "id": "Backport-subscription-status",
-    "type": "OperationDefinition",
-    "url": "http://hl7.org/fhir/OperationDefinition/Backport-subscription-status",
-    "version": "0.1.0",
-    "name": "R5SubscriptionStatus"
-  },
-  {
-    "id": "Backport-subscriptiontopic-list",
-    "type": "OperationDefinition",
-    "url": "http://hl7.org/fhir/OperationDefinition/Backport-subscriptiontopic-list",
-    "version": "0.1.0",
-    "name": "R5SubscriptionTopicList"
-  },
-  {
-    "id": "backport-content-code-system",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+    "id": "argo-group-characteristic",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system",
     "version": "0.1.0",
-    "name": "BackportContentCodeSystem"
+    "name": "ArgonautGroupCharacteristicCodeSystem"
   },
   {
-    "id": "backport-notification-type-code-system",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type",
+    "id": "update-type",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
     "version": "0.1.0",
-    "name": "BackportNotificationTypeCodeSystem"
+    "name": "DEQMUpdateTypeCodeSystem"
   },
   {
-    "id": "hl7.fhir.us.subscriptions-backport",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/ImplementationGuide/healthedatainc.sushi-sandbox",
+    "id": "healthedatainc.sushi-sandbox",
     "type": "ImplementationGuide",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/ImplementationGuide/hl7.fhir.us.subscriptions-backport",
     "version": "0.1.0",
-    "name": "SubscriptionsR5Backport"
+    "name": "SushiSandbox"
   },
   {
-    "id": "backport-heartbeat-period",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/SearchParameter/Group-value-reference",
+    "id": "Group-value-reference",
+    "type": "SearchParameter",
+    "version": "0.1.0",
+    "name": "GroupValueReference"
+  },
+  {
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/argo-patientlist",
+    "id": "argo-patientlist",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
     "version": "0.1.0",
-    "name": "BackportHeartbeatPeriod"
+    "name": "ArgonautPatientListProfile"
   },
   {
-    "id": "backport-payload-content",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/argo-patientlist2",
+    "id": "argo-patientlist2",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content",
     "version": "0.1.0",
-    "name": "BackportPayloadContent"
+    "name": "ArgonautPatientListProfile"
   },
   {
-    "id": "backport-subscription",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/extension-measureScoring",
+    "id": "extension-measureScoring",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription",
     "version": "0.1.0",
-    "name": "BackportSubscription"
+    "name": "DEQMMeasureScoring"
   },
   {
-    "id": "backport-subscription-notification",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/extension-submitDataUpdateType",
+    "id": "extension-submitDataUpdateType",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification",
     "version": "0.1.0",
-    "name": "BackportSubscriptionNotification"
+    "name": "DEQMSubmitDataUpdateType"
   },
   {
-    "id": "backport-subscription-status",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaire",
+    "id": "patientlistquestionnaire",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status",
     "version": "0.1.0",
-    "name": "BackportSubscriptionStatus"
+    "name": "PatientListQuestionnaire"
   },
   {
-    "id": "backport-subscription-topic-canonical-urls",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaireresponse",
+    "id": "patientlistquestionnaireresponse",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls",
     "version": "0.1.0",
-    "name": "BackportTopicList"
+    "name": "PatientListQuestionnaireResponse"
   },
   {
-    "id": "backport-timeout",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout",
-    "version": "0.1.0",
-    "name": "BackportTimeout"
-  },
-  {
-    "id": "backport-topic-canonical",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical",
-    "version": "0.1.0",
-    "name": "BackportTopicCanonical"
-  },
-  {
-    "id": "backport-content-value-set",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/ValueSet/argo-group-characteristic",
+    "id": "argo-group-characteristic",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set",
     "version": "0.1.0",
-    "name": "BackportContentValueSet"
+    "name": "ArgonautGroupCharacteristicValueSet"
   },
   {
-    "id": "backport-notification-type-value-set",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/ValueSet/update-type",
+    "id": "update-type",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set",
     "version": "0.1.0",
-    "name": "BackportNotificationTypeValueSet"
+    "name": "DEQMUpdateTypeValueSet"
   }
 ]

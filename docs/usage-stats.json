@@ -1,61 +1,61 @@
 {
-  "package": "hl7.fhir.us.subscriptions-backport",
+  "package": "healthedatainc.sushi-sandbox",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "US",
   "extensions": [
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
-      "title": "Backport R5 Subscription Heartbeat Period",
+      "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/extension-measureScoring",
+      "title": "DEQM Measure Scoring Extension",
       "types": [
-        "unsignedInt"
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content",
-      "title": "Backport R5 Subscription Payload Content Information",
+      "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/extension-submitDataUpdateType",
+      "title": "DEQM Submit Data Update Type Extension",
       "types": [
         "code",
         "code"
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout",
-      "title": "Backport R5 Subscription Timeout",
+      "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaire",
+      "title": "Argonaut Patient List Questionnaire",
       "types": [
-        "unsignedInt"
+        "Reference",
+        "Reference"
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical",
-      "title": "Backport R5 Subscription Topic Canonical",
+      "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaireresponse",
+      "title": "Argonaut Patient List QuestionnaireResponse",
       "types": [
-        "uri",
-        "uri"
+        "Reference",
+        "Reference"
       ]
     }
   ],
   "profiles": {
-    "Subscription": [
+    "Group": [
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription",
-        "title": "Backported R5 Subscription"
-      }
-    ],
-    "Bundle": [
-      {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification",
-        "title": "Backported R5 Subscription Notification Bundle"
-      }
-    ],
-    "Parameters": [
-      {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status",
-        "title": "Backported R5 Subscription Notification Status"
+        "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/argo-patientlist",
+        "title": "Argonaut Patient List (Group) Profile"
       },
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls",
-        "title": "Backported R5 SubscriptionTopic Canonical URL Parameters"
+        "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/argo-patientlist2",
+        "title": "Argonaut Patient List (Group) Profile"
       }
     ]
   },
@@ -75,18 +75,11 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/regex": [
-      "StructureDefinition.snapshot.element.type"
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
-      "OperationDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "OperationDefinition",
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
@@ -94,17 +87,11 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period": [
-      "Subscription.channel"
+    "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaire": [
+      "Group"
     ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content": [
-      "Subscription.channel.payload"
-    ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout": [
-      "Subscription.channel"
-    ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical": [
-      "Subscription"
+    "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaireresponse": [
+      "Group.member.entity"
     ]
   }
 }

@@ -3,17 +3,17 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.SUBSCRIPTIONS-BACKPORT\Home - FHIR v4.0.1</title>
-  
+    <title>HEALTHEDATAINC.SUSHI-SANDBOX\Home - FHIR v4.0.1</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link href="fhir.css" rel="stylesheet"/>
-     
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  
+
     <!-- Project extras -->
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
@@ -27,7 +27,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-  
+
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
     <style type="text/css">h2{--heading-prefix:"1"}
     h3,h4,h5,h6{--heading-prefix:"1"}</style>
@@ -45,16 +45,16 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Subscriptions R5 Backport</span><br/>0.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Sushi Sandbox</span><br/>0.1.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">  <!-- container -->
         <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
           <!--status-bar-->
           <div class="container">
@@ -72,20 +72,13 @@
     <a href="index.html">IG Home</a>
   </li>
   <li>
-    <a href="toc.html">Table of Contents</a>
+    <a href="guidance.html">General Guidance</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Downloads</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -96,17 +89,18 @@
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->  
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
-        </ul>  
+        </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">  <!-- segment-content -->
+
+    <div id="segment-content">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -115,7 +109,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/subscriptions-backport/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Sushi Sandbox - Local Development build (v0.1.0). See the <a href="http://www.fhir.org/guides/sushi-sandbox/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -132,72 +126,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <!-- index.md  -->
-<p>The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way.</p>
+<h4 id="sushi-sandbox">SUSHI Sandbox</h4>
 
-<h2 id="about-this-guide">About This Guide</h2>
-
-<p>This is a draft implementation guide to enable the implementation of R5-style subscriptions in earlier versions of FHIR.</p>
-
-<p>The goal of publishing this guide is to define a standard method of back-porting newer subscriptions for greater compatibility and adoption.</p>
-
-<h2 id="contents">Contents</h2>
-
-<ul>
-  <li><a href="overview.html">Overview</a>
-    <ul>
-      <li>R5 Subscription Redesign</li>
-      <li>Subscriptions Overview</li>
-      <li>Useful Links</li>
-    </ul>
-  </li>
-  <li><a href="actors_and_transactions.html">Actors and Operations</a>
-    <ul>
-      <li>Server</li>
-      <li>Client</li>
-      <li>Endpoint (REST Hook)</li>
-      <li>Endpoint (Email)</li>
-    </ul>
-  </li>
-  <li>
-    <p><a href="conformance.html">Implementation Conformance</a></p>
-  </li>
-  <li>Handling Errors
-    <ul>
-      <li>Server</li>
-      <li>Client</li>
-    </ul>
-  </li>
-  <li>Profiles and Extensions
-    <ul>
-      <li>Profile: <a href="StructureDefinition-backport-subscription.html">Subscription</a>
-        <ul>
-          <li>Extension: <a href="StructureDefinition-backport-topic-canonical.html">Backport Topic Canonical</a></li>
-          <li>Extension: <a href="StructureDefinition-backport-heartbeat-period.html">Backport Heartbeat Period</a></li>
-          <li>Extension: <a href="StructureDefinition-backport-timeout.html">Backport Timeout</a></li>
-          <li>Extension: <a href="StructureDefinition-backport-payload-content.html">Backport Payload Content</a></li>
-        </ul>
-      </li>
-      <li>Profile: Subscription Status - <a href="StructureDefinition-backport-subscription-status.html">Parameters</a></li>
-      <li>Profile: Notification <a href="StructureDefinition-backport-subscription-notification.html">Bundle</a></li>
-    </ul>
-  </li>
-  <li>Value Sets and Code Systems
-    <ul>
-      <li>Subscription Contents
-        <ul>
-          <li><a href="CodeSystem-backport-content-code-system.html">Code System</a></li>
-          <li><a href="ValueSet-backport-content-value-set.html">Value Set</a></li>
-        </ul>
-      </li>
-      <li>Subscription Notification Types
-        <ul>
-          <li><a href="CodeSystem-backport-notification-type-code-system.html">Code System</a></li>
-          <li><a href="ValueSet-backport-notification-type-value-set.html">Value Set</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+<p>testbed for ideas….</p>
 
 
 
@@ -222,7 +153,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 20, 2020 15:56-0700">2020-07-20</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.sushi-sandbox#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 21:12-0700">2020-09-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

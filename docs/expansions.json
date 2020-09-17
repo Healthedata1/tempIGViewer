@@ -1,50 +1,84 @@
 {
   "resourceType" : "Bundle",
-  "id" : "95d0bb73-785c-40ff-bd06-a0ef42d9977f",
+  "id" : "d65179ea-2ac3-40f1-8707-d3563d5e450d",
   "meta" : {
-    "lastUpdated" : "2020-07-20T15:56:07.098-07:00"
+    "lastUpdated" : "2020-09-16T21:12:29.385-07:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set",
+    "fullUrl" : "http://www.fhir.org/guides/sushi-sandbox/ValueSet/update-type",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "backport-notification-type-value-set",
+      "id" : "update-type",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-notification-type-code-system.html\">R5 Subscription Notification Type Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-notification-type-code-system.html\"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-handshake\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-handshake\">handshake</a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-heartbeat\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-heartbeat\">heartbeat</a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-event-notification\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-event-notification\">event-notification</a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-query-status\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-query-status\">query-status</a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-update-type.html\">DEQM Update Type Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-update-type.html\"><code>http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-update-type-incremental\"> </a><a href=\"CodeSystem-update-type.html#update-type-incremental\">incremental</a></td><td>Incremental</td><td>In contrast to the Snapshot Update, the FHIR Parameters resource used in a Submit Data or the Collect Data scenario contains only the new and updated DEQM and QI Core Profiles since the last transaction. If the Consumer supports incremental updates, the contents of the updated payload updates the previous payload data.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-update-type-snapshot\"> </a><a href=\"CodeSystem-update-type.html#update-type-snapshot\">snapshot</a></td><td>Snapshot</td><td>In contrast to the Incremental Update, the FHIR Parameters resource used in a Submit Data or the Collect Data scenario contains all the DEQM and QI Core Profiles for each transaction.  If the Consumer supports snapshot updates, the contents of the updated payload entirely replaces the previous payload</td></tr></table></div>"
       },
-      "url" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set",
+      "url" : "http://www.fhir.org/guides/sushi-sandbox/ValueSet/update-type",
       "version" : "0.1.0",
-      "name" : "BackportNotificationTypeValueSet",
-      "title" : "R5 Subscription Notification Type Value Set",
+      "name" : "DEQMUpdateTypeValueSet",
+      "title" : "DEQM Update Type Value Set",
       "status" : "active",
-      "date" : "2020-07-20T15:56:07-07:00",
-      "publisher" : "The Argonaut Project",
+      "date" : "2020-09-16T21:12:29-07:00",
+      "publisher" : "Health eData Inc",
       "contact" : [{
-        "name" : "The Argonaut Project",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://argonautwiki.hl7.org"
-        }]
-      },
-      {
-        "name" : "Gino Canessa",
         "telecom" : [{
           "system" : "email",
-          "value" : "mailto:gino.canessa@microsoft.com"
+          "value" : "mailto:ehaas@healthedatainc.com"
         }]
       }],
-      "description" : "Codes to represent types of notification bundles.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
+      "description" : "Concepts for how a DEQM Consumer supports data exchange updates. The choices are snapshot or incremental updates",
       "expansion" : {
-        "identifier" : "urn:uuid:1b641d1e-bd7a-4344-ba8d-c0b67c06c4c6",
-        "timestamp" : "2020-07-20T15:56:47-07:00",
+        "identifier" : "urn:uuid:d720e95c-ea10-4e4c-b2e7-c325be7da1c1",
+        "timestamp" : "2020-09-16T21:12:51-07:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type",
+          "code" : "incremental",
+          "display" : "Incremental"
+        },
+        {
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type",
+          "code" : "snapshot",
+          "display" : "Snapshot"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.fhir.org/guides/sushi-sandbox/ValueSet/argo-group-characteristic",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "argo-group-characteristic",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-argo-group-characteristic.html\">Argonaut Group Characteristic Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-argo-group-characteristic.html\"><code>http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-location\"> </a><a href=\"CodeSystem-argo-group-characteristic.html#argo-group-characteristic-location\">location</a></td><td>Location</td><td>Members (Patients) whose care is at the location specified by the value which references the Location resource representing the physical structures managed/operated by an organization (e.g., a ward, building, clinic, etc)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-team\"> </a><a href=\"CodeSystem-argo-group-characteristic.html#argo-group-characteristic-team\">team</a></td><td>CareTeam</td><td>Members (Patients) who are under the care of the care-team specified by the value which references the CareTeam resource representing the care-team. (e.g., Respiratory Therapy CareTeam, CareTeam blue , etc)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-organization\"> </a><a href=\"CodeSystem-argo-group-characteristic.html#argo-group-characteristic-organization\">organization</a></td><td>Organization</td><td>Members (Patients) whose care is at the organization specified by the value which references the Organization resource representing the organization. (e.g., Burgess Medical Group)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-practitioner\"> </a><a href=\"CodeSystem-argo-group-characteristic.html#argo-group-characteristic-practitioner\">practitioner</a></td><td>Practitioner</td><td>Members (Patients) who are under the care of the practitioner specified by the value which references the Practitioner resource representing the practitioner. (e.g., Dr Leung)</td></tr></table></div>"
+      },
+      "url" : "http://www.fhir.org/guides/sushi-sandbox/ValueSet/argo-group-characteristic",
+      "version" : "0.1.0",
+      "name" : "ArgonautGroupCharacteristicValueSet",
+      "title" : "Argonaut Group Characteristic Value Set",
+      "status" : "active",
+      "date" : "2020-09-16T21:12:29-07:00",
+      "publisher" : "Health eData Inc",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:ehaas@healthedatainc.com"
+        }]
+      }],
+      "description" : "Used to define group characteristic and limited to 'location'|....",
+      "expansion" : {
+        "identifier" : "urn:uuid:7000933f-eb81-467d-b37a-4cf4dc1924b8",
+        "timestamp" : "2020-09-16T21:12:51-07:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -52,94 +86,27 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system|0.1.0"
+          "valueUri" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
-          "code" : "handshake",
-          "display" : "Handshake"
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+          "code" : "location",
+          "display" : "Location"
         },
         {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
-          "code" : "heartbeat",
-          "display" : "Heartbeat"
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+          "code" : "team",
+          "display" : "CareTeam"
         },
         {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
-          "code" : "event-notification",
-          "display" : "Event Notification"
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+          "code" : "organization",
+          "display" : "Organization"
         },
         {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
-          "code" : "query-status",
-          "display" : "Query Status"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "backport-content-value-set",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-content-code-system.html\">Backported R5 Subscription Content Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-content-code-system.html\"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-empty\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-empty\">empty</a></td><td>Empty</td><td>No resource content is transacted in the notification payload.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-id-only\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-id-only\">id-only</a></td><td>Id Only</td><td>Only the resource id is transacted in the notification payload.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-full-resource\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-full-resource\">full-resource</a></td><td>Full Resource</td><td>The entire resource is transacted in the notification payload.</td></tr></table></div>"
-      },
-      "url" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set",
-      "version" : "0.1.0",
-      "name" : "BackportContentValueSet",
-      "title" : "Backported R5 Subscription Content Value Set",
-      "status" : "active",
-      "date" : "2020-07-20T15:56:07-07:00",
-      "publisher" : "The Argonaut Project",
-      "contact" : [{
-        "name" : "The Argonaut Project",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://argonautwiki.hl7.org"
-        }]
-      },
-      {
-        "name" : "Gino Canessa",
-        "telecom" : [{
-          "system" : "email",
-          "value" : "mailto:gino.canessa@microsoft.com"
-        }]
-      }],
-      "description" : "Codes to represent how much resource content to send in the notification payload.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:d9100512-a1c2-4f6c-af0d-7b89d6ada16c",
-        "timestamp" : "2020-07-20T15:56:47-07:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system",
-          "code" : "empty",
-          "display" : "Empty"
-        },
-        {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system",
-          "code" : "id-only",
-          "display" : "Id Only"
-        },
-        {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system",
-          "code" : "full-resource",
-          "display" : "Full Resource"
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+          "code" : "practitioner",
+          "display" : "Practitioner"
         }]
       }
     }
