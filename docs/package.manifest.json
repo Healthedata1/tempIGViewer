@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
+  "version": "current",
   "fhirVersion": "[4.0.1]",
-  "date": "20200916211146",
-  "name": "healthedatainc.sushi-sandbox"
+  "date": "20201002075210",
+  "name": "healthedatainc.ig-template4"
 }
