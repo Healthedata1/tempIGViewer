@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="56f94c49-4568-467e-b41d-3f16d200c0f3"/>
+  <id value="8bf89b34-f4f1-4a6b-b4f9-02fff68ef283"/>
   <meta>
-    <lastUpdated value="2020-10-02T07:52:43.375-07:00"/>
+    <lastUpdated value="2020-10-02T08:05:26.501-07:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+    <fullUrl value="http://www.fhir.org/guides/sushi-sandbox/ValueSet/update-type"/>
     <resource>
       <ValueSet>
-        <id value="blah-codes"/>
+        <id value="update-type"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-blah-codes.html">BlahCodes vcurrent (CodeSystem)</a>
+              <a href="CodeSystem-update-type.html">DEQM Update Type Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              <a href="CodeSystem-update-type.html">
+                <code>http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type</code>
               </a>
             </p>
             <table class="codes">
@@ -37,36 +37,29 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-blah">blah</a>
+                  <a name="http---www.fhir.org-guides-sushi-sandbox-CodeSystem-update-type-incremental"> </a>
+                  <a href="CodeSystem-update-type.html#update-type-incremental">incremental</a>
                 </td>
-                <td>Blah</td>
-                <td>example code 1</td>
+                <td>Incremental</td>
+                <td>In contrast to the Snapshot Update, the FHIR Parameters resource used in a Submit Data or the Collect Data scenario contains only the new and updated DEQM and QI Core Profiles since the last transaction. If the Consumer supports incremental updates, the contents of the updated payload updates the previous payload data.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
+                  <a name="http---www.fhir.org-guides-sushi-sandbox-CodeSystem-update-type-snapshot"> </a>
+                  <a href="CodeSystem-update-type.html#update-type-snapshot">snapshot</a>
                 </td>
-                <td>Foo</td>
-                <td>example code 2</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
-                </td>
-                <td>Bar</td>
-                <td>example code 3</td>
+                <td>Snapshot</td>
+                <td>In contrast to the Incremental Update, the FHIR Parameters resource used in a Submit Data or the Collect Data scenario contains all the DEQM and QI Core Profiles for each transaction.  If the Consumer supports snapshot updates, the contents of the updated payload entirely replaces the previous payload</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
-        <version value="current"/>
-        <name value="BlahCodes"/>
-        <status value="draft"/>
-        <date value="2018-03-13T08:16:34-07:00"/>
+        <url value="http://www.fhir.org/guides/sushi-sandbox/ValueSet/update-type"/>
+        <version value="0.1.0"/>
+        <name value="DEQMUpdateTypeValueSet"/>
+        <title value="DEQM Update Type Value Set"/>
+        <status value="active"/>
+        <date value="2020-10-02T08:05:26-07:00"/>
         <publisher value="Health eData Inc"/>
         <contact>
           <telecom>
@@ -74,68 +67,48 @@
             <value value="mailto:ehaas@healthedatainc.com"/>
           </telecom>
         </contact>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://foobar.com"/>
-          </telecom>
-        </contact>
-        <description value="A bunch of example codes"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-          </coding>
-        </jurisdiction>
-        <immutable value="true"/>
-        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <description value="Concepts for how a DEQM Consumer supports data exchange updates. The choices are snapshot or incremental updates"/>
         <expansion>
-          <identifier value="urn:uuid:f68d1806-446a-4208-a4c9-ecbd8819ded5"/>
-          <timestamp value="2020-10-02T07:53:12-07:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:02da0285-e623-46f9-a0d8-ed1b4c5f6aff"/>
+          <timestamp value="2020-10-02T08:06:08-07:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|current"/>
+            <valueUri value="http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="blah"/>
-            <display value="Blah"/>
+            <system value="http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type"/>
+            <code value="incremental"/>
+            <display value="Incremental"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="foo"/>
-            <display value="Foo"/>
-          </contains>
-          <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="bar"/>
-            <display value="Bar"/>
+            <system value="http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type"/>
+            <code value="snapshot"/>
+            <display value="Snapshot"/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
+    <fullUrl value="http://www.fhir.org/guides/sushi-sandbox/ValueSet/argo-group-characteristic"/>
     <resource>
       <ValueSet>
-        <id value="foo-codes"/>
+        <id value="argo-group-characteristic"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-blah-codes.html">BlahCodes vcurrent (CodeSystem)</a>
+              <a href="CodeSystem-argo-group-characteristic.html">Argonaut Group Characteristic Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              <a href="CodeSystem-argo-group-characteristic.html">
+                <code>http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic</code>
               </a>
             </p>
             <table class="codes">
@@ -152,21 +125,45 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
+                  <a name="http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-location"> </a>
+                  <a href="CodeSystem-argo-group-characteristic.html#argo-group-characteristic-location">location</a>
                 </td>
-                <td>Foo</td>
-                <td>example code 2</td>
+                <td>Location</td>
+                <td>Members (Patients) whose care is at the location specified by the value which references the Location resource representing the physical structures managed/operated by an organization (e.g., a ward, building, clinic, etc)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-team"> </a>
+                  <a href="CodeSystem-argo-group-characteristic.html#argo-group-characteristic-team">team</a>
+                </td>
+                <td>CareTeam</td>
+                <td>Members (Patients) who are under the care of the care-team specified by the value which references the CareTeam resource representing the care-team. (e.g., Respiratory Therapy CareTeam, CareTeam blue , etc)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-organization"> </a>
+                  <a href="CodeSystem-argo-group-characteristic.html#argo-group-characteristic-organization">organization</a>
+                </td>
+                <td>Organization</td>
+                <td>Members (Patients) whose care is at the organization specified by the value which references the Organization resource representing the organization. (e.g., Burgess Medical Group)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-practitioner"> </a>
+                  <a href="CodeSystem-argo-group-characteristic.html#argo-group-characteristic-practitioner">practitioner</a>
+                </td>
+                <td>Practitioner</td>
+                <td>Members (Patients) who are under the care of the practitioner specified by the value which references the Practitioner resource representing the practitioner. (e.g., Dr Leung)</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
-        <version value="current"/>
-        <name value="FooCodes"/>
-        <title value="Foo Value Set"/>
-        <status value="draft"/>
-        <date value="2019-03-13T08:16:34-07:00"/>
+        <url value="http://www.fhir.org/guides/sushi-sandbox/ValueSet/argo-group-characteristic"/>
+        <version value="0.1.0"/>
+        <name value="ArgonautGroupCharacteristicValueSet"/>
+        <title value="Argonaut Group Characteristic Value Set"/>
+        <status value="active"/>
+        <date value="2020-10-02T08:05:26-07:00"/>
         <publisher value="Health eData Inc"/>
         <contact>
           <telecom>
@@ -174,128 +171,38 @@
             <value value="mailto:ehaas@healthedatainc.com"/>
           </telecom>
         </contact>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://foobar.com"/>
-          </telecom>
-        </contact>
-        <description value="A bunch of example codes"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-          </coding>
-        </jurisdiction>
-        <immutable value="true"/>
-        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <description value="Used to define group characteristic and limited to &#39;location&#39;|...."/>
         <expansion>
-          <identifier value="urn:uuid:226407d0-6289-4092-bc5b-8a074624827e"/>
-          <timestamp value="2020-10-02T07:53:12-07:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:a4b02706-ed0f-4c39-ac77-341a59684d51"/>
+          <timestamp value="2020-10-02T08:06:08-07:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|current"/>
+            <valueUri value="http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="foo"/>
-            <display value="Foo"/>
+            <system value="http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic"/>
+            <code value="location"/>
+            <display value="Location"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
-    <resource>
-      <ValueSet>
-        <id value="bar-codes"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-blah-codes.html">BlahCodes vcurrent (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
-                </td>
-                <td>Bar</td>
-                <td>example code 3</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
-        <version value="current"/>
-        <name value="BarCodes"/>
-        <title value="Bar Value Set"/>
-        <status value="draft"/>
-        <date value="2019-03-13T08:16:34-07:00"/>
-        <publisher value="Health eData Inc"/>
-        <contact>
-          <telecom>
-            <system value="email"/>
-            <value value="mailto:ehaas@healthedatainc.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://foobar.com"/>
-          </telecom>
-        </contact>
-        <description value="A bunch of example codes"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-          </coding>
-        </jurisdiction>
-        <immutable value="true"/>
-        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  *use `&amp;#xA;` to create a new line for markdown in XML* onlymarkdown&#xA;&#xA;  new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
-        <expansion>
-          <identifier value="urn:uuid:adfac638-7fd8-4a6c-a9f3-b4663ab07775"/>
-          <timestamp value="2020-10-02T07:53:25-07:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|current"/>
-          </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
-            <code value="bar"/>
-            <display value="Bar"/>
+            <system value="http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic"/>
+            <code value="team"/>
+            <display value="CareTeam"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic"/>
+            <code value="organization"/>
+            <display value="Organization"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic"/>
+            <code value="practitioner"/>
+            <display value="Practitioner"/>
           </contains>
         </expansion>
       </ValueSet>

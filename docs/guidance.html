@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HEALTHEDATAINC.IG-TEMPLATE4\General Guidance - FHIR v4.0.1</title>
+    <title>HEALTHEDATAINC.SUSHI-SANDBOX\Guidance - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,15 +40,15 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>current - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Sushi Sandbox</span><br/>0.1.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -68,61 +68,22 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
-    <a href="index.html">Home</a>
+    <a href="index.html">IG Home</a>
   </li>
   <li>
     <a href="guidance.html">General Guidance</a>
   </li>
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
-    </b>
-  </a>
-  <ul class="dropdown-menu">
-
-    <li>
-      <a href="profiles.html">Profiles and Logical Models</a>
-    </li>
-
-    <!-- <li>
-    <a href="extensions.html">Extensions</a>
-  </li>-->
-
   <li>
-    <a href="searchparameters.html">Search Parameters</a>
+    <a href="artifacts.html">Artifact Index</a>
   </li>
-
   <li>
-    <a href="operations.html">Operations</a>
+    <a href="downloads.html">Downloads</a>
   </li>
-
-  <!--   <li>
-  <a href="structuremaps.html">Mappings</a>
-</li>-->
-
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
-
-<li>
-<a href="capstatements.html">CapabilityStatements</a>
-
-</li>
-
 </ul>
-</li>
-<li>
-  <a href="security.html">Security</a>
-</li>
-<li>
-  <a href="all-examples.html">Examples</a>
-</li>
-<li>
-  <a href="downloads.html">Downloads</a>
-</li>
-</ul>
-
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -133,7 +94,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>General Guidance</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Guidance</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -151,8 +112,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (vcurrent). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>General Guidance</h2>
+  <!--ReleaseHeader--><p id="publish-box">Sushi Sandbox - Local Development build (v0.1.0). See the <a href="http://www.fhir.org/guides/sushi-sandbox/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Guidance</h2>
   
 
 
@@ -164,97 +125,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#my-list" id="markdown-toc-my-list">My list</a></li>
-  <li><a href="#more-stuff" id="markdown-toc-more-stuff">More Stuff</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h3 class="self-link" id="introduction">Introduction</h3>
-
-<p>This is based on index.html</p>
-
-<p>
-  <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#example" aria-expanded="false" aria-controls="collapseExample">
-    Example Button bar
-  </button>
-</p>
-
-<div class="collapse" id="example">
-  <div class="card card-body">
-      
-<h2 id="foo">foo</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-example for button bar
-</code></pre></div></div>
-
-  </div>
-</div>
-<p><br /></p>
-
-<h3 id="my-list">My list</h3>
-
-<ul>
-  <li>list 1</li>
-  <li>list 2
-    <ul>
-      <li>foo</li>
-    </ul>
-  </li>
-  <li>
-    <p>bar</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- foo
-</code></pre></div>    </div>
-  </li>
-  <li>bar</li>
-</ul>
-
-<p>blah blah blah</p>
-
-<h3 id="more-stuff">More Stuff</h3>
-
-<p>inline json example exploiting Rouge to highlight inline comment (errors in json):</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-</span><span class="nl">"foo"</span><span class="p">:</span><span class="w">  </span><span class="s2">"bar"</span><span class="w">  </span><span class="err">\\adding</span><span class="w"> </span><span class="err">comment</span><span class="w"> </span><span class="err">here</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">shown</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">error</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">jekyll</span><span class="p">,</span><span class="w">
-</span><span class="nl">"foo2"</span><span class="p">:</span><span class="w">  </span><span class="s2">"bar2"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="and-more-stuff">And More Stuff</h4>
+<!-- guidance.md  -->
+<h3 id="guidance">Guidance</h3>
 
 
 
@@ -279,7 +154,7 @@ example for button bar
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#current based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 2, 2020 07:52-0700">2020-10-02</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.sushi-sandbox#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 2, 2020 08:05-0700">2020-10-02</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

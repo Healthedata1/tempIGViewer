@@ -1,189 +1,112 @@
 {
   "resourceType" : "Bundle",
-  "id" : "56f94c49-4568-467e-b41d-3f16d200c0f3",
+  "id" : "8bf89b34-f4f1-4a6b-b4f9-02fff68ef283",
   "meta" : {
-    "lastUpdated" : "2020-10-02T07:52:43.375-07:00"
+    "lastUpdated" : "2020-10-02T08:05:26.501-07:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+    "fullUrl" : "http://www.fhir.org/guides/sushi-sandbox/ValueSet/update-type",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "blah-codes",
+      "id" : "update-type",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-blah-codes.html\">BlahCodes vcurrent (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-blah\">blah</a></td><td>Blah</td><td>example code 1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-bar\">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-update-type.html\">DEQM Update Type Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-update-type.html\"><code>http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-update-type-incremental\"> </a><a href=\"CodeSystem-update-type.html#update-type-incremental\">incremental</a></td><td>Incremental</td><td>In contrast to the Snapshot Update, the FHIR Parameters resource used in a Submit Data or the Collect Data scenario contains only the new and updated DEQM and QI Core Profiles since the last transaction. If the Consumer supports incremental updates, the contents of the updated payload updates the previous payload data.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-update-type-snapshot\"> </a><a href=\"CodeSystem-update-type.html#update-type-snapshot\">snapshot</a></td><td>Snapshot</td><td>In contrast to the Incremental Update, the FHIR Parameters resource used in a Submit Data or the Collect Data scenario contains all the DEQM and QI Core Profiles for each transaction.  If the Consumer supports snapshot updates, the contents of the updated payload entirely replaces the previous payload</td></tr></table></div>"
       },
-      "url" : "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
-      "version" : "current",
-      "name" : "BlahCodes",
-      "status" : "draft",
-      "date" : "2018-03-13T08:16:34-07:00",
+      "url" : "http://www.fhir.org/guides/sushi-sandbox/ValueSet/update-type",
+      "version" : "0.1.0",
+      "name" : "DEQMUpdateTypeValueSet",
+      "title" : "DEQM Update Type Value Set",
+      "status" : "active",
+      "date" : "2020-10-02T08:05:26-07:00",
       "publisher" : "Health eData Inc",
       "contact" : [{
         "telecom" : [{
           "system" : "email",
           "value" : "mailto:ehaas@healthedatainc.com"
         }]
-      },
-      {
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://foobar.com"
-        }]
       }],
-      "description" : "A bunch of example codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US",
-          "display" : "United States of America"
-        }]
-      }],
-      "immutable" : true,
-      "copyright" : "markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2",
+      "description" : "Concepts for how a DEQM Consumer supports data exchange updates. The choices are snapshot or incremental updates",
       "expansion" : {
-        "identifier" : "urn:uuid:f68d1806-446a-4208-a4c9-ecbd8819ded5",
-        "timestamp" : "2020-10-02T07:53:12-07:00",
-        "total" : 3,
+        "identifier" : "urn:uuid:02da0285-e623-46f9-a0d8-ed1b4c5f6aff",
+        "timestamp" : "2020-10-02T08:06:08-07:00",
+        "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes|current"
+          "valueUri" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
-          "code" : "blah",
-          "display" : "Blah"
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type",
+          "code" : "incremental",
+          "display" : "Incremental"
         },
         {
-          "system" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
-          "code" : "foo",
-          "display" : "Foo"
-        },
-        {
-          "system" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
-          "code" : "bar",
-          "display" : "Bar"
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type",
+          "code" : "snapshot",
+          "display" : "Snapshot"
         }]
       }
     }
   },
   {
-    "fullUrl" : "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
+    "fullUrl" : "http://www.fhir.org/guides/sushi-sandbox/ValueSet/argo-group-characteristic",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "foo-codes",
+      "id" : "argo-group-characteristic",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-blah-codes.html\">BlahCodes vcurrent (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-argo-group-characteristic.html\">Argonaut Group Characteristic Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-argo-group-characteristic.html\"><code>http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-location\"> </a><a href=\"CodeSystem-argo-group-characteristic.html#argo-group-characteristic-location\">location</a></td><td>Location</td><td>Members (Patients) whose care is at the location specified by the value which references the Location resource representing the physical structures managed/operated by an organization (e.g., a ward, building, clinic, etc)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-team\"> </a><a href=\"CodeSystem-argo-group-characteristic.html#argo-group-characteristic-team\">team</a></td><td>CareTeam</td><td>Members (Patients) who are under the care of the care-team specified by the value which references the CareTeam resource representing the care-team. (e.g., Respiratory Therapy CareTeam, CareTeam blue , etc)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-organization\"> </a><a href=\"CodeSystem-argo-group-characteristic.html#argo-group-characteristic-organization\">organization</a></td><td>Organization</td><td>Members (Patients) whose care is at the organization specified by the value which references the Organization resource representing the organization. (e.g., Burgess Medical Group)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-sushi-sandbox-CodeSystem-argo-group-characteristic-practitioner\"> </a><a href=\"CodeSystem-argo-group-characteristic.html#argo-group-characteristic-practitioner\">practitioner</a></td><td>Practitioner</td><td>Members (Patients) who are under the care of the practitioner specified by the value which references the Practitioner resource representing the practitioner. (e.g., Dr Leung)</td></tr></table></div>"
       },
-      "url" : "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
-      "version" : "current",
-      "name" : "FooCodes",
-      "title" : "Foo Value Set",
-      "status" : "draft",
-      "date" : "2019-03-13T08:16:34-07:00",
+      "url" : "http://www.fhir.org/guides/sushi-sandbox/ValueSet/argo-group-characteristic",
+      "version" : "0.1.0",
+      "name" : "ArgonautGroupCharacteristicValueSet",
+      "title" : "Argonaut Group Characteristic Value Set",
+      "status" : "active",
+      "date" : "2020-10-02T08:05:26-07:00",
       "publisher" : "Health eData Inc",
       "contact" : [{
         "telecom" : [{
           "system" : "email",
           "value" : "mailto:ehaas@healthedatainc.com"
         }]
-      },
-      {
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://foobar.com"
-        }]
       }],
-      "description" : "A bunch of example codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US",
-          "display" : "United States of America"
-        }]
-      }],
-      "immutable" : true,
-      "copyright" : "markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2",
+      "description" : "Used to define group characteristic and limited to 'location'|....",
       "expansion" : {
-        "identifier" : "urn:uuid:226407d0-6289-4092-bc5b-8a074624827e",
-        "timestamp" : "2020-10-02T07:53:12-07:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:a4b02706-ed0f-4c39-ac77-341a59684d51",
+        "timestamp" : "2020-10-02T08:06:08-07:00",
+        "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes|current"
+          "valueUri" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
-          "code" : "foo",
-          "display" : "Foo"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://www.fhir.org/guides/test3/ValueSet/bar-codes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "bar-codes",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-blah-codes.html\">BlahCodes vcurrent (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-bar\">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
-      },
-      "url" : "http://www.fhir.org/guides/test3/ValueSet/bar-codes",
-      "version" : "current",
-      "name" : "BarCodes",
-      "title" : "Bar Value Set",
-      "status" : "draft",
-      "date" : "2019-03-13T08:16:34-07:00",
-      "publisher" : "Health eData Inc",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "email",
-          "value" : "mailto:ehaas@healthedatainc.com"
-        }]
-      },
-      {
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://foobar.com"
-        }]
-      }],
-      "description" : "A bunch of example codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US",
-          "display" : "United States of America"
-        }]
-      }],
-      "immutable" : true,
-      "copyright" : "markdown link: [American Medical Association](https://www.ama-assn.org/)\n\n  *use `&#xA;` to create a new line for markdown in XML* onlymarkdown\n\n  new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n  ## header2\n  ### header3\n  ### header4 \n *emphasis* \n **bold** \n unordered markdown list:\n - list 1\n - list 2\n\n  ordered markdown list:\n 1. list1\n 1. list2",
-      "expansion" : {
-        "identifier" : "urn:uuid:adfac638-7fd8-4a6c-a9f3-b4663ab07775",
-        "timestamp" : "2020-10-02T07:53:25-07:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+          "code" : "location",
+          "display" : "Location"
         },
         {
-          "name" : "version",
-          "valueUri" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes|current"
-        }],
-        "contains" : [{
-          "system" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
-          "code" : "bar",
-          "display" : "Bar"
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+          "code" : "team",
+          "display" : "CareTeam"
+        },
+        {
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+          "code" : "organization",
+          "display" : "Organization"
+        },
+        {
+          "system" : "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+          "code" : "practitioner",
+          "display" : "Practitioner"
         }]
       }
     }

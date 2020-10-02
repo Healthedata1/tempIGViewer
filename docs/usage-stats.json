@@ -1,198 +1,65 @@
 {
-  "package": "healthedatainc.ig-template4",
-  "version": "current",
+  "package": "healthedatainc.sushi-sandbox",
+  "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
-      "title": "Simple Extension",
+      "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/extension-measureScoring",
+      "title": "DEQM Measure Scoring Extension",
       "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/extension-submitDataUpdateType",
+      "title": "DEQM Submit Data Update Type Extension",
+      "types": [
+        "code",
         "code"
       ]
     },
     {
-      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
-      "title": "Complex Extension",
+      "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaire",
+      "title": "Argonaut Patient List Questionnaire",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
         "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "code",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaireresponse",
+      "title": "Argonaut Patient List QuestionnaireResponse",
+      "types": [
         "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
+        "Reference"
       ]
     }
   ],
   "profiles": {
-    "Basic": [
+    "Group": [
       {
-        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
-        "title": "Health eData Template Profile"
-      }
-    ],
-    "Patient": [
+        "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/argo-patientlist",
+        "title": "Argonaut Patient List (Group) Profile"
+      },
       {
-        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
-        "title": "Template Profile on Profile"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-vital-on-vital",
-        "title": "Template-Vital-on-Vitals"
+        "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/argo-patientlist2",
+        "title": "Argonaut Patient List (Group) Profile"
       }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
-      "CapabilityStatement.rest.resource.interaction"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -211,26 +78,14 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
-      "Patient.contact.name.family"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
-      "Patient.birthDate"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
-      "StructureDefinition.snapshot.element"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
@@ -238,20 +93,11 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
-      "Patient"
+    "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaire": [
+      "Group"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
-      "Patient"
-    ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
-      "Patient"
-    ],
-    "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah": [
-      "Basic"
-    ],
-    "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex": [
-      "Basic"
+    "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaireresponse": [
+      "Group.member.entity"
     ]
   }
 }

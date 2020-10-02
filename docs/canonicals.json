@@ -1,100 +1,86 @@
 [
   {
-    "id": "client",
-    "type": "CapabilityStatement",
-    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/client",
-    "version": "current",
-    "name": "Client"
-  },
-  {
-    "id": "server",
-    "type": "CapabilityStatement",
-    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/server",
-    "version": "current",
-    "name": "Server"
-  },
-  {
-    "id": "blah-codes",
+    "id": "argo-group-characteristic",
     "type": "CodeSystem",
-    "url": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
-    "version": "current",
-    "name": "BlahCodes"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/argo-group-characteristic",
+    "version": "0.1.0",
+    "name": "ArgonautGroupCharacteristicCodeSystem"
   },
   {
-    "id": "healthedatainc.ig-template4",
+    "id": "update-type",
+    "type": "CodeSystem",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/CodeSystem/update-type",
+    "version": "0.1.0",
+    "name": "DEQMUpdateTypeCodeSystem"
+  },
+  {
+    "id": "healthedatainc.sushi-sandbox",
     "type": "ImplementationGuide",
-    "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4",
-    "version": "current",
-    "name": "IGTest4"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/ImplementationGuide/healthedatainc.sushi-sandbox",
+    "version": "0.1.0",
+    "name": "SushiSandbox"
   },
   {
-    "id": "example",
-    "type": "OperationDefinition",
-    "url": "http://www.fhir.org/guides/test3/OperationDefinition/example",
-    "version": "current",
-    "name": "PopulateQuestionnaire"
+    "id": "Group-value-reference",
+    "type": "SearchParameter",
+    "url": "http://www.fhir.org/guides/sushi-sandbox/SearchParameter/Group-value-reference",
+    "version": "0.1.0",
+    "name": "GroupValueReference"
   },
   {
-    "id": "extension-blah",
+    "id": "argo-patientlist",
     "type": "StructureDefinition",
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
-    "version": "current",
-    "name": "blah"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/argo-patientlist",
+    "version": "0.1.0",
+    "name": "ArgonautPatientListProfile"
   },
   {
-    "id": "extension-complex",
+    "id": "argo-patientlist2",
     "type": "StructureDefinition",
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
-    "version": "current",
-    "name": "complex"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/argo-patientlist2",
+    "version": "0.1.0",
+    "name": "ArgonautPatientListProfile"
   },
   {
-    "id": "ifr",
+    "id": "extension-measureScoring",
     "type": "StructureDefinition",
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/ifr",
-    "version": "current",
-    "name": "Identifer Free Reference Data Type"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/extension-measureScoring",
+    "version": "0.1.0",
+    "name": "DEQMMeasureScoring"
   },
   {
-    "id": "template-basic",
+    "id": "extension-submitDataUpdateType",
     "type": "StructureDefinition",
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
-    "version": "current",
-    "name": "TemplateBasic"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/extension-submitDataUpdateType",
+    "version": "0.1.0",
+    "name": "DEQMSubmitDataUpdateType"
   },
   {
-    "id": "template-profile-on-profile",
+    "id": "patientlistquestionnaire",
     "type": "StructureDefinition",
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
-    "version": "current",
-    "name": "Template-Profile-on-Profile"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaire",
+    "version": "0.1.0",
+    "name": "PatientListQuestionnaire"
   },
   {
-    "id": "template-vital-on-vital",
+    "id": "patientlistquestionnaireresponse",
     "type": "StructureDefinition",
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-vital-on-vital",
-    "version": "current",
-    "name": "Template-Vital-on-Vitals"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/StructureDefinition/patientlistquestionnaireresponse",
+    "version": "0.1.0",
+    "name": "PatientListQuestionnaireResponse"
   },
   {
-    "id": "bar-codes",
+    "id": "argo-group-characteristic",
     "type": "ValueSet",
-    "url": "http://www.fhir.org/guides/test3/ValueSet/bar-codes",
-    "version": "current",
-    "name": "BarCodes"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/ValueSet/argo-group-characteristic",
+    "version": "0.1.0",
+    "name": "ArgonautGroupCharacteristicValueSet"
   },
   {
-    "id": "blah-codes",
+    "id": "update-type",
     "type": "ValueSet",
-    "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
-    "version": "current",
-    "name": "BlahCodes"
-  },
-  {
-    "id": "foo-codes",
-    "type": "ValueSet",
-    "url": "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
-    "version": "current",
-    "name": "FooCodes"
+    "url": "http://www.fhir.org/guides/sushi-sandbox/ValueSet/update-type",
+    "version": "0.1.0",
+    "name": "DEQMUpdateTypeValueSet"
   }
 ]
