@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="PractitionerExample1"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Practitioner Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a Practitioner example for the *IPA Practitioner Profile*."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "PractitionerExample1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ipa-practitioner.html">IPA-Practitioner</a></p></div><p><b>identifier</b>: id: 1538344056 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marty Seeger</p><p><b>gender</b>: male</p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:1.2.840.114350.1.13.861.1.7.5.737384.295"/>
+    <value value="1538344056"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="usual"/>
+    <text value="Marty Seeger"/>
+    <family value="Seeger"/>
+    <given value="Marty"/>
+  </name>
+  <gender value="male"/>
+</Practitioner>

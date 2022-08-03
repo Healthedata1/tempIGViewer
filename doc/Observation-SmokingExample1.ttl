@@ -1,0 +1,202 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/Observation/SmokingExample1> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SmokingExample1"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/instance-name" ];
+       fhir:Extension.valueString [ fhir:value "Observation social history smoking Example" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/instance-description" ];
+       fhir:Extension.valueMarkdown [ fhir:value "This is a Observation example for the *IPA Observation Profile*." ]
+     ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"SmokingExample1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ipa-observation.html\">IPA-Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Smoking History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#72166-2 \"Tobacco smoking status\"; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365980008 \"Finding of tobacco use and exposure (finding)\")</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample1.html\">Patient/PatientExample1: Test, Patient FHIR</a> \" LUFHIR\"</p><p><b>effective</b>: 2009-01-01 --&gt; (ongoing)</p><p><b>issued</b>: May 10, 2021, 10:00:00 PM</p><p><b>performer</b>: <a href=\"Practitioner-PractitionerExample1.html\">Practitioner/PractitionerExample1: Dr. FHIR</a> \" SEEGER\"</p><p><b>value</b>: Every Day <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#449868002 \"Smokes tobacco daily\")</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#81228-9 \"Tobacco product\")</span></p><p><b>value</b>: Cigarettes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#65568007 \"Cigarette Smoker\")</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#81228-9 \"Tobacco product\")</span></p><p><b>value</b>: Chew <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#81703003 \"Chews Tobacco\")</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Cigarette pack-years (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#401201003)</span></p><p><b>value</b>: 3.72 {PackYears}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {PackYears} = '{PackYears}')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Years Used <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#88029-4 \"Tobacco use duration\")</span></p><p><b>value</b>: 12.4 Years Used<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Packs/Day <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8663-7 \"Cigarettes smoked current (pack per day) - Reported\"; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#266918002 \"Tobacco smoking consumption (observable entity)\")</span></p><p><b>value</b>: 0.3 Packs/Day<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT code 228963008 = 'packets/day')</span></p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "social-history" ];
+       fhir:Coding.display [ fhir:value "Social History" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Social History" ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:72166-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "72166-2" ];
+       fhir:Coding.display [ fhir:value "Tobacco smoking status" ]
+     ], [
+       fhir:index 1;
+       a sct:365980008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "365980008" ];
+       fhir:Coding.display [ fhir:value "Finding of tobacco use and exposure (finding)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Smoking History" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.org/fhir/uv/ipa/Patient/PatientExample1>;
+     fhir:Reference.reference [ fhir:value "Patient/PatientExample1" ];
+     fhir:Reference.display [ fhir:value "Test, Patient FHIR" ]
+  ];
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2009-01-01"^^xsd:date ]
+  ];
+  fhir:Observation.issued [ fhir:value "2021-05-11T05:00:00Z"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/uv/ipa/Practitioner/PractitionerExample1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/PractitionerExample1" ];
+     fhir:Reference.display [ fhir:value "Dr. FHIR" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:449868002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "449868002" ];
+       fhir:Coding.display [ fhir:value "Smokes tobacco daily" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Every Day" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:81228-9;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "81228-9" ];
+         fhir:Coding.display [ fhir:value "Tobacco product" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Type" ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:65568007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "65568007" ];
+         fhir:Coding.display [ fhir:value "Cigarette Smoker" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Cigarettes" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:81228-9;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "81228-9" ];
+         fhir:Coding.display [ fhir:value "Tobacco product" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Type" ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:81703003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "81703003" ];
+         fhir:Coding.display [ fhir:value "Chews Tobacco" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Chew" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:401201003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "401201003" ];
+         fhir:Coding.display [ fhir:value "Cigarette pack-years (observable entity)" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Cigarette pack-years (observable entity)" ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "3.72"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "{PackYears}" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "{PackYears}" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:88029-4;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "88029-4" ];
+         fhir:Coding.display [ fhir:value "Tobacco use duration" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Years Used" ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "12.4"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "Years Used" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "a" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:8663-7;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "8663-7" ];
+         fhir:Coding.display [ fhir:value "Cigarettes smoked current (pack per day) - Reported" ]
+       ], [
+         fhir:index 1;
+         a sct:266918002;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "266918002" ];
+         fhir:Coding.display [ fhir:value "Tobacco smoking consumption (observable entity)" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Packs/Day" ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "0.3"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "Packs/Day" ];
+       fhir:Quantity.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Quantity.code [ fhir:value "228963008" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/uv/ipa/Patient/PatientExample1> a fhir:uv .
+
+<http://hl7.org/fhir/uv/ipa/Practitioner/PractitionerExample1> a fhir:uv .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/Observation/SmokingExample1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/ipa/Observation/SmokingExample1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

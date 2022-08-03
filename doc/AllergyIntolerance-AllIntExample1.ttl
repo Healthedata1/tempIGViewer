@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/AllergyIntolerance/AllIntExample1> a fhir:AllergyIntolerance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "AllIntExample1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"AllIntExample1\" </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (AllergyIntolerance Clinical Status Codes[4.0.0]#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (AllergyIntolerance Verification Status[4.0.0]#confirmed)</span></p><p><b>category</b>: medication</p><p><b>code</b>: SMALLPOX VACCINE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#833082 \"smallpox (vaccinia) vaccine, live Injectable Solution\"; fdasis.nlm.nih.gov#4SV59689SK)</span></p><p><b>patient</b>: <a href=\"Patient-PatientExample1.html\">Patient/PatientExample1: Lufhir, Meiko</a> \" LUFHIR\"</p><p><b>recordedDate</b>: 2019-04-19</p></div>"
+  ];
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ];
+       fhir:Coding.version [ fhir:value "4.0.0" ];
+       fhir:Coding.code [ fhir:value "active" ];
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ];
+       fhir:Coding.version [ fhir:value "4.0.0" ];
+       fhir:Coding.code [ fhir:value "confirmed" ];
+       fhir:Coding.display [ fhir:value "Confirmed" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.category [
+     fhir:value "medication";
+     fhir:index 0
+  ];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "833082" ];
+       fhir:Coding.display [ fhir:value "smallpox (vaccinia) vaccine, live Injectable Solution" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://fdasis.nlm.nih.gov" ];
+       fhir:Coding.code [ fhir:value "4SV59689SK" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "SMALLPOX VACCINE" ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <http://hl7.org/fhir/uv/ipa/Patient/PatientExample1>;
+     fhir:Reference.reference [ fhir:value "Patient/PatientExample1" ];
+     fhir:Reference.display [ fhir:value "Lufhir, Meiko" ]
+  ];
+  fhir:AllergyIntolerance.recordedDate [ fhir:value "2019-04-19"^^xsd:date] .
+
+<http://hl7.org/fhir/uv/ipa/Patient/PatientExample1> a fhir:uv .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/AllergyIntolerance/AllIntExample1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/ipa/AllergyIntolerance/AllIntExample1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

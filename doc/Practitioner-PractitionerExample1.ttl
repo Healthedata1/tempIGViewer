@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/Practitioner/PractitionerExample1> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PractitionerExample1"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/instance-name" ];
+       fhir:Extension.valueString [ fhir:value "Practitioner Example" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/instance-description" ];
+       fhir:Extension.valueMarkdown [ fhir:value "This is a Practitioner example for the *IPA Practitioner Profile*." ]
+     ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PractitionerExample1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ipa-practitioner.html\">IPA-Practitioner</a></p></div><p><b>identifier</b>: id: 1538344056 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marty Seeger</p><p><b>gender</b>: male</p></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.840.114350.1.13.861.1.7.5.737384.295" ];
+     fhir:Identifier.value [ fhir:value "1538344056" ]
+  ];
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.text [ fhir:value "Marty Seeger" ];
+     fhir:HumanName.family [ fhir:value "Seeger" ];
+     fhir:HumanName.given [
+       fhir:value "Marty";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.gender [ fhir:value "male"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/Practitioner/PractitionerExample1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/ipa/Practitioner/PractitionerExample1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

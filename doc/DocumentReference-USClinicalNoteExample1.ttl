@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/DocumentReference/USClinicalNoteExample1> a fhir:DocumentReference;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "USClinicalNoteExample1"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/instance-name" ];
+       fhir:Extension.valueString [ fhir:value "DocumentReference Example" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/instance-description" ];
+       fhir:Extension.valueMarkdown [ fhir:value "This is a DocumentReference example for the *IPA DocumentReference Profile*." ]
+     ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-documentreference";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-documentreference>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"USClinicalNoteExample1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ipa-documentreference.html\">IPA-DocumentReference</a></p></div><p><b>status</b>: current</p><p><b>docStatus</b>: final</p><p><b>type</b>: Progress Note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11506-3)</span></p><p><b>category</b>: Clinical Note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#34109-9 \"Note\")</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample1.html\">Patient/PatientExample1: Lufhir, Meiko</a> \" LUFHIR\"</p><p><b>date</b>: May 21, 2019, 1:19:30 PM</p><p><b>author</b>: <a href=\"Practitioner-PractitionerExample1.html\">Practitioner/PractitionerExample1: Marty Seeger</a> \" SEEGER\"</p><blockquote><p><b>content</b></p></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td>-</td><td><b>Period</b></td></tr><tr><td>*</td><td>2019-05-21 04:59:00+0000 --&gt; (ongoing)</td></tr></table></div>"
+  ];
+  fhir:DocumentReference.status [ fhir:value "current"];
+  fhir:DocumentReference.docStatus [ fhir:value "final"];
+  fhir:DocumentReference.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:11506-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "11506-3" ];
+       fhir:Coding.display [ fhir:value "Progress Note" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Progress Note" ]
+  ];
+  fhir:DocumentReference.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:34109-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "34109-9" ];
+       fhir:Coding.display [ fhir:value "Note" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Clinical Note" ]
+  ];
+  fhir:DocumentReference.subject [
+     fhir:link <http://hl7.org/fhir/uv/ipa/Patient/PatientExample1>;
+     fhir:Reference.reference [ fhir:value "Patient/PatientExample1" ];
+     fhir:Reference.display [ fhir:value "Lufhir, Meiko" ]
+  ];
+  fhir:DocumentReference.date [ fhir:value "2019-05-21T20:19:30Z"^^xsd:dateTime];
+  fhir:DocumentReference.author [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/uv/ipa/Practitioner/PractitionerExample1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/PractitionerExample1" ];
+     fhir:Reference.display [ fhir:value "Marty Seeger" ]
+  ];
+  fhir:DocumentReference.content [
+     fhir:index 0;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "text/html" ];
+       fhir:Attachment.url [ fhir:value "Binary/ekAJmRWsOeeVsqjgMnmX-5ZTCqyW.NZW3fvSH8mNXZSg3" ]
+     ]
+  ];
+  fhir:DocumentReference.context [
+     fhir:DocumentReference.context.period [
+       fhir:Period.start [ fhir:value "2019-05-21T04:59:00Z"^^xsd:dateTime ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/uv/ipa/Patient/PatientExample1> a fhir:uv .
+
+<http://hl7.org/fhir/uv/ipa/Practitioner/PractitionerExample1> a fhir:uv .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/DocumentReference/USClinicalNoteExample1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/ipa/DocumentReference/USClinicalNoteExample1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

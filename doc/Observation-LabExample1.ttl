@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/Observation/LabExample1> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "LabExample1"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/instance-name" ];
+       fhir:Extension.valueString [ fhir:value "Observation Lab Example" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/instance-description" ];
+       fhir:Extension.valueMarkdown [ fhir:value "This is a Observation example for the *IPA Observation Profile* containing a lab result." ]
+     ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"LabExample1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ipa-observation.html\">IPA-Observation</a></p></div><p><b>status</b>: amended</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Cholesterol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#2093-3 \"Cholesterol [Mass/volume] in Serum or Plasma\")</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample1.html\">Patient/PatientExample1: Fhir D Cds Jr., DDS</a> \" LUFHIR\"</p><p><b>effective</b>: 2019-09-23 01:50:39+0000</p><p><b>issued</b>: Sep 23, 2019, 7:50:39 AM</p><p><b>value</b>: 105 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dL = 'mg/dL')</span></p><p><b>interpretation</b>: Abnormal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#A)</span></p><p><b>note</b>: From the Results Generator</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Text</b></td></tr><tr><td>*</td><td>128 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dL = 'mg/dL')</span></td><td>250 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dL = 'mg/dL')</span></td><td>128 - 250 mg/dL</td></tr></table></div>"
+  ];
+  fhir:Observation.status [ fhir:value "amended"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ];
+       fhir:Coding.display [ fhir:value "Laboratory" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Laboratory" ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:2093-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "2093-3" ];
+       fhir:Coding.display [ fhir:value "Cholesterol [Mass/volume] in Serum or Plasma" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Cholesterol" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.org/fhir/uv/ipa/Patient/PatientExample1>;
+     fhir:Reference.reference [ fhir:value "Patient/PatientExample1" ];
+     fhir:Reference.display [ fhir:value "Fhir D Cds Jr., DDS" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-09-23T13:50:39Z"^^xsd:dateTime];
+  fhir:Observation.issued [ fhir:value "2019-09-23T14:50:39Z"^^xsd:dateTime];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "105"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mg/dL" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "mg/dL" ]
+  ];
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+       fhir:Coding.code [ fhir:value "A" ];
+       fhir:Coding.display [ fhir:value "Abnormal" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Abnormal" ]
+  ];
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "From the Results Generator" ]
+  ];
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "128"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mg/dL" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mg/dL" ]
+     ];
+     fhir:Observation.referenceRange.high [
+       fhir:Quantity.value [ fhir:value "250"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mg/dL" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mg/dL" ]
+     ];
+     fhir:Observation.referenceRange.text [ fhir:value "128 - 250 mg/dL" ]
+  ] .
+
+<http://hl7.org/fhir/uv/ipa/Patient/PatientExample1> a fhir:uv .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/ipa/Observation/LabExample1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/ipa/Observation/LabExample1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

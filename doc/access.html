@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.UV.IPA\Gaining Access to a Patient Record - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">International Patient Access</span><br/>1.0.0-preview - STU1</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using The API
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ipa-server.html">IPA Server Requirements</a>
+      </li>
+      <li>
+        <a href="access.html">Gaining Access to a Patient Record</a>
+      </li>
+      <li>
+        <a href="fetching.html">Finding and Retrieving Patient Information</a>
+      </li>
+      <li>
+        <a href="synchronization.html">Synchronizing Patient Records</a>
+      </li>
+      <li>
+        <a href="internationalization.html">Internationalization Issues</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifact Index
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">CapabilityStatements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhirpath">FHIRPath</a>
+      </li>
+      <li>
+        <a href="http://cql.hl7.org">CQL</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='using-the-api.html'><b>Using the API</b></a></li><li><b>Gaining Access to a Patient Record</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">International Patient Access - Local Development build (v1.0.0-preview). See the <a href="http://hl7.org/fhir/uv/ipa/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Gaining Access to a Patient Record</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#client-process" id="markdown-toc-client-process">Client Process</a></li>
+  <li><a href="#scopes" id="markdown-toc-scopes">Scopes</a></li>
+  <li><a href="#server-obligations" id="markdown-toc-server-obligations">Server Obligations</a></li>
+</ul>
+
+</div>
+<p>An application gets access to a patient record using the <a href="http://hl7.org/fhir/smart-app-launch/">SMART App Launch Protocol</a>, using the stand alone launch sequence.</p>
+
+<h3 id="client-process">Client Process</h3>
+
+<p>A client application gets access a patient record by following this general sequence of steps:</p>
+
+<ul>
+  <li>Identifying the appropriate end point [URL] at which the International Patient Access API is found.
+    <ul>
+      <li>Note that this specification does not specify how the end-point might be found; different countries will have different arrangements around this</li>
+    </ul>
+  </li>
+  <li>
+    <p>Fetch the system capability statement from [url]/metadata and check that <a href="conformance.html">it implements the IPA API</a>:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">"instantiates" : ["http://hl7.org/fhir/uv/ipa/CapabilityStatement/ipa"]</code></p>
+  </li>
+  <li>
+    <p>Fetch the <a href="http://www.hl7.org/fhir/smart-app-launch/conformance/index.html#using-well-known">end-point configuration</a> from [url]/.well-known/smart-configuration.json</p>
+  </li>
+  <li>Registering itself as a client application with the end-point.
+    <ul>
+      <li>This may require a manual step on the part of the user or the developer, or the end-point may support automatic registration (see <a href="https://tools.ietf.org/html/rfc7591">OAuth 2.0 Dynamic Client Registration Protocol</a>).</li>
+      <li>if the application supports automatic registration, the end-point will be specified in the [url]/.well-known/smart-configuration.json</li>
+      <li>note that most healthcare systems exercise control over which clients can access healthcare records, and automatic registration is not supported</li>
+    </ul>
+  </li>
+  <li>
+    <p>Follow the <a href="http://www.hl7.org/fhir/smart-app-launch/app-launch.html#step-2-launch-standalone">Smart App Launch Protocol</a> using the authorization endpoint from the smart-configuration.json file</p>
+  </li>
+  <li>At the end of the Smart App Launch Protocol, the application will have a token that provides access to a single patient record. Now, use that to <a href="fetching.html">retrieve patient information</a></li>
+</ul>
+
+<h3 id="scopes">Scopes</h3>
+
+<p>Scopes work as described in the SMART on FHIR specification, but note that many servers limit a client to the scopes approved on its registration, 
+and/or ignore the requested scopes at the initiation of the stand-alone launch.</p>
+
+<h3 id="server-obligations">Server Obligations</h3>
+
+<p>Servers that are conformant to the International Patient Access API conform to the following rules:</p>
+
+<ul>
+  <li>
+    <p>The server hosts a <a href="http://hl7.org/fhir/capabilitystatement.html">capability statement</a> at [url]/metadata that is available to both authenticated and unauthenticated clients, and that declares that IPA is supported using <a href="http://hl7.org/fhir/capabilitystatement-definitions.html#CapabilityStatement.imports">CapabilityStatement.imports</a>, as shown in the following fragment:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">"instantiates" : ["http://hl7.org/fhir/uv/ipa/CapabilityStatement/ipa"]</code></p>
+  </li>
+  <li>The server hosts a <a href="http://www.hl7.org/fhir/smart-app-launch/conformance.html#using-well-known">smart-configuration file</a> at [url]/.well-known/smart-configuration.json that is available to both authenticated and unauthenticated clients.</li>
+  <li>The server conforms to the <a href="http://hl7.org/fhir/smart-app-launch/">SMART App Launch specification</a>, and checks that the authenticated user of the application has access.</li>
+  <li>If the client requests access to a patient record, the server checks that the authenticated user of the application has access to the specified record.</li>
+  <li>If the user is authorized to access multiple patient records, the server typically requires that the user choose a single patient record to which the application has access.</li>
+  <li>The client SHALL request the <code class="language-plaintext highlighter-rouge">launch/patient</code> scope and the server SHALL return a Patient FHIR resource identifier as the <code class="language-plaintext highlighter-rouge">patient</code> <a href="http://hl7.org/fhir/smart-app-launch/scopes-and-launch-context.html#patient-specific-scopes">SMART launch context parameter</a>.</li>
+  <li>The server enforces <a href="privacy.html">patient privacy and consent</a>.</li>
+</ul>
+
+<p>Note that both the CapabilityStatement and the smart configuration file may be different for authenticated and unauthenticated clients.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare">HL7 International - Patient Care Work Group</a>.  Package hl7.fhir.uv.ipa#1.0.0-preview based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 2, 2022 21:13-0700">2022-08-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/ipa/history.html">Version History  |
+               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

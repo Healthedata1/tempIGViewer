@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.uv.ipa"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>InternationalPatientAccess</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa</pre><div><p>This IG  describes how an application acting on behalf of a patient can access information about the patient from an clinical records system using a FHIR based API. The clinical records system may be supporting a clinical care provider (e.g. a hospital, or a general practitioner), or a health data exchange, including a national health record system.</p>
+</div></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
+  <version value="1.0.0-preview"/>
+  <name value="InternationalPatientAccess"/>
+  <title value="International Patient Access"/>
+  <status value="draft"/>
+  <date value="2022-08-10"/>
+  <publisher value="HL7 International - Patient Care Work Group"/>
+  <contact>
+    <name value="HL7 International - Patient Care Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="patientcare@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This IG  describes how an application acting on behalf of a patient can access information about the patient from an clinical records system using a FHIR based API. The clinical records system may be supporting a clinical care provider (e.g. a hospital, or a general practitioner), or a health data exchange, including a national health record system."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International all rights reserved Creative Commons License"/>
+  <packageId value="hl7.fhir.uv.ipa"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="3.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_smart_app_launch">
+    <uri value="http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"/>
+    <packageId value="hl7.fhir.uv.smart-app-launch"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludexml"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludejsn"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludeexample"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="generate"/>
+      </extension>
+      <extension url="value">
+        <valueString value="xml"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="generate"/>
+      </extension>
+      <extension url="value">
+        <valueString value="json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="progress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="tx"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="context"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="init"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/uv/ipa/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <grouping id="GroupA">
+      <name value="Profiles: Primary Resources"/>
+      <description value="Content Definitions for primary resources"/>
+    </grouping>
+    <grouping id="GroupB">
+      <name value="Profiles: Supporting Resources"/>
+      <description value="Content Definitions for supporting resources"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ipa-server"/>
+      </reference>
+      <name value="International Patient Access Server CapabilityStatement"/>
+      <description value="This section describes the basic rules for the International Patient Access server actor that is responsible for providing responses to queries submitted by International Patient Access requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by International Patient Access servers are defined in this CapabilityStatement. International Patient Access clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/docref"/>
+      </reference>
+      <name value="IPA Fetch DocumentReference"/>
+      <description value="This operation is used to return all the references to documents related to a patient. &#xA;&#xA; The operation requires a patient id and takes the optional input parameters: &#xA;  - start date&#xA;  - end date&#xA;  - document type &#xA;&#xA; and returns a [Bundle](http://hl7.org/fhir/bundle.html) of type &quot;searchset&quot; containing [DocumentReference](StructureDefinition-ipa-documentreference.html) resources for the patient. If the server has or can create documents that are related to the patient, and that are available for the given user, the server returns the DocumentReference resources needed to support the records.  The principle intended use for this operation is to provide a patient with access to their available document information. &#xA;&#xA; This operation is *different* from a search by patient and type and date range because: &#xA;&#xA; 1. It is used to request a server *generate* a document based on the specified parameters. &#xA;&#xA; 1. If no parameters are specified, the server SHALL return a DocumentReference to the patient's most current summary document (depending on jurisdiction) &#xA;&#xA; 1. If the server cannot *generate* a document based on the specified parameters, the operation will return an empty search bundle. &#xA;&#xA; This operation is the *same* as a FHIR RESTful search by patient, type and date range because: &#xA;&#xA; 1. References for *existing* documents that meet the requirements of the request SHOULD also be returned unless the client indicates they are only interested in 'on-demand' documents using the *on-demand* parameter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-allergyintolerance"/>
+      </reference>
+      <name value="IPA-AllergyIntolerance"/>
+      <description value="Minimum expectations for an AllergyIntolerance resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-condition"/>
+      </reference>
+      <name value="IPA-Condition"/>
+      <description value="Minimum expectations for a Condition resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-documentreference"/>
+      </reference>
+      <name value="IPA-DocumentReference"/>
+      <description value="Minimum expectations for a DocumentReference resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-immunization"/>
+      </reference>
+      <name value="IPA-Immunization"/>
+      <description value="Minimum expectations for an Immunization resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-medication"/>
+      </reference>
+      <name value="IPA-Medication"/>
+      <description value="Minimum expectations for a Medication resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupB"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-medicationrequest"/>
+      </reference>
+      <name value="IPA-MedicationRequest"/>
+      <description value="Minimum expectations for a MedicationRequest resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-medicationstatement"/>
+      </reference>
+      <name value="IPA-MedicationStatement"/>
+      <description value="Minimum expectations for a MedicationStatement resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-observation"/>
+      </reference>
+      <name value="IPA-Observation"/>
+      <description value="Minimum expectations for an Observation resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-patient"/>
+      </reference>
+      <name value="IPA-Patient"/>
+      <description value="Minimum expectations for a Patient resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-practitioner"/>
+      </reference>
+      <name value="IPA-Practitioner"/>
+      <description value="Minimum expectations for a Practitioner resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupB"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-practitionerrole"/>
+      </reference>
+      <name value="IPA-PractitionerRole"/>
+      <description value="Minimum expectations for a PractitionerRole resource when accessed via a International Patient Access API"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="GroupB"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/AllIntExample1"/>
+      </reference>
+      <name value="AllIntExample1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ProblemExample1"/>
+      </reference>
+      <name value="IPA Condition Example"/>
+      <description value="This is a problem list item example for the *IPA Condition Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/USClinicalNoteExample1"/>
+      </reference>
+      <name value="DocumentReference Example"/>
+      <description value="This is a DocumentReference example for the *IPA DocumentReference Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-documentreference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/ImmExample1"/>
+      </reference>
+      <name value="IPA Immunization Example"/>
+      <description value="This is an Immunization example for the *IPA Immunization Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/MedExample1"/>
+      </reference>
+      <name value="Medication Example"/>
+      <description value="This is a Medication example for the *IPA Medication Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/MedRecExample1"/>
+      </reference>
+      <name value="MedicationRequest Example"/>
+      <description value="This is a MedicationRequest example for the *IPA MedicationRequest Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/MedStatementExample1"/>
+      </reference>
+      <name value="MedicationStatement Example"/>
+      <description value="This is a MedicationStatement example for the *IPA MedicationStatement Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/LabExample1"/>
+      </reference>
+      <name value="Observation Lab Example"/>
+      <description value="This is a Observation example for the *IPA Observation Profile* containing a lab result."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/SmokingExample1"/>
+      </reference>
+      <name value="Observation social history smoking Example"/>
+      <description value="This is a Observation example for the *IPA Observation Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/VitalSignsExample1"/>
+      </reference>
+      <name value="VitalSignsExample1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample1"/>
+      </reference>
+      <name value="IPA Patient Example"/>
+      <description value="This is a Patient example for the *IPA Patient Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientGenderExample1"/>
+      </reference>
+      <name value="PatientGenderExample1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/PractitionerExample1"/>
+      </reference>
+      <name value="Practitioner Example"/>
+      <description value="This is a Practitioner example for the *IPA Practitioner Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/PractitionerRoleExample1"/>
+      </reference>
+      <name value="PractitionerRole Example"/>
+      <description value="This is a PractitionerRole example for the *IPA PractitionerRole Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitionerrole"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="International Patient Access"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="ips-relationship.html"/>
+          <title value="Relationship with International Patient Summary"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="ipa-by-country.html"/>
+          <title value="IPA Specifications by Country"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="doc-gen.html"/>
+          <title value="Generating Patient Documents"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="conformance.html"/>
+        <title value="Conforming to this Specification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="using-the-api.html"/>
+        <title value="Using the API"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="ipa-server.html"/>
+          <title value="IPA Server Requirements"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="security.html"/>
+            <title value="Security"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="privacy.html"/>
+            <title value="Privacy and Consent"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+        <page>
+          <nameUrl value="access.html"/>
+          <title value="Gaining Access to a Patient Record"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="fetching.html"/>
+          <title value="Finding and Retrieving Patient Information"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="safety.html"/>
+            <title value="Safety Check List"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+        <page>
+          <nameUrl value="synchronization.html"/>
+          <title value="Synchronizing Patient Records"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="internationalization.html"/>
+          <title value="Internationalization Issues"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/intro-notes"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="fsh-generated/includes"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

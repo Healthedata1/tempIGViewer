@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="USClinicalNoteExample1"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="DocumentReference Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a DocumentReference example for the *IPA DocumentReference Profile*."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-documentreference"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "USClinicalNoteExample1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ipa-documentreference.html">IPA-DocumentReference</a></p></div><p><b>status</b>: current</p><p><b>docStatus</b>: final</p><p><b>type</b>: Progress Note <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11506-3)</span></p><p><b>category</b>: Clinical Note <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#34109-9 "Note")</span></p><p><b>subject</b>: <a href="Patient-PatientExample1.html">Patient/PatientExample1: Lufhir, Meiko</a> " LUFHIR"</p><p><b>date</b>: May 21, 2019, 1:19:30 PM</p><p><b>author</b>: <a href="Practitioner-PractitionerExample1.html">Practitioner/PractitionerExample1: Marty Seeger</a> " SEEGER"</p><blockquote><p><b>content</b></p></blockquote><h3>Contexts</h3><table class="grid"><tr><td>-</td><td><b>Period</b></td></tr><tr><td>*</td><td>2019-05-21 04:59:00+0000 --&gt; (ongoing)</td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <docStatus value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11506-3"/>
+      <display value="Progress Note"/>
+    </coding>
+    <text value="Progress Note"/>
+  </type>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="34109-9"/>
+      <display value="Note"/>
+    </coding>
+    <text value="Clinical Note"/>
+  </category>
+  <subject>
+    <reference value="Patient/PatientExample1"/>
+    <display value="Lufhir, Meiko"/>
+  </subject>
+  <date value="2019-05-21T20:19:30Z"/>
+  <author>
+    <reference value="Practitioner/PractitionerExample1"/>
+    <display value="Marty Seeger"/>
+  </author>
+  <content>
+    <attachment>
+      <contentType value="text/html"/>
+      <url value="Binary/ekAJmRWsOeeVsqjgMnmX-5ZTCqyW.NZW3fvSH8mNXZSg3"/>
+    </attachment>
+  </content>
+  <context>
+    <period>
+      <start value="2019-05-21T04:59:00Z"/>
+    </period>
+  </context>
+</DocumentReference>

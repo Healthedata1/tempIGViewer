@@ -1,0 +1,73 @@
+﻿InternationalPatientAccess : Validation Results
+=========================================
+
+err = 3, warn = 5, info = 0
+IG Publisher Version: 1.1.127
+Generated Tue Aug 02 21:13:33 PDT 2022. FHIR version 4.0.1 for hl7.fhir.uv.ipa#1.0.0-preview (canonical = http://hl7.org/fhir/uv/ipa)
+ Build Errors : 0 / 4 / 0
+ /Users/ehaas/Documents/FHIR/IPA/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.ipa : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/AllergyIntolerance-AllIntExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Condition-ProblemExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/DocumentReference-USClinicalNoteExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Immunization-ImmExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Medication-MedExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/MedicationRequest-MedRecExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/MedicationStatement-MedStatementExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Observation-LabExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Observation-SmokingExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Observation-VitalSignsExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Patient-PatientExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Patient-PatientGenderExample1 : 3 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/Practitioner-PractitionerExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/examples/PractitionerRole-PractitionerRoleExample1 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/CapabilityStatement-ipa-server : 0 / 0 / 29
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/OperationDefinition-docref : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-allergyintolerance : 0 / 1 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-condition : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-documentreference : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-immunization : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-medication : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-medicationrequest : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-medicationstatement : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-observation : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-patient : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-practitioner : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-practitionerrole : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/AllIntExample1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignsExample1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientGenderExample1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.ipa.json ==
+== input/examples/AllergyIntolerance-AllIntExample1.xml ==
+== input/examples/Condition-ProblemExample1.xml ==
+== input/examples/DocumentReference-USClinicalNoteExample1.json ==
+== input/examples/Immunization-ImmExample1.xml ==
+== input/examples/Medication-MedExample1.json ==
+== input/examples/MedicationRequest-MedRecExample1.json ==
+== input/examples/MedicationStatement-MedStatementExample1.json ==
+== input/examples/Observation-LabExample1.json ==
+== input/examples/Observation-SmokingExample1.json ==
+== input/examples/Observation-VitalSignsExample1.xml ==
+== input/examples/Patient-PatientExample1.xml ==
+== input/examples/Patient-PatientGenderExample1.xml ==
+ERROR: Patient/PatientGenderExample1: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/PatientGenderExample1: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
+ERROR: Patient/PatientGenderExample1: Patient.generalPractitioner[0]: Unable to resolve resource with reference 'https://example.com/instance/api/FHIR/R4/Practitioner/efv90i4pFs9fOm7QQhHOUHw3'
+== input/examples/Practitioner-PractitionerExample1.json ==
+== input/examples/PractitionerRole-PractitionerRoleExample1.json ==
+== input/resources/CapabilityStatement-ipa-server.json ==
+== input/resources/OperationDefinition-docref.json ==
+== input/resources/StructureDefinition-ipa-allergyintolerance.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance'): The Implementation Guide contains no examples for this profile
+== input/resources/StructureDefinition-ipa-condition.json ==
+== input/resources/StructureDefinition-ipa-documentreference.json ==
+== input/resources/StructureDefinition-ipa-immunization.json ==
+== input/resources/StructureDefinition-ipa-medication.json ==
+== input/resources/StructureDefinition-ipa-medicationrequest.json ==
+== input/resources/StructureDefinition-ipa-medicationstatement.json ==
+== input/resources/StructureDefinition-ipa-observation.json ==
+== input/resources/StructureDefinition-ipa-patient.json ==
+== input/resources/StructureDefinition-ipa-practitioner.json ==
+== input/resources/StructureDefinition-ipa-practitionerrole.json ==

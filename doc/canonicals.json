@@ -1,0 +1,100 @@
+[
+  {
+    "id": "ipa-server",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/ipa/CapabilityStatement/ipa-server",
+    "version": "1.0.0-preview",
+    "name": "InternationalPatientAccessAPI"
+  },
+  {
+    "id": "hl7.fhir.uv.ipa",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
+    "version": "1.0.0-preview",
+    "name": "InternationalPatientAccess"
+  },
+  {
+    "id": "docref",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/OperationDefinition/docref",
+    "version": "1.0.0-preview",
+    "name": "IPAFetchDocumentReference"
+  },
+  {
+    "id": "ipa-allergyintolerance",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance",
+    "version": "1.0.0-preview",
+    "name": "IPAAllergyIntolerance"
+  },
+  {
+    "id": "ipa-condition",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition",
+    "version": "1.0.0-preview",
+    "name": "IPACondition"
+  },
+  {
+    "id": "ipa-documentreference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-documentreference",
+    "version": "1.0.0-preview",
+    "name": "IPADocumentReference"
+  },
+  {
+    "id": "ipa-immunization",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization",
+    "version": "1.0.0-preview",
+    "name": "IPAImmunization"
+  },
+  {
+    "id": "ipa-medication",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication",
+    "version": "1.0.0-preview",
+    "name": "IPAMedication"
+  },
+  {
+    "id": "ipa-medicationrequest",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest",
+    "version": "1.0.0-preview",
+    "name": "IPAMedicationRequest"
+  },
+  {
+    "id": "ipa-medicationstatement",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement",
+    "version": "1.0.0-preview",
+    "name": "IPAMedicationStatement"
+  },
+  {
+    "id": "ipa-observation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation",
+    "version": "1.0.0-preview",
+    "name": "IPAObservation"
+  },
+  {
+    "id": "ipa-patient",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient",
+    "version": "1.0.0-preview",
+    "name": "IPAPatient"
+  },
+  {
+    "id": "ipa-practitioner",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner",
+    "version": "1.0.0-preview",
+    "name": "IPAPractitioner"
+  },
+  {
+    "id": "ipa-practitionerrole",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitionerrole",
+    "version": "1.0.0-preview",
+    "name": "IPAPractitionerRole"
+  }
+]
