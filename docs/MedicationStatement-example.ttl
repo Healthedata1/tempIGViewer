@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/MedicationStatement/example> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationstatement" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationstatement>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-medicationstatement.html\">US Quality Core MedicationStatement</a></p></div><p><b>status</b>: Active</p><p><b>medication</b>: <a href=\"Medication-example.html\">Medication alemtuzumab 10 MG/ML [Lemtrada]</a></p><p><b>subject</b>: <a href=\"Patient-example.html\">Jim Chalmers  Male, DoB: 1974-12-25 ( Social Security number (use: usual, period: 2001-05-06 --&gt; (ongoing)))</a></p><p><b>effective</b>: 2015-03-26 --&gt; 2015-03-30</p><p><b>dateAsserted</b>: 2015-03-25 15:00:00-0500</p><p><b>informationSource</b>: <a href=\"Practitioner-example.html\">Practitioner Adam Careful </a></p><p><b>derivedFrom</b>: <a href=\"MedicationRequest-example.html\">MedicationRequest: status = active; intent = order; medication[x] = -&gt;Medication alemtuzumab 10 MG/ML [Lemtrada]; authoredOn = 2015-03-25 19:32:52-0500; reasonCode = Multiple sclerosis (disorder)</a></p><blockquote><p><b>dosage</b></p><p><b>text</b>: Infuse alemtuzumab 12 mg intravenously once daily for 5 days.</p><p><b>timing</b>: Once per 1 day</p><p><b>route</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration IV}\">Infusion, intravenous</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>12 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></div>"
+  ] ;
+  fhir:MedicationStatement.status [ fhir:value "active"] ;
+  fhir:MedicationStatement.medicationReference [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Medication/example> ;
+     fhir:Reference.reference [ fhir:value "Medication/example" ]
+  ] ;
+  fhir:MedicationStatement.subject [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ] ;
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2015-03-26"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2015-03-30"^^xsd:date ]
+  ] ;
+  fhir:MedicationStatement.dateAsserted [ fhir:value "2015-03-25T15:00:00-05:00"^^xsd:dateTime] ;
+  fhir:MedicationStatement.informationSource [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+  ] ;
+  fhir:MedicationStatement.derivedFrom [
+     fhir:index 0 ;
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/MedicationRequest/example> ;
+     fhir:Reference.reference [ fhir:value "MedicationRequest/example" ]
+  ] ;
+  fhir:MedicationStatement.dosage [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "Infuse alemtuzumab 12 mg intravenously once daily for 5 days." ] ;
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.boundsPeriod [
+           fhir:Period.start [ fhir:value "2015-03-26"^^xsd:date ] ;
+           fhir:Period.end [ fhir:value "2015-03-30"^^xsd:date ]
+         ] ;
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ] ;
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ] ;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration" ] ;
+         fhir:Coding.code [ fhir:value "IV" ] ;
+         fhir:Coding.display [ fhir:value "Infusion, intravenous" ]
+       ]
+     ] ;
+     fhir:Dosage.doseAndRate [
+       fhir:index 0 ;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "12"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "mg" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/MedicationStatement/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

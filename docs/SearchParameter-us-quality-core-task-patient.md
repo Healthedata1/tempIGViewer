@@ -1,0 +1,56 @@
+# UsQualityCoreTaskPatient - 2026 US Quality Core Implementation Guide v0.5.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **UsQualityCoreTaskPatient**
+
+## SearchParameter: UsQualityCoreTaskPatient 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-task-patient | *Version*:0.5.0 |
+| Active as of 2026-06-05 | *Computable Name*:UsQualityCoreTaskPatient |
+
+ 
+US Quality Core Task patient Search Parameter 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "SearchParameter",
+  "id" : "us-quality-core-task-patient",
+  "url" : "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-task-patient",
+  "version" : "0.5.0",
+  "name" : "UsQualityCoreTaskPatient",
+  "status" : "active",
+  "date" : "2026-06-05",
+  "publisher" : "Office of the National Coordinator for Health Information Technology (ONC)",
+  "contact" : [{
+    "name" : "Office of the National Coordinator for Health Information Technology (ONC)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.healthit.gov/feedback"
+    }]
+  }],
+  "description" : "US Quality Core Task patient Search Parameter",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }],
+    "text" : "USA"
+  }],
+  "code" : "patient",
+  "base" : ["Task"],
+  "type" : "reference",
+  "expression" : "Task.for.where(resolve() is Patient)",
+  "xpathUsage" : "normal",
+  "multipleOr" : true,
+  "multipleAnd" : true
+}
+
+```

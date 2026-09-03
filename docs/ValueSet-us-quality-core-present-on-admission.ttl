@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-present-on-admission> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "us-quality-core-present-on-admission"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet us-quality-core-present-on-admission</b></p><a name=\"us-quality-core-present-on-admission\"> </a><a name=\"hcus-quality-core-present-on-admission\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-presentOnAdmission.html\"><code>https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 07/14/2020, the version found through the package references\"> version ?07/14/2020</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-presentOnAdmission.html#presentOnAdmission-Y\">Y</a></td><td>Yes</td><td>Diagnosis was present at time of inpatient admission.</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-presentOnAdmission.html#presentOnAdmission-N\">N</a></td><td>No</td><td>Diagnosis was not present at time of inpatient admission.</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-presentOnAdmission.html#presentOnAdmission-U\">U</a></td><td>Unknown</td><td>Documentation insufficient to determine if the condition was present at the time of inpatient admission.</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-presentOnAdmission.html#presentOnAdmission-W\">W</a></td><td>Undetermined</td><td>Clinically undetermined.  Provider unable to clinically determine whether the condition was present at the time of inpatient admission.</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-presentOnAdmission.html#presentOnAdmission-1\">1</a></td><td>Unreported</td><td>Unreported/Not used.  Exempt from POA reporting.  This code is equivalent to a blank on the UB-04, however; it was determined that blanks are undesirable when submitting this data via the 4010A.</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-present-on-admission"] ;
+  fhir:ValueSet.version [ fhir:value "0.5.0"] ;
+  fhir:ValueSet.name [ fhir:value "USQualityCorePresentOnAdmission"] ;
+  fhir:ValueSet.title [ fhir:value "USQualityCore Present On Admission Codes"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-05"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "Office of the National Coordinator for Health Information Technology (ONC)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Office of the National Coordinator for Health Information Technology (ONC)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.healthit.gov/feedback" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value Set for USQualityCore Present On Admission."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "USA" ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Y" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yes" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "U" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "W" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Undetermined" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unreported" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-present-on-admission.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

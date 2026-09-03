@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Device/example> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-device.html\">US Quality Core Device</a></p></div><p><b>identifier</b>: 345675, Serial Number/AMID-342135-8464</p><h3>UdiCarriers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DeviceIdentifier</b></td><td><b>CarrierHRF</b></td></tr><tr><td style=\"display: none\">*</td><td>09504000059118</td><td>(01)09504000059118(17)141120(10)7654321D(21)10987654d321</td></tr></table><p><b>status</b>: Active</p><p><b>manufacturer</b>: Acme Devices, Inc</p><p><b>lotNumber</b>: 43453424</p><p><b>modelNumber</b>: AB 45-J</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 86184003}\">ECG</span></p><p><b>patient</b>: <a href=\"Patient-example.html\">Jim Chalmers  Male, DoB: 1974-12-25 ( Social Security number (use: usual, period: 2001-05-06 --&gt; (ongoing)))</a></p><p><b>contact</b>: ph: ext 4352</p><p><b>note</b>: By Practitioner/example @2015-06-28 14:03:32+1000</p><blockquote><div><p>QA Checked</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:Device.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.value [ fhir:value "345675" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "SNO" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Serial Number" ]
+     ] ;
+     fhir:Identifier.value [ fhir:value "AMID-342135-8464" ]
+  ] ;
+  fhir:Device.udiCarrier [
+     fhir:index 0 ;
+     fhir:Device.udiCarrier.deviceIdentifier [ fhir:value "09504000059118" ] ;
+     fhir:Device.udiCarrier.carrierHRF [ fhir:value "(01)09504000059118(17)141120(10)7654321D(21)10987654d321" ]
+  ] ;
+  fhir:Device.status [ fhir:value "active"] ;
+  fhir:Device.manufacturer [ fhir:value "Acme Devices, Inc"] ;
+  fhir:Device.lotNumber [ fhir:value "43453424"] ;
+  fhir:Device.modelNumber [ fhir:value "AB 45-J"] ;
+  fhir:Device.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:86184003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "86184003" ] ;
+       fhir:Coding.display [ fhir:value "Electrocardiographic monitor and recorder" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "ECG" ]
+  ] ;
+  fhir:Device.patient [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ] ;
+  fhir:Device.contact [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "ext 4352" ]
+  ] ;
+  fhir:Device.note [
+     fhir:index 0 ;
+     fhir:Annotation.authorReference [
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+     ] ;
+     fhir:Annotation.time [ fhir:value "2015-06-28T14:03:32+10:00"^^xsd:dateTime ] ;
+     fhir:Annotation.text [ fhir:value "QA Checked" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Device/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

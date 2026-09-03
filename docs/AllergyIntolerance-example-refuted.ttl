@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/AllergyIntolerance/example-refuted> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-refuted"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance example-refuted</b></p><a name=\"example-refuted\"> </a><a name=\"hcexample-refuted\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-allergyintolerance.html\">US Quality Core AllergyIntolerance</a></p></div><p><b>identifier</b>: <code>http://acme.com/ids/patients/risks</code>/49476534</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical inactive}\">Inactive</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification refuted}\">Refuted</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 227493005}\">Cashew nuts</span></p><p><b>patient</b>: <a href=\"Patient-example.html\">Jim Chalmers  Male, DoB: 1974-12-25 ( Social Security number (use: usual, period: 2001-05-06 --&gt; (ongoing)))</a></p><p><b>recordedDate</b>: 2014-10-09 14:58:00+1100</p><p><b>recorder</b>: <a href=\"Practitioner-example.html\">Practitioner Adam Careful </a></p><p><b>asserter</b>: <a href=\"Patient-example.html\">Jim Chalmers  Male, DoB: 1974-12-25 ( Social Security number (use: usual, period: 2001-05-06 --&gt; (ongoing)))</a></p></div>"
+  ] ;
+  fhir:AllergyIntolerance.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://acme.com/ids/patients/risks" ] ;
+     fhir:Identifier.value [ fhir:value "49476534" ]
+  ] ;
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ] ;
+       fhir:Coding.code [ fhir:value "inactive" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ] ;
+       fhir:Coding.code [ fhir:value "refuted" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.type [ fhir:value "allergy"] ;
+  fhir:AllergyIntolerance.category [
+     fhir:value "food" ;
+     fhir:index 0
+  ] ;
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:227493005 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "227493005" ] ;
+       fhir:Coding.display [ fhir:value "Cashew nuts" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.patient [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ] ;
+  fhir:AllergyIntolerance.recordedDate [ fhir:value "2014-10-09T14:58:00+11:00"^^xsd:dateTime] ;
+  fhir:AllergyIntolerance.recorder [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+  ] ;
+  fhir:AllergyIntolerance.asserter [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/AllergyIntolerance/example-refuted.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

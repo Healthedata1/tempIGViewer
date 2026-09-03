@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Practitioner/example> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-practitioner.html\">US Quality Core Practitioner</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-USEIN.html\" title=\"An Employer Identification Number (EIN) is also known as a Federal Tax Identification Number, and is used to identify a business entity.\">United States Employer Identification Number</a>/Practitioner-23 (use: temp, ), <a href=\"http://terminology.hl7.org/7.0.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234567893 (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Adam Careful </p><p><b>telecom</b>: ph: 555-555-1234(Work)</p><p><b>address</b>: 534 Erewhon St PleasantVille UT 84414 US (home)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><code>http://example.org/UniversityIdentifier</code>/12345</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0360 BS}\">Bachelor of Science</span></td><td>1995 --&gt; (ongoing)</td><td>Example University</td></tr></table></div>"
+  ] ;
+  fhir:Practitioner.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "temp" ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.4.4" ] ;
+     fhir:Identifier.value [ fhir:value "Practitioner-23" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ] ;
+     fhir:Identifier.value [ fhir:value "1234567893" ]
+  ] ;
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Practitioner.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Careful" ] ;
+     fhir:HumanName.given [
+       fhir:value "Adam" ;
+       fhir:index 0
+     ] ;
+     fhir:HumanName.prefix [
+       fhir:value "Dr" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Practitioner.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "555-555-1234" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] ;
+  fhir:Practitioner.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.line [
+       fhir:value "534 Erewhon St" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "PleasantVille" ] ;
+     fhir:Address.state [ fhir:value "UT" ] ;
+     fhir:Address.postalCode [ fhir:value "84414" ] ;
+     fhir:Address.country [ fhir:value "US" ]
+  ] ;
+  fhir:Practitioner.qualification [
+     fhir:index 0 ;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0 ;
+       fhir:Identifier.system [ fhir:value "http://example.org/UniversityIdentifier" ] ;
+       fhir:Identifier.value [ fhir:value "12345" ]
+     ] ;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0360" ] ;
+         fhir:Coding.version [ fhir:value "2.7" ] ;
+         fhir:Coding.code [ fhir:value "BS" ] ;
+         fhir:Coding.display [ fhir:value "Bachelor of Science" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Bachelor of Science" ]
+     ] ;
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "1995"^^xsd:gYear ]
+     ] ;
+     fhir:Practitioner.qualification.issuer [
+       fhir:Reference.display [ fhir:value "Example University" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Practitioner/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

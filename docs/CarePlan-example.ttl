@@ -1,0 +1,280 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/CarePlan/example> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Assessment and care plan for routine antenatal care during pregnancy.</div>"
+  ] ;
+  fhir:CarePlan.status [ fhir:value "active"] ;
+  fhir:CarePlan.intent [ fhir:value "plan"] ;
+  fhir:CarePlan.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/core/CodeSystem/careplan-category" ] ;
+       fhir:Coding.code [ fhir:value "assess-plan" ] ;
+       fhir:Coding.display [ fhir:value "Assessment and Plan of Treatment" ]
+     ]
+  ] ;
+  fhir:CarePlan.subject [
+     fhir:Reference.display [ fhir:value "Eve Everywoman" ]
+  ] ;
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2019-05-24"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2020-02-24"^^xsd:date ]
+  ] ;
+  fhir:CarePlan.careTeam [
+     fhir:index 0 ;
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/CareTeam/example> ;
+     fhir:Reference.reference [ fhir:value "CareTeam/example" ]
+  ] ;
+  fhir:CarePlan.addresses [
+     fhir:index 0 ;
+     fhir:Reference.display [ fhir:value "pregnancy" ]
+  ] ;
+  fhir:CarePlan.goal [
+     fhir:index 0 ;
+     fhir:Reference.display [ fhir:value "pregnancy goal" ]
+  ] ;
+  fhir:CarePlan.activity [
+     fhir:index 0 ;
+     fhir:CarePlan.activity.outcomeReference [
+       fhir:index 0 ;
+       fhir:Reference.display [ fhir:value "First contact, occurred at about 12 weeks based on gestational age from LMP of 2019-03-01" ]
+     ] ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:424525001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "424525001" ] ;
+           fhir:Coding.display [ fhir:value "Antenatal care (regime/therapy)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Antenatal care" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "in-progress" ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "First antenatal care contact" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:424525001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "424525001" ] ;
+           fhir:Coding.display [ fhir:value "Antenatal care (regime/therapy)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Antenatal care" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "scheduled" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2019-07-26"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Second contact to occur at 20 weeks of gestational age" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:424525001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "424525001" ] ;
+           fhir:Coding.display [ fhir:value "Antenatal care (regime/therapy)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Antenatal care" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "not-started" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2019-09-06"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Third contact to occur at 26 weeks of gestational age" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:424525001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "424525001" ] ;
+           fhir:Coding.display [ fhir:value "Antenatal care (regime/therapy)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Antenatal care" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "not-started" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2019-10-04"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Fourth contact to occur at 30 weeks of gestational age" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:424525001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "424525001" ] ;
+           fhir:Coding.display [ fhir:value "Antenatal care (regime/therapy)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Antenatal care" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "not-started" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2019-11-01"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Fifth contact to occur at 34 weeks of gestational age" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:424525001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "424525001" ] ;
+           fhir:Coding.display [ fhir:value "Antenatal care (regime/therapy)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Antenatal care" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "not-started" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2019-11-15"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Sixth contact to occur at 36 weeks of gestational age" ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:424525001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "424525001" ] ;
+           fhir:Coding.display [ fhir:value "Antenatal care (regime/therapy)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Antenatal care" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "not-started" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2019-11-29"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Seventh contact to occur at 38 weeks of gestational age" ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:424525001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "424525001" ] ;
+           fhir:Coding.display [ fhir:value "Antenatal care (regime/therapy)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Antenatal care" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "not-started" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2019-12-13"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Eighth contact to occur at 40 weeks of gestational age" ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:236973005 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "236973005" ] ;
+           fhir:Coding.display [ fhir:value "Delivery procedure (procedure)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Delivery procedure" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "not-started" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2019-12-13"^^xsd:date ] ;
+         fhir:Period.end [ fhir:value "2019-12-27"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:Reference.display [ fhir:value "Mabel Midwife" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Delivery" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/CarePlan/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/PractitionerRole/example> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-practitionerrole.html\">US Quality Core PractitionerRole</a></p></div><p><b>identifier</b>: <code>http://www.acme.org/practitionerroles</code>/31 (use: temp, )</p><p><b>active</b>: true</p><p><b>period</b>: 1995 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-example.html\">Dr Adam Careful</a></p><p><b>organization</b>: <a href=\"Organization-example.html\">Organization Health Level Seven International</a></p><p><b>code</b>: <span title=\"Codes:{http://nucc.org/provider-taxonomy 261Q00000X}\">Clinic/Center</span></p><p><b>specialty</b>: <span title=\"Codes:{http://nucc.org/provider-taxonomy 122300000X}\">Dentist</span></p><p><b>location</b>: <a href=\"Location-example.html\">Location South Wing, second floor</a></p><p><b>telecom</b>: ph: 801-123-4567</p></div>"
+  ] ;
+  fhir:PractitionerRole.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "temp" ] ;
+     fhir:Identifier.system [ fhir:value "http://www.acme.org/practitionerroles" ] ;
+     fhir:Identifier.value [ fhir:value "31" ]
+  ] ;
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PractitionerRole.period [
+     fhir:Period.start [ fhir:value "1995"^^xsd:gYear ]
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ] ;
+     fhir:Reference.display [ fhir:value "Dr Adam Careful" ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Organization/example> ;
+     fhir:Reference.reference [ fhir:value "Organization/example" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://nucc.org/provider-taxonomy" ] ;
+       fhir:Coding.code [ fhir:value "261Q00000X" ] ;
+       fhir:Coding.display [ fhir:value "Clinic/Center" ]
+     ]
+  ] ;
+  fhir:PractitionerRole.specialty [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://nucc.org/provider-taxonomy" ] ;
+       fhir:Coding.code [ fhir:value "122300000X" ] ;
+       fhir:Coding.display [ fhir:value "Dentist" ]
+     ]
+  ] ;
+  fhir:PractitionerRole.location [
+     fhir:index 0 ;
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Location/example> ;
+     fhir:Reference.reference [ fhir:value "Location/example" ]
+  ] ;
+  fhir:PractitionerRole.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "801-123-4567" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/PractitionerRole/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

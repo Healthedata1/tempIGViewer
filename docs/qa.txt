@@ -1,73 +1,846 @@
-﻿InternationalPatientAccess : Validation Results
+USQualityCore : Validation Results
 =========================================
 
-err = 3, warn = 5, info = 0
-IG Publisher Version: 1.1.127
-Generated Tue Aug 02 21:13:33 PDT 2022. FHIR version 4.0.1 for hl7.fhir.uv.ipa#1.0.0-preview (canonical = http://hl7.org/fhir/uv/ipa)
- Build Errors : 0 / 4 / 0
- /Users/ehaas/Documents/FHIR/IPA/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.ipa : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/AllergyIntolerance-AllIntExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Condition-ProblemExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/DocumentReference-USClinicalNoteExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Immunization-ImmExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Medication-MedExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/MedicationRequest-MedRecExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/MedicationStatement-MedStatementExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Observation-LabExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Observation-SmokingExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Observation-VitalSignsExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Patient-PatientExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Patient-PatientGenderExample1 : 3 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/Practitioner-PractitionerExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/examples/PractitionerRole-PractitionerRoleExample1 : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/CapabilityStatement-ipa-server : 0 / 0 / 29
- /Users/ehaas/Documents/FHIR/IPA/input/resources/OperationDefinition-docref : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-allergyintolerance : 0 / 1 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-condition : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-documentreference : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-immunization : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-medication : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-medicationrequest : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-medicationstatement : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-observation : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-patient : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-practitioner : 0 / 0 / 1
- /Users/ehaas/Documents/FHIR/IPA/input/resources/StructureDefinition-ipa-practitionerrole : 0 / 0 / 1
+err = 15, warn = 8, info = 293
+IG Publisher Version: 2.3.3
+Generated Thu Sep 03 12:49:57 PDT 2026. FHIR version 4.0.1 for fhir.onc.us-quality-core#0.5.0 (canonical = http://fhir.org/guides/onc/us-quality-core)
+ Build Errors : 1 / 0 / 0
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-adverseevent : 0 / 0 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-allergyintolerance : 0 / 1 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-bodystructure : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-careplan : 0 / 1 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-careteam : 0 / 1 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-claim : 0 / 3 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-claimresponse : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-communication : 0 / 3 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-communicationnotdone : 0 / 1 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-communicationrequest : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-condition-encounter-diagnosis : 0 / 2 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-condition-problems-health-concerns : 0 / 4 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-coverage : 0 / 3 / 6
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-device : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-devicenotrequested : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-devicerequest : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-deviceusestatement : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-diagnosticreport-lab : 0 / 3 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-diagnosticreport-note : 0 / 4 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-encounter : 0 / 7 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-familymemberhistory : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-flag : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-goal : 0 / 1 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-imagingstudy : 0 / 3 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-immunization : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-immunizationevaluation : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-immunizationnotdone : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-immunizationrecommendation : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-location : 0 / 3 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-medication : 0 / 1 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-medicationadministration : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-medicationadministrationnotdone : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-medicationdispense : 0 / 12 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-medicationdispensedeclined : 0 / 12 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-medicationnotrequested : 0 / 3 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-medicationrequest : 0 / 15 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-medicationstatement : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-nonpatient-observation : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-nutritionorder : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-observation-clinical-result : 0 / 5 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-observation-lab : 0 / 9 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-observation-screening-assessment : 0 / 7 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-observationcancelled : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-organization : 0 / 3 / 7
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-patient : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-practitioner : 0 / 3 / 5
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-practitionerrole : 0 / 6 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-procedure : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-procedurenotdone : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-questionnaireresponse : 0 / 6 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-relatedperson : 0 / 1 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-servicenotrequested : 0 / 5 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-servicerequest : 0 / 4 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-simple-observation : 0 / 1 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-substance : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-task : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/profiles/StructureDefinition-us-quality-core-taskrejected : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/CapabilityStatement-us-quality-core-client : 0 / 0 / 37
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/CapabilityStatement-us-quality-core-server : 0 / 0 / 37
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-adverseevent-event : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-adverseevent-recorded-date : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-adverseevent-subject : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-allergyintolerance-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-bodystructure-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-careplan-category : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-careplan-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-careteam-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-careteam-status : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-claim-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-claimresponse-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-claimresponse-type : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-communication-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-communication-topic : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-communicationrequest-category : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-communicationrequest-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-condition-abatement-date : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-condition-category : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-condition-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-condition-onset-date : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-condition-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-coverage-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-device-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-device-type : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-devicerequest-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-devicerequest-do-not-perform : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-devicerequest-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-deviceusestatement-device-type : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-deviceusestatement-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-diagnosticreport-category : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-diagnosticreport-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-diagnosticreport-date : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-diagnosticreport-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-encounter-date : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-encounter-id : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-encounter-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-encounter-type : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-familymemberhistory-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-flag-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-flag-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-goal-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-immunization-date : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-immunization-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-immunization-status : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-immunizationevaluation-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-immunizationevaluation-target-disease : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-location-id : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medication-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationadministration-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationadministration-effective-time : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationadministration-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationadministration-status : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationdispense-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationdispense-status : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationrequest-do-not-perform : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationrequest-intent : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationrequest-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationstatement-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-medicationstatement-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-observation-category : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-observation-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-observation-date : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-observation-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-observation-status : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-patient-id : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-practitioner-id : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-practitionerrole-id : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-procedure-date : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-procedure-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-procedure-status : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-questionnaireresponse-id : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-questionnaireresponse-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-questionnaireresponse-questionnaire : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-relatedperson-id : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-relatedperson-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-servicerequest-authored : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-servicerequest-category : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-servicerequest-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-servicerequest-do-not-perform : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-servicerequest-id : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-servicerequest-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-substance-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-task-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-task-patient : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/SearchParameter-us-quality-core-task-status : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/StructureDefinition-us-quality-core-doNotPerformReason : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/StructureDefinition-us-quality-core-encounter-diagnosisPresentOnAdmission : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/StructureDefinition-us-quality-core-isElective : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/StructureDefinition-us-quality-core-notDoneReason : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/StructureDefinition-us-quality-core-recorded : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/StructureDefinition-uscdiplusquality : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/adverseevent-example : 2 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/allergyintolerance-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/allergyintolerance-example-refuted : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/bodystructure-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/careplan-example : 0 / 0 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/careteam-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/claim-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/claimresponse-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/communication-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/communication-negation-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/communicationrequest-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/condition-appendicitis-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/conditionencounterdiagnosis-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/conditionproblemshealthconcerns-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/coverage-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/device-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/devicerequest-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/devicerequest-negation-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/devicerequest-negation-with-code-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/deviceusestatement-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/diagnosticreport-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/diagnosticreport-note-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/encounter-ed-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/encounter-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/familymemberhistory-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/flag-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/goal-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/imagingstudy-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/immunization-example : 1 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/immunization-negation-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/immunization-negation-example-code : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/immunization-statusreason-example : 1 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/immunizationevaluation-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/immunizationrecommendation-example : 1 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/library-USQualityCore-ModelInfo : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/library-USQualityCoreCommon : 0 / 2 / 15
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/library-USQualityCoreCommonTests : 0 / 21 / 15
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/location-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medication-example : 0 / 1 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationadministration-cmd-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationadministration-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationadministration-negation-example : 0 / 1 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationadministration-negation-with-code-example : 0 / 1 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationdispense-cmd-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationdispense-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationdispense-negation-example : 0 / 0 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationdispense-negation-with-code-example : 0 / 1 / 4
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationrequest-cmd-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationrequest-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationrequest-negation-example : 0 / 1 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationrequest-negation-example-code : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationrequest-patient-reported-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationrequest-patient-requester-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationrequest-practitioner-ordered-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/medicationstatement-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/nutritionorder-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-clinical-result-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-births : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-delivery-date-estimate : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-frailty : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-gestation : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-obstetric-delivery : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-odh : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-parity : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-pregnancies : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-example-preterm-births : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-lab-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-negation-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-negation-with-code-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-nonpatient-hemodialysis-machine : 0 / 0 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-nonpatient-hospital-bed : 0 / 0 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-nonpatient-ventilator-example : 0 / 0 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/observation-survey-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/organization-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/organization-hospital-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/parameters-manifest : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/patient-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/patient-example-2 : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/patient-infant-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/practitioner-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/practitionerrole-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/procedure-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/procedure-negation-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/procedure-negation-with-code-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/questionnaireresponse-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/relatedperson-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/servicerequest-appropriateness-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/servicerequest-elective-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/servicerequest-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/servicerequest-myringotomy-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/servicerequest-negation-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/servicerequest-negation-example-code : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/structuredefinition-us-quality-core-notDoneValueSet : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/structuredefinition-us-quality-core-servicerequest-appropriatenessscore : 0 / 2 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/substance-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/task-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/task-negation-example : 0 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/task-negation-with-code-example : 0 / 0 / 2
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-medication-dose-type : 1 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-negation-reason : 1 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-non-negative-event-status : 1 / 0 / 8
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-non-negative-immunization-status : 1 / 0 / 3
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-non-negative-medication-admin-status : 1 / 0 / 7
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-non-negative-medicationdispense-status : 1 / 0 / 9
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-non-negative-observation-status : 1 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-non-negative-task-status : 1 / 0 / 12
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-observation-body-position : 1 / 0 / 1
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/resources/valueset-us-quality-core-present-on-admission : 1 / 0 / 6
+ /Users/ehaas/Documents/FHIR/2026-us-quality-core-0.5.0/input/us-quality-core : 0 / 4 / 2
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/AllIntExample1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignsExample1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientGenderExample1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
-== fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.ipa.json ==
-== input/examples/AllergyIntolerance-AllIntExample1.xml ==
-== input/examples/Condition-ProblemExample1.xml ==
-== input/examples/DocumentReference-USClinicalNoteExample1.json ==
-== input/examples/Immunization-ImmExample1.xml ==
-== input/examples/Medication-MedExample1.json ==
-== input/examples/MedicationRequest-MedRecExample1.json ==
-== input/examples/MedicationStatement-MedStatementExample1.json ==
-== input/examples/Observation-LabExample1.json ==
-== input/examples/Observation-SmokingExample1.json ==
-== input/examples/Observation-VitalSignsExample1.xml ==
-== input/examples/Patient-PatientExample1.xml ==
-== input/examples/Patient-PatientGenderExample1.xml ==
-ERROR: Patient/PatientGenderExample1: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
-ERROR: Patient/PatientGenderExample1: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
-ERROR: Patient/PatientGenderExample1: Patient.generalPractitioner[0]: Unable to resolve resource with reference 'https://example.com/instance/api/FHIR/R4/Practitioner/efv90i4pFs9fOm7QQhHOUHw3'
-== input/examples/Practitioner-PractitionerExample1.json ==
-== input/examples/PractitionerRole-PractitionerRoleExample1.json ==
-== input/resources/CapabilityStatement-ipa-server.json ==
-== input/resources/OperationDefinition-docref.json ==
-== input/resources/StructureDefinition-ipa-allergyintolerance.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance'): The Implementation Guide contains no examples for this profile
-== input/resources/StructureDefinition-ipa-condition.json ==
-== input/resources/StructureDefinition-ipa-documentreference.json ==
-== input/resources/StructureDefinition-ipa-immunization.json ==
-== input/resources/StructureDefinition-ipa-medication.json ==
-== input/resources/StructureDefinition-ipa-medicationrequest.json ==
-== input/resources/StructureDefinition-ipa-medicationstatement.json ==
-== input/resources/StructureDefinition-ipa-observation.json ==
-== input/resources/StructureDefinition-ipa-patient.json ==
-== input/resources/StructureDefinition-ipa-practitioner.json ==
-== input/resources/StructureDefinition-ipa-practitionerrole.json ==
+ERROR: qdm-to-us-quality-core.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 2826, column 12: The link 'StructureDefinition-us-quality-core-patient-definitions.html#Patient.extension:birthsex' for "Patient.extension:birthsex" cannot be resolved (valid targets: 202 targets)
+== input/profiles/StructureDefinition-us-quality-core-adverseevent.json ==
+INFORMATION: StructureDefinition/us-quality-core-adverseevent: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-adverseevent could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-allergyintolerance.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-allergyintolerance could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-bodystructure.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-bodystructure could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-careplan.json ==
+INFORMATION: StructureDefinition/us-quality-core-careplan: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-careplan: StructureDefinition.snapshot.element[21].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-careplan could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-careteam.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-careteam could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-claim.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-claim could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-claimresponse.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-claimresponse could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-communication.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-communication could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-communicationnotdone.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-communicationnotdone could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-communicationrequest.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-communicationrequest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-condition-encounter-diagnosis.json ==
+INFORMATION: StructureDefinition/us-quality-core-condition-encounter-diagnosis: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-condition-encounter-diagnosis could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-condition-problems-health-concerns.json ==
+INFORMATION: StructureDefinition/us-quality-core-condition-problems-health-concerns: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-condition-problems-health-concerns could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-coverage.json ==
+INFORMATION: StructureDefinition/us-quality-core-coverage: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-coverage: StructureDefinition.differential.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-coverage: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-coverage: StructureDefinition.snapshot.element[29].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-coverage could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-device.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-device could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-devicenotrequested.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-devicenotrequested could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-devicerequest.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-devicerequest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-deviceusestatement.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-deviceusestatement could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-diagnosticreport-lab.json ==
+INFORMATION: StructureDefinition/us-quality-core-diagnosticreport-lab: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-diagnosticreport-lab: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-diagnosticreport-lab could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-diagnosticreport-note.json ==
+INFORMATION: StructureDefinition/us-quality-core-diagnosticreport-note: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-diagnosticreport-note: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-diagnosticreport-note could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-encounter.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-encounter could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-familymemberhistory.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-familymemberhistory could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-flag.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-flag could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-goal.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-goal could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-imagingstudy.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-imagingstudy could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-immunization.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-immunization could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-immunizationevaluation.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-immunizationevaluation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-immunizationnotdone.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-immunizationnotdone could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-immunizationrecommendation.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-immunizationrecommendation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-location.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-location could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-medication.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-medication could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-medicationadministration.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-medicationadministration could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-medicationadministrationnotdone.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-medicationadministrationnotdone could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-medicationdispense.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-medicationdispense could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-medicationdispensedeclined.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-medicationdispensedeclined could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-medicationnotrequested.json ==
+INFORMATION: StructureDefinition/us-quality-core-medicationnotrequested: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-medicationnotrequested could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-medicationrequest.json ==
+INFORMATION: StructureDefinition/us-quality-core-medicationrequest: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-medicationrequest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-medicationstatement.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-medicationstatement could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-nonpatient-observation.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-nonpatient-observation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-nutritionorder.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-nutritionorder could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-observation-clinical-result.json ==
+INFORMATION: StructureDefinition/us-quality-core-observation-clinical-result: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-observation-clinical-result: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-observation-clinical-result could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-observation-lab.json ==
+INFORMATION: StructureDefinition/us-quality-core-observation-lab: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-observation-lab: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-observation-lab could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-observation-screening-assessment.json ==
+INFORMATION: StructureDefinition/us-quality-core-observation-screening-assessment: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-observation-screening-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-observation-screening-assessment could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-observationcancelled.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-observationcancelled could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-organization.json ==
+INFORMATION: StructureDefinition/us-quality-core-organization: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-organization: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-organization could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-patient.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-practitioner.json ==
+INFORMATION: StructureDefinition/us-quality-core-practitioner: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-practitioner: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-practitioner could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-practitionerrole.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-practitionerrole could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-procedure.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-procedure could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-procedurenotdone.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-procedurenotdone could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-questionnaireresponse.json ==
+INFORMATION: StructureDefinition/us-quality-core-questionnaireresponse: StructureDefinition.snapshot.element[19].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+INFORMATION: StructureDefinition/us-quality-core-questionnaireresponse: QuestionnaireResponse.item.answer.extension: The extension http://hl7.org/fhir/StructureDefinition/ordinalValue|5.3.0 is deprecated with the note: 'Replaced by [[[http://hl7.org/fhir/StructureDefinition/itemWeight]]]'
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-questionnaireresponse could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-relatedperson.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-relatedperson could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-servicenotrequested.json ==
+INFORMATION: StructureDefinition/us-quality-core-servicenotrequested: StructureDefinition.snapshot.element[18].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-servicenotrequested could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-servicerequest.json ==
+INFORMATION: StructureDefinition/us-quality-core-servicerequest: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-quality-core-servicerequest: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-servicerequest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-simple-observation.json ==
+INFORMATION: StructureDefinition/us-quality-core-simple-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-simple-observation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-substance.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-substance could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-task.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-task could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/profiles/StructureDefinition-us-quality-core-taskrejected.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-taskrejected could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/CapabilityStatement-us-quality-core-client.json ==
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[0].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[0].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[2].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[3].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[4].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[4].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[6].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[6].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[7].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[7].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[7].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[8].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[8].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[8].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[9].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[9].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[12].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[15].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[15].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[15].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[16].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[17].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[17].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[18].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[18].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[18].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[18].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[23].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[23].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[26].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[26].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[26].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[26].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[28].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-client: CapabilityStatement.rest[0].resource[28].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Resource: The resource CapabilityStatement/us-quality-core-client could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/CapabilityStatement-us-quality-core-server.json ==
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[0].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[0].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[2].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[3].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[4].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[4].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[6].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[6].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[7].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[7].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[7].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[8].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[8].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[8].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[9].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[9].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[12].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[15].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[15].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[15].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[16].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[17].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[17].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[18].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[18].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[18].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[18].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[23].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[23].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[26].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[26].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[26].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[26].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[28].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/us-quality-core-server: CapabilityStatement.rest[0].resource[28].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Resource: The resource CapabilityStatement/us-quality-core-server could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-adverseevent-event.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-adverseevent-event could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-adverseevent-recorded-date.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-adverseevent-recorded-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-adverseevent-subject.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-adverseevent-subject could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-allergyintolerance-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-allergyintolerance-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-bodystructure-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-bodystructure-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-careplan-category.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-careplan-category could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-careplan-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-careplan-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-careteam-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-careteam-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-careteam-status.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-careteam-status could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-claim-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-claim-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-claimresponse-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-claimresponse-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-claimresponse-type.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-claimresponse-type could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-communication-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-communication-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-communication-topic.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-communication-topic could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-communicationrequest-category.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-communicationrequest-category could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-communicationrequest-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-communicationrequest-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-condition-abatement-date.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-condition-abatement-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-condition-category.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-condition-category could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-condition-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-condition-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-condition-onset-date.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-condition-onset-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-condition-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-condition-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-coverage-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-coverage-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-device-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-device-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-device-type.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-device-type could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-devicerequest-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-devicerequest-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-devicerequest-do-not-perform.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-devicerequest-do-not-perform could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-devicerequest-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-devicerequest-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-deviceusestatement-device-type.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-deviceusestatement-device-type could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-deviceusestatement-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-deviceusestatement-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-diagnosticreport-category.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-diagnosticreport-category could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-diagnosticreport-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-diagnosticreport-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-diagnosticreport-date.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-diagnosticreport-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-diagnosticreport-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-diagnosticreport-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-encounter-date.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-encounter-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-encounter-id.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-encounter-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-encounter-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-encounter-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-encounter-type.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-encounter-type could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-familymemberhistory-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-familymemberhistory-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-flag-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-flag-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-flag-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-flag-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-goal-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-goal-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-immunization-date.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-immunization-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-immunization-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-immunization-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-immunization-status.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-immunization-status could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-immunizationevaluation-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-immunizationevaluation-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-immunizationevaluation-target-disease.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-immunizationevaluation-target-disease could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-location-id.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-location-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medication-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medication-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationadministration-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationadministration-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationadministration-effective-time.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationadministration-effective-time could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationadministration-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationadministration-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationadministration-status.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationadministration-status could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationdispense-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationdispense-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationdispense-status.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationdispense-status could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationrequest-do-not-perform.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationrequest-do-not-perform could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationrequest-intent.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationrequest-intent could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationrequest-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationrequest-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationstatement-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationstatement-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-medicationstatement-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-medicationstatement-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-observation-category.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-observation-category could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-observation-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-observation-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-observation-date.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-observation-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-observation-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-observation-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-observation-status.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-observation-status could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-patient-id.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-patient-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-practitioner-id.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-practitioner-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-practitionerrole-id.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-practitionerrole-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-procedure-date.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-procedure-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-procedure-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-procedure-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-procedure-status.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-procedure-status could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-questionnaireresponse-id.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-questionnaireresponse-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-questionnaireresponse-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-questionnaireresponse-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-questionnaireresponse-questionnaire.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-questionnaireresponse-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-relatedperson-id.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-relatedperson-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-relatedperson-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-relatedperson-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-servicerequest-authored.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-servicerequest-authored could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-servicerequest-category.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-servicerequest-category could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-servicerequest-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-servicerequest-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-servicerequest-do-not-perform.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-servicerequest-do-not-perform could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-servicerequest-id.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-servicerequest-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-servicerequest-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-servicerequest-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-substance-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-substance-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-task-code.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-task-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-task-patient.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-task-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/SearchParameter-us-quality-core-task-status.json ==
+INFORMATION: Resource: The resource SearchParameter/us-quality-core-task-status could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/StructureDefinition-us-quality-core-doNotPerformReason.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-doNotPerformReason could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/StructureDefinition-us-quality-core-encounter-diagnosisPresentOnAdmission.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/StructureDefinition-us-quality-core-isElective.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-isElective could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/StructureDefinition-us-quality-core-notDoneReason.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-notDoneReason could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/StructureDefinition-us-quality-core-recorded.json ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-recorded could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/StructureDefinition-uscdiplusquality.json ==
+INFORMATION: Resource: The resource StructureDefinition/uscdiplusquality could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/adverseevent-example.xml ==
+INFORMATION: AdverseEvent/example: AdverseEvent.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/adverse-event-category|4.0.1 from hl7.fhir.r4.core#4.0.1
+WARNING: AdverseEvent/example: AdverseEvent.category[0].coding[0].version: The code system 'http://terminology.hl7.org/CodeSystem/adverse-event-category' version '2.0.0' for the versionless include in the ValueSet include is different to the one in the value ('4.0.1')
+WARNING: AdverseEvent/example: AdverseEvent.category[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/adverse-event-category' version '4.0.1' could not be found, so the code cannot be validated. Valid versions: 0.1.0, 1.0.0 or 2.0.0
+ERROR: AdverseEvent/example: AdverseEvent.seriousness.coding[0].code: Unknown code 'Non-serious' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/adverse-event-seriousness' version '1.0.1'
+ERROR: AdverseEvent/example: AdverseEvent.suspectEntity[0].causality[0].assessment.coding[0].code: Unknown code 'Possible' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess' version '1.0.1'
+== input/resources/allergyintolerance-example.xml ==
+== input/resources/allergyintolerance-example-refuted.xml ==
+== input/resources/bodystructure-example.xml ==
+== input/resources/careplan-example.xml ==
+INFORMATION: CarePlan/example: CarePlan.category[0]: None of the codings provided are in the value set 'Care Plan Category' (http://hl7.org/fhir/ValueSet/care-plan-category|4.0.1), and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/us/core/CodeSystem/careplan-category#assess-plan)
+== input/resources/careteam-example.xml ==
+== input/resources/claim-example.xml ==
+== input/resources/claimresponse-example.xml ==
+== input/resources/communication-example.xml ==
+== input/resources/communication-negation-example.xml ==
+== input/resources/communicationrequest-example.xml ==
+== input/resources/condition-appendicitis-example.xml ==
+== input/resources/conditionencounterdiagnosis-example.xml ==
+== input/resources/conditionproblemshealthconcerns-example.xml ==
+== input/resources/coverage-example.xml ==
+== input/resources/device-example.xml ==
+== input/resources/devicerequest-example.xml ==
+== input/resources/devicerequest-negation-example.xml ==
+== input/resources/devicerequest-negation-with-code-example.xml ==
+== input/resources/deviceusestatement-example.xml ==
+== input/resources/diagnosticreport-example.xml ==
+== input/resources/diagnosticreport-note-example.xml ==
+== input/resources/encounter-ed-example.json ==
+== input/resources/encounter-example.xml ==
+== input/resources/familymemberhistory-example.xml ==
+== input/resources/flag-example.xml ==
+== input/resources/goal-example.xml ==
+== input/resources/imagingstudy-example.xml ==
+== input/resources/immunization-example.xml ==
+ERROR: Immunization/example: Immunization.vaccineCode.coding[0].display: Wrong Display Name 'Influenza, seasonal, injectable, preservative free' for http://hl7.org/fhir/sid/cvx#140. Valid display is one of 2 choices: 'Influenza, split virus, trivalent, PF' or 'Influenza, split virus, trivalent, injectable, preservative free' (for the language(s) 'en-US')
+== input/resources/immunization-negation-example.xml ==
+== input/resources/immunization-negation-example-code.xml ==
+== input/resources/immunization-statusreason-example.xml ==
+ERROR: Immunization/statusreason-example: Immunization.vaccineCode.coding[0].display: Wrong Display Name 'Influenza, seasonal, injectable, preservative free' for http://hl7.org/fhir/sid/cvx#140. Valid display is one of 2 choices: 'Influenza, split virus, trivalent, PF' or 'Influenza, split virus, trivalent, injectable, preservative free' (for the language(s) 'en-US')
+== input/resources/immunizationevaluation-example.xml ==
+INFORMATION: ImmunizationEvaluation/example: ImmunizationEvaluation.targetDisease: None of the codings provided are in the value set 'Immunization Evaluation Target Disease Codes' (http://hl7.org/fhir/ValueSet/immunization-evaluation-target-disease|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#6142004)
+== input/resources/immunizationrecommendation-example.xml ==
+ERROR: ImmunizationRecommendation/example: ImmunizationRecommendation.recommendation[0].vaccineCode[0].coding[0].display: Wrong Display Name 'Influenza, seasonal, injectable, preservative free' for http://hl7.org/fhir/sid/cvx#140. Valid display is one of 2 choices: 'Influenza, split virus, trivalent, PF' or 'Influenza, split virus, trivalent, injectable, preservative free' (for the language(s) 'en-US')
+== input/resources/library-USQualityCore-ModelInfo.json ==
+INFORMATION: Resource: The resource Library/USQualityCore-ModelInfo could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/library-USQualityCoreCommon.json ==
+INFORMATION: Resource: The resource Library/USQualityCoreCommon could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/library-USQualityCoreCommonTests.json ==
+INFORMATION: Resource: The resource Library/USQualityCoreCommonTests could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/location-example.xml ==
+== input/resources/medication-example.xml ==
+WARNING: Medication/example: Medication.code.coding[0].system: A definition for CodeSystem 'http://www.nlm.nih.gov/research/umls/rxnorm' version '09022025' could not be found, so the code cannot be validated. Valid versions: 03022026
+== input/resources/medicationadministration-cmd-example.xml ==
+== input/resources/medicationadministration-example.xml ==
+== input/resources/medicationadministration-negation-example.xml ==
+== input/resources/medicationadministration-negation-with-code-example.xml ==
+WARNING: MedicationAdministration/negation-with-code-example: MedicationAdministration.medication.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.nlm.nih.gov/research/umls/rxnorm' version '09022025' could not be found, so the code cannot be validated. Valid versions: 03022026
+INFORMATION: MedicationAdministration/negation-with-code-example: MedicationAdministration.medication.ofType(CodeableConcept): None of the codings provided are in the value set 'Medication Clinical Drug' (http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4|20240606), and a coding is recommended to come from this value set (codes = http://www.nlm.nih.gov/research/umls/rxnorm#1594660)
+== input/resources/medicationdispense-cmd-example.xml ==
+== input/resources/medicationdispense-example.xml ==
+== input/resources/medicationdispense-negation-example.xml ==
+INFORMATION: MedicationDispense/negation-example: MedicationDispense.dosageInstruction[0].route: None of the codings provided are in the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#394899003)
+INFORMATION: MedicationDispense/negation-example: MedicationDispense.dosageInstruction[0].doseAndRate[0].type: None of the codings provided are in the value set 'USQualityCore SNOMED CT Dosage Codes' (http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-medication-dose-type|0.5.0), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered)
+INFORMATION: MedicationDispense/negation-example: MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): The code provided (http://unitsofmeasure.org#ml) is not in the value set 'Common UCUM units' (http://hl7.org/fhir/ValueSet/ucum-common|4.0.1), and a code is recommended to come from this value set
+== input/resources/medicationdispense-negation-with-code-example.xml ==
+WARNING: MedicationDispense/negation-with-code-example: MedicationDispense.medication.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.nlm.nih.gov/research/umls/rxnorm' version '09022025' could not be found, so the code cannot be validated. Valid versions: 03022026
+INFORMATION: MedicationDispense/negation-with-code-example: MedicationDispense.dosageInstruction[0].route: None of the codings provided are in the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#394899003)
+INFORMATION: MedicationDispense/negation-with-code-example: MedicationDispense.dosageInstruction[0].doseAndRate[0].type: None of the codings provided are in the value set 'USQualityCore SNOMED CT Dosage Codes' (http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-medication-dose-type|0.5.0), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered)
+INFORMATION: MedicationDispense/negation-with-code-example: MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): The code provided (http://unitsofmeasure.org#ml) is not in the value set 'Common UCUM units' (http://hl7.org/fhir/ValueSet/ucum-common|4.0.1), and a code is recommended to come from this value set
+== input/resources/medicationrequest-cmd-example.xml ==
+INFORMATION: MedicationRequest/cmd-example: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): The code provided (http://unitsofmeasure.org#ml) is not in the value set 'Common UCUM units' (http://hl7.org/fhir/ValueSet/ucum-common|4.0.1), and a code is recommended to come from this value set
+== input/resources/medicationrequest-example.xml ==
+== input/resources/medicationrequest-negation-example.xml ==
+== input/resources/medicationrequest-negation-example-code.xml ==
+== input/resources/medicationrequest-patient-reported-example.xml ==
+INFORMATION: MedicationRequest/patient-reported-example: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): The code provided (http://unitsofmeasure.org#ml) is not in the value set 'Common UCUM units' (http://hl7.org/fhir/ValueSet/ucum-common|4.0.1), and a code is recommended to come from this value set
+== input/resources/medicationrequest-patient-requester-example.xml ==
+INFORMATION: MedicationRequest/patient-requester-example: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): The code provided (http://unitsofmeasure.org#ml) is not in the value set 'Common UCUM units' (http://hl7.org/fhir/ValueSet/ucum-common|4.0.1), and a code is recommended to come from this value set
+== input/resources/medicationrequest-practitioner-ordered-example.xml ==
+INFORMATION: MedicationRequest/practitioner-ordered-example: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): The code provided (http://unitsofmeasure.org#ml) is not in the value set 'Common UCUM units' (http://hl7.org/fhir/ValueSet/ucum-common|4.0.1), and a code is recommended to come from this value set
+== input/resources/medicationstatement-example.xml ==
+INFORMATION: MedicationStatement/example: MedicationStatement.dosage[0].route: None of the codings provided are in the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration#IV)
+== input/resources/nutritionorder-example.xml ==
+== input/resources/observation-clinical-result-example.xml ==
+== input/resources/observation-example.xml ==
+INFORMATION: Observation/example: Observation.value.ofType(Quantity): This element does not match any known slice defined in the profile http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/resources/observation-example-births.xml ==
+INFORMATION: Observation/example-births: Observation.value.ofType(integer): This element does not match any known slice defined in the profile http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/resources/observation-example-delivery-date-estimate.xml ==
+INFORMATION: Observation/example-delivery-date-estimate: Observation.value.ofType(dateTime): This element does not match any known slice defined in the profile http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/resources/observation-example-frailty.xml ==
+== input/resources/observation-example-gestation.xml ==
+INFORMATION: Observation/example-gestation: Observation.value.ofType(Quantity): This element does not match any known slice defined in the profile http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/resources/observation-example-obstetric-delivery.xml ==
+INFORMATION: Observation/example-obstetric-delivery: Observation.value.ofType(dateTime): This element does not match any known slice defined in the profile http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/resources/observation-example-odh.xml ==
+== input/resources/observation-example-parity.xml ==
+INFORMATION: Observation/example-parity: Observation.value.ofType(integer): This element does not match any known slice defined in the profile http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/resources/observation-example-pregnancies.xml ==
+INFORMATION: Observation/example-pregnancies: Observation.value.ofType(integer): This element does not match any known slice defined in the profile http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/resources/observation-example-preterm-births.xml ==
+INFORMATION: Observation/example-preterm-births: Observation.value.ofType(integer): This element does not match any known slice defined in the profile http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/resources/observation-lab-example.xml ==
+== input/resources/observation-negation-example.xml ==
+== input/resources/observation-negation-with-code-example.xml ==
+== input/resources/observation-nonpatient-hemodialysis-machine.xml ==
+INFORMATION: Observation/example-nonpatient-hemodialysis-machine: Observation.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#49062001)
+INFORMATION: Observation/example-nonpatient-hemodialysis-machine: Observation.code: None of the codings provided are in the value set 'LOINC Codes' (http://hl7.org/fhir/ValueSet/observation-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#36965003)
+== input/resources/observation-nonpatient-hospital-bed.xml ==
+INFORMATION: Observation/example-nonpatient-hospital-bed: Observation.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#49062001)
+INFORMATION: Observation/example-nonpatient-hospital-bed: Observation.code: None of the codings provided are in the value set 'LOINC Codes' (http://hl7.org/fhir/ValueSet/observation-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#91537007)
+== input/resources/observation-nonpatient-ventilator-example.xml ==
+INFORMATION: Observation/example-nonpatient-mechanical-ventilator: Observation.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#49062001)
+INFORMATION: Observation/example-nonpatient-mechanical-ventilator: Observation.code: None of the codings provided are in the value set 'LOINC Codes' (http://hl7.org/fhir/ValueSet/observation-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#449071006)
+== input/resources/observation-survey-example.xml ==
+== input/resources/organization-example.xml ==
+== input/resources/organization-hospital-example.xml ==
+== input/resources/parameters-manifest.json ==
+== input/resources/patient-example.xml ==
+== input/resources/patient-example-2.xml ==
+== input/resources/patient-infant-example.xml ==
+== input/resources/practitioner-example.xml ==
+INFORMATION: Practitioner/example: Practitioner.qualification[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7 from hl7.fhir.r4.core#4.0.1
+== input/resources/practitionerrole-example.xml ==
+== input/resources/procedure-example.xml ==
+== input/resources/procedure-negation-example.xml ==
+== input/resources/procedure-negation-with-code-example.xml ==
+== input/resources/questionnaireresponse-example.xml ==
+== input/resources/relatedperson-example.xml ==
+== input/resources/servicerequest-appropriateness-example.xml ==
+== input/resources/servicerequest-elective-example.xml ==
+== input/resources/servicerequest-example.xml ==
+== input/resources/servicerequest-myringotomy-example.xml ==
+== input/resources/servicerequest-negation-example.xml ==
+== input/resources/servicerequest-negation-example-code.xml ==
+== input/resources/structuredefinition-us-quality-core-notDoneValueSet.xml ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-notDoneValueSet could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/structuredefinition-us-quality-core-servicerequest-appropriatenessscore.xml ==
+INFORMATION: Resource: The resource StructureDefinition/us-quality-core-servicerequest-appropriatenessScore could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/substance-example.xml ==
+== input/resources/task-example.xml ==
+== input/resources/task-negation-example.xml ==
+== input/resources/task-negation-with-code-example.xml ==
+INFORMATION: Task/negation-with-code-example: Task.code: None of the codings provided are in the value set 'Task Codes' (http://hl7.org/fhir/ValueSet/task-code|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#430193006)
+== input/resources/valueset-us-quality-core-medication-dose-type.xml ==
+ERROR: Resource: The resource ValueSet/us-quality-core-medication-dose-type must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-negation-reason.xml ==
+ERROR: Resource: The resource ValueSet/us-quality-core-negation-reason must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-non-negative-event-status.json ==
+ERROR: Resource: The resource ValueSet/us-quality-core-non-negative-event-status must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-non-negative-immunization-status.json ==
+ERROR: Resource: The resource ValueSet/us-quality-core-non-negative-immunization-status must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-non-negative-medication-admin-status.json ==
+ERROR: Resource: The resource ValueSet/us-quality-core-non-negative-medication-admin-status must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-non-negative-medicationdispense-status.json ==
+ERROR: Resource: The resource ValueSet/us-quality-core-non-negative-medicationdispense-status must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-non-negative-observation-status.json ==
+ERROR: Resource: The resource ValueSet/us-quality-core-non-negative-observation-status must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-non-negative-task-status.json ==
+ERROR: Resource: The resource ValueSet/us-quality-core-non-negative-task-status must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-observation-body-position.json ==
+ERROR: Resource: The resource ValueSet/us-quality-core-observation-body-position must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/resources/valueset-us-quality-core-present-on-admission.xml ==
+INFORMATION: ValueSet/us-quality-core-present-on-admission: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Yes' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#Y. There are no valid display names found for language(s) 'en-US'. Default display is 'null'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/us-quality-core-present-on-admission: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'No' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#N. There are no valid display names found for language(s) 'en-US'. Default display is 'null'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/us-quality-core-present-on-admission: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Unknown' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#U. There are no valid display names found for language(s) 'en-US'. Default display is 'null'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/us-quality-core-present-on-admission: ValueSet.compose.include[0].concept[3]: Wrong Display Name 'Undetermined' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#W. There are no valid display names found for language(s) 'en-US'. Default display is 'null'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/us-quality-core-present-on-admission: ValueSet.compose.include[0].concept[4]: Wrong Display Name 'Unreported' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#1. There are no valid display names found for language(s) 'en-US'. Default display is 'null'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+ERROR: Resource: The resource ValueSet/us-quality-core-present-on-admission must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== input/us-quality-core.xml ==
+WARNING: ImplementationGuide/fhir.onc.us-quality-core: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#8.0.1 released on 2025-12-10, but the most recent appropriate version is 9.0.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/fhir.onc.us-quality-core: ImplementationGuide.dependsOn[4]: The ImplementationGuide uses package hl7.terminology.r4#7.1.0 released on 2026-03-08, but the most recent appropriate version is 7.3.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/fhir.onc.us-quality-core: ImplementationGuide.dependsOn[6]: The ImplementationGuide uses package hl7.fhir.us.cql#2.0.0-ballot released on 2026-04-03, but the most recent appropriate version is 2.0.0. This reference is getting old and the more recent version should be considered
+INFORMATION: Resource: The resource ImplementationGuide/fhir.onc.us-quality-core could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

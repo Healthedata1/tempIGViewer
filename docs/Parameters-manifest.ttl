@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Parameters/manifest> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "manifest"] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "system-version" ] ;
+     fhir:Parameters.parameter.valueCanonical [
+       fhir:value "http://snomed.info/sct|http://snomed.info/sct/731000124108" ;
+       fhir:link <http://snomed.info/sct|http://snomed.info/sct/731000124108>
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "system-version" ] ;
+     fhir:Parameters.parameter.valueCanonical [
+       fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0" ;
+       fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0>
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "system-version" ] ;
+     fhir:Parameters.parameter.valueCanonical [
+       fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus|4.0.0" ;
+       fhir:link <http://terminology.hl7.org/CodeSystem/v3-MaritalStatus|4.0.0>
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Parameters/manifest.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

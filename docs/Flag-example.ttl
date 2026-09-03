@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Flag/example> a fhir:Flag ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-flag" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-flag>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Flag example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-flag.html\">US Quality Core Flag</a></p></div><p><b>identifier</b>: 12345</p><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/flag-category safety}\">Safety</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 129839007}\">Patient is at increased risk for falls during inpatient care</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Peter Patient</a></p><p><b>period</b>: 2013-04-04 --&gt; (ongoing)</p><p><b>author</b>: <a href=\"Practitioner-example.html\">Nancy Nurse</a></p></div>"
+  ] ;
+  fhir:Flag.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.value [ fhir:value "12345" ]
+  ] ;
+  fhir:Flag.status [ fhir:value "active"] ;
+  fhir:Flag.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/flag-category" ] ;
+       fhir:Coding.code [ fhir:value "safety" ] ;
+       fhir:Coding.display [ fhir:value "Safety" ]
+     ]
+  ] ;
+  fhir:Flag.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:129839007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "129839007" ] ;
+       fhir:Coding.display [ fhir:value "At risk for falls" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Patient is at increased risk for falls during inpatient care" ]
+  ] ;
+  fhir:Flag.subject [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ] ;
+     fhir:Reference.display [ fhir:value "Peter Patient" ]
+  ] ;
+  fhir:Flag.period [
+     fhir:Period.start [ fhir:value "2013-04-04"^^xsd:date ]
+  ] ;
+  fhir:Flag.author [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ] ;
+     fhir:Reference.display [ fhir:value "Nancy Nurse" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Flag/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

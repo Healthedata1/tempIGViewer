@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Patient/example-2> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-2"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient example-2</b></p><a name=\"example-2\"> </a><a name=\"hcexample-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-patient.html\">US Quality Core Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Sarah Hugankiss (official) Female, DoB: 1946-09-25 ( Social Security number (use: usual, period: 1995-05-06 --&gt; (ongoing)))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: (202) 212 1212(Mobile)</li><li>1600 Pennslyvania Ave(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Next-of-Kin\">Next-of-Kin:</td><td colspan=\"3\"><ul><li>Bénédicte du Marché  (Female)</li><li>534 Erewhon St PleasantVille VT 3999 (home)</li><li><a href=\"tel:+33(237)998327\">+33 (237) 998327</a></li><li>Valid Period:2012 --&gt; (ongoing)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-example.html\">Organization Health Level Seven International</a></li></ul></td></tr></table></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "SS" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-ssn" ] ;
+     fhir:Identifier.value [ fhir:value "999123457" ] ;
+     fhir:Identifier.period [
+       fhir:Period.start [ fhir:value "1995-05-06"^^xsd:date ]
+     ] ;
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Healthcare" ]
+     ]
+  ] ;
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Hugankiss" ] ;
+     fhir:HumanName.given [
+       fhir:value "Sarah" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "(202) 212 1212" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ] ;
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [
+     fhir:value "1946-09-25"^^xsd:date ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthTime" ] ;
+       fhir:Extension.valueDateTime [ fhir:value "1946-09-25T14:35:45-05:00"^^xsd:dateTime ]
+     ]
+  ] ;
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.text [ fhir:value "1600 Pennslyvania Ave" ] ;
+     fhir:Address.line [
+       fhir:value "1600 Pennslyvania Ave" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Washington DC" ] ;
+     fhir:Address.state [ fhir:value "DC" ] ;
+     fhir:Address.postalCode [ fhir:value "20500" ] ;
+     fhir:Address.period [
+       fhir:Period.start [ fhir:value "1946-12-25"^^xsd:date ]
+     ]
+  ] ;
+  fhir:Patient.contact [
+     fhir:index 0 ;
+     fhir:Patient.contact.relationship [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131" ] ;
+         fhir:Coding.code [ fhir:value "N" ]
+       ]
+     ] ;
+     fhir:Patient.contact.name [
+       fhir:HumanName.family [
+         fhir:value "du Marché" ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" ] ;
+           fhir:Extension.valueString [ fhir:value "VV" ]
+         ]
+       ] ;
+       fhir:HumanName.given [
+         fhir:value "Bénédicte" ;
+         fhir:index 0
+       ]
+     ] ;
+     fhir:Patient.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "+33 (237) 998327" ]
+     ] ;
+     fhir:Patient.contact.address [
+       fhir:Address.use [ fhir:value "home" ] ;
+       fhir:Address.type [ fhir:value "both" ] ;
+       fhir:Address.line [
+         fhir:value "534 Erewhon St" ;
+         fhir:index 0
+       ] ;
+       fhir:Address.city [ fhir:value "PleasantVille" ] ;
+       fhir:Address.district [ fhir:value "Rainbow" ] ;
+       fhir:Address.state [ fhir:value "VT" ] ;
+       fhir:Address.postalCode [ fhir:value "3999" ] ;
+       fhir:Address.period [
+         fhir:Period.start [ fhir:value "1974-12-25"^^xsd:date ]
+       ]
+     ] ;
+     fhir:Patient.contact.gender [ fhir:value "female" ] ;
+     fhir:Patient.contact.period [
+       fhir:Period.start [ fhir:value "2012"^^xsd:gYear ]
+     ]
+  ] ;
+  fhir:Patient.managingOrganization [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Organization/example> ;
+     fhir:Reference.reference [ fhir:value "Organization/example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Patient/example-2.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/FamilyMemberHistory/example> a fhir:FamilyMemberHistory ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-familymemberhistory.html\">US Quality Core FamilyMemberHistory</a></p></div><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-example.html\">Peter Patient</a></p><p><b>date</b>: 2011-03-18 17:49:10+0000</p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}\">FATHER</span></p><h3>Conditions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Outcome</b></td><td><b>Onset[x]</b></td><td><b>Note</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><span title=\"Codes:{http://snomed.info/sct 315619001}\">Family history of myocardial infarction in male relative of first degree, age known (situation)</span></td><td><span title=\"Codes:{http://snomed.info/sct 520004}\">Congenital bent nose</span></td><td>74 yr<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></td><td><blockquote><div><p>Was fishing at the time. At least he went doing something he loved.</p>\n</div></blockquote></td></tr></table></div>"
+  ] ;
+  fhir:FamilyMemberHistory.status [ fhir:value "completed"] ;
+  fhir:FamilyMemberHistory.patient [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ] ;
+     fhir:Reference.display [ fhir:value "Peter Patient" ]
+  ] ;
+  fhir:FamilyMemberHistory.date [ fhir:value "2011-03-18T17:49:10+00:00"^^xsd:dateTime] ;
+  fhir:FamilyMemberHistory.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ] ;
+       fhir:Coding.code [ fhir:value "FTH" ] ;
+       fhir:Coding.display [ fhir:value "FATHER" ]
+     ]
+  ] ;
+  fhir:FamilyMemberHistory.condition [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/familymemberhistory-severity" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:399166001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "399166001" ] ;
+           fhir:Coding.display [ fhir:value "Fatal" ]
+         ]
+       ]
+     ] ;
+     fhir:FamilyMemberHistory.condition.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:315619001 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "315619001" ] ;
+         fhir:Coding.display [ fhir:value "Family history of myocardial infarction in male relative of first degree, age known (situation)" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Family history of myocardial infarction in male relative of first degree, age known (situation)" ]
+     ] ;
+     fhir:FamilyMemberHistory.condition.outcome [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:520004 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "520004" ] ;
+         fhir:Coding.display [ fhir:value "Congenital bent nose" ]
+       ]
+     ] ;
+     fhir:FamilyMemberHistory.condition.onsetAge [
+       fhir:Quantity.value [ fhir:value "74"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "yr" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "a" ]
+     ] ;
+     fhir:FamilyMemberHistory.condition.note [
+       fhir:index 0 ;
+       fhir:Annotation.text [ fhir:value "Was fishing at the time. At least he went doing something he loved." ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/FamilyMemberHistory/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

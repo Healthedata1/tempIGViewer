@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "us-quality-core-negation-reason"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet us-quality-core-negation-reason</b></p><a name=\"us-quality-core-negation-reason\"> </a><a name=\"hcus-quality-core-negation-reason\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.56/expansion\">Medical Reason Not Done SCT</a></li><li>Import all the codes that are contained in <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.58/expansion\">Patient Reason Not Done SCT</a></li><li>Import all the codes that are contained in <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1009/expansion\">System Reason</a></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason"] ;
+  fhir:ValueSet.version [ fhir:value "0.5.0"] ;
+  fhir:ValueSet.name [ fhir:value "NegationReasonCodes"] ;
+  fhir:ValueSet.title [ fhir:value "USQualityCore Negation Reason Codes"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-05"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "Office of the National Coordinator for Health Information Technology (ONC)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Office of the National Coordinator for Health Information Technology (ONC)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.healthit.gov/feedback" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "This value set defines the set of codes that can be used to indicate the reason an action was not taken"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "USA" ]
+  ] ;
+  fhir:ValueSet.purpose [ fhir:value "This value set was defined to support identifying any of the possible negation reason codes as part of USQualityCore profiles. The value set is composed of the codes from [Medical Reason Not Done SCT](http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.56), [Patient Reason Not Done SCT](http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.58), and [System Reason](http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1009) as defined and available in the Value Set Authority Center."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.56" ;
+         fhir:index 0 ;
+         fhir:link <http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.56>
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.58" ;
+         fhir:index 0 ;
+         fhir:link <http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.58>
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1009" ;
+         fhir:index 0 ;
+         fhir:link <http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1009>
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/DeviceRequest/negation-example> a fhir:DeviceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "negation-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceRequest negation-example</b></p><a name=\"negation-example\"> </a><a name=\"hcnegation-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-devicenotrequested.html\">US Quality Core Device Not Requested</a></p></div><p><b>US Quality Core Do Not Perform Reason</b>: <span title=\"Codes:{http://snomed.info/sct 410534003}\">Not indicated (qualifier value)</span></p><p><b>Extension Definition for DeviceRequest.doNotPerform for Version 5.0</b>: true</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>code</b>: <span title=\"Codes:\">Not Done Value Set: Venous Foot Pumps (VFP)</span> (Not done value set: <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.230/expansion\">Venous foot pumps</a>)</p><p><b>subject</b>: <a href=\"Patient-example.html\">Peter Chalmers</a></p><p><b>authoredOn</b>: 2016-04-05 09:20:00-0400</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:410534003 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "410534003" ] ;
+         fhir:Coding.display [ fhir:value "Not indicated (qualifier value)" ]
+       ]
+     ]
+  ] ;
+  fhir:DomainResource.modifierExtension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.doNotPerform" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ] ;
+  fhir:DeviceRequest.status [ fhir:value "completed"] ;
+  fhir:DeviceRequest.intent [ fhir:value "original-order"] ;
+  fhir:DeviceRequest.codeCodeableConcept [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet" ] ;
+       fhir:Extension.valueCanonical [
+         fhir:value "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.230" ;
+         fhir:link <http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.230>
+       ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Not Done Value Set: Venous Foot Pumps (VFP)" ]
+  ] ;
+  fhir:DeviceRequest.subject [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ] ;
+     fhir:Reference.display [ fhir:value "Peter Chalmers" ]
+  ] ;
+  fhir:DeviceRequest.authoredOn [ fhir:value "2016-04-05T09:20:00-04:00"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/DeviceRequest/negation-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

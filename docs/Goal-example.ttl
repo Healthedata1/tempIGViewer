@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Goal/example> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Goal example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-goal.html\">US Quality Core Goal</a></p></div><p><b>identifier</b>: 123</p><p><b>lifecycleStatus</b>: On Hold</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/goal-category dietary}\">Dietary</span></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/goal-priority high-priority}\">high</span></p><p><b>description</b>: <span title=\"Codes:{http://loinc.org 50064-5}\">Target body weight is 160 to 180 lbs.</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Peter James Chalmers</a></p><p><b>start</b>: 2015-04-05</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td><td><b>Due[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 3141-9}\">Weight Measured</span></td><td>160-180 lbs</td><td>2016-04-05</td></tr></table><p><b>statusDate</b>: 2016-02-14</p><p><b>statusReason</b>: Patient wants to defer weight loss until after honeymoon.</p><p><b>expressedBy</b>: <a href=\"Patient-example.html\">Peter James Chalmers</a></p><p><b>addresses</b>: obesity condition</p><p><b>outcomeReference</b>: <a href=\"Observation-example.html\">Body Weight Measured</a></p></div>"
+  ] ;
+  fhir:Goal.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.value [ fhir:value "123" ]
+  ] ;
+  fhir:Goal.lifecycleStatus [ fhir:value "on-hold"] ;
+  fhir:Goal.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/goal-category" ] ;
+       fhir:Coding.code [ fhir:value "dietary" ]
+     ]
+  ] ;
+  fhir:Goal.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/goal-priority" ] ;
+       fhir:Coding.code [ fhir:value "high-priority" ] ;
+       fhir:Coding.display [ fhir:value "High Priority" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "high" ]
+  ] ;
+  fhir:Goal.description [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:50064-5 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "50064-5" ] ;
+       fhir:Coding.display [ fhir:value "Ideal body weight" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Target body weight is 160 to 180 lbs." ]
+  ] ;
+  fhir:Goal.subject [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ] ;
+     fhir:Reference.display [ fhir:value "Peter James Chalmers" ]
+  ] ;
+  fhir:Goal.startDate [ fhir:value "2015-04-05"^^xsd:date] ;
+  fhir:Goal.target [
+     fhir:index 0 ;
+     fhir:Goal.target.measure [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:3141-9 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "3141-9" ] ;
+         fhir:Coding.display [ fhir:value "Weight Measured" ]
+       ]
+     ] ;
+     fhir:Goal.target.detailRange [
+       fhir:Range.low [
+         fhir:Quantity.value [ fhir:value "160"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "lbs" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "[lb_av]" ]
+       ] ;
+       fhir:Range.high [
+         fhir:Quantity.value [ fhir:value "180"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "lbs" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "[lb_av]" ]
+       ]
+     ] ;
+     fhir:Goal.target.dueDate [ fhir:value "2016-04-05"^^xsd:date ]
+  ] ;
+  fhir:Goal.statusDate [ fhir:value "2016-02-14"^^xsd:date] ;
+  fhir:Goal.statusReason [ fhir:value "Patient wants to defer weight loss until after honeymoon."] ;
+  fhir:Goal.expressedBy [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ] ;
+     fhir:Reference.display [ fhir:value "Peter James Chalmers" ]
+  ] ;
+  fhir:Goal.addresses [
+     fhir:index 0 ;
+     fhir:Reference.display [ fhir:value "obesity condition" ]
+  ] ;
+  fhir:Goal.outcomeReference [
+     fhir:index 0 ;
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Observation/example> ;
+     fhir:Reference.reference [ fhir:value "Observation/example" ] ;
+     fhir:Reference.display [ fhir:value "Body Weight Measured" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Goal/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

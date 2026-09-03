@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Location/example> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-location.html\">US Quality Core Location</a></p></div><p><b>identifier</b>: B1-S.F2 (use: temp, )</p><p><b>status</b>: Active</p><p><b>name</b>: South Wing, second floor</p><p><b>alias</b>: Mean Joe Greene University Medical Center, South Wing, second floor, BU MC, SW, F2</p><p><b>description</b>: Second floor of the Old South Wing, formerly in use by Psychiatry</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span></p><p><b>telecom</b>: ph: 2328(Work), fax: 2329(Work), <a href=\"mailto:secondwing@meanjoegreeneuniversitymedicalcenter.com\">secondwing@meanjoegreeneuniversitymedicalcenter.com</a>, <a href=\"http://sampleorg.com/southwing\">http://sampleorg.com/southwing</a></p><p><b>address</b>: Iron Curtain 75, Building A Pittsburgh PA 15016 US (work)</p><p><b>physicalType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type wi}\">Wing</span></p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td><td><b>Altitude</b></td></tr><tr><td style=\"display: none\">*</td><td>-83.6945691</td><td>42.25475478</td><td>0</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-example.html\">Organization Health Level Seven International</a></p></div>"
+  ] ;
+  fhir:Location.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "temp" ] ;
+     fhir:Identifier.value [ fhir:value "B1-S.F2" ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "South Wing, second floor"] ;
+  fhir:Location.alias [
+     fhir:value "Mean Joe Greene University Medical Center, South Wing, second floor" ;
+     fhir:index 0
+  ], [
+     fhir:value "BU MC, SW, F2" ;
+     fhir:index 1
+  ] ;
+  fhir:Location.description [ fhir:value "Second floor of the Old South Wing, formerly in use by Psychiatry"] ;
+  fhir:Location.mode [ fhir:value "instance"] ;
+  fhir:Location.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ] ;
+       fhir:Coding.code [ fhir:value "HOSP" ] ;
+       fhir:Coding.display [ fhir:value "Hospital" ]
+     ]
+  ] ;
+  fhir:Location.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "2328" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "fax" ] ;
+     fhir:ContactPoint.value [ fhir:value "2329" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "secondwing@meanjoegreeneuniversitymedicalcenter.com" ]
+  ], [
+     fhir:index 3 ;
+     fhir:ContactPoint.system [ fhir:value "url" ] ;
+     fhir:ContactPoint.value [ fhir:value "http://sampleorg.com/southwing" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] ;
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.line [
+       fhir:value "Iron Curtain 75, Building A" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Pittsburgh" ] ;
+     fhir:Address.state [ fhir:value "PA" ] ;
+     fhir:Address.postalCode [ fhir:value "15016" ] ;
+     fhir:Address.country [ fhir:value "US" ]
+  ] ;
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ] ;
+       fhir:Coding.code [ fhir:value "wi" ] ;
+       fhir:Coding.display [ fhir:value "Wing" ]
+     ]
+  ] ;
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "-83.6945691"^^xsd:decimal ] ;
+     fhir:Location.position.latitude [ fhir:value "42.25475478"^^xsd:decimal ] ;
+     fhir:Location.position.altitude [ fhir:value "0"^^xsd:decimal ]
+  ] ;
+  fhir:Location.managingOrganization [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Organization/example> ;
+     fhir:Reference.reference [ fhir:value "Organization/example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Location/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

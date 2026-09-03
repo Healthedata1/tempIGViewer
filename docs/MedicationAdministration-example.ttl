@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/MedicationAdministration/example> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-medicationadministration.html\">US Quality Core MedicationAdministration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"Medication-example.html\">Medication alemtuzumab 10 MG/ML [Lemtrada]</a></p><p><b>subject</b>: <a href=\"Patient-example.html\">Donald Duck</a></p><p><b>context</b>: <a href=\"Encounter-example.html\">Encounter: identifier = http://example.org/encounters#ENC-20130404-appendicitis; status = finished; class = inpatient encounter (ActCode#IMP); type = Initial hospital inpatient or observation care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 75 minutes must be met or exceeded.; period = 2013-04-04 18:00:00-0400 --&gt; 2013-04-06 11:00:00-0400</a></p><p><b>supportingInformation</b>: <a href=\"Condition-example.html\">Condition Burn of ear</a></p><p><b>effective</b>: 2015-01-15 14:30:00+0100 --&gt; 2015-01-15 14:30:00+0100</p><p><b>request</b>: <a href=\"MedicationRequest-example.html\">MedicationRequest: status = active; intent = order; medication[x] = -&gt;Medication alemtuzumab 10 MG/ML [Lemtrada]; authoredOn = 2015-03-25 19:32:52-0500; reasonCode = Multiple sclerosis (disorder)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 47625008}\">Intravenous route (qualifier value)</span></td><td>3 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>"
+  ] ;
+  fhir:MedicationAdministration.status [ fhir:value "completed"] ;
+  fhir:MedicationAdministration.medicationReference [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Medication/example> ;
+     fhir:Reference.reference [ fhir:value "Medication/example" ]
+  ] ;
+  fhir:MedicationAdministration.subject [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ] ;
+     fhir:Reference.display [ fhir:value "Donald Duck" ]
+  ] ;
+  fhir:MedicationAdministration.context [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Encounter/example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/example" ]
+  ] ;
+  fhir:MedicationAdministration.supportingInformation [
+     fhir:index 0 ;
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Condition/example> ;
+     fhir:Reference.reference [ fhir:value "Condition/example" ]
+  ] ;
+  fhir:MedicationAdministration.effectivePeriod [
+     fhir:Period.start [ fhir:value "2015-01-15T14:30:00+01:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2015-01-15T14:30:00+01:00"^^xsd:dateTime ]
+  ] ;
+  fhir:MedicationAdministration.request [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/MedicationRequest/example> ;
+     fhir:Reference.reference [ fhir:value "MedicationRequest/example" ]
+  ] ;
+  fhir:MedicationAdministration.dosage [
+     fhir:MedicationAdministration.dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:47625008 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "47625008" ] ;
+         fhir:Coding.display [ fhir:value "Intravenous route (qualifier value)" ]
+       ]
+     ] ;
+     fhir:MedicationAdministration.dosage.dose [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mg" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mg" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/MedicationAdministration/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/DeviceRequest/example> a fhir:DeviceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceRequest example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-devicerequest.html\">US Quality Core DeviceRequest</a></p></div><p><b>Extension Definition for DeviceRequest.doNotPerform for Version 5.0</b>: false</p><p><b>status</b>: Active</p><p><b>intent</b>: Original Order</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 86184003}\">Electrocardiographic monitor and recorder</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Peter Chalmers</a></p><p><b>encounter</b>: <a href=\"Encounter-example.html\">Encounter: identifier = http://example.org/encounters#ENC-20130404-appendicitis; status = finished; class = inpatient encounter (ActCode#IMP); type = Initial hospital inpatient or observation care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 75 minutes must be met or exceeded.; period = 2013-04-04 18:00:00-0400 --&gt; 2013-04-06 11:00:00-0400</a></p><p><b>authoredOn</b>: 2015-01-15 13:15:00+0100</p><p><b>requester</b>: <a href=\"Practitioner-example.html\">Practitioner Adam Careful </a></p></div>"
+  ] ;
+  fhir:DomainResource.modifierExtension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.doNotPerform" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ] ;
+  fhir:DeviceRequest.status [ fhir:value "active"] ;
+  fhir:DeviceRequest.intent [ fhir:value "original-order"] ;
+  fhir:DeviceRequest.codeCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:86184003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "86184003" ] ;
+       fhir:Coding.display [ fhir:value "Electrocardiographic monitor and recorder" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Electrocardiographic monitor and recorder" ]
+  ] ;
+  fhir:DeviceRequest.subject [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ] ;
+     fhir:Reference.display [ fhir:value "Peter Chalmers" ]
+  ] ;
+  fhir:DeviceRequest.encounter [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Encounter/example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/example" ]
+  ] ;
+  fhir:DeviceRequest.authoredOn [ fhir:value "2015-01-15T13:15:00+01:00"^^xsd:dateTime] ;
+  fhir:DeviceRequest.requester [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/DeviceRequest/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

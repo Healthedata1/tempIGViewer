@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/MedicationDispense/example> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationDispense example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-medicationdispense.html\">US Quality Core MedicationDispense</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"Medication-example.html\">Medication alemtuzumab 10 MG/ML [Lemtrada]</a></p><p><b>subject</b>: <a href=\"Patient-example.html\">Jim Chalmers  Male, DoB: 1974-12-25 ( Social Security number (use: usual, period: 2001-05-06 --&gt; (ongoing)))</a></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-example.html\">Practitioner Adam Careful </a></td></tr></table><p><b>authorizingPrescription</b>: <a href=\"MedicationRequest-example.html\">MedicationRequest: status = active; intent = order; medication[x] = -&gt;Medication alemtuzumab 10 MG/ML [Lemtrada]; authoredOn = 2015-03-25 19:32:52-0500; reasonCode = Multiple sclerosis (disorder)</a></p><p><b>quantity</b>: 6 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><p><b>daysSupply</b>: 5 days<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p><p><b>whenPrepared</b>: 2015-03-25 16:20:00+0000</p><p><b>whenHandedOver</b>: 2015-03-26 10:20:00+0000</p><p><b>destination</b>: <a href=\"Location-example.html\">Location South Wing, second floor</a></p><p><b>receiver</b>: <a href=\"Patient-example.html\">Jim Chalmers  Male, DoB: 1974-12-25 ( Social Security number (use: usual, period: 2001-05-06 --&gt; (ongoing)))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Infuse alemtuzumab 12 mg intravenously once daily for 5 days.</p><p><b>timing</b>: Once per 1 day</p><p><b>route</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration IV}\">Infusion, intravenous</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type ordered}\">Ordered</span></td><td>12 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>WasSubstituted</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution N}\">No substitution occurred or is permitted.</span></td></tr></table></div>"
+  ] ;
+  fhir:MedicationDispense.status [ fhir:value "completed"] ;
+  fhir:MedicationDispense.medicationReference [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Medication/example> ;
+     fhir:Reference.reference [ fhir:value "Medication/example" ]
+  ] ;
+  fhir:MedicationDispense.subject [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ] ;
+  fhir:MedicationDispense.performer [
+     fhir:index 0 ;
+     fhir:MedicationDispense.performer.actor [
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.authorizingPrescription [
+     fhir:index 0 ;
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/MedicationRequest/example> ;
+     fhir:Reference.reference [ fhir:value "MedicationRequest/example" ]
+  ] ;
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "6"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "mL" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "mL" ]
+  ] ;
+  fhir:MedicationDispense.daysSupply [
+     fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "days" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "d" ]
+  ] ;
+  fhir:MedicationDispense.whenPrepared [ fhir:value "2015-03-25T16:20:00+00:00"^^xsd:dateTime] ;
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2015-03-26T10:20:00+00:00"^^xsd:dateTime] ;
+  fhir:MedicationDispense.destination [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Location/example> ;
+     fhir:Reference.reference [ fhir:value "Location/example" ]
+  ] ;
+  fhir:MedicationDispense.receiver [
+     fhir:index 0 ;
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ] ;
+  fhir:MedicationDispense.dosageInstruction [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "Infuse alemtuzumab 12 mg intravenously once daily for 5 days." ] ;
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.boundsPeriod [
+           fhir:Period.start [ fhir:value "2015-03-26"^^xsd:date ] ;
+           fhir:Period.end [ fhir:value "2015-03-30"^^xsd:date ]
+         ] ;
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ] ;
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ] ;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration" ] ;
+         fhir:Coding.code [ fhir:value "IV" ] ;
+         fhir:Coding.display [ fhir:value "Infusion, intravenous" ]
+       ]
+     ] ;
+     fhir:Dosage.doseAndRate [
+       fhir:index 0 ;
+       fhir:Dosage.doseAndRate.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/dose-rate-type" ] ;
+           fhir:Coding.code [ fhir:value "ordered" ] ;
+           fhir:Coding.display [ fhir:value "Ordered" ]
+         ]
+       ] ;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "12"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "mg" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ]
+     ]
+  ] ;
+  fhir:MedicationDispense.substitution [
+     fhir:MedicationDispense.substitution.wasSubstituted [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:MedicationDispense.substitution.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution" ] ;
+         fhir:Coding.code [ fhir:value "N" ] ;
+         fhir:Coding.display [ fhir:value "none" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "No substitution occurred or is permitted." ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/MedicationDispense/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

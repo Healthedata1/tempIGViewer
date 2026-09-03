@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-non-negative-medication-admin-status> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "us-quality-core-non-negative-medication-admin-status"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet us-quality-core-non-negative-medication-admin-status</b></p><a name=\"us-quality-core-non-negative-medication-admin-status\"> </a><a name=\"hcus-quality-core-non-negative-medication-admin-status\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-medication-admin-status.html\"><code>http://terminology.hl7.org/CodeSystem/medication-admin-status</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references\"> version ?4.0.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-admin-status.html#medication-admin-status-in-progress\">in-progress</a></td><td>In Progress</td><td>The administration has started but has not yet completed.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-admin-status.html#medication-admin-status-on-hold\">on-hold</a></td><td>On Hold</td><td>Actions implied by the administration have been temporarily halted, but are expected to continue later. May also be called 'suspended'.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-admin-status.html#medication-admin-status-completed\">completed</a></td><td>Completed</td><td>All actions that are implied by the administration have occurred.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-admin-status.html#medication-admin-status-entered-in-error\">entered-in-error</a></td><td>Entered in Error</td><td>The administration was entered in error and therefore nullified.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-admin-status.html#medication-admin-status-stopped\">stopped</a></td><td>Stopped</td><td>Actions implied by the administration have been permanently halted, before all of them occurred.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-admin-status.html#medication-admin-status-unknown\">unknown</a></td><td>Unknown</td><td>The authoring system does not know which of the status values currently applies for this request. Note: This concept is not to be used for 'other' - one of the listed statuses is presumed to apply, it's just not known which one.</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-non-negative-medication-admin-status"] ;
+  fhir:ValueSet.version [ fhir:value "0.5.0"] ;
+  fhir:ValueSet.name [ fhir:value "NonNegativeMedicationAdministrationStatus"] ;
+  fhir:ValueSet.title [ fhir:value "Non-Negative MedicationAdministration Status"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-05"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "Office of the National Coordinator for Health Information Technology (ONC)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Office of the National Coordinator for Health Information Technology (ONC)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.healthit.gov/feedback" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "This value set defines the set of codes that indicate a non-negated medication administration status (i.e. codes that are not `not-done`)"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "USA" ]
+  ] ;
+  fhir:ValueSet.purpose [ fhir:value "This value set was defined to support the set of medication administration statuses in FHIR that do not explicitly indicate a negative status (i.e. all the codes from the http://terminology.hl7.org/CodeSystem/medication-admin-status code system that are not `not-done`)."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medication-admin-status" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "in-progress" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "In Progress" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "on-hold" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "On Hold" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "completed" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Completed" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "entered-in-error" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Entered in Error" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stopped" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stopped" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "unknown" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-non-negative-medication-admin-status.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

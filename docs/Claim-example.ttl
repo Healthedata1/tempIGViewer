@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Claim/example> a fhir:Claim ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Claim example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-quality-core-claim.html\">US Quality Core Claim</a></p></div><p><b>identifier</b>: <code>http://example.org/claims</code>/6612346</p><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}\">Professional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Patient-example.html\">Jim Chalmers  Male, DoB: 1974-12-25 ( Social Security number (use: usual, period: 2001-05-06 --&gt; (ongoing)))</a></p><p><b>created</b>: 2014-08-16</p><p><b>insurer</b>: <a href=\"Organization-example.html\">Organization Health Level Seven International</a></p><p><b>provider</b>: <a href=\"Practitioner-example.html\">Practitioner Adam Careful </a></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><h3>Payees</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/payeetype provider}\">Provider</span></td><td><a href=\"Practitioner-example.html\">Practitioner Adam Careful </a></td></tr></table><h3>CareTeams</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Provider</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><a href=\"Practitioner-example.html\">Practitioner Adam Careful </a></td></tr></table><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>OnAdmission</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm K35.80}\">Unspecified acute appendicitis</span></td><td><span title=\"Codes:{https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding Y}\">Y</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>true</td><td><a href=\"Coverage-example.html\">Coverage: identifier = Member Number; status = active; type = Other Private Insurance; subscriberId = 12191; dependent = 0; relationship = Self; period = 2011-05-23 --&gt; 2012-05-23; order = 9</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>careTeamSequence</b>: 1</p><p><b>diagnosisSequence</b>: 1</p><p><b>productOrService</b>: <span title=\"Codes:{http://www.ama-assn.org/go/cpt 44950}\">Appendectomy</span></p><p><b>serviced</b>: 2013-04-05</p><h3>UnitPrices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>4000.00</td><td>United States dollar</td></tr></table></blockquote></div>"
+  ] ;
+  fhir:Claim.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://example.org/claims" ] ;
+     fhir:Identifier.value [ fhir:value "6612346" ]
+  ] ;
+  fhir:Claim.status [ fhir:value "active"] ;
+  fhir:Claim.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ] ;
+       fhir:Coding.code [ fhir:value "professional" ] ;
+       fhir:Coding.display [ fhir:value "Professional" ]
+     ]
+  ] ;
+  fhir:Claim.use [ fhir:value "claim"] ;
+  fhir:Claim.patient [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ] ;
+  fhir:Claim.created [ fhir:value "2014-08-16"^^xsd:date] ;
+  fhir:Claim.insurer [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Organization/example> ;
+     fhir:Reference.reference [ fhir:value "Organization/example" ]
+  ] ;
+  fhir:Claim.provider [
+     fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+  ] ;
+  fhir:Claim.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/processpriority" ] ;
+       fhir:Coding.code [ fhir:value "normal" ]
+     ]
+  ] ;
+  fhir:Claim.payee [
+     fhir:Claim.payee.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/payeetype" ] ;
+         fhir:Coding.code [ fhir:value "provider" ]
+       ]
+     ] ;
+     fhir:Claim.payee.party [
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+     ]
+  ] ;
+  fhir:Claim.careTeam [
+     fhir:index 0 ;
+     fhir:Claim.careTeam.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.careTeam.provider [
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/Practitioner/example> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+     ]
+  ] ;
+  fhir:Claim.diagnosis [
+     fhir:index 0 ;
+     fhir:Claim.diagnosis.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.diagnosis.diagnosisCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ] ;
+         fhir:Coding.code [ fhir:value "K35.80" ] ;
+         fhir:Coding.display [ fhir:value "Unspecified acute appendicitis" ]
+       ]
+     ] ;
+     fhir:Claim.diagnosis.onAdmission [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding" ] ;
+         fhir:Coding.code [ fhir:value "Y" ]
+       ]
+     ]
+  ] ;
+  fhir:Claim.insurance [
+     fhir:index 0 ;
+     fhir:Claim.insurance.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.insurance.focal [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Claim.insurance.coverage [
+       fhir:link <http://fhir.org/guides/onc/us-quality-core/Coverage/example> ;
+       fhir:Reference.reference [ fhir:value "Coverage/example" ]
+     ]
+  ] ;
+  fhir:Claim.item [
+     fhir:index 0 ;
+     fhir:Claim.item.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.item.careTeamSequence [
+       fhir:value "1"^^xsd:positiveInteger ;
+       fhir:index 0
+     ] ;
+     fhir:Claim.item.diagnosisSequence [
+       fhir:value "1"^^xsd:positiveInteger ;
+       fhir:index 0
+     ] ;
+     fhir:Claim.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://www.ama-assn.org/go/cpt" ] ;
+         fhir:Coding.code [ fhir:value "44950" ] ;
+         fhir:Coding.display [ fhir:value "Appendectomy" ]
+       ]
+     ] ;
+     fhir:Claim.item.servicedDate [ fhir:value "2013-04-05"^^xsd:date ] ;
+     fhir:Claim.item.unitPrice [
+       fhir:Money.value [ fhir:value "4000.00"^^xsd:decimal ] ;
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/onc/us-quality-core/Claim/example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

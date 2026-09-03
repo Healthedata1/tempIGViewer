@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.UV.IPA\Artifacts Summary - FHIR v4.0.1</title>
+    <title>Artifacts Summary - 2026 US Quality Core Implementation Guide v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,9 +18,25 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/hl7.css" rel="stylesheet"/>
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style type="text/css">
+blockquote.note {
+  margin: 5px;
+  padding: 10px;
+  border-left-style: solid;
+  background-color: var(--stu-note-background-color);
+  border-left-color: var(--stu-note-border-left-color);
+}
+
+blockquote.note::before {
+  white-space: pre;
+  content: "Note\A ";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+</style>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -31,37 +47,49 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Placeholder for child template header declarations -->
 
         <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
-          </a>
-        </div>
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-        </div>
-        <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
-        </div>
+  <a id="hl7-logo" no-external="true" href="https://healthit.gov">
+    <img height="50" alt="Visit the ONC website" src="onc-logo.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+<!-- TODO: Push this into the base template -->
+<script type="text/javascript" src="assets/cql.js"> </script>
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">International Patient Access</span><br/>1.0.0-preview - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">2026 US Quality Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.5.0 - release
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -81,76 +109,61 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a data-toggle="dropdown" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general-requirements.html" class="item">General Requirements</a></li>
+      <li><a href="must-support.html" class="item">Must Support</a></li>
+      <li><a href="security.html" class="item">Security</a></li>
+    </ul>
+  </li>
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="conformance.html">Conformance</a>
-  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using The API
+    <a data-toggle="dropdown" class="dropdown-toggle">Guidance
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="ipa-server.html">IPA Server Requirements</a>
-      </li>
-      <li>
-        <a href="access.html">Gaining Access to a Patient Record</a>
-      </li>
-      <li>
-        <a href="fetching.html">Finding and Retrieving Patient Information</a>
-      </li>
-      <li>
-        <a href="synchronization.html">Synchronizing Patient Records</a>
-      </li>
-      <li>
-        <a href="internationalization.html">Internationalization Issues</a>
-      </li>
+      <li><a href="uscdiquality.html" class="item">USCDI+ Quality</a></li>    
+      <li><a href="negation.html" class="item">US Quality Core Negation</a></li>
+      <li><a href="provenance.html" class="item">Provenance</a></li>
+      <li><a href="relationship-with-uscore-qicore.html" class="item">Relationship with US Core and QI-Core</a></li> 
+      <li><a href="qdm-to-us-quality-core.html" class="item">QDM to US Quality Core</a></li>
     </ul>
   </li>
+
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifact Index
+    <a data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="artifacts.html#1">Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#3">CapabilityStatements</a>
-      </li>
-      <li>
-        <a href="artifacts.html#4">Operations</a>
-      </li>
-      <li>
-        <a href="artifacts.html#5">Examples</a>
-      </li>
+      <li><a href="capability-statements.html" class="item">Capability Statements</a></li>
+      <li><a href="profiles.html" class="item">Profiles</a></li>
+      <li><a href="extensions.html" class="item">Extensions</a></li>
+      <li><a href="terminology.html" class="item">Terminology</a></li>
+      <li><a href="examples.html" class="item">Examples</a></li>
     </ul>
   </li>
+
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
-      <b class="caret"></b>
+    <a data-toggle="dropdown" class="dropdown-toggle">CQL Artifacts and Patterns (Informational)
+       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="http://hl7.org/fhir/R4/index.html">FHIR</a>
-      </li>
-      <li>
-        <a href="http://hl7.org/fhirpath">FHIRPath</a>
-      </li>
-      <li>
-        <a href="http://cql.hl7.org">CQL</a>
-      </li>
-      <li>
-        <a href="downloads.html">Downloads</a>
-      </li>
+      <li><a href="modelinfo.html" class="item">US Quality Core ModelInfo (Informational)</a></li>
+      <li><a href="patterns.html" class="item">US Quality Core Patterns (Informational)</a></li>
     </ul>
   </li>
+
+  <li><a href="downloads.html" class="item">Downloads</a></li>
+  <li><a href="changes.html" class="item">Change Log</a></li>
+
 </ul>
+
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -182,363 +195,2430 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">International Patient Access - Local Development build (v1.0.0-preview). See the <a href="http://hl7.org/fhir/uv/ipa/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">2026 US Quality Core Implementation Guide - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhir.org/guides/onc/us-quality-core/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
-  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
-     xmlns="http://www.w3.org/1999/xhtml"
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
      xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
      class="markdown-toc">
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Profiles: Primary Resources</a>
+         <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Profiles: Supporting Resources</a>
+         <a href="#2">Behavior: Search Parameters</a>
       </li>
       <li>
-         <a href="#3">Behavior: Capability Statements</a>
+         <a href="#3">Knowledge Artifacts: Libraries</a>
       </li>
       <li>
-         <a href="#4">Behavior: Operation Definitions</a>
+         <a href="#4">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#8">Other</a>
       </li>
    </ul>
 </div>
-<div xmlns:html="http://www.w3.org/1999/xhtml"
-     xmlns="http://www.w3.org/1999/xhtml"
-     xmlns:f="http://hl7.org/fhir">
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Profiles: Primary Resources </h3>
-   <p>
-    <p>Content Definitions for primary resources</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-allergyintolerance.html"
-                     title="StructureDefinition/ipa-allergyintolerance">IPA-AllergyIntolerance</a>
-               </td>
-               <td>
-<p>Minimum expectations for an AllergyIntolerance resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-condition.html"
-                     title="StructureDefinition/ipa-condition">IPA-Condition</a>
-               </td>
-               <td>
-<p>Minimum expectations for a Condition resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-documentreference.html"
-                     title="StructureDefinition/ipa-documentreference">IPA-DocumentReference</a>
-               </td>
-               <td>
-<p>Minimum expectations for a DocumentReference resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-immunization.html"
-                     title="StructureDefinition/ipa-immunization">IPA-Immunization</a>
-               </td>
-               <td>
-<p>Minimum expectations for an Immunization resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-medicationrequest.html"
-                     title="StructureDefinition/ipa-medicationrequest">IPA-MedicationRequest</a>
-               </td>
-               <td>
-<p>Minimum expectations for a MedicationRequest resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-medicationstatement.html"
-                     title="StructureDefinition/ipa-medicationstatement">IPA-MedicationStatement</a>
-               </td>
-               <td>
-<p>Minimum expectations for a MedicationStatement resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-observation.html"
-                     title="StructureDefinition/ipa-observation">IPA-Observation</a>
-               </td>
-               <td>
-<p>Minimum expectations for an Observation resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-patient.html"
-                     title="StructureDefinition/ipa-patient">IPA-Patient</a>
-               </td>
-               <td>
-<p>Minimum expectations for a Patient resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
-   <h3>Profiles: Supporting Resources </h3>
-   <p>
-    <p>Content Definitions for supporting resources</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-medication.html"
-                     title="StructureDefinition/ipa-medication">IPA-Medication</a>
-               </td>
-               <td>
-<p>Minimum expectations for a Medication resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-practitioner.html"
-                     title="StructureDefinition/ipa-practitioner">IPA-Practitioner</a>
-               </td>
-               <td>
-<p>Minimum expectations for a Practitioner resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ipa-practitionerrole.html"
-                     title="StructureDefinition/ipa-practitionerrole">IPA-PractitionerRole</a>
-               </td>
-               <td>
-<p>Minimum expectations for a PractitionerRole resource when accessed via a International Patient Access API</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
    <h3>Behavior: Capability Statements </h3>
-   <p>
     <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CapabilityStatement-ipa-server.html"
-                     title="CapabilityStatement/ipa-server">International Patient Access Server CapabilityStatement</a>
-               </td>
-               <td>
-<p>This section describes the basic rules for the International Patient Access server actor that is responsible for providing responses to queries submitted by International Patient Access requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by International Patient Access servers are defined in this CapabilityStatement. International Patient Access clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-us-quality-core-client.html"
+                  title="CapabilityStatement/us-quality-core-client">US Quality Core Client CapabilityStatement</a>
+            </td>
+            <td>
+<p>This capability statement describes the expected capabilities of the US Quality
+Core Client which is responsible for initiating queries for USCDI+
+Quality V1 data from US Quality Core Servers.  The set of FHIR RESTful
+operations and search parameters required to be supported by US Quality Core
+Servers is provided in the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server Capability
+Statement</a>.  US Quality Core
+Clients have the option of choosing from this list to access necessary data
+based on their local use cases and other contextual requirements.</p>
 </td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-us-quality-core-server.html"
+                  title="CapabilityStatement/us-quality-core-server">US Quality Core Server CapabilityStatement</a>
+            </td>
+            <td>
+<p>This capability statement describes the expected capabilities of the US Quality Core Servers
+which is responsible for responding to USCDI+ Quality V1 queries submitted by US Quality Core Clients.
+It describes a minimum set of FHIR RESTful operations and search parameters necessary to enable access
+to the set of USCDI+ Quality V1 data that is in scope of this implementation guide.  For more information
+about which USCDI+ Quality data elements are in scope, please review the <a href="uscdiquality.html">USCDI+ Quality</a> section
+of this implementation guide.</p>
+
+<p>US Quality Core Servers <strong>SHALL</strong> support the capabilities described in the <a href="https://hl7.org/fhir/us/core/STU6.1/CapabilityStatement-us-core-server.html">US
+Core Server CapabilityStatement
+STU6.1</a>.
+Some RESTFUL operations and search parameters described in the US Quality Core Server CapabilityStatement are redundant
+to the US Core Server CapabilityStatement, but are listed here to highlight which
+capabilities are specifically relevant to USCDI+ Quality V1.</p>
+
+<p>The US Quality Core Implementation Guide v0.5.0 is derived from the QI-Core Implementation Guide STU6. It adopts
+all profiles within the <a href="https://hl7.org/fhir/us/qicore/STU6/">QI-Core Implementation Guide STU6</a> to enable a more seamless adoption of this
+implementation guide.  However, only those profiles that contain USCDI+ Quality V1 data are required to be supported
+by US Quality Core Servers.  The FHIR RESTful operations and search parameters in this capability statement
+reflects this scope.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Behavior: Search Parameters </h3>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-adverseevent-event.html"
+                  title="SearchParameter/us-quality-core-adverseevent-event">UsQualityCoreAdverseeventEvent</a>
+            </td>
+            <td>
+<p>US Quality Core AdverseEvent Event Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-adverseevent-recorded-date.html"
+                  title="SearchParameter/us-quality-core-adverseevent-recorded-date">UsQualityCoreAdverseeventRecordedDate</a>
+            </td>
+            <td>
+<p>US Quality Core AdverseEvent recorded-date Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-adverseevent-subject.html"
+                  title="SearchParameter/us-quality-core-adverseevent-subject">UsQualityCoreAdverseeventSubject</a>
+            </td>
+            <td>
+<p>US Quality Core AdverseEvent Subject Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-allergyintolerance-patient.html"
+                  title="SearchParameter/us-quality-core-allergyintolerance-patient">UsQualityCoreAllergyintolerancePatient</a>
+            </td>
+            <td>
+<p>US Quality Core AllergyIntolerance Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-bodystructure-patient.html"
+                  title="SearchParameter/us-quality-core-bodystructure-patient">UsQualityCoreBodystructurePatient</a>
+            </td>
+            <td>
+<p>US Quality Core BodyStructure Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-careplan-category.html"
+                  title="SearchParameter/us-quality-core-careplan-category">UsQualityCoreCareplanCategory</a>
+            </td>
+            <td>
+<p>US Quality Core CarePlan Category Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-careplan-patient.html"
+                  title="SearchParameter/us-quality-core-careplan-patient">UsQualityCoreCareplanPatient</a>
+            </td>
+            <td>
+<p>US Quality Core CarePlan Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-careteam-patient.html"
+                  title="SearchParameter/us-quality-core-careteam-patient">UsQualityCoreCareteamPatient</a>
+            </td>
+            <td>
+<p>US Quality Core CareTeam Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-careteam-status.html"
+                  title="SearchParameter/us-quality-core-careteam-status">UsQualityCoreCareteamStatus</a>
+            </td>
+            <td>
+<p>US Quality Core CareTeam Status Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-claim-patient.html"
+                  title="SearchParameter/us-quality-core-claim-patient">UsQualityCoreClaimPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Claim Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-claimresponse-patient.html"
+                  title="SearchParameter/us-quality-core-claimresponse-patient">UsQualityCoreClaimresponsePatient</a>
+            </td>
+            <td>
+<p>US Quality Core ClaimResponse Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-claimresponse-type.html"
+                  title="SearchParameter/us-quality-core-claimresponse-type">UsQualityCoreClaimresponseType</a>
+            </td>
+            <td>
+<p>US Quality Core ClaimResponse Type Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-communication-patient.html"
+                  title="SearchParameter/us-quality-core-communication-patient">UsQualityCoreCommunicationPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Communication Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-communication-topic.html"
+                  title="SearchParameter/us-quality-core-communication-topic">UsQualityCoreCommunicationTopic</a>
+            </td>
+            <td>
+<p>US Quality Core Communication Topic Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-communicationrequest-category.html"
+                  title="SearchParameter/us-quality-core-communicationrequest-category">UsQualityCoreCommunicationrequestCategory</a>
+            </td>
+            <td>
+<p>US Quality Core CommunicationRequest Category Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-communicationrequest-patient.html"
+                  title="SearchParameter/us-quality-core-communicationrequest-patient">UsQualityCoreCommunicationrequestPatient</a>
+            </td>
+            <td>
+<p>US Quality Core CommunicationRequest Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-condition-abatement-date.html"
+                  title="SearchParameter/us-quality-core-condition-abatement-date">UsQualityCoreConditionAbatementDate</a>
+            </td>
+            <td>
+<p>US Quality Core Condition abatement-date Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-condition-category.html"
+                  title="SearchParameter/us-quality-core-condition-category">UsQualityCoreConditionCategory</a>
+            </td>
+            <td>
+<p>US Quality Core Condition Category Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-condition-code.html"
+                  title="SearchParameter/us-quality-core-condition-code">UsQualityCoreConditionCode</a>
+            </td>
+            <td>
+<p>US Quality Core Condition Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-condition-onset-date.html"
+                  title="SearchParameter/us-quality-core-condition-onset-date">UsQualityCoreConditionOnsetDate</a>
+            </td>
+            <td>
+<p>US Quality Core Condition onset-date Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-condition-patient.html"
+                  title="SearchParameter/us-quality-core-condition-patient">UsQualityCoreConditionPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Condition Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-coverage-patient.html"
+                  title="SearchParameter/us-quality-core-coverage-patient">UsQualityCoreCoveragePatient</a>
+            </td>
+            <td>
+<p>US Quality Core Coverage Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-device-patient.html"
+                  title="SearchParameter/us-quality-core-device-patient">UsQualityCoreDevicePatient</a>
+            </td>
+            <td>
+<p>US Quality Core Device Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-device-type.html"
+                  title="SearchParameter/us-quality-core-device-type">UsQualityCoreDeviceType</a>
+            </td>
+            <td>
+<p>US Quality Core Device Type Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-devicerequest-code.html"
+                  title="SearchParameter/us-quality-core-devicerequest-code">UsQualityCoreDevicerequestCode</a>
+            </td>
+            <td>
+<p>US Quality Core DeviceRequest Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-devicerequest-do-not-perform.html"
+                  title="SearchParameter/us-quality-core-devicerequest-do-not-perform">UsQualityCoreDevicerequestDoNotPerform</a>
+            </td>
+            <td>
+<p>US Quality Core DeviceRequest do-not-perform Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-devicerequest-patient.html"
+                  title="SearchParameter/us-quality-core-devicerequest-patient">UsQualityCoreDevicerequestPatient</a>
+            </td>
+            <td>
+<p>US Quality Core DeviceRequest Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-deviceusestatement-device-type.html"
+                  title="SearchParameter/us-quality-core-deviceusestatement-device-type">UsQualityCoreDeviceusestatementDeviceType</a>
+            </td>
+            <td>
+<p>US Quality Core DeviceUseStatement Device Type Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-deviceusestatement-patient.html"
+                  title="SearchParameter/us-quality-core-deviceusestatement-patient">UsQualityCoreDeviceusestatementPatient</a>
+            </td>
+            <td>
+<p>US Quality Core DeviceUseStatement Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-diagnosticreport-category.html"
+                  title="SearchParameter/us-quality-core-diagnosticreport-category">UsQualityCoreDiagnosticreportCategory</a>
+            </td>
+            <td>
+<p>US Quality Core DiagnosticReport Category Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-diagnosticreport-code.html"
+                  title="SearchParameter/us-quality-core-diagnosticreport-code">UsQualityCoreDiagnosticreportCode</a>
+            </td>
+            <td>
+<p>US Quality Core DiagnosticReport Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-diagnosticreport-date.html"
+                  title="SearchParameter/us-quality-core-diagnosticreport-date">UsQualityCoreDiagnosticreportDate</a>
+            </td>
+            <td>
+<p>US Quality Core DiagnosticReport date Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-diagnosticreport-patient.html"
+                  title="SearchParameter/us-quality-core-diagnosticreport-patient">UsQualityCoreDiagnosticreportPatient</a>
+            </td>
+            <td>
+<p>US Quality Core DiagnosticReport Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-encounter-id.html"
+                  title="SearchParameter/us-quality-core-encounter-id">UsQualityCoreEncounter</a>
+            </td>
+            <td>
+<p>US Quality Core Encounter Id Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-encounter-date.html"
+                  title="SearchParameter/us-quality-core-encounter-date">UsQualityCoreEncounterDate</a>
+            </td>
+            <td>
+<p>US Quality Core Encounter date Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-encounter-patient.html"
+                  title="SearchParameter/us-quality-core-encounter-patient">UsQualityCoreEncounterPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Encounter Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-encounter-type.html"
+                  title="SearchParameter/us-quality-core-encounter-type">UsQualityCoreEncounterType</a>
+            </td>
+            <td>
+<p>US Quality Core Encounter Type Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-familymemberhistory-patient.html"
+                  title="SearchParameter/us-quality-core-familymemberhistory-patient">UsQualityCoreFamilymemberhistoryPatient</a>
+            </td>
+            <td>
+<p>US Quality Core FamilyMemberHistory Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-flag-code.html"
+                  title="SearchParameter/us-quality-core-flag-code">UsQualityCoreFlagCode</a>
+            </td>
+            <td>
+<p>US Quality Core Flag Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-flag-patient.html"
+                  title="SearchParameter/us-quality-core-flag-patient">UsQualityCoreFlagPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Flag Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-goal-patient.html"
+                  title="SearchParameter/us-quality-core-goal-patient">UsQualityCoreGoalPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Goal Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-immunization-date.html"
+                  title="SearchParameter/us-quality-core-immunization-date">UsQualityCoreImmunizationDate</a>
+            </td>
+            <td>
+<p>US Quality Core Immunization date Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-immunization-patient.html"
+                  title="SearchParameter/us-quality-core-immunization-patient">UsQualityCoreImmunizationPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Immunization Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-immunization-status.html"
+                  title="SearchParameter/us-quality-core-immunization-status">UsQualityCoreImmunizationStatus</a>
+            </td>
+            <td>
+<p>US Quality Core Immunization Status Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-immunizationevaluation-patient.html"
+                  title="SearchParameter/us-quality-core-immunizationevaluation-patient">UsQualityCoreImmunizationevaluationPatient</a>
+            </td>
+            <td>
+<p>US Quality Core ImmunizationEvaluation Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-immunizationevaluation-target-disease.html"
+                  title="SearchParameter/us-quality-core-immunizationevaluation-target-disease">UsQualityCoreImmunizationevaluationTargetDisease</a>
+            </td>
+            <td>
+<p>US Quality Core ImmunizationEvaluation Target Disease Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-location-id.html"
+                  title="SearchParameter/us-quality-core-location-id">UsQualityCoreLocation</a>
+            </td>
+            <td>
+<p>US Quality Core Location Id Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medication-code.html"
+                  title="SearchParameter/us-quality-core-medication-code">UsQualityCoreMedicationCode</a>
+            </td>
+            <td>
+<p>US Quality Core Medication Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationadministration-code.html"
+                  title="SearchParameter/us-quality-core-medicationadministration-code">UsQualityCoreMedicationadministrationCode</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationAdministration Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationadministration-effective-time.html"
+                  title="SearchParameter/us-quality-core-medicationadministration-effective-time">UsQualityCoreMedicationadministrationEffectiveTime</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationAdministration effective-time Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationadministration-patient.html"
+                  title="SearchParameter/us-quality-core-medicationadministration-patient">UsQualityCoreMedicationadministrationPatient</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationAdministration Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationadministration-status.html"
+                  title="SearchParameter/us-quality-core-medicationadministration-status">UsQualityCoreMedicationadministrationStatus</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationAdministration Status Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationdispense-patient.html"
+                  title="SearchParameter/us-quality-core-medicationdispense-patient">UsQualityCoreMedicationdispensePatient</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationDispense Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationdispense-status.html"
+                  title="SearchParameter/us-quality-core-medicationdispense-status">UsQualityCoreMedicationdispenseStatus</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationDispense Status Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationrequest-do-not-perform.html"
+                  title="SearchParameter/us-quality-core-medicationrequest-do-not-perform">UsQualityCoreMedicationrequestDoNotPerform</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationRequest do-not-perform Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationrequest-intent.html"
+                  title="SearchParameter/us-quality-core-medicationrequest-intent">UsQualityCoreMedicationrequestIntent</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationRequest intent Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationrequest-patient.html"
+                  title="SearchParameter/us-quality-core-medicationrequest-patient">UsQualityCoreMedicationrequestPatient</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationRequest Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationstatement-code.html"
+                  title="SearchParameter/us-quality-core-medicationstatement-code">UsQualityCoreMedicationstatementCode</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationStatement Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-medicationstatement-patient.html"
+                  title="SearchParameter/us-quality-core-medicationstatement-patient">UsQualityCoreMedicationstatementPatient</a>
+            </td>
+            <td>
+<p>US Quality Core MedicationStatement Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-observation-category.html"
+                  title="SearchParameter/us-quality-core-observation-category">UsQualityCoreObservationCategory</a>
+            </td>
+            <td>
+<p>US Quality Core Observation Category Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-observation-code.html"
+                  title="SearchParameter/us-quality-core-observation-code">UsQualityCoreObservationCode</a>
+            </td>
+            <td>
+<p>US Quality Core Observation Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-observation-date.html"
+                  title="SearchParameter/us-quality-core-observation-date">UsQualityCoreObservationDate</a>
+            </td>
+            <td>
+<p>US Quality Core Observation date Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-observation-patient.html"
+                  title="SearchParameter/us-quality-core-observation-patient">UsQualityCoreObservationPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Observation Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-observation-status.html"
+                  title="SearchParameter/us-quality-core-observation-status">UsQualityCoreObservationStatus</a>
+            </td>
+            <td>
+<p>US Quality Core Observation Status Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-patient-id.html"
+                  title="SearchParameter/us-quality-core-patient-id">UsQualityCorePatient</a>
+            </td>
+            <td>
+<p>US Quality Core Patient Id Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-practitioner-id.html"
+                  title="SearchParameter/us-quality-core-practitioner-id">UsQualityCorePractitioner</a>
+            </td>
+            <td>
+<p>US Quality Core Practitioner Id Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-practitionerrole-id.html"
+                  title="SearchParameter/us-quality-core-practitionerrole-id">UsQualityCorePractitionerrole</a>
+            </td>
+            <td>
+<p>US Quality Core PractitionerRole Id Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-procedure-date.html"
+                  title="SearchParameter/us-quality-core-procedure-date">UsQualityCoreProcedureDate</a>
+            </td>
+            <td>
+<p>US Quality Core Procedure date Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-procedure-patient.html"
+                  title="SearchParameter/us-quality-core-procedure-patient">UsQualityCoreProcedurePatient</a>
+            </td>
+            <td>
+<p>US Quality Core Procedure Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-procedure-status.html"
+                  title="SearchParameter/us-quality-core-procedure-status">UsQualityCoreProcedureStatus</a>
+            </td>
+            <td>
+<p>US Quality Core Procedure Status Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-questionnaireresponse-id.html"
+                  title="SearchParameter/us-quality-core-questionnaireresponse-id">UsQualityCoreQuestionnaireresponse</a>
+            </td>
+            <td>
+<p>US Quality Core QuestionnaireResponse Id Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-questionnaireresponse-patient.html"
+                  title="SearchParameter/us-quality-core-questionnaireresponse-patient">UsQualityCoreQuestionnaireresponsePatient</a>
+            </td>
+            <td>
+<p>US Quality Core QuestionnaireResponse Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-questionnaireresponse-questionnaire.html"
+                  title="SearchParameter/us-quality-core-questionnaireresponse-questionnaire">UsQualityCoreQuestionnaireresponseQuestionnaire</a>
+            </td>
+            <td>
+<p>US Quality Core QuestionnaireResponse Questionnaire Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-relatedperson-id.html"
+                  title="SearchParameter/us-quality-core-relatedperson-id">UsQualityCoreRelatedperson</a>
+            </td>
+            <td>
+<p>US Quality Core RelatedPerson Id Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-relatedperson-patient.html"
+                  title="SearchParameter/us-quality-core-relatedperson-patient">UsQualityCoreRelatedpersonPatient</a>
+            </td>
+            <td>
+<p>US Quality Core RelatedPerson Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-servicerequest-id.html"
+                  title="SearchParameter/us-quality-core-servicerequest-id">UsQualityCoreServicerequest</a>
+            </td>
+            <td>
+<p>US Quality Core ServiceRequest Id Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-servicerequest-authored.html"
+                  title="SearchParameter/us-quality-core-servicerequest-authored">UsQualityCoreServicerequestAuthored</a>
+            </td>
+            <td>
+<p>US Quality Core ServiceRequest authored Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-servicerequest-category.html"
+                  title="SearchParameter/us-quality-core-servicerequest-category">UsQualityCoreServicerequestCategory</a>
+            </td>
+            <td>
+<p>US Quality Core ServiceRequest Category Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-servicerequest-code.html"
+                  title="SearchParameter/us-quality-core-servicerequest-code">UsQualityCoreServicerequestCode</a>
+            </td>
+            <td>
+<p>US Quality Core ServiceRequest Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-servicerequest-do-not-perform.html"
+                  title="SearchParameter/us-quality-core-servicerequest-do-not-perform">UsQualityCoreServicerequestDoNotPerform</a>
+            </td>
+            <td>
+<p>US Quality Core ServiceRequest do-not-perform Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-servicerequest-patient.html"
+                  title="SearchParameter/us-quality-core-servicerequest-patient">UsQualityCoreServicerequestPatient</a>
+            </td>
+            <td>
+<p>US Quality Core ServiceRequest Patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-substance-code.html"
+                  title="SearchParameter/us-quality-core-substance-code">UsQualityCoreSubstanceCode</a>
+            </td>
+            <td>
+<p>US Quality Core Substance Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-task-code.html"
+                  title="SearchParameter/us-quality-core-task-code">UsQualityCoreTaskCode</a>
+            </td>
+            <td>
+<p>US Quality Core Task Code Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-task-patient.html"
+                  title="SearchParameter/us-quality-core-task-patient">UsQualityCoreTaskPatient</a>
+            </td>
+            <td>
+<p>US Quality Core Task patient Search Parameter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-quality-core-task-status.html"
+                  title="SearchParameter/us-quality-core-task-status">UsQualityCoreTaskStatus</a>
+            </td>
+            <td>
+<p>US Quality Core Task Status Search Parameter</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Knowledge Artifacts: Libraries </h3>
+    <p>These define logic, asset collections and other libraries as part of content in this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-USQualityCoreCommon.html"
+                  title="Library/USQualityCoreCommon">US Quality Core Common</a>
+            </td>
+            <td>
+<p>Common terminologies and functions used in US Quality Core-based CQL artifacts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-USQualityCoreCommonTests.html"
+                  title="Library/USQualityCoreCommonTests">US Quality Core CommonTests</a>
+            </td>
+            <td>
+<p>Tests for the US Quality Core Common library</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-USQualityCore-ModelInfo.html"
+                  title="Library/USQualityCore-ModelInfo">US Quality Core Model Definition</a>
+            </td>
+            <td>
+<p>Model definition for the US Quality Core IG Model</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
    <a name="4"> </a>
-   <h3>Behavior: Operation Definitions </h3>
-   <p>
-    <p>These are custom operations that can be supported by and/or invoked by systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="OperationDefinition-docref.html"
-                     title="OperationDefinition/docref">IPA Fetch DocumentReference</a>
-               </td>
-               <td>
-<p>This operation is used to return all the references to documents related to a patient.</p>
-
-<p>The operation requires a patient id and takes the optional input parameters:</p>
-<ul>
-  <li>start date</li>
-  <li>end date</li>
-  <li>document type</li>
-</ul>
-
-<p>and returns a <a href="http://hl7.org/fhir/bundle.html">Bundle</a> of type “searchset” containing <a href="StructureDefinition-ipa-documentreference.html">DocumentReference</a> resources for the patient. If the server has or can create documents that are related to the patient, and that are available for the given user, the server returns the DocumentReference resources needed to support the records.  The principle intended use for this operation is to provide a patient with access to their available document information.</p>
-
-<p>This operation is <em>different</em> from a search by patient and type and date range because:</p>
-
-<ol>
-  <li>
-    <p>It is used to request a server <em>generate</em> a document based on the specified parameters.</p>
-  </li>
-  <li>
-    <p>If no parameters are specified, the server SHALL return a DocumentReference to the patient’s most current summary document (depending on jurisdiction)</p>
-  </li>
-  <li>
-    <p>If the server cannot <em>generate</em> a document based on the specified parameters, the operation will return an empty search bundle.</p>
-  </li>
-</ol>
-
-<p>This operation is the <em>same</em> as a FHIR RESTful search by patient, type and date range because:</p>
-
-<ol>
-  <li>References for <em>existing</em> documents that meet the requirements of the request SHOULD also be returned unless the client indicates they are only interested in ‘on-demand’ documents using the <em>on-demand</em> parameter.</li>
-</ol>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-adverseevent.html"
+                  title="StructureDefinition/us-quality-core-adverseevent">US Quality Core AdverseEvent</a>
+            </td>
+            <td>
+<p>An adverse event (AE) is an untoward occurrence during treatment that should be reported, for example, to a clinical study sponsor or safety oversight organization.  AEs include reportable serious medical errors such as those defined by National Quality Forum (see http://www.qualityforum.org/Topics/ SREs/List_of_SREs.aspx), and Patient Safety Healthcare Events as defined by AHRQ.  Some AEs can involve conditions such as "recurring headaches" but others do not, such as accidental falls, surgical errors, sexual abuse of patient, and sudden death. An adverse event can also be an unsafe condition that increases the probability of a patient safety event, and near-misses. An adverse event can be caused by exposure to some agent (e.g., a medication, immunization, food, or environmental agent). An adverse reaction can range from a mild reaction, such as a harmless rash to a severe and life-threatening condition. They can occur immediately or develop over time. For example, a patient may develop a rash after taking a particular medication.</p>
 </td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-allergyintolerance.html"
+                  title="StructureDefinition/us-quality-core-allergyintolerance">US Quality Core AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Profile of AllergyIntolerance for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-bodystructure.html"
+                  title="StructureDefinition/us-quality-core-bodystructure">US Quality Core BodyStructure</a>
+            </td>
+            <td>
+<p>Profile of BodyStructure for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-careplan.html"
+                  title="StructureDefinition/us-quality-core-careplan">US Quality Core CarePlan</a>
+            </td>
+            <td>
+<p>The US Quality Core CarePlan is based upon the US Core CarePlan Profile which is based upon the core FHIR CarePlan Resource and created to meet the 2015 Edition Common Clinical Data Set 'Assessment and Plan of Treatment requirements. Defines constraints and extensions on the CarePlan resource for the minimal set of data to query and retrieve a patient's Care Plan.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-careteam.html"
+                  title="StructureDefinition/us-quality-core-careteam">US Quality Core CareTeam</a>
+            </td>
+            <td>
+<p>Profile of CareTeam for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-claim.html"
+                  title="StructureDefinition/us-quality-core-claim">US Quality Core Claim</a>
+            </td>
+            <td>
+<p>Profile of Claim for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-claimresponse.html"
+                  title="StructureDefinition/us-quality-core-claimresponse">US Quality Core ClaimResponse</a>
+            </td>
+            <td>
+<p>The US Quality Core ClaimResponse profile is used to provide the results of the adjudication and/or authorization of a set of healthcare-related products and services for a patient against the patient's insurance coverages, or to respond with what the adjudication would be for a supplied set of products or services should they be actually supplied to the patient. It identifies the mandatory core elements, extensions, vocabularies and value sets which <strong>SHALL</strong> be present in the ClaimResponse resource when using this profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-communication.html"
+                  title="StructureDefinition/us-quality-core-communication">US Quality Core Communication</a>
+            </td>
+            <td>
+<p>Profile of Communication for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-communicationnotdone.html"
+                  title="StructureDefinition/us-quality-core-communicationnotdone">US Quality Core Communication Not Done</a>
+            </td>
+            <td>
+<p>Profile of CommunicationNotDone for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-communicationrequest.html"
+                  title="StructureDefinition/us-quality-core-communicationrequest">US Quality Core CommunicationRequest</a>
+            </td>
+            <td>
+<p>Profile of CommunicationRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-condition-encounter-diagnosis.html"
+                  title="StructureDefinition/us-quality-core-condition-encounter-diagnosis">US Quality Core Condition Encounter Diagnosis</a>
+            </td>
+            <td>
+<p>The US Quality Core Condition Encounter Diagnosis Profile is based upon the US Core Condition Encounter Diagnosis Profile.   In version 5.0.0, The US Quality Core Condition Profile has been split into the US Quality Core Condition Encounter Diagnosis Profile and US Quality Core Condition Problems and Health Concerns Profile. To promote interoperability and adoption through common implementation, this profile defines constraints and extensions on the Condition resource for the minimal set of data to record, search, and fetch information about an encounter diagnosis.  It Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-condition-problems-health-concerns.html"
+                  title="StructureDefinition/us-quality-core-condition-problems-health-concerns">US Quality Core Condition Problems Health Concerns</a>
+            </td>
+            <td>
+<p>Profile of Condition for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-coverage.html"
+                  title="StructureDefinition/us-quality-core-coverage">US Quality Core Coverage</a>
+            </td>
+            <td>
+<p>Profile of Coverage for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-device.html"
+                  title="StructureDefinition/us-quality-core-device">US Quality Core Device</a>
+            </td>
+            <td>
+<p>Profile of Device for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-devicenotrequested.html"
+                  title="StructureDefinition/us-quality-core-devicenotrequested">US Quality Core Device Not Requested</a>
+            </td>
+            <td>
+<p>Profile of DeviceRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-devicerequest.html"
+                  title="StructureDefinition/us-quality-core-devicerequest">US Quality Core DeviceRequest</a>
+            </td>
+            <td>
+<p>Profile of DeviceRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-deviceusestatement.html"
+                  title="StructureDefinition/us-quality-core-deviceusestatement">US Quality Core DeviceUseStatement</a>
+            </td>
+            <td>
+<p>Profile of DeviceUseStatement for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-diagnosticreport-lab.html"
+                  title="StructureDefinition/us-quality-core-diagnosticreport-lab">US Quality Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+            </td>
+            <td>
+<p>Profile of DiagnosticReport for laboratory results for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-diagnosticreport-note.html"
+                  title="StructureDefinition/us-quality-core-diagnosticreport-note">US Quality Core DiagnosticReport Profile for Report and Note Exchange</a>
+            </td>
+            <td>
+<p>Profile of DiagnosticReport for Note exchange for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-encounter.html"
+                  title="StructureDefinition/us-quality-core-encounter">US Quality Core Encounter</a>
+            </td>
+            <td>
+<p>Profile of Encounter for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-familymemberhistory.html"
+                  title="StructureDefinition/us-quality-core-familymemberhistory">US Quality Core FamilyMemberHistory</a>
+            </td>
+            <td>
+<p>Profile of Family Member History for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-flag.html"
+                  title="StructureDefinition/us-quality-core-flag">US Quality Core Flag</a>
+            </td>
+            <td>
+<p>Profile of Flag for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-goal.html"
+                  title="StructureDefinition/us-quality-core-goal">US Quality Core Goal</a>
+            </td>
+            <td>
+<p>Profile of Goal for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-imagingstudy.html"
+                  title="StructureDefinition/us-quality-core-imagingstudy">US Quality Core ImagingStudy</a>
+            </td>
+            <td>
+<p>Profile of ImagingStudy for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-immunization.html"
+                  title="StructureDefinition/us-quality-core-immunization">US Quality Core Immunization</a>
+            </td>
+            <td>
+<p>Profile of Immunization for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-immunizationnotdone.html"
+                  title="StructureDefinition/us-quality-core-immunizationnotdone">US Quality Core Immunization Not Done</a>
+            </td>
+            <td>
+<p>Negation profile of Immunization for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-immunizationevaluation.html"
+                  title="StructureDefinition/us-quality-core-immunizationevaluation">US Quality Core ImmunizationEvaluation</a>
+            </td>
+            <td>
+<p>Defines constraints and extensions on the ImmunizationEvaluation resource for the minimal set of data to query and retrieve a patient's Immunization Evaluation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-immunizationrecommendation.html"
+                  title="StructureDefinition/us-quality-core-immunizationrecommendation">US Quality Core ImmunizationRecommendation</a>
+            </td>
+            <td>
+<p>Profile of ImmunizationRecommendation for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-observation-lab.html"
+                  title="StructureDefinition/us-quality-core-observation-lab">US Quality Core Laboratory Result Observation</a>
+            </td>
+            <td>
+<p>The US Quality Core Laboratory Result Observation Profile is based upon the US Laboratory Result Observation Resource.  Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-location.html"
+                  title="StructureDefinition/us-quality-core-location">US Quality Core Location</a>
+            </td>
+            <td>
+<p>Profile of Location for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-medication.html"
+                  title="StructureDefinition/us-quality-core-medication">US Quality Core Medication</a>
+            </td>
+            <td>
+<p>Profile of Medication for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-medicationnotrequested.html"
+                  title="StructureDefinition/us-quality-core-medicationnotrequested">US Quality Core Medication Not Requested</a>
+            </td>
+            <td>
+<p>Negation profile of MedicationRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-medicationadministration.html"
+                  title="StructureDefinition/us-quality-core-medicationadministration">US Quality Core MedicationAdministration</a>
+            </td>
+            <td>
+<p>Profile of MedicationAdministration for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-medicationadministrationnotdone.html"
+                  title="StructureDefinition/us-quality-core-medicationadministrationnotdone">US Quality Core MedicationAdministration Not Done</a>
+            </td>
+            <td>
+<p>Negation profile of MedicationAdministration for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-medicationdispense.html"
+                  title="StructureDefinition/us-quality-core-medicationdispense">US Quality Core MedicationDispense</a>
+            </td>
+            <td>
+<p>Profile of MedicationDispense for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-medicationdispensedeclined.html"
+                  title="StructureDefinition/us-quality-core-medicationdispensedeclined">US Quality Core MedicationDispense Declined</a>
+            </td>
+            <td>
+<p>Negation profile of MedicationDispense for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-medicationrequest.html"
+                  title="StructureDefinition/us-quality-core-medicationrequest">US Quality Core MedicationRequest</a>
+            </td>
+            <td>
+<p>Profile of MedicationRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-medicationstatement.html"
+                  title="StructureDefinition/us-quality-core-medicationstatement">US Quality Core MedicationStatement</a>
+            </td>
+            <td>
+<p>Profile of MedicationStatement for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-nonpatient-observation.html"
+                  title="StructureDefinition/us-quality-core-nonpatient-observation">US Quality Core NonPatient Observation</a>
+            </td>
+            <td>
+<p>Profile of NonPatient Observation for decision support/quality metrics evaluating resource use and availability rather than focusing on patients. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-nutritionorder.html"
+                  title="StructureDefinition/us-quality-core-nutritionorder">US Quality Core NutritionOrder</a>
+            </td>
+            <td>
+<p>Defines constraints and extensions on the NutritionOrder resource for the minimal set of data to query and retrieve a patient's Nutrition Order.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-observationcancelled.html"
+                  title="StructureDefinition/us-quality-core-observationcancelled">US Quality Core Observation Cancelled</a>
+            </td>
+            <td>
+<p>Profile of ObservationCancelled for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-observation-clinical-result.html"
+                  title="StructureDefinition/us-quality-core-observation-clinical-result">US Quality Core Observation Clinical Result</a>
+            </td>
+            <td>
+<p>The US Quality Core Observation Clinical Result Profile is based upon the US Core Observation Clinical Result Profile. Clinical results includes non-imaging and non-laboratory tests performed on a patient that results in structured or unstructured (narrative) findings specific to the patient, such as electrocardiogram (ECG), visual acuity exam, macular exam, or graded exercise testing (GXT), to facilitate the diagnosis and management of conditions. The US Quality Core Observation Clinical Result Profile profile defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-observation-screening-assessment.html"
+                  title="StructureDefinition/us-quality-core-observation-screening-assessment">US Quality Core Observation Screening Assessment</a>
+            </td>
+            <td>
+<p>The US Quality Core Observation Screening Assessment Profile is based upon the US Core Observation Screening Assessment Profile which can be used to represent individual responses, panels of multi-question surveys, and multi-select responses to “check all that apply” questions. The US Quality Core Observation Survey Profile sets minimum expectations for the Observation Resource to record, search, and fetch retrieve observations that represent the questions and responses to form/survey and defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-organization.html"
+                  title="StructureDefinition/us-quality-core-organization">US Quality Core Organization</a>
+            </td>
+            <td>
+<p>Profile of Organization for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-patient.html"
+                  title="StructureDefinition/us-quality-core-patient">US Quality Core Patient</a>
+            </td>
+            <td>
+<p>Profile of Patient for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-practitioner.html"
+                  title="StructureDefinition/us-quality-core-practitioner">US Quality Core Practitioner</a>
+            </td>
+            <td>
+<p>Profile of Practitioner for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-practitionerrole.html"
+                  title="StructureDefinition/us-quality-core-practitionerrole">US Quality Core PractitionerRole</a>
+            </td>
+            <td>
+<p>Profile of PractitionerRole for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-procedure.html"
+                  title="StructureDefinition/us-quality-core-procedure">US Quality Core Procedure</a>
+            </td>
+            <td>
+<p>Profile of Procedure for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-procedurenotdone.html"
+                  title="StructureDefinition/us-quality-core-procedurenotdone">US Quality Core Procedure Not Done</a>
+            </td>
+            <td>
+<p>Profile of Procedure for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-questionnaireresponse.html"
+                  title="StructureDefinition/us-quality-core-questionnaireresponse">US Quality Core QuestionnaireResponse</a>
+            </td>
+            <td>
+<p>The US Quality Core QuestionnaireResponse Profile is based upon the US Core QuestionnaireResponse Profile and sets minimum expectations for the QuestionnaireResponse resource to record, search, and fetch retrieve captures the responses to form/survey and defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-relatedperson.html"
+                  title="StructureDefinition/us-quality-core-relatedperson">US Quality Core RelatedPerson</a>
+            </td>
+            <td>
+<p>Profile of RelatedPerson for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-servicenotrequested.html"
+                  title="StructureDefinition/us-quality-core-servicenotrequested">US Quality Core Service Not Requested</a>
+            </td>
+            <td>
+<p>Negation profile of ServiceRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-servicerequest.html"
+                  title="StructureDefinition/us-quality-core-servicerequest">US Quality Core ServiceRequest</a>
+            </td>
+            <td>
+<p>Profile of ServiceRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-simple-observation.html"
+                  title="StructureDefinition/us-quality-core-simple-observation">US Quality Core Simple Observation</a>
+            </td>
+            <td>
+<p>Profile of Simple Observation for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-substance.html"
+                  title="StructureDefinition/us-quality-core-substance">US Quality Core Substance</a>
+            </td>
+            <td>
+<p>Profile of Substance for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-task.html"
+                  title="StructureDefinition/us-quality-core-task">US Quality Core Task</a>
+            </td>
+            <td>
+<p>Profile of Task for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-taskrejected.html"
+                  title="StructureDefinition/us-quality-core-taskrejected">US Quality Core Task Rejected</a>
+            </td>
+            <td>
+<p>Profile of TaskRejected for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
    <a name="5"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-encounter-diagnosisPresentOnAdmission.html"
+                  title="StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission">US Quality Core Diagnosis Present on Admission</a>
+            </td>
+            <td>
+<p>Indicator of whether the Encounter diagnosis was present at the time of admission.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-doNotPerformReason.html"
+                  title="StructureDefinition/us-quality-core-doNotPerformReason">US Quality Core Do Not Perform Reason</a>
+            </td>
+            <td>
+<p>Indicates the reason the event was not performed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-isElective.html"
+                  title="StructureDefinition/us-quality-core-isElective">US Quality Core IsElective</a>
+            </td>
+            <td>
+<p>Indicates whether this is an elective procedure.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-notDoneReason.html"
+                  title="StructureDefinition/us-quality-core-notDoneReason">US Quality Core Not Done Reason</a>
+            </td>
+            <td>
+<p>Indicates the reason the event was not done.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-recorded.html"
+                  title="StructureDefinition/us-quality-core-recorded">US Quality Core Not Done Recorded</a>
+            </td>
+            <td>
+<p>Captures the recorded date of the event.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-uscdiplusquality.html"
+                  title="StructureDefinition/uscdiplusquality">US Quality Core USCDI+ Quality Extension</a>
+            </td>
+            <td>
+<p>This extension is only used in the US Quality Core Implementation Guide's Profile StructureDefinition elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-servicerequest-appropriatenessScore.html"
+                  title="StructureDefinition/us-quality-core-servicerequest-appropriatenessScore">USQualityCore Appropriateness Score</a>
+            </td>
+            <td>
+<p>The appropriateness score for the requested action.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-quality-core-notDoneValueSet.html"
+                  title="StructureDefinition/us-quality-core-notDoneValueSet">USQualityCore Not Done ValueSet</a>
+            </td>
+            <td>
+<p>A logical reference (e.g. a reference to ValueSet.url) to a value set/version that identifies a set of possible coded values representing activities that were not requested, ordered, or performed.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-non-negative-event-status.html"
+                  title="ValueSet/us-quality-core-non-negative-event-status">Non-Negative Event Status</a>
+            </td>
+            <td>
+<p>This value set defines the set of codes that indicate a non-negated event status (i.e. codes that are not <code class="language-plaintext highlighter-rouge">not-done</code>)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-non-negative-immunization-status.html"
+                  title="ValueSet/us-quality-core-non-negative-immunization-status">Non-Negative Immunization Status</a>
+            </td>
+            <td>
+<p>This value set defines the set of codes that indicate a non-negated event status for immunization resources (i.e. codes that are not <code class="language-plaintext highlighter-rouge">not-done</code>)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-non-negative-medication-admin-status.html"
+                  title="ValueSet/us-quality-core-non-negative-medication-admin-status">Non-Negative MedicationAdministration Status</a>
+            </td>
+            <td>
+<p>This value set defines the set of codes that indicate a non-negated medication administration status (i.e. codes that are not <code class="language-plaintext highlighter-rouge">not-done</code>)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-non-negative-medicationdispense-status.html"
+                  title="ValueSet/us-quality-core-non-negative-medicationdispense-status">Non-Negative MedicationDispense Status</a>
+            </td>
+            <td>
+<p>This value set defines the set of codes that indicate a non-negated medication dispense status (i.e. codes that are not <code class="language-plaintext highlighter-rouge">declined</code>)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-non-negative-observation-status.html"
+                  title="ValueSet/us-quality-core-non-negative-observation-status">Non-Negative Observation Status</a>
+            </td>
+            <td>
+<p>This value set defines the set of codes that indicate a non-negated observation status (i.e. codes that are not <code class="language-plaintext highlighter-rouge">cancelled</code>)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-non-negative-task-status.html"
+                  title="ValueSet/us-quality-core-non-negative-task-status">Non-Negative Task Status</a>
+            </td>
+            <td>
+<p>This value set defines the set of codes that indicate a non-negated task status (i.e. codes that are not <code class="language-plaintext highlighter-rouge">rejected</code>)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-observation-body-position.html"
+                  title="ValueSet/us-quality-core-observation-body-position">US Quality Core Observation Body Position</a>
+            </td>
+            <td>
+<p>SNOMED CT code system values descending from the following:'body position finding' 9851009</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-negation-reason.html"
+                  title="ValueSet/us-quality-core-negation-reason">USQualityCore Negation Reason Codes</a>
+            </td>
+            <td>
+<p>This value set defines the set of codes that can be used to indicate the reason an action was not taken</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-present-on-admission.html"
+                  title="ValueSet/us-quality-core-present-on-admission">USQualityCore Present On Admission Codes</a>
+            </td>
+            <td>
+<p>Value Set for USQualityCore Present On Admission.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-us-quality-core-medication-dose-type.html"
+                  title="ValueSet/us-quality-core-medication-dose-type">USQualityCore SNOMED CT Dosage Codes</a>
+            </td>
+            <td>
+<p>This value set includes all the "Dosages" SNOMED CT codes (i.e. codes with an is-a relationship with 277406006: Dosages).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
-   <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="AllergyIntolerance-AllIntExample1.html"
-                     title="AllergyIntolerance/AllIntExample1">AllIntExample1</a>
-               </td>
-               <td>
-
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-screening-assessment-10-minute-apgar-heart-rate.html"
+                  title="Observation/example-screening-assessment-10-minute-apgar-heart-rate">10 minute Apgar Heart Rate Observation Screening Assessment Example</a>
+            </td>
+            <td>
+<p>Example of a 10 minute Apgar Heart Rate Observation Screening Assessment</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-ProblemExample1.html" title="Condition/ProblemExample1">IPA Condition Example</a>
-               </td>
-               <td>
-<p>This is a problem list item example for the <em>IPA Condition Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-example-2.html" title="Patient/example-2">65+ Female patient example</a>
+            </td>
+            <td>
+<p>65+ Female patient example</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DocumentReference-USClinicalNoteExample1.html"
-                     title="DocumentReference/USClinicalNoteExample1">DocumentReference Example</a>
-               </td>
-               <td>
-<p>This is a DocumentReference example for the <em>IPA DocumentReference Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AdverseEvent-example.html" title="AdverseEvent/example">AdverseEvent example</a>
+            </td>
+            <td>
+<p>Example of an allergic reaction adverse event</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-ImmExample1.html" title="Immunization/ImmExample1">IPA Immunization Example</a>
-               </td>
-               <td>
-<p>This is an Immunization example for the <em>IPA Immunization Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-example.html"
+                  title="AllergyIntolerance/example">AllergyIntolerance example</a>
+            </td>
+            <td>
+<p>Example of a clinical assessment record of an allergy</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Medication-MedExample1.html" title="Medication/MedExample1">Medication Example</a>
-               </td>
-               <td>
-<p>This is a Medication example for the <em>IPA Medication Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-example-refuted.html"
+                  title="AllergyIntolerance/example-refuted">AllergyIntolerance refuted example</a>
+            </td>
+            <td>
+<p>Example of a clinical assessment record of an allergy that has been refuted</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationRequest-MedRecExample1.html"
-                     title="MedicationRequest/MedRecExample1">MedicationRequest Example</a>
-               </td>
-               <td>
-<p>This is a MedicationRequest example for the <em>IPA MedicationRequest Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="BodyStructure-example.html" title="BodyStructure/example">BodyStructure example</a>
+            </td>
+            <td>
+<p>Example of a BodyStructure resource to identify a mass in the spleen</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationStatement-MedStatementExample1.html"
-                     title="MedicationStatement/MedStatementExample1">MedicationStatement Example</a>
-               </td>
-               <td>
-<p>This is a MedicationStatement example for the <em>IPA MedicationStatement Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-example.html" title="CarePlan/example">CarePlan example</a>
+            </td>
+            <td>
+<p>Example of an assessment and care plan for a pregnancy</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-LabExample1.html" title="Observation/LabExample1">Observation Lab Example</a>
-               </td>
-               <td>
-<p>This is a Observation example for the <em>IPA Observation Profile</em> containing a lab result.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CareTeam-example.html" title="CareTeam/example">CareTeam example</a>
+            </td>
+            <td>
+<p>Example of a CareTeam involved in the delivery of care for a pregnancy</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-SmokingExample1.html"
-                     title="Observation/SmokingExample1">Observation social history smoking Example</a>
-               </td>
-               <td>
-<p>This is a Observation example for the <em>IPA Observation Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Claim-example.html" title="Claim/example">Claim example</a>
+            </td>
+            <td>
+<p>Example of a vision claim</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-VitalSignsExample1.html"
-                     title="Observation/VitalSignsExample1">VitalSignsExample1</a>
-               </td>
-               <td>
-
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClaimResponse-example.html" title="ClaimResponse/example">ClaimResponse example</a>
+            </td>
+            <td>
+<p>Example of a vision claim response</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-PatientExample1.html" title="Patient/PatientExample1">IPA Patient Example</a>
-               </td>
-               <td>
-<p>This is a Patient example for the <em>IPA Patient Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Communication-example.html" title="Communication/example">Communication example</a>
+            </td>
+            <td>
+<p>Example of a notification sent to a patient about an abnormal test result</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-PatientGenderExample1.html"
-                     title="Patient/PatientGenderExample1">PatientGenderExample1</a>
-               </td>
-               <td>
-
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Communication-negation-example.html"
+                  title="Communication/negation-example">Communication negation example</a>
+            </td>
+            <td>
+<p>Example of a notification that failed to be sent to a patient and reason why</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-PractitionerExample1.html"
-                     title="Practitioner/PractitionerExample1">Practitioner Example</a>
-               </td>
-               <td>
-<p>This is a Practitioner example for the <em>IPA Practitioner Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CommunicationRequest-example.html"
+                  title="CommunicationRequest/example">CommunicationRequest example</a>
+            </td>
+            <td>
+<p>Example of a record of request to provide additional information for a claim</p>
 </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="PractitionerRole-PractitionerRoleExample1.html"
-                     title="PractitionerRole/PractitionerRoleExample1">PractitionerRole Example</a>
-               </td>
-               <td>
-<p>This is a PractitionerRole example for the <em>IPA PractitionerRole Profile</em>.</p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-example.html" title="Condition/example">Condition Encounter Diagnosis example</a>
+            </td>
+            <td>
+<p>Example of a condition encounter diagnosis resource used to record information about a burn of the left ear</p>
 </td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-health-concern-example.html"
+                  title="Condition/health-concern-example">Condition Problems Health Concerns example</a>
+            </td>
+            <td>
+<p>Example of a patient with a condition encounter health concern regarding obesity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-appendicitis-example.html"
+                  title="Condition/appendicitis-example">Condition example - appendicitis</a>
+            </td>
+            <td>
+<p>Example of a condition resource used to record information about an appendicitis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Coverage-example.html" title="Coverage/example">Coverage example</a>
+            </td>
+            <td>
+<p>Example of a coverage resource used to provide information about an individual's specific plan</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-obstetric-delivery.html"
+                  title="Observation/example-obstetric-delivery">Date and time of obstetric delivery example</a>
+            </td>
+            <td>
+<p>Example of a obstetric delivery datetime Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-delivery-date-estimate.html"
+                  title="Observation/example-delivery-date-estimate">Delivery date estimated example</a>
+            </td>
+            <td>
+<p>Example of a delivery date estimate Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-example.html" title="Device/example">Device example</a>
+            </td>
+            <td>
+<p>Device example for an ECG</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceRequest-example.html" title="DeviceRequest/example">DeviceRequest example</a>
+            </td>
+            <td>
+<p>Request to employ a medical device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceRequest-negation-example.html"
+                  title="DeviceRequest/negation-example">DeviceRequest negation example</a>
+            </td>
+            <td>
+<p>Example of a request to employ a medical device that was not performed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceRequest-negation-with-code-example.html"
+                  title="DeviceRequest/negation-with-code-example">DeviceRequest negation with code example</a>
+            </td>
+            <td>
+<p>Example of a request to employ a medical device that was not performed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceUseStatement-example.html"
+                  title="DeviceUseStatement/example">DeviceUseStatement example</a>
+            </td>
+            <td>
+<p>Example of a record of device use by a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-example.html" title="DiagnosticReport/example">DiagnosticReportLab example</a>
+            </td>
+            <td>
+<p>Example of the findings and interpretation of a laboratory diagnostic test</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-note-example.html"
+                  title="DiagnosticReport/note-example">DiagnosticReportNote example</a>
+            </td>
+            <td>
+<p>Example of a DiagnosticReport Note</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-example.html" title="Encounter/example">Encounter example</a>
+            </td>
+            <td>
+<p>Example of an Encounter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-encounter-ed-example.html"
+                  title="Encounter/encounter-ed-example">Encounter example of emergency visit that escalated into inpatient patient</a>
+            </td>
+            <td>
+<p>Encounter example of emergency visit that escalated into inpatient patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-statusreason-example.html"
+                  title="Immunization/statusreason-example">Entered-in-error Influenza immunization record example</a>
+            </td>
+            <td>
+<p>Example of an entered-in-error influenza immunization record with statusReason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="FamilyMemberHistory-example.html"
+                  title="FamilyMemberHistory/example">FamilyMemberHistory example</a>
+            </td>
+            <td>
+<p>Example of Family Member History for a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Flag-example.html" title="Flag/example">Flag example</a>
+            </td>
+            <td>
+<p>Warning/Notification when providing care example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-frailty.html"
+                  title="Observation/example-frailty">Frailty observation example</a>
+            </td>
+            <td>
+<p>Example of a frailty observation measure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-gestation.html"
+                  title="Observation/example-gestation">Gestation age at birth observation example</a>
+            </td>
+            <td>
+<p>Example of a gestation age at birth observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-laboratory-result-observation-example-blood-glucose.html"
+                  title="Observation/laboratory-result-observation-example-blood-glucose">Glucose Laboratory Result Observation Example</a>
+            </td>
+            <td>
+<p>Example of a glucose laboratory result observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Goal-example.html" title="Goal/example">Goal example</a>
+            </td>
+            <td>
+<p>Example of weight loss goal/objective for a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-clinical-result-heart-rate-rhythm.html"
+                  title="Observation/clinical-result-heart-rate-rhythm">Heart rate rhythm clinical result observation example</a>
+            </td>
+            <td>
+<p>Example of a Heart rate rhythm clinical result observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-nonpatient-hemodialysis-machine.html"
+                  title="Observation/example-nonpatient-hemodialysis-machine">Hemodialysis Machine Availability (physical object) Observation Example</a>
+            </td>
+            <td>
+<p>Example of hempdialysis machine availability nonpatient observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-nonpatient-hospital-bed.html"
+                  title="Observation/example-nonpatient-hospital-bed">Hospital Bed Availability (physical object) Observation Example</a>
+            </td>
+            <td>
+<p>Example of hospital bed availability nonpatient observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-example1.html" title="Organization/example1">Hospital Organization example</a>
+            </td>
+            <td>
+<p>Hendricks County Hospital example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ImagingStudy-example.html" title="ImagingStudy/example">ImagingStudy example</a>
+            </td>
+            <td>
+<p>Example of ImagingStudy based on CT imaging study</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-example.html" title="Immunization/example">Immunization example</a>
+            </td>
+            <td>
+<p>Immunization example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-negation-example.html"
+                  title="Immunization/negation-example">Immunization negation example</a>
+            </td>
+            <td>
+<p>Example of immunization that was refused/failed to be administered using value set</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-negation-example-code.html"
+                  title="Immunization/negation-example-code">Immunization negation with code example</a>
+            </td>
+            <td>
+<p>Example of immunization that was refused/failed to be administered using code</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ImmunizationEvaluation-example.html"
+                  title="ImmunizationEvaluation/example">ImmunizationEvaluaion example</a>
+            </td>
+            <td>
+<p>Example of ImmunizationEvaluation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ImmunizationRecommendation-example.html"
+                  title="ImmunizationRecommendation/example">ImmunizationRecommendation example</a>
+            </td>
+            <td>
+<p>Example of ImmunizationRecommendation for Hepatitis A vaccine</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-infant-example.html" title="Patient/infant-example">Infant patient example</a>
+            </td>
+            <td>
+<p>Infant patient example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-example.html" title="Location/example">Location example</a>
+            </td>
+            <td>
+<p>Example of Location of a provider - south wing of Mean Joe Greene University Medical Center</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-nonpatient-mechanical-ventilator.html"
+                  title="Observation/example-nonpatient-mechanical-ventilator">Mechanical Ventilator Availability (physical object) Observation Example</a>
+            </td>
+            <td>
+<p>Example of mechanical ventilator availability nonpatient observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-example.html" title="Medication/example">Medication example</a>
+            </td>
+            <td>
+<p>Example of Alemtuzumab Medication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-cmd-example.html"
+                  title="MedicationAdministration/cmd-example">MedicationAdministration Cumulative Duration example</a>
+            </td>
+            <td>
+<p>Cumulative Medication example of MedicationAdministration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-example.html"
+                  title="MedicationAdministration/example">MedicationAdministration example</a>
+            </td>
+            <td>
+<p>Intravenous example of MedicationAdministration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-negation-example.html"
+                  title="MedicationAdministration/negation-example">MedicationAdministration negation example</a>
+            </td>
+            <td>
+<p>Example of medication not administered using a value set to indicate what was not administered</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-negation-with-code-example.html"
+                  title="MedicationAdministration/negation-with-code-example">MedicationAdministration negation with code example</a>
+            </td>
+            <td>
+<p>Example of medication not administered using a code to indicate that a particular medication was not administered</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-cmd-example.html"
+                  title="MedicationDispense/cmd-example">MedicationDispense cumulative dose example</a>
+            </td>
+            <td>
+<p>Cumulative Medication Dispense Example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-example.html"
+                  title="MedicationDispense/example">MedicationDispense example</a>
+            </td>
+            <td>
+<p>Penicillin MedicationDispense Example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-negation-example.html"
+                  title="MedicationDispense/negation-example">MedicationDispense negation example</a>
+            </td>
+            <td>
+<p>Example of medication not dispensed using a value set to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-negation-with-code-example.html"
+                  title="MedicationDispense/negation-with-code-example">MedicationDispense negation with code example</a>
+            </td>
+            <td>
+<p>Example of medication not dispensed using a code to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-negation-example-code.html"
+                  title="MedicationRequest/negation-example-code">MedicationNotRequested using code example</a>
+            </td>
+            <td>
+<p>Example of medication not requested using a code to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-negation-example.html"
+                  title="MedicationRequest/negation-example">MedicationNotRequested using value set example</a>
+            </td>
+            <td>
+<p>Example of medication not requested using a value set to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-cmd-example.html"
+                  title="MedicationRequest/cmd-example">MedicationRequest Cumulative Duration</a>
+            </td>
+            <td>
+<p>Cumulative Medication Duration Example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-patient-reported-example.html"
+                  title="MedicationRequest/patient-reported-example">MedicationRequest Patient Reported Example</a>
+            </td>
+            <td>
+<p>Patient Reported Example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-patient-requester-example.html"
+                  title="MedicationRequest/patient-requester-example">MedicationRequest Patient Requester Example</a>
+            </td>
+            <td>
+<p>Patient Requester Example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-practitioner-ordered-example.html"
+                  title="MedicationRequest/practitioner-ordered-example">MedicationRequest Practitioner Ordered Example</a>
+            </td>
+            <td>
+<p>Practitioner Ordered Example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-example.html" title="MedicationRequest/example">MedicationRequest example</a>
+            </td>
+            <td>
+<p>Penicillin MedicationRequest Example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationStatement-example.html"
+                  title="MedicationStatement/example">MedicationStatment example</a>
+            </td>
+            <td>
+<p>Penicillin MedicationStatement Example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-births.html"
+                  title="Observation/example-births">Number of full-term births obeservation example</a>
+            </td>
+            <td>
+<p>Example number of full-term births Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-parity.html"
+                  title="Observation/example-parity">Number of parity obeservation example</a>
+            </td>
+            <td>
+<p>Example number of parity Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-pregnancies.html"
+                  title="Observation/example-pregnancies">Number of pregnancies obeservation example</a>
+            </td>
+            <td>
+<p>Example number of pregnancies Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-preterm-births.html"
+                  title="Observation/example-preterm-births">Number of preterm births obeservation example</a>
+            </td>
+            <td>
+<p>Example number of preterm births Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NutritionOrder-example.html" title="NutritionOrder/example">NutrientOrder example</a>
+            </td>
+            <td>
+<p>Example of NutrientOrder for diabetic diet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-odh.html" title="Observation/example-odh">ODH Observation example</a>
+            </td>
+            <td>
+<p>Example of occupational data added to observation measure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example.html" title="Observation/example">Observation example</a>
+            </td>
+            <td>
+<p>Example of Decreased Hemoglobin Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-negation-with-code-example.html"
+                  title="Observation/negation-with-code-example">ObservationCancelled with code example</a>
+            </td>
+            <td>
+<p>Example of observation not done using a code to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-negation-example.html"
+                  title="Observation/negation-example">ObservationCancelled with value set example</a>
+            </td>
+            <td>
+<p>Example of observation not done using a value set to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-example.html" title="Organization/example">Organization example</a>
+            </td>
+            <td>
+<p>HL7 Organization example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-PHQ-9-example.html"
+                  title="QuestionnaireResponse/PHQ-9-example">PHQ-9 QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Example of a PHQ-9 Questionnaire Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-example.html" title="Patient/example">Patient example</a>
+            </td>
+            <td>
+<p>Basic Patient example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-example.html" title="Practitioner/example">Practitioner example</a>
+            </td>
+            <td>
+<p>Referring Practitioner example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-example.html" title="PractitionerRole/example">PractitionerRole example</a>
+            </td>
+            <td>
+<p>PractitionerRole example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-example.html" title="Procedure/example">Procedure example</a>
+            </td>
+            <td>
+<p>Appendectomy Procedure example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-negation-with-code-example.html"
+                  title="Procedure/negation-with-code-example">ProcedureNotDone with code example</a>
+            </td>
+            <td>
+<p>Example of procedure not done using a code to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-negation-example.html"
+                  title="Procedure/negation-example">ProcedureNotDone with value set example</a>
+            </td>
+            <td>
+<p>Example of procedure not done using a value set to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-example.html" title="RelatedPerson/example">RelatedPerson example</a>
+            </td>
+            <td>
+<p>Emergency contact example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-negation-example-code.html"
+                  title="ServiceRequest/negation-example-code">ServiceNotRequested with code example</a>
+            </td>
+            <td>
+<p>Example of service not requested using a code to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-negation-example.html"
+                  title="ServiceRequest/negation-example">ServiceNotRequested with value set example</a>
+            </td>
+            <td>
+<p>Example of service not requested using a value set to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-myringotomy-example.html"
+                  title="ServiceRequest/myringotomy-example">ServiceRequest Myringotomy Procedure example</a>
+            </td>
+            <td>
+<p>ServiceRequest for Myringotomy Procedure example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-appropriateness-example.html"
+                  title="ServiceRequest/appropriateness-example">ServiceRequest appropriateness example</a>
+            </td>
+            <td>
+<p>ServiceRequest appropriateness example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-elective-example.html"
+                  title="ServiceRequest/elective-example">ServiceRequest elective example</a>
+            </td>
+            <td>
+<p>Elective procedure ServiceRequest example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-example.html" title="ServiceRequest/example">ServiceRequest example</a>
+            </td>
+            <td>
+<p>Request for Appendectomy ServiceRequest example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Substance-example.html" title="Substance/example">Substance example</a>
+            </td>
+            <td>
+<p>Honey Bee venom (apitoxin) Substance example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-example.html" title="Task/example">Task example</a>
+            </td>
+            <td>
+<p>Task example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-negation-with-code-example.html"
+                  title="Task/negation-with-code-example">TaskRejected with code example</a>
+            </td>
+            <td>
+<p>Example of task not done using a code to indicate the reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-negation-example.html" title="Task/negation-example">TaskRejected with value set example</a>
+            </td>
+            <td>
+<p>Example of task not done using a value set to indicate the reason</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Parameters-manifest.html" title="Parameters/manifest">Input Expansion Parameters</a>
+            </td>
+            <td>
+<p>The input expansion parameters resource for this implementation guide, specifying SNOMED Edition and version. This resource will be contained within the published implementation guide with all pinned references.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -550,32 +2630,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare">HL7 International - Patient Care Work Group</a>.  Package hl7.fhir.uv.ipa#1.0.0-preview based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 2, 2022 21:13-0700">2022-08-02</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.healthit.gov/feedback">Office of the National Coordinator for Health Information Technology (ONC)</a>.  Package fhir.onc.us-quality-core#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2026 12:45-0700">2026-09-03</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/ipa/history.html">Version History  |
-               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -586,7 +2654,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -594,16 +2662,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>
